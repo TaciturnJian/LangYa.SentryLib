@@ -9,3 +9,5 @@
 
 #pragma once
 
+#include <LangYa/SentryLib/MemoryView.hpp>
+
