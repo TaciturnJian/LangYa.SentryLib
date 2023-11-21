@@ -1,5 +1,7 @@
 #pragma once
 
+#include <cstring>
+
 #include <boost/asio/buffer.hpp>
 
 namespace LangYa::SentryLib
@@ -74,22 +76,22 @@ namespace LangYa::SentryLib
 		/// @brief Read the given memory started with the head, fill all memory for this memory view, basically a wrap for memcpy.
 		///	@param head The head of the memory.
 		///	@return The size of transferred bytes.
-		SizeType ReadFrom(const void* head) const;
+		void ReadFrom(const void* head) const;
 
 		/// @brief Read the given view. The target byte count is the min value of this->Size and view.Size.
 		///	@param view The view to read.
 		///	@return The size of transferred bytes.
-		SizeType ReadFrom(const MemoryView& view) const;  // NOLINT(modernize-use-nodiscard)
+		void ReadFrom(const MemoryView& view) const;
 
 		/// @brief Write bytes to the given memory started with the head, fill all memory for this memory view, basically a wrap for memcpy.
 		///	@param head The head of the memory.
 		///	@return The size of transferred bytes.
-		SizeType CopyTo(void* head) const;
+		void CopyTo(void* head) const;
 
 		/// @brief Write bytes to the given view. The target byte count is the min value of this->Size and view.Size.
 		///	@param view The view to write to.
 		///	@return The size of transferred bytes.
-		SizeType CopyTo(const MemoryView& view) const;  // NOLINT(modernize-use-nodiscard)
+		void CopyTo(const MemoryView& view) const;
 
 		/// @brief Destruct the memory view.
 		///	Set the head to nullptr and set the size to zero.

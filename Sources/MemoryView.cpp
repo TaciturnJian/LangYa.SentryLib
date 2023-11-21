@@ -1,96 +1,87 @@
 #include <LangYa/SentryLib/MemoryView.hpp>
 
-#include <cstring>
-
-LangYa::SentryLib::MemoryView
-::MemoryView() noexcept
-= default;
-
-LangYa::SentryLib::MemoryView
-::MemoryView(const MemoryView& view, const SizeType& offset, const SizeType& size) :
-	Head(view.Head + offset),
-	Size(size == 0 ? view.Size - offset : size)
+namespace LangYa::SentryLib
 {
-}
+	MemoryView
+	::MemoryView() noexcept
+	= default;
 
-LangYa::SentryLib::MemoryView::MemoryView(const MemoryView& other)
-= default;
+	MemoryView
+	::MemoryView(const MemoryView& view, const SizeType& offset, const SizeType& size) :
+		Head(view.Head + offset),
+		Size(size == 0 ? view.Size - offset : size)
+	{
+	}
 
-LangYa::SentryLib::MemoryView::MemoryView(MemoryView&& other) noexcept
-= default;
+	MemoryView::MemoryView(const MemoryView& other)
+	= default;
 
-LangYa::SentryLib::MemoryView& LangYa::SentryLib::MemoryView::operator=(const MemoryView& other)
-= default;
+	MemoryView::MemoryView(MemoryView&& other) noexcept
+	= default;
 
-LangYa::SentryLib::MemoryView& LangYa::SentryLib::MemoryView::operator=(MemoryView&& other) noexcept
-= default;
+	MemoryView& MemoryView::operator=(const MemoryView& other)
+	= default;
 
-LangYa::SentryLib::MemoryView::ByteType& 
-LangYa::SentryLib::MemoryView
-::operator[](const SizeType& index) const
-{
-	return Head[index];
-}
+	MemoryView& MemoryView::operator=(MemoryView&& other) noexcept
+	= default;
 
-LangYa::SentryLib::MemoryView::SizeType
-LangYa::SentryLib::MemoryView
-::ReadFrom(const void* const head) const
-{
-	if (Head == head) return Size;
+	MemoryView::ByteType&
+	MemoryView
+	::operator[](const SizeType& index) const
+	{
+		return Head[index];
+	}
 
-	memcpy(Head, head, Size);
-	return Size;
-}
+	void
+	MemoryView
+	::ReadFrom(const void* const head) const
+	{
+		if (Head == head) return;
+		memcpy(Head, head, Size);
+	}
 
-LangYa::SentryLib::MemoryView::SizeType
-LangYa::SentryLib::MemoryView
-::ReadFrom(const MemoryView& view) const
-{
-	if (Head == view.Head) return Size;
+	void
+	MemoryView
+	::ReadFrom(const MemoryView& view) const
+	{
+		if (Head == view.Head) return;
+		memcpy(Head, view.Head, view.Size < Size ? view.Size : Size);
+	}
 
-	const auto& size = view.Size < Size ? view.Size : Size;
-	memcpy(Head, view.Head, size);
-	return size;
-}
+	void
+	MemoryView
+	::CopyTo(void* const head) const
+	{
+		if (Head == head) return;
+		memcpy(head, Head, Size);
+	}
 
-LangYa::SentryLib::MemoryView::SizeType
-LangYa::SentryLib::MemoryView
-::CopyTo(void* const head) const
-{
-	if (Head == head) return Size;
+	void
+	MemoryView
+	::CopyTo(const MemoryView& view) const
+	{
+		if (Head == view.Head) return;
+		memcpy(view.Head, Head, view.Size < Size ? view.Size : Size);
+	}
 
-	memcpy(head, Head, Size);
-	return Size;
-}
+	MemoryView
+	::~MemoryView()
+	{
+		Head = nullptr;
+		Size = 0;
+	}
 
-LangYa::SentryLib::MemoryView::SizeType
-LangYa::SentryLib::MemoryView
-::CopyTo(const MemoryView& view) const
-{
-	if (Head == view.Head) return Size;
+	bool
+	MemoryView
+	::IsValid() const noexcept
+	{
+		return Head != nullptr && Size > 0;
+	}
 
-	const auto& size = view.Size < Size ? view.Size : Size;
-	memcpy(view.Head, Head, size);
-	return size;
-}
-
-LangYa::SentryLib::MemoryView
-::~MemoryView()
-{
-	Head = nullptr;
-	Size = 0;
-}
-
-bool
-LangYa::SentryLib::MemoryView
-::IsValid() const noexcept
-{
-	return Head != nullptr && Size > 0;
-}
-
-boost::asio::mutable_buffer
-LangYa::SentryLib::MemoryView
-::ToBuffer() const
-{
-	return boost::asio::buffer(Head, Size);
+	boost::asio::mutable_buffer
+	MemoryView
+	::ToBuffer() const
+	{
+		return boost::asio::buffer(Head, Size);
+	}
 }
