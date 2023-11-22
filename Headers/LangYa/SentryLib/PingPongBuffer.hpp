@@ -32,7 +32,7 @@ namespace LangYa::SentryLib
 
 		/// @brief Default move constructor.
 		/// @param other Buffer to be moved.
-		PingPongBuffer(PingPongBuffer&& other) = default;
+		PingPongBuffer(PingPongBuffer&& other) noexcept;
 
 		/// @brief Deleted copy assign operator.
 		/// Do not copy ping pong buffer for the consideration of unique memory usage.
@@ -40,13 +40,13 @@ namespace LangYa::SentryLib
 
 		/// @brief Default move constructor.
 		///	@param other Buffer to be moved.
-		PingPongBuffer& operator=(PingPongBuffer&& other) = default;
+		PingPongBuffer& operator=(PingPongBuffer&& other) noexcept;
 
-		/// @brief Get ping view of this buffer.
+		/// @brief Get ping view of this buffer. Used for debug.
 		///	@returns A view of ping buffer.
 		[[nodiscard]] const MemoryView& GetPing() const;
 
-		/// @brief Get pong view of this buffer.
+		/// @brief Get pong view of this buffer. Used for debug.
 		///	@return A view of pong buffer.
 		[[nodiscard]] const MemoryView& GetPong() const;
 
@@ -56,6 +56,19 @@ namespace LangYa::SentryLib
 		/// @param resource The resource to be read. The head of the resource must be started with a '!'.
 		///	@param destination Where the result should be stored.
 		///	@return Whether this buffer get a resource from the ping pong buffer.
-		[[nodiscard]] bool Exchange(const MemoryView& resource, const MemoryView& destination) const noexcept;
+		[[nodiscard]] bool Exchange(const MemoryView& resource, const MemoryView& destination) const;
+
+		/// @brief Get the exchange buffer for exchange, basically the pong buffer.
+		///	@return A view of exchange buffer.
+		[[nodiscard]] const MemoryView& GetExchangeBuffer() const noexcept;
+
+		/// @brief Assume the resource has been inputted after
+		/// @code LangYa::SentryLib::PingPongBuffer::GetExchangeBuffer() @endcode.
+		/// Try to read bytes and then write them to destination.
+		///	To make sure the destination start with a head flag '!'.
+		///	@warning Not thread-safe.
+		///	@param destination Where the result should be stored.
+		///	@return Whether this buffer get a resource from the ping pong buffer.
+		[[nodiscard]] bool ExchangeWithExchangeBuffer(const MemoryView& destination) const;
 	};
 }

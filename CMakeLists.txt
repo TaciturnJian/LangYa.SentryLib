@@ -14,10 +14,20 @@ add_library(${PROJECT_NAME} ${SentryLibSources})
 target_include_directories(${PROJECT_NAME} BEFORE PUBLIC Headers)
 set_target_properties(${PROJECT_NAME} PROPERTIES CXX_STANDARD 20)
 target_link_libraries(${PROJECT_NAME}
-	PUBLIC pthread
+#	PUBLIC pthread
 	PUBLIC Boost::system
 	PUBLIC fmt::fmt
 	PUBLIC spdlog::spdlog
 	PUBLIC ${Eigen3_LIBS}
 	PUBLIC ${OpenCV_LIBS}
 )
+
+# aux_source_directory(Testers TesterSources)
+foreach(TesterSource ${TesterSources})
+	get_filename_component(TesterName ${TesterSource} NAME)
+	message("Found Tester: ${TesterName} -> ${TesterSource}")
+
+	add_executable(${TesterName} ${TesterSource})
+	set_target_properties(${TesterName} PROPERTIES CXX_STANDARD 20)
+	target_link_libraries(${TesterName} PRIVATE ${PROJECT_NAME})
+endforeach()
