@@ -4,7 +4,7 @@
 
 #include <SangoC/Memory/Resources/ResourceFlag.hpp>
 
-namespace SangoC::Memory::Resources
+namespace LangYa::Sentry
 {
 	template <typename TContent>
 	struct Resource
