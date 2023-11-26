@@ -52,7 +52,16 @@ namespace LangYa::SentryLib
 
 		/// @brief Input the resource, try to read bytes and then write them to destination.
 		///	To make sure the destination start with a head flag '!'.
-		///	@warning Not thread-safe.
+		/// You can follow this example:
+		/// @code
+		///	SomeUnstableBuffer unstable_buffer;
+		///	TargetStableBuffer stable_buffer;
+		///	if (!Exchange(unstable_buffer, stable_buffer))
+		///	{
+		///		//Do some work about this exception.
+		///	}
+		///	@endcode
+		///	@warning Not thread-safe. You should make sure the method is called in a single thread.
 		/// @param resource The resource to be read. The head of the resource must be started with a '!'.
 		///	@param destination Where the result should be stored.
 		///	@return Whether this buffer get a resource from the ping pong buffer.
@@ -66,7 +75,7 @@ namespace LangYa::SentryLib
 		/// @code LangYa::SentryLib::PingPongBuffer::GetExchangeBuffer() @endcode.
 		/// Try to read bytes and then write them to destination.
 		///	To make sure the destination start with a head flag '!'.
-		///	@warning Not thread-safe.
+		///	@warning Not thread-safe. You should make sure the method is called in a single thread.
 		///	@param destination Where the result should be stored.
 		///	@return Whether this buffer get a resource from the ping pong buffer.
 		[[nodiscard]] bool ExchangeWithExchangeBuffer(const MemoryView& destination) const;

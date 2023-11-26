@@ -22,7 +22,7 @@ namespace LangYa::SentryLib
 		using HeadType = ByteType*;
 
 		/// @brief Record the head of the memory, basically the start of the sequence.
-		///	If it's nullptr, don't try to use this memory view! It's invalid now!
+		///	If it's nullptr, don't try to use this memory view. It's invalid now!
 		HeadType Head{nullptr};
 
 		/// @brief Record the size of the memory, basically the length of the sequence.

@@ -22,7 +22,7 @@ target_link_libraries(${PROJECT_NAME}
 	PUBLIC ${OpenCV_LIBS}
 )
 
-# aux_source_directory(Testers TesterSources)
+aux_source_directory(Testers TesterSources)
 foreach(TesterSource ${TesterSources})
 	get_filename_component(TesterName ${TesterSource} NAME)
 	message("Found Tester: ${TesterName} -> ${TesterSource}")

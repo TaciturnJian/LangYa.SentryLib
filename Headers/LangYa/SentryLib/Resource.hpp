@@ -2,22 +2,23 @@
 
 #include <atomic>
 
+#include <LangYa/SentryLib/UniqueBuffer.hpp>
 #include <LangYa/SentryLib/ResourceFlag.hpp>
 
 namespace LangYa::SentryLib
 {
-	/// @brief Represent a resource with flag, usually this resource is used in multi-threads.
+	/// @brief Represent a resource with flag (usage indicators), usually this resource is used in multi-threads.
 	///	If you want to get the content, use '=' operator to copy the memory.
 	///	The memory may be reading/writing in another thread!
-	/// @tparam TContent 
+	/// @tparam TContent The type of content, must be trivially copyable.
 	template <typename TContent>
 	struct Resource
 	{
 		/// @brief Indicate the status of the resource.
 		std::atomic<ResourceFlag> Flag{ResourceFlag::Empty};
 
-		/// @brief The volatile content.
-		volatile TContent Content{};
+		/// @brief The volatile content. May be reading/writing in different threads.
+		TContent Content{};
 
 		/// @brief Default constructor.
 		Resource() = default;

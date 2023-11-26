@@ -2,10 +2,10 @@
 
 #include <atomic>
 
-#include <SangoC/Memory/Buffers/UniqueBuffer.hpp>
-#include <SangoC/Memory/Resources/Resource.hpp>
+#include <LangYa/SentryLib/UniqueBuffer.hpp>
+#include <LangYa/SentryLib/Resource.hpp>
 
-namespace SangoC::Memory::Buffers
+namespace LangYa::SentryLib
 {
 	class TripleBuffer
 	{
