@@ -14,7 +14,7 @@ add_library(${PROJECT_NAME} ${SentryLibSources})
 target_include_directories(${PROJECT_NAME} BEFORE PUBLIC Headers)
 set_target_properties(${PROJECT_NAME} PROPERTIES CXX_STANDARD 20)
 target_link_libraries(${PROJECT_NAME}
-#	PUBLIC pthread
+	PUBLIC pthread
 	PUBLIC Boost::system
 	PUBLIC fmt::fmt
 	PUBLIC spdlog::spdlog
