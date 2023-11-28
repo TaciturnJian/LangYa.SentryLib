@@ -12,34 +12,34 @@
 
 namespace LangYa::SentryLib
 {
-	template<typename TControlData, MemoryView::SizeType CompressedResourceSize> 
+	/// @brief Represent an controller for robot.
+	/// Change the control data in this class and call tick to send message. 
+	template<typename TControlData> 
 	// ReSharper disable once CppClassCanBeFinal
 	class Controller final : public Device
 	{
 	public:
-		using ConnectionType = Connection;
+		/// @brief Represent the type of serializer, which will be used in encoding and decoding data.
 		using Serializer = Serializer<TControlData, CompressedResourceSize>;
 
 	protected:
-		std::weak_ptr<ConnectionType> Connection;
+		std::weak_ptr<Connection> WeakConnection;
 		TControlData LastData{};
 		UniqueBuffer SerializerBuffer{CompressedResourceSize};
-		volatile bool Power{false};
 
 	public:
-		explicit Controller(const std::weak_ptr<ConnectionType>& connection) : Connection(connection)
+		explicit Controller(const std::weak_ptr<Connection>& connection) :
+			WeakConnection(connection)
 		{
 		}
 
 		bool Tick() override
 		{
-			if (!Power) return true;
-
-			const auto connection = Connection.lock();
+			const auto connection = WeakConnection.lock();
 
 			if (connection == nullptr)
 			{
-				spdlog::warn("Controller> Cannot get connection!");
+				spdlog::warn("Controller> Cannot get valid connection!");
 				return false;
 			}
 
@@ -58,11 +58,6 @@ namespace LangYa::SentryLib
 			}
 
 			return true;
-		}
-
-		void Switch(const bool power)
-		{
-			Power = power;
 		}
 
 		TControlData* operator->()

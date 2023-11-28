@@ -68,7 +68,7 @@ LangYa::SentryLib::SerialPort::
 BuildShared(boost::asio::io_context& ioContext, const SerialPortInfo& info)
 {
 	spdlog::info("Building Shared SerialPort({})", info.ToString());
-	auto ptr = std::shared_ptr<SerialPort>(new SerialPort{ioContext, info});
+	auto ptr = std::make_shared<SerialPort>(SerialPort{ioContext, info});
 	spdlog::info("Finished building SerialPort({})", info.DeviceName);
 	return ptr;
 }

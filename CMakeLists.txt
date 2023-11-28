@@ -6,15 +6,15 @@ project(SentryLib)
 find_package(spdlog REQUIRED) # apt-get install libspdlog-dev
 find_package(Boost COMPONENTS system REQUIRED) # apt-get install libboost-all-dev
 find_package(fmt REQUIRED) # apt-get install libfmd-dev
-find_package(OpenCV 4 REQUIRED)
-find_package(Eigen3 REQUIRED)
+find_package(OpenCV 4 REQUIRED) # apt-get install libopencv-dev
+find_package(Eigen3 REQUIRED) # apt-get install libEigen-dev
 
 aux_source_directory(Sources SentryLibSources)
 add_library(${PROJECT_NAME} ${SentryLibSources})
 target_include_directories(${PROJECT_NAME} BEFORE PUBLIC Headers)
 set_target_properties(${PROJECT_NAME} PROPERTIES CXX_STANDARD 20)
 target_link_libraries(${PROJECT_NAME}
-	PUBLIC pthread
+#	PUBLIC pthread
 	PUBLIC Boost::system
 	PUBLIC fmt::fmt
 	PUBLIC spdlog::spdlog
@@ -31,3 +31,5 @@ foreach(TesterSource ${TesterSources})
 	set_target_properties(${TesterName} PROPERTIES CXX_STANDARD 20)
 	target_link_libraries(${TesterName} PRIVATE ${PROJECT_NAME})
 endforeach()
+
+

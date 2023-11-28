@@ -10,27 +10,28 @@
 
 namespace LangYa::SentryLib
 {
+	/// @brief Represent a sensor for robot.
+	///	Tick this device so it will update sensor data from connection, read the data from its members.
 	template <typename TSensorData, MemoryView::SizeType CompressedResourceSize>
 	// ReSharper disable once CppClassCanBeFinal
 	class Sensor final : public Device
 	{
 	public:
-		using ConnectionType = Connection;
 		using Serializer = Serializer<TSensorData, CompressedResourceSize>;
 
 	protected:
-		std::weak_ptr<ConnectionType> Connection;
+		std::weak_ptr<Connection> WeakConnection;
 		TSensorData LastData{};
 		UniqueBuffer SerializerBuffer{CompressedResourceSize};
 
 	public:
-		explicit Sensor(const std::weak_ptr<ConnectionType>& connection) : Connection(connection)
+		explicit Sensor(const std::weak_ptr<Connection>& connection) : WeakConnection(connection)
 		{
 		}
 
 		bool Tick() override
 		{
-			const auto connection = Connection.lock();
+			const auto connection = WeakConnection.lock();
 
 			if (connection == nullptr)
 			{
