@@ -22,7 +22,12 @@ namespace LangYa::SentryLib
 		UniqueBuffer InnerBuffer{};
 
  	public:
+		/// @brief Construct a new PingPongBuffer object with provided buffer size.
+		///	@param size The size the buffer use. You should use sizeof(element) * 2.
+		explicit PingPongBuffer(MemoryView::SizeType size);
+
 		/// @brief Construct a new PingPongBuffer object with provided unique buffer.
+		/// Its size must be sizeof(element) * 2.
 		///	@param memory The unique buffer moved in.
 		explicit PingPongBuffer(UniqueBuffer&& memory);
 

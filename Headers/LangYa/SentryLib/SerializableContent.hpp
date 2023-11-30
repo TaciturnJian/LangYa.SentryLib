@@ -23,4 +23,16 @@ namespace LangYa::SentryLib
 		///	@return Whether the serialization is succeeded.
 		[[nodiscard]] virtual bool Serialize(const MemoryView& buffer);
 	};
+
+	/// @brief Check if the type T can be transformed into @code LangYa::SentryLib::SerializableContent @endcode.
+	///	@tparam T The type to check.
+	template <typename T>
+	concept Serializable = requires(
+		SerializableContent* base,
+		T* p,
+		bool result
+	)
+		{
+			base = p;
+		};
 }

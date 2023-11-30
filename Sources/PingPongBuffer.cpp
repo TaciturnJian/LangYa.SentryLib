@@ -3,6 +3,11 @@
 namespace LangYa::SentryLib
 {
 	PingPongBuffer
+	::PingPongBuffer(MemoryView::SizeType size)
+	{
+	}
+
+	PingPongBuffer
 	::PingPongBuffer(UniqueBuffer&& memory) :
 		Ping(memory.GetView(), 0, memory.GetView().Size / 2),
 		Pong(memory.GetView(), Ping.Size, Ping.Size),

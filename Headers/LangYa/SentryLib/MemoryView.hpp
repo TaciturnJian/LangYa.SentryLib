@@ -1,5 +1,7 @@
 #pragma once
 
+#include <ostream>
+#include <string>
 #include <cstring>
 
 #include <boost/asio/buffer.hpp>
@@ -101,6 +103,20 @@ namespace LangYa::SentryLib
 		///	@warning The result true cannot guarantee the memory is valid.
 		///	@return true if the memory view is valid, otherwise false.
 		[[nodiscard]] bool IsValid() const noexcept;
+
+		/// @brief Print the byte in int into the stream.
+		///	@param stream Where to put the bytes.
+		///	@param view Where the bytes are.
+		///	@return The reference same of the parameter stream.
+		friend std::ostream& operator<<(std::ostream& stream, const MemoryView& view)
+		{
+			for (SizeType i = 0; i < view.Size; i++)
+			{
+				stream << static_cast<int>(view[i]) << ' ';
+			}
+
+			return stream;
+		}
 
 		/// @brief Convert this view to boost::asio::mutable_buffer.
 		///	@return A instance of boost::asio::mutable_buffer.

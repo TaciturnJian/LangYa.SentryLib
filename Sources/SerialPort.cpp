@@ -49,14 +49,14 @@ LangYa::SentryLib::SerialPort
 	UniqueSerialPort->open(Info.DeviceName, result);
 	if (result.failed())
 	{
-		spdlog::warn("SerialPort({})> Cannot open: {}", Info.DeviceName, ""/*result.what()*/);
+		spdlog::warn("SerialPort({})> Cannot open: {}", Info.DeviceName, result.what());
 		return;
 	}
 
 	ApplyOption(result);
 	if (result.failed())
 	{
-		spdlog::warn("SerialPort({})> Cannot set option: {}", Info.DeviceName, ""/*result.what()*/);
+		spdlog::warn("SerialPort({})> Cannot set option: {}", Info.DeviceName, result.what());
 		return;
 	}
 
@@ -68,7 +68,8 @@ LangYa::SentryLib::SerialPort::
 BuildShared(boost::asio::io_context& ioContext, const SerialPortInfo& info)
 {
 	spdlog::info("Building Shared SerialPort({})", info.ToString());
-	auto ptr = std::make_shared<SerialPort>(SerialPort{ioContext, info});
+	// ReSharper disable once CppSmartPointerVsMakeFunction
+	auto ptr = std::shared_ptr<SerialPort>(new SerialPort{ioContext, info});
 	spdlog::info("Finished building SerialPort({})", info.DeviceName);
 	return ptr;
 }
@@ -89,7 +90,7 @@ LangYa::SentryLib::SerialPort
 	RefreshConnection(result);
 	if (result.failed())
 	{
-		spdlog::warn("SerialPort({})> Cannot connect: {}", Info.DeviceName, ""/*result.what()*/);
+		spdlog::warn("SerialPort({})> Cannot connect: {}", Info.DeviceName, result.what());
 	}
 }
 
@@ -108,7 +109,7 @@ LangYa::SentryLib::SerialPort
 	UniqueSerialPort->close(result);
 	if (result.failed())
 	{
-		spdlog::warn("SerialPort({})> Cannot close serial port: {}", Info.DeviceName, ""/*result.what()*/);
+		spdlog::warn("SerialPort({})> Cannot close serial port: {}", Info.DeviceName, result.what());
 	}
 
 	Info.IsConnected = false;

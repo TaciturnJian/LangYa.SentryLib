@@ -6,7 +6,7 @@
 
 #include <LangYa/SentryLib/MemoryView.hpp>
 #include <LangYa/SentryLib/UniqueBuffer.hpp>
-#include <LangYa/SentryLib/Serializer.hpp>
+#include <LangYa/SentryLib/SerializableContent.hpp>
 #include <LangYa/SentryLib/Connection.hpp>
 #include <LangYa/SentryLib/Device.hpp>
 
@@ -14,22 +14,18 @@ namespace LangYa::SentryLib
 {
 	/// @brief Represent an controller for robot.
 	/// Change the control data in this class and call tick to send message. 
-	template<typename TControlData> 
+	template<Serializable TControllerData> 
 	// ReSharper disable once CppClassCanBeFinal
 	class Controller final : public Device
 	{
-	public:
-		/// @brief Represent the type of serializer, which will be used in encoding and decoding data.
-		using Serializer = Serializer<TControlData, CompressedResourceSize>;
-
-	protected:
 		std::weak_ptr<Connection> WeakConnection;
-		TControlData LastData{};
-		UniqueBuffer SerializerBuffer{CompressedResourceSize};
+		TControllerData LastData{};
+		UniqueBuffer SerializationBuffer;
 
 	public:
 		explicit Controller(const std::weak_ptr<Connection>& connection) :
-			WeakConnection(connection)
+			WeakConnection(connection),
+			SerializationBuffer(LastData.GetSerializationResultSize())
 		{
 		}
 
@@ -43,9 +39,21 @@ namespace LangYa::SentryLib
 				return false;
 			}
 
-			const auto& view = SerializerBuffer.GetView();
+			for (int i = 0; i <= 5 && !connection->IsConnected(); i++)
+			{
+				if (i == 5)
+				{
+					spdlog::warn("Controller> Give up after 5 attempts");
+					return false;
+				}
 
-			if (!Serializer::Serialize(LastData, view))
+				spdlog::warn("Controller> Try connect to the target. {}/{}", i, 5);
+				connection->Connect();
+			}
+
+			const auto& view = SerializationBuffer.GetView();
+
+			if (!LastData.Serialize(view))
 			{
 				spdlog::warn("Controller> Serialization failed!");
 				return false;
@@ -60,7 +68,7 @@ namespace LangYa::SentryLib
 			return true;
 		}
 
-		TControlData* operator->()
+		TControllerData* operator->()
 		{
 			return &LastData;
 		}

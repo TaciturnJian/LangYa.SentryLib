@@ -31,6 +31,11 @@ namespace LangYa::SentryLib
 		///	@param size The count of bytes of this buffer, which means 3 * sizeof(Content). If the size is not 3 * sizeof(Content), the behavior may be undefined.
 		explicit TripleBuffer(MemoryView::SizeType size);
 
+		/// @brief Construct an UniqueBuffer with the given UniqueBuffer.
+		///	The size for each element (3 in total) is the (integer) Size / 3.
+		///	@param uniqueBuffer The given buffer.
+		explicit TripleBuffer(UniqueBuffer &&uniqueBuffer);
+
 		/// @brief Push the given resource into this buffer.
 		///	@param destination The destination to pop the buffer.
 		///	@return Whether the content is correctly popped.

@@ -39,6 +39,11 @@ namespace LangYa::SentryLib
 
 		SerialPort() = delete;
 
+		SerialPort(const SerialPort&) = delete;
+		SerialPort& operator=(const SerialPort&) = delete;
+		SerialPort(SerialPort&&) = delete;
+		SerialPort& operator=(SerialPort&&) = delete;
+
 		~SerialPort() override;
 
 		void Connect() override;

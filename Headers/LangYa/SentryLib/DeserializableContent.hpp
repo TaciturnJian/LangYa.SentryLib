@@ -24,4 +24,21 @@ namespace LangYa::SentryLib
 		///	@return Whether the deserialization is succeeded.
 		virtual bool Deserialize(const MemoryView& buffer);
 	};
+
+	/// @brief Concept for those basic deserializable content.
+	///	@tparam T The type to check.
+	template <typename T>
+	concept Deserializable = requires
+	(
+		DeserializableContent* base,
+		T* p,
+		MemoryView view,
+		MemoryView::SizeType size,
+		bool result
+	)
+		{
+			base = p;
+			size = p->GetDeserializationResourceSize();
+			result = p->Deserialize(view);
+		};
 }

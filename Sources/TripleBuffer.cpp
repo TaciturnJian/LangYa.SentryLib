@@ -1,35 +1,50 @@
- #include <LangYa/SentryLib/TripleBuffer.hpp>
+#include <LangYa/SentryLib/TripleBuffer.hpp>
 
 LangYa::SentryLib::TripleBuffer
-::TripleBuffer(const LangYa::SentryLib::MemoryView::SizeType size) :
+::TripleBuffer(const MemoryView::SizeType size) :
 	InnerBuffer(size),
 	Resources{
 		ResourceType(
 			ResourceFlag::Empty,
 			MemoryView(
-				InnerBuffer.GetView(), 
-				0 * size / 3, 
+				InnerBuffer.GetView(),
+				0 * size / 3,
 				size / 3
 			)
 		),
 		ResourceType(
 			ResourceFlag::Empty,
 			MemoryView(
-				InnerBuffer.GetView(), 
-				1 * size / 3, 
+				InnerBuffer.GetView(),
+				1 * size / 3,
 				size / 3
 			)
 		),
 		ResourceType(
 			ResourceFlag::Empty,
 			MemoryView(
-				InnerBuffer.GetView(), 
-				2 * size / 3, 
+				InnerBuffer.GetView(),
+				2 * size / 3,
 				size / 3
 			)
 		),
 	}
 {
+}
+
+LangYa::SentryLib::TripleBuffer
+::TripleBuffer(UniqueBuffer&& uniqueBuffer) :
+	InnerBuffer(std::move(uniqueBuffer))
+{
+	const auto size = InnerBuffer.GetView().Size / 3;
+	for (auto i = 0; i < 3; i++)
+	{
+		Resources[i].Content = MemoryView(
+			InnerBuffer.GetView(),
+			i * size,
+			size
+		);
+	}
 }
 
 
@@ -62,7 +77,7 @@ LangYa::SentryLib::TripleBuffer
 		WriterIndex = index >= 2 ? 0 : index + 1;
 	}
 
-	auto& my_resource = Resources[WriterIndex];  // NOLINT(clang-diagnostic-char-subscripts)
+	auto& my_resource = Resources[WriterIndex]; // NOLINT(clang-diagnostic-char-subscripts)
 	my_resource.Flag = ResourceFlag::Busy;
 	my_resource.Content.ReadFrom(resource);
 	my_resource.Flag = ResourceFlag::Available;
