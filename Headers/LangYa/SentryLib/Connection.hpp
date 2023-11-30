@@ -12,20 +12,20 @@ namespace LangYa::SentryLib
 	class Connection : public MemoryIO
 	{
 	public:
-		/// @brief Connect to the target.
-		///	Use @code LangYa::SentryLib::IsConnected() @endcode to check the connection status.
+		/// @brief 连接到目标，使用 @code LangYa::SentryLib::IsConnected() @endcode 检查是否成功连接。
+		///	@warning 大多数实现都会阻塞当前线程直到连接成功或失败。
 		virtual void Connect() = 0;
 
-		/// @brief Get whether the connection is built.
-		///	@return True if the connection is built, false otherwise.
+		/// @brief 获取是否连接到目标
+		///	@return 是否连接到目标
 		[[nodiscard]] virtual bool IsConnected() = 0;
 
-		/// @brief Disconnect from the target.
+		/// @brief 从目标断开连接
+		///	@warning 大多数实现都会阻塞当前线程直到断开连接成功或失败。
 		virtual void Disconnect() = 0;
 
-		/// @brief Get the string representation of the connection. Usually some information.
-		///	@return Usually some information about this connection.
+		/// @brief 获取此连接的字符串格式的信息，通常使用了 fmt 库，性能不算太好。
+		///	@return 连接内部的某些信息的字符串格式。
 		[[nodiscard]] virtual std::string ToString();
 	};
 }
-

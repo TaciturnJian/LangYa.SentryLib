@@ -2,12 +2,14 @@
 
 #include <LangYa/SentryLib/MemoryView.hpp>
 
-namespace LangYa::SentryLib {
+namespace LangYa::SentryLib
+{
 	/// @brief 代表一个基本的读写类，在读和写的时候使用 @code LangYa::SentryLib::MemoryView @endcode.
 	///	一般来说，称读取操作为 Read/Receive ，写入操作为 Write/Send 。
-	class MemoryIO {
+	class MemoryIO
+	{
 	public:
-		/// @brief 虚析构函数。
+		/// @brief 默认虚析构函数。
 		virtual ~MemoryIO();
 
 		/// @brief 读取字节（最多读取 view 的所有字节）。
