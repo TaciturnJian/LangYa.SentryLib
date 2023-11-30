@@ -1,5 +1,11 @@
 #include <LangYa/SentryLib/SerialPort.hpp>
 
+#ifdef SC_WINDOWS
+#define RESULT_MESSAGE(result) result.what()
+#elif SC_LINUX
+#define RESULT_MESSAGE(result) result.message()
+#endif
+
 LangYa::SentryLib::SerialPort
 ::SerialPort(boost::asio::io_context& ioContext, SerialPortInfo info) :
 	UniqueSerialPort(std::make_unique<boost::asio::serial_port>(ioContext)),
@@ -13,19 +19,34 @@ LangYa::SentryLib::SerialPort
 {
 	using AsioSerial = boost::asio::serial_port;
 
-	UniqueSerialPort->set_option(AsioSerial::baud_rate(Info.BaudRate), result);
+	UniqueSerialPort->set_option(
+		AsioSerial::baud_rate(Info.BaudRate),
+		result
+	);
 	if (result.failed()) return;
 
-	UniqueSerialPort->set_option(AsioSerial::flow_control(AsioSerial::flow_control::none), result);
+	UniqueSerialPort->set_option(
+		AsioSerial::flow_control(AsioSerial::flow_control::none), 
+		result
+	);
 	if (result.failed()) return;
 
-	UniqueSerialPort->set_option(AsioSerial::parity(AsioSerial::parity::none), result);
+	UniqueSerialPort->set_option(
+		AsioSerial::parity(AsioSerial::parity::none), 
+		result
+	);
 	if (result.failed()) return;
 
-	UniqueSerialPort->set_option(AsioSerial::stop_bits(AsioSerial::stop_bits::one), result);
+	UniqueSerialPort->set_option(
+		AsioSerial::stop_bits(AsioSerial::stop_bits::one), 
+		result
+	);
 	if (result.failed()) return;
 
-	UniqueSerialPort->set_option(AsioSerial::character_size(AsioSerial::character_size(Info.CharacterSize)), result);
+	UniqueSerialPort->set_option(
+		AsioSerial::character_size(AsioSerial::character_size(Info.CharacterSize)),
+		result
+	);
 }
 
 void
@@ -49,14 +70,14 @@ LangYa::SentryLib::SerialPort
 	UniqueSerialPort->open(Info.DeviceName, result);
 	if (result.failed())
 	{
-		spdlog::warn("SerialPort({})> Cannot open: {}", Info.DeviceName, result.what());
+		spdlog::warn("SerialPort({})> Cannot open: {}", Info.DeviceName, RESULT_MESSAGE(result));
 		return;
 	}
 
 	ApplyOption(result);
 	if (result.failed())
 	{
-		spdlog::warn("SerialPort({})> Cannot set option: {}", Info.DeviceName, result.what());
+		spdlog::warn("SerialPort({})> Cannot set option: {}", Info.DeviceName, RESULT_MESSAGE(result));
 		return;
 	}
 
@@ -90,7 +111,7 @@ LangYa::SentryLib::SerialPort
 	RefreshConnection(result);
 	if (result.failed())
 	{
-		spdlog::warn("SerialPort({})> Cannot connect: {}", Info.DeviceName, result.what());
+		spdlog::warn("SerialPort({})> Cannot connect: {}", Info.DeviceName, RESULT_MESSAGE(result));
 	}
 }
 
@@ -109,7 +130,7 @@ LangYa::SentryLib::SerialPort
 	UniqueSerialPort->close(result);
 	if (result.failed())
 	{
-		spdlog::warn("SerialPort({})> Cannot close serial port: {}", Info.DeviceName, result.what());
+		spdlog::warn("SerialPort({})> Cannot close serial port: {}", Info.DeviceName, RESULT_MESSAGE(result));
 	}
 
 	Info.IsConnected = false;
@@ -134,7 +155,7 @@ LangYa::SentryLib::SerialPort
 		bytes,
 		view.Size,
 		result.failed(),
-		result.what()
+		RESULT_MESSAGE(result)
 	);
 
 	//TODO failure counter and exception processor
@@ -154,7 +175,7 @@ LangYa::SentryLib::SerialPort
 		bytes,
 		view.Size,
 		result.failed(),
-		result.what()
+		RESULT_MESSAGE(result)
 	);
 
 	return bytes;
@@ -166,3 +187,5 @@ LangYa::SentryLib::SerialPort
 {
 	return fmt::format("SerialPort({})", Info.ToString());
 }
+
+#undef RESULT_MESSAGE
