@@ -7,8 +7,8 @@
 
 namespace LangYa::SentryLib
 {
-	/// @brief Represent an IO style connection that can be read/write.
-	///	Provide basic abstraction for those with read and write function.
+	/// @brief 代表一个类似 IO 的连接，只提供基本的读写和开启/关闭连接的功能。
+	///	一个连接可以是一个文件，也可以是一个网络连接，也可以是一个内存映射文件。
 	class Connection : public MemoryIO
 	{
 	public:
