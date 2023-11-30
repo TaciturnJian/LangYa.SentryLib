@@ -3,7 +3,7 @@
 #include <LangYa/SentryLib/LangYaConnection.hpp>
 
 namespace LangYa::SentryLib {
-	/// @brief A decorator for @code LangYa::SentryLib::LangYaConnection @endcode, make it easier to use.
+	/// @brief 一个类的装饰器： @code LangYa::SentryLib::LangYaConnection @endcode 。
 	///	@tparam TReceiveData The type for the content to receive.
 	///	@tparam TSendData The type for the content to send.
 	template <
