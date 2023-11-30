@@ -10,7 +10,7 @@
 
 namespace LangYa::SentryLib
 {
-	/// @brief Represent a sensor for robot.
+	/// @brief 代表一个机器人传感器。
 	///	Tick this device so it will update sensor data from connection, read the data from its members.
 	template <typename TSensorData, MemoryView::SizeType CompressedResourceSize>
 	// ReSharper disable once CppClassCanBeFinal

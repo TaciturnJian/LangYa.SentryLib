@@ -24,8 +24,8 @@ namespace LangYa::SentryLib
 		[[nodiscard]] virtual bool Serialize(const MemoryView& buffer);
 	};
 
-	/// @brief Check if the type T can be transformed into @code LangYa::SentryLib::SerializableContent @endcode.
-	///	@tparam T The type to check.
+	/// @brief 代表一个可以序列化的类型，即可以被转换为 @code LangYa::SentryLib::SerializableContent @endcode 的类型。
+	///	@tparam T 概念中被检查的类型
 	template <typename T>
 	concept Serializable = requires(
 		SerializableContent* base,
