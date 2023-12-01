@@ -4,7 +4,7 @@ project(SentryLib)
 
 # Cross Platform Support
 if(CMAKE_SYSTEM_NAME MATCHES "Linux") 
-    set(SC_PUBLIC_PTHREAD "PUBLIC pthread")
+    set(SC_PUBLIC_PTHREAD PUBLIC pthread)
 	add_definitions(-DSC_LINUX)
 elseif(CMAKE_SYSTEM_NAME MATCHES "Windows") 
     set(SC_PUBLIC_PTHREAD)
