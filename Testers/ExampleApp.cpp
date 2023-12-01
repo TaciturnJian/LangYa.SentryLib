@@ -188,7 +188,7 @@ int main()
 				float pitch = sensor->GimbalEulerAngle[1];
 
 				//controller->GimbalEulerAngle[0] = yaw + 360 * sin(t);
-				controller->GimbalEulerAngle[1] = 20 * sin(t);
+				controller->GimbalEulerAngle[1] = 7.5 + 12.5 * sin(t);
 
 				controller->Velocity[0] = 10;
 				controller->Velocity[1] = 20;
