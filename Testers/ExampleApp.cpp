@@ -134,6 +134,8 @@ int main()
 		}
 	);
 
+	serial_port->Connect();
+
 	/*boost::asio::io_context tcp_io_context{};
 	auto tcp = TCPConnection::BuildShared(
 		tcp_io_context,
