@@ -195,7 +195,7 @@ int main()
 				t += 0.001;
 
 				spdlog::info("Receive: Yaw: {}, Pitch: {}", yaw, pitch);
-				spdlog::info("Sent   : Yaw: {}, Pitch: {}", sensor->GimbalEulerAngle[0], sensor->GimbalEulerAngle[1]);
+				spdlog::info("Sent   : Yaw: {}, Pitch: {}", controller->GimbalEulerAngle[0], controller->GimbalEulerAngle[1]);
 			}
 		}
 	);
