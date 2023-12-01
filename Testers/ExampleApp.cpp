@@ -187,10 +187,10 @@ int main()
 				float yaw = sensor->GimbalEulerAngle[0];
 				float pitch = sensor->GimbalEulerAngle[1];
 
-				controller->GimbalEulerAngle[0] = yaw + 360 * sin(t);
+				//controller->GimbalEulerAngle[0] = yaw + 360 * sin(t);
 				controller->GimbalEulerAngle[1] = 20 * sin(t);
 
-				t += 0.001;
+				t += 0.0001;
 
 				spdlog::info("Receive: Yaw: {}, Pitch: {}", yaw, pitch);
 				spdlog::info("Sent   : Yaw: {}, Pitch: {}", controller->GimbalEulerAngle[0], controller->GimbalEulerAngle[1]);
