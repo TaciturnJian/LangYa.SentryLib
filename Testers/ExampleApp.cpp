@@ -156,11 +156,9 @@ int main()
 	devices.push_back(sensor_ptr);
 	devices.push_back(controller_ptr);
 
-	auto communicator = std::make_shared<LangYaCommunicator<SentryData::DataToDeserialize, SentryData::SerializationResult>>(serial_port);
-
 	std::thread connection_thread(
-	[communicator]{
-		communicator->Work();
+	[decorated_serial_port]{
+		decorated_serial_port->HandleIO();
 	});
 
 	std::thread timer_thread([&devices]
