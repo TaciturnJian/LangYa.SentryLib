@@ -20,6 +20,8 @@ find_package(fmt REQUIRED) # apt-get install libfmd-dev
 find_package(OpenCV 4 REQUIRED) # apt-get install libopencv-dev
 find_package(Eigen3 REQUIRED) # apt-get install libEigen-dev
 
+add_compile_options(-fconcepts)
+
 aux_source_directory(Sources SentryLibSources)
 add_library(${PROJECT_NAME} ${SentryLibSources})
 target_include_directories(${PROJECT_NAME} BEFORE PUBLIC Headers)

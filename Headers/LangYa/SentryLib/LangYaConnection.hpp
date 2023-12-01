@@ -2,6 +2,9 @@
 
 #include <spdlog/spdlog.h>
 
+#include <thread>
+#include <chrono>
+
 #include <LangYa/SentryLib/Connection.hpp>
 #include <LangYa/SentryLib/TripleBuffer.hpp>
 #include <LangYa/SentryLib/PingPongBuffer.hpp>
