@@ -129,7 +129,7 @@ int main()
 	auto serial_port = SerialPort::BuildShared(
 		serial_port_io_context,
 		{
-			"/dev/usb_autoaim",
+			"COM1",
 			115200
 		}
 	);
@@ -144,8 +144,8 @@ int main()
 	);*/
 
 	auto decorated_serial_port = std::make_shared<LangYaConnection>(
-		sizeof(SentryData::SerializationResult), 
-		sizeof(SentryData::DataToDeserialize),
+		sizeof(SentryData::DataToDeserialize), 
+		sizeof(SentryData::SerializationResult),
 		serial_port
 	);
 

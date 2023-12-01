@@ -54,7 +54,7 @@ LangYa::SentryLib::LangYaConnection
 		std::this_thread::sleep_for(min_interval);
 
 		// Get resource from triple buffer.
-		if (!ReceiveTriple.Pop(resource_view)) continue;
+		if (!SendTriple.Pop(resource_view)) continue;
 
 		// Send the resource.
 		const auto sent_bytes = SharedConnection->Write(data_view); // Send data.
