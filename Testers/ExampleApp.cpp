@@ -171,14 +171,7 @@ int main()
 			std::this_thread::sleep_for(1ms);
 			for (const auto& device_ptr: devices)
 			{
-				for (int i = 0; i <= 5 && !device_ptr->Tick(); i++)
-				{
-					if (i == 5)
-					{
-						spdlog::warn("Timer> cannot tick device, close this thread now.");
-						return;
-					}
-				}
+				device_ptr->Tick();
 			}
 		}
 	});
