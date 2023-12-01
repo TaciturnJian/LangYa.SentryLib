@@ -126,14 +126,14 @@ struct SentryData final : SerializableContent, DeserializableContent
 int main()
 {
 	boost::asio::io_context serial_port_io_context{};
-	auto serial_port = SerialPort::BuildShared(
+	auto serial_port = SerialPort::BuildShared
+	(
 		serial_port_io_context,
 		{
 			"/dev/usb_autoaim",
 			115200
 		}
 	);
-
 	serial_port->Connect();
 
 	/*boost::asio::io_context tcp_io_context{};
@@ -189,6 +189,9 @@ int main()
 
 				//controller->GimbalEulerAngle[0] = yaw + 360 * sin(t);
 				controller->GimbalEulerAngle[1] = 20 * sin(t);
+
+				controller->Velocity[0] = 10;
+				controller->Velocity[1] = 20;
 
 				t += 0.0001;
 
