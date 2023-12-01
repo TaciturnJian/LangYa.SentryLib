@@ -129,7 +129,7 @@ int main()
 	auto serial_port = SerialPort::BuildShared(
 		serial_port_io_context,
 		{
-			"COM1",
+			"/dev/usb_autoaim",
 			115200
 		}
 	);
