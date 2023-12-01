@@ -8,14 +8,14 @@ LangYa::SentryLib::MemoryView::SizeType
 LangYa::SentryLib::SerializableContent
 ::GetSerializationResultSize() const
 {
-	return GetMemoryView().Size;
+	return GetSerializationMemoryView().Size;
 }
 
 bool
 LangYa::SentryLib::SerializableContent
 ::Serialize(const MemoryView& buffer)
 {
-	const auto view = GetMemoryView();
+	const auto view = GetSerializationMemoryView();
 	if (view.Size < buffer.Size)
 	{
 		return false;

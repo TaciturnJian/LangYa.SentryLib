@@ -22,7 +22,7 @@ namespace LangYa::SentryLib
 		/// @brief 从缓冲区中反序列化资源。
 		///	@param buffer 反序列化资源数据的缓冲区。
 		///	@return 是否反序列化成功。
-		virtual bool Deserialize(const MemoryView& buffer);
+		[[nodiscard]] virtual bool Deserialize(const MemoryView& buffer);
 	};
 
 	/// @brief 基本的可以反序列化的资源概念，也就是继承了 @code LangYa::SentryLib::DeserializableContent @endcode。

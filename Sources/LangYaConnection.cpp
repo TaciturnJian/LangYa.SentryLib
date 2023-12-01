@@ -114,14 +114,14 @@ LangYa::SentryLib::LangYaConnection
 		std::this_thread::sleep_for(min_interval);
 
 		// Read bytes from connection, check if the count is ok.
-		if (const auto read_bytes
-			= SharedConnection->Read(exchange_view)
-			!= expected_receiving_size
+		if (
+			const auto read_bytes = SharedConnection->Read(exchange_view);
+			read_bytes != expected_receiving_size
 		)
 		{
 			// Handle wrong byte count in connection reading.
 			spdlog::warn(
-				"LangYaConnection> Receive {} bytes, expected {}, some error in connection!",
+				"LangYaConnection> Received {} bytes, expected {}, some error in connection!",
 				read_bytes,
 				expected_receiving_size
 			);

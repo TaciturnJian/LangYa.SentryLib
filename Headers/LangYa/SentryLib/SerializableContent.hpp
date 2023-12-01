@@ -12,7 +12,7 @@ namespace LangYa::SentryLib
 
 		/// @brief Get the memory view of this content.
 		///	@return The memory view of this content.
-		[[nodiscard]] virtual MemoryView GetMemoryView() const = 0;
+		[[nodiscard]] virtual MemoryView GetSerializationMemoryView() const = 0;
 
 		/// @brief Get the size of the serialization result.
 		///	@return The size of the serialization result.

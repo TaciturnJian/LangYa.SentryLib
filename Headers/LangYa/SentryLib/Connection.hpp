@@ -12,7 +12,7 @@ namespace LangYa::SentryLib
 	class Connection : public MemoryIO
 	{
 	public:
-		/// @brief 连接到目标，使用 @code LangYa::SentryLib::IsConnected() @endcode 检查是否成功连接。
+		/// @brief 连接到目标，使用 @code LangYa::SentryLib::Connection::IsConnected() @endcode 检查是否成功连接。
 		///	@warning 大多数实现都会阻塞当前线程直到连接成功或失败。
 		virtual void Connect() = 0;
 
