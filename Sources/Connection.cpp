@@ -1,8 +1,11 @@
 #include <LangYa/SentryLib/Connection.hpp>
 
-std::string
-LangYa::SentryLib::Connection
-::ToString()
+namespace LangYa::SentryLib
 {
-	return "Connection";
+	std::string
+	Connection
+	::ToString()
+	{
+		return "Connection";
+	}
 }

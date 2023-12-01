@@ -19,7 +19,6 @@ namespace LangYa::SentryLib
 	///	@tparam TControllerData 控制器内可以修改的数据类型，必须是可以序列化的，
 	///	有关可序列化的概念请参考 @code LangYa::SentryLib::Serializable @endcode
 	template <Serializable TControllerData>
-	// ReSharper disable once CppClassCanBeFinal
 	class Controller final : public Device
 	{
 		/// @brief 弱连接，用于控制器向外部发送数据

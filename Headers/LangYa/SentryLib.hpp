@@ -13,7 +13,6 @@
 #include <LangYa/SentryLib/Controller.hpp>
 #include <LangYa/SentryLib/DeserializableContent.hpp>
 #include <LangYa/SentryLib/Device.hpp>
-#include <LangYa/SentryLib/LangYaCommunicator.hpp>
 #include <LangYa/SentryLib/LangYaConnection.hpp>
 #include <LangYa/SentryLib/MemoryAccess.hpp>
 #include <LangYa/SentryLib/MemoryIO.hpp>

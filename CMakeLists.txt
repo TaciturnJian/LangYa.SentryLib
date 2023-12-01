@@ -21,6 +21,7 @@ find_package(OpenCV 4 REQUIRED) # apt-get install libopencv-dev
 find_package(Eigen3 REQUIRED) # apt-get install libEigen-dev
 
 add_compile_options(-fconcepts)
+message("You may need add new line in your cmake: 'add_compile_options(-fconcepts)' ")
 
 aux_source_directory(Sources SentryLibSources)
 add_library(${PROJECT_NAME} ${SentryLibSources})

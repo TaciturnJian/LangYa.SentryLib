@@ -13,16 +13,22 @@ namespace LangYa::SentryLib
 	{
 	}
 
-	MemoryView::MemoryView(const MemoryView& other)
+	MemoryView
+	::MemoryView(const MemoryView& other)
 	= default;
 
-	MemoryView::MemoryView(MemoryView&& other) noexcept
+	MemoryView
+	::MemoryView(MemoryView&& other) noexcept
 	= default;
 
-	MemoryView& MemoryView::operator=(const MemoryView& other)
+	MemoryView&
+	MemoryView
+	::operator=(const MemoryView& other)
 	= default;
 
-	MemoryView& MemoryView::operator=(MemoryView&& other) noexcept
+	MemoryView&
+	MemoryView
+	::operator=(MemoryView&& other) noexcept
 	= default;
 
 	MemoryView::ByteType&

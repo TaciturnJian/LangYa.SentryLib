@@ -6,186 +6,193 @@
 #define RESULT_MESSAGE(result) result.message()
 #endif
 
-LangYa::SentryLib::SerialPort
-::SerialPort(boost::asio::io_context& ioContext, SerialPortInfo info) :
-	UniqueSerialPort(std::make_unique<boost::asio::serial_port>(ioContext)),
-	Info(std::move(info))
+namespace LangYa::SentryLib
 {
-}
+	using IOContextType = boost::asio::io_context;
+	using AsioSerialPort = boost::asio::serial_port;
+	using ErrorCodeType = boost::system::error_code;
 
-void
-LangYa::SentryLib::SerialPort
-::ApplyOption(boost::system::error_code& result) const
-{
-	using AsioSerial = boost::asio::serial_port;
-
-	UniqueSerialPort->set_option(
-		AsioSerial::baud_rate(Info.BaudRate),
-		result
-	);
-	if (result.failed()) return;
-
-	UniqueSerialPort->set_option(
-		AsioSerial::flow_control(AsioSerial::flow_control::none), 
-		result
-	);
-	if (result.failed()) return;
-
-	UniqueSerialPort->set_option(
-		AsioSerial::parity(AsioSerial::parity::none), 
-		result
-	);
-	if (result.failed()) return;
-
-	UniqueSerialPort->set_option(
-		AsioSerial::stop_bits(AsioSerial::stop_bits::one), 
-		result
-	);
-	if (result.failed()) return;
-
-	UniqueSerialPort->set_option(
-		AsioSerial::character_size(AsioSerial::character_size(Info.CharacterSize)),
-		result
-	);
-}
-
-void
-LangYa::SentryLib::SerialPort
-::RefreshConnection(boost::system::error_code& result)
-{
-	using namespace boost::asio;
-
-	spdlog::info("SerialPort({})> Refreshing connection", Info.DeviceName);
-
-	if (UniqueSerialPort->is_open())
+	SerialPort
+	::SerialPort(IOContextType& ioContext, SerialPortInfo info) :
+		UniqueSerialPort(std::make_unique<AsioSerialPort>(ioContext)),
+		Info(std::move(info))
 	{
-		spdlog::info("SerialPort({})> Is connected, doesn't need refresh.", Info.DeviceName);
+	}
+
+	void
+	SerialPort
+	::ApplyOption(boost::system::error_code& result) const
+	{
+		using AsioSerial = AsioSerialPort;
+
+		UniqueSerialPort->set_option(
+			AsioSerial::baud_rate(Info.BaudRate),
+			result
+		);
+		if (result.failed()) return;
+
+		UniqueSerialPort->set_option(
+			AsioSerial::flow_control(AsioSerial::flow_control::none),
+			result
+		);
+		if (result.failed()) return;
+
+		UniqueSerialPort->set_option(
+			AsioSerial::parity(AsioSerial::parity::none),
+			result
+		);
+		if (result.failed()) return;
+
+		UniqueSerialPort->set_option(
+			AsioSerial::stop_bits(AsioSerial::stop_bits::one),
+			result
+		);
+		if (result.failed()) return;
+
+		UniqueSerialPort->set_option(
+			AsioSerial::character_size(AsioSerial::character_size(Info.CharacterSize)),
+			result
+		);
+	}
+
+	void
+	SerialPort
+	::RefreshConnection(boost::system::error_code& result)
+	{
+		using namespace boost::asio;
+
+		spdlog::info("SerialPort({})> Refreshing connection", Info.DeviceName);
+
+		if (UniqueSerialPort->is_open())
+		{
+			spdlog::info("SerialPort({})> Is connected, doesn't need refresh.", Info.DeviceName);
+			Info.IsConnected = true;
+			result = boost::system::error_code();
+			return;
+		}
+
+		Info.IsConnected = false;
+
+		UniqueSerialPort->open(Info.DeviceName, result);
+		if (result.failed())
+		{
+			spdlog::warn("SerialPort({})> Cannot open: {}", Info.DeviceName, RESULT_MESSAGE(result));
+			return;
+		}
+
+		ApplyOption(result);
+		if (result.failed())
+		{
+			spdlog::warn("SerialPort({})> Cannot set option: {}", Info.DeviceName, RESULT_MESSAGE(result));
+			return;
+		}
+
 		Info.IsConnected = true;
-		result = boost::system::error_code();
-		return;
 	}
 
-	Info.IsConnected = false;
-
-	UniqueSerialPort->open(Info.DeviceName, result);
-	if (result.failed())
+	std::shared_ptr<SerialPort>
+	SerialPort::
+	BuildShared(IOContextType& ioContext, const SerialPortInfo& info)
 	{
-		spdlog::warn("SerialPort({})> Cannot open: {}", Info.DeviceName, RESULT_MESSAGE(result));
-		return;
+		spdlog::info("Building Shared SerialPort({})", info.ToString());
+		// ReSharper disable once CppSmartPointerVsMakeFunction
+		auto ptr = std::shared_ptr<SerialPort>(new SerialPort{ioContext, info});
+		spdlog::info("Finished building SerialPort({})", info.DeviceName);
+		return ptr;
 	}
 
-	ApplyOption(result);
-	if (result.failed())
+	SerialPort
+	::~SerialPort()
 	{
-		spdlog::warn("SerialPort({})> Cannot set option: {}", Info.DeviceName, RESULT_MESSAGE(result));
-		return;
+		spdlog::info("SerialPort({})> Trying closing", Info.DeviceName);
+		Disconnect();
+		spdlog::info("SerialPort({})> Closed", Info.DeviceName);
 	}
 
-	Info.IsConnected = true;
-}
-
-std::shared_ptr<LangYa::SentryLib::SerialPort>
-LangYa::SentryLib::SerialPort::
-BuildShared(boost::asio::io_context& ioContext, const SerialPortInfo& info)
-{
-	spdlog::info("Building Shared SerialPort({})", info.ToString());
-	// ReSharper disable once CppSmartPointerVsMakeFunction
-	auto ptr = std::shared_ptr<SerialPort>(new SerialPort{ioContext, info});
-	spdlog::info("Finished building SerialPort({})", info.DeviceName);
-	return ptr;
-}
-
-LangYa::SentryLib::SerialPort
-::~SerialPort()
-{
-	spdlog::info("SerialPort({})> Trying closing", Info.DeviceName);
-	Disconnect();
-	spdlog::info("SerialPort({})> Closed", Info.DeviceName);
-}
-
-void
-LangYa::SentryLib::SerialPort
-::Connect()
-{
-	boost::system::error_code result;
-	RefreshConnection(result);
-	if (result.failed())
+	void
+	SerialPort
+	::Connect()
 	{
-		spdlog::warn("SerialPort({})> Cannot connect: {}", Info.DeviceName, RESULT_MESSAGE(result));
+		boost::system::error_code result;
+		RefreshConnection(result);
+		if (result.failed())
+		{
+			spdlog::warn("SerialPort({})> Cannot connect: {}", Info.DeviceName, RESULT_MESSAGE(result));
+		}
 	}
-}
 
-bool
-LangYa::SentryLib::SerialPort
-::IsConnected()
-{
-	return Info.IsConnected && UniqueSerialPort->is_open();
-}
-
-void
-LangYa::SentryLib::SerialPort
-::Disconnect()
-{
-	boost::system::error_code result;
-	UniqueSerialPort->close(result);
-	if (result.failed())
+	bool
+	SerialPort
+	::IsConnected()
 	{
-		spdlog::warn("SerialPort({})> Cannot close serial port: {}", Info.DeviceName, RESULT_MESSAGE(result));
+		return Info.IsConnected && UniqueSerialPort->is_open();
 	}
 
-	Info.IsConnected = false;
-}
+	void
+	SerialPort
+	::Disconnect()
+	{
+		boost::system::error_code result;
+		UniqueSerialPort->close(result);
+		if (result.failed())
+		{
+			spdlog::warn("SerialPort({})> Cannot close serial port: {}", Info.DeviceName, RESULT_MESSAGE(result));
+		}
 
-const
-LangYa::SentryLib::SerialPortInfo&
-LangYa::SentryLib::SerialPort::GetInfo() const
-{
-	return Info;
-}
+		Info.IsConnected = false;
+	}
 
-LangYa::SentryLib::MemoryView::SizeType
-LangYa::SentryLib::SerialPort
-::Read(const MemoryView& view)
-{
-	boost::system::error_code result{};
-	auto bytes = read(*UniqueSerialPort, view.ToBuffer(), result);
-	spdlog::info(
-		"SerialPort({})> Read {}:{} bytes, failed({}), failure({})",
-		Info.DeviceName,
-		bytes,
-		view.Size,
-		result.failed(),
-		RESULT_MESSAGE(result)
-	);
+	const
+	SerialPortInfo&
+	SerialPort::GetInfo() const
+	{
+		return Info;
+	}
 
-	//TODO failure counter and exception processor
+	MemoryView::SizeType
+	SerialPort
+	::Read(const MemoryView& view)
+	{
+		boost::system::error_code result{};
+		auto bytes = read(*UniqueSerialPort, view.ToBuffer(), result);
+		spdlog::info(
+			"SerialPort({})> Read {}:{} bytes, failed({}), failure({})",
+			Info.DeviceName,
+			bytes,
+			view.Size,
+			result.failed(),
+			RESULT_MESSAGE(result)
+		);
 
-	return bytes;
-}
+		//TODO failure counter and exception processor
 
-LangYa::SentryLib::MemoryView::SizeType
-LangYa::SentryLib::SerialPort
-::Write(const MemoryView& view)
-{
-	boost::system::error_code result{};
-	auto bytes = write(*UniqueSerialPort, view.ToBuffer(), result);
-	spdlog::info(
-		"SerialPort({})> Write {}:{} bytes, failed({}), failure({})",
-		Info.DeviceName,
-		bytes,
-		view.Size,
-		result.failed(),
-		RESULT_MESSAGE(result)
-	);
+		return bytes;
+	}
 
-	return bytes;
-}
+	MemoryView::SizeType
+	SerialPort
+	::Write(const MemoryView& view)
+	{
+		boost::system::error_code result{};
+		auto bytes = write(*UniqueSerialPort, view.ToBuffer(), result);
+		spdlog::info(
+			"SerialPort({})> Write {}:{} bytes, failed({}), failure({})",
+			Info.DeviceName,
+			bytes,
+			view.Size,
+			result.failed(),
+			RESULT_MESSAGE(result)
+		);
 
-std::string
-LangYa::SentryLib::SerialPort
-::ToString()
-{
-	return fmt::format("SerialPort({})", Info.ToString());
+		return bytes;
+	}
+
+	std::string
+	SerialPort
+	::ToString()
+	{
+		return fmt::format("SerialPort({})", Info.ToString());
+	}
 }
 
 #undef RESULT_MESSAGE

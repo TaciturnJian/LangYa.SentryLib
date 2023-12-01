@@ -1,5 +1,8 @@
 #include <LangYa/SentryLib/Device.hpp>
 
-LangYa::SentryLib::Device
-::~Device()
-= default;
+namespace LangYa::SentryLib
+{
+	Device
+	::~Device()
+	= default;
+}

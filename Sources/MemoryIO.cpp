@@ -1,5 +1,8 @@
 #include <LangYa/SentryLib/MemoryIO.hpp>
 
-LangYa::SentryLib::MemoryIO
-::~MemoryIO()
-= default;
+namespace LangYa::SentryLib
+{
+	MemoryIO
+	::~MemoryIO()
+	= default;
+}

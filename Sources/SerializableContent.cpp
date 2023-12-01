@@ -1,26 +1,29 @@
 #include <LangYa/SentryLib/SerializableContent.hpp>
 
-LangYa::SentryLib::SerializableContent
-::~SerializableContent()
-= default;
-
-LangYa::SentryLib::MemoryView::SizeType
-LangYa::SentryLib::SerializableContent
-::GetSerializationResultSize() const
+namespace LangYa::SentryLib
 {
-	return GetSerializationMemoryView().Size;
-}
+	SerializableContent
+	::~SerializableContent()
+	= default;
 
-bool
-LangYa::SentryLib::SerializableContent
-::Serialize(const MemoryView& buffer)
-{
-	const auto view = GetSerializationMemoryView();
-	if (view.Size < buffer.Size)
+	MemoryView::SizeType
+	SerializableContent
+	::GetSerializationResultSize() const
 	{
-		return false;
+		return GetSerializationMemoryView().Size;
 	}
 
-	view.CopyTo(buffer);
-	return true;
+	bool
+	SerializableContent
+	::Serialize(const MemoryView& buffer)
+	{
+		const auto view = GetSerializationMemoryView();
+		if (view.Size < buffer.Size)
+		{
+			return false;
+		}
+
+		view.CopyTo(buffer);
+		return true;
+	}
 }
