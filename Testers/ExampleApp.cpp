@@ -1,6 +1,11 @@
 #include <LangYa/SentryLib.hpp>
 
 #include <cmath>
+#include <thread>
+#include <chrono>
+#include <memory>
+#include <iostream>
+#include <sstream>
 
 using namespace std;
 using namespace LangYa::SentryLib;
