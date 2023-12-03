@@ -158,7 +158,7 @@ struct DecisionResult
 	
 };
 
-void CollectionInformation(DecisionResource& resource, const DecisionResult& last_result)
+void CollectionInformation(DecisionResource& resource, const DecisionResult& lastResult)
 {
 
 }

@@ -2,6 +2,11 @@
 
 >[!tip] 如果你不能打开下面的链接，请尝试在 [GitHub](https://github.com/TaciturnJian/LangYa.SentryLib.git) 中打开。
 
+![HUST](https://img.shields.io/badge/RoboMaster-华中科技大学狼牙战队-blue)
+![Version](https://img.shields.io/badge/版本-1.0.0-blue)
+![CXXStandard](https://img.shields.io/badge/CXX-20-green)
+![CMakeVersion](https://img.shields.io/badge/CMAKE-3.16-green)
+
 SentryLib 是一个机器人工具库，它包含了如下功能或接口：
 
 - [内存管理（缓冲区，字节保护）](#内存管理工具)
