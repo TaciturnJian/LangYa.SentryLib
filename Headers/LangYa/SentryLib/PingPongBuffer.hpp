@@ -8,7 +8,7 @@
 
 namespace LangYa::SentryLib
 {
-	/// @brief A buffer that can be used as a ping-pong buffer.
+	/// @brief 一个二重字节缓冲区，用于交换数据并保证最终得到的数据一定以 '!' 开头。
 	///	@warning Not thread-safe.
 	class PingPongBuffer
 	{

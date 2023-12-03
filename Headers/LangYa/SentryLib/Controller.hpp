@@ -14,7 +14,7 @@ namespace LangYa::SentryLib
 {
 	/// @brief 代表一个机器人控制器
 	/// 修改此控制器的变量并在合适的时机调用
-	/// @code LangYa::SentryLib::Controller::Tick() 方法，
+	/// @code LangYa::SentryLib::Controller::Tick() @endcode 方法，
 	/// 即可发送正确的控制数据给机器人。
 	///	@tparam TControllerData 控制器内可以修改的数据类型，必须是可以序列化的，
 	///	有关可序列化的概念请参考 @code LangYa::SentryLib::Serializable @endcode
@@ -33,66 +33,80 @@ namespace LangYa::SentryLib
 	public:
 		/// @brief 给定控制器的连接，构造一个控制器
 		///	@param connection 控制器发送数据时使用的连接
-		explicit Controller(const std::weak_ptr<Connection>& connection) :
-			WeakConnection(connection),
-			SerializationBuffer(LatestData.GetSerializationResultSize())
-		{
-		}
+		explicit Controller(const std::weak_ptr<Connection>& connection);
 
 		/// @brief 更新控制器，将控制器的数据发送给机器人
 		///	@return 是否成功发送
-		bool Tick() override
-		{
-			// 确认连接资源正常
-			const auto connection = WeakConnection.lock();
-			if (connection == nullptr)
-			{
-				spdlog::warn("Controller> Cannot get valid connection!");
-				return false;
-			}
-
-			// 确认连接正常，不正常则重试 5 次
-			for (int i = 0; i <= 5 && !connection->IsConnected(); i++)
-			{
-				// 第六次则放弃
-				if (i == 5)
-				{
-					spdlog::warn("Controller> Give up after 5 attempts");
-					return false;
-				}
-
-				//TODO 连续两次重试的间隔
-
-				// 重新尝试连接到目标
-				spdlog::warn("Controller> Try connect to the target. {}/{}", i, 5);
-				connection->Connect();
-			}
-
-			// 从缓冲区中获取视图
-			const auto& view = SerializationBuffer.GetView();
-
-			// 序列化控制数据到缓冲区
-			if (!LatestData.Serialize(view))
-			{
-				spdlog::warn("Controller> Serialization failed!");
-				return false;
-			}
-
-			// 发送缓冲区数据
-			if (connection->Write(view) < view.Size)
-			{
-				spdlog::warn("Controller> Cannot write all bytes to connection!");
-				return false;
-			}
-
-			return true;
-		}
+		bool Tick() override;
 
 		/// @brief 获取最新数据的引用
 		///	@return 指向最新的数据
-		TControllerData* operator->()
-		{
-			return &LatestData;
-		}
+		TControllerData* operator->();
 	};
+
+#pragma region 函数实现
+
+	template <Serializable TControllerData>
+	Controller<TControllerData>::Controller(const std::weak_ptr<Connection>& connection):
+		WeakConnection(connection),
+		SerializationBuffer(LatestData.GetSerializationResultSize())
+	{
+	}
+
+	template <Serializable TControllerData>
+	bool Controller<TControllerData>::Tick()
+	{
+		// 确认连接资源正常
+		const auto connection = WeakConnection.lock();
+		if (connection == nullptr)
+		{
+			spdlog::warn("Controller> Cannot get valid connection!");
+			return false;
+		}
+
+		// 确认连接正常，不正常则重试 5 次
+		for (int i = 0; i <= 5 && !connection->IsConnected(); i++)
+		{
+			// 第六次则放弃
+			if (i == 5)
+			{
+				spdlog::warn("Controller> Give up after 5 attempts");
+				return false;
+			}
+
+			//TODO 连续两次重试的间隔
+
+			// 重新尝试连接到目标
+			spdlog::warn("Controller> Try connect to the target. {}/{}", i, 5);
+			connection->Connect();
+		}
+
+		// 从缓冲区中获取视图
+		const auto& view = SerializationBuffer.GetView();
+
+		// 序列化控制数据到缓冲区
+		if (!LatestData.Serialize(view))
+		{
+			spdlog::warn("Controller> Serialization failed!");
+			return false;
+		}
+
+		// 发送缓冲区数据
+		if (connection->Write(view) < view.Size)
+		{
+			spdlog::warn("Controller> Cannot write all bytes to connection!");
+			return false;
+		}
+
+		return true;
+	}
+
+	template <Serializable TControllerData>
+	TControllerData* Controller<TControllerData>::operator->()
+	{
+		return &LatestData;
+	}
+
+#pragma endregion
+
 }

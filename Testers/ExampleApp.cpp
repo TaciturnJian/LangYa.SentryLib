@@ -11,6 +11,7 @@ using namespace LangYa::SentryLib;
 struct SentryData final : SerializableContent, DeserializableContent
 {
 #pragma pack(push,1)
+
 	struct ComplexFireByte
 	{
 		unsigned char FireFlag      : 2 = 0;
@@ -119,11 +120,79 @@ struct SentryData final : SerializableContent, DeserializableContent
 		data(*this);
 		return true;
 	}
+
+	/// @brief 将数组转换为类似json格式的字符串。
+	///	@return 一个新的字符串实例。
+	[[nodiscard]] std::string ToString()
+	{
+		return fmt::format(
+			R"(("GimbalEulerAngle":{},"Velocity":{},"AmmoCount":{},"FireFlag":{}))", 
+			GimbalEulerAngle.ToString(),
+			Velocity.ToString(), 
+			AmmoCount, 
+			FireFlag
+		);
+	}
 };
+
+void TestServer()
+{
+	using namespace std::chrono_literals;
+
+	boost::asio::io_context tcp_io_context{};
+	boost::asio::ip::tcp::acceptor client_acceptor{tcp_io_context};
+	boost::asio::ip::tcp::endpoint endpoint{boost::asio::ip::make_address("127.0.0.1"), 8989};
+	client_acceptor.open(endpoint.protocol());
+	client_acceptor.bind(endpoint);
+	client_acceptor.listen();
+
+	while (true)
+	{
+		boost::asio::ip::tcp::socket socket{client_acceptor.accept()};
+		std::thread client_thread(
+			[&socket]
+			{
+				auto socket_ptr = std::make_shared<TCPConnection>(std::move(socket));
+				const auto client = std::make_shared<LangYaConnection>(
+					sizeof(SentryData::DataToDeserialize),
+					sizeof(SentryData::SerializationResult),
+					socket_ptr
+				);
+				std::thread io_handle{[client]{client->HandleIO();}};
+				io_handle.detach();
+				
+				const UniqueBuffer buffer{sizeof(SentryData::DataToDeserialize)};
+				auto& buffer_view = buffer.GetView();
+				SentryData data;
+
+				while (true)
+				{
+					std::this_thread::sleep_for(1ms);
+					if (client->Read(buffer_view) == 0)
+					{
+						spdlog::warn("Server> Cannot read data from buffer.");
+						continue;
+					}
+
+					if (!data.Deserialize(buffer_view))
+					{
+						spdlog::warn("Server> Failed to deserialize data.");
+						continue;
+					}
+
+					spdlog::info("Received: {}", data.ToString());
+				}
+			}
+		);
+		client_thread.detach();
+		std::this_thread::sleep_for(1s);
+	}
+
+}
 
 int main()
 {
-	boost::asio::io_context serial_port_io_context{};
+	/*boost::asio::io_context serial_port_io_context{};
 	auto serial_port = SerialPort::BuildShared
 	(
 		serial_port_io_context,
@@ -132,19 +201,26 @@ int main()
 			115200
 		}
 	);
-	serial_port->Connect();
+	serial_port->Connect();*/
 
-	/*boost::asio::io_context tcp_io_context{};
+	std::thread server_thread(
+		TestServer
+	);
+
+	server_thread.detach();
+
+	boost::asio::io_context tcp_io_context{};
 	auto tcp = TCPConnection::BuildShared(
 		tcp_io_context,
-		"",
+		"127.0.0.1",
 		8989
-	);*/
+	);
+	tcp->Connect();
 
 	auto decorated_serial_port = std::make_shared<LangYaConnection>(
 		sizeof(SentryData::DataToDeserialize), 
 		sizeof(SentryData::SerializationResult),
-		serial_port
+		tcp
 	);
 
 	std::vector<std::shared_ptr<Device>> devices;

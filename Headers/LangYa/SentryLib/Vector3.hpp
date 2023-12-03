@@ -152,4 +152,9 @@ namespace LangYa::SentryLib
 
 #pragma endregion
 	};
+
+	using Vector3I = Vector3<int>;
+	using Vector3F = Vector3<float>;
+	using Vector3D = Vector3<double>;
+
 }

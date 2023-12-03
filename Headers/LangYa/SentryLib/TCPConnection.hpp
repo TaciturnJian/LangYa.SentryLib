@@ -15,15 +15,23 @@ namespace LangYa::SentryLib
 		std::string RemoteEndpoint;
 		std::unique_ptr<boost::asio::ip::tcp::socket> Socket;
 
-		TCPConnection(boost::asio::io_context& ioContext, boost::asio::ip::tcp::endpoint remote);
-
 		void RefreshConnection(boost::system::error_code& result);
 
 	public:
 		TCPConnection() = delete;
 
+		TCPConnection(boost::asio::io_context& ioContext, boost::asio::ip::tcp::endpoint remote);
+
 		static std::shared_ptr<TCPConnection> BuildShared(boost::asio::io_context& ioContext, std::string address,
 		                                                  unsigned short port);
+
+		explicit TCPConnection(boost::asio::ip::tcp::socket&& socket) :
+			Endpoint(socket.remote_endpoint()),
+			RemoteEndpoint(fmt::format("{}:{}", socket.remote_endpoint().address().to_string(), socket.remote_endpoint().port())),
+			Socket(std::make_unique<boost::asio::ip::tcp::socket>(std::move(socket)))
+		{
+			
+		}
 		 
 		~TCPConnection() override;
 

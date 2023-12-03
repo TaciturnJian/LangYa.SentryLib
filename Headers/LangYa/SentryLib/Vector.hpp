@@ -5,6 +5,8 @@
 #include <sstream>
 #include <initializer_list>
 
+#include <LangYa/SentryLib/MemoryView.hpp>
+
 namespace LangYa::SentryLib
 {
 	template <typename TElement, MemoryView::SizeType Dimension>
@@ -110,7 +112,7 @@ namespace LangYa::SentryLib
 		friend std::ostream& operator<<(std::ostream& left, const Vector& right)
 		{
 			left << '(';
-			for (TElement i = 0; i < Dimension - 1; ++i)
+			for (MemoryView::SizeType i = 0; i < Dimension - 1; ++i)
 			{
 				left << right[i] << ',';
 			}
@@ -122,7 +124,7 @@ namespace LangYa::SentryLib
 		{
 			std::stringstream stream;
 			stream << '(';
-			for (TElement i = 0; i < Dimension - 1; ++i)
+			for (MemoryView::SizeType i = 0; i < Dimension - 1; ++i)
 			{
 				stream << Element[i] << ',';
 			}
@@ -140,4 +142,13 @@ namespace LangYa::SentryLib
 			return Element[dimension];
 		}
 	};
+
+	template<MemoryView::SizeType Dimension>
+	using VectorI = Vector<int, Dimension>;
+
+	template<MemoryView::SizeType Dimension>
+	using VectorF = Vector<float, Dimension>;
+
+	template<MemoryView::SizeType Dimension>
+	using VectorD = Vector<double, Dimension>;
 }
