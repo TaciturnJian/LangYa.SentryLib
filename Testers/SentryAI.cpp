@@ -163,9 +163,44 @@ void CollectionInformation(DecisionResource& resource, const DecisionResult& las
 
 }
 
+namespace Behavior
+{
+	void LookAt()
+	{
+		
+	}
+
+	void ShootAt()
+	{
+		
+	}
+
+	void Attack()
+	{
+		ShootAt();
+	}
+
+	void Defense()
+	{
+		LookAt();
+	}
+
+	void Move()
+	{
+		LookAt();
+	}
+
+	void IWantTo()
+	{
+		Attack();
+		Defense();
+		Move();
+	}
+}
+
 void GenerateDecision(const DecisionResource& resource, DecisionResult& result)
 {
-	
+	Behavior::IWantTo();
 }
 
 void ApplyDecision(DecisionResult& result)
