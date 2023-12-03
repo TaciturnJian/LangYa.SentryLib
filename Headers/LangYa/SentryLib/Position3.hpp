@@ -23,4 +23,8 @@ namespace LangYa::SentryLib
 		Myself operator=(Position3&& other) = default;
 		~Position3() = default;
 	};
+
+	using Position3I = Position3<int>;
+	using Position3F = Position3<float>;
+	using Position3D = Position3<double>;
 }

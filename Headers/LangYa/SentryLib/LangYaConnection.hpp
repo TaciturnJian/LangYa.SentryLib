@@ -1,10 +1,5 @@
 #pragma once
 
-#include <spdlog/spdlog.h>
-
-#include <thread>
-#include <chrono>
-
 #include <LangYa/SentryLib/Connection.hpp>
 #include <LangYa/SentryLib/TripleBuffer.hpp>
 #include <LangYa/SentryLib/PingPongBuffer.hpp>
@@ -62,11 +57,11 @@ namespace LangYa::SentryLib
 		///	@return 如果提供的内存视图的大小较小，则不会读取任何数据，返回 0 ，否则返回读取的数据包的数据大小。
 		MemoryView::SizeType Read(const MemoryView& view) override;
 
-		/// @brief Write the package to the buffer.
-		///	@param view The view for the resource, must be equal or bigger than RawSendSize.
+		/// @brief 把数据包写入到缓冲区中。
+		///	@param view 数据包的内存视图，数据包的大小一定大于或等于在构造此连接时提供的原始数据大小。
 		MemoryView::SizeType Write(const MemoryView& view) override;
 
-		/// @brief Make this connection connected.
+		/// @brief 让此连接的内部内容开始连接到目标。
 		void Connect() override;
 
 		/// @brief Check whether this connection is connected.

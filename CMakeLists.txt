@@ -1,11 +1,20 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(SentryLib)
+project(SentryLib 
+	VERSION 1.0.0
+	DESCRIPTION "A C++ Library for Robot Programing"
+	HOMEPAGE_URL "https://github.com/TaciturnJian/LangYa.SentryLib"
+	LANGUAGES CXX
+)
 
 # Cross Platform Support
 if(CMAKE_SYSTEM_NAME MATCHES "Linux") 
     set(SC_PUBLIC_PTHREAD PUBLIC pthread)
 	add_definitions(-DSC_LINUX)
+
+	add_compile_options(-fconcepts)
+	message("You may need add new line in your cmake: 'add_compile_options(-fconcepts)' ")
+
 elseif(CMAKE_SYSTEM_NAME MATCHES "Windows") 
     set(SC_PUBLIC_PTHREAD)
 	add_definitions(-DSC_WINDOWS)
@@ -19,9 +28,6 @@ find_package(Boost COMPONENTS system REQUIRED) # apt-get install libboost-all-de
 find_package(fmt REQUIRED) # apt-get install libfmd-dev
 find_package(OpenCV 4 REQUIRED) # apt-get install libopencv-dev
 find_package(Eigen3 REQUIRED) # apt-get install libEigen-dev
-
-add_compile_options(-fconcepts)
-message("You may need add new line in your cmake: 'add_compile_options(-fconcepts)' ")
 
 aux_source_directory(Sources SentryLibSources)
 add_library(${PROJECT_NAME} ${SentryLibSources})
@@ -45,5 +51,3 @@ foreach(TesterSource ${TesterSources})
 	set_target_properties(${TesterName} PROPERTIES CXX_STANDARD 20)
 	target_link_libraries(${TesterName} PRIVATE ${PROJECT_NAME})
 endforeach()
-
-

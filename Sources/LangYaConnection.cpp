@@ -1,3 +1,8 @@
+#include <thread>
+#include <chrono>
+
+#include <spdlog/spdlog.h>
+
 #include <LangYa/SentryLib/LangYaConnection.hpp>
 
 namespace LangYa::SentryLib
