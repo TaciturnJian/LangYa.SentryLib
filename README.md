@@ -1,6 +1,8 @@
 # SentryLib 代码文档
 
-SentryLib 是一个机器人工具库，简单来说，包含了如下功能或接口：
+>[!tip] 如果你不能打开下面的链接，请尝试在 [GitHub](https://github.com/TaciturnJian/LangYa.SentryLib.git) 中打开。
+
+SentryLib 是一个机器人工具库，它包含了如下功能或接口：
 
 - [内存管理（缓冲区，字节保护）](#内存管理工具)
 - [序列化与反序列化接口](#序列化与反序列化)
@@ -10,7 +12,7 @@ SentryLib 是一个机器人工具库，简单来说，包含了如下功能或�
 
 未来规划
 
-- [TODO List](#TODO_List)
+- [TODO List](#TODOList)
 
 ## 内存管理工具
 
@@ -55,7 +57,7 @@ SentryLib 是一个机器人工具库，简单来说，包含了如下功能或�
 - [控制器 Controller.hpp](./Headers/LangYa/SentryLib/Controller.hpp)
 
 
-## TODO List
+## TODOList
 
 - [x] 移动到 `LangYa::SentryLib`（修改所有文件）
     - [x] 把ToBeManaged所有头文件都放在 ./Headers/LangYa/Sentry/ 下
