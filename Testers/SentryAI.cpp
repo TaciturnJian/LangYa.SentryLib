@@ -153,7 +153,7 @@ struct DecisionResource
 	
 };
 
-struct DecisionResult
+     struct DecisionResult
 {
 	
 };
