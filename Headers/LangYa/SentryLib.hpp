@@ -11,6 +11,8 @@
 
 #include <LangYa/SentryLib/ApplicationInfo.hpp>
 #include <LangYa/SentryLib/ArmorPlateInfo.hpp>
+#include <LangYa/SentryLib/CommandLineArguments.hpp>
+#include <LangYa/SentryLib/Configurator.hpp>
 #include <LangYa/SentryLib/Connection.hpp>
 #include <LangYa/SentryLib/Controller.hpp>
 #include <LangYa/SentryLib/DeserializableContent.hpp>

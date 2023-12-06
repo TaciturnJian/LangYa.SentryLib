@@ -9,10 +9,18 @@
 #include <iostream>
 #include <functional>
 
+#ifdef SC_WINDOWS
 #include <boost/json.hpp>
+#else
+#ifdef SC_LINUX
+#include <boost/json/src.hpp>
+#endif
+#endif
+
 #include <boost/program_options.hpp>
 #include <boost/filesystem.hpp>
 #include <spdlog/spdlog.h>
+#include <fmt/format.h>
 
 #include <LangYa/SentryLib/CommandLineArguments.hpp>
 
@@ -34,7 +42,11 @@ namespace LangYa::SentryLib
 
 		boost::program_options::options_description_easy_init AddOption();
 
+		[[nodiscard]] bool operator()(const std::string& flag) const;
+
 		bool Load(const CommandLineArguments& commandLineArguments);
+
+		[[nodiscard]] std::string GetHelpContent() const;
 
 		static bool Load(const std::string& jsonFilePath, const JsonMapper& mapper);
 	};

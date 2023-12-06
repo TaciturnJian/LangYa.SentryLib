@@ -2,7 +2,15 @@
 
 namespace LangYa::SentryLib
 {
-	CommandLineArguments::CommandLineArguments() = default;
+	CommandLineArguments
+	::CommandLineArguments() = default;
+
+	CommandLineArguments
+	::CommandLineArguments(const int count, const CommandLineArgumentListType list) :
+		ArgumentCount(count),
+		ArgumentList(list)
+	{
+	}
 
 	CommandLineArguments
 	::CommandLineArguments(const unsigned count, const CommandLineArgumentListType list) :

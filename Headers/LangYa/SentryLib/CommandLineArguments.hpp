@@ -11,6 +11,7 @@ namespace LangYa::SentryLib
 		CommandLineArgumentListType ArgumentList{nullptr};
 
 		CommandLineArguments();
+		CommandLineArguments(int count, CommandLineArgumentListType list);
 		CommandLineArguments(unsigned int count, CommandLineArgumentListType list);
 		CommandLineArguments(const CommandLineArguments& other);
 		CommandLineArguments(CommandLineArguments&& other) noexcept;

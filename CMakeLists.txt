@@ -7,28 +7,34 @@ project(SentryLib
 	LANGUAGES CXX
 )
 
-# Cross Platform Support
+# 检查 vcpkg 是否安装
+
+# 跨平台支持 在这里写了 pthread 和 compile options
 if(CMAKE_SYSTEM_NAME MATCHES "Linux") 
     set(SC_PUBLIC_PTHREAD PUBLIC pthread)
 	add_definitions(-DSC_LINUX)
+	set(Boost_USE_STATIC_LIBS ON)
 
 	add_compile_options(-fconcepts)
-	message("You may need add new line in your cmake: 'add_compile_options(-fconcepts)' ")
+	message("!! You may need add new line in your cmake: 'add_compile_options(-fconcepts)' ")
 
 elseif(CMAKE_SYSTEM_NAME MATCHES "Windows") 
     set(SC_PUBLIC_PTHREAD)
 	add_definitions(-DSC_WINDOWS)
+
 else()
-    message(WARNING "The reliablity of this project on platforms except Windows|Linux are not guranteed")
+    message(WARNING "!! The reliablity of this project on platforms except Windows|Linux are not guranteed")
 endif()
 
-# Sentry Lib Requires Following Packages, install with comments after them
+message("!! If you met errors with 'boost' 'json', please install boost higher than 1.75.0")
+# Sentry Lib 会用到这些库，后面有安装指令，其中可能名称是错误的，请使用 apt search 自行验证
 find_package(spdlog REQUIRED) # apt-get install libspdlog-dev
-find_package(Boost COMPONENTS system program_options filesystem json REQUIRED) # apt-get install libboost-all-dev
-find_package(fmt REQUIRED) # apt-get install libfmd-dev
+find_package(Boost 1.75.0 REQUIRED COMPONENTS system program_options filesystem json) # apt-get install libboost-all-dev
+find_package(fmt REQUIRED) # apt-get install libfmt-dev
 find_package(OpenCV 4 REQUIRED) # apt-get install libopencv-dev
-find_package(Eigen3 REQUIRED) # apt-get install libEigen-dev
+find_package(Eigen3 REQUIRED) # apt-get install libeigen3-dev
 
+# 配置头文件、库、源文件
 aux_source_directory(Sources SentryLibSources)
 add_library(${PROJECT_NAME} ${SentryLibSources})
 target_include_directories(${PROJECT_NAME} BEFORE PUBLIC Headers)
@@ -45,9 +51,10 @@ target_link_libraries(${PROJECT_NAME}
 	PUBLIC ${OpenCV_LIBS}
 )
 
+# 添加测试应用程序
 aux_source_directory(Testers TesterSources)
 foreach(TesterSource ${TesterSources})
-	get_filename_component(TesterName ${TesterSource} NAME)
+	get_filename_component(TesterName ${TesterSource} NAME_WLE)
 	message("Found Tester: ${TesterName} -> ${TesterSource}")
 
 	add_executable(${TesterName} ${TesterSource})

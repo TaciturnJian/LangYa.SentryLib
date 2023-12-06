@@ -12,6 +12,14 @@ LangYa::SentryLib::Configurator
 
 bool
 LangYa::SentryLib::Configurator
+::operator()(const std::string& flag) const
+{
+	// ReSharper disable once CppUseAssociativeContains
+	return VariablesMap.count(flag) > 0;
+}
+
+bool
+LangYa::SentryLib::Configurator
 ::Load(const CommandLineArguments& commandLineArguments)
 {
 	try {
@@ -37,26 +45,43 @@ LangYa::SentryLib::Configurator
 	}
 }
 
+std::string
+LangYa::SentryLib::Configurator
+::GetHelpContent() const
+{
+	std::stringstream stream;
+	stream << OptionsWithDescription;
+	return fmt::format("Configurator> Command Line Argument Help Content:\n{}", stream.str());
+}
+
 bool
 LangYa::SentryLib::Configurator
 ::Load(const std::string& jsonFilePath, const JsonMapper& mapper)
 {
+	spdlog::info("Configurator> Loading json file({})", jsonFilePath);
 	std::ifstream file{};
-
 	try {
 		file.open(jsonFilePath, std::ios::in);
 	}
 	catch (const std::exception& ex)
 	{
-		spdlog::error("Configurator> Cannot open json file({}) to read: {}", jsonFilePath, ex.what());
+		spdlog::error(
+			"Configurator> Cannot open json file({}) to read: {}",
+			jsonFilePath,
+			ex.what()
+		);
 		return false;
 	}
 	catch (...)
 	{
-		spdlog::error("Configurator> Cannot open json file({}) to read: unknown exception ($2)", jsonFilePath);
+		spdlog::error(
+			"Configurator> Cannot open json file({}) to read: unknown exception ($2)",
+			jsonFilePath
+		);
 		return false;
 	}
 
+	spdlog::info("Configurator> Parsing content from json file({})", jsonFilePath);
 	boost::json::value json{};
 	try
 	{
@@ -64,18 +89,27 @@ LangYa::SentryLib::Configurator
 	}
 	catch (const std::exception& ex)
 	{
-		spdlog::error("Configurator> Cannot parse json file({}): {}", jsonFilePath, ex.what());
+		spdlog::error(
+			"Configurator> Cannot parse json file({}): {}",
+			jsonFilePath,
+			ex.what()
+		);
 		return false;
 	}
 	catch (...)
 	{
-		spdlog::error("Configurator> Cannot parse json file({}): unknown exception ($2)", jsonFilePath);
+		spdlog::error(
+			"Configurator> Cannot parse json file({}): unknown exception ($2)",
+			jsonFilePath
+		);
 		return false;
 	}
 
+	spdlog::info("Configurator> Closing json file({})", jsonFilePath);
 	file.close();
 	spdlog::info("Configurator> Closed json file({})", jsonFilePath);
 
+	spdlog::info("Configurator> Mapping json from file({})", jsonFilePath);
 	try
 	{
 		if (!mapper(json))

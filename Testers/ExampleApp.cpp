@@ -213,7 +213,7 @@ int main(const int argc, const char** argv)
 	int a{0};
 	Configurator cfg{};
 	cfg.AddOption()("help","display tips.")("a", boost::program_options::value(&a), "test");
-	cfg.Load(argc, argv);
+	cfg.Load({argc, argv});
 
 
 	spdlog::info("Value for test: {}", a);
