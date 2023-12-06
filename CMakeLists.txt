@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 
 project(SentryLib 
-	VERSION 1.0.0
+	VERSION 1.0.1
 	DESCRIPTION "A C++ Library for Robot Programing"
 	HOMEPAGE_URL "https://github.com/TaciturnJian/LangYa.SentryLib"
 	LANGUAGES CXX

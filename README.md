@@ -3,7 +3,7 @@
 >[!tip] 如果你不能打开下面的链接，请尝试在 [GitHub](https://github.com/TaciturnJian/LangYa.SentryLib.git) 中打开。
 
 ![HUST](https://img.shields.io/badge/RoboMaster-华中科技大学狼牙战队-blue)
-![Version](https://img.shields.io/badge/版本-1.0.0-blue)
+![Version](https://img.shields.io/badge/版本-1.0.1-blue)
 ![CXXStandard](https://img.shields.io/badge/CXX-20-green)
 ![CMakeVersion](https://img.shields.io/badge/CMAKE-3.16-green)
 
