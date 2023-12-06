@@ -1,0 +1,13 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="Node000000" href="$class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html" title="代表一个基本的读写类，在读和写的时候使用" alt="" coords="5,105,142,148"/>
+<area shape="rect" id="Node000001" href="$class_lang_ya_1_1_sentry_lib_1_1_connection.html" title="代表一个类似 IO 的连接，只提供基本的读写和开启/关闭连接的功能。 一个连接可以是一个文件，也可以是一个网络连接，也可以是一个内存映射文件。 只要能提供基于字节的读写方式，就可以被视为一个连接。" alt="" coords="190,105,326,148"/>
+<area shape="poly" id="edge13_Node000000_Node000001" title=" " alt="" coords="157,124,189,124,189,129,157,129"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html" title="代表一个使用狼牙通信方式的连接，用来装饰一个连接。 真正的数据发送过程在下面的函数中" alt="" coords="374,5,510,48"/>
+<area shape="poly" id="edge14_Node000001_Node000002" title=" " alt="" coords="307,95,373,58,395,46,397,51,375,62,310,100"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_memory_access.html" title="代表对与内存的访问，本质是对于" alt="" coords="374,72,510,115"/>
+<area shape="poly" id="edge15_Node000001_Node000003" title=" " alt="" coords="341,109,373,103,374,108,342,114"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_serial_port.html" title="代表系统中的一个串口，本质是" alt="" coords="374,139,510,181"/>
+<area shape="poly" id="edge16_Node000001_Node000004" title=" " alt="" coords="342,139,374,145,373,150,341,144"/>
+<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_t_c_p_connection.html" title=" " alt="" coords="374,205,510,248"/>
+<area shape="poly" id="edge17_Node000001_Node000005" title=" " alt="" coords="310,154,375,191,397,202,395,207,373,196,307,158"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="Headers/LangYa/SentryLib/Configurator.hpp" name="Headers/LangYa/SentryLib/Configurator.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="185,5,361,48"/>
+<area shape="rect" id="Node000002" href="$_sentry_lib_8hpp.html" title=" " alt="" coords="172,96,374,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="276,64,276,95,270,95,270,64"/>
+<area shape="rect" id="Node000004" href="$_example_app_8cpp.html" title=" " alt="" coords="5,171,173,197"/>
+<area shape="poly" id="edge7_Node000001_Node000004" title=" " alt="" coords="220,58,161,98,125,137,99,172,95,169,121,133,158,94,217,54"/>
+<area shape="rect" id="Node000007" href="$_configurator_8cpp.html" title=" " alt="" coords="397,96,565,123"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="342,51,449,93,447,98,340,56"/>
+<area shape="rect" id="Node000003" href="$_sentry_lib_8cpp.html" title=" " alt="" coords="196,171,350,197"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="276,138,276,170,270,170,270,138"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="228,131,122,173,120,168,226,126"/>
+<area shape="rect" id="Node000005" href="$_sentry_a_i_8cpp.html" title=" " alt="" coords="373,171,517,197"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="318,127,416,168,414,172,316,131"/>
+<area shape="rect" id="Node000006" href="$_test_app_8cpp.html" title=" " alt="" coords="541,171,682,197"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="348,124,553,167,552,173,347,129"/>
+</map>

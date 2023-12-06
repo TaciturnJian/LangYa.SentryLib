@@ -1,0 +1,7 @@
+<map id="PrintPingPong" name="PrintPingPong">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,110,73"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html#ae23a9a27f47d813e94bacafc76c70322" title="Get ping view of this buffer. Used for debug." alt="" coords="160,5,325,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,48,144,42,145,47,111,53"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html#a43f06adb4a3dba2495c3d9165b0be8a6" title="Get pong view of this buffer. Used for debug." alt="" coords="158,72,327,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="111,67,142,73,142,78,110,72"/>
+</map>

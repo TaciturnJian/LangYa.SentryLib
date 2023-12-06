@@ -1,0 +1,16 @@
+<map id="LangYa::SentryLib::Vector&lt; TElement, Dimension &gt;" name="LangYa::SentryLib::Vector&lt; TElement, Dimension &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,130,213,173"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_vector3.html" title=" " alt="" coords="673,34,809,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,119,242,62,299,35,358,16,399,8,442,4,527,6,606,18,673,33,672,38,606,23,527,12,442,9,400,13,359,21,301,40,245,67,153,123"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_vector2.html" title=" " alt="" coords="359,30,573,73"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="201,123,236,113,385,71,387,76,237,118,203,128"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_vector3.html" title=" " alt="" coords="359,97,573,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="228,138,358,125,359,131,229,143"/>
+<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="389,163,543,206"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="229,160,389,175,389,180,228,165"/>
+<area shape="rect" id="Node000006" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="389,230,543,273"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="189,175,237,190,389,231,388,236,236,195,188,181"/>
+<area shape="rect" id="Node000007" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="398,297,534,339"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="151,180,192,209,238,237,297,263,359,282,398,295,396,300,358,287,295,268,235,242,189,214,147,184"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="577,90,672,68,673,74,578,95"/>
+</map>

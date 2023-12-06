@@ -1,0 +1,5 @@
+<map id="RefereeSystemSensorData" name="RefereeSystemSensorData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,96,184,123"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_deserializable_content.html" title="代表一种可以反序列化的内容。" alt="" coords="21,5,168,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,64,97,95,92,95,92,64"/>
+</map>

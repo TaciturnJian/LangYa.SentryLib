@@ -1,0 +1,9 @@
+<map id="LangYa::SentryLib::Resource&lt; TContent &gt;" name="LangYa::SentryLib::Resource&lt; TContent &gt;">
+<area shape="rect" id="Node000001" title="Represent a resource with flag (usage indicators), usually this resource is used in multi&#45;threads...." alt="" coords="24,277,177,320"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,187,196,213"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,229,103,277,98,277,98,229"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="42,96,159,123"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,138,103,186,98,186,98,138"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="81,5,120,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="103,48,103,95,98,95,98,48"/>
+</map>

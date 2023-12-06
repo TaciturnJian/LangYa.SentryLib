@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LangYa.SentryLib: Testers/PingPongTester.cpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">A robot lib by LangYa.Sango mostly for softwares on sentry</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_ping_pong_tester_8cpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">PingPongTester.cpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;spdlog/spdlog.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="">LangYa/SentryLib/PingPongBuffer.hpp</a>&gt;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> PingPongTester.cpp 的引用(Include)关系图:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_ping_pong_tester_8cpp__incl.png" border="0" usemap="#a_testers_2_ping_pong_tester_8cpp" alt=""/></div>
+<map name="a_testers_2_ping_pong_tester_8cpp" id="a_testers_2_ping_pong_tester_8cpp">
+<area shape="rect" title=" " alt="" coords="189,5,374,32"/>
+<area shape="rect" title=" " alt="" coords="5,320,59,347"/>
+<area shape="poly" title=" " alt="" coords="192,35,145,53,123,66,105,82,85,107,69,136,48,197,38,257,34,305,29,304,32,256,43,196,64,133,80,104,101,78,120,61,142,48,190,30"/>
+<area shape="rect" title=" " alt="" coords="457,88,525,115"/>
+<area shape="poly" title=" " alt="" coords="315,30,445,80,443,84,313,35"/>
+<area shape="rect" title=" " alt="" coords="360,245,472,272"/>
+<area shape="poly" title=" " alt="" coords="295,31,344,88,372,127,396,170,407,200,414,230,409,231,402,202,391,172,367,130,340,91,291,34"/>
+<area shape="rect" href="_ping_pong_buffer_8hpp.html" title=" " alt="" coords="115,80,299,123"/>
+<area shape="poly" title=" " alt="" coords="272,34,238,71,234,67,268,31"/>
+<area shape="rect" title=" " alt="" coords="91,320,152,347"/>
+<area shape="poly" title=" " alt="" coords="183,125,158,147,133,176,110,209,95,246,93,261,95,277,107,306,102,308,90,278,88,262,89,245,105,207,128,172,155,143,179,121"/>
+<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="105,245,333,272"/>
+<area shape="poly" title=" " alt="" coords="179,125,163,140,149,158,142,177,145,196,161,218,181,235,178,239,157,221,140,198,137,177,144,156,159,137,176,121"/>
+<area shape="rect" href="_unique_buffer_8hpp.html" title=" " alt="" coords="155,171,381,197"/>
+<area shape="poly" title=" " alt="" coords="225,122,251,157,247,160,220,125"/>
+<area shape="poly" title=" " alt="" coords="187,275,74,319,72,314,185,270"/>
+<area shape="poly" title=" " alt="" coords="203,275,152,313,148,309,200,270"/>
+<area shape="rect" title=" " alt="" coords="179,320,248,347"/>
+<area shape="poly" title=" " alt="" coords="220,273,218,305,213,304,215,272"/>
+<area shape="rect" title=" " alt="" coords="272,320,413,347"/>
+<area shape="poly" title=" " alt="" coords="242,270,310,310,307,314,239,275"/>
+<area shape="poly" title=" " alt="" coords="295,195,378,236,375,240,293,200"/>
+<area shape="poly" title=" " alt="" coords="262,199,238,234,234,231,257,196"/>
+</map>
+</div>
+</div>
+<p><a href="">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_data.html">Data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:acc7fe2618a06a155e384666c137341da" id="r_acc7fe2618a06a155e384666c137341da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ping_pong_tester_8cpp.html#acc7fe2618a06a155e384666c137341da">PrintPingPong</a> (const <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html">LangYa::SentryLib::PingPongBuffer</a> &amp;buffer)</td></tr>
+<tr class="separator:acc7fe2618a06a155e384666c137341da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ping_pong_tester_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_ping_pong_tester_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.png" border="0" usemap="#a_ping_pong_tester_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" alt=""/></div>
+<map name="a_ping_pong_tester_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" id="a_ping_pong_tester_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,72,55,99"/>
+<area shape="rect" href="_ping_pong_tester_8cpp.html#acc7fe2618a06a155e384666c137341da" title=" " alt="" coords="103,47,207,73"/>
+<area shape="poly" title=" " alt="" coords="54,78,87,71,88,76,55,83"/>
+<area shape="rect" href="struct_data.html#ae7d6d34e1536eda138dc9d2b16f87edd" title=" " alt="" coords="103,97,207,124"/>
+<area shape="poly" title=" " alt="" coords="55,88,88,94,87,100,54,93"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html#ae23a9a27f47d813e94bacafc76c70322" title="Get ping view of this buffer. Used for debug." alt="" coords="257,5,422,48"/>
+<area shape="poly" title=" " alt="" coords="207,48,241,42,242,47,208,53"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html#a43f06adb4a3dba2495c3d9165b0be8a6" title="Get pong view of this buffer. Used for debug." alt="" coords="255,72,424,115"/>
+<area shape="poly" title=" " alt="" coords="208,67,240,73,239,78,207,72"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acc7fe2618a06a155e384666c137341da" name="acc7fe2618a06a155e384666c137341da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc7fe2618a06a155e384666c137341da">&#9670;&#160;</a></span>PrintPingPong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PrintPingPong </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html">LangYa::SentryLib::PingPongBuffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_ping_pong_tester_8cpp_acc7fe2618a06a155e384666c137341da_cgraph.png" border="0" usemap="#a_ping_pong_tester_8cpp_acc7fe2618a06a155e384666c137341da_cgraph" alt=""/></div>
+<map name="a_ping_pong_tester_8cpp_acc7fe2618a06a155e384666c137341da_cgraph" id="a_ping_pong_tester_8cpp_acc7fe2618a06a155e384666c137341da_cgraph">
+<area shape="rect" title=" " alt="" coords="5,47,110,73"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html#ae23a9a27f47d813e94bacafc76c70322" title="Get ping view of this buffer. Used for debug." alt="" coords="160,5,325,48"/>
+<area shape="poly" title=" " alt="" coords="110,48,144,42,145,47,111,53"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html#a43f06adb4a3dba2495c3d9165b0be8a6" title="Get pong view of this buffer. Used for debug." alt="" coords="158,72,327,115"/>
+<area shape="poly" title=" " alt="" coords="111,67,142,73,142,78,110,72"/>
+</map>
+</div>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_ping_pong_tester_8cpp_acc7fe2618a06a155e384666c137341da_icgraph.png" border="0" usemap="#a_ping_pong_tester_8cpp_acc7fe2618a06a155e384666c137341da_icgraph" alt=""/></div>
+<map name="a_ping_pong_tester_8cpp_acc7fe2618a06a155e384666c137341da_icgraph" id="a_ping_pong_tester_8cpp_acc7fe2618a06a155e384666c137341da_icgraph">
+<area shape="rect" title=" " alt="" coords="103,5,207,32"/>
+<area shape="rect" href="_ping_pong_tester_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_45e67ffd9957cb1794b0765c53759ee1.html">Testers</a></li><li class="navelem"><a class="el" href="_ping_pong_tester_8cpp.html">PingPongTester.cpp</a></li>
+    <li class="footer">生成于 2023年 十二月 6日 星期三 19:36:21 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

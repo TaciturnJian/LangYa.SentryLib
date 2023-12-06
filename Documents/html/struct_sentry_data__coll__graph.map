@@ -1,0 +1,11 @@
+<map id="SentryData" name="SentryData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="632,80,719,107"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html" title="Represent a content that is serializable." alt="" coords="301,5,437,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="454,39,609,72,632,78,631,83,608,77,452,44"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_deserializable_content.html" title="代表一种可以反序列化的内容。" alt="" coords="296,72,443,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="459,91,632,91,632,96,459,96"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_vector2.html" title=" " alt="" coords="262,139,476,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="491,152,550,143,607,128,653,105,656,110,609,133,551,148,492,157"/>
+<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="5,139,213,181"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="228,157,262,157,262,163,228,163"/>
+</map>
