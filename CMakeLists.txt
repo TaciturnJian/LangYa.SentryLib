@@ -24,7 +24,7 @@ endif()
 
 # Sentry Lib Requires Following Packages, install with comments after them
 find_package(spdlog REQUIRED) # apt-get install libspdlog-dev
-find_package(Boost COMPONENTS system REQUIRED) # apt-get install libboost-all-dev
+find_package(Boost COMPONENTS system program_options REQUIRED) # apt-get install libboost-all-dev
 find_package(fmt REQUIRED) # apt-get install libfmd-dev
 find_package(OpenCV 4 REQUIRED) # apt-get install libopencv-dev
 find_package(Eigen3 REQUIRED) # apt-get install libEigen-dev
@@ -36,6 +36,7 @@ set_target_properties(${PROJECT_NAME} PROPERTIES CXX_STANDARD 20)
 target_link_libraries(${PROJECT_NAME}
 	${SC_PUBLIC_PTHREAD}
 	PUBLIC Boost::system
+	PUBLIC Boost::program_options
 	PUBLIC fmt::fmt
 	PUBLIC spdlog::spdlog
 	PUBLIC ${Eigen3_LIBS}
