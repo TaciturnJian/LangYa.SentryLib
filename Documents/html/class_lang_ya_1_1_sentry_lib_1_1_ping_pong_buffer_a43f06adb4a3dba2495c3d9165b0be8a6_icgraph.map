@@ -1,7 +1,0 @@
-<map id="LangYa::SentryLib::PingPongBuffer::GetPong" name="LangYa::SentryLib::PingPongBuffer::GetPong">
-<area shape="rect" id="Node000001" title="Get pong view of this buffer. Used for debug." alt="" coords="255,5,424,48"/>
-<area shape="rect" id="Node000002" href="$_ping_pong_tester_8cpp.html#acc7fe2618a06a155e384666c137341da" title=" " alt="" coords="103,13,207,40"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,29,208,29,208,24,240,24"/>
-<area shape="rect" id="Node000003" href="$_ping_pong_tester_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,13,55,40"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,29,55,29,55,24,87,24"/>
-</map>

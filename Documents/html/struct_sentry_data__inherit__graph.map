@@ -1,7 +1,0 @@
-<map id="SentryData" name="SentryData">
-<area shape="rect" id="Node000001" title=" " alt="" coords="113,96,199,123"/>
-<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html" title="Represent a content that is serializable." alt="" coords="5,5,142,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,57,145,94,141,97,104,61"/>
-<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_deserializable_content.html" title="代表一种可以反序列化的内容。" alt="" coords="165,5,313,48"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,61,171,97,167,94,205,57"/>
-</map>

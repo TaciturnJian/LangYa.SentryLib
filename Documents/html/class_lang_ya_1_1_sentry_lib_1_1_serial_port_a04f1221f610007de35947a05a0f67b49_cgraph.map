@@ -1,5 +1,0 @@
-<map id="LangYa::SentryLib::SerialPort::Read" name="LangYa::SentryLib::SerialPort::Read">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,142,48"/>
-<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#ab03cdbd7de9a9347dd56d11b6b94f4ab" title="Convert this view to boost::asio::mutable_buffer." alt="" coords="190,5,341,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,24,174,24,174,29,142,29"/>
-</map>

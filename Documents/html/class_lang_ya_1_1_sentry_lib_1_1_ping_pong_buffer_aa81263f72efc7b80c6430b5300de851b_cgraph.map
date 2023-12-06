@@ -1,5 +1,0 @@
-<map id="LangYa::SentryLib::PingPongBuffer::Exchange" name="LangYa::SentryLib::PingPongBuffer::Exchange">
-<area shape="rect" id="Node000001" title="Input the resource, try to read bytes and then write them to destination. To make sure the destinatio..." alt="" coords="5,5,182,48"/>
-<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a4d6f24e486ceeee0feed63560d68eff2" title="Read the given memory started with the head, fill all memory for this memory view,..." alt="" coords="230,5,394,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,24,214,24,214,29,182,29"/>
-</map>
