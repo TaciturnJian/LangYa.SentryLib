@@ -16,19 +16,46 @@ bool MappingJsonToVariables(boost::json::value& json)
 	return true;
 }
 
+constexpr auto MaxLogFileSize = sizeof(char) * 1024 * 1024 * 5;
+constexpr auto MaxLogFileCount = 10;
+
+bool InitializeLogger()
+{
+	try
+	{
+		std::vector<spdlog::sink_ptr> sinks{};
+		sinks.push_back(
+			std::make_shared<spdlog::sinks::rotating_file_sink_mt>(
+				"logs/basic-log.txt", MaxLogFileSize, MaxLogFileCount
+			)
+		);
+		sinks.push_back(std::make_shared<spdlog::sinks::stdout_color_sink_mt>());
+		const auto logger = std::make_shared<spdlog::logger>("multi-logger", std::begin(sinks), std::end(sinks));
+		set_default_logger(logger);
+		return true;
+	}
+	catch (...)
+	{
+		std::cout << "Error in logging!";
+		return false;
+	}
+}
+
 int main(int argc, char** argv)
 {
+	if (!InitializeLogger()) return -1;
+
 	AppInfo.OutputTo_spdlog();
 
 	spdlog::info("{}> Parsing command line arguments", AppInfo.Name);
 	Configurator configurator{};
 	configurator.AddOption()
-		("help","display all help")
+		("help", "display all help")
 		(
-			"ConfigPath", 
+			"ConfigPath",
 			boost::program_options::value(&JsonFilePath),
-		 "File path for the configuration file. May be the absolute path will be better"
-		 );
+			"File path for the configuration file. May be the absolute path will be better"
+		);
 	if (!configurator.Load({argc, argv}))
 	{
 		spdlog::error("{}> Failed to parse command line arguments", AppInfo.Name);

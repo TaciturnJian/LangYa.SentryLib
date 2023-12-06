@@ -12,7 +12,6 @@ if(CMAKE_SYSTEM_NAME MATCHES "Linux")
     set(SC_PUBLIC_PTHREAD PUBLIC pthread)
 	add_definitions(-DSC_LINUX)
 	set(Boost_USE_STATIC_LIBS ON)
-
 	add_compile_options(-fconcepts)
 	message("!! You may need add new line in your cmake: 'add_compile_options(-fconcepts)' ")
 elseif(CMAKE_SYSTEM_NAME MATCHES "Windows") 
@@ -34,7 +33,10 @@ message("!! If you met errors with 'boost' 'json', please install boost higher t
 #	/usr/share/cmake-3.22/Modules/FindBoost.cmake:2360 (find_package_handle_standard_args)
 #	CMakeLists.txt:32 (find_package)
 ## 解决方式是安装最新版本的 boost 库，安装方式如下：（别想着我会给你写一次性就能成功执行的脚本，自己检查错误去;）
-# 安装步骤：使用 vcpkg 的
+#> 安装步骤1：（结果还是写了个脚本，在这个项目的Scripts下）
+# 执行里面的IntsallBoost.sh脚本，它会自动下载boost，解压，编译，安装，然后把库文件放到/usr/local/lib下，头文件放到/usr/local/include下
+##
+#> 安装步骤2：使用 vcpkg 的
 # 第一步，下载基本工具
 # $ sudo apt-get update && sudo apt-get install -y zip tar wget curl git cmake build-essential automake libtool m4 autoconf autoconf-archive
 # 第二步，下载 vcpkg，接下来，别sudo
@@ -47,11 +49,15 @@ message("!! If you met errors with 'boost' 'json', please install boost higher t
 # 第五步，去听几首歌或刷视频，在正常的电脑上一般很快(10min)就安装好了。
 # 最后一步，集成到cmake
 # $ ./vcpkg integrate install
+## 接下来调用 cmake 时需要手动指定工具链，上一行指令有提到，它类似于下面的内容：
+# CMake projects should use: "-DCMAKE_TOOLCHAIN_FILE=<vcpkg文件夹路径>/.vcpkg/scripts/buildsystems/vcpkg.cmake"
+# 即调用 cmake 时：
+# $cmake .. -DCMAKE_TOOLCHAIN_FILE=<vcpkg文件夹路径>/.vcpkg/scripts/buildsystems/vcpkg.cmake
 ### 
 
 # Sentry Lib 会用到这些库，后面有安装指令，其中可能名称是错误的，请使用 apt search 自行验证
 find_package(spdlog REQUIRED) # apt-get install libspdlog-dev
-find_package(Boost 1.75.0 REQUIRED COMPONENTS system program_options filesystem json) # apt-get install libboost-all-dev !! 这个指令安装的boost并不符合此项目的要求
+find_package(Boost 1.83.0 REQUIRED COMPONENTS system program_options filesystem json) # apt-get install libboost-all-dev !! 这个指令安装的boost并不符合此项目的要求
 find_package(fmt REQUIRED) # apt-get install libfmt-dev
 find_package(OpenCV 4 REQUIRED) # apt-get install libopencv-dev
 find_package(Eigen3 REQUIRED) # apt-get install libeigen3-dev

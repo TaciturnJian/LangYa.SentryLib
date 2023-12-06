@@ -9,14 +9,7 @@
 #include <iostream>
 #include <functional>
 
-#ifdef SC_WINDOWS
 #include <boost/json.hpp>
-#else
-#ifdef SC_LINUX
-#include <boost/json/src.hpp>
-#endif
-#endif
-
 #include <boost/program_options.hpp>
 #include <boost/filesystem.hpp>
 #include <spdlog/spdlog.h>

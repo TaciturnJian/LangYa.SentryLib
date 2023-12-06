@@ -13,6 +13,7 @@ std::ostream& LangYa::SentryLib::operator<<(std::ostream& stream, const Applicat
 		R"(","Version":)" << info.Version << R"("})";
 }
 
+// ReSharper disable once CppInconsistentNaming
 void LangYa::SentryLib::ApplicationInfo::OutputTo_spdlog() const
 {
 	spdlog::info("Application: ");
