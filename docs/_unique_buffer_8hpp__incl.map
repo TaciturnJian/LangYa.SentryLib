@@ -1,0 +1,15 @@
+<map id="Headers/LangYa/SentryLib/UniqueBuffer.hpp" name="Headers/LangYa/SentryLib/UniqueBuffer.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="71,5,247,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,118,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,51,90,88,87,84,132,47"/>
+<area shape="rect" id="Node000003" href="$_memory_view_8hpp.html" title=" " alt="" coords="142,96,370,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="186,47,231,84,228,88,182,51"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="95,171,164,197"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="235,126,166,165,163,160,233,121"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="188,171,242,197"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="251,125,232,159,227,156,247,122"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="266,171,326,197"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="265,122,284,156,280,158,261,125"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="351,171,492,197"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="286,121,379,161,377,166,284,126"/>
+</map>

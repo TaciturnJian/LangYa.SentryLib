@@ -1,0 +1,32 @@
+<map id="Headers/LangYa/SentryLib/Sensor.hpp" name="Headers/LangYa/SentryLib/Sensor.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="291,5,468,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,74,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="291,51,89,98,88,93,290,45"/>
+<area shape="rect" id="Node000003" href="$_connection_8hpp.html" title=" " alt="" coords="98,96,317,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="336,51,249,92,247,87,334,46"/>
+<area shape="rect" id="Node000005" href="$_memory_view_8hpp.html" title=" " alt="" coords="168,261,396,288"/>
+<area shape="poly" id="edge14_Node000001_Node000005" title=" " alt="" coords="379,49,364,124,350,170,331,215,306,251,302,248,326,212,345,168,359,122,374,48"/>
+<area shape="rect" id="Node000010" href="$_deserializable_content_8hpp.html" title=" " alt="" coords="392,171,602,213"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="391,47,408,83,432,121,465,158,461,161,428,124,404,85,386,50"/>
+<area shape="rect" id="Node000011" href="$_device_8hpp.html" title=" " alt="" coords="443,96,634,123"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="422,46,501,86,498,91,419,51"/>
+<area shape="rect" id="Node000012" href="$_unique_buffer_8hpp.html" title=" " alt="" coords="658,96,885,123"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="468,43,695,90,694,95,467,49"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="72,336,125,363"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="149,126,111,144,95,156,82,172,73,190,68,209,69,250,77,289,88,321,83,323,72,290,63,250,63,208,68,188,77,169,91,152,109,139,147,121"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="159,126,122,144,106,156,94,172,86,192,94,212,121,237,154,254,152,259,117,242,89,215,81,192,89,169,103,153,119,139,157,121"/>
+<area shape="rect" id="Node000009" href="$_memory_i_o_8hpp.html" title=" " alt="" coords="104,179,317,205"/>
+<area shape="poly" id="edge9_Node000003_Node000009" title=" " alt="" coords="211,123,212,163,207,164,205,123"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="251,291,140,335,138,330,249,286"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="160,336,228,363"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="269,291,223,328,219,324,265,286"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="252,336,312,363"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="285,289,285,320,280,320,280,289"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="337,336,478,363"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="305,286,374,326,371,330,303,291"/>
+<area shape="poly" id="edge10_Node000009_Node000005" title=" " alt="" coords="223,204,263,248,259,252,219,208"/>
+<area shape="poly" id="edge12_Node000010_Node000005" title=" " alt="" coords="442,216,331,258,329,253,441,211"/>
+<area shape="poly" id="edge17_Node000012_Node000005" title=" " alt="" coords="758,125,698,170,657,195,614,216,564,233,513,246,413,264,412,259,511,241,563,228,612,211,655,190,695,166,755,121"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="715,179,828,205"/>
+<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="774,123,774,163,769,163,769,123"/>
+</map>

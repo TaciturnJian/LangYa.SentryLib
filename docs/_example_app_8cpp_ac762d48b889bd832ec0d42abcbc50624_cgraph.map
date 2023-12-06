@@ -1,0 +1,19 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,117,55,144"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_configurator.html#a1218b925827295e15d29931caf5cdb40" title=" " alt="" coords="118,5,277,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="40,115,66,86,101,58,109,53,112,58,104,62,70,90,44,119"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_t_c_p_connection.html#a85c6dd99b3948c65e3b6a27c91081977" title=" " alt="" coords="103,72,292,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="55,123,87,115,88,121,56,128"/>
+<area shape="rect" id="Node000004" href="$struct_lang_ya_1_1_sentry_lib_1_1_application_info.html#aef2b02b359c1204402f7cbb4ad4a12c1" title=" " alt="" coords="114,139,281,197"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="56,133,99,143,98,149,55,139"/>
+<area shape="rect" id="Node000005" href="$_example_app_8cpp.html#aeb10b227c568daca42c814a335153f2d" title=" " alt="" coords="156,221,239,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="42,143,68,175,104,207,142,223,140,228,101,212,64,179,38,146"/>
+<area shape="rect" id="Node000006" href="$struct_sentry_data.html#af694e413ccb42a879417d70e4fcb7782" title="从缓冲区中反序列化资源。" alt="" coords="340,163,498,189"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="238,221,351,191,352,196,240,226"/>
+<area shape="rect" id="Node000007" href="$class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html#aa4fcd6178787270ed4e8a69d28e60303" title="Get the view of the unique memory in the buffer." alt="" coords="344,213,495,256"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="239,232,328,232,328,237,239,237"/>
+<area shape="rect" id="Node000008" href="$struct_sentry_data.html#ac7530389b85f7fd545917c171091c0bc" title="将数组转换为类似json格式的字符串。" alt="" coords="348,280,490,307"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="240,243,352,273,351,278,238,248"/>
+<area shape="rect" id="Node000009" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html#a2536dc99f90b1c95c49f8858bce94dc4" title=" " alt="" coords="546,272,683,315"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="491,291,531,291,531,296,491,296"/>
+</map>

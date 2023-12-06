@@ -1,0 +1,22 @@
+<map id="Headers/LangYa/SentryLib/PingPongBuffer.hpp" name="Headers/LangYa/SentryLib/PingPongBuffer.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="495,5,672,48"/>
+<area shape="rect" id="Node000002" href="$_sentry_lib_8hpp.html" title=" " alt="" coords="255,187,456,213"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="481,44,428,64,404,79,383,98,369,119,361,143,357,186,352,186,356,142,364,117,379,94,400,75,426,60,479,39"/>
+<area shape="rect" id="Node000007" href="$_lang_ya_connection_8hpp.html" title=" " alt="" coords="393,96,569,139"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="550,60,506,97,503,93,546,56"/>
+<area shape="rect" id="Node000009" href="$_ping_pong_buffer_8cpp.html" title=" " alt="" coords="592,104,780,131"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="620,56,673,102,670,106,617,60"/>
+<area shape="rect" id="Node000010" href="$_ping_pong_tester_8cpp.html" title=" " alt="" coords="804,104,989,131"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="672,50,852,101,851,106,671,55"/>
+<area shape="rect" id="Node000003" href="$_sentry_lib_8cpp.html" title=" " alt="" coords="5,261,159,288"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="294,220,131,263,129,258,292,215"/>
+<area shape="rect" id="Node000004" href="$_example_app_8cpp.html" title=" " alt="" coords="182,261,350,288"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="330,226,283,263,280,259,326,221"/>
+<area shape="rect" id="Node000005" href="$_sentry_a_i_8cpp.html" title=" " alt="" coords="374,261,518,288"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="384,221,432,259,429,263,381,225"/>
+<area shape="rect" id="Node000006" href="$_test_app_8cpp.html" title=" " alt="" coords="542,261,683,288"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="415,215,568,258,567,263,414,220"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="437,150,376,188,374,184,434,145"/>
+<area shape="rect" id="Node000008" href="$_lang_ya_connection_8cpp.html" title=" " alt="" coords="480,187,687,213"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="520,146,569,184,566,188,517,151"/>
+</map>

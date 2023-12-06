@@ -1,0 +1,11 @@
+<map id="LangYa::SentryLib::UniqueBuffer::GetView" name="LangYa::SentryLib::UniqueBuffer::GetView">
+<area shape="rect" id="Node000001" title="Get the view of the unique memory in the buffer." alt="" coords="308,56,459,99"/>
+<area shape="rect" id="Node000002" href="$_example_app_8cpp.html#aeb10b227c568daca42c814a335153f2d" title=" " alt="" coords="140,5,223,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="293,54,222,33,224,28,294,49"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_sensor.html#ae3f824c615d9bf1ec2d08dc75ee7e33d" title="调用此方法，设备会在短时间内阻塞线程完成工作。" alt="" coords="113,56,250,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="292,80,250,80,250,75,292,75"/>
+<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_triple_buffer.html#aa272b06a38aa898b3f587a7569e79d69" title="Construct an UniqueBuffer with the given UniqueBuffer. The size for each element (3 in total) is the ..." alt="" coords="103,123,260,165"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="304,106,249,125,248,119,302,101"/>
+<area shape="rect" id="Node000003" href="$_example_app_8cpp.html#ac762d48b889bd832ec0d42abcbc50624" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,21,55,21,55,16,125,16"/>
+</map>
