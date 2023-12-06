@@ -5,6 +5,8 @@
 #include <chrono>
 #include <memory>
 
+#include "LangYa/SentryLib/Configurator.hpp"
+
 using namespace std;
 using namespace LangYa::SentryLib;
 
@@ -189,7 +191,7 @@ void TestServer()
 	}
 }
 
-int main()
+int main(int argc, const char** argv)
 {
 	/*boost::asio::io_context serial_port_io_context{};
 	auto serial_port = SerialPort::BuildShared
@@ -207,6 +209,14 @@ int main()
 		"An application with sentry lib!",
 		{1, 0, 0, 0}
 	}.OutputTo_spdlog();
+
+	int a{0};
+	Configurator cfg{};
+	cfg.AddOption()("help","display tips.")("a", boost::program_options::value(&a), "test");
+	cfg.Load(argc, argv);
+
+
+	spdlog::info("Value for test: {}", a);
 
 	std::thread server_thread(
 		TestServer
