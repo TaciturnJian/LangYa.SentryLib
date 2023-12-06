@@ -1,13 +1,11 @@
 <map id="Sources/MemoryView.cpp" name="Sources/MemoryView.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="78,5,252,32"/>
-<area shape="rect" id="Node000002" href="$_memory_view_8hpp.html" title=" " alt="" coords="51,80,279,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,33,168,64,162,64,162,33"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,155,74,181"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="144,110,76,149,73,144,142,105"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="98,155,152,181"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="160,109,141,142,137,140,156,106"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="176,155,236,181"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="174,106,194,140,189,143,170,109"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="261,155,402,181"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="195,105,290,146,287,151,193,110"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="117,5,290,32"/>
+<area shape="rect" id="Node000002" href="$_memory_view_8hpp.html" title=" " alt="" coords="5,80,234,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,35,147,72,144,68,187,31"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="257,80,318,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="220,31,263,68,260,72,216,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="21,155,90,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,109,79,145,75,141,106,105"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="114,155,256,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="133,105,166,141,162,145,129,109"/>
 </map>

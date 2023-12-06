@@ -21,12 +21,12 @@ var dir_937900b87e0c7a5fa01190c395fb83f7 =
     [ "Sensor.cpp", "_sensor_8cpp.html", null ],
     [ "SentryLib.cpp", "_sentry_lib_8cpp.html", null ],
     [ "SerializableContent.cpp", "_serializable_content_8cpp.html", null ],
-    [ "Serializer.cpp", "_serializer_8cpp.html", null ],
     [ "SerialNumbers.cpp", "_serial_numbers_8cpp.html", null ],
     [ "SerialPort.cpp", "_serial_port_8cpp.html", "_serial_port_8cpp" ],
     [ "SerialPortInfo.cpp", "_serial_port_info_8cpp.html", null ],
     [ "Table.cpp", "_table_8cpp.html", null ],
     [ "TCPConnection.cpp", "_t_c_p_connection_8cpp.html", "_t_c_p_connection_8cpp" ],
+    [ "TimeStamp.cpp", "_time_stamp_8cpp.html", null ],
     [ "TripleBuffer.cpp", "_triple_buffer_8cpp.html", null ],
     [ "UniqueBuffer.cpp", "_unique_buffer_8cpp.html", null ]
 ];

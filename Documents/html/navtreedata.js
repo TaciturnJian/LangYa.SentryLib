@@ -38,6 +38,7 @@ var NAVTREE =
       [ "命名空间成员", "namespacemembers.html", [
         [ "全部", "namespacemembers.html", null ],
         [ "函数", "namespacemembers_func.html", null ],
+        [ "变量", "namespacemembers_vars.html", null ],
         [ "类型定义", "namespacemembers_type.html", null ],
         [ "枚举", "namespacemembers_enum.html", null ]
       ] ]
@@ -70,9 +71,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_info_8cpp.html",
-"class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html#aa96f095bebd5d4a4d6ca2730bb5e00e1",
-"class_lang_ya_1_1_sentry_lib_1_1_vector3.html#a69305d1932045aff47f5d163bc1f85bf",
-"struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html",
+"class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html#a43f06adb4a3dba2495c3d9165b0be8a6",
+"class_lang_ya_1_1_sentry_lib_1_1_vector3.html#a7945759ae90863d150ddb61f468d2917",
+"struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a382b2718add95dfe0916f58b30bfd50e",
 ""
 ];
 

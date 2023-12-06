@@ -1,21 +1,18 @@
 <map id="Sources/PingPongBuffer.cpp" name="Sources/PingPongBuffer.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="43,5,231,32"/>
-<area shape="rect" id="Node000002" href="$_ping_pong_buffer_8hpp.html" title=" " alt="" coords="45,80,229,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,33,140,65,134,65,134,33"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,320,66,347"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="126,125,96,179,63,246,44,306,39,304,58,244,91,176,122,122"/>
-<area shape="rect" id="Node000004" href="$_memory_view_8hpp.html" title=" " alt="" coords="73,245,302,272"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="144,123,165,196,178,230,173,232,160,198,139,124"/>
-<area shape="rect" id="Node000008" href="$_unique_buffer_8hpp.html" title=" " alt="" coords="174,171,401,197"/>
-<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="177,121,252,161,249,165,174,126"/>
-<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="162,275,77,315,75,310,160,270"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="89,320,158,347"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="178,274,147,310,143,306,174,271"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="182,320,236,347"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="194,272,203,304,198,306,189,273"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="260,320,401,347"/>
-<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="214,270,293,310,290,315,211,275"/>
-<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="272,200,219,238,216,234,269,196"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="326,245,438,272"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="306,196,355,234,352,238,302,200"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="174,5,361,32"/>
+<area shape="rect" id="Node000002" href="$_ping_pong_buffer_8hpp.html" title=" " alt="" coords="102,80,286,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="258,34,225,70,221,67,254,31"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="311,88,371,115"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="281,31,322,75,318,79,277,34"/>
+<area shape="rect" id="Node000003" href="$_memory_view_8hpp.html" title=" " alt="" coords="5,245,234,272"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="179,124,147,172,135,202,127,231,122,230,130,200,142,169,174,121"/>
+<area shape="rect" id="Node000006" href="$_unique_buffer_8hpp.html" title=" " alt="" coords="157,171,383,197"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="216,121,250,157,246,161,212,125"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="21,320,90,347"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="110,274,79,310,75,306,106,271"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="114,320,256,347"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="133,271,166,307,162,310,129,274"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="245,200,161,241,158,236,243,195"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="258,245,370,272"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="280,196,301,231,296,233,276,199"/>
 </map>

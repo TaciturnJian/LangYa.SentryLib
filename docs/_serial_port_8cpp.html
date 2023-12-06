@@ -98,6 +98,7 @@ $(document).ready(function(){initNavTree('_serial_port_8cpp.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="">LangYa/SentryLib/SerialPort.hpp</a>&gt;</code><br />
+<code>#include &lt;spdlog/spdlog.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> SerialPort.cpp 的引用(Include)关系图:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -105,35 +106,34 @@ $(document).ready(function(){initNavTree('_serial_port_8cpp.html',''); initResiz
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_serial_port_8cpp__incl.png" border="0" usemap="#a_sources_2_serial_port_8cpp" alt=""/></div>
 <map name="a_sources_2_serial_port_8cpp" id="a_sources_2_serial_port_8cpp">
-<area shape="rect" title=" " alt="" coords="207,5,363,32"/>
-<area shape="rect" href="_serial_port_8hpp.html" title=" " alt="" coords="180,80,390,107"/>
-<area shape="poly" title=" " alt="" coords="288,33,288,64,282,64,282,33"/>
+<area shape="rect" title=" " alt="" coords="259,5,415,32"/>
+<area shape="rect" href="_serial_port_8hpp.html" title=" " alt="" coords="140,80,350,107"/>
+<area shape="poly" title=" " alt="" coords="322,35,274,73,271,68,319,30"/>
+<area shape="rect" title=" " alt="" coords="374,80,486,107"/>
+<area shape="poly" title=" " alt="" coords="355,30,404,68,401,73,351,35"/>
 <area shape="rect" title=" " alt="" coords="5,163,74,189"/>
-<area shape="poly" title=" " alt="" coords="239,110,87,157,82,159,81,154,85,152,237,105"/>
+<area shape="poly" title=" " alt="" coords="212,110,87,157,83,159,81,154,85,152,210,105"/>
 <area shape="rect" title=" " alt="" coords="98,163,205,189"/>
-<area shape="poly" title=" " alt="" coords="265,109,187,157,184,152,263,105"/>
-<area shape="rect" title=" " alt="" coords="229,163,341,189"/>
-<area shape="poly" title=" " alt="" coords="288,107,288,147,282,147,282,107"/>
-<area shape="rect" href="_connection_8hpp.html" title=" " alt="" coords="365,163,583,189"/>
-<area shape="poly" title=" " alt="" coords="315,105,432,154,430,159,313,110"/>
-<area shape="rect" href="_serial_port_info_8hpp.html" title=" " alt="" coords="654,155,839,197"/>
-<area shape="poly" title=" " alt="" coords="358,105,639,153,638,159,357,110"/>
-<area shape="rect" title=" " alt="" coords="373,395,426,421"/>
-<area shape="poly" title=" " alt="" coords="473,191,411,381,406,379,468,189"/>
-<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="448,320,676,347"/>
-<area shape="poly" title=" " alt="" coords="474,190,469,228,471,250,478,271,496,293,519,310,516,314,492,297,473,273,466,251,464,228,468,190"/>
-<area shape="rect" href="_memory_i_o_8hpp.html" title=" " alt="" coords="488,245,701,272"/>
-<area shape="poly" title=" " alt="" coords="494,188,565,235,562,239,491,192"/>
-<area shape="poly" title=" " alt="" coords="535,350,441,391,439,386,533,345"/>
-<area shape="rect" title=" " alt="" coords="451,395,519,421"/>
-<area shape="poly" title=" " alt="" coords="551,349,511,386,507,382,547,345"/>
-<area shape="rect" title=" " alt="" coords="543,395,603,421"/>
-<area shape="poly" title=" " alt="" coords="567,347,571,379,566,380,561,348"/>
-<area shape="rect" title=" " alt="" coords="628,395,769,421"/>
-<area shape="poly" title=" " alt="" coords="587,345,662,385,660,389,585,350"/>
-<area shape="poly" title=" " alt="" coords="591,274,576,307,571,305,586,271"/>
-<area shape="rect" title=" " alt="" coords="725,245,815,272"/>
-<area shape="poly" title=" " alt="" coords="755,197,765,229,759,231,750,199"/>
+<area shape="poly" title=" " alt="" coords="232,109,179,155,175,151,229,105"/>
+<area shape="rect" href="_connection_8hpp.html" title=" " alt="" coords="229,163,447,189"/>
+<area shape="poly" title=" " alt="" coords="261,105,314,151,311,155,258,109"/>
+<area shape="rect" href="_serial_port_info_8hpp.html" title=" " alt="" coords="560,155,746,197"/>
+<area shape="poly" title=" " alt="" coords="310,105,546,151,545,156,309,110"/>
+<area shape="rect" title=" " alt="" coords="104,245,157,272"/>
+<area shape="poly" title=" " alt="" coords="307,192,172,244,170,239,305,187"/>
+<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="152,320,380,347"/>
+<area shape="poly" title=" " alt="" coords="296,192,254,213,236,228,222,247,218,262,221,278,242,308,238,311,217,280,213,262,217,244,232,225,252,209,293,188"/>
+<area shape="rect" href="_memory_i_o_8hpp.html" title=" " alt="" coords="232,245,445,272"/>
+<area shape="poly" title=" " alt="" coords="341,190,341,230,336,230,336,190"/>
+<area shape="rect" href="_c_sharpp_8hpp.html" title=" " alt="" coords="469,245,672,272"/>
+<area shape="poly" title=" " alt="" coords="375,187,521,237,519,242,374,192"/>
+<area shape="rect" title=" " alt="" coords="168,395,236,421"/>
+<area shape="poly" title=" " alt="" coords="257,349,225,385,221,381,253,345"/>
+<area shape="rect" title=" " alt="" coords="261,395,402,421"/>
+<area shape="poly" title=" " alt="" coords="280,345,312,381,308,385,276,349"/>
+<area shape="poly" title=" " alt="" coords="328,274,291,311,287,307,324,271"/>
+<area shape="rect" title=" " alt="" coords="696,245,786,272"/>
+<area shape="poly" title=" " alt="" coords="677,196,718,233,714,237,674,200"/>
 </map>
 </div>
 </div>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('_serial_port_8cpp.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a class="el" href="_serial_port_8cpp.html">SerialPort.cpp</a></li>
-    <li class="footer">生成于 2023年 十二月 6日 星期三 19:36:21 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 7日 星期四 00:27:55 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

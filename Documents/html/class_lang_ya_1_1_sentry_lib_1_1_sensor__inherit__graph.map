@@ -1,5 +1,5 @@
 <map id="LangYa::SentryLib::Sensor&lt; TSensorData &gt;" name="LangYa::SentryLib::Sensor&lt; TSensorData &gt;">
-<area shape="rect" id="Node000001" title="代表一个机器人传感器。 Tick this device so it will update sensor data from connection, read the data from its me..." alt="" coords="5,96,167,139"/>
-<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_device.html" title="代表一种虚拟的设备，它需要有一个外部循环去调用。" alt="" coords="18,5,154,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,64,89,96,83,96,83,64"/>
+<area shape="rect" id="Node000001" title="代表一个机器人传感器。 Tick this device so it will update sensor data from connection, read the data from its me..." alt="" coords="5,80,167,123"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="56,5,116,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,48,89,80,83,80,83,48"/>
 </map>

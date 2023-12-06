@@ -1,3 +1,7 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" href="$struct_embedded_software_sensor_data_1_1_deserialization_source.html" title=" " alt="" coords="5,5,207,48"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,47,65,73"/>
+<area shape="rect" id="Node000001" href="$class_lang_ya_1_1_sentry_lib_1_1_controller.html" title="代表一个机器人控制器 修改此控制器的变量并在合适的时机调用" alt="" coords="113,5,302,48"/>
+<area shape="poly" id="edge5_Node000000_Node000001" title=" " alt="" coords="79,49,112,42,113,48,80,54"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_sensor.html" title="代表一个机器人传感器。 Tick this device so it will update sensor data from connection, read the data from its me..." alt="" coords="127,72,288,115"/>
+<area shape="poly" id="edge6_Node000000_Node000002" title=" " alt="" coords="81,66,127,75,126,80,80,71"/>
 </map>

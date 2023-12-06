@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('struct_lang_ya_1_1_sentry_lib_1_1_appl
 </div><!--header-->
 <div class="contents">
 
-<p>一些简单的应用程序信息，包装了简单的信息输出方法。  
+<p>一些简单的应用程序信息，包装了简单的信息输出方法。 主要利用到 stream spdlog 和 fmt 等将此类的信息格式化输出到控制台。  
  <a href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html#details">更多...</a></p>
 
 <p><code>#include &lt;<a class="el" href="">ApplicationInfo.hpp</a>&gt;</code></p>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('struct_lang_ya_1_1_sentry_lib_1_1_appl
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_application_info__coll__graph.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_application_info_coll__map" alt="Collaboration graph"/></div>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_application_info_coll__map" id="a_lang_ya_1_1_sentry_lib_1_1_application_info_coll__map">
-<area shape="rect" title="一些简单的应用程序信息，包装了简单的信息输出方法。" alt="" coords="1469,40,1606,83"/>
+<area shape="rect" title="一些简单的应用程序信息，包装了简单的信息输出方法。 主要利用到 stream spdlog 和 fmt 等将此类的信息格式化输出到控制台。" alt="" coords="1469,40,1606,83"/>
 <area shape="rect" title=" " alt="" coords="1228,13,1307,40"/>
 <area shape="poly" title=" " alt="" coords="1323,31,1469,50,1468,55,1322,36"/>
 <area shape="rect" title=" " alt="" coords="851,5,976,48"/>
@@ -135,8 +135,10 @@ $(document).ready(function(){initNavTree('struct_lang_ya_1_1_sentry_lib_1_1_appl
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:add17857784497951061de77939330ff3" id="r_add17857784497951061de77939330ff3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html#add17857784497951061de77939330ff3">ToString</a> () const</td></tr>
+<tr class="memdesc:add17857784497951061de77939330ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">转为字符串。  <br /></td></tr>
 <tr class="separator:add17857784497951061de77939330ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef2b02b359c1204402f7cbb4ad4a12c1" id="r_aef2b02b359c1204402f7cbb4ad4a12c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html#aef2b02b359c1204402f7cbb4ad4a12c1">OutputTo_spdlog</a> () const</td></tr>
+<tr class="memdesc:aef2b02b359c1204402f7cbb4ad4a12c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用 spdlog 输出。  <br /></td></tr>
 <tr class="separator:aef2b02b359c1204402f7cbb4ad4a12c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -154,10 +156,11 @@ Public 属性</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 友元</h2></td></tr>
 <tr class="memitem:a0b07fe49ea97f999e8538fe0b5a434c1" id="r_a0b07fe49ea97f999e8538fe0b5a434c1"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html#a0b07fe49ea97f999e8538fe0b5a434c1">operator&lt;&lt;</a> (std::ostream &amp;stream, const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html">ApplicationInfo</a> &amp;info)</td></tr>
+<tr class="memdesc:a0b07fe49ea97f999e8538fe0b5a434c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">向流中输入内容。 输出格式为{"Name":"&lt;Name&gt;","Description":"&lt;Description&gt;","Version":"&lt;Version&gt;"}。  <br /></td></tr>
 <tr class="separator:a0b07fe49ea97f999e8538fe0b5a434c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>一些简单的应用程序信息，包装了简单的信息输出方法。 </p>
+<div class="textblock"><p>一些简单的应用程序信息，包装了简单的信息输出方法。 主要利用到 stream spdlog 和 fmt 等将此类的信息格式化输出到控制台。 </p>
 </div><h2 class="groupheader">成员函数说明</h2>
 <a id="aef2b02b359c1204402f7cbb4ad4a12c1" name="aef2b02b359c1204402f7cbb4ad4a12c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aef2b02b359c1204402f7cbb4ad4a12c1">&#9670;&#160;</a></span>OutputTo_spdlog()</h2>
@@ -173,6 +176,8 @@ Public 属性</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>使用 spdlog 输出。 </p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -180,7 +185,7 @@ Public 属性</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_application_info_aef2b02b359c1204402f7cbb4ad4a12c1_icgraph.png" border="0" usemap="#astruct_lang_ya_1_1_sentry_lib_1_1_application_info_aef2b02b359c1204402f7cbb4ad4a12c1_icgraph" alt=""/></div>
 <map name="astruct_lang_ya_1_1_sentry_lib_1_1_application_info_aef2b02b359c1204402f7cbb4ad4a12c1_icgraph" id="astruct_lang_ya_1_1_sentry_lib_1_1_application_info_aef2b02b359c1204402f7cbb4ad4a12c1_icgraph">
-<area shape="rect" title=" " alt="" coords="103,15,269,73"/>
+<area shape="rect" title="使用 spdlog 输出。" alt="" coords="103,15,269,73"/>
 <area shape="rect" href="_example_app_8cpp.html#ac762d48b889bd832ec0d42abcbc50624" title=" " alt="" coords="5,5,55,32"/>
 <area shape="poly" title=" " alt="" coords="87,31,55,25,55,20,88,25"/>
 <area shape="rect" href="_test_app_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,56,55,83"/>
@@ -204,6 +209,8 @@ Public 属性</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>转为字符串。 </p>
 
 </div>
 </div>
@@ -241,6 +248,16 @@ Public 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>向流中输入内容。 输出格式为{"Name":"&lt;Name&gt;","Description":"&lt;Description&gt;","Version":"&lt;Version&gt;"}。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>格式化的结果输出到此流中。 </td></tr>
+    <tr><td class="paramname">info</td><td>应用程序信息。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>参数中的流。 </dd></dl>
 
 </div>
 </div>
@@ -295,7 +312,6 @@ Public 属性</h2></td></tr>
 </div>
 <hr/>该结构体的文档由以下文件生成:<ul>
 <li>Headers/LangYa/SentryLib/<a class="el" href="">ApplicationInfo.hpp</a></li>
-<li>Sources/<a class="el" href="">ApplicationInfo.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -303,7 +319,7 @@ Public 属性</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_lang_ya.html">LangYa</a></li><li class="navelem"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">SentryLib</a></li><li class="navelem"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html">ApplicationInfo</a></li>
-    <li class="footer">生成于 2023年 十二月 6日 星期三 19:36:21 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 7日 星期四 00:27:55 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

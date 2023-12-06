@@ -1,7 +1,5 @@
 <map id="LangYa::SentryLib::SerialPort" name="LangYa::SentryLib::SerialPort">
-<area shape="rect" id="Node000001" title="代表系统中的一个串口，本质是" alt="" coords="5,187,142,229"/>
-<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_connection.html" title="代表一个类似 IO 的连接，只提供基本的读写和开启/关闭连接的功能。 一个连接可以是一个文件，也可以是一个网络连接，也可以是一个内存映射文件。 只要能提供基于字节的读写方式，就可以被视为一个连接。" alt="" coords="5,96,142,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,154,76,186,71,186,71,154"/>
-<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html" title="代表一个基本的读写类，在读和写的时候使用" alt="" coords="5,5,142,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="76,64,76,96,71,96,71,64"/>
+<area shape="rect" id="Node000001" title="代表系统中的一个串口，本质是" alt="" coords="5,80,142,123"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="30,5,117,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,48,76,80,71,80,71,48"/>
 </map>

@@ -1,13 +1,23 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" href="$class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html" title="代表一个基本的读写类，在读和写的时候使用" alt="" coords="5,105,142,148"/>
-<area shape="rect" id="Node000001" href="$class_lang_ya_1_1_sentry_lib_1_1_connection.html" title="代表一个类似 IO 的连接，只提供基本的读写和开启/关闭连接的功能。 一个连接可以是一个文件，也可以是一个网络连接，也可以是一个内存映射文件。 只要能提供基于字节的读写方式，就可以被视为一个连接。" alt="" coords="190,105,326,148"/>
-<area shape="poly" id="edge13_Node000000_Node000001" title=" " alt="" coords="157,124,189,124,189,129,157,129"/>
-<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html" title="代表一个使用狼牙通信方式的连接，用来装饰一个连接。 真正的数据发送过程在下面的函数中" alt="" coords="374,5,510,48"/>
-<area shape="poly" id="edge14_Node000001_Node000002" title=" " alt="" coords="307,95,373,58,395,46,397,51,375,62,310,100"/>
-<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_memory_access.html" title="代表对与内存的访问，本质是对于" alt="" coords="374,72,510,115"/>
-<area shape="poly" id="edge15_Node000001_Node000003" title=" " alt="" coords="341,109,373,103,374,108,342,114"/>
-<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_serial_port.html" title="代表系统中的一个串口，本质是" alt="" coords="374,139,510,181"/>
-<area shape="poly" id="edge16_Node000001_Node000004" title=" " alt="" coords="342,139,374,145,373,150,341,144"/>
-<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_t_c_p_connection.html" title=" " alt="" coords="374,205,510,248"/>
-<area shape="poly" id="edge17_Node000001_Node000005" title=" " alt="" coords="310,154,375,191,397,202,395,207,373,196,307,158"/>
+<area shape="rect" id="Node000000" href="$class_lang_ya_1_1_sentry_lib_1_1_deserializable_content.html" title="代表一种可以反序列化的内容。" alt="" coords="5,99,153,141"/>
+<area shape="rect" id="Node000001" href="$struct_auto_aimer_software_sensor_data.html" title=" " alt="" coords="208,5,409,32"/>
+<area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="120,87,158,63,200,42,234,30,235,35,202,46,160,68,123,92"/>
+<area shape="rect" id="Node000002" href="$struct_embedded_software_sensor_data.html" title=" " alt="" coords="208,56,409,83"/>
+<area shape="poly" id="edge8_Node000000_Node000002" title=" " alt="" coords="167,98,244,81,245,86,169,103"/>
+<area shape="rect" id="Node000003" href="$struct_navigator_software_sensor_data.html" title=" " alt="" coords="212,107,405,133"/>
+<area shape="poly" id="edge9_Node000000_Node000003" title=" " alt="" coords="168,117,212,117,212,123,168,123"/>
+<area shape="rect" id="Node000004" href="$struct_referee_system_sensor_data.html" title=" " alt="" coords="219,157,398,184"/>
+<area shape="poly" id="edge10_Node000000_Node000004" title=" " alt="" coords="169,137,245,154,244,159,167,142"/>
+<area shape="rect" id="Node000005" href="$struct_sentry_data.html" title=" " alt="" coords="265,208,352,235"/>
+<area shape="poly" id="edge11_Node000000_Node000005" title=" " alt="" coords="123,148,160,172,202,194,265,212,264,217,200,198,158,177,120,153"/>
+<area shape="rect" id="Node000006" href="$class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html" title="Represent a content that is serializable." alt="" coords="11,301,147,344"/>
+<area shape="poly" id="edge16_Node000006_Node000005" title=" " alt="" coords="120,290,158,266,200,244,264,226,265,231,202,249,160,270,123,294"/>
+<area shape="rect" id="Node000007" href="$struct_auto_aimer_software_controller_data.html" title=" " alt="" coords="201,259,416,285"/>
+<area shape="poly" id="edge12_Node000006_Node000007" title=" " alt="" coords="162,302,244,283,245,289,163,307"/>
+<area shape="rect" id="Node000008" href="$struct_embedded_software_controller_data.html" title=" " alt="" coords="201,309,416,336"/>
+<area shape="poly" id="edge13_Node000006_Node000008" title=" " alt="" coords="163,320,200,320,200,325,163,325"/>
+<area shape="rect" id="Node000009" href="$struct_navigator_software_controller_data.html" title=" " alt="" coords="205,360,412,387"/>
+<area shape="poly" id="edge14_Node000006_Node000009" title=" " alt="" coords="163,338,245,357,244,362,162,344"/>
+<area shape="rect" id="Node000010" href="$struct_referee_system_controller_data.html" title=" " alt="" coords="212,411,405,437"/>
+<area shape="poly" id="edge15_Node000006_Node000010" title=" " alt="" coords="123,351,160,375,202,396,235,408,234,413,200,401,158,380,120,356"/>
 </map>

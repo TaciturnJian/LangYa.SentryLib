@@ -1,5 +1,5 @@
 <map id="LangYa::SentryLib::ApplicationInfo" name="LangYa::SentryLib::ApplicationInfo">
-<area shape="rect" id="Node000001" title="一些简单的应用程序信息，包装了简单的信息输出方法。" alt="" coords="1469,40,1606,83"/>
+<area shape="rect" id="Node000001" title="一些简单的应用程序信息，包装了简单的信息输出方法。 主要利用到 stream spdlog 和 fmt 等将此类的信息格式化输出到控制台。" alt="" coords="1469,40,1606,83"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="1228,13,1307,40"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1323,31,1469,50,1468,55,1322,36"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="851,5,976,48"/>

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['refereesystemconnection_0',['RefereeSystemConnection',['../_sentry_a_i_8cpp.html#ab943df1907514f4abb13311460941a48',1,'SentryAI.cpp']]],
-  ['refereesystemcontroller_1',['RefereeSystemController',['../_sentry_a_i_8cpp.html#a8632d1d69af4265636d9755742f2fcf5',1,'SentryAI.cpp']]],
-  ['refereesystemrawconnection_2',['RefereeSystemRawConnection',['../_sentry_a_i_8cpp.html#a84f8552983409265bb70faf9bd76b5fd',1,'SentryAI.cpp']]],
-  ['refereesystemsensor_3',['RefereeSystemSensor',['../_sentry_a_i_8cpp.html#a6342a6cd2716b606382bb291290825cc',1,'SentryAI.cpp']]]
+  ['pitch_0',['pitch',['../struct_sentry_data_1_1_serialization_result.html#afdd7a868298bf6e1410a96cb32cb1843',1,'SentryData::SerializationResult::Pitch'],['../struct_sentry_data_1_1_data_to_deserialize.html#a5cf4d8e4d21bc7a913a9efa10ac571e7',1,'SentryData::DataToDeserialize::Pitch']]],
+  ['position_1',['Position',['../struct_lang_ya_1_1_sentry_lib_1_1_armor_plate_info.html#a07ffbc15b8748588827d61467f2ef904',1,'LangYa::SentryLib::ArmorPlateInfo']]]
 ];

@@ -1,3 +1,11 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" href="$struct_lang_ya_1_1_sentry_lib_1_1_resource.html" title=" " alt="" coords="5,5,201,64"/>
+<area shape="rect" id="Node000000" href="$struct_lang_ya_1_1_sentry_lib_1_1_position1.html" title="使用一个元素 X 代表坐标" alt="" coords="5,39,160,81"/>
+<area shape="rect" id="Node000001" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title=" " alt="" coords="217,5,353,48"/>
+<area shape="poly" id="edge17_Node000000_Node000001" title=" " alt="" coords="174,42,216,35,217,41,175,47"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title=" " alt="" coords="208,72,362,115"/>
+<area shape="poly" id="edge18_Node000000_Node000002" title=" " alt="" coords="175,73,208,78,207,83,174,78"/>
+<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title=" " alt="" coords="419,39,555,81"/>
+<area shape="poly" id="edge19_Node000002_Node000003" title=" " alt="" coords="377,76,418,69,419,74,378,81"/>
+<area shape="rect" id="Node000004" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title=" " alt="" coords="410,105,564,148"/>
+<area shape="poly" id="edge20_Node000002_Node000004" title=" " alt="" coords="378,106,410,111,410,117,377,111"/>
 </map>

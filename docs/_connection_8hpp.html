@@ -92,14 +92,16 @@ $(document).ready(function(){initNavTree('_connection_8hpp.html',''); initResiza
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">类</a> &#124;
-<a href="#namespaces">命名空间</a>  </div>
+<a href="#namespaces">命名空间</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
   <div class="headertitle"><div class="title">Connection.hpp 文件参考</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;<a class="el" href="">LangYa/SentryLib/MemoryView.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="">LangYa/SentryLib/MemoryIO.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="">LangYa/SentryLib/CSharpp.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Connection.hpp 的引用(Include)关系图:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -107,21 +109,20 @@ $(document).ready(function(){initNavTree('_connection_8hpp.html',''); initResiza
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_connection_8hpp__incl.png" border="0" usemap="#a_headers_2_lang_ya_2_sentry_lib_2_connection_8hpp" alt=""/></div>
 <map name="a_headers_2_lang_ya_2_sentry_lib_2_connection_8hpp" id="a_headers_2_lang_ya_2_sentry_lib_2_connection_8hpp">
-<area shape="rect" title=" " alt="" coords="5,5,182,48"/>
-<area shape="rect" title=" " alt="" coords="16,245,70,272"/>
-<area shape="poly" title=" " alt="" coords="92,49,51,231,46,230,86,48"/>
-<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="91,171,320,197"/>
-<area shape="poly" title=" " alt="" coords="98,48,104,84,121,121,142,143,166,161,163,165,138,147,117,124,99,86,92,49"/>
-<area shape="rect" href="_memory_i_o_8hpp.html" title=" " alt="" coords="131,96,344,123"/>
-<area shape="poly" title=" " alt="" coords="132,46,203,86,200,90,129,51"/>
-<area shape="poly" title=" " alt="" coords="178,200,85,242,83,237,176,195"/>
-<area shape="rect" title=" " alt="" coords="94,245,162,272"/>
-<area shape="poly" title=" " alt="" coords="194,200,154,237,151,233,190,196"/>
-<area shape="rect" title=" " alt="" coords="186,245,246,272"/>
-<area shape="poly" title=" " alt="" coords="210,197,215,230,209,230,205,198"/>
-<area shape="rect" title=" " alt="" coords="271,245,412,272"/>
-<area shape="poly" title=" " alt="" coords="230,196,306,235,303,240,228,200"/>
-<area shape="poly" title=" " alt="" coords="234,124,220,158,215,155,229,122"/>
+<area shape="rect" title=" " alt="" coords="80,5,256,48"/>
+<area shape="rect" title=" " alt="" coords="5,96,59,123"/>
+<area shape="poly" title=" " alt="" coords="134,51,68,90,65,85,132,46"/>
+<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="54,171,282,197"/>
+<area shape="poly" title=" " alt="" coords="151,50,136,72,124,97,121,109,124,122,133,141,146,158,142,161,129,144,119,124,116,109,119,95,131,69,147,47"/>
+<area shape="rect" href="_memory_i_o_8hpp.html" title=" " alt="" coords="133,96,347,123"/>
+<area shape="poly" title=" " alt="" coords="189,47,221,82,217,86,185,50"/>
+<area shape="rect" href="_c_sharpp_8hpp.html" title=" " alt="" coords="370,96,574,123"/>
+<area shape="poly" title=" " alt="" coords="247,46,410,89,409,94,246,51"/>
+<area shape="rect" title=" " alt="" coords="70,245,138,272"/>
+<area shape="poly" title=" " alt="" coords="159,200,127,235,123,232,155,196"/>
+<area shape="rect" title=" " alt="" coords="163,245,304,272"/>
+<area shape="poly" title=" " alt="" coords="181,196,214,232,210,236,177,200"/>
+<area shape="poly" title=" " alt="" coords="229,125,193,161,189,158,226,121"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -181,18 +182,30 @@ $(document).ready(function(){initNavTree('_connection_8hpp.html',''); initResiza
 </div>
 <p><a href="">浏览源代码.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-类</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_connection.html">LangYa::SentryLib::Connection</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表一个类似 IO 的连接，只提供基本的读写和开启/关闭连接的功能。 一个连接可以是一个文件，也可以是一个网络连接，也可以是一个内存映射文件。 只要能提供基于字节的读写方式，就可以被视为一个连接。  <a href="class_lang_ya_1_1_sentry_lib_1_1_connection.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 命名空间</h2></td></tr>
 <tr class="memitem:namespace_lang_ya" id="r_namespace_lang_ya"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya.html">LangYa</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_lang_ya_1_1_sentry_lib" id="r_namespace_lang_ya_1_1_sentry_lib"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">LangYa::SentryLib</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a9c635252bf3eced5c341b97f20a8a027" id="r_a9c635252bf3eced5c341b97f20a8a027"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a9c635252bf3eced5c341b97f20a8a027">LangYa::SentryLib::IsConnected</a> ()=0</td></tr>
+<tr class="memdesc:a9c635252bf3eced5c341b97f20a8a027"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取是否连接到目标  <br /></td></tr>
+<tr class="separator:a9c635252bf3eced5c341b97f20a8a027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79f4e7d110322207f06f9e439cfdb267" id="r_a79f4e7d110322207f06f9e439cfdb267"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a79f4e7d110322207f06f9e439cfdb267">LangYa::SentryLib::Disconnect</a> ()=0</td></tr>
+<tr class="memdesc:a79f4e7d110322207f06f9e439cfdb267"><td class="mdescLeft">&#160;</td><td class="mdescRight">从目标断开连接  <br /></td></tr>
+<tr class="separator:a79f4e7d110322207f06f9e439cfdb267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc40251a566cd246949976a93060735c" id="r_acc40251a566cd246949976a93060735c"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#acc40251a566cd246949976a93060735c">LangYa::SentryLib::ToString</a> ()</td></tr>
+<tr class="memdesc:acc40251a566cd246949976a93060735c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取此连接的字符串格式的信息，通常使用了 fmt 库，性能不算太好。  <br /></td></tr>
+<tr class="separator:acc40251a566cd246949976a93060735c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ac7fbf750abad4ec779b73457a20b0f9c" id="r_ac7fbf750abad4ec779b73457a20b0f9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_sharpp_8hpp.html#ae935b23055599eaed6237dd4d1b16e07">SC_INTERFACE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ac7fbf750abad4ec779b73457a20b0f9c">LangYa::SentryLib::Connection</a></td></tr>
+<tr class="memdesc:ac7fbf750abad4ec779b73457a20b0f9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表一个类似 IO 的连接，只提供基本的读写和开启/关闭连接的功能。 一个连接可以是一个文件，也可以是一个网络连接，也可以是一个内存映射文件。 只要能提供基于字节的读写方式，就可以被视为一个连接。  <br /></td></tr>
+<tr class="separator:ac7fbf750abad4ec779b73457a20b0f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -200,7 +213,7 @@ $(document).ready(function(){initNavTree('_connection_8hpp.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_692516b589a32b3bfce781ca9f6d1534.html">Headers</a></li><li class="navelem"><a class="el" href="dir_b117d0d76b03a6360b87a590e39f53f6.html">LangYa</a></li><li class="navelem"><a class="el" href="dir_0479bb77a485cc0baf99073ab05914e0.html">SentryLib</a></li><li class="navelem"><a class="el" href="_connection_8hpp.html">Connection.hpp</a></li>
-    <li class="footer">生成于 2023年 十二月 6日 星期三 19:36:21 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 7日 星期四 00:27:55 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

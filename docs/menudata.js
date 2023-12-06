@@ -30,6 +30,7 @@ var menudata={children:[
 {text:"命名空间成员",url:"namespacemembers.html",children:[
 {text:"全部",url:"namespacemembers.html"},
 {text:"函数",url:"namespacemembers_func.html"},
+{text:"变量",url:"namespacemembers_vars.html"},
 {text:"类型定义",url:"namespacemembers_type.html"},
 {text:"枚举",url:"namespacemembers_enum.html"}]}]},
 {text:"概念",url:"concepts.html"},
@@ -100,6 +101,7 @@ var menudata={children:[
 {text:"n",url:"functions_vars.html#index_n"},
 {text:"p",url:"functions_vars.html#index_p"},
 {text:"s",url:"functions_vars.html#index_s"},
+{text:"t",url:"functions_vars.html#index_t"},
 {text:"v",url:"functions_vars.html#index_v"},
 {text:"x",url:"functions_vars.html#index_x"},
 {text:"y",url:"functions_vars.html#index_y"},
@@ -132,6 +134,7 @@ var menudata={children:[
 {text:"e",url:"globals_vars.html#index_e"},
 {text:"i",url:"globals_vars.html#index_i"},
 {text:"j",url:"globals_vars.html#index_j"},
+{text:"m",url:"globals_vars.html#index_m"},
 {text:"n",url:"globals_vars.html#index_n"},
 {text:"r",url:"globals_vars.html#index_r"},
 {text:"v",url:"globals_vars.html#index_v"}]},

@@ -1,21 +1,7 @@
 <map id="Headers/LangYa/SentryLib/Resource.hpp" name="Headers/LangYa/SentryLib/Resource.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="115,5,292,48"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="19,5,196,48"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,104,66,131"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,51,74,99,72,94,163,46"/>
-<area shape="rect" id="Node000003" href="$_unique_buffer_8hpp.html" title=" " alt="" coords="90,104,317,131"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,48,206,88,201,88,201,48"/>
-<area shape="rect" id="Node000010" href="$_resource_flag_8hpp.html" title=" " alt="" coords="341,96,525,139"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="258,46,366,87,364,92,256,51"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="50,187,162,213"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="190,133,134,179,131,175,187,129"/>
-<area shape="rect" id="Node000005" href="$_memory_view_8hpp.html" title=" " alt="" coords="187,187,415,213"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="220,129,276,175,273,179,217,133"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="140,261,208,288"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="280,216,211,256,208,251,277,212"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="233,261,286,288"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="296,215,276,249,272,247,291,213"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="311,261,371,288"/>
-<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="310,213,329,246,324,249,305,215"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="396,261,537,288"/>
-<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="331,211,424,252,422,257,329,216"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,50,57,93,53,90,89,47"/>
+<area shape="rect" id="Node000003" href="$_resource_flag_8hpp.html" title=" " alt="" coords="89,96,273,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,47,156,82,152,86,122,50"/>
 </map>

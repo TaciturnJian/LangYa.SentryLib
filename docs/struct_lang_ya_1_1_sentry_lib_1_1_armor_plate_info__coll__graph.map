@@ -1,5 +1,5 @@
 <map id="LangYa::SentryLib::ArmorPlateInfo" name="LangYa::SentryLib::ArmorPlateInfo">
-<area shape="rect" id="Node000001" title=" " alt="" coords="1168,99,1305,141"/>
+<area shape="rect" id="Node000001" title="代表一个装甲板的信息。 内部使用 Position3F 表示位置，使用 Vector3F 表示法向量。" alt="" coords="1168,99,1305,141"/>
 <area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title=" " alt="" coords="933,64,1069,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1085,95,1168,107,1168,113,1084,100"/>
 <area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title=" " alt="" coords="440,5,595,48"/>
