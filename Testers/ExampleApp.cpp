@@ -191,7 +191,7 @@ void TestServer()
 	}
 }
 
-int main(int argc, const char** argv)
+int main(const int argc, const char** argv)
 {
 	/*boost::asio::io_context serial_port_io_context{};
 	auto serial_port = SerialPort::BuildShared

@@ -1,16 +1,20 @@
 #pragma once
 
 #include <vector>
-#include <ostream>
-#include <exception>
+#include <ostream>		// ReSharper disable once CppUnusedIncludeDirective
+#include <exception>	// ReSharper disable once CppUnusedIncludeDirective
 #include <sstream>
 #include <initializer_list>
 
 #include <LangYa/SentryLib/MemoryView.hpp>
 
-namespace LangYa::SentryLib {
-	template<typename TBasicNumber>
-	struct SerialNumbers {
+namespace LangYa::SentryLib
+{
+	template <typename TBasicNumber>
+	struct SerialNumbers
+	{
+		std::vector<TBasicNumber> Numbers{};
+
 		SerialNumbers() = default;
 
 		SerialNumbers(const std::initializer_list<TBasicNumber>& numbers) :
@@ -30,11 +34,11 @@ namespace LangYa::SentryLib {
 		SerialNumbers& operator=(const SerialNumbers& other) = default;
 
 		SerialNumbers& operator=(SerialNumbers&& other) = default;
-		
-		std::vector<TBasicNumber> Numbers;
 
-		TBasicNumber& operator[](MemoryView::SizeType index) {
-			if (Numbers.size() <= index) {
+		TBasicNumber& operator[](MemoryView::SizeType index)
+		{
+			if (Numbers.size() <= index)
+			{
 				throw std::out_of_range("SerialNumbers> Access index is out of bound.");
 			}
 
@@ -43,7 +47,8 @@ namespace LangYa::SentryLib {
 
 		const TBasicNumber& operator[](MemoryView::SizeType index) const
 		{
-			if (Numbers.size() <= index) {
+			if (Numbers.size() <= index)
+			{
 				throw std::out_of_range("SerialNumbers> Access index is out of bound.");
 			}
 
@@ -53,7 +58,7 @@ namespace LangYa::SentryLib {
 		friend std::ostream& operator<<(std::ostream& stream, const SerialNumbers& numbers)
 		{
 			auto max_index = numbers.Numbers.size() - 1;
-			for (MemoryView::SizeType i = 0; i < max_index; i ++)
+			for (MemoryView::SizeType i = 0; i < max_index; i++)
 			{
 				stream << numbers.Numbers[i] << ".";
 			}
