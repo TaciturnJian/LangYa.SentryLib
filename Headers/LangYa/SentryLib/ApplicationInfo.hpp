@@ -1,6 +1,5 @@
 #pragma once
 
-#include <ostream>
 #include <string>
 #include <memory>
 

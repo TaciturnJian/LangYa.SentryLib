@@ -29,7 +29,6 @@
 #include <LangYa/SentryLib/ResourceFlag.hpp>
 #include <LangYa/SentryLib/Sensor.hpp>
 #include <LangYa/SentryLib/SerializableContent.hpp>
-#include <LangYa/SentryLib/Serializer.hpp>
 #include <LangYa/SentryLib/SerialNumbers.hpp>
 #include <LangYa/SentryLib/SerialPort.hpp>
 #include <LangYa/SentryLib/SerialPortInfo.hpp>
