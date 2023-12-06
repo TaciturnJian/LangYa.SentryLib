@@ -1,0 +1,1 @@
+#include <LangYa/SentryLib/ApplicationInfo.hpp>

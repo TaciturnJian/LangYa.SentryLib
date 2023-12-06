@@ -9,6 +9,8 @@
 
 #pragma once
 
+#include <LangYa/SentryLib/ApplicationInfo.hpp>
+#include <LangYa/SentryLib/ArmorPlateInfo.hpp>
 #include <LangYa/SentryLib/Connection.hpp>
 #include <LangYa/SentryLib/Controller.hpp>
 #include <LangYa/SentryLib/DeserializableContent.hpp>
@@ -26,6 +28,7 @@
 #include <LangYa/SentryLib/Sensor.hpp>
 #include <LangYa/SentryLib/SerializableContent.hpp>
 #include <LangYa/SentryLib/Serializer.hpp>
+#include <LangYa/SentryLib/SerialNumbers.hpp>
 #include <LangYa/SentryLib/SerialPort.hpp>
 #include <LangYa/SentryLib/SerialPortInfo.hpp>
 #include <LangYa/SentryLib/TCPConnection.hpp>

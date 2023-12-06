@@ -126,10 +126,10 @@ struct SentryData final : SerializableContent, DeserializableContent
 	[[nodiscard]] std::string ToString()
 	{
 		return fmt::format(
-			R"(("GimbalEulerAngle":{},"Velocity":{},"AmmoCount":{},"FireFlag":{}))", 
+			R"(("GimbalEulerAngle":{},"Velocity":{},"AmmoCount":{},"FireFlag":{}))",
 			GimbalEulerAngle.ToString(),
-			Velocity.ToString(), 
-			AmmoCount, 
+			Velocity.ToString(),
+			AmmoCount,
 			FireFlag
 		);
 	}
@@ -158,9 +158,9 @@ void TestServer()
 					sizeof(SentryData::SerializationResult),
 					socket_ptr
 				);
-				std::thread io_handle{[client]{client->HandleIO();}};
+				std::thread io_handle{[client] { client->HandleIO(); }};
 				io_handle.detach();
-				
+
 				const UniqueBuffer buffer{sizeof(SentryData::DataToDeserialize)};
 				auto& buffer_view = buffer.GetView();
 				SentryData data;
@@ -187,7 +187,6 @@ void TestServer()
 		client_thread.detach();
 		std::this_thread::sleep_for(1s);
 	}
-
 }
 
 int main()
@@ -202,6 +201,12 @@ int main()
 		}
 	);
 	serial_port->Connect();*/
+
+	ApplicationInfo{
+		"ExampleApp",
+		"An application with sentry lib!",
+		{1, 0, 0, 0}
+	}.OutputTo_spdlog();
 
 	std::thread server_thread(
 		TestServer
@@ -218,7 +223,7 @@ int main()
 	tcp->Connect();
 
 	auto decorated_serial_port = std::make_shared<LangYaConnection>(
-		sizeof(SentryData::DataToDeserialize), 
+		sizeof(SentryData::DataToDeserialize),
 		sizeof(SentryData::SerializationResult),
 		tcp
 	);
@@ -231,17 +236,19 @@ int main()
 	devices.push_back(controller_ptr);
 
 	std::thread connection_thread(
-	[decorated_serial_port]{
-		decorated_serial_port->HandleIO();
-	});
+		[decorated_serial_port]
+		{
+			decorated_serial_port->HandleIO();
+		});
 
 	std::thread timer_thread([&devices]
 	{
 		using namespace std::chrono_literals;
 
-		while (true) {
+		while (true)
+		{
 			std::this_thread::sleep_for(1ms);
-			for (const auto& device_ptr: devices)
+			for (const auto& device_ptr : devices)
 			{
 				device_ptr->Tick();
 			}
@@ -270,7 +277,8 @@ int main()
 				t += 0.0001;
 
 				spdlog::info("Receive: Yaw: {}, Pitch: {}", yaw, pitch);
-				spdlog::info("Sent   : Yaw: {}, Pitch: {}", controller->GimbalEulerAngle[0], controller->GimbalEulerAngle[1]);
+				spdlog::info("Sent   : Yaw: {}, Pitch: {}", controller->GimbalEulerAngle[0],
+				             controller->GimbalEulerAngle[1]);
 			}
 		}
 	);
