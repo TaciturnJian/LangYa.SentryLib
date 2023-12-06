@@ -142,13 +142,13 @@ namespace LangYa::SentryLib
 		}
 
 		TElement& X() { return BaseVector::Element[0]; }
-		const TElement& X() const { return BaseVector::Element[0]; }
+		[[nodiscard]] const TElement& X() const { return BaseVector::Element[0]; }
 
 		TElement& Y() { return BaseVector::Element[1]; }
-		const TElement& Y() const { return BaseVector::Element[1]; }
+		[[nodiscard]] const TElement& Y() const { return BaseVector::Element[1]; }
 
 		TElement& Z() { return BaseVector::Element[2]; }
-		const TElement& Z() const { return BaseVector::Element[2]; }
+		[[nodiscard]] const TElement& Z() const { return BaseVector::Element[2]; }
 
 #pragma endregion
 	};

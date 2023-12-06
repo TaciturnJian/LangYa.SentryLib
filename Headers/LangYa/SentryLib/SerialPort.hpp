@@ -2,7 +2,6 @@
 
 #include <memory>
 #include <boost/asio.hpp>
-#include <spdlog/spdlog.h>
 
 #include <LangYa/SentryLib/Connection.hpp>
 #include <LangYa/SentryLib/SerialPortInfo.hpp>

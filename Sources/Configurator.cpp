@@ -1,5 +1,8 @@
 #include <LangYa/SentryLib/Configurator.hpp>
 
+#include <spdlog/spdlog.h>
+#include <fstream>
+
 LangYa::SentryLib::Configurator
 ::Configurator() = default;
 
@@ -22,10 +25,12 @@ bool
 LangYa::SentryLib::Configurator
 ::Load(const CommandLineArguments& commandLineArguments)
 {
-	try {
+	try
+	{
 		spdlog::info("Configurator> Begin parsing command line arguments.");
 		store(
-			parse_command_line(static_cast<int>(commandLineArguments.ArgumentCount), commandLineArguments.ArgumentList, OptionsWithDescription), 
+			parse_command_line(static_cast<int>(commandLineArguments.ArgumentCount), commandLineArguments.ArgumentList,
+			                   OptionsWithDescription),
 			VariablesMap
 		);
 		notify(VariablesMap);
@@ -60,7 +65,8 @@ LangYa::SentryLib::Configurator
 {
 	spdlog::info("Configurator> Loading json file({})", jsonFilePath);
 	std::ifstream file{};
-	try {
+	try
+	{
 		file.open(jsonFilePath, std::ios::in);
 	}
 	catch (const std::exception& ex)

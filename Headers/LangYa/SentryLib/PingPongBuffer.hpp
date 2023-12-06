@@ -1,8 +1,5 @@
 #pragma once
 
-// ReSharper disable once CppUnusedIncludeDirective
-#include <cstring>
-
 #include <LangYa/SentryLib/MemoryView.hpp>
 #include <LangYa/SentryLib/UniqueBuffer.hpp>
 

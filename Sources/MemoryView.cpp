@@ -1,5 +1,7 @@
 #include <LangYa/SentryLib/MemoryView.hpp>
 
+#include <cstring>
+
 namespace LangYa::SentryLib
 {
 	MemoryView

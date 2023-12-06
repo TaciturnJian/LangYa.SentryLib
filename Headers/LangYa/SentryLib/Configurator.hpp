@@ -1,19 +1,10 @@
 #pragma once
 
-#include <ostream>
-#include <vector>
 #include <string>
-#include <sstream>
-#include <fstream>
-#include <istream>
-#include <iostream>
 #include <functional>
 
 #include <boost/json.hpp>
 #include <boost/program_options.hpp>
-#include <boost/filesystem.hpp>
-#include <spdlog/spdlog.h>
-#include <fmt/format.h>
 
 #include <LangYa/SentryLib/CommandLineArguments.hpp>
 

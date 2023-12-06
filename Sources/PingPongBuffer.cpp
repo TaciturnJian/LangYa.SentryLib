@@ -1,5 +1,7 @@
 #include <LangYa/SentryLib/PingPongBuffer.hpp>
 
+#include <cstring>
+
 namespace LangYa::SentryLib
 {
 	PingPongBuffer

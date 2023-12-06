@@ -1,3 +1,9 @@
+#include <iostream>
+
+#include <spdlog/logger.h>
+#include <spdlog/sinks/rotating_file_sink.h>
+#include <spdlog/sinks/stdout_color_sinks.h>
+
 #include <LangYa/SentryLib.hpp>
 
 using namespace LangYa::SentryLib;
@@ -12,6 +18,7 @@ long long VarA = 0;
 
 bool MappingJsonToVariables(boost::json::value& json)
 {
+	spdlog::info("Mapping> VarA -> VarA");
 	VarA = json.at("VarA").as_int64();
 	return true;
 }

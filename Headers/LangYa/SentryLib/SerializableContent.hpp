@@ -1,4 +1,5 @@
 #pragma once
+
 #include <LangYa/SentryLib/MemoryView.hpp>
 
 namespace LangYa::SentryLib

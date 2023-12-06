@@ -4,9 +4,6 @@
 #include <memory>
 
 #include <spdlog/spdlog.h>
-#include <spdlog/logger.h>
-#include <spdlog/sinks/rotating_file_sink.h>
-#include <spdlog/sinks/stdout_color_sinks.h>
 
 #include <LangYa/SentryLib/SerialNumbers.hpp>
 
@@ -35,7 +32,7 @@ namespace LangYa::SentryLib
 		///	@return 参数中的流。
 		friend std::ostream& operator<<(std::ostream& stream, const ApplicationInfo& info);
 
-		/// @beif 使用 spdlog 输出。
+		/// @brief 使用 spdlog 输出。
 		// ReSharper disable once CppInconsistentNaming
 		void OutputTo_spdlog() const;
 	};

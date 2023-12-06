@@ -1,5 +1,7 @@
 #include <LangYa/SentryLib/SerialPort.hpp>
 
+#include <spdlog/spdlog.h>
+
 #ifdef SC_WINDOWS
 #define RESULT_MESSAGE(result) result.what()
 #elif SC_LINUX
@@ -95,8 +97,7 @@ namespace LangYa::SentryLib
 	BuildShared(IOContextType& ioContext, const SerialPortInfo& info)
 	{
 		spdlog::info("Building Shared SerialPort({})", info.ToString());
-		// ReSharper disable once CppSmartPointerVsMakeFunction
-		auto ptr = std::shared_ptr<SerialPort>(new SerialPort{ioContext, info});
+		auto ptr = std::make_shared<SerialPort>(ioContext, info);
 		spdlog::info("Finished building SerialPort({})", info.DeviceName);
 		return ptr;
 	}
