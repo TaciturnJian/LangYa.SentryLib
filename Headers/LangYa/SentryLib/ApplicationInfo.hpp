@@ -30,6 +30,10 @@ namespace LangYa::SentryLib
 		[[nodiscard]] std::string ToString() const;
 
 		/// @brief 向流中输入内容。
+		///	输出格式为{"Name":"<Name>","Description":"<Description>","Version":"<Version>"}。
+		///	@param stream 格式化的结果输出到此流中。
+		///	@param info 应用程序信息。
+		///	@return 参数中的流。
 		friend std::ostream& operator<<(std::ostream& stream, const ApplicationInfo& info);
 
 		/// @beif 使用 spdlog 输出。
