@@ -77,11 +77,6 @@ struct SentryData final : SerializableContent, DeserializableContent
 	SentryData& operator=(const SentryData& other) = default;
 	SentryData& operator=(SentryData&& other) = default;
 
-	[[nodiscard]] MemoryView GetSerializationMemoryView() const override
-	{
-		return MemoryView{this, 1};
-	}
-
 	[[nodiscard]] MemoryView::SizeType GetSerializationResultSize() const override
 	{
 		return sizeof(SerializationResult);
@@ -98,11 +93,6 @@ struct SentryData final : SerializableContent, DeserializableContent
 		auto& data = *(reinterpret_cast<SerializationResult*>(buffer.Head));
 		data(*this);
 		return true;
-	}
-
-	[[nodiscard]] MemoryView GetDeserializationMemoryView() const override
-	{
-		return MemoryView{this, 1};
 	}
 
 	[[nodiscard]] MemoryView::SizeType GetDeserializationResourceSize() const override

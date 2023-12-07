@@ -4,6 +4,7 @@
 
 namespace LangYa::SentryLib
 {
+#pragma pack(push, 1)
 	/// @brief Represent a content that is serializable.
 	class SerializableContent
 	{
@@ -11,19 +12,16 @@ namespace LangYa::SentryLib
 		/// @brief Virtual destructor.
 		virtual ~SerializableContent();
 
-		/// @brief Get the memory view of this content.
-		///	@return The memory view of this content.
-		[[nodiscard]] virtual MemoryView GetSerializationMemoryView() const = 0;
-
 		/// @brief Get the size of the serialization result.
 		///	@return The size of the serialization result.
-		[[nodiscard]] virtual MemoryView::SizeType GetSerializationResultSize() const;
+		[[nodiscard]] virtual MemoryView::SizeType GetSerializationResultSize() const = 0;
 
 		/// @brief Serialize data and write the result to buffer.
 		///	@param buffer Where to write the result.
 		///	@return Whether the serialization is succeeded.
-		[[nodiscard]] virtual bool Serialize(const MemoryView& buffer);
+		[[nodiscard]] virtual bool Serialize(const MemoryView& buffer) = 0;
 	};
+#pragma pack(pop)
 
 	/// @brief 代表一个可以序列化的类型，即可以被转换为 @code LangYa::SentryLib::SerializableContent @endcode 的类型。
 	///	@tparam T 概念中被检查的类型

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 #include <spdlog/logger.h>
 #include <spdlog/sinks/rotating_file_sink.h>
@@ -7,6 +8,7 @@
 #include <LangYa/SentryLib.hpp>
 
 using namespace LangYa::SentryLib;
+using namespace std::chrono_literals;
 
 ApplicationInfo AppInfo{
 	"TestApp",
@@ -14,12 +16,19 @@ ApplicationInfo AppInfo{
 	{1, 0, 0, 0}
 };
 std::string JsonFilePath{"./config.json"};
-long long VarA = 0;
+
+int AStep = 1;
+float BStep = 0.1f;
 
 bool MappingJsonToVariables(boost::json::value& json)
 {
-	spdlog::info("Mapping> VarA -> VarA");
-	VarA = json.at("VarA").as_int64();
+#define SC_MAPPING(x) spdlog::info("Mapping> {} -> {}", #x, #x); x = json.at(#x).
+
+	SC_MAPPING(AStep) as_int64();
+	SC_MAPPING(BStep) as_double();
+
+#undef SC_MAPPING
+
 	return true;
 }
 
@@ -52,35 +61,109 @@ int main(int argc, char** argv)
 {
 	if (!InitializeLogger()) return -1;
 
+	// 打印程序的基本信息
 	AppInfo.OutputTo_spdlog();
 
-	spdlog::info("{}> Parsing command line arguments", AppInfo.Name);
-	Configurator configurator{};
-	configurator.AddOption()
-		("help", "display all help")
-		(
-			"ConfigPath",
-			boost::program_options::value(&JsonFilePath),
-			"File path for the configuration file. May be the absolute path will be better"
-		);
-	if (!configurator.Load({argc, argv}))
+	// 处理应用程序配置
+	// 注意，大括号中间有些部分会导致程序提前退出。
 	{
-		spdlog::error("{}> Failed to parse command line arguments", AppInfo.Name);
-		return -1;
-	}
-	if (configurator("help"))
-	{
-		spdlog::info("{}> {}", AppInfo.Name, configurator.GetHelpContent());
-		return 0;
+		spdlog::info("{}> Parsing command line arguments", AppInfo.Name);
+		Configurator configurator{};
+		configurator.AddOption()
+			("help", "display all help")
+			(
+				"ConfigPath",
+				boost::program_options::value(&JsonFilePath),
+				"File path for the configuration file. May be the absolute path will be better"
+			);
+		if (!configurator.Load({argc, argv}))
+		{
+			spdlog::error("{}> Failed to parse command line arguments", AppInfo.Name);
+			return -1;
+		}
+		if (configurator("help"))
+		{
+			spdlog::info("{}> {}", AppInfo.Name, configurator.GetHelpContent());
+			return 0;
+		}
+		if (!Configurator::Load(JsonFilePath, MappingJsonToVariables))
+		{
+			spdlog::error("{}> Failed to load configuration file", AppInfo.Name);
+			return -1;
+		}
 	}
 
-	if (!Configurator::Load(JsonFilePath, MappingJsonToVariables))
+#pragma pack(push, 1)
+	struct DataType : SerializableContent
 	{
-		spdlog::error("{}> Failed to load configuration file", AppInfo.Name);
-		return -1;
-	}
+		int A;
+		float B;
 
-	spdlog::info("{}> Value for VarA is: {}", AppInfo.Name, VarA);
+		[[nodiscard]] MemoryView::SizeType GetSerializationResultSize() const override
+		{
+			return sizeof(int) + sizeof(float);
+		}
+
+		[[nodiscard]] bool Serialize(const MemoryView& buffer) override
+		{
+			if (buffer.Size < GetSerializationResultSize()) return false;
+			MemoryView{buffer, 0, sizeof(int)}.ReadFrom(&A);
+			MemoryView{buffer, sizeof(int), sizeof(float)}.ReadFrom(&B);
+			return true;
+		}
+	};
+#pragma pack(pop)
+
+	const UniqueBuffer buffer{DataType{}.GetSerializationResultSize()};
+	auto buffer_view = buffer.GetView();
+	auto memory_access = std::make_shared<MemoryAccess>(buffer_view);
+	auto controller = std::make_shared<Controller<DataType>>(memory_access);
+
+	std::thread device_thread{
+		[controller]
+		{
+			while (true)
+			{
+				controller->Tick();
+				std::this_thread::sleep_for(1ms);
+			}
+		}
+	};
+	std::thread operate_thread{
+		[controller]
+		{
+			auto& con = *controller;
+			while (true)
+			{
+				con->A += AStep;
+				con->B += BStep;
+				std::this_thread::sleep_for(100ms);
+			}
+		}
+	};
+	std::thread monitor_thread{
+		[buffer_view]
+		{
+			const UniqueBuffer my_buffer{buffer_view.Size};
+			const auto& my_buffer_view = my_buffer.GetView();
+			while (true)
+			{
+				std::stringstream stream;
+				my_buffer_view.ReadFrom(buffer_view);
+				for (MemoryView::SizeType i = 0; i < buffer_view.Size; i++)
+				{
+					stream << std::setw(3) << static_cast<int>(my_buffer_view[i]) << ' ';
+				}
+				std::cout << "Monitor> " << stream.str() << "\r";
+				std::this_thread::sleep_for(5ms);
+			}
+		}
+	};
+
+	device_thread.join();
+	operate_thread.join();
+	monitor_thread.join();
+
 
 	return 0;
 }
