@@ -1,3 +1,5 @@
+#include <spdlog/spdlog.h>
+
 #include <LangYa/SentryLib/ApplicationInfo.hpp>
 
 namespace LangYa::SentryLib

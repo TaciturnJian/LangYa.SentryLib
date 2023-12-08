@@ -13,9 +13,11 @@ namespace LangYa::SentryLib
 	class SerialPort final : public Connection
 	{
 		/// @brief 指向包装的串口的独有指针。
+		///	此指针将在自己被回收前回收 boost asio 内部的串口，避免串口资源泄漏。
 		std::unique_ptr<boost::asio::serial_port> UniqueSerialPort;
 
 		/// @brief 指示串口的信息。
+		///	串口信息，必须在构造时指定。
 		SerialPortInfo Info;
 
 		/// @brief 为串口应用设置。

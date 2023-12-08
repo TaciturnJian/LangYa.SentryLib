@@ -1,9 +1,6 @@
 #pragma once
 
 #include <string>
-#include <memory>
-
-#include <spdlog/spdlog.h>
 
 #include <LangYa/SentryLib/SerialNumbers.hpp>
 

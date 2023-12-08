@@ -13,9 +13,8 @@ int main()
 {
 	spdlog::info("<TripleBufferTester>");
 
+	spdlog::info("<LargeMemoryAccessTest>");
 	{
-		spdlog::info("<LargeMemoryAccessTest>");
-
 		constexpr auto single_content_size = sizeof(int) * 1024;
 		constexpr auto buffer_memory_size = single_content_size * 3;
 		spdlog::info("creating large triple buffer");
@@ -87,9 +86,8 @@ int main()
 		spdlog::info("starting reader and writer");
 		writer.join();
 		reader.join();
-
-		spdlog::info("</LargeMemoryAccessTest>");
 	}
+	spdlog::info("</LargeMemoryAccessTest>");
 
 	spdlog::info("</TripleBufferTester>");
 	return 0;

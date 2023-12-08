@@ -1,8 +1,6 @@
 #pragma once
 
 #include <vector>
-#include <ostream>		// ReSharper disable once CppUnusedIncludeDirective
-#include <exception>	// ReSharper disable once CppUnusedIncludeDirective
 #include <sstream>
 #include <initializer_list>
 
@@ -10,6 +8,9 @@
 
 namespace LangYa::SentryLib
 {
+	/// @brief 一系列数字构成的大数字。
+	///	形式类似 A.B.C.D... ，构造时使用 {A,B,C,D...} 。
+	///	@tparam TBasicNumber 基础数字类型，如 int。
 	template <typename TBasicNumber>
 	struct SerialNumbers
 	{

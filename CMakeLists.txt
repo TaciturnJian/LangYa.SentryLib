@@ -6,7 +6,7 @@ project(SentryLib
 	HOMEPAGE_URL "https://github.com/TaciturnJian/LangYa.SentryLib"
 	LANGUAGES CXX
 )
-
+                                                                        
 # 跨平台支持 在这里写了 pthread 和 compile options
 if(CMAKE_SYSTEM_NAME MATCHES "Linux") 
     set(SC_PUBLIC_PTHREAD PUBLIC pthread)

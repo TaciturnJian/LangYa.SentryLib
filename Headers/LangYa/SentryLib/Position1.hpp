@@ -3,6 +3,7 @@
 namespace LangYa::SentryLib
 {
 	/// @brief 使用一个元素 X 代表坐标
+	///	TODO 注释
 	template <typename TElement>
 	struct Position1
 	{

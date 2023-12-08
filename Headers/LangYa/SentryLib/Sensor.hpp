@@ -11,6 +11,7 @@
 namespace LangYa::SentryLib
 {
 	/// @brief 代表一个机器人传感器。
+	///	TODO 注释与文档
 	///	Tick this device so it will update sensor data from connection, read the data from its members.
 	template <Deserializable TSensorData>
 	class Sensor final : public Device

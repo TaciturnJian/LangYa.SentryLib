@@ -3,33 +3,38 @@
 #include <spdlog/spdlog.h>
 #include <LangYa/SentryLib/PingPongBuffer.hpp>
 
-#pragma pack(push, 1)
-struct Data
+using namespace LangYa::SentryLib;
+
+namespace Temp
 {
-	char Head{'!'};
-	char A{1};
-	short B{2};
-	int C{3};
-	float D{4};
-
-	std::string ToString()
+#pragma pack(push, 1)
+	struct Data
 	{
-		return fmt::format("(Head:{} A:{} B:{} C:{} D:{})", Head, static_cast<int>(A), B, C, D);
-	}
-};
-#pragma pack(pop)
+		char Head{'!'};
+		char A{1};
+		short B{2};
+		int C{3};
+		float D{4};
 
-void PrintPingPong(const LangYa::SentryLib::PingPongBuffer& buffer)
+		std::string ToString()
+		{
+			return fmt::format("(Head:{} A:{} B:{} C:{} D:{})", Head, static_cast<int>(A), B, C, D);
+		}
+	};
+#pragma pack(pop)
+}
+
+void PrintPingPong(const PingPongBuffer& buffer)
 {
 	std::stringstream stream{};
 
 	auto& ping = buffer.GetPing();
 	auto& pong = buffer.GetPong();
-	for (auto i = 0; i < ping.Size; i++)
+	for (MemoryView::SizeType i = 0; i < ping.Size; i++)
 	{
 		stream << static_cast<int>(ping[i]) << ' ';
 	}
-	for (auto i = 0; i < ping.Size; i++)
+	for (MemoryView::SizeType i = 0; i < ping.Size; i++)
 	{
 		stream << static_cast<int>(pong[i]) << ' ';
 	}
@@ -44,7 +49,7 @@ int main()
 	using namespace LangYa::SentryLib;
 
 	const PingPongBuffer ping_pong{UniqueBuffer(24)};
-	Data resource, destination;
+	Temp::Data resource, destination;
 	resource.A = 2;
 	resource.B = 5;
 	resource.C = 6;
@@ -86,7 +91,7 @@ int main()
 	spdlog::info("Before exchange, resource: ");
 	spdlog::info(resource.ToString());
 	spdlog::info("destination: ");
-	destination = Data{};
+	destination = Temp::Data{};
 	spdlog::info(destination.ToString());
 	auto& exchange_buffer = ping_pong.GetExchangeBuffer();
 	exchange_buffer.ReadFrom(resource_view);
