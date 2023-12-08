@@ -66,7 +66,7 @@ int main()
 
 					auto receive = number[0];
 					numbers[receive] = true;
-					std::this_thread::sleep_for(2ms);
+					std::this_thread::sleep_for(1ms);
 				}
 
 				spdlog::info("reader> received end signal");
