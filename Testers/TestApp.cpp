@@ -22,12 +22,12 @@ float BStep = 0.1f;
 
 bool MappingJsonToVariables(boost::json::value& json)
 {
-#define SC_MAPPING(x) spdlog::info("Mapping> {} -> {}", #x, #x); x = json.at(#x).
+#define SC_SAME_NAME_MAPPING(x) spdlog::info("Mapping> {} -> {}", #x, #x); x = json.at(#x).
 
-	SC_MAPPING(AStep) as_int64();
-	SC_MAPPING(BStep) as_double();
+	SC_SAME_NAME_MAPPING(AStep) as_int64();
+	SC_SAME_NAME_MAPPING(BStep) as_double();
 
-#undef SC_MAPPING
+#undef SC_SAME_NAME_MAPPING
 
 	return true;
 }
