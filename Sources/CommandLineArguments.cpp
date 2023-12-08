@@ -19,24 +19,6 @@ namespace LangYa::SentryLib
 	{
 	}
 
-	CommandLineArguments
-	::CommandLineArguments(const CommandLineArguments& other)
-	= default;
-
-	CommandLineArguments
-	::CommandLineArguments(CommandLineArguments&& other) noexcept
-	= default;
-
-	CommandLineArguments&
-	CommandLineArguments
-	::operator=(const CommandLineArguments& other)
-	= default;
-
-	CommandLineArguments&
-	CommandLineArguments
-	::operator=(CommandLineArguments&& other) noexcept
-	= default;
-
 	CommandLineArguments::CommandLineArgumentType
 	CommandLineArguments
 	::operator[](const unsigned index) const

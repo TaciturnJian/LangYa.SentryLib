@@ -1,12 +1,14 @@
 #pragma once
 
+#include <LangYa/SentryLib/CSharpp.hpp>
+
 #include <LangYa/SentryLib/MemoryView.hpp>
 
 namespace LangYa::SentryLib
 {
 #pragma pack(push, 1)
 	/// @brief Represent a content that is serializable.
-	class SerializableContent
+	SC_INTERFACE SerializableContent
 	{
 	public:
 		/// @brief Virtual destructor.

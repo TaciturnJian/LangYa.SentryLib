@@ -1,12 +1,15 @@
 #pragma once
 
+#include <LangYa/SentryLib/CSharpp.hpp>
+
 #include <LangYa/SentryLib/MemoryView.hpp>
 
 namespace LangYa::SentryLib
 {
 #pragma pack(push, 1)
 	/// @brief 代表一种可以反序列化的内容。
-	class DeserializableContent
+	///	此接口提供了反序列时所需要的两个函数： 获取反序列化资源的最小大小，以及从缓冲区中反序列化资源。
+	SC_INTERFACE DeserializableContent
 	{
 	public:
 		/// @brief 默认虚析构函数。

@@ -34,6 +34,7 @@
 #include <LangYa/SentryLib/SerialPort.hpp>
 #include <LangYa/SentryLib/SerialPortInfo.hpp>
 #include <LangYa/SentryLib/TCPConnection.hpp>
+#include <LangYa/SentryLib/TimeStamp.hpp>
 #include <LangYa/SentryLib/TripleBuffer.hpp>
 #include <LangYa/SentryLib/UniqueBuffer.hpp>
 #include <LangYa/SentryLib/Vector.hpp>

@@ -53,24 +53,6 @@ namespace LangYa::SentryLib
 		///	@warning 如果新内存视图的长度超过基础内存视图的长度，那么新内存视图将可能是无效的（但不会抛出异常，会在某次不正确使用中造成段错误）。
 		MemoryView(const MemoryView& view, const SizeType& offset, const SizeType& size = 0);
 
-		/// @brief 默认的拷贝构造函数，复制头指针和长度。
-		///	@param other 被拷贝的内存，不论是否有效。
-		MemoryView(const MemoryView& other);
-
-		/// @brief Default move constructor.
-		///	@param other The moved one.
-		MemoryView(MemoryView&& other) noexcept;
-
-		/// @brief Default copy constructor.
-		///	@param other The copied one.
-		///	@return The reference of this.
-		MemoryView& operator=(const MemoryView& other);
-
-		/// @brief Default move constructor.
-		///	@param other The moved one.
-		///	@return The reference of this.
-		MemoryView& operator=(MemoryView&& other) noexcept;
-
 		/// @brief Access memory like byte array.
 		///	@param index The index of the byte.
 		///	@return The reference of the byte.

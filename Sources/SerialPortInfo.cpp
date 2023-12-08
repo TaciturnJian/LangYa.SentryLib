@@ -14,24 +14,6 @@ namespace LangYa::SentryLib
 	{
 	}
 
-	SerialPortInfo
-	::SerialPortInfo(const SerialPortInfo& other)
-	= default;
-
-	SerialPortInfo
-	::SerialPortInfo(SerialPortInfo&& other) noexcept
-	= default;
-
-	SerialPortInfo&
-	SerialPortInfo
-	::operator=(const SerialPortInfo& other)
-	= default;
-
-	SerialPortInfo&
-	SerialPortInfo
-	::operator=(SerialPortInfo&& other) noexcept
-	= default;
-
 	std::string
 	SerialPortInfo
 	::ToString() const

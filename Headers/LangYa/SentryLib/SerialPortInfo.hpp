@@ -29,22 +29,6 @@ namespace LangYa::SentryLib
 		///	@param characterSize The character size when transferring a byte.
 		SerialPortInfo(std::string portName, const unsigned int& baudRate, unsigned char characterSize = 8);
 
-		/// @brief Default copy constructor
-		///	@param other The information to copy from.
-		SerialPortInfo(const SerialPortInfo& other);
-
-		/// @brief Default move constructor
-		///	@param other The information to move.
-		SerialPortInfo(SerialPortInfo&& other) noexcept;
-
-		/// @brief Default copy assignment operator.
-		///	@param other The information to copy from.
-		SerialPortInfo& operator=(const SerialPortInfo& other);
-
-		/// @brief Default move assignment operator.
-		///	@param other The information to move.
-		SerialPortInfo& operator=(SerialPortInfo&& other) noexcept;
-
 		/// @brief Used to log this.
 		[[nodiscard]] std::string ToString() const;
 	};

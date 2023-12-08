@@ -16,14 +16,6 @@ namespace LangYa::SentryLib
 		{
 		}
 
-		Position1(const Position1& other) = default;
-
-		Myself operator=(const Position1& other) = default;
-
-		Position1(Position1&& other) = default;
-
-		Myself operator=(Position1&& other) = default;
-
 		~Position1() = default;
 	};
 }
