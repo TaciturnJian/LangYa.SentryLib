@@ -146,6 +146,7 @@ namespace LangYa::SentryLib
 #pragma endregion
 	};
 
+	using Vector2S = Vector2<short>;
 	using Vector2I = Vector2<int>;
 	using Vector2F = Vector2<float>;
 	using Vector2D = Vector2<double>;

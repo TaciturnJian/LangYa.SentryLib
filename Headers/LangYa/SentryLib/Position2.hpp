@@ -19,4 +19,9 @@ namespace LangYa::SentryLib
 
 		~Position2() = default;
 	};
+
+	using Position2I = Position2<int>;
+	using Position2Ui = Position2<unsigned int>;
+	using Position2F = Position2<float>;
+	using Position2D = Position2<double>;
 }
