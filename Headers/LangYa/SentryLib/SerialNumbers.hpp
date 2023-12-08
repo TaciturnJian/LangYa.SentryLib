@@ -28,14 +28,6 @@ namespace LangYa::SentryLib
 		{
 		}
 
-		SerialNumbers(const SerialNumbers& other) = default;
-
-		SerialNumbers(SerialNumbers&& other) = default;
-
-		SerialNumbers& operator=(const SerialNumbers& other) = default;
-
-		SerialNumbers& operator=(SerialNumbers&& other) = default;
-
 		TBasicNumber& operator[](MemoryView::SizeType index)
 		{
 			if (Numbers.size() <= index)
