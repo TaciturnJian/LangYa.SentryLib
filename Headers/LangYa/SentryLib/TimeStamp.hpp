@@ -4,7 +4,7 @@
 
 namespace LangYa::SentryLib 
 {
-	/// @brief 时间戳
+	/// @brief 代表通用的时间戳
 	struct TimeStamp
 	{
 		using ClockType = std::chrono::steady_clock;

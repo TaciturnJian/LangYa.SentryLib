@@ -1,131 +1,134 @@
-#include <LangYa/SentryLib.hpp>
-
 #include <cmath>
 #include <thread>
 #include <chrono>
 #include <memory>
 
-#include "LangYa/SentryLib/Configurator.hpp"
+#include <LangYa/SentryLib.hpp>
 
 using namespace std;
 using namespace LangYa::SentryLib;
 
-struct SentryData final : SerializableContent, DeserializableContent
+namespace Temp
 {
+	struct SentryData final : SerializableContent, DeserializableContent
+	{
 #pragma pack(push,1)
 
-	struct ComplexFireByte
-	{
-		unsigned char FireFlag      : 2 = 0;
-		unsigned char HoldFlag      : 2 = 0;
-		unsigned char FireFrequency : 4 = 0;
-
-		ComplexFireByte() = default;
-	};
-
-	struct SerializationResult final
-	{
-		char VelocityX{0};         // Integers in [-100, 100]
-		char VelocityY{0};         // Integers in [-100, 100]
-		float Yaw{0};              // 1 = 1 Degree
-		short Pitch{0};            // 1 = 0.01 Degree
-		ComplexFireByte Complex{}; // Complex byte for fire
-		unsigned char CRCCode{0};  // CRC8
-
-		void operator()(const SentryData& data)
+		struct ComplexFireByte
 		{
-			VelocityX = data.Velocity[0];
-			VelocityY = data.Velocity[1];
-			Yaw = data.GimbalEulerAngle[0];
-			Pitch = data.GimbalEulerAngle[1] * 100;
-			Complex.FireFlag = data.FireFlag;
-			Complex.FireFrequency = 0;
-			Complex.HoldFlag = 0;
-		}
-	};
+			unsigned char FireFlag      : 2 = 0;
+			unsigned char HoldFlag      : 2 = 0;
+			unsigned char FireFrequency : 4 = 0;
 
-	struct DataToDeserialize final
-	{
-		char Head{'!'};
-		float Yaw{0};                // 1 = 1°
-		short Pitch{0};              // 1 = 0.01°
-		unsigned short AmmoCount{0}; // 1 = 一发子弹
-		char VelocityX{0};           // [-100, 100]的整数
-		char VelocityY{0};           // [-100, 100]的整数
-		bool FireFlag{false};        // 当前开火标志（取反后开火）
-		unsigned char CRCCode{0};    // CRC8验证位置
+			ComplexFireByte() = default;
+		};
 
-		void operator()(SentryData& data) const
+		struct SerializationResult final
 		{
-			data.GimbalEulerAngle = {Yaw, static_cast<float>(Pitch) / 100.0f};
-			data.Velocity = {VelocityX, VelocityY};
-			data.AmmoCount = AmmoCount;
-			data.FireFlag = FireFlag;
-		}
-	};
+			char VelocityX{0};         // Integers in [-100, 100]
+			char VelocityY{0};         // Integers in [-100, 100]
+			float Yaw{0};              // 1 = 1 Degree
+			short Pitch{0};            // 1 = 0.01 Degree
+			ComplexFireByte Complex{}; // Complex byte for fire
+			unsigned char CRCCode{0};  // CRC8
+
+			void operator()(const SentryData& data)
+			{
+				VelocityX = data.Velocity[0];
+				VelocityY = data.Velocity[1];
+				Yaw = data.GimbalEulerAngle[0];
+				Pitch = data.GimbalEulerAngle[1] * 100;
+				Complex.FireFlag = data.FireFlag;
+				Complex.FireFrequency = 0;
+				Complex.HoldFlag = 0;
+			}
+		};
+
+		struct DataToDeserialize final
+		{
+			char Head{'!'};
+			float Yaw{0};                // 1 = 1°
+			short Pitch{0};              // 1 = 0.01°
+			unsigned short AmmoCount{0}; // 1 = 一发子弹
+			char VelocityX{0};           // [-100, 100]的整数
+			char VelocityY{0};           // [-100, 100]的整数
+			bool FireFlag{false};        // 当前开火标志（取反后开火）
+			unsigned char CRCCode{0};    // CRC8验证位置
+
+			void operator()(SentryData& data) const
+			{
+				data.GimbalEulerAngle = {Yaw, static_cast<float>(Pitch) / 100.0f};
+				data.Velocity = {VelocityX, VelocityY};
+				data.AmmoCount = AmmoCount;
+				data.FireFlag = FireFlag;
+			}
+		};
 
 #pragma pack(pop)
 
-	Vector2F GimbalEulerAngle{0, 0}; // 单位 (度, 度)
-	Vector2I Velocity{0, 0};         // 单位 (档, 档)
-	unsigned short AmmoCount{0};     // 单位 发
-	bool FireFlag{false};            // 开火标志位
+		Vector2F GimbalEulerAngle{0, 0}; // 单位 (度, 度)
+		Vector2I Velocity{0, 0};         // 单位 (档, 档)
+		unsigned short AmmoCount{0};     // 单位 发
+		bool FireFlag{false};            // 开火标志位
 
-	SentryData() = default;
-	SentryData(const SentryData& other) = default;
-	SentryData(SentryData&& other) = default;
-	SentryData& operator=(const SentryData& other) = default;
-	SentryData& operator=(SentryData&& other) = default;
+		SentryData() = default;
+		SentryData(const SentryData& other) = default;
+		SentryData(SentryData&& other) = default;
+		SentryData& operator=(const SentryData& other) = default;
+		SentryData& operator=(SentryData&& other) = default;
 
-	[[nodiscard]] MemoryView::SizeType GetSerializationResultSize() const override
-	{
-		return sizeof(SerializationResult);
-	}
-
-	[[nodiscard]] bool Serialize(const MemoryView& buffer) override
-	{
-		if (buffer.Size < sizeof(SerializationResult))
+		[[nodiscard]] MemoryView::SizeType GetSerializationResultSize() const override
 		{
-			return false;
+			return sizeof(SerializationResult);
 		}
 
-		// ReSharper disable once CppUseStructuredBinding
-		auto& data = *(reinterpret_cast<SerializationResult*>(buffer.Head));
-		data(*this);
-		return true;
-	}
-
-	[[nodiscard]] MemoryView::SizeType GetDeserializationResourceSize() const override
-	{
-		return sizeof(DataToDeserialize);
-	}
-
-	[[nodiscard]] bool Deserialize(const MemoryView& buffer) override
-	{
-		if (buffer.Size < sizeof(DataToDeserialize))
+		[[nodiscard]] bool Serialize(const MemoryView& buffer) override
 		{
-			return false;
+			if (buffer.Size < sizeof(SerializationResult))
+			{
+				return false;
+			}
+
+			// ReSharper disable once CppUseStructuredBinding
+			auto& data = *(reinterpret_cast<SerializationResult*>(buffer.Head));
+			data(*this);
+			return true;
 		}
 
-		// ReSharper disable once CppUseStructuredBinding
-		const auto& data = *(reinterpret_cast<DataToDeserialize*>(buffer.Head));
-		data(*this);
-		return true;
-	}
+		[[nodiscard]] MemoryView::SizeType GetDeserializationResourceSize() const override
+		{
+			return sizeof(DataToDeserialize);
+		}
 
-	/// @brief 将数组转换为类似json格式的字符串。
-	///	@return 一个新的字符串实例。
-	[[nodiscard]] std::string ToString()
-	{
-		return fmt::format(
-			R"(("GimbalEulerAngle":{},"Velocity":{},"AmmoCount":{},"FireFlag":{}))",
-			GimbalEulerAngle.ToString(),
-			Velocity.ToString(),
-			AmmoCount,
-			FireFlag
-		);
-	}
-};
+		[[nodiscard]] bool Deserialize(const MemoryView& buffer) override
+		{
+			if (buffer.Size < sizeof(DataToDeserialize))
+			{
+				return false;
+			}
+
+			// ReSharper disable once CppUseStructuredBinding
+			const auto& data = *(reinterpret_cast<DataToDeserialize*>(buffer.Head));
+			data(*this);
+			return true;
+		}
+
+		/// @brief 将数组转换为类似json格式的字符串。
+		///	@return 一个新的字符串实例。
+		[[nodiscard]] std::string ToString()
+		{
+			return fmt::format(
+				R"(("GimbalEulerAngle":{},"Velocity":{},"AmmoCount":{},"FireFlag":{}))",
+				GimbalEulerAngle.ToString(),
+				Velocity.ToString(),
+				AmmoCount,
+				FireFlag
+			);
+		}
+	};
+}
+
+using namespace Temp;
 
 void TestServer()
 {

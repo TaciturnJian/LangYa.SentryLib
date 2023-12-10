@@ -44,6 +44,8 @@ namespace LangYa::SentryLib
 		TControllerData* operator->();
 	};
 
+	//TODO 检测连接异常，如果异常则选择处理方式
+
 #pragma region 函数实现
 
 	template <Serializable TControllerData>

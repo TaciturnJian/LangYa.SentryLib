@@ -3,6 +3,7 @@
 namespace LangYa::SentryLib
 {
 	/// @brief 记录控制台参数。
+	///	本质就是包装了一层的main函数的参数，方便使用。
 	struct CommandLineArguments
 	{
 		/// @brief 控制台参数的类型 => 常量字符串。
@@ -31,6 +32,7 @@ namespace LangYa::SentryLib
 		CommandLineArguments(unsigned int count, CommandLineArgumentListType list);
 
 		/// @brief 访问控制台参数。
-		CommandLineArgumentType operator[](unsigned int index) const;
+		///	如果此时访问的索引超出了范围，那么将会返回空指针。
+		CommandLineArgumentType operator[](unsigned int index) const noexcept;
 	};
 }

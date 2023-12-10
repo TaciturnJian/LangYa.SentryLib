@@ -14,7 +14,7 @@ namespace LangYa::SentryLib
 	public:
 		/// @brief 默认构造函数，提供一个内存视图，此连接将会基于此视图读写内存。
 		///	@param view 一个可读写的内存视图。
-		explicit MemoryAccess(MemoryView view);
+		explicit MemoryAccess(const MemoryView& view);
 
 		/// @brief 空函数，实现接口。
 		void Connect() override;

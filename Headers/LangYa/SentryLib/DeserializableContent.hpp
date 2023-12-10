@@ -6,7 +6,6 @@
 
 namespace LangYa::SentryLib
 {
-#pragma pack(push, 1)
 	/// @brief 代表一种可以反序列化的内容。
 	///	此接口提供了反序列时所需要的两个函数： 获取反序列化资源的最小大小，以及从缓冲区中反序列化资源。
 	SC_INTERFACE DeserializableContent
@@ -24,9 +23,9 @@ namespace LangYa::SentryLib
 		///	@return 是否反序列化成功。
 		[[nodiscard]] virtual bool Deserialize(const MemoryView& buffer) = 0;
 	};
-#pragma pack(pop)
 
-	/// @brief 基本的可以反序列化的资源概念，也就是继承了 @code LangYa::SentryLib::DeserializableContent @endcode。
+	/// @brief 基本的可以反序列化的资源概念
+	/// 即继承了： @code LangYa::SentryLib::DeserializableContent @endcode。
 	///	@tparam T 受检查的类型。
 	template <typename T>
 	concept Deserializable = requires

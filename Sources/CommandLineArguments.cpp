@@ -3,7 +3,8 @@
 namespace LangYa::SentryLib
 {
 	CommandLineArguments
-	::CommandLineArguments() = default;
+	::CommandLineArguments()
+	= default;
 
 	CommandLineArguments
 	::CommandLineArguments(const int count, const CommandLineArgumentListType list) :
@@ -21,7 +22,7 @@ namespace LangYa::SentryLib
 
 	CommandLineArguments::CommandLineArgumentType
 	CommandLineArguments
-	::operator[](const unsigned index) const
+	::operator[](const unsigned index) const noexcept
 	{
 		if (index >= ArgumentCount)
 		{

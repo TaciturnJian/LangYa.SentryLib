@@ -3,8 +3,8 @@
 namespace LangYa::SentryLib
 {
 	MemoryAccess
-	::MemoryAccess(MemoryView view) :
-		View(std::move(view))
+	::MemoryAccess(const MemoryView& view) :
+		View(view)
 	{
 	}
 

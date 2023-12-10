@@ -74,7 +74,7 @@ int main(int argc, char** argv)
 			(
 				"ConfigPath",
 				boost::program_options::value(&JsonFilePath),
-				"File path for the configuration file. May be the absolute path will be better"
+				"File path for the configuration file. Maybe the absolute path will be better"
 			);
 		if (!configurator.Load({argc, argv}))
 		{
