@@ -9,5 +9,5 @@ var searchData=
   ['langyaconnection_2ecpp_6',['LangYaConnection.cpp',['../_lang_ya_connection_8cpp.html',1,'']]],
   ['langyaconnection_2ehpp_7',['LangYaConnection.hpp',['../_lang_ya_connection_8hpp.html',1,'']]],
   ['load_8',['load',['../class_lang_ya_1_1_sentry_lib_1_1_configurator.html#a0452562497ba6db92763762ff3657558',1,'LangYa::SentryLib::Configurator::Load(const CommandLineArguments &amp;commandLineArguments)'],['../class_lang_ya_1_1_sentry_lib_1_1_configurator.html#afdf4f37ceed9b9edd2121dd36da5f4c2',1,'LangYa::SentryLib::Configurator::Load(const std::string &amp;jsonFilePath, const JsonMapper &amp;mapper)']]],
-  ['lookat_9',['LookAt',['../namespace_behavior.html#a32985c554f77b252d821654bb90ade71',1,'Behavior']]]
+  ['looprun_9',['looprun',['../class_lang_ya_1_1_sentry_lib_1_1_match_status_manager.html#a6c6bd75459d70b0bf310e8cf9a0dd2a2',1,'LangYa::SentryLib::MatchStatusManager::LoopRun()'],['../_ideal_logic_8cpp.html#a831310c11b225758def19a36c68fe3fe',1,'LoopRun():&#160;IdealLogic.cpp']]]
 ];

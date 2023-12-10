@@ -102,18 +102,18 @@ $(document).ready(function(){initNavTree('concept_lang_ya_1_1_sentry_lib_1_1_ser
 <h2 class="groupheader">概念定义</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="concept_lang_ya_1_1_sentry_lib_1_1_serializable.html">LangYa::SentryLib::Serializable</a> =  <span class="keyword">requires</span>(</div>
-<div class="line">        SerializableContent* base,</div>
+<div class="line">        <a class="code hl_variable" href="namespace_lang_ya_1_1_sentry_lib.html#ab9f49ebc9210cb1f99aac3d7e75e8333">SerializableContent</a>* base,</div>
 <div class="line">        T* p,</div>
 <div class="line">        <span class="keywordtype">bool</span> result</div>
 <div class="line">    )</div>
 <div class="line">        {</div>
 <div class="line">            base = p;</div>
 <div class="line">        }</div>
-<div class="ttc" id="aconcept_lang_ya_1_1_sentry_lib_1_1_serializable_html"><div class="ttname"><a href="concept_lang_ya_1_1_sentry_lib_1_1_serializable.html">LangYa::SentryLib::Serializable</a></div><div class="ttdoc">代表一个可以序列化的类型，即可以被转换为</div><div class="ttdef"><b>Definition</b> SerializableContent.hpp:31</div></div>
+<div class="ttc" id="aconcept_lang_ya_1_1_sentry_lib_1_1_serializable_html"><div class="ttname"><a href="concept_lang_ya_1_1_sentry_lib_1_1_serializable.html">LangYa::SentryLib::Serializable</a></div><div class="ttdoc">代表一个可以序列化的类型，即可以被转换为</div><div class="ttdef"><b>Definition</b> SerializableContent.hpp:34</div></div>
+<div class="ttc" id="anamespace_lang_ya_1_1_sentry_lib_html_ab9f49ebc9210cb1f99aac3d7e75e8333"><div class="ttname"><a href="namespace_lang_ya_1_1_sentry_lib.html#ab9f49ebc9210cb1f99aac3d7e75e8333">LangYa::SentryLib::SerializableContent</a></div><div class="ttdeci">SC_INTERFACE SerializableContent</div><div class="ttdoc">代表一个可被序列化的东西。 可被序列化即信息可以无损地转换为二进制数据。 一般将内容序列化后，将其写入文件或者网络传输，可以减轻读写传输等IO操作的压力。</div><div class="ttdef"><b>Definition</b> SerializableContent.hpp:13</div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>代表一个可以序列化的类型，即可以被转换为 </p>
-<div class="fragment"><div class="line"><a class="code hl_class" href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html">LangYa::SentryLib::SerializableContent</a> </div>
-<div class="ttc" id="aclass_lang_ya_1_1_sentry_lib_1_1_serializable_content_html"><div class="ttname"><a href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html">LangYa::SentryLib::SerializableContent</a></div><div class="ttdoc">Represent a content that is serializable.</div><div class="ttdef"><b>Definition</b> SerializableContent.hpp:9</div></div>
+<div class="fragment"><div class="line"><a class="code hl_variable" href="namespace_lang_ya_1_1_sentry_lib.html#ab9f49ebc9210cb1f99aac3d7e75e8333">LangYa::SentryLib::SerializableContent</a> </div>
 </div><!-- fragment --><p> 的类型。 </p><dl class="tparams"><dt>模板参数</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>概念中被检查的类型 </td></tr>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('concept_lang_ya_1_1_sentry_lib_1_1_ser
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_lang_ya.html">LangYa</a></li><li class="navelem"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">SentryLib</a></li><li class="navelem"><a class="el" href="concept_lang_ya_1_1_sentry_lib_1_1_serializable.html">Serializable</a></li>
-    <li class="footer">生成于 2023年 十二月 7日 星期四 00:27:55 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 10日 星期日 23:13:36 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

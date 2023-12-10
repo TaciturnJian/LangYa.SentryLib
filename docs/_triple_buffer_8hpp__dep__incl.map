@@ -1,20 +1,22 @@
 <map id="Headers/LangYa/SentryLib/TripleBuffer.hpp" name="Headers/LangYa/SentryLib/TripleBuffer.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="393,5,569,48"/>
-<area shape="rect" id="Node000002" href="$_sentry_lib_8hpp.html" title=" " alt="" coords="255,187,456,213"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="425,58,402,76,383,98,371,120,364,144,358,186,353,186,359,143,366,118,378,94,399,72,422,54"/>
-<area shape="rect" id="Node000007" href="$_lang_ya_connection_8hpp.html" title=" " alt="" coords="393,96,569,139"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="483,64,483,96,478,96,478,64"/>
-<area shape="rect" id="Node000009" href="$_triple_buffer_8cpp.html" title=" " alt="" coords="593,104,755,131"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="541,52,647,101,645,106,539,57"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="491,5,668,48"/>
+<area shape="rect" id="Node000002" href="$_sentry_lib_8hpp.html" title=" " alt="" coords="257,187,459,213"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="477,46,428,66,405,80,385,98,372,119,364,143,360,186,355,186,359,142,367,117,381,94,402,76,425,61,475,41"/>
+<area shape="rect" id="Node000007" href="$_lang_ya_connection_8hpp.html" title=" " alt="" coords="395,96,572,139"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="548,61,507,98,504,94,544,57"/>
+<area shape="rect" id="Node000009" href="$_triple_buffer_8cpp.html" title=" " alt="" coords="596,104,758,131"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="615,57,665,102,661,106,611,61"/>
+<area shape="rect" id="Node000010" href="$_triple_buffer_tester_8cpp.html" title=" " alt="" coords="781,104,975,131"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="665,50,836,101,834,106,663,55"/>
 <area shape="rect" id="Node000003" href="$_sentry_lib_8cpp.html" title=" " alt="" coords="5,261,159,288"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="294,220,131,263,129,258,292,215"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="296,220,131,263,130,258,295,215"/>
 <area shape="rect" id="Node000004" href="$_example_app_8cpp.html" title=" " alt="" coords="182,261,350,288"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="330,226,283,263,280,259,326,221"/>
-<area shape="rect" id="Node000005" href="$_sentry_a_i_8cpp.html" title=" " alt="" coords="374,261,518,288"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="384,221,432,259,429,263,381,225"/>
-<area shape="rect" id="Node000006" href="$_test_app_8cpp.html" title=" " alt="" coords="542,261,683,288"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="415,215,568,258,567,263,414,220"/>
-<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="437,150,376,188,374,184,434,145"/>
-<area shape="rect" id="Node000008" href="$_lang_ya_connection_8cpp.html" title=" " alt="" coords="480,187,687,213"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="520,146,569,184,566,188,517,151"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="332,225,283,263,280,259,329,221"/>
+<area shape="rect" id="Node000005" href="$_ideal_logic_8cpp.html" title=" " alt="" coords="374,261,526,288"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="387,221,436,259,433,263,384,225"/>
+<area shape="rect" id="Node000006" href="$_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和json配置文件的处理工具，使用操作见" alt="" coords="550,261,691,288"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="419,215,575,258,574,263,418,220"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="440,150,379,188,376,184,437,145"/>
+<area shape="rect" id="Node000008" href="$_lang_ya_connection_8cpp.html" title=" " alt="" coords="482,187,690,213"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="523,146,572,184,568,188,520,151"/>
 </map>

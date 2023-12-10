@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['pingpongbuffer_0',['PingPongBuffer',['../class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html',1,'LangYa::SentryLib']]],
-  ['position1_1',['Position1',['../struct_lang_ya_1_1_sentry_lib_1_1_position1.html',1,'LangYa::SentryLib']]],
-  ['position1_3c_20float_20_3e_2',['Position1&lt; float &gt;',['../struct_lang_ya_1_1_sentry_lib_1_1_position1.html',1,'LangYa::SentryLib']]],
-  ['position2_3',['Position2',['../struct_lang_ya_1_1_sentry_lib_1_1_position2.html',1,'LangYa::SentryLib']]],
-  ['position2_3c_20float_20_3e_4',['Position2&lt; float &gt;',['../struct_lang_ya_1_1_sentry_lib_1_1_position2.html',1,'LangYa::SentryLib']]],
-  ['position3_5',['Position3',['../struct_lang_ya_1_1_sentry_lib_1_1_position3.html',1,'LangYa::SentryLib']]],
-  ['position3_3c_20float_20_3e_6',['Position3&lt; float &gt;',['../struct_lang_ya_1_1_sentry_lib_1_1_position3.html',1,'LangYa::SentryLib']]]
+  ['sensor_0',['Sensor',['../class_lang_ya_1_1_sentry_lib_1_1_sensor.html',1,'LangYa::SentryLib']]],
+  ['sentrydata_1',['SentryData',['../struct_temp_1_1_sentry_data.html',1,'Temp']]],
+  ['serializationresult_2',['SerializationResult',['../struct_temp_1_1_sentry_data_1_1_serialization_result.html',1,'Temp::SentryData']]],
+  ['serialnumbers_3',['SerialNumbers',['../struct_lang_ya_1_1_sentry_lib_1_1_serial_numbers.html',1,'LangYa::SentryLib']]],
+  ['serialnumbers_3c_20unsigned_20short_20_3e_4',['SerialNumbers&lt; unsigned short &gt;',['../struct_lang_ya_1_1_sentry_lib_1_1_serial_numbers.html',1,'LangYa::SentryLib']]],
+  ['serialport_5',['SerialPort',['../class_lang_ya_1_1_sentry_lib_1_1_serial_port.html',1,'LangYa::SentryLib']]],
+  ['serialportinfo_6',['SerialPortInfo',['../struct_lang_ya_1_1_sentry_lib_1_1_serial_port_info.html',1,'LangYa::SentryLib']]]
 ];

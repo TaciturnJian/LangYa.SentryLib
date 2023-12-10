@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('concept_lang_ya_1_1_sentry_lib_1_1_des
 </div><!--header-->
 <div class="contents">
 
-<p>基本的可以反序列化的资源概念，也就是继承了  
+<p>基本的可以反序列化的资源概念 即继承了：  
 <a href="concept_lang_ya_1_1_sentry_lib_1_1_deserializable.html#details">更多...</a></p>
 
 <p><code>#include &lt;<a class="el" href="">DeserializableContent.hpp</a>&gt;</code></p>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('concept_lang_ya_1_1_sentry_lib_1_1_des
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="concept_lang_ya_1_1_sentry_lib_1_1_deserializable.html">LangYa::SentryLib::Deserializable</a> =  <span class="keyword">requires</span></div>
 <div class="line">    (</div>
-<div class="line">        DeserializableContent* base,</div>
+<div class="line">        <a class="code hl_variable" href="namespace_lang_ya_1_1_sentry_lib.html#a15d8bc87de629e83ef52d1ebf56c0a3a">DeserializableContent</a>* base,</div>
 <div class="line">        T* p,</div>
 <div class="line">        MemoryView view,</div>
 <div class="line">        <a class="code hl_typedef" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a> size,</div>
@@ -111,15 +111,13 @@ $(document).ready(function(){initNavTree('concept_lang_ya_1_1_sentry_lib_1_1_des
 <div class="line">    )</div>
 <div class="line">        {</div>
 <div class="line">            base = p;</div>
-<div class="line">            size = p-&gt;GetDeserializationResourceSize();</div>
-<div class="line">            result = p-&gt;Deserialize(view);</div>
 <div class="line">        }</div>
-<div class="ttc" id="aconcept_lang_ya_1_1_sentry_lib_1_1_deserializable_html"><div class="ttname"><a href="concept_lang_ya_1_1_sentry_lib_1_1_deserializable.html">LangYa::SentryLib::Deserializable</a></div><div class="ttdoc">基本的可以反序列化的资源概念，也就是继承了</div><div class="ttdef"><b>Definition</b> DeserializableContent.hpp:31</div></div>
+<div class="ttc" id="aconcept_lang_ya_1_1_sentry_lib_1_1_deserializable_html"><div class="ttname"><a href="concept_lang_ya_1_1_sentry_lib_1_1_deserializable.html">LangYa::SentryLib::Deserializable</a></div><div class="ttdoc">基本的可以反序列化的资源概念 即继承了：</div><div class="ttdef"><b>Definition</b> DeserializableContent.hpp:31</div></div>
+<div class="ttc" id="anamespace_lang_ya_1_1_sentry_lib_html_a15d8bc87de629e83ef52d1ebf56c0a3a"><div class="ttname"><a href="namespace_lang_ya_1_1_sentry_lib.html#a15d8bc87de629e83ef52d1ebf56c0a3a">LangYa::SentryLib::DeserializableContent</a></div><div class="ttdeci">SC_INTERFACE DeserializableContent</div><div class="ttdoc">代表一种可以反序列化的内容。 此接口提供了反序列时所需要的两个函数： 获取反序列化资源的最小大小，以及从缓冲区中反序列化资源。</div><div class="ttdef"><b>Definition</b> DeserializableContent.hpp:12</div></div>
 <div class="ttc" id="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_html_a31da2070cd759fdfd599d1a779d189a7"><div class="ttname"><a href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">LangYa::SentryLib::MemoryView::SizeType</a></div><div class="ttdeci">unsigned long long SizeType</div><div class="ttdoc">代表 Size 的数据类型。</div><div class="ttdef"><b>Definition</b> MemoryView.hpp:14</div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>基本的可以反序列化的资源概念，也就是继承了 </p>
-<div class="fragment"><div class="line"><a class="code hl_class" href="class_lang_ya_1_1_sentry_lib_1_1_deserializable_content.html">LangYa::SentryLib::DeserializableContent</a> </div>
-<div class="ttc" id="aclass_lang_ya_1_1_sentry_lib_1_1_deserializable_content_html"><div class="ttname"><a href="class_lang_ya_1_1_sentry_lib_1_1_deserializable_content.html">LangYa::SentryLib::DeserializableContent</a></div><div class="ttdoc">代表一种可以反序列化的内容。</div><div class="ttdef"><b>Definition</b> DeserializableContent.hpp:9</div></div>
+<div class="textblock"><p>基本的可以反序列化的资源概念 即继承了： </p>
+<div class="fragment"><div class="line"><a class="code hl_variable" href="namespace_lang_ya_1_1_sentry_lib.html#a15d8bc87de629e83ef52d1ebf56c0a3a">LangYa::SentryLib::DeserializableContent</a> </div>
 </div><!-- fragment --><p>。 </p><dl class="tparams"><dt>模板参数</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>受检查的类型。 </td></tr>
@@ -132,7 +130,7 @@ $(document).ready(function(){initNavTree('concept_lang_ya_1_1_sentry_lib_1_1_des
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_lang_ya.html">LangYa</a></li><li class="navelem"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">SentryLib</a></li><li class="navelem"><a class="el" href="concept_lang_ya_1_1_sentry_lib_1_1_deserializable.html">Deserializable</a></li>
-    <li class="footer">生成于 2023年 十二月 7日 星期四 00:27:55 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 10日 星期日 23:13:36 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,26 +1,19 @@
 <map id="Headers/LangYa/SentryLib/ApplicationInfo.hpp" name="Headers/LangYa/SentryLib/ApplicationInfo.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="87,5,263,48"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="28,5,204,48"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,96,59,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,51,69,90,66,86,137,46"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="83,96,152,123"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,50,137,85,133,82,158,47"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="176,96,288,123"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="192,47,216,82,212,85,187,50"/>
-<area shape="rect" id="Node000005" href="$_serial_numbers_8hpp.html" title=" " alt="" coords="313,96,551,123"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="242,46,378,88,376,93,240,51"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="214,171,269,197"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="400,126,284,169,282,164,398,121"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="442,245,510,272"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="398,126,369,139,344,156,330,175,330,185,334,196,353,216,376,231,427,248,425,253,374,236,349,220,330,199,325,186,325,174,341,152,367,134,395,121"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="344,171,421,197"/>
-<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="426,125,402,159,398,156,421,122"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="446,171,514,197"/>
-<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="443,122,466,156,461,159,438,125"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="539,171,635,197"/>
-<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="460,121,547,161,545,166,458,126"/>
-<area shape="rect" id="Node000011" href="$_memory_view_8hpp.html" title=" " alt="" coords="659,171,888,197"/>
-<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="492,121,699,164,698,170,491,126"/>
-<area shape="poly" id="edge11_Node000011_Node000007" title=" " alt="" coords="722,201,526,248,524,243,721,195"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="703,245,844,272"/>
-<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="776,198,776,230,771,230,771,198"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,51,58,87,54,83,93,47"/>
+<area shape="rect" id="Node000003" href="$_serial_numbers_8hpp.html" title=" " alt="" coords="82,96,321,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,47,179,83,175,87,136,51"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="35,171,90,197"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="178,126,102,165,99,161,176,121"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="114,171,182,197"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="194,125,168,160,164,157,190,122"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="207,171,303,197"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="213,122,239,157,234,160,208,125"/>
+<area shape="rect" id="Node000007" href="$_memory_view_8hpp.html" title=" " alt="" coords="327,171,556,197"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="244,121,385,163,384,168,242,126"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="342,245,410,272"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="432,200,399,236,395,232,428,196"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="435,245,576,272"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="454,196,486,232,482,235,450,200"/>
 </map>

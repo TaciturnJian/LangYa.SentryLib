@@ -1,6 +1,6 @@
 var class_lang_ya_1_1_sentry_lib_1_1_memory_access =
 [
-    [ "MemoryAccess", "class_lang_ya_1_1_sentry_lib_1_1_memory_access.html#a98c3e7d3c3457fbf28446cc792ea1ee5", null ],
+    [ "MemoryAccess", "class_lang_ya_1_1_sentry_lib_1_1_memory_access.html#a343d4ee1c504fdb6baf58a7c7078490d", null ],
     [ "Connect", "class_lang_ya_1_1_sentry_lib_1_1_memory_access.html#a4d441037fe42a007b7005dd33060d705", null ],
     [ "Disconnect", "class_lang_ya_1_1_sentry_lib_1_1_memory_access.html#aceb72021f2069de1b4aee75aed0bda29", null ],
     [ "IsConnected", "class_lang_ya_1_1_sentry_lib_1_1_memory_access.html#a28d91fd0eac2ab6a5b69104b9c6456fb", null ],

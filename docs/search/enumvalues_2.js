@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['empty_0',['Empty',['../namespace_lang_ya_1_1_sentry_lib.html#a36d2882e7661f30e5caf0f74c85df62dace2c8aed9c2fa0cfbed56cbda4d8bf07',1,'LangYa::SentryLib']]]
+  ['cyan_0',['Cyan',['../class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html#ac7a137824050901043e8767147fbc9f1aa7c9349791c27988c9653e124ca7b182',1,'LangYa::SentryLib::ConsoleManipulator']]]
 ];

@@ -92,13 +92,15 @@ $(document).ready(function(){initNavTree('_deserializable_content_8hpp.html','')
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">类</a> &#124;
 <a href="#namespaces">命名空间</a> &#124;
-<a href="#concepts">概念</a>  </div>
+<a href="#concepts">概念</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
   <div class="headertitle"><div class="title">DeserializableContent.hpp 文件参考</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="">LangYa/SentryLib/MemoryView.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="">LangYa/SentryLib/CSharpp.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="">LangYa/SentryLib/MemoryView.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> DeserializableContent.hpp 的引用(Include)关系图:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -106,13 +108,15 @@ $(document).ready(function(){initNavTree('_deserializable_content_8hpp.html','')
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_deserializable_content_8hpp__incl.png" border="0" usemap="#a_headers_2_lang_ya_2_sentry_lib_2_deserializable_content_8hpp" alt=""/></div>
 <map name="a_headers_2_lang_ya_2_sentry_lib_2_deserializable_content_8hpp" id="a_headers_2_lang_ya_2_sentry_lib_2_deserializable_content_8hpp">
-<area shape="rect" title=" " alt="" coords="31,5,208,48"/>
-<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="5,96,234,123"/>
-<area shape="poly" title=" " alt="" coords="122,49,122,80,117,80,117,49"/>
-<area shape="rect" title=" " alt="" coords="21,171,90,197"/>
-<area shape="poly" title=" " alt="" coords="110,125,79,161,75,157,106,121"/>
-<area shape="rect" title=" " alt="" coords="114,171,256,197"/>
-<area shape="poly" title=" " alt="" coords="133,121,166,157,162,161,129,125"/>
+<area shape="rect" title=" " alt="" coords="139,5,315,48"/>
+<area shape="rect" href="_c_sharpp_8hpp.html" title=" " alt="" coords="5,96,209,123"/>
+<area shape="poly" title=" " alt="" coords="198,51,140,89,137,85,195,46"/>
+<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="233,96,461,123"/>
+<area shape="poly" title=" " alt="" coords="259,46,317,85,314,89,256,51"/>
+<area shape="rect" title=" " alt="" coords="248,171,316,197"/>
+<area shape="poly" title=" " alt="" coords="338,125,305,161,301,157,334,121"/>
+<area shape="rect" title=" " alt="" coords="340,171,482,197"/>
+<area shape="poly" title=" " alt="" coords="360,121,392,157,388,161,356,125"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -122,35 +126,29 @@ $(document).ready(function(){initNavTree('_deserializable_content_8hpp.html','')
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_deserializable_content_8hpp__dep__incl.png" border="0" usemap="#a_headers_2_lang_ya_2_sentry_lib_2_deserializable_content_8hppdep" alt=""/></div>
 <map name="a_headers_2_lang_ya_2_sentry_lib_2_deserializable_content_8hppdep" id="a_headers_2_lang_ya_2_sentry_lib_2_deserializable_content_8hppdep">
-<area shape="rect" title=" " alt="" coords="393,5,569,48"/>
-<area shape="rect" href="_sentry_lib_8hpp.html" title=" " alt="" coords="255,187,456,213"/>
-<area shape="poly" title=" " alt="" coords="425,58,402,76,383,98,371,120,364,144,358,186,353,186,359,143,366,118,378,94,399,72,422,54"/>
-<area shape="rect" href="_sensor_8hpp.html" title=" " alt="" coords="393,96,569,139"/>
-<area shape="poly" title=" " alt="" coords="483,64,483,96,478,96,478,64"/>
-<area shape="rect" href="_deserializable_content_8cpp.html" title=" " alt="" coords="593,104,817,131"/>
-<area shape="poly" title=" " alt="" coords="548,52,674,101,672,106,546,57"/>
+<area shape="rect" title=" " alt="" coords="395,5,572,48"/>
+<area shape="rect" href="_sentry_lib_8hpp.html" title=" " alt="" coords="257,187,459,213"/>
+<area shape="poly" title=" " alt="" coords="428,58,405,76,386,98,374,120,366,144,361,186,356,186,361,143,369,118,381,94,401,72,425,54"/>
+<area shape="rect" href="_sensor_8hpp.html" title=" " alt="" coords="395,96,572,139"/>
+<area shape="poly" title=" " alt="" coords="486,64,486,96,481,96,481,64"/>
+<area shape="rect" href="_deserializable_content_8cpp.html" title=" " alt="" coords="595,104,820,131"/>
+<area shape="poly" title=" " alt="" coords="551,52,676,101,674,106,549,57"/>
 <area shape="rect" href="_sentry_lib_8cpp.html" title=" " alt="" coords="5,261,159,288"/>
-<area shape="poly" title=" " alt="" coords="294,220,131,263,129,258,292,215"/>
+<area shape="poly" title=" " alt="" coords="296,220,131,263,130,258,295,215"/>
 <area shape="rect" href="_example_app_8cpp.html" title=" " alt="" coords="182,261,350,288"/>
-<area shape="poly" title=" " alt="" coords="330,226,283,263,280,259,326,221"/>
-<area shape="rect" href="_sentry_a_i_8cpp.html" title=" " alt="" coords="374,261,518,288"/>
-<area shape="poly" title=" " alt="" coords="384,221,432,259,429,263,381,225"/>
-<area shape="rect" href="_test_app_8cpp.html" title=" " alt="" coords="542,261,683,288"/>
-<area shape="poly" title=" " alt="" coords="415,215,568,258,567,263,414,220"/>
-<area shape="poly" title=" " alt="" coords="437,150,376,188,374,184,434,145"/>
-<area shape="rect" href="_sensor_8cpp.html" title=" " alt="" coords="480,187,620,213"/>
-<area shape="poly" title=" " alt="" coords="510,149,541,184,537,188,506,152"/>
+<area shape="poly" title=" " alt="" coords="332,225,283,263,280,259,329,221"/>
+<area shape="rect" href="_ideal_logic_8cpp.html" title=" " alt="" coords="374,261,526,288"/>
+<area shape="poly" title=" " alt="" coords="387,221,436,259,433,263,384,225"/>
+<area shape="rect" href="_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和json配置文件的处理工具，使用操作见" alt="" coords="550,261,691,288"/>
+<area shape="poly" title=" " alt="" coords="419,215,575,258,574,263,418,220"/>
+<area shape="poly" title=" " alt="" coords="440,150,379,188,376,184,437,145"/>
+<area shape="rect" href="_sensor_8cpp.html" title=" " alt="" coords="483,187,622,213"/>
+<area shape="poly" title=" " alt="" coords="513,149,544,184,540,188,509,152"/>
 </map>
 </div>
 </div>
 <p><a href="">浏览源代码.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-类</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_deserializable_content.html">LangYa::SentryLib::DeserializableContent</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表一种可以反序列化的内容。  <a href="class_lang_ya_1_1_sentry_lib_1_1_deserializable_content.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 命名空间</h2></td></tr>
 <tr class="memitem:namespace_lang_ya" id="r_namespace_lang_ya"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya.html">LangYa</a></td></tr>
@@ -161,8 +159,23 @@ $(document).ready(function(){initNavTree('_deserializable_content_8hpp.html','')
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="concepts" name="concepts"></a>
 概念</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="concept_lang_ya_1_1_sentry_lib_1_1_deserializable.html">LangYa::SentryLib::Deserializable</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">基本的可以反序列化的资源概念，也就是继承了 <br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">基本的可以反序列化的资源概念 即继承了： <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a7f5e637b2ce38d6942c0d3a57ab076ad" id="r_a7f5e637b2ce38d6942c0d3a57ab076ad"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a7f5e637b2ce38d6942c0d3a57ab076ad">LangYa::SentryLib::GetDeserializationResourceSize</a> () const =0</td></tr>
+<tr class="memdesc:a7f5e637b2ce38d6942c0d3a57ab076ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取此内容的反序列化资源大小，大多数时候就是此内容的内存视图大小。  <br /></td></tr>
+<tr class="separator:a7f5e637b2ce38d6942c0d3a57ab076ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a497aaaadfd4be9fc5072075bb2b21776" id="r_a497aaaadfd4be9fc5072075bb2b21776"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a497aaaadfd4be9fc5072075bb2b21776">LangYa::SentryLib::Deserialize</a> (const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;buffer)=0</td></tr>
+<tr class="memdesc:a497aaaadfd4be9fc5072075bb2b21776"><td class="mdescLeft">&#160;</td><td class="mdescRight">从缓冲区中反序列化资源。  <br /></td></tr>
+<tr class="separator:a497aaaadfd4be9fc5072075bb2b21776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a15d8bc87de629e83ef52d1ebf56c0a3a" id="r_a15d8bc87de629e83ef52d1ebf56c0a3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_sharpp_8hpp.html#ae935b23055599eaed6237dd4d1b16e07">SC_INTERFACE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a15d8bc87de629e83ef52d1ebf56c0a3a">LangYa::SentryLib::DeserializableContent</a></td></tr>
+<tr class="memdesc:a15d8bc87de629e83ef52d1ebf56c0a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表一种可以反序列化的内容。 此接口提供了反序列时所需要的两个函数： 获取反序列化资源的最小大小，以及从缓冲区中反序列化资源。  <br /></td></tr>
+<tr class="separator:a15d8bc87de629e83ef52d1ebf56c0a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -170,7 +183,7 @@ $(document).ready(function(){initNavTree('_deserializable_content_8hpp.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_692516b589a32b3bfce781ca9f6d1534.html">Headers</a></li><li class="navelem"><a class="el" href="dir_b117d0d76b03a6360b87a590e39f53f6.html">LangYa</a></li><li class="navelem"><a class="el" href="dir_0479bb77a485cc0baf99073ab05914e0.html">SentryLib</a></li><li class="navelem"><a class="el" href="_deserializable_content_8hpp.html">DeserializableContent.hpp</a></li>
-    <li class="footer">生成于 2023年 十二月 7日 星期四 00:27:55 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 10日 星期日 23:13:36 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

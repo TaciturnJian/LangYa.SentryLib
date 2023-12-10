@@ -1,28 +1,30 @@
 <map id="Headers/LangYa/SentryLib/ResourceFlag.hpp" name="Headers/LangYa/SentryLib/ResourceFlag.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="279,5,456,48"/>
-<area shape="rect" id="Node000002" href="$_sentry_lib_8hpp.html" title=" " alt="" coords="255,368,456,395"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="363,63,358,96,347,208,350,320,356,367,351,368,345,320,342,208,353,96,358,63"/>
-<area shape="rect" id="Node000007" href="$_resource_8hpp.html" title=" " alt="" coords="367,96,544,139"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="400,57,437,94,433,98,397,61"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="282,5,458,48"/>
+<area shape="rect" id="Node000002" href="$_sentry_lib_8hpp.html" title=" " alt="" coords="257,368,459,395"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="365,63,361,96,356,177,356,256,360,367,355,368,351,256,351,177,355,96,360,63"/>
+<area shape="rect" id="Node000007" href="$_resource_8hpp.html" title=" " alt="" coords="370,96,546,139"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="403,57,440,94,436,98,399,61"/>
 <area shape="rect" id="Node000003" href="$_sentry_lib_8cpp.html" title=" " alt="" coords="5,443,159,469"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="294,402,131,445,129,439,292,397"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="296,401,131,445,130,439,295,396"/>
 <area shape="rect" id="Node000004" href="$_example_app_8cpp.html" title=" " alt="" coords="182,443,350,469"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="330,407,283,444,280,440,326,403"/>
-<area shape="rect" id="Node000005" href="$_sentry_a_i_8cpp.html" title=" " alt="" coords="374,443,518,469"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="384,402,432,440,429,444,381,407"/>
-<area shape="rect" id="Node000006" href="$_test_app_8cpp.html" title=" " alt="" coords="542,443,683,469"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="415,397,568,439,567,445,414,402"/>
-<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="414,150,397,168,383,188,365,237,357,288,355,334,357,367,351,367,350,334,352,288,360,236,378,185,393,164,410,147"/>
-<area shape="rect" id="Node000008" href="$_triple_buffer_8hpp.html" title=" " alt="" coords="393,187,569,229"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="468,153,477,186,472,187,463,154"/>
-<area shape="rect" id="Node000012" href="$_resource_8cpp.html" title=" " alt="" coords="593,195,747,221"/>
-<area shape="poly" id="edge14_Node000007_Node000012" title=" " alt="" coords="521,143,640,192,638,197,519,148"/>
-<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="459,243,367,369,362,366,455,240"/>
-<area shape="rect" id="Node000009" href="$_lang_ya_connection_8hpp.html" title=" " alt="" coords="443,277,620,320"/>
-<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="502,242,522,276,517,278,498,244"/>
-<area shape="rect" id="Node000011" href="$_triple_buffer_8cpp.html" title=" " alt="" coords="644,285,806,312"/>
-<area shape="poly" id="edge13_Node000008_Node000011" title=" " alt="" coords="553,233,691,282,689,287,551,238"/>
-<area shape="poly" id="edge11_Node000009_Node000002" title=" " alt="" coords="473,329,384,370,382,365,471,324"/>
-<area shape="rect" id="Node000010" href="$_lang_ya_connection_8cpp.html" title=" " alt="" coords="480,368,687,395"/>
-<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="555,332,577,366,573,369,551,335"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="332,407,283,444,280,440,329,402"/>
+<area shape="rect" id="Node000005" href="$_ideal_logic_8cpp.html" title=" " alt="" coords="374,443,526,469"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="387,402,436,440,433,444,384,407"/>
+<area shape="rect" id="Node000006" href="$_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和json配置文件的处理工具，使用操作见" alt="" coords="550,443,691,469"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="419,397,575,439,574,445,418,402"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="433,152,411,188,391,238,377,290,362,368,357,367,372,289,386,237,406,185,429,149"/>
+<area shape="rect" id="Node000008" href="$_triple_buffer_8hpp.html" title=" " alt="" coords="421,187,597,229"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="480,151,499,185,495,188,475,154"/>
+<area shape="rect" id="Node000013" href="$_resource_8cpp.html" title=" " alt="" coords="621,195,775,221"/>
+<area shape="poly" id="edge15_Node000007_Node000013" title=" " alt="" coords="529,142,665,192,663,197,527,147"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="474,242,436,279,397,328,368,369,364,366,393,325,432,276,471,238"/>
+<area shape="rect" id="Node000009" href="$_lang_ya_connection_8hpp.html" title=" " alt="" coords="446,277,622,320"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="521,243,531,276,526,278,516,245"/>
+<area shape="rect" id="Node000011" href="$_triple_buffer_8cpp.html" title=" " alt="" coords="646,285,809,312"/>
+<area shape="poly" id="edge13_Node000008_Node000011" title=" " alt="" coords="575,233,697,282,695,287,573,238"/>
+<area shape="rect" id="Node000012" href="$_triple_buffer_tester_8cpp.html" title=" " alt="" coords="832,285,1025,312"/>
+<area shape="poly" id="edge14_Node000008_Node000012" title=" " alt="" coords="612,228,869,282,868,287,611,234"/>
+<area shape="poly" id="edge11_Node000009_Node000002" title=" " alt="" coords="476,329,387,370,384,365,474,324"/>
+<area shape="rect" id="Node000010" href="$_lang_ya_connection_8cpp.html" title=" " alt="" coords="482,368,690,395"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="558,332,580,366,576,369,553,335"/>
 </map>

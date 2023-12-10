@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('struct_lang_ya_1_1_sentry_lib_1_1_comm
 </div><!--header-->
 <div class="contents">
 
-<p>记录控制台参数。  
+<p>记录控制台参数。 本质就是包装了一层的main函数的参数，方便使用。  
  <a href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html#details">更多...</a></p>
 
 <p><code>#include &lt;<a class="el" href="">CommandLineArguments.hpp</a>&gt;</code></p>
@@ -108,29 +108,26 @@ $(document).ready(function(){initNavTree('struct_lang_ya_1_1_sentry_lib_1_1_comm
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public 类型</h2></td></tr>
 <tr class="memitem:a51a8b5b230e41c6cdaa092f52325522b" id="r_a51a8b5b230e41c6cdaa092f52325522b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html#a51a8b5b230e41c6cdaa092f52325522b">CommandLineArgumentType</a> = const char *</td></tr>
+<tr class="memdesc:a51a8b5b230e41c6cdaa092f52325522b"><td class="mdescLeft">&#160;</td><td class="mdescRight">控制台参数的类型 =&gt; 常量字符串。  <br /></td></tr>
 <tr class="separator:a51a8b5b230e41c6cdaa092f52325522b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ef194bdef872cf6824f0f01a4f5c4f7" id="r_a9ef194bdef872cf6824f0f01a4f5c4f7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html#a9ef194bdef872cf6824f0f01a4f5c4f7">CommandLineArgumentListType</a> = const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html#a51a8b5b230e41c6cdaa092f52325522b">CommandLineArgumentType</a> *</td></tr>
+<tr class="memdesc:a9ef194bdef872cf6824f0f01a4f5c4f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">控制台参数的列表类型 =&gt; 常量字符串的二级指针。  <br /></td></tr>
 <tr class="separator:a9ef194bdef872cf6824f0f01a4f5c4f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:a02f1e1ddebbd3cb0579921d6a02c7554" id="r_a02f1e1ddebbd3cb0579921d6a02c7554"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html#a02f1e1ddebbd3cb0579921d6a02c7554">CommandLineArguments</a> ()</td></tr>
+<tr class="memdesc:a02f1e1ddebbd3cb0579921d6a02c7554"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认构造，初始化控制台参数为 nullptr。  <br /></td></tr>
 <tr class="separator:a02f1e1ddebbd3cb0579921d6a02c7554"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcce8a46c14b15295e2dcb4cf66bcc2a" id="r_afcce8a46c14b15295e2dcb4cf66bcc2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html#afcce8a46c14b15295e2dcb4cf66bcc2a">CommandLineArguments</a> (int count, <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html#a9ef194bdef872cf6824f0f01a4f5c4f7">CommandLineArgumentListType</a> list)</td></tr>
+<tr class="memdesc:afcce8a46c14b15295e2dcb4cf66bcc2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造，初始化控制台参数为指定的值。  <br /></td></tr>
 <tr class="separator:afcce8a46c14b15295e2dcb4cf66bcc2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c2a2bc3223686cfc82ffc550956b8ad" id="r_a1c2a2bc3223686cfc82ffc550956b8ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html#a1c2a2bc3223686cfc82ffc550956b8ad">CommandLineArguments</a> (unsigned int count, <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html#a9ef194bdef872cf6824f0f01a4f5c4f7">CommandLineArgumentListType</a> list)</td></tr>
+<tr class="memdesc:a1c2a2bc3223686cfc82ffc550956b8ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造，初始化控制台参数为指定的值。  <br /></td></tr>
 <tr class="separator:a1c2a2bc3223686cfc82ffc550956b8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bb81c4513bbc0a14597443bd776f253" id="r_a8bb81c4513bbc0a14597443bd776f253"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html#a8bb81c4513bbc0a14597443bd776f253">CommandLineArguments</a> (const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html">CommandLineArguments</a> &amp;other)</td></tr>
-<tr class="separator:a8bb81c4513bbc0a14597443bd776f253"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5ac81f241c9eb079303a170b6c89c6f" id="r_ac5ac81f241c9eb079303a170b6c89c6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html#ac5ac81f241c9eb079303a170b6c89c6f">CommandLineArguments</a> (<a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html">CommandLineArguments</a> &amp;&amp;other) noexcept</td></tr>
-<tr class="separator:ac5ac81f241c9eb079303a170b6c89c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4ea8557fcfcf0bd5af8ef4e095f7c32" id="r_ae4ea8557fcfcf0bd5af8ef4e095f7c32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html">CommandLineArguments</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html#ae4ea8557fcfcf0bd5af8ef4e095f7c32">operator=</a> (const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html">CommandLineArguments</a> &amp;other)</td></tr>
-<tr class="separator:ae4ea8557fcfcf0bd5af8ef4e095f7c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acef11b860a9d6f08b8c29fdda3926202" id="r_acef11b860a9d6f08b8c29fdda3926202"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html">CommandLineArguments</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html#acef11b860a9d6f08b8c29fdda3926202">operator=</a> (<a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html">CommandLineArguments</a> &amp;&amp;other) noexcept</td></tr>
-<tr class="separator:acef11b860a9d6f08b8c29fdda3926202"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64b3eed4481a72855ce52e479224f9b8" id="r_a64b3eed4481a72855ce52e479224f9b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html#a51a8b5b230e41c6cdaa092f52325522b">CommandLineArgumentType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html#a64b3eed4481a72855ce52e479224f9b8">operator[]</a> (unsigned int index) const</td></tr>
-<tr class="memdesc:a64b3eed4481a72855ce52e479224f9b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">访问控制台参数。  <br /></td></tr>
-<tr class="separator:a64b3eed4481a72855ce52e479224f9b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab52cd6a1e143d8049b1a4ab2d78be289" id="r_ab52cd6a1e143d8049b1a4ab2d78be289"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html#a51a8b5b230e41c6cdaa092f52325522b">CommandLineArgumentType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html#ab52cd6a1e143d8049b1a4ab2d78be289">operator[]</a> (unsigned int index) const noexcept</td></tr>
+<tr class="memdesc:ab52cd6a1e143d8049b1a4ab2d78be289"><td class="mdescLeft">&#160;</td><td class="mdescRight">访问控制台参数。 如果此时访问的索引超出了范围，那么将会返回空指针。  <br /></td></tr>
+<tr class="separator:ab52cd6a1e143d8049b1a4ab2d78be289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
@@ -142,7 +139,7 @@ Public 属性</h2></td></tr>
 <tr class="separator:a88a04fc1023037bda90ea7776f7aa6cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>记录控制台参数。 </p>
+<div class="textblock"><p>记录控制台参数。 本质就是包装了一层的main函数的参数，方便使用。 </p>
 </div><h2 class="groupheader">成员类型定义说明</h2>
 <a id="a9ef194bdef872cf6824f0f01a4f5c4f7" name="a9ef194bdef872cf6824f0f01a4f5c4f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9ef194bdef872cf6824f0f01a4f5c4f7">&#9670;&#160;</a></span>CommandLineArgumentListType</h2>
@@ -155,6 +152,8 @@ Public 属性</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>控制台参数的列表类型 =&gt; 常量字符串的二级指针。 </p>
 
 </div>
 </div>
@@ -170,11 +169,13 @@ Public 属性</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>控制台参数的类型 =&gt; 常量字符串。 </p>
+
 </div>
 </div>
 <h2 class="groupheader">构造及析构函数说明</h2>
 <a id="a02f1e1ddebbd3cb0579921d6a02c7554" name="a02f1e1ddebbd3cb0579921d6a02c7554"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02f1e1ddebbd3cb0579921d6a02c7554">&#9670;&#160;</a></span>CommandLineArguments() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a02f1e1ddebbd3cb0579921d6a02c7554">&#9670;&#160;</a></span>CommandLineArguments() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,10 +197,12 @@ Public 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>默认构造，初始化控制台参数为 nullptr。 </p>
+
 </div>
 </div>
 <a id="afcce8a46c14b15295e2dcb4cf66bcc2a" name="afcce8a46c14b15295e2dcb4cf66bcc2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcce8a46c14b15295e2dcb4cf66bcc2a">&#9670;&#160;</a></span>CommandLineArguments() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afcce8a46c14b15295e2dcb4cf66bcc2a">&#9670;&#160;</a></span>CommandLineArguments() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -224,10 +227,19 @@ Public 属性</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>构造，初始化控制台参数为指定的值。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">count</td><td>控制台参数的数量。 </td></tr>
+    <tr><td class="paramname">list</td><td>控制台参数列表（二级指针）。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a1c2a2bc3223686cfc82ffc550956b8ad" name="a1c2a2bc3223686cfc82ffc550956b8ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c2a2bc3223686cfc82ffc550956b8ad">&#9670;&#160;</a></span>CommandLineArguments() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c2a2bc3223686cfc82ffc550956b8ad">&#9670;&#160;</a></span>CommandLineArguments() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,118 +264,26 @@ Public 属性</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a8bb81c4513bbc0a14597443bd776f253" name="a8bb81c4513bbc0a14597443bd776f253"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bb81c4513bbc0a14597443bd776f253">&#9670;&#160;</a></span>CommandLineArguments() <span class="overload">[4/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">LangYa::SentryLib::CommandLineArguments::CommandLineArguments </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html">CommandLineArguments</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac5ac81f241c9eb079303a170b6c89c6f" name="ac5ac81f241c9eb079303a170b6c89c6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5ac81f241c9eb079303a170b6c89c6f">&#9670;&#160;</a></span>CommandLineArguments() <span class="overload">[5/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">LangYa::SentryLib::CommandLineArguments::CommandLineArguments </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html">CommandLineArguments</a> &amp;&amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>构造，初始化控制台参数为指定的值。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">count</td><td>控制台参数的数量。 </td></tr>
+    <tr><td class="paramname">list</td><td>控制台参数列表（二级指针）。 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">成员函数说明</h2>
-<a id="acef11b860a9d6f08b8c29fdda3926202" name="acef11b860a9d6f08b8c29fdda3926202"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acef11b860a9d6f08b8c29fdda3926202">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+<a id="ab52cd6a1e143d8049b1a4ab2d78be289" name="ab52cd6a1e143d8049b1a4ab2d78be289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab52cd6a1e143d8049b1a4ab2d78be289">&#9670;&#160;</a></span>operator[]()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html">CommandLineArguments</a> &amp; LangYa::SentryLib::CommandLineArguments::operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html">CommandLineArguments</a> &amp;&amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae4ea8557fcfcf0bd5af8ef4e095f7c32" name="ae4ea8557fcfcf0bd5af8ef4e095f7c32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4ea8557fcfcf0bd5af8ef4e095f7c32">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html">CommandLineArguments</a> &amp; LangYa::SentryLib::CommandLineArguments::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html">CommandLineArguments</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a64b3eed4481a72855ce52e479224f9b8" name="a64b3eed4481a72855ce52e479224f9b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64b3eed4481a72855ce52e479224f9b8">&#9670;&#160;</a></span>operator[]()</h2>
-
-<div class="memitem">
-<div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html#a51a8b5b230e41c6cdaa092f52325522b">CommandLineArguments::CommandLineArgumentType</a> LangYa::SentryLib::CommandLineArguments::operator[] </td>
@@ -373,9 +293,14 @@ Public 属性</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>访问控制台参数。 </p>
+<p>访问控制台参数。 如果此时访问的索引超出了范围，那么将会返回空指针。 </p>
 
 </div>
 </div>
@@ -422,7 +347,7 @@ Public 属性</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_lang_ya.html">LangYa</a></li><li class="navelem"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">SentryLib</a></li><li class="navelem"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html">CommandLineArguments</a></li>
-    <li class="footer">生成于 2023年 十二月 7日 星期四 00:27:55 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 10日 星期日 23:13:36 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

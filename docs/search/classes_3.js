@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['embeddedsoftwarecontrollerdata_0',['EmbeddedSoftwareControllerData',['../struct_embedded_software_controller_data.html',1,'']]],
-  ['embeddedsoftwaresensordata_1',['EmbeddedSoftwareSensorData',['../struct_embedded_software_sensor_data.html',1,'']]]
+  ['langyaconnection_0',['LangYaConnection',['../class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html',1,'LangYa::SentryLib']]]
 ];

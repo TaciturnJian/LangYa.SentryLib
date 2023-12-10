@@ -1,5 +1,5 @@
 <map id="LangYa::SentryLib::SerialNumbers&lt; TBasicNumber &gt;" name="LangYa::SentryLib::SerialNumbers&lt; TBasicNumber &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,277,221,320"/>
+<area shape="rect" id="Node000001" title="一系列数字构成的大数字。 形式类似 A.B.C.D... ，构造时使用 {A,B,C,D...} 。" alt="" coords="5,277,221,320"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="18,187,208,213"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,229,116,277,110,277,110,229"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="57,96,169,123"/>

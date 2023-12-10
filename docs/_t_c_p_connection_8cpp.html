@@ -97,7 +97,8 @@ $(document).ready(function(){initNavTree('_t_c_p_connection_8cpp.html',''); init
   <div class="headertitle"><div class="title">TCPConnection.cpp 文件参考</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="">LangYa/SentryLib/TCPConnection.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;spdlog/spdlog.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="">LangYa/SentryLib/TCPConnection.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> TCPConnection.cpp 的引用(Include)关系图:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -105,29 +106,29 @@ $(document).ready(function(){initNavTree('_t_c_p_connection_8cpp.html',''); init
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_t_c_p_connection_8cpp__incl.png" border="0" usemap="#a_sources_2_t_c_p_connection_8cpp" alt=""/></div>
 <map name="a_sources_2_t_c_p_connection_8cpp" id="a_sources_2_t_c_p_connection_8cpp">
-<area shape="rect" title=" " alt="" coords="48,5,237,32"/>
-<area shape="rect" href="_t_c_p_connection_8hpp.html" title=" " alt="" coords="21,80,264,107"/>
-<area shape="poly" title=" " alt="" coords="145,33,145,64,140,64,140,33"/>
-<area shape="rect" title=" " alt="" coords="61,229,115,256"/>
-<area shape="poly" title=" " alt="" coords="81,110,43,127,26,140,13,156,9,173,16,190,31,205,51,219,48,223,28,209,12,193,3,173,8,153,23,136,40,123,79,105"/>
-<area shape="rect" title=" " alt="" coords="23,155,129,181"/>
-<area shape="poly" title=" " alt="" coords="133,109,100,145,96,141,129,105"/>
-<area shape="rect" title=" " alt="" coords="153,155,265,181"/>
-<area shape="poly" title=" " alt="" coords="156,105,190,141,186,145,152,109"/>
-<area shape="rect" href="_connection_8hpp.html" title=" " alt="" coords="289,155,508,181"/>
-<area shape="poly" title=" " alt="" coords="188,105,340,147,339,153,186,110"/>
-<area shape="poly" title=" " alt="" coords="345,185,130,234,129,229,344,179"/>
-<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="212,304,441,331"/>
-<area shape="poly" title=" " alt="" coords="348,184,311,202,295,215,282,231,278,246,281,261,303,291,298,294,277,263,273,246,278,228,291,211,308,198,345,180"/>
-<area shape="rect" href="_memory_i_o_8hpp.html" title=" " alt="" coords="292,229,505,256"/>
-<area shape="poly" title=" " alt="" coords="401,182,401,214,396,214,396,182"/>
-<area shape="rect" href="_c_sharpp_8hpp.html" title=" " alt="" coords="529,229,732,256"/>
-<area shape="poly" title=" " alt="" coords="440,179,577,222,575,227,438,184"/>
-<area shape="rect" title=" " alt="" coords="228,379,297,405"/>
-<area shape="poly" title=" " alt="" coords="317,333,286,369,282,365,313,329"/>
-<area shape="rect" title=" " alt="" coords="321,379,463,405"/>
-<area shape="poly" title=" " alt="" coords="340,329,373,365,369,369,336,333"/>
-<area shape="poly" title=" " alt="" coords="388,258,352,295,348,291,384,255"/>
+<area shape="rect" title=" " alt="" coords="67,5,256,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,118,107"/>
+<area shape="poly" title=" " alt="" coords="146,35,93,73,90,68,143,30"/>
+<area shape="rect" href="_t_c_p_connection_8hpp.html" title=" " alt="" coords="141,80,385,107"/>
+<area shape="poly" title=" " alt="" coords="181,30,234,68,231,73,178,35"/>
+<area shape="rect" title=" " alt="" coords="180,229,234,256"/>
+<area shape="poly" title=" " alt="" coords="244,109,219,129,200,156,195,185,200,214,195,215,190,185,195,154,215,125,240,105"/>
+<area shape="rect" title=" " alt="" coords="210,155,316,181"/>
+<area shape="poly" title=" " alt="" coords="266,107,266,139,260,139,260,107"/>
+<area shape="rect" href="_connection_8hpp.html" title=" " alt="" coords="340,155,559,181"/>
+<area shape="poly" title=" " alt="" coords="296,105,404,146,402,151,294,110"/>
+<area shape="poly" title=" " alt="" coords="408,184,249,232,248,226,406,179"/>
+<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="263,304,492,331"/>
+<area shape="poly" title=" " alt="" coords="399,184,362,202,346,215,333,231,329,246,332,261,353,291,349,294,327,263,324,246,328,228,342,211,359,198,396,180"/>
+<area shape="rect" href="_memory_i_o_8hpp.html" title=" " alt="" coords="343,229,556,256"/>
+<area shape="poly" title=" " alt="" coords="452,182,452,214,447,214,447,182"/>
+<area shape="rect" href="_c_sharpp_8hpp.html" title=" " alt="" coords="580,229,783,256"/>
+<area shape="poly" title=" " alt="" coords="491,179,627,222,626,227,489,184"/>
+<area shape="rect" title=" " alt="" coords="279,379,348,405"/>
+<area shape="poly" title=" " alt="" coords="368,333,337,369,333,365,364,329"/>
+<area shape="rect" title=" " alt="" coords="372,379,514,405"/>
+<area shape="poly" title=" " alt="" coords="391,329,424,365,420,369,387,333"/>
+<area shape="poly" title=" " alt="" coords="439,258,402,295,399,291,435,255"/>
 </map>
 </div>
 </div>
@@ -151,7 +152,7 @@ $(document).ready(function(){initNavTree('_t_c_p_connection_8cpp.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a class="el" href="_t_c_p_connection_8cpp.html">TCPConnection.cpp</a></li>
-    <li class="footer">生成于 2023年 十二月 7日 星期四 00:27:55 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 10日 星期日 23:13:36 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

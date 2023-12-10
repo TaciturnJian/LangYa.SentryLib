@@ -1,25 +1,29 @@
 <map id="Headers/LangYa/SentryLib/Device.hpp" name="Headers/LangYa/SentryLib/Device.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="331,5,508,48"/>
-<area shape="rect" id="Node000002" href="$_sentry_lib_8hpp.html" title=" " alt="" coords="256,187,457,213"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="401,63,384,97,370,146,361,187,356,186,364,145,380,95,396,60"/>
-<area shape="rect" id="Node000007" href="$_controller_8hpp.html" title=" " alt="" coords="143,96,320,139"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="363,57,276,98,274,93,360,53"/>
-<area shape="rect" id="Node000009" href="$_sensor_8hpp.html" title=" " alt="" coords="394,96,570,139"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="445,59,470,94,465,97,440,62"/>
-<area shape="rect" id="Node000011" href="$_device_8cpp.html" title=" " alt="" coords="594,104,730,131"/>
-<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="491,51,628,101,626,106,490,56"/>
-<area shape="rect" id="Node000003" href="$_sentry_lib_8cpp.html" title=" " alt="" coords="5,261,159,288"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="295,220,131,263,130,258,293,215"/>
-<area shape="rect" id="Node000004" href="$_example_app_8cpp.html" title=" " alt="" coords="182,261,350,288"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="331,225,283,263,280,259,328,221"/>
-<area shape="rect" id="Node000005" href="$_sentry_a_i_8cpp.html" title=" " alt="" coords="374,261,518,288"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="386,221,432,259,429,263,382,226"/>
-<area shape="rect" id="Node000006" href="$_test_app_8cpp.html" title=" " alt="" coords="542,261,683,288"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="416,215,568,258,567,263,415,220"/>
-<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="278,145,338,184,336,188,275,150"/>
-<area shape="rect" id="Node000008" href="$_controller_8cpp.html" title=" " alt="" coords="79,187,232,213"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="203,152,169,188,165,184,199,148"/>
-<area shape="poly" id="edge10_Node000009_Node000002" title=" " alt="" coords="439,150,378,188,375,184,436,145"/>
-<area shape="rect" id="Node000010" href="$_sensor_8cpp.html" title=" " alt="" coords="482,187,621,213"/>
-<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="512,149,542,184,538,188,508,152"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="391,5,567,48"/>
+<area shape="rect" id="Node000002" href="$_sentry_lib_8hpp.html" title=" " alt="" coords="397,187,599,213"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="486,63,499,186,494,187,480,64"/>
+<area shape="rect" id="Node000007" href="$_auto_aim_module_8hpp.html" title=" " alt="" coords="48,96,225,139"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="385,55,218,98,216,93,383,50"/>
+<area shape="rect" id="Node000009" href="$_controller_8hpp.html" title=" " alt="" coords="266,96,442,139"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="439,59,385,98,382,93,436,55"/>
+<area shape="rect" id="Node000011" href="$_sensor_8hpp.html" title=" " alt="" coords="516,96,693,139"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="522,55,577,93,574,98,519,59"/>
+<area shape="rect" id="Node000013" href="$_device_8cpp.html" title=" " alt="" coords="716,104,853,131"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="566,50,741,101,740,106,565,55"/>
+<area shape="rect" id="Node000003" href="$_sentry_lib_8cpp.html" title=" " alt="" coords="145,261,299,288"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="436,220,271,263,270,258,435,215"/>
+<area shape="rect" id="Node000004" href="$_example_app_8cpp.html" title=" " alt="" coords="322,261,490,288"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="472,225,423,263,420,259,468,221"/>
+<area shape="rect" id="Node000005" href="$_ideal_logic_8cpp.html" title=" " alt="" coords="514,261,666,288"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="527,221,576,259,572,263,524,225"/>
+<area shape="rect" id="Node000006" href="$_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和json配置文件的处理工具，使用操作见" alt="" coords="690,261,831,288"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="559,215,715,258,714,263,558,220"/>
+<area shape="rect" id="Node000008" href="$_auto_aim_module_8cpp.html" title=" " alt="" coords="5,187,196,213"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="123,154,109,187,104,185,119,152"/>
+<area shape="poly" id="edge9_Node000009_Node000002" title=" " alt="" coords="406,144,477,184,474,188,403,149"/>
+<area shape="rect" id="Node000010" href="$_controller_8cpp.html" title=" " alt="" coords="220,187,373,213"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="332,153,308,188,303,185,328,150"/>
+<area shape="poly" id="edge12_Node000011_Node000002" title=" " alt="" coords="566,151,516,188,513,184,563,146"/>
+<area shape="rect" id="Node000012" href="$_sensor_8cpp.html" title=" " alt="" coords="623,187,762,213"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="640,148,680,184,677,188,637,152"/>
 </map>

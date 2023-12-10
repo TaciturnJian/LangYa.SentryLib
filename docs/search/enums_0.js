@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['resourceflag_0',['ResourceFlag',['../namespace_lang_ya_1_1_sentry_lib.html#a36d2882e7661f30e5caf0f74c85df62d',1,'LangYa::SentryLib']]]
+  ['commoncolor_0',['CommonColor',['../class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html#ac7a137824050901043e8767147fbc9f1',1,'LangYa::SentryLib::ConsoleManipulator']]]
 ];

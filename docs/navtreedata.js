@@ -53,6 +53,8 @@ var NAVTREE =
         [ "函数", "functions_func.html", "functions_func" ],
         [ "变量", "functions_vars.html", null ],
         [ "类型定义", "functions_type.html", null ],
+        [ "枚举", "functions_enum.html", null ],
+        [ "枚举值", "functions_eval.html", null ],
         [ "相关函数", "functions_rela.html", null ]
       ] ]
     ] ],
@@ -71,10 +73,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_info_8cpp.html",
-"class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html#a43f06adb4a3dba2495c3d9165b0be8a6",
-"class_lang_ya_1_1_sentry_lib_1_1_vector3.html#a7945759ae90863d150ddb61f468d2917",
-"struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a382b2718add95dfe0916f58b30bfd50e",
-""
+"class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html#a8a0bd6f0a08495b3b3bbf0292032cba1",
+"class_lang_ya_1_1_sentry_lib_1_1_vector.html#ae66dbb698f8468e58222470260eb9a92",
+"namespace_lang_ya_1_1_sentry_lib.html#a01fa38254edec1ace0c91eeeabbc84eaa0fc3009923e09f21be7dbb00cd257eb1",
+"struct_lang_ya_1_1_sentry_lib_1_1_time_stamp.html#afbcc2463279e83451d6bb8f0bdcf695d"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';
