@@ -1,3 +1,5 @@
+#include <thread>
+
 #include <LangYa/SentryLib/MatchStatusManager.hpp>
 
 namespace LangYa::SentryLib
