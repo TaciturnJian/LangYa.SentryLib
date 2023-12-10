@@ -4,7 +4,7 @@ PS4="[$LINENO]: $PS4"
 
 echo Updating 
 sudo apt-get update
-sudo apt-get install zip wget git cmake build-essential bzip
+sudo apt-get install zip wget git cmake build-essential
 
 mkdir ~/repos
 cd ~/repos

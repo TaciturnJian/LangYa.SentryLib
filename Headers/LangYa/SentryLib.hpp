@@ -14,11 +14,13 @@
 #include <LangYa/SentryLib/CommandLineArguments.hpp>
 #include <LangYa/SentryLib/Configurator.hpp>
 #include <LangYa/SentryLib/Connection.hpp>
+#include <LangYa/SentryLib/ConsoleManipulator.hpp>
 #include <LangYa/SentryLib/Controller.hpp>
 #include <LangYa/SentryLib/CSharpp.hpp>
 #include <LangYa/SentryLib/DeserializableContent.hpp>
 #include <LangYa/SentryLib/Device.hpp>
 #include <LangYa/SentryLib/LangYaConnection.hpp>
+#include <LangYa/SentryLib/MatchStatusManager.hpp>
 #include <LangYa/SentryLib/MemoryAccess.hpp>
 #include <LangYa/SentryLib/MemoryIO.hpp>
 #include <LangYa/SentryLib/MemoryView.hpp>

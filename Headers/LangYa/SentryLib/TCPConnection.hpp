@@ -2,7 +2,6 @@
 
 #include <string>
 #include <boost/asio.hpp>
-#include <spdlog/spdlog.h>
 
 #include <LangYa/SentryLib/Connection.hpp>
 
@@ -25,14 +24,8 @@ namespace LangYa::SentryLib
 		static std::shared_ptr<TCPConnection> BuildShared(boost::asio::io_context& ioContext, std::string address,
 		                                                  unsigned short port);
 
-		explicit TCPConnection(boost::asio::ip::tcp::socket&& socket) :
-			Endpoint(socket.remote_endpoint()),
-			RemoteEndpoint(fmt::format("{}:{}", socket.remote_endpoint().address().to_string(), socket.remote_endpoint().port())),
-			Socket(std::make_unique<boost::asio::ip::tcp::socket>(std::move(socket)))
-		{
-			
-		}
-		 
+		explicit TCPConnection(boost::asio::ip::tcp::socket&& socket);
+
 		~TCPConnection() override;
 
 		void Connect() override;

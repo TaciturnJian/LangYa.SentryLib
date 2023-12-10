@@ -1,5 +1,7 @@
 #include <LangYa/SentryLib/SerialPortInfo.hpp>
 
+#include <fmt/format.h>
+
 namespace LangYa::SentryLib
 {
 	SerialPortInfo

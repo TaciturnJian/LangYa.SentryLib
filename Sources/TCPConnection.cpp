@@ -1,3 +1,5 @@
+#include <spdlog/spdlog.h>
+
 #include <LangYa/SentryLib/TCPConnection.hpp>
 
 #ifdef SC_WINDOWS
@@ -15,7 +17,7 @@ namespace LangYa::SentryLib
 	TCPConnection
 	::TCPConnection(IOContextType& ioContext, TCP::endpoint remote) :
 		Endpoint(std::move(remote)),
-		RemoteEndpoint(fmt::format("{}:{}", remote.address().to_string(), remote.port())),
+		RemoteEndpoint(fmt::format("{}:{}", Endpoint.address().to_string(), Endpoint.port())),
 		Socket(std::make_unique<TCP::socket>(ioContext))
 	{
 	}
@@ -37,12 +39,19 @@ namespace LangYa::SentryLib
 	::BuildShared(IOContextType& ioContext, std::string address, unsigned short port)
 	{
 		spdlog::info("Building Shared TCPConnection({}:{})", address, port);
-		auto ptr = std::shared_ptr<TCPConnection>(new TCPConnection{
-			ioContext,
-			boost::asio::ip::tcp::endpoint(boost::asio::ip::address::from_string(address), port)
-		});
+		const auto boost_address = boost::asio::ip::address::from_string(address);
+		auto end_point = boost::asio::ip::tcp::endpoint(boost_address, port);
+		auto ptr = std::make_shared<TCPConnection>(ioContext, end_point);
 		spdlog::info("Finished building TCPConnection({}:{})", address, port);
 		return ptr;
+	}
+
+	TCPConnection::TCPConnection(boost::asio::ip::tcp::socket&& socket):
+		Endpoint(socket.remote_endpoint()),
+		RemoteEndpoint(fmt::format("{}:{}", socket.remote_endpoint().address().to_string(),
+		                           socket.remote_endpoint().port())),
+		Socket(std::make_unique<boost::asio::ip::tcp::socket>(std::move(socket)))
+	{
 	}
 
 	TCPConnection

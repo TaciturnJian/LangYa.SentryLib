@@ -9,7 +9,7 @@ using namespace std::chrono_literals;
 
 int main() {
 	ConsoleManipulator console{};
-	console.HideCursor();
+	console.ClearScreen().HideCursor();
 
 	for (int i = 0; i < 1000; i ++)
 	{
