@@ -49,9 +49,9 @@ message("!! If you met errors with 'boost' 'json', please install boost higher t
 # 第五步，去听几首歌或刷视频，在正常的电脑上一般很快(10min)就安装好了。
 # 最后一步，集成到cmake
 # $ ./vcpkg integrate install
-## 接下来调用 cmake 时需要手动指定工具链，上一行指令有提到，它类似于下面的内容：
+## 接下来调用 cmake 时需要手动指定工具链，上一行指令有提到，类似于下面的内容：
 # CMake projects should use: "-DCMAKE_TOOLCHAIN_FILE=<vcpkg文件夹路径>/.vcpkg/scripts/buildsystems/vcpkg.cmake"
-# 即调用 cmake 时：
+# 即调用 cmake 时，加上后缀参数：
 # $cmake .. -DCMAKE_TOOLCHAIN_FILE=<vcpkg文件夹路径>/.vcpkg/scripts/buildsystems/vcpkg.cmake
 ### 
 

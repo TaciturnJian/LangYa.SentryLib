@@ -22,6 +22,7 @@ float BStep = 0.1f;
 
 bool MappingJsonToVariables(boost::json::value& json)
 {
+
 #define SC_SAME_NAME_MAPPING(x) spdlog::info("Mapping> {} -> {}", #x, #x); x = json.at(#x).
 
 	SC_SAME_NAME_MAPPING(AStep) as_int64();
@@ -32,34 +33,9 @@ bool MappingJsonToVariables(boost::json::value& json)
 	return true;
 }
 
-constexpr auto MaxLogFileSize = sizeof(char) * 1024 * 1024 * 5;
-constexpr auto MaxLogFileCount = 10;
-
-bool InitializeLogger()
-{
-	try
-	{
-		std::vector<spdlog::sink_ptr> sinks{};
-		sinks.push_back(
-			std::make_shared<spdlog::sinks::rotating_file_sink_mt>(
-				"logs/basic-log.txt", MaxLogFileSize, MaxLogFileCount
-			)
-		);
-		sinks.push_back(std::make_shared<spdlog::sinks::stdout_color_sink_mt>());
-		const auto logger = std::make_shared<spdlog::logger>("multi-logger", std::begin(sinks), std::end(sinks));
-		set_default_logger(logger);
-		return true;
-	}
-	catch (...)
-	{
-		std::cout << "Error in logging!";
-		return false;
-	}
-}
-
 int main(int argc, char** argv)
 {
-	if (!InitializeLogger()) return -1;
+	if (!Configurator::InitializeMultiLogger()) return -1;
 
 	// 打印程序的基本信息
 	AppInfo.OutputTo_spdlog();
@@ -76,16 +52,19 @@ int main(int argc, char** argv)
 				boost::program_options::value(&JsonFilePath),
 				"File path for the configuration file. Maybe the absolute path will be better"
 			);
+
 		if (!configurator.Load({argc, argv}))
 		{
 			spdlog::error("{}> Failed to parse command line arguments", AppInfo.Name);
 			return -1;
 		}
+
 		if (configurator("help"))
 		{
 			spdlog::info("{}> {}", AppInfo.Name, configurator.GetHelpContent());
 			return 0;
 		}
+
 		if (!Configurator::Load(JsonFilePath, MappingJsonToVariables))
 		{
 			spdlog::error("{}> Failed to load configuration file", AppInfo.Name);

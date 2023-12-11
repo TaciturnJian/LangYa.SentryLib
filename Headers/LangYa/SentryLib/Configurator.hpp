@@ -2,26 +2,29 @@
 
 #include <string>
 #include <functional>
+#include <iostream>
 
 #include <boost/json.hpp>
 #include <boost/program_options.hpp>
 
 #include <LangYa/SentryLib/CommandLineArguments.hpp>
+#include <spdlog/sinks/rotating_file_sink.h>
+#include <spdlog/sinks/stdout_color_sinks.h>
 
 namespace LangYa::SentryLib
 {
 	/// @brief 程序配置文件和配置参数处理器。
-	///	提供了对命令行参数和json配置文件的处理工具，使用操作见 @file ../Testers/TestApp.cpp
+	///	提供了对命令行参数和 json 配置文件的处理工具，使用操作见 @file ../Testers/TestApp.cpp
 	class Configurator
 	{
 	public:
-		/// @brief boost中储存命令行参数的容器。
+		/// @brief boost 中储存命令行参数的容器。
 		using CommandLineArgumentContainer = boost::program_options::options_description;
 
-		/// @brief boost中储存变量的容器。
+		/// @brief boost 中储存变量的容器。
 		using CommandLineVariableContainer = boost::program_options::variables_map;
 
-		/// @brief 将json数据映射到内存的函数
+		/// @brief 将 json 数据映射到内存的函数
 		///	其参数为 json 表的引用，返回值为是否成功。
 		using JsonMapper = std::function<bool(boost::json::value&)>;
 
@@ -51,5 +54,7 @@ namespace LangYa::SentryLib
 		[[nodiscard]] std::string GetHelpContent() const;
 
 		static bool Load(const std::string& jsonFilePath, const JsonMapper& mapper);
+
+		static bool InitializeMultiLogger();
 	};
 }

@@ -160,4 +160,32 @@ namespace LangYa::SentryLib
 
 		return true;
 	}
+
+	bool
+	Configurator
+	::InitializeMultiLogger()
+	{
+		try
+		{
+			constexpr auto max_log_file_size = sizeof(char) * 1024 * 1024 * 5;
+			constexpr auto max_log_file_count = 10;
+
+			std::vector<spdlog::sink_ptr> sinks{};
+			sinks.push_back(
+				std::make_shared<spdlog::sinks::rotating_file_sink_mt>(
+					"logs/basic-log.txt", max_log_file_size, max_log_file_count
+				)
+			);
+			sinks.push_back(std::make_shared<spdlog::sinks::stdout_color_sink_mt>());
+			const auto logger = std::make_shared<
+				spdlog::logger>("multi-logger", std::begin(sinks), std::end(sinks));
+			set_default_logger(logger);
+			return true;
+		}
+		catch (...)
+		{
+			std::cout << "Error in logging!";
+			return false;
+		}
+	}
 }
