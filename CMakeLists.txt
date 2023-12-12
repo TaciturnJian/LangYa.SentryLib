@@ -22,38 +22,6 @@ else()
 endif()
 
 message("!! If you met errors with 'boost' 'json', please install boost higher than 1.75.0")
-###### 无法使用 boost json 报错的解决方式
-## 它的报错类似于下面这样：
-# CMake Error at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:230 (message):
-# Could NOT find Boost: Found unsuitable version "1.74.0", but required is at
-#	least "1.75.0" (found /usr/include, found components: system
-#	program_options filesystem)
-# Call Stack (most recent call first):
-#	/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:592 (_FPHSA_FAILURE_MESSAGE)
-#	/usr/share/cmake-3.22/Modules/FindBoost.cmake:2360 (find_package_handle_standard_args)
-#	CMakeLists.txt:32 (find_package)
-## 解决方式是安装最新版本的 boost 库，安装方式如下：（别想着我会给你写一次性就能成功执行的脚本，自己检查错误去;）
-#> 安装步骤1：（结果还是写了个脚本，在这个项目的Scripts下）
-# 执行里面的IntsallBoost.sh脚本，它会自动下载boost，解压，编译，安装，然后把库文件放到/usr/local/lib下，头文件放到/usr/local/include下
-##
-#> 安装步骤2：使用 vcpkg 的
-# 第一步，下载基本工具
-# $ sudo apt-get update && sudo apt-get install -y zip tar wget curl git cmake build-essential automake libtool m4 autoconf autoconf-archive
-# 第二步，下载 vcpkg，接下来，别sudo
-# $ git clone https://github.com/microsoft/vcpkg ~/.vcpkg
-# 第三步，执行安装脚本
-# $ cd ~/.vcpkg
-# $ ./bootstrap-vcpkg.sh
-# 第四步，安装 boost
-# $ ./vcpkg install boost:x64-<SYSTEM> # 这里的<SYSTEM>替换为 linux 或 windows
-# 第五步，去听几首歌或刷视频，在正常的电脑上一般很快(10min)就安装好了。
-# 最后一步，集成到cmake
-# $ ./vcpkg integrate install
-## 接下来调用 cmake 时需要手动指定工具链，上一行指令有提到，类似于下面的内容：
-# CMake projects should use: "-DCMAKE_TOOLCHAIN_FILE=<vcpkg文件夹路径>/.vcpkg/scripts/buildsystems/vcpkg.cmake"
-# 即调用 cmake 时，加上后缀参数：
-# $cmake .. -DCMAKE_TOOLCHAIN_FILE=<vcpkg文件夹路径>/.vcpkg/scripts/buildsystems/vcpkg.cmake
-### 
 
 # Sentry Lib 会用到这些库，后面有安装指令，其中可能名称是错误的，请使用 apt search 自行验证
 find_package(spdlog REQUIRED) # apt-get install libspdlog-dev

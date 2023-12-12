@@ -42,3 +42,4 @@
 #include <LangYa/SentryLib/Math/Vector.hpp>
 #include <LangYa/SentryLib/Math/Vector2.hpp>
 #include <LangYa/SentryLib/Math/Vector3.hpp>
+#include <LangYa/SentryLib/SentryData.hpp>
