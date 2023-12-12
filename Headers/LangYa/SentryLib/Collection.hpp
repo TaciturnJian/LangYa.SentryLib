@@ -1,6 +1,6 @@
 #pragma once
 
-#include <LangYa/SentryLib/CSharpp.hpp>
+#include <LangYa/SentryLib/Common/CSharpp.hpp>
 
 namespace LangYa::SentryLib
 {

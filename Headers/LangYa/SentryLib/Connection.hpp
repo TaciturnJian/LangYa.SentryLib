@@ -5,14 +5,14 @@
 #include <LangYa/SentryLib/MemoryView.hpp>
 #include <LangYa/SentryLib/MemoryIO.hpp>
 
-#include <LangYa/SentryLib/CSharpp.hpp>
+#include <LangYa/SentryLib/Common/CSharpp.hpp>
 
 namespace LangYa::SentryLib
 {
 	/// @brief 代表一个类似 IO 的连接，只提供基本的读写和开启/关闭连接的功能。
 	///	一个连接可以是一个文件，也可以是一个网络连接，也可以是一个内存映射文件。
 	/// 只要能提供基于字节的读写方式，就可以被视为一个连接。
-	///	一般请使用智能指针来管理连接的生命周期（推荐shared_ptr）。
+	///	一般请使用智能指针来管理连接的生命周期（推荐 shared_ptr）。
 	SC_INTERFACE Connection : public MemoryIO
 	{
 	public:
@@ -20,11 +20,11 @@ namespace LangYa::SentryLib
 		///	@warning 大多数实现都会阻塞当前线程直到连接成功或失败。
 		virtual void Connect() = 0;
 
-		/// @brief 获取是否连接到目标
-		///	@return 是否连接到目标
+		/// @brief 获取是否连接到目标。
+		///	@return 是否连接到目标。
 		[[nodiscard]] virtual bool IsConnected() = 0;
 
-		/// @brief 从目标断开连接
+		/// @brief 从目标断开连接。
 		///	@warning 大多数实现都会阻塞当前线程直到断开连接成功或失败。
 		virtual void Disconnect() = 0;
 

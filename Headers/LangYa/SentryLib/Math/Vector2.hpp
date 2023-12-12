@@ -1,7 +1,7 @@
 #pragma once
 
-#include <LangYa/SentryLib/Vector.hpp>
-#include <LangYa/SentryLib/Position2.hpp>
+#include <LangYa/SentryLib/Math/Vector.hpp>
+#include <LangYa/SentryLib/Math/Position2.hpp>
 
 namespace LangYa::SentryLib
 {
@@ -146,6 +146,7 @@ namespace LangYa::SentryLib
 #pragma endregion
 	};
 
+	using Vector2C = Vector2<char>;
 	using Vector2S = Vector2<short>;
 	using Vector2I = Vector2<int>;
 	using Vector2F = Vector2<float>;

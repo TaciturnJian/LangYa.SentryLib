@@ -1,6 +1,6 @@
 #pragma once
 
-#include <LangYa/SentryLib/Vector.hpp>
+#include <LangYa/SentryLib/Math/Vector.hpp>
 
 namespace LangYa::SentryLib
 {

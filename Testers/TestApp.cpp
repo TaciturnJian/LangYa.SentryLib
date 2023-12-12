@@ -96,7 +96,7 @@ int main(int argc, char** argv)
 	const UniqueBuffer buffer{DataType{}.GetSerializationResultSize()};
 	auto buffer_view = buffer.GetView();
 	auto memory_access = std::make_shared<MemoryAccess>(buffer_view);
-	auto controller = std::make_shared<Controller<DataType>>(memory_access);
+	auto controller = std::make_shared<SerializableContentController<DataType>>(memory_access);
 
 	std::thread device_thread{
 		[controller]
@@ -114,8 +114,8 @@ int main(int argc, char** argv)
 			auto& con = *controller;
 			while (true)
 			{
-				con->A += AStep;
-				con->B += BStep;
+				/*con->A += AStep;
+				con->B += BStep;*/
 				std::this_thread::sleep_for(100ms);
 			}
 		}

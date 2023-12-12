@@ -14,35 +14,41 @@ namespace LangYa::SentryLib
 	///	TODO 注释与文档
 	///	Tick this device so it will update sensor data from connection, read the data from its members.
 	template <Deserializable TSensorData>
-	class Sensor final : public Device
+	class DeserializableContentSensor final : public Device
 	{
 		std::weak_ptr<Connection> WeakConnection;
 		TSensorData LatestData{};
 		UniqueBuffer SerializationBuffer;
 
 	public:
-		explicit Sensor(const std::weak_ptr<Connection>& connection);
+		explicit DeserializableContentSensor(const std::weak_ptr<Connection>& connection);
+
+		void GetData(TSensorData& data);
 
 		bool Tick() override;
-
-		TSensorData* operator->();
 	};
 
 	template <Deserializable TSensorData>
-	Sensor<TSensorData>::Sensor(const std::weak_ptr<Connection>& connection):
+	DeserializableContentSensor<TSensorData>::DeserializableContentSensor(const std::weak_ptr<Connection>& connection):
 		WeakConnection(connection),
 		SerializationBuffer(LatestData.GetDeserializationResourceSize())
 	{
 	}
 
 	template <Deserializable TSensorData>
-	bool Sensor<TSensorData>::Tick()
+	void DeserializableContentSensor<TSensorData>::GetData(TSensorData& data)
+	{
+		data = LatestData;
+	}
+
+	template <Deserializable TSensorData>
+	bool DeserializableContentSensor<TSensorData>::Tick()
 	{
 		const auto connection = WeakConnection.lock();
 
 		if (connection == nullptr)
 		{
-			spdlog::warn("Sensor> Cannot get connection!");
+			spdlog::warn("DeserializableContentSensor> Cannot get connection!");
 			return false;
 		}
 
@@ -50,22 +56,16 @@ namespace LangYa::SentryLib
 
 		if (connection->Read(view) < view.Size)
 		{
-			spdlog::warn("Sensor> Cannot read enough bytes from connection!");
+			spdlog::warn("DeserializableContentSensor> Cannot read enough bytes from connection!");
 			return false;
 		}
 
 		if (!LatestData.Deserialize(view))
 		{
-			spdlog::warn("Sensor> Deserialization failed!");
+			spdlog::warn("DeserializableContentSensor> Deserialization failed!");
 			return false;
 		}
 
 		return true;
-	}
-
-	template <Deserializable TSensorData>
-	TSensorData* Sensor<TSensorData>::operator->()
-	{
-		return &LatestData;
 	}
 }

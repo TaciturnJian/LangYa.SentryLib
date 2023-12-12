@@ -67,15 +67,11 @@ namespace Temp
 #pragma pack(pop)
 
 		Vector2F GimbalEulerAngle{0, 0}; // 单位 (度, 度)
-		Vector2I Velocity{0, 0};         // 单位 (档, 档)
+		Vector2C Velocity{0, 0};         // 单位 (档, 档)
 		unsigned short AmmoCount{0};     // 单位 发
 		bool FireFlag{false};            // 开火标志位
 
 		SentryData() = default;
-		SentryData(const SentryData& other) = default;
-		SentryData(SentryData&& other) = default;
-		SentryData& operator=(const SentryData& other) = default;
-		SentryData& operator=(SentryData&& other) = default;
 
 		[[nodiscard]] MemoryView::SizeType GetSerializationResultSize() const override
 		{
@@ -232,8 +228,8 @@ int main(const int argc, const char** argv)
 	);
 
 	std::vector<std::shared_ptr<Device>> devices;
-	auto sensor_ptr = std::make_shared<Sensor<SentryData>>(decorated_serial_port);
-	auto controller_ptr = std::make_shared<Controller<SentryData>>(decorated_serial_port);
+	auto sensor_ptr = std::make_shared<DeserializableContentSensor<SentryData>>(decorated_serial_port);
+	auto controller_ptr = std::make_shared<SerializableContentController<SentryData>>(decorated_serial_port);
 
 	devices.push_back(sensor_ptr);
 	devices.push_back(controller_ptr);
@@ -268,10 +264,10 @@ int main(const int argc, const char** argv)
 			{
 				std::this_thread::sleep_for(1ms);
 
-				float yaw = sensor->GimbalEulerAngle[0];
+				/*float yaw = sensor->GimbalEulerAngle[0];
 				float pitch = sensor->GimbalEulerAngle[1];
 
-				//controller->GimbalEulerAngle[0] = yaw + 360 * sin(t);
+				controller->GimbalEulerAngle = {};[0] = yaw + 360 * sin(t);
 				controller->GimbalEulerAngle[1] = 7.5 + 12.5 * sin(t);
 
 				controller->Velocity[0] = 10;
@@ -281,7 +277,7 @@ int main(const int argc, const char** argv)
 
 				spdlog::info("Receive: Yaw: {}, Pitch: {}", yaw, pitch);
 				spdlog::info("Sent   : Yaw: {}, Pitch: {}", controller->GimbalEulerAngle[0],
-				             controller->GimbalEulerAngle[1]);
+				             controller->GimbalEulerAngle[1]);*/
 			}
 		}
 	);

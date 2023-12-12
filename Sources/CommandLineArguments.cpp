@@ -1,4 +1,4 @@
-#include <LangYa/SentryLib/CommandLineArguments.hpp>
+#include <LangYa/SentryLib/Application/CommandLineArguments.hpp>
 
 namespace LangYa::SentryLib
 {

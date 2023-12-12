@@ -1,9 +1,12 @@
-#include <LangYa/SentryLib/Controller.hpp>
-#include <LangYa/SentryLib/Sensor.hpp>
-#include <LangYa/SentryLib/Configurator.hpp>
+#include <LangYa/SentryLib/SerializableContentController.hpp>
+#include <LangYa/SentryLib/DeserializableContentSensor.hpp>
+#include <LangYa/SentryLib/SentryData.hpp>
+#include <LangYa/SentryLib/Application/Configurator.hpp>
 #include <LangYa/SentryLib/TCPConnection.hpp>
-#include <LangYa/SentryLib/CSharpp.hpp>
-#include <LangYa/SentryLib/ApplicationInfo.hpp>
+#include <LangYa/SentryLib/Common/CSharpp.hpp>
+#include <LangYa/SentryLib/Application/ApplicationInfo.hpp>
+
+#include <LangYa/SentryLib/LangYaConnection.hpp>
 
 LangYa::SentryLib::ApplicationInfo AppInfo{
 	"ControllerSensorTester",
@@ -14,17 +17,12 @@ LangYa::SentryLib::ApplicationInfo AppInfo{
 struct
 {
 	std::string ConfigFilePath{"./config.json"};
-	int AStep{0};
-	float BStep{0};
 }
 ApplicationArgumentTable;
 
 bool MappingArguments(boost::json::value& json)
 {
 	#define SC_SAME_NAME_MAPPING(x) spdlog::info("Mapping> {} -> {}", #x, #x); ApplicationArgumentTable.x = json.at(#x).
-
-	SC_SAME_NAME_MAPPING(AStep) as_int64();
-	SC_SAME_NAME_MAPPING(BStep) as_double();
 
 	#undef SC_SAME_NAME_MAPPING
 
@@ -63,9 +61,65 @@ SC_ENTRY_POINT
 		return 0;
 	}
 
-	if (!configurator.Load(ApplicationArgumentTable.ConfigFilePath, MappingArguments)) return -3;
+	/// 第四步，将配置文件中的数据读出到类型中
+	if (!Configurator::Load(ApplicationArgumentTable.ConfigFilePath, MappingArguments)) return -3;
 
-	spdlog::info("Now AStep->{} BStep->{}", ApplicationArgumentTable.AStep, ApplicationArgumentTable.BStep);
+	boost::asio::io_service io_service;
+	auto tcp_connection_ptr = TCPConnection::BuildShared(io_service, "127.0.0.1", 8989);
+	const auto temp_sentry_data = SentryData{};
+	auto lang_ya_connection_ptr = std::make_shared<LangYaConnection>(
+		temp_sentry_data.GetDeserializationResourceSize(), 
+		temp_sentry_data.GetSerializationResultSize(), 
+		tcp_connection_ptr
+	);
+	auto sensor_ptr = std::make_shared<DeserializableContentSensor<SentryData>>(lang_ya_connection_ptr);
+	auto controller_ptr = std::make_shared<SerializableContentController<SentryData>>(lang_ya_connection_ptr);
 
+	using namespace std::chrono_literals;
+
+	std::thread io_thread([lang_ya_connection_ptr]
+	{
+		while (true) {
+			lang_ya_connection_ptr->Connect();
+			if (!lang_ya_connection_ptr->IsConnected())
+			{
+				std::this_thread::sleep_for(1ms);
+				continue;
+			}
+			lang_ya_connection_ptr->HandleIO();
+		}
+	});
+
+	std::thread tm_thread([sensor_ptr, controller_ptr]
+	{
+		while (true)
+		{
+			std::this_thread::sleep_for(1ms);
+			sensor_ptr->Tick();
+			controller_ptr->Tick();
+		}
+	});
+
+	std::thread op_thread([sensor_ptr, controller_ptr]
+	{
+		auto& controller = *controller_ptr;
+		auto& sensor = *sensor_ptr;
+		std::this_thread::sleep_for(1s);
+
+		SentryData data;
+		data.AmmoCount = 4000;
+		while (true)
+		{
+			std::this_thread::sleep_for(1s);
+
+			data.AmmoCount -= 1;
+			controller.SetData(data);
+		}
+	});
+
+	io_thread.join();
+	tm_thread.join();
+	op_thread.join();
+	
 	return 0;
 }

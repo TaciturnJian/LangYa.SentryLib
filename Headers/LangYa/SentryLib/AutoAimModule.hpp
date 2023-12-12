@@ -2,7 +2,7 @@
 
 #include <opencv2/opencv.hpp>
 
-#include <LangYa/SentryLib/CSharpp.hpp>
+#include <LangYa/SentryLib/Common/CSharpp.hpp>
 #include <LangYa/SentryLib/Device.hpp>
 
 namespace LangYa::SentryLib {

@@ -1,7 +1,7 @@
 #pragma once
 
-#include <LangYa/SentryLib/Position3.hpp>
-#include <LangYa/SentryLib/Vector3.hpp>
+#include <LangYa/SentryLib/Math/Position3.hpp>
+#include <LangYa/SentryLib/Math/Vector3.hpp>
 #include <LangYa/SentryLib/RoboMaster.hpp>
 #include <LangYa/SentryLib/TimeStamp.hpp>
 
@@ -19,12 +19,17 @@ namespace LangYa::SentryLib {
 		Vector3F Normal{};
 
 		/// @brief 此装甲板对应的团队。
-		UnitTeam Team{};
+		///	注意，中立团队一般代表错误或未知的装甲板。
+		UnitTeam Team{UnitTeam::Neutral};
 
 		/// @brief 此装甲板对应的机器人ID。
+		/// 如果
 		UnitID ID{};
 
 		/// @brief 此装甲板对应的机器人类型。
 		UnitType Type{};
+
+		/// @brief 默认的构造函数
+		ArmorPlateInfo() = default;
 	};
 }

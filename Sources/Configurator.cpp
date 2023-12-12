@@ -2,7 +2,7 @@
 
 #include <spdlog/spdlog.h>
 
-#include <LangYa/SentryLib/Configurator.hpp>
+#include <LangYa/SentryLib/Application/Configurator.hpp>
 
 namespace LangYa::SentryLib
 {

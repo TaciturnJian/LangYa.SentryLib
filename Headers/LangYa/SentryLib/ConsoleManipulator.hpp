@@ -1,6 +1,6 @@
 #pragma once
 
-#include <LangYa/SentryLib/Vector2.hpp>
+#include <LangYa/SentryLib/Math/Vector2.hpp>
 
 namespace LangYa::SentryLib {
 	class ConsoleManipulator 
