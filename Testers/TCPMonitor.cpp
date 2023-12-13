@@ -2,8 +2,8 @@
 #include <memory>
 #include <boost/asio.hpp>
 
-#include "LangYa/SentryLib/ConsoleManipulator.hpp"
-#include "LangYa/SentryLib/Application/Monitor.hpp"
+#include <LangYa/SentryLib/ConsoleManipulator.hpp>
+#include <LangYa/SentryLib/Application/Monitor.hpp>
 
 using namespace boost::asio;
 
@@ -105,7 +105,7 @@ void WaitForClient(std::atomic_bool& terminated, std::atomic_bool& accepted)
 	terminated = false;
 }
  
-int main()
+SC_ENTRY_POINT
 {
 	SC_TIME_TEXT;
 
@@ -116,7 +116,6 @@ int main()
 		{
 			Manipulator.MoveCursorTo({0,0});
 			GlobalMonitor >> std::cout;
-			std::this_thread::sleep_for(10ms);
 		}
 	}}.detach();
 

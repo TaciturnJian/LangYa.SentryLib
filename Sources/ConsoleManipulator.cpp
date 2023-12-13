@@ -108,7 +108,7 @@ namespace LangYa::SentryLib
 
 	ConsoleManipulator&
 	ConsoleManipulator
-	::MoveCursorTo(const Position2Ui position)
+	::MoveCursorTo(const Position2Ui& position)
 	{
 		std::stringstream stream;
 		stream << "\033[" << position.X << ';' << position.Y << 'H';

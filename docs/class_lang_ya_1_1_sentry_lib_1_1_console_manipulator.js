@@ -14,7 +14,7 @@ var class_lang_ya_1_1_sentry_lib_1_1_console_manipulator =
     [ "ClearToLineEnd", "class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html#a549443b9f852ab5d4f6d13a6674bd351", null ],
     [ "HideCursor", "class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html#aa941088a92e110f3df437b36b2629b43", null ],
     [ "MoveCursor", "class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html#a1c855d619ae608a5af088fa5fa65d939", null ],
-    [ "MoveCursorTo", "class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html#acdc46339a79ce4bffccd9d081cb422e9", null ],
+    [ "MoveCursorTo", "class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html#ae9dbc29247e7ed9f1a10be46f4aa9657", null ],
     [ "ResetEffect", "class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html#a297b3ad474cc69b919d32f68c321cc96", null ],
     [ "ReturnToLastSavedCursorPosition", "class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html#a8908382388821e4f7344c73895ce21b1", null ],
     [ "SaveCursorPosition", "class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html#a4ddc9116fde31eaa617e26020a14c7e7", null ],

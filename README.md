@@ -3,7 +3,7 @@
 >[!tip] 如果你不能打开下面的链接，请尝试在 [GitHub](https://github.com/TaciturnJian/LangYa.SentryLib.git) 中打开。
 
 ![HUST](https://img.shields.io/badge/RoboMaster-华中科技大学狼牙战队-blue)
-![Version](https://img.shields.io/badge/版本-1.0.1-blue)
+![Version](https://img.shields.io/badge/版本-1.0.2-blue)
 ![CXXStandard](https://img.shields.io/badge/CXX-20-green)
 ![CMakeVersion](https://img.shields.io/badge/CMAKE-3.16-green)
 
@@ -47,19 +47,68 @@ SentryLib 是一个机器人工具库，它包含了如下功能或接口：
 ## 数学概念
 
 - 位置
-    - [一维位置 Position1](./Headers/LangYa/SentryLib/Position1.hpp)
-    - [二维位置 Position2](./Headers/LangYa/SentryLib/Position2.hpp)
-    - [三维位置 Position3](./Headers/LangYa/SentryLib/Position3.hpp)
+    - [一维位置 Position1](./Headers/LangYa/SentryLib/Math/Position1.hpp)
+    - [二维位置 Position2](./Headers/LangYa/SentryLib/Math/Position2.hpp)
+    - [三维位置 Position3](./Headers/LangYa/SentryLib/Math/Position3.hpp)
 - 向量
-    - [向量 Vector](./Headers/LangYa/SentryLib/Vector.hpp)
-    - [二维向量 Vector2](./Headers/LangYa/SentryLib/Vector2.hpp)
-    - [三维向量 Vector3](./Headers/LangYa/SentryLib/Vector3.hpp)
+    - [向量 Vector](./Headers/LangYa/SentryLib/Math/Vector.hpp)
+    - [二维向量 Vector2](./Headers/LangYa/SentryLib/Math/Vector2.hpp)
+    - [三维向量 Vector3](./Headers/LangYa/SentryLib/Math/Vector3.hpp)
 
 ## 机器人设备
 
 - [设备 Device.hpp](./Headers/LangYa/SentryLib/Device.hpp)
-- [传感器 Sensor.hpp](./Headers/LangYa/SentryLib/Sensor.hpp)
-- [控制器 Controller.hpp](./Headers/LangYa/SentryLib/Controller.hpp)
+
+
+## 监视器使用指南
+
+可选操作：检查你的电脑的 127.0.0.1:8989 是否被哪个程序占用
+
+代码如下：
+
+```C++
+#include <LangYa/SentryLib/Application/MonitorSender.hpp>
+
+int main()
+{
+	using namespace std::chrono_literals;
+	using namespace LangYa::SentryLib;
+
+	// 使用 vector 的一些方法构造包
+	MonitorPackage dynamic_package_1{"Test"};
+	dynamic_package_1.Items.emplace_back("A", 9);
+	dynamic_package_1.Items.emplace_back("B", 100);
+	dynamic_package_1.Items.emplace_back("C", 100);
+
+	// 使用直接构造
+	MonitorPackage dynamic_package_2{"Test2",
+		{			// 注意这里两层括号
+			{"A", 9},
+			{"B", 100},
+			{"C", 100},
+			{"D", 100}
+		}
+	};
+
+	// 获取发送器
+	MonitorSender sender{};
+
+	while (true)
+	{
+		// 发送包裹
+		sender << dynamic_package_1 << dynamic_package_2;
+
+		// 自己修改包裹
+		dynamic_package_1.Items[1].Value++;
+		dynamic_package_2.Items[2].Value++;
+
+		// 建议频率不要太大，延时最低不要低于 10ms
+		std::this_thread::sleep_for(50ms);
+	}
+}
+```
+
+
 
 
 # TODOList

@@ -6,6 +6,9 @@ project(SentryLib
 	HOMEPAGE_URL "https://github.com/TaciturnJian/LangYa.SentryLib"
 	LANGUAGES CXX
 )
+
+# DEBUG 模式
+add_definitions(-DSC_DEBUG)
                                                                         
 # 跨平台支持 在这里写了 pthread 和 compile options
 if(CMAKE_SYSTEM_NAME MATCHES "Linux") 

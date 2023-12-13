@@ -15,5 +15,6 @@ var searchData=
   ['getserializationresultsize_12',['getserializationresultsize',['../struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html#acb57e7e288551f4786bcd83573ad13e6',1,'LangYa::SentryLib::SentryData::GetSerializationResultSize()'],['../namespace_lang_ya_1_1_sentry_lib.html#a99763d48f903f1a36ee95492ebb84671',1,'LangYa::SentryLib::GetSerializationResultSize()']]],
   ['getview_13',['GetView',['../class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html#aa4fcd6178787270ed4e8a69d28e60303',1,'LangYa::SentryLib::UniqueBuffer']]],
   ['gimbaleulerangle_14',['GimbalEulerAngle',['../struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html#a78f7d1aa4f89296d3aaa5aae1574e468',1,'LangYa::SentryLib::SentryData']]],
-  ['green_15',['Green',['../class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html#ac7a137824050901043e8767147fbc9f1af232a978ec1c31eac0b9f917bff4470f',1,'LangYa::SentryLib::ConsoleManipulator']]]
+  ['globalmonitor_15',['GlobalMonitor',['../_t_c_p_monitor_8cpp.html#a9aedd082ee3df5eff4bafe93f6a086d3',1,'TCPMonitor.cpp']]],
+  ['green_16',['Green',['../class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html#ac7a137824050901043e8767147fbc9f1af232a978ec1c31eac0b9f917bff4470f',1,'LangYa::SentryLib::ConsoleManipulator']]]
 ];

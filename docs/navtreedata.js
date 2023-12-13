@@ -31,6 +31,7 @@ var NAVTREE =
       [ "连接接口", "md__r_e_a_d_m_e.html#连接接口", null ],
       [ "数学概念", "md__r_e_a_d_m_e.html#数学概念", null ],
       [ "机器人设备", "md__r_e_a_d_m_e.html#机器人设备", null ],
+      [ "监视器使用指南", "md__r_e_a_d_m_e.html#监视器使用指南", null ],
       [ "TODOList", "md__r_e_a_d_m_e.html#todolist", null ]
     ] ],
     [ "命名空间", "namespaces.html", [
@@ -73,11 +74,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_info_8cpp.html",
-"_vector_8hpp.html#ae40742336061da4404bd9821387ef411",
-"class_lang_ya_1_1_sentry_lib_1_1_serial_port.html#a58ad07b6e0c41dca656d136851eb6ec4",
-"concept_lang_ya_1_1_sentry_lib_1_1_serializable.html",
-"struct_lang_ya_1_1_sentry_lib_1_1_armor_plate_info.html",
-"x64-_release_2_c_make_files_23_827_82-msvc1_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#a81dee0709ded976b2e0319239f72d174"
+"_triple_buffer_tester_8cpp.html",
+"class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html#a65a812791ee8fb1166bd42a3977382e0",
+"class_lang_ya_1_1_sentry_lib_1_1_vector3.html#ae4ffdc689c7dae5f4ab6289f3e434db1",
+"out_2build_2x64-_debug_2_c_make_files_23_827_82-msvc1_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#adbc5372f40838899018fadbc89bd588b",
+"struct_lang_ya_1_1_sentry_lib_1_1_serial_numbers.html#ae596da6cdca3a460888ed12ce777f2fa"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

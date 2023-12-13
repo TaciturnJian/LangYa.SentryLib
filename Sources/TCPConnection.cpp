@@ -105,6 +105,7 @@ namespace LangYa::SentryLib
 	{
 		ErrorCodeType result{};
 		auto bytes = read(*Socket, view.ToBuffer(), result);
+#ifdef SC_DEBUG
 		spdlog::info(
 			"TCPConnection({})> Read {}:{} bytes, failed({}), failure({})",
 			RemoteEndpoint,
@@ -113,6 +114,7 @@ namespace LangYa::SentryLib
 			result.failed(),
 			RESULT_MESSAGE(result)
 		);
+#endif
 
 		//TODO failure counter and exception processor
 
@@ -125,6 +127,8 @@ namespace LangYa::SentryLib
 	{
 		ErrorCodeType result{};
 		auto bytes = write(*Socket, view.ToBuffer(), result);
+
+#ifdef SC_DEBUG
 		spdlog::info(
 			"TCPConnection({})> Write {}:{} bytes, failed({}), failure({})",
 			RemoteEndpoint,
@@ -133,6 +137,7 @@ namespace LangYa::SentryLib
 			result.failed(),
 			RESULT_MESSAGE(result)
 		);
+#endif
 
 		return bytes;
 	}

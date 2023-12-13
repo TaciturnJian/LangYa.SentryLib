@@ -8,13 +8,14 @@ var searchData=
   ['deserializablecontent_2ehpp_5',['DeserializableContent.hpp',['../_deserializable_content_8hpp.html',1,'']]],
   ['deserializablecontentsensor_6',['deserializablecontentsensor',['../class_lang_ya_1_1_sentry_lib_1_1_deserializable_content_sensor.html',1,'LangYa::SentryLib::DeserializableContentSensor&lt; TSensorData &gt;'],['../class_lang_ya_1_1_sentry_lib_1_1_deserializable_content_sensor.html#accec9e9dc471edaa74fc707b9459da80',1,'LangYa::SentryLib::DeserializableContentSensor::DeserializableContentSensor()']]],
   ['deserializablecontentsensor_2ecpp_7',['DeserializableContentSensor.cpp',['../_deserializable_content_sensor_8cpp.html',1,'']]],
-  ['deserializablecontentsensor_2ehpp_8',['DeserializableContentSensor.hpp',['../_deserializable_content_sensor_8hpp.html',1,'']]],
-  ['deserialize_9',['deserialize',['../struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html#ae7ec604552bc47c68a178c9b6dc3815a',1,'LangYa::SentryLib::SentryData::Deserialize()'],['../namespace_lang_ya_1_1_sentry_lib.html#a497aaaadfd4be9fc5072075bb2b21776',1,'LangYa::SentryLib::Deserialize()']]],
-  ['deserializeresource_10',['DeserializeResource',['../struct_lang_ya_1_1_sentry_lib_1_1_sentry_data_1_1_deserialize_resource.html',1,'LangYa::SentryLib::SentryData']]],
-  ['device_11',['Device',['../namespace_lang_ya_1_1_sentry_lib.html#a5a350d508ec1dac2447f8aceb139c72c',1,'LangYa::SentryLib']]],
-  ['device_2ecpp_12',['Device.cpp',['../_device_8cpp.html',1,'']]],
-  ['device_2ecpp_2eo_2ed_13',['Device.cpp.o.d',['../_device_8cpp_8o_8d.html',1,'']]],
-  ['device_2ehpp_14',['Device.hpp',['../_device_8hpp.html',1,'']]],
-  ['devicename_15',['DeviceName',['../struct_lang_ya_1_1_sentry_lib_1_1_serial_port_info.html#a3b5a3f6cc6469ac4b199c8b03108ce38',1,'LangYa::SentryLib::SerialPortInfo']]],
-  ['disconnect_16',['disconnect',['../class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html#a03740d2de5358e31eec9b227b22154d5',1,'LangYa::SentryLib::LangYaConnection::Disconnect()'],['../class_lang_ya_1_1_sentry_lib_1_1_memory_access.html#aceb72021f2069de1b4aee75aed0bda29',1,'LangYa::SentryLib::MemoryAccess::Disconnect()'],['../class_lang_ya_1_1_sentry_lib_1_1_serial_port.html#abdac334a65471023beaecc35eedda65d',1,'LangYa::SentryLib::SerialPort::Disconnect()'],['../class_lang_ya_1_1_sentry_lib_1_1_t_c_p_connection.html#a24c3640a5f815dd3bdd17ad7a580db48',1,'LangYa::SentryLib::TCPConnection::Disconnect()'],['../namespace_lang_ya_1_1_sentry_lib.html#a79f4e7d110322207f06f9e439cfdb267',1,'LangYa::SentryLib::Disconnect()']]]
+  ['deserializablecontentsensor_2ecpp_2eo_2ed_8',['DeserializableContentSensor.cpp.o.d',['../_deserializable_content_sensor_8cpp_8o_8d.html',1,'']]],
+  ['deserializablecontentsensor_2ehpp_9',['DeserializableContentSensor.hpp',['../_deserializable_content_sensor_8hpp.html',1,'']]],
+  ['deserialize_10',['deserialize',['../struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html#ae7ec604552bc47c68a178c9b6dc3815a',1,'LangYa::SentryLib::SentryData::Deserialize()'],['../namespace_lang_ya_1_1_sentry_lib.html#a497aaaadfd4be9fc5072075bb2b21776',1,'LangYa::SentryLib::Deserialize()']]],
+  ['deserializeresource_11',['DeserializeResource',['../struct_lang_ya_1_1_sentry_lib_1_1_sentry_data_1_1_deserialize_resource.html',1,'LangYa::SentryLib::SentryData']]],
+  ['device_12',['Device',['../namespace_lang_ya_1_1_sentry_lib.html#a5a350d508ec1dac2447f8aceb139c72c',1,'LangYa::SentryLib']]],
+  ['device_2ecpp_13',['Device.cpp',['../_device_8cpp.html',1,'']]],
+  ['device_2ecpp_2eo_2ed_14',['Device.cpp.o.d',['../_device_8cpp_8o_8d.html',1,'']]],
+  ['device_2ehpp_15',['Device.hpp',['../_device_8hpp.html',1,'']]],
+  ['devicename_16',['DeviceName',['../struct_lang_ya_1_1_sentry_lib_1_1_serial_port_info.html#a3b5a3f6cc6469ac4b199c8b03108ce38',1,'LangYa::SentryLib::SerialPortInfo']]],
+  ['disconnect_17',['disconnect',['../class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html#a03740d2de5358e31eec9b227b22154d5',1,'LangYa::SentryLib::LangYaConnection::Disconnect()'],['../class_lang_ya_1_1_sentry_lib_1_1_memory_access.html#aceb72021f2069de1b4aee75aed0bda29',1,'LangYa::SentryLib::MemoryAccess::Disconnect()'],['../class_lang_ya_1_1_sentry_lib_1_1_serial_port.html#abdac334a65471023beaecc35eedda65d',1,'LangYa::SentryLib::SerialPort::Disconnect()'],['../class_lang_ya_1_1_sentry_lib_1_1_t_c_p_connection.html#a24c3640a5f815dd3bdd17ad7a580db48',1,'LangYa::SentryLib::TCPConnection::Disconnect()'],['../namespace_lang_ya_1_1_sentry_lib.html#a79f4e7d110322207f06f9e439cfdb267',1,'LangYa::SentryLib::Disconnect()']]]
 ];

@@ -1,0 +1,5 @@
+<map id="LangYa::SentryLib::MemoryView::SetValue" name="LangYa::SentryLib::MemoryView::SetValue">
+<area shape="rect" id="Node000001" title="设置整块内存的值。 本质是调用 memset 函数，这个函数在使用过程中很奇怪，Windows 下不用引用头文件，但是 Linux 下必须引用头文件。 索性包装了此内容。" alt="" coords="5,5,163,48"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a0b0dae0e12aeccb9fc1c4d9dd074e9cf" title="Check if the memory view is valid, basically check the head and the size." alt="" coords="211,5,354,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,24,195,24,195,29,163,29"/>
+</map>
