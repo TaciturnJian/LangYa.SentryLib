@@ -1,5 +1,6 @@
 var struct_lang_ya_1_1_sentry_lib_1_1_armor_plate_info =
 [
+    [ "ArmorPlateInfo", "struct_lang_ya_1_1_sentry_lib_1_1_armor_plate_info.html#ac4d7d64f6ef5b809abe81ceee790f0c7", null ],
     [ "ID", "struct_lang_ya_1_1_sentry_lib_1_1_armor_plate_info.html#a50cb43d1316e7696b067e089bdc6d08c", null ],
     [ "Normal", "struct_lang_ya_1_1_sentry_lib_1_1_armor_plate_info.html#ac578333602a1e3aab5bade4499f3b238", null ],
     [ "Position", "struct_lang_ya_1_1_sentry_lib_1_1_armor_plate_info.html#a07ffbc15b8748588827d61467f2ef904", null ],

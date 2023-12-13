@@ -1,45 +1,164 @@
 #include <iostream>
+#include <memory>
 #include <boost/asio.hpp>
+
+#include "LangYa/SentryLib/ConsoleManipulator.hpp"
+#include "LangYa/SentryLib/Application/Monitor.hpp"
 
 using namespace boost::asio;
 
-int main()
+io_context IOContext;
+ip::tcp::acceptor Acceptor{IOContext, {ip::make_address("127.0.0.1"), 8989}};
+LangYa::SentryLib::ConsoleManipulator Manipulator{};
+LangYa::SentryLib::Monitor GlobalMonitor{};
+
+void HandleClient(ip::tcp::socket& client)
 {
-	io_service ios;
-	ip::tcp::acceptor acp{ios, {ip::make_address("127.0.0.1"), 8989}};
-	acp.listen();
-	while (true)
+	char receive_buffer[2]{};
+	std::stringstream json_buffer{};
+	unsigned int json_level{0};
+	bool in_package{false};
+	bool received_package{false};
+
+	try
 	{
-		try {
-			auto client = acp.accept();
-
-			char buffer[2]{0};
-			std::vector<char> dynamic_buffer{};
-			int package_id{0};
-			while (true)
+		while (true)
+		{
+			if (received_package)
 			{
-				if (read(client, boost::asio::buffer(buffer, 1)) < 1)
-				{
-					continue;
-				}
+				GlobalMonitor << json_buffer.str();
+				json_buffer.str("");
+				received_package = false;
+				in_package = false;
+			}
 
-				if (buffer[0] == '!')
-				{
-					std::cout << '[' << package_id++ << ']';
-					for (auto& c: dynamic_buffer)
-					{
-						std::cout << static_cast<int>(c);
-					}
-					std::cout << std::endl;
-					dynamic_buffer.clear();
-				}
-				dynamic_buffer.push_back(buffer[0]);
+			if (read(client, buffer(receive_buffer, 1)) < 1) continue;
+
+			const auto& ch = receive_buffer[0];
+			switch (ch)
+			{
+			case '{':
+				if (json_level == 0)
+					in_package = true;
+
+				json_level++;
+				break;
+
+			case '}':
+				if (json_level == 1)
+					received_package = true;
+
+				if (json_level == 0)
+					//TODO 处理异常
+					break;
+
+				json_level--;
+
+				break;
+			}
+
+			if (in_package)
+			{
+				json_buffer << ch;
 			}
 		}
-		catch (...)
+	}
+	catch (...)
+	{
+		//TODO 处理异常
+	}
+}
+
+void WaitForClient(std::atomic_bool& terminated, std::atomic_bool& accepted)
+{
+	ip::tcp::socket* client_ptr = nullptr;
+	// ReSharper disable once CppTooWideScope
+	io_context io_context;
+	try
+	{
+		accepted = false;
+		client_ptr = new ip::tcp::socket(Acceptor.accept(io_context));
+		accepted = true;
+	}
+	catch (...)
+	{
+		if (accepted != true)
 		{
-			std::cout << "Exception in client connection, closed and ready for next.";
+			accepted = true;
 		}
 	}
 
+	try
+	{
+		if (client_ptr != nullptr)
+		{
+			HandleClient(*client_ptr);
+		}
+
+		delete client_ptr;
+	}
+	catch (...)
+	{
+		client_ptr = nullptr;
+	}
+
+	terminated = false;
+}
+ 
+int main()
+{
+	SC_TIME_TEXT;
+
+	std::thread{[]
+	{
+		Manipulator.ClearScreen().HideCursor();
+		while(true)
+		{
+			Manipulator.MoveCursorTo({0,0});
+			GlobalMonitor >> std::cout;
+			std::this_thread::sleep_for(10ms);
+		}
+	}}.detach();
+
+	bool next_thread{true};
+	std::atomic_bool accepted_client{false};
+	std::vector<std::tuple<std::shared_ptr<std::atomic_bool>, std::shared_ptr<std::thread>>> thread_info_list;
+	while (true)
+	{
+		if (!next_thread)
+		{
+			if (accepted_client) next_thread = true;
+
+			std::this_thread::sleep_for(100ms);
+			continue;
+		}
+
+		next_thread = false;
+		accepted_client = false;
+		bool found_terminated_thread = false;
+		for (auto& thread_info: thread_info_list)
+		{
+			auto& terminated = *std::get<0>(thread_info);
+			auto& shared_thread_ptr = std::get<1>(thread_info);
+			if (!terminated)
+			{
+				continue;
+			}
+
+			found_terminated_thread = true;
+			shared_thread_ptr = std::make_shared<std::thread>([&terminated, &accepted_client]{WaitForClient(terminated, accepted_client);});
+			shared_thread_ptr->detach();
+			break;
+		}
+
+		if (!found_terminated_thread)
+		{
+			thread_info_list.emplace_back(std::make_shared<std::atomic_bool>(false), std::make_shared<std::thread>());
+			auto& thread_info = thread_info_list[thread_info_list.size() - 1];
+			auto& terminated = *std::get<0>(thread_info);
+			auto& shared_thread_ptr = std::get<1>(thread_info);
+			shared_thread_ptr = std::make_shared<std::thread>([&terminated, &accepted_client]{WaitForClient(terminated, accepted_client);});
+			shared_thread_ptr->detach();
+		}
+	}
 }

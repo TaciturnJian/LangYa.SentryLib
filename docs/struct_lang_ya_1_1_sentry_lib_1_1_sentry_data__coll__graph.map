@@ -1,0 +1,20 @@
+<map id="LangYa::SentryLib::SentryData" name="LangYa::SentryLib::SentryData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="881,77,1017,120"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="584,5,718,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="733,33,857,64,889,74,887,79,856,69,732,38"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="577,56,725,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="740,75,881,89,880,95,740,81"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_vector2.html" title=" " alt="" coords="583,107,719,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="734,119,856,108,880,105,880,111,857,113,735,125"/>
+<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="266,79,473,121"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="489,109,583,119,582,124,488,114"/>
+<area shape="rect" id="Node000006" href="$class_lang_ya_1_1_sentry_lib_1_1_vector2.html" title=" " alt="" coords="262,145,476,188"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="492,147,582,135,583,140,492,152"/>
+<area shape="rect" id="Node000008" href="$class_lang_ya_1_1_sentry_lib_1_1_vector2.html" title=" " alt="" coords="583,173,719,216"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="492,179,501,180,583,187,582,193,500,185,492,184"/>
+<area shape="rect" id="Node000007" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="5,145,213,188"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="228,164,262,164,262,169,228,169"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="734,175,794,160,856,140,906,118,908,123,858,145,796,165,735,180"/>
+<area shape="rect" id="Node000009" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="266,212,473,255"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="488,214,582,201,583,207,489,220"/>
+</map>

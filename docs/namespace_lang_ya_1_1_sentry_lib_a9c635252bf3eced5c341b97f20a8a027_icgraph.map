@@ -1,5 +1,5 @@
 <map id="LangYa::SentryLib::IsConnected" name="LangYa::SentryLib::IsConnected">
-<area shape="rect" id="Node000001" title="获取是否连接到目标" alt="" coords="412,5,548,48"/>
+<area shape="rect" id="Node000001" title="获取是否连接到目标。" alt="" coords="412,5,548,48"/>
 <area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_serial_port_info.html#a6ca301a778f952e7249b092ffb9d7de5" title="Used to log this." alt="" coords="210,5,364,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="396,29,365,29,365,24,396,24"/>
 <area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_serial_port.html#a881fa8f54a86841727bb8e2aee769a84" title="构建串口，返回共享串口指针，请提供有效的串口信息。" alt="" coords="5,5,162,48"/>

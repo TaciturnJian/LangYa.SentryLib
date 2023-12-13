@@ -1,22 +1,28 @@
 #pragma once
 
 #include <ostream>
-
+#include <vector>
 #include <boost/asio/buffer.hpp>
 
 namespace LangYa::SentryLib
 {
 	/// @brief 代表一个内存的视图，保存内存的头指针和长度，供其他读写。
 	/// 不能保证作为传入的参数时得到的内存视图是有效的，因此作为函数参数时，这个类的基础是对调用者的信任。
+	///	类中提供了有关内存的操作函数，CopyTo 和 ReadFrom ，
+	///	它们都是对 memcpy 的封装，但是会使用内存视图中的数据检查调用 memcpy 的参数。
+	///	@author Sango
 	struct MemoryView
 	{
 		/// @brief 代表 Size 的数据类型。
+		///	直接采用目前看来最大的整数类型。
 		using SizeType = unsigned long long;
 
 		/// @brief 代表字节类型。
+		///	字节类型是视图中的最小单位，偏移量都是对于字节类型来说的。
 		using ByteType = unsigned char;
 
 		/// @brief 代表一个内存的开头。
+		///	此类型采用了字节类型的指针，便于使用偏移量访问后面的内容。
 		using HeadType = ByteType*;
 
 		/// @brief 记录内存的开头，可以使用偏移量访问后面的内容。
@@ -46,6 +52,11 @@ namespace LangYa::SentryLib
 		{
 		}
 
+		/// @brief 销毁内存视图，使其无效化。
+		///	在销毁时此函数会将内存头部和内存长度都设置为无效值。
+		///	（但其实完全没必要对吧）
+		~MemoryView();
+
 		/// @brief 基于一个内存视图加上偏移构建一个新的内存视图。
 		///	@param view 基础的内存视图。
 		///	@param offset 内存头部的偏移，只允许正整数。
@@ -53,44 +64,43 @@ namespace LangYa::SentryLib
 		///	@warning 如果新内存视图的长度超过基础内存视图的长度，那么新内存视图将可能是无效的（但不会抛出异常，会在某次不正确使用中造成段错误）。
 		MemoryView(const MemoryView& view, const SizeType& offset, const SizeType& size = 0);
 
-		/// @brief Access memory like byte array.
-		///	@param index The index of the byte.
-		///	@return The reference of the byte.
+		/// @brief 提供快速访问某字节的运算符。
+		///	注意，内存不一定有效，而且此运算符不会检查索引是否越界。
+		///	@param index 字节的下标，从 0 开始。
+		///	@return 此字节的引用。
 		ByteType& operator[](const SizeType& index) const;
 
 		/// @brief Read the given memory started with the head, fill all memory for this memory view, basically a wrap for memcpy.
 		///	@param head The head of the memory.
-		///	@return The size of transferred bytes.
 		void ReadFrom(const void* head) const;
 
 		/// @brief Read the given view. The target byte count is the min value of this->Size and view.Size.
 		///	@param view The view to read.
-		///	@return The size of transferred bytes.
 		void ReadFrom(const MemoryView& view) const;
 
 		/// @brief Write bytes to the given memory started with the head, fill all memory for this memory view, basically a wrap for memcpy.
 		///	@param head The head of the memory.
-		///	@return The size of transferred bytes.
 		void CopyTo(void* head) const;
 
 		/// @brief Write bytes to the given view. The target byte count is the min value of this->Size and view.Size.
 		///	@param view The view to write to.
-		///	@return The size of transferred bytes.
 		void CopyTo(const MemoryView& view) const;
 
-		/// @brief Destruct the memory view.
-		///	Set the head to nullptr and set the size to zero.
-		~MemoryView();
+		/// @brief 设置整块内存的值。
+		///	本质是调用 memset 函数，这个函数在使用过程中很奇怪，Windows 下不用引用头文件，但是 Linux 下必须引用头文件。
+		///	索性包装了此内容。
+		///	@param byte 内存视图最后会全部为此值。
+		void SetValue(ByteType byte) const;
 
 		/// @brief Check if the memory view is valid, basically check the head and the size.
 		///	@warning The result true cannot guarantee the memory is valid.
 		///	@return true if the memory view is valid, otherwise false.
 		[[nodiscard]] bool IsValid() const noexcept;
 
-		/// @brief Print the byte in int into the stream.
-		///	@param stream Where to put the bytes.
-		///	@param view Where the bytes are.
-		///	@return The reference same of the parameter stream.
+		/// @brief 将内存视图中的所有字节写进流中。
+		///	@param stream 支持字节输出的流。
+		///	@param view 字节资源。
+		///	@return 参数中 stream 的引用。
 		friend std::ostream& operator<<(std::ostream& stream, const MemoryView& view)
 		{
 			for (SizeType i = 0; i < view.Size; i++)
@@ -101,8 +111,24 @@ namespace LangYa::SentryLib
 			return stream;
 		}
 
-		/// @brief Convert this view to boost::asio::mutable_buffer.
-		///	@return A instance of boost::asio::mutable_buffer.
+		/// @brief 将内存视图的数据利用指针强制转化，视为某个元素，然后放入 vector 中。
+		///	@param vector 一个类似于流的向量，用于接收数据。
+		///	@param view 内存视图，它储存了此类型的数据。
+		///	@return 传入参数 vector 的引用。
+		template<typename T>
+		friend std::vector<T>& operator<<(std::vector<T>& vector, const MemoryView& view)
+		{
+			auto* head = reinterpret_cast<T*>(view.Head);
+			const auto count = view.Size / sizeof(T);
+			for (SizeType index{0}; index < count; index++)
+			{
+				vector.emplace_back(head[index]);
+			}
+			return vector;
+		}
+
+		/// @brief 将此类型转化为 boost::asio::mutable_buffer
+		///	@return boost::asio::mutable_buffer 的一个实例。
 		[[nodiscard]] boost::asio::mutable_buffer ToBuffer() const;
 	};
 }

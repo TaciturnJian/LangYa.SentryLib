@@ -1,0 +1,5 @@
+<map id="LangYa::SentryLib::ContentProvider::operator&#45;&gt;" name="LangYa::SentryLib::ContentProvider::operator&#45;&gt;">
+<area shape="rect" id="Node000001" title="提供一种简单的方法访问其中的数据。 如果希望数据在读取时保持不变，请使用 GetContent 复制内容。 如果只一次性读取少量数据，使用这个函数可以减少一次复制。" alt="" coords="5,5,185,48"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_content_provider.html#a7cd28cd6120dae9201cf56e822fa915a" title=" " alt="" coords="233,5,419,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,24,217,24,217,29,185,29"/>
+</map>

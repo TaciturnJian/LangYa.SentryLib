@@ -2,6 +2,6 @@
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,187,160,229"/>
 <area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title=" " alt="" coords="5,96,160,139"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,154,85,186,80,186,80,154"/>
-<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_sentry_lib_1_1_position1.html" title="使用一个元素 X 代表坐标 TODO 注释" alt="" coords="5,5,160,48"/>
+<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_sentry_lib_1_1_position1.html" title="使用一个元素 X 代表坐标。 包装了一个元素，为了与其他 Position 保持一致。" alt="" coords="5,5,160,48"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="85,64,85,96,80,96,80,64"/>
 </map>

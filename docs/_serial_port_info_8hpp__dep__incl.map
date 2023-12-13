@@ -12,7 +12,7 @@
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="332,225,283,263,280,259,329,221"/>
 <area shape="rect" id="Node000005" href="$_ideal_logic_8cpp.html" title=" " alt="" coords="374,261,526,288"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="387,221,436,259,433,263,384,225"/>
-<area shape="rect" id="Node000006" href="$_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和json配置文件的处理工具，使用操作见" alt="" coords="550,261,691,288"/>
+<area shape="rect" id="Node000006" href="$_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和 json 配置文件的处理工具，使用操作见" alt="" coords="550,261,691,288"/>
 <area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="419,215,575,258,574,263,418,220"/>
 <area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="440,150,379,188,376,184,437,145"/>
 <area shape="rect" id="Node000008" href="$_serial_port_8cpp.html" title=" " alt="" coords="483,187,638,213"/>

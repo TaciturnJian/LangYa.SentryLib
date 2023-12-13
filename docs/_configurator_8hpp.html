@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LangYa.SentryLib: Headers/LangYa/SentryLib/Configurator.hpp 文件参考</title>
+<title>LangYa.SentryLib: Headers/LangYa/SentryLib/Application/Configurator.hpp 文件参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.1</span>
    </div>
    <div id="projectbrief">A robot lib by LangYa.Sango mostly for softwares on sentry</div>
   </td>
@@ -99,27 +99,36 @@ $(document).ready(function(){initNavTree('_configurator_8hpp.html',''); initResi
 <div class="contents">
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;boost/json.hpp&gt;</code><br />
 <code>#include &lt;boost/program_options.hpp&gt;</code><br />
-<code>#include &lt;<a class="el" href="">LangYa/SentryLib/CommandLineArguments.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="">LangYa/SentryLib/Application/CommandLineArguments.hpp</a>&gt;</code><br />
+<code>#include &lt;spdlog/sinks/rotating_file_sink.h&gt;</code><br />
+<code>#include &lt;spdlog/sinks/stdout_color_sinks.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Configurator.hpp 的引用(Include)关系图:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="_configurator_8hpp__incl.png" border="0" usemap="#a_headers_2_lang_ya_2_sentry_lib_2_configurator_8hpp" alt=""/></div>
-<map name="a_headers_2_lang_ya_2_sentry_lib_2_configurator_8hpp" id="a_headers_2_lang_ya_2_sentry_lib_2_configurator_8hpp">
-<area shape="rect" title=" " alt="" coords="149,5,326,48"/>
+<div class="center"><img src="_configurator_8hpp__incl.png" border="0" usemap="#a_headers_2_lang_ya_2_sentry_lib_2_application_2_configurator_8hpp" alt=""/></div>
+<map name="a_headers_2_lang_ya_2_sentry_lib_2_application_2_configurator_8hpp" id="a_headers_2_lang_ya_2_sentry_lib_2_application_2_configurator_8hpp">
+<area shape="rect" title=" " alt="" coords="321,5,508,48"/>
 <area shape="rect" title=" " alt="" coords="5,104,59,131"/>
-<area shape="poly" title=" " alt="" coords="185,51,72,98,70,99,68,94,70,94,182,46"/>
+<area shape="poly" title=" " alt="" coords="321,42,201,63,135,79,72,99,68,100,67,95,70,93,134,74,199,58,320,37"/>
 <area shape="rect" title=" " alt="" coords="83,104,160,131"/>
-<area shape="poly" title=" " alt="" coords="212,51,151,97,148,93,209,46"/>
-<area shape="rect" title=" " alt="" coords="184,104,291,131"/>
-<area shape="poly" title=" " alt="" coords="240,48,240,88,235,88,235,48"/>
-<area shape="rect" title=" " alt="" coords="315,104,493,131"/>
-<area shape="poly" title=" " alt="" coords="278,46,368,94,365,99,275,51"/>
-<area shape="rect" href="_command_line_arguments_8hpp.html" title=" " alt="" coords="517,96,704,139"/>
-<area shape="poly" title=" " alt="" coords="325,46,509,89,508,94,324,51"/>
+<area shape="poly" title=" " alt="" coords="333,51,171,99,166,100,164,95,170,93,331,46"/>
+<area shape="rect" title=" " alt="" coords="183,104,254,131"/>
+<area shape="poly" title=" " alt="" coords="370,51,262,100,259,95,368,46"/>
+<area shape="rect" title=" " alt="" coords="279,104,385,131"/>
+<area shape="poly" title=" " alt="" coords="397,50,356,94,352,91,394,47"/>
+<area shape="rect" title=" " alt="" coords="410,104,588,131"/>
+<area shape="poly" title=" " alt="" coords="436,47,478,91,474,94,432,50"/>
+<area shape="rect" href="_command_line_arguments_8hpp.html" title=" " alt="" coords="613,96,809,139"/>
+<area shape="poly" title=" " alt="" coords="485,46,628,89,626,94,483,51"/>
+<area shape="rect" title=" " alt="" coords="833,96,975,139"/>
+<area shape="poly" title=" " alt="" coords="509,39,651,62,818,93,817,98,650,67,508,44"/>
+<area shape="rect" title=" " alt="" coords="998,96,1133,139"/>
+<area shape="poly" title=" " alt="" coords="509,33,723,55,851,71,983,93,983,98,851,77,722,60,509,38"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -127,21 +136,23 @@ $(document).ready(function(){initNavTree('_configurator_8hpp.html',''); initResi
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="_configurator_8hpp__dep__incl.png" border="0" usemap="#a_headers_2_lang_ya_2_sentry_lib_2_configurator_8hppdep" alt=""/></div>
-<map name="a_headers_2_lang_ya_2_sentry_lib_2_configurator_8hppdep" id="a_headers_2_lang_ya_2_sentry_lib_2_configurator_8hppdep">
-<area shape="rect" title=" " alt="" coords="374,5,550,48"/>
-<area shape="rect" href="_sentry_lib_8hpp.html" title=" " alt="" coords="257,96,459,123"/>
-<area shape="poly" title=" " alt="" coords="425,60,376,98,373,93,422,56"/>
-<area shape="rect" href="_configurator_8cpp.html" title=" " alt="" coords="482,96,650,123"/>
-<area shape="poly" title=" " alt="" coords="502,56,551,93,548,98,499,60"/>
-<area shape="rect" href="_sentry_lib_8cpp.html" title=" " alt="" coords="5,171,159,197"/>
-<area shape="poly" title=" " alt="" coords="296,129,131,173,130,167,295,124"/>
-<area shape="rect" href="_example_app_8cpp.html" title=" " alt="" coords="182,171,350,197"/>
-<area shape="poly" title=" " alt="" coords="332,135,283,172,280,168,329,130"/>
-<area shape="rect" href="_ideal_logic_8cpp.html" title=" " alt="" coords="374,171,526,197"/>
-<area shape="poly" title=" " alt="" coords="387,130,436,168,433,172,384,135"/>
-<area shape="rect" href="_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和json配置文件的处理工具，使用操作见" alt="" coords="550,171,691,197"/>
-<area shape="poly" title=" " alt="" coords="419,125,575,167,574,173,418,130"/>
+<div class="center"><img src="_configurator_8hpp__dep__incl.png" border="0" usemap="#a_headers_2_lang_ya_2_sentry_lib_2_application_2_configurator_8hppdep" alt=""/></div>
+<map name="a_headers_2_lang_ya_2_sentry_lib_2_application_2_configurator_8hppdep" id="a_headers_2_lang_ya_2_sentry_lib_2_application_2_configurator_8hppdep">
+<area shape="rect" title=" " alt="" coords="472,5,660,48"/>
+<area shape="rect" href="_sentry_lib_8hpp.html" title=" " alt="" coords="257,104,459,131"/>
+<area shape="poly" title=" " alt="" coords="505,57,389,106,387,101,503,52"/>
+<area shape="rect" href="_configurator_8cpp.html" title=" " alt="" coords="482,104,650,131"/>
+<area shape="poly" title=" " alt="" coords="569,64,569,104,563,104,563,64"/>
+<area shape="rect" href="_controller_sensor_tester_8cpp.html" title=" " alt="" coords="673,96,838,139"/>
+<area shape="poly" title=" " alt="" coords="625,53,712,93,710,98,623,57"/>
+<area shape="rect" href="_sentry_lib_8cpp.html" title=" " alt="" coords="5,187,159,213"/>
+<area shape="poly" title=" " alt="" coords="301,138,126,189,125,184,299,133"/>
+<area shape="rect" href="_example_app_8cpp.html" title=" " alt="" coords="182,187,350,213"/>
+<area shape="poly" title=" " alt="" coords="334,143,282,189,278,185,331,139"/>
+<area shape="rect" href="_ideal_logic_8cpp.html" title=" " alt="" coords="374,187,526,213"/>
+<area shape="poly" title=" " alt="" coords="385,139,438,185,434,189,382,143"/>
+<area shape="rect" href="_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和 json 配置文件的处理工具，使用操作见" alt="" coords="550,187,691,213"/>
+<area shape="poly" title=" " alt="" coords="414,133,580,184,579,189,413,138"/>
 </map>
 </div>
 </div>
@@ -164,8 +175,8 @@ $(document).ready(function(){initNavTree('_configurator_8hpp.html',''); initResi
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_692516b589a32b3bfce781ca9f6d1534.html">Headers</a></li><li class="navelem"><a class="el" href="dir_b117d0d76b03a6360b87a590e39f53f6.html">LangYa</a></li><li class="navelem"><a class="el" href="dir_0479bb77a485cc0baf99073ab05914e0.html">SentryLib</a></li><li class="navelem"><a class="el" href="_configurator_8hpp.html">Configurator.hpp</a></li>
-    <li class="footer">生成于 2023年 十二月 10日 星期日 23:13:36 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a class="el" href="dir_692516b589a32b3bfce781ca9f6d1534.html">Headers</a></li><li class="navelem"><a class="el" href="dir_b117d0d76b03a6360b87a590e39f53f6.html">LangYa</a></li><li class="navelem"><a class="el" href="dir_0479bb77a485cc0baf99073ab05914e0.html">SentryLib</a></li><li class="navelem"><a class="el" href="dir_d1dc2d85c1912ab79aa8a25f0fda4050.html">Application</a></li><li class="navelem"><a class="el" href="_configurator_8hpp.html">Configurator.hpp</a></li>
+    <li class="footer">生成于 2023年 十二月 12日 星期二 21:00:41 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,7 +1,7 @@
 <map id="类继承关系图" name="类继承关系图">
 <area shape="rect" id="Node000000" title=" " alt="" coords="5,5,153,32"/>
-<area shape="rect" id="Node000001" href="$struct_temp_1_1_sentry_data.html" title=" " alt="" coords="201,31,327,57"/>
-<area shape="poly" id="edge5_Node000000_Node000001" title=" " alt="" coords="168,28,201,33,200,38,167,33"/>
+<area shape="rect" id="Node000001" href="$struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html" title=" " alt="" coords="201,23,337,65"/>
+<area shape="poly" id="edge5_Node000000_Node000001" title=" " alt="" coords="169,28,201,32,200,38,168,33"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="12,56,146,83"/>
-<area shape="poly" id="edge6_Node000002_Node000001" title=" " alt="" coords="161,55,200,50,201,55,161,61"/>
+<area shape="poly" id="edge6_Node000002_Node000001" title=" " alt="" coords="161,56,200,50,201,56,162,61"/>
 </map>

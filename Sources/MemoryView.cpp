@@ -15,6 +15,13 @@ namespace LangYa::SentryLib
 	{
 	}
 
+	MemoryView
+	::~MemoryView()
+	{
+		Head = nullptr;
+		Size = 0;
+	}
+
 	MemoryView::ByteType&
 	MemoryView
 	::operator[](const SizeType& index) const
@@ -26,7 +33,10 @@ namespace LangYa::SentryLib
 	MemoryView
 	::ReadFrom(const void* const head) const
 	{
-		if (Head == head) return;
+		if (!IsValid()) return;
+
+		if (Head == head || head == nullptr) return;
+
 		memcpy(Head, head, Size);
 	}
 
@@ -34,7 +44,10 @@ namespace LangYa::SentryLib
 	MemoryView
 	::ReadFrom(const MemoryView& view) const
 	{
-		if (Head == view.Head) return;
+		if (!IsValid()) return;
+
+		if (Head == view.Head || view.Head == nullptr) return;
+
 		memcpy(Head, view.Head, view.Size < Size ? view.Size : Size);
 	}
 
@@ -42,7 +55,10 @@ namespace LangYa::SentryLib
 	MemoryView
 	::CopyTo(void* const head) const
 	{
-		if (Head == head) return;
+		if (!IsValid()) return;
+
+		if (Head == head || head == nullptr) return;
+
 		memcpy(head, Head, Size);
 	}
 
@@ -50,15 +66,19 @@ namespace LangYa::SentryLib
 	MemoryView
 	::CopyTo(const MemoryView& view) const
 	{
-		if (Head == view.Head) return;
+		if (!IsValid()) return;
+
+		if (Head == view.Head || view.Head == nullptr) return;
+
 		memcpy(view.Head, Head, view.Size < Size ? view.Size : Size);
 	}
 
-	MemoryView
-	::~MemoryView()
+	void
+	MemoryView::SetValue(const ByteType byte) const
 	{
-		Head = nullptr;
-		Size = 0;
+		if (!IsValid()) return;
+
+		memset(Head, byte, Size);
 	}
 
 	bool

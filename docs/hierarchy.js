@@ -3,7 +3,7 @@ var hierarchy =
     [ "LangYa::SentryLib::ApplicationInfo", "struct_lang_ya_1_1_sentry_lib_1_1_application_info.html", null ],
     [ "LangYa::SentryLib::AutoAimModule", "class_lang_ya_1_1_sentry_lib_1_1_auto_aim_module.html", null ],
     [ "LangYa::SentryLib::CommandLineArguments", "struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html", null ],
-    [ "Temp::SentryData::ComplexFireByte", "struct_temp_1_1_sentry_data_1_1_complex_fire_byte.html", null ],
+    [ "LangYa::SentryLib::SentryData::ComplexFireByte", "struct_lang_ya_1_1_sentry_lib_1_1_sentry_data_1_1_complex_fire_byte.html", null ],
     [ "LangYa::SentryLib::Configurator", "class_lang_ya_1_1_sentry_lib_1_1_configurator.html", null ],
     [ "Connection", null, [
       [ "LangYa::SentryLib::LangYaConnection", "class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html", null ],
@@ -12,15 +12,17 @@ var hierarchy =
       [ "LangYa::SentryLib::TCPConnection", "class_lang_ya_1_1_sentry_lib_1_1_t_c_p_connection.html", null ]
     ] ],
     [ "LangYa::SentryLib::ConsoleManipulator", "class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html", null ],
-    [ "Temp::Data", "struct_temp_1_1_data.html", null ],
-    [ "Temp::SentryData::DataToDeserialize", "struct_temp_1_1_sentry_data_1_1_data_to_deserialize.html", null ],
+    [ "LangYa::SentryLib::ContentAcceptor< TContent >", "class_lang_ya_1_1_sentry_lib_1_1_content_acceptor.html", null ],
+    [ "LangYa::SentryLib::ContentProvider< TContent >", "class_lang_ya_1_1_sentry_lib_1_1_content_provider.html", null ],
     [ "DeserializableContent", null, [
-      [ "Temp::SentryData", "struct_temp_1_1_sentry_data.html", null ]
+      [ "LangYa::SentryLib::SentryData", "struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html", null ]
     ] ],
+    [ "LangYa::SentryLib::SentryData::DeserializeResource", "struct_lang_ya_1_1_sentry_lib_1_1_sentry_data_1_1_deserialize_resource.html", null ],
     [ "Device", null, [
-      [ "LangYa::SentryLib::Controller< TControllerData >", "class_lang_ya_1_1_sentry_lib_1_1_controller.html", null ],
-      [ "LangYa::SentryLib::Sensor< TSensorData >", "class_lang_ya_1_1_sentry_lib_1_1_sensor.html", null ]
+      [ "LangYa::SentryLib::DeserializableContentSensor< TSensorData >", "class_lang_ya_1_1_sentry_lib_1_1_deserializable_content_sensor.html", null ],
+      [ "LangYa::SentryLib::SerializableContentController< TControllerData >", "class_lang_ya_1_1_sentry_lib_1_1_serializable_content_controller.html", null ]
     ] ],
+    [ "LangYa::SentryLib::Manager< TItem, TKey >", "class_lang_ya_1_1_sentry_lib_1_1_manager.html", null ],
     [ "LangYa::SentryLib::MatchStatusManager", "class_lang_ya_1_1_sentry_lib_1_1_match_status_manager.html", null ],
     [ "LangYa::SentryLib::MemoryIO", "class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html", null ],
     [ "LangYa::SentryLib::MemoryView", "struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html", null ],
@@ -39,9 +41,9 @@ var hierarchy =
     [ "LangYa::SentryLib::Resource< LangYa::SentryLib::MemoryView >", "struct_lang_ya_1_1_sentry_lib_1_1_resource.html", null ],
     [ "RobotPost", "struct_robot_post.html", null ],
     [ "SerializableContent", null, [
-      [ "Temp::SentryData", "struct_temp_1_1_sentry_data.html", null ]
+      [ "LangYa::SentryLib::SentryData", "struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html", null ]
     ] ],
-    [ "Temp::SentryData::SerializationResult", "struct_temp_1_1_sentry_data_1_1_serialization_result.html", null ],
+    [ "LangYa::SentryLib::SentryData::SerializationResult", "struct_lang_ya_1_1_sentry_lib_1_1_sentry_data_1_1_serialization_result.html", null ],
     [ "LangYa::SentryLib::SerialNumbers< TBasicNumber >", "struct_lang_ya_1_1_sentry_lib_1_1_serial_numbers.html", null ],
     [ "LangYa::SentryLib::SerialNumbers< unsigned short >", "struct_lang_ya_1_1_sentry_lib_1_1_serial_numbers.html", null ],
     [ "LangYa::SentryLib::SerialPortInfo", "struct_lang_ya_1_1_sentry_lib_1_1_serial_port_info.html", null ],
@@ -51,10 +53,14 @@ var hierarchy =
     [ "LangYa::SentryLib::TripleBuffer", "class_lang_ya_1_1_sentry_lib_1_1_triple_buffer.html", null ],
     [ "LangYa::SentryLib::UniqueBuffer", "class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html", null ],
     [ "LangYa::SentryLib::Vector< TElement, Dimension >", "class_lang_ya_1_1_sentry_lib_1_1_vector.html", [
+      [ "LangYa::SentryLib::Vector2< float >", "class_lang_ya_1_1_sentry_lib_1_1_vector2.html", null ],
+      [ "LangYa::SentryLib::Vector2< char >", "class_lang_ya_1_1_sentry_lib_1_1_vector2.html", null ],
       [ "LangYa::SentryLib::Vector3< float >", "class_lang_ya_1_1_sentry_lib_1_1_vector3.html", null ],
       [ "LangYa::SentryLib::Vector2< TElement, Dimension >", "class_lang_ya_1_1_sentry_lib_1_1_vector2.html", null ],
       [ "LangYa::SentryLib::Vector3< TElement, Dimension >", "class_lang_ya_1_1_sentry_lib_1_1_vector3.html", null ]
     ] ],
+    [ "LangYa::SentryLib::Vector< char, 2 >", "class_lang_ya_1_1_sentry_lib_1_1_vector.html", null ],
+    [ "LangYa::SentryLib::Vector< float, 2 >", "class_lang_ya_1_1_sentry_lib_1_1_vector.html", null ],
     [ "LangYa::SentryLib::Vector< float, 3 >", "class_lang_ya_1_1_sentry_lib_1_1_vector.html", null ],
     [ "LangYa::SentryLib::Vector< TElement, 2 >", "class_lang_ya_1_1_sentry_lib_1_1_vector.html", null ],
     [ "LangYa::SentryLib::Vector< TElement, 3 >", "class_lang_ya_1_1_sentry_lib_1_1_vector.html", null ],

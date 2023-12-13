@@ -1,7 +1,7 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,47,65,73"/>
-<area shape="rect" id="Node000001" href="$class_lang_ya_1_1_sentry_lib_1_1_controller.html" title="代表一个机器人控制器 修改此控制器的变量并在合适的时机调用" alt="" coords="113,5,302,48"/>
-<area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="79,49,112,42,113,48,80,54"/>
-<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_sensor.html" title="代表一个机器人传感器。 TODO 注释与文档 Tick this device so it will update sensor data from connection,..." alt="" coords="127,72,288,115"/>
-<area shape="poly" id="edge8_Node000000_Node000002" title=" " alt="" coords="81,66,127,75,126,80,80,71"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,63,65,89"/>
+<area shape="rect" id="Node000001" href="$class_lang_ya_1_1_sentry_lib_1_1_deserializable_content_sensor.html" title="代表一个机器人传感器。 TODO 注释与文档 Tick this device so it will update sensor data from connection,..." alt="" coords="113,5,301,64"/>
+<area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="79,63,111,55,113,60,80,68"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_serializable_content_controller.html" title="代表一个机器人控制器 修改此控制器的变量并在合适的时机调用" alt="" coords="113,88,301,147"/>
+<area shape="poly" id="edge8_Node000000_Node000002" title=" " alt="" coords="80,84,113,92,111,97,79,89"/>
 </map>

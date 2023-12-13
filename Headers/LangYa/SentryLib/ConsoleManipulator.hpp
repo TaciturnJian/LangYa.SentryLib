@@ -28,7 +28,7 @@ namespace LangYa::SentryLib {
 		ConsoleManipulator& SetForegroundColor(CommonColor color);
 		ConsoleManipulator& SetBackgroundColor(CommonColor color);
 		ConsoleManipulator& MoveCursor(Vector2S offset);
-		ConsoleManipulator& MoveCursorTo(Position2Ui position);
+		ConsoleManipulator& MoveCursorTo(const Position2Ui& position);
 		ConsoleManipulator& ClearScreen();
 		ConsoleManipulator& ClearToLineEnd();
 		ConsoleManipulator& SaveCursorPosition();

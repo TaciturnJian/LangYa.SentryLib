@@ -8,8 +8,11 @@ var annotated_dup =
         [ "CommandLineArguments", "struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html", "struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments" ],
         [ "Configurator", "class_lang_ya_1_1_sentry_lib_1_1_configurator.html", "class_lang_ya_1_1_sentry_lib_1_1_configurator" ],
         [ "ConsoleManipulator", "class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html", "class_lang_ya_1_1_sentry_lib_1_1_console_manipulator" ],
-        [ "Controller", "class_lang_ya_1_1_sentry_lib_1_1_controller.html", "class_lang_ya_1_1_sentry_lib_1_1_controller" ],
+        [ "ContentAcceptor", "class_lang_ya_1_1_sentry_lib_1_1_content_acceptor.html", "class_lang_ya_1_1_sentry_lib_1_1_content_acceptor" ],
+        [ "ContentProvider", "class_lang_ya_1_1_sentry_lib_1_1_content_provider.html", "class_lang_ya_1_1_sentry_lib_1_1_content_provider" ],
+        [ "DeserializableContentSensor", "class_lang_ya_1_1_sentry_lib_1_1_deserializable_content_sensor.html", "class_lang_ya_1_1_sentry_lib_1_1_deserializable_content_sensor" ],
         [ "LangYaConnection", "class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html", "class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection" ],
+        [ "Manager", "class_lang_ya_1_1_sentry_lib_1_1_manager.html", "class_lang_ya_1_1_sentry_lib_1_1_manager" ],
         [ "MatchStatusManager", "class_lang_ya_1_1_sentry_lib_1_1_match_status_manager.html", "class_lang_ya_1_1_sentry_lib_1_1_match_status_manager" ],
         [ "MemoryAccess", "class_lang_ya_1_1_sentry_lib_1_1_memory_access.html", "class_lang_ya_1_1_sentry_lib_1_1_memory_access" ],
         [ "MemoryIO", "class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html", "class_lang_ya_1_1_sentry_lib_1_1_memory_i_o" ],
@@ -19,7 +22,8 @@ var annotated_dup =
         [ "Position2", "struct_lang_ya_1_1_sentry_lib_1_1_position2.html", "struct_lang_ya_1_1_sentry_lib_1_1_position2" ],
         [ "Position3", "struct_lang_ya_1_1_sentry_lib_1_1_position3.html", "struct_lang_ya_1_1_sentry_lib_1_1_position3" ],
         [ "Resource", "struct_lang_ya_1_1_sentry_lib_1_1_resource.html", "struct_lang_ya_1_1_sentry_lib_1_1_resource" ],
-        [ "Sensor", "class_lang_ya_1_1_sentry_lib_1_1_sensor.html", "class_lang_ya_1_1_sentry_lib_1_1_sensor" ],
+        [ "SentryData", "struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html", "struct_lang_ya_1_1_sentry_lib_1_1_sentry_data" ],
+        [ "SerializableContentController", "class_lang_ya_1_1_sentry_lib_1_1_serializable_content_controller.html", "class_lang_ya_1_1_sentry_lib_1_1_serializable_content_controller" ],
         [ "SerialNumbers", "struct_lang_ya_1_1_sentry_lib_1_1_serial_numbers.html", "struct_lang_ya_1_1_sentry_lib_1_1_serial_numbers" ],
         [ "SerialPort", "class_lang_ya_1_1_sentry_lib_1_1_serial_port.html", "class_lang_ya_1_1_sentry_lib_1_1_serial_port" ],
         [ "SerialPortInfo", "struct_lang_ya_1_1_sentry_lib_1_1_serial_port_info.html", "struct_lang_ya_1_1_sentry_lib_1_1_serial_port_info" ],
@@ -32,10 +36,6 @@ var annotated_dup =
         [ "Vector3", "class_lang_ya_1_1_sentry_lib_1_1_vector3.html", "class_lang_ya_1_1_sentry_lib_1_1_vector3" ],
         [ "ViMap", "class_lang_ya_1_1_sentry_lib_1_1_vi_map.html", "class_lang_ya_1_1_sentry_lib_1_1_vi_map" ]
       ] ]
-    ] ],
-    [ "Temp", "namespace_temp.html", [
-      [ "Data", "struct_temp_1_1_data.html", "struct_temp_1_1_data" ],
-      [ "SentryData", "struct_temp_1_1_sentry_data.html", "struct_temp_1_1_sentry_data" ]
     ] ],
     [ "RobotPost", "struct_robot_post.html", null ]
 ];

@@ -7,7 +7,7 @@
 #ifdef SC_WINDOWS
 #include <Windows.h>
 #endif
-
+                                              
 #include <LangYa/SentryLib/ConsoleManipulator.hpp>
 
 namespace LangYa::SentryLib
@@ -279,7 +279,7 @@ namespace LangYa::SentryLib
 	}
 
 	ConsoleManipulator&
-	ConsoleManipulator::MoveCursorTo(const Position2Ui position)
+	ConsoleManipulator::MoveCursorTo(const Position2Ui& position)
 	{
 		CONSOLE_SCREEN_BUFFER_INFO info;
 		GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &info);

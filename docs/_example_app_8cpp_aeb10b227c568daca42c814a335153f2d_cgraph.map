@@ -1,11 +1,7 @@
 <map id="TestServer" name="TestServer">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,64,88,91"/>
-<area shape="rect" id="Node000002" href="$struct_temp_1_1_sentry_data.html#a44eabab4ab7106fb4ba76f0339469c77" title=" " alt="" coords="136,5,334,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,61,135,41,160,34,162,39,136,47,83,66"/>
-<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html#aa4fcd6178787270ed4e8a69d28e60303" title="Get the view of the unique memory in the buffer." alt="" coords="159,56,311,99"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="88,75,144,75,144,80,88,80"/>
-<area shape="rect" id="Node000004" href="$struct_temp_1_1_sentry_data.html#a96b6044c8f19a7bb81baa2e36b71744f" title="将数组转换为类似json格式的字符串。" alt="" coords="144,123,326,149"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="83,89,136,108,162,116,160,121,135,113,81,94"/>
-<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html#a2536dc99f90b1c95c49f8858bce94dc4" title=" " alt="" coords="382,115,518,157"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="326,133,367,133,367,139,326,139"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,88,73"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html#ae7ec604552bc47c68a178c9b6dc3815a" title=" " alt="" coords="136,5,294,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,49,120,43,121,48,88,55"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html#aa4fcd6178787270ed4e8a69d28e60303" title="Get the view of the unique memory in the buffer." alt="" coords="139,72,291,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="88,65,124,73,123,78,87,71"/>
 </map>

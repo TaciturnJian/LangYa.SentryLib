@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gimbaleulerangle_0',['GimbalEulerAngle',['../struct_temp_1_1_sentry_data.html#a719da5b5c93f8b2f2709ca6dedc5aaa2',1,'Temp::SentryData']]]
+  ['gimbaleulerangle_0',['GimbalEulerAngle',['../struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html#a78f7d1aa4f89296d3aaa5aae1574e468',1,'LangYa::SentryLib::SentryData']]]
 ];

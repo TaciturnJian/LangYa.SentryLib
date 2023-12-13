@@ -8,12 +8,8 @@
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="56,133,99,143,98,149,55,139"/>
 <area shape="rect" id="Node000005" href="$_example_app_8cpp.html#aeb10b227c568daca42c814a335153f2d" title=" " alt="" coords="156,221,239,248"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="42,143,68,175,104,207,142,223,140,228,101,212,64,179,38,146"/>
-<area shape="rect" id="Node000006" href="$struct_temp_1_1_sentry_data.html#a44eabab4ab7106fb4ba76f0339469c77" title=" " alt="" coords="340,163,538,189"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="238,222,366,191,367,196,239,227"/>
-<area shape="rect" id="Node000007" href="$class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html#aa4fcd6178787270ed4e8a69d28e60303" title="Get the view of the unique memory in the buffer." alt="" coords="364,213,515,256"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="239,232,348,232,348,237,239,237"/>
-<area shape="rect" id="Node000008" href="$struct_temp_1_1_sentry_data.html#a96b6044c8f19a7bb81baa2e36b71744f" title="将数组转换为类似json格式的字符串。" alt="" coords="348,280,530,307"/>
-<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="239,242,367,273,366,278,238,247"/>
-<area shape="rect" id="Node000009" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html#a2536dc99f90b1c95c49f8858bce94dc4" title=" " alt="" coords="586,272,723,315"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="531,291,571,291,571,296,531,296"/>
+<area shape="rect" id="Node000006" href="$struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html#ae7ec604552bc47c68a178c9b6dc3815a" title=" " alt="" coords="340,180,498,223"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="238,226,324,213,325,218,239,231"/>
+<area shape="rect" id="Node000007" href="$class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html#aa4fcd6178787270ed4e8a69d28e60303" title="Get the view of the unique memory in the buffer." alt="" coords="344,247,495,289"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="239,238,328,252,327,257,238,243"/>
 </map>
