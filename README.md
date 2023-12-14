@@ -68,7 +68,7 @@ SentryLib 是一个机器人工具库，它包含了如下功能或接口：
 
 ```C++
 #include <LangYa/SentryLib/Application/MonitorSender.hpp>
-
+// 简单到不能再简单的使用方式了
 int main()
 {
 	using namespace std::chrono_literals;
