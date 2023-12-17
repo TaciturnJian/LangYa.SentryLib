@@ -2,8 +2,8 @@
 
 #include <atomic>
 
-#include <LangYa/SentryLib/UniqueBuffer.hpp>
-#include <LangYa/SentryLib/Resource.hpp>
+#include <LangYa/SentryLib/Common/UniqueBuffer.hpp>
+#include <LangYa/SentryLib/Common/Resource.hpp>
 
 namespace LangYa::SentryLib
 {

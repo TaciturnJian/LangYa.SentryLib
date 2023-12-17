@@ -1,12 +1,10 @@
 #pragma once
 
-#include <LangYa/SentryLib/Common/CSharpp.hpp>
-
 namespace LangYa::SentryLib
 {
 	/// @brief 代表一种虚拟的设备，它需要有一个外部循环去调用。
 	///	大多数使用情况都是在一个线程中调用 Tick() 方法。
-	SC_INTERFACE Device
+	class Device
 	{
 	public:
 		/// @brief 释放设备的所有资源。

@@ -1,10 +1,8 @@
 #pragma once
 
-#include <LangYa/SentryLib/Common/CSharpp.hpp>
-
 namespace LangYa::SentryLib 
 {
-	SC_INTERFACE Device
+	class Device
 	{
 	public:
 		/// @brief 释放此设备占用的空间（注意需要手动调用释放函数）。
@@ -38,7 +36,7 @@ namespace LangYa::SentryLib
 		virtual void Tick() = 0;
 	};
 
-	SC_INTERFACE Controller : public Device
+	class Controller : public Device
 	{
 	public:
 		

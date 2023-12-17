@@ -3,8 +3,8 @@
 #include <memory>
 #include <boost/asio.hpp>
 
-#include <LangYa/SentryLib/Connection.hpp>
-#include <LangYa/SentryLib/SerialPortInfo.hpp>
+#include <LangYa/SentryLib/Common/Connection.hpp>
+#include <LangYa/SentryLib/Common/SerialPortInfo.hpp>
 
 namespace LangYa::SentryLib
 {

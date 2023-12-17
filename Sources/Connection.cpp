@@ -1,4 +1,4 @@
-#include <LangYa/SentryLib/Connection.hpp>
+#include <LangYa/SentryLib/Common/Connection.hpp>
 
 namespace LangYa::SentryLib
 {

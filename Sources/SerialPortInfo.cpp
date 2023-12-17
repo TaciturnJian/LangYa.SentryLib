@@ -1,4 +1,4 @@
-#include <LangYa/SentryLib/SerialPortInfo.hpp>
+#include <LangYa/SentryLib/Common/SerialPortInfo.hpp>
 
 #include <fmt/format.h>
 

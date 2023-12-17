@@ -21,7 +21,7 @@ elseif(CMAKE_SYSTEM_NAME MATCHES "Windows")
     set(SC_PUBLIC_PTHREAD)
 	add_definitions(-DSC_WINDOWS)
 else()
-    message(WARNING "!! The reliablity of this project on platforms except Windows|Linux are not guranteed")
+    message(FATAL "!! The reliablity of this project on platforms except Windows|Linux are not guranteed")
 endif()
 
 message("!! If you met errors with 'boost' 'json', please install boost higher than 1.75.0")

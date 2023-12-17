@@ -2,7 +2,7 @@
 
 #include <string>
 
-#include <LangYa/SentryLib/SerialNumbers.hpp>
+#include <LangYa/SentryLib/Common/SerialNumbers.hpp>
 
 namespace LangYa::SentryLib
 {

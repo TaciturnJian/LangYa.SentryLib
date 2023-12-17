@@ -1,4 +1,4 @@
-#include <LangYa/SentryLib/TinyJsonStream.hpp>
+#include <LangYa/SentryLib/Common/TinyJsonStream.hpp>
 
 LangYa::SentryLib::TinyJsonStream
 ::TinyJsonStream(PackageCallbackType callback):

@@ -2,7 +2,7 @@
 #include <LangYa/SentryLib/DeserializableContentSensor.hpp>
 #include <LangYa/SentryLib/SentryData.hpp>
 #include <LangYa/SentryLib/Application/Configurator.hpp>
-#include <LangYa/SentryLib/TCPConnection.hpp>
+#include <LangYa/SentryLib/Common/TCPConnection.hpp>
 #include <LangYa/SentryLib/Common/CSharpp.hpp>
 #include <LangYa/SentryLib/Application/ApplicationInfo.hpp>
 

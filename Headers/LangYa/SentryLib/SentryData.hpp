@@ -1,7 +1,7 @@
 #pragma once
 
-#include <LangYa/SentryLib/DeserializableContent.hpp>
-#include <LangYa/SentryLib/SerializableContent.hpp>
+#include <LangYa/SentryLib/Common/DeserializableContent.hpp>
+#include <LangYa/SentryLib/Common/SerializableContent.hpp>
 #include <LangYa/SentryLib/Math/Vector2.hpp>
 
 namespace LangYa::SentryLib

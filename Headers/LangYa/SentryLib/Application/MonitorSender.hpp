@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-#include <LangYa/SentryLib/TCPConnection.hpp>
+#include <LangYa/SentryLib/Common/TCPConnection.hpp>
 #include <LangYa/SentryLib/Application/MonitorPackage.hpp>
 
 namespace LangYa::SentryLib

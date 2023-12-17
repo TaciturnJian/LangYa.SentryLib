@@ -9,7 +9,7 @@
 #include <boost/json/object.hpp>
 #include <boost/json/parse.hpp>
 
-#include <LangYa/SentryLib/Connection.hpp>
+#include <LangYa/SentryLib/Common/Connection.hpp>
 
 namespace LangYa::SentryLib
 {

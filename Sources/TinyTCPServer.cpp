@@ -59,14 +59,16 @@ void LangYa::SentryLib::TinyTCPServer::Start(const std::atomic_bool& stopSignal)
 
 		NextThread = false;
 		AcceptedClient = false;
-		bool found_terminated_thread = false;
+
+		// 从已经创建的线程池中找一个已经终结的线程。
+		bool found_terminated_thread{false};
 		for (auto& thread_info : ThreadInfoList)
 		{
 			auto& terminated = *std::get<0>(thread_info);
 			auto& shared_thread_ptr = std::get<1>(thread_info);
 			if (!terminated) continue;
 
-
+			// 如果找到，那么创建一个共享的线程指针，更新线程状态，并detach线程使其独立运行。
 			found_terminated_thread = true;
 			shared_thread_ptr = std::make_shared<std::thread>([&terminated, this]
 			{

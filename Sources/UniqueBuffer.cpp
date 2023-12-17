@@ -1,4 +1,4 @@
-#include <LangYa/SentryLib/UniqueBuffer.hpp>
+#include <LangYa/SentryLib/Common/UniqueBuffer.hpp>
 
 namespace LangYa::SentryLib
 {

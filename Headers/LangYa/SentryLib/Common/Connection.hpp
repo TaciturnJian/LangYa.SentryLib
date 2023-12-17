@@ -2,10 +2,8 @@
 
 #include <string>
 
-#include <LangYa/SentryLib/MemoryView.hpp>
-#include <LangYa/SentryLib/MemoryIO.hpp>
-
-#include <LangYa/SentryLib/Common/CSharpp.hpp>
+#include <LangYa/SentryLib/Common/MemoryView.hpp>
+#include <LangYa/SentryLib/Common/MemoryIO.hpp>
 
 namespace LangYa::SentryLib
 {
@@ -13,7 +11,7 @@ namespace LangYa::SentryLib
 	///	一个连接可以是一个文件，也可以是一个网络连接，也可以是一个内存映射文件。
 	/// 只要能提供基于字节的读写方式，就可以被视为一个连接。
 	///	一般请使用智能指针来管理连接的生命周期（推荐 shared_ptr）。
-	SC_INTERFACE Connection : public MemoryIO
+	class Connection : public MemoryIO
 	{
 	public:
 		/// @brief 连接到目标，使用 @code LangYa::SentryLib::Connection::IsConnected() @endcode 检查是否成功连接。

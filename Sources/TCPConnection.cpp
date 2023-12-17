@@ -1,6 +1,6 @@
 #include <spdlog/spdlog.h>
 
-#include <LangYa/SentryLib/TCPConnection.hpp>
+#include <LangYa/SentryLib/Common/TCPConnection.hpp>
 
 #ifdef SC_WINDOWS
 #define RESULT_MESSAGE(result) result.what()

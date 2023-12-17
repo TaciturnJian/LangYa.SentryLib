@@ -1,4 +1,4 @@
-#include <LangYa/SentryLib/MemoryIO.hpp>
+#include <LangYa/SentryLib/Common/MemoryIO.hpp>
 
 namespace LangYa::SentryLib
 {

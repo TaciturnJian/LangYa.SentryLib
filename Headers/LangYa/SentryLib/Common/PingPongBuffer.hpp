@@ -1,7 +1,7 @@
 #pragma once
 
-#include <LangYa/SentryLib/MemoryView.hpp>
-#include <LangYa/SentryLib/UniqueBuffer.hpp>
+#include <LangYa/SentryLib/Common/MemoryView.hpp>
+#include <LangYa/SentryLib/Common/UniqueBuffer.hpp>
 
 namespace LangYa::SentryLib
 {

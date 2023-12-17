@@ -4,10 +4,10 @@
 
 #include <spdlog/spdlog.h>
 
-#include <LangYa/SentryLib/MemoryView.hpp>
-#include <LangYa/SentryLib/UniqueBuffer.hpp>
-#include <LangYa/SentryLib/SerializableContent.hpp>
-#include <LangYa/SentryLib/Connection.hpp>
+#include <LangYa/SentryLib/Common/MemoryView.hpp>
+#include <LangYa/SentryLib/Common/UniqueBuffer.hpp>
+#include <LangYa/SentryLib/Common/SerializableContent.hpp>
+#include <LangYa/SentryLib/Common/Connection.hpp>
 #include <LangYa/SentryLib/Device.hpp>
 
 namespace LangYa::SentryLib

@@ -1,6 +1,7 @@
 #pragma once
 
 #include <ostream>
+#include <iomanip>
 #include <vector>
 #include <boost/asio/buffer.hpp>
 
@@ -11,6 +12,7 @@ namespace LangYa::SentryLib
 	///	类中提供了有关内存的操作函数，CopyTo 和 ReadFrom ，
 	///	它们都是对 memcpy 的封装，但是会使用内存视图中的数据检查调用 memcpy 的参数。
 	///	@author Sango
+	///	@example 
 	struct MemoryView
 	{
 		/// @brief 代表 Size 的数据类型。
@@ -70,20 +72,20 @@ namespace LangYa::SentryLib
 		///	@return 此字节的引用。
 		ByteType& operator[](const SizeType& index) const;
 
-		/// @brief Read the given memory started with the head, fill all memory for this memory view, basically a wrap for memcpy.
-		///	@param head The head of the memory.
+		/// @brief 从目标复制内存直到填满当前视图。
+		///	@param head 被读取的内存的头部。
 		void ReadFrom(const void* head) const;
 
-		/// @brief Read the given view. The target byte count is the min value of this->Size and view.Size.
-		///	@param view The view to read.
+		/// @brief 从目标读取内存，直到当前内存被填满或目标内存不足。
+		///	@param view 被读取的内存。
 		void ReadFrom(const MemoryView& view) const;
 
-		/// @brief Write bytes to the given memory started with the head, fill all memory for this memory view, basically a wrap for memcpy.
-		///	@param head The head of the memory.
+		/// @brief 将视图内所有的内存复制到目标地址。
+		///	@param head 目标地址的头部。
 		void CopyTo(void* head) const;
 
-		/// @brief Write bytes to the given view. The target byte count is the min value of this->Size and view.Size.
-		///	@param view The view to write to.
+		/// @brief 将视图内的所有内存复制到目标地址，直到当前内存不足或目标被填满。
+		///	@param view 目标内存的视图。
 		void CopyTo(const MemoryView& view) const;
 
 		/// @brief 设置整块内存的值。
@@ -92,12 +94,12 @@ namespace LangYa::SentryLib
 		///	@param byte 内存视图最后会全部为此值。
 		void SetValue(ByteType byte) const;
 
-		/// @brief Check if the memory view is valid, basically check the head and the size.
-		///	@warning The result true cannot guarantee the memory is valid.
-		///	@return true if the memory view is valid, otherwise false.
+		/// @brief 检查此视图是否有效，即不为空指针或长度大于 0 。
+		///	@warning 此检查不能保证对应的内存真正有效，如野指针构造的内容视图仅从此类的角度出发无法判断是否有效。
+		///	@return “指针不指向一个空内容” 是否成立。
 		[[nodiscard]] bool IsValid() const noexcept;
 
-		/// @brief 将内存视图中的所有字节写进流中。
+		/// @brief 将内存视图中的所有字节以十六进制整数的形式写进流中，相邻两整数输出使用空格 ' ' 隔开。
 		///	@param stream 支持字节输出的流。
 		///	@param view 字节资源。
 		///	@return 参数中 stream 的引用。
@@ -105,13 +107,14 @@ namespace LangYa::SentryLib
 		{
 			for (SizeType i = 0; i < view.Size; i++)
 			{
-				stream << static_cast<int>(view[i]) << ' ';
+				stream << std::hex << static_cast<int>(view[i]) << ' ';
 			}
 
 			return stream;
 		}
 
-		/// @brief 将内存视图的数据利用指针强制转化，视为某个元素，然后放入 vector 中。
+		/// @brief 将内存视图的数据利用指针强制转化，视为某个元素，然后放入 std::vector 中。
+		///	@tparam T std::vector 元素的类型。
 		///	@param vector 一个类似于流的向量，用于接收数据。
 		///	@param view 内存视图，它储存了此类型的数据。
 		///	@return 传入参数 vector 的引用。

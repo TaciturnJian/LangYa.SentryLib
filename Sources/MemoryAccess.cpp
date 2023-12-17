@@ -1,4 +1,4 @@
-#include <LangYa/SentryLib/MemoryAccess.hpp>
+#include <LangYa/SentryLib/Common/MemoryAccess.hpp>
 
 namespace LangYa::SentryLib
 {

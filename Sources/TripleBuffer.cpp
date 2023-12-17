@@ -1,4 +1,4 @@
-#include <LangYa/SentryLib/TripleBuffer.hpp>
+#include <LangYa/SentryLib/Common/TripleBuffer.hpp>
 
 namespace LangYa::SentryLib
 {

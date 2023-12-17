@@ -1,15 +1,13 @@
 #pragma once
 
-#include <LangYa/SentryLib/Common/CSharpp.hpp>
-
-#include <LangYa/SentryLib/MemoryView.hpp>
+#include <LangYa/SentryLib/Common/MemoryView.hpp>
 
 namespace LangYa::SentryLib
 {
 	/// @brief 代表一个可被序列化的东西。
 	///	可被序列化即信息可以无损地转换为二进制数据。
 	///	一般将内容序列化后，将其写入文件或者网络传输，可以减轻读写传输等IO操作的压力。
-	SC_INTERFACE SerializableContent
+	class SerializableContent
 	{
 	public:
 		/// @brief 虚拟的析构器，防止有笨蛋把指针强制转换为此类后错误解析了内容。

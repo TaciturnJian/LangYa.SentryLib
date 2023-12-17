@@ -1,4 +1,4 @@
-#include <LangYa/SentryLib/PingPongBuffer.hpp>
+#include <LangYa/SentryLib/Common/PingPongBuffer.hpp>
 
 #include <cstring>
 

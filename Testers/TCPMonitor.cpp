@@ -5,8 +5,10 @@
 
 #include <LangYa/SentryLib/ConsoleManipulator.hpp>
 #include <LangYa/SentryLib/Application/Monitor.hpp>
-#include <LangYa/SentryLib/TinyJsonStream.hpp>
+#include <LangYa/SentryLib/Common/TinyJsonStream.hpp>
 #include <LangYa/SentryLib/TinyTCPServer.hpp>
+
+#include <LangYa/SentryLib/Common/CSharpp.hpp>
 
 using namespace boost::asio;
 

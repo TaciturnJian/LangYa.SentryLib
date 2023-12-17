@@ -2,7 +2,7 @@
 
 #include <LangYa/SentryLib.hpp>
 
-SC_INTERFACE
+class
 VisionModule
 {
 public:
@@ -15,7 +15,7 @@ struct RobotPost
 	
 };
 
-SC_INTERFACE
+class
 SLAMModule {
 public:
 

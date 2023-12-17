@@ -5,7 +5,7 @@
 #include <sstream>
 #include <initializer_list>
 
-#include <LangYa/SentryLib/MemoryView.hpp>
+#include <LangYa/SentryLib/Common/MemoryView.hpp>
 
 namespace LangYa::SentryLib
 {

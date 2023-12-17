@@ -1,8 +1,8 @@
 #pragma once
 
-#include <LangYa/SentryLib/Connection.hpp>
-#include <LangYa/SentryLib/TripleBuffer.hpp>
-#include <LangYa/SentryLib/PingPongBuffer.hpp>
+#include <LangYa/SentryLib/Common/Connection.hpp>
+#include <LangYa/SentryLib/Common/TripleBuffer.hpp>
+#include <LangYa/SentryLib/Common/PingPongBuffer.hpp>
 
 namespace LangYa::SentryLib
 {

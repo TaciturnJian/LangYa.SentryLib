@@ -2,8 +2,8 @@
 
 #include <LangYa/SentryLib/Math/Position3.hpp>
 #include <LangYa/SentryLib/Math/Vector3.hpp>
-#include <LangYa/SentryLib/RoboMaster.hpp>
-#include <LangYa/SentryLib/TimeStamp.hpp>
+#include <LangYa/SentryLib/Common/RoboMaster.hpp>
+#include <LangYa/SentryLib/Common/TimeStamp.hpp>
 
 namespace LangYa::SentryLib {
 	/// @brief 代表一个装甲板的信息。

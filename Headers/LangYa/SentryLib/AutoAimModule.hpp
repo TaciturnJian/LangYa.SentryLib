@@ -2,12 +2,11 @@
 
 #include <opencv2/opencv.hpp>
 
-#include <LangYa/SentryLib/Common/CSharpp.hpp>
 #include <LangYa/SentryLib/Device.hpp>
 
 namespace LangYa::SentryLib {
 	/// @brief 代表一个相机设备
-	SC_INTERFACE CameraDevice : public Device
+	class CameraDevice : public Device
 	{
 	public:
 		using PictureType = cv::Mat;

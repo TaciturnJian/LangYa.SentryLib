@@ -1,4 +1,4 @@
-#include <LangYa/SentryLib/SerializableContent.hpp>
+#include <LangYa/SentryLib/Common/SerializableContent.hpp>
 
 namespace LangYa::SentryLib
 {

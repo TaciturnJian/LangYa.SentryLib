@@ -2,7 +2,7 @@
 
 #include <atomic>
 
-#include <LangYa/SentryLib/ResourceFlag.hpp>
+#include <LangYa/SentryLib/Common/ResourceFlag.hpp>
 
 namespace LangYa::SentryLib
 {

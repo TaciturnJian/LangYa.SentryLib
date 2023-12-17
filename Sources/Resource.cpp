@@ -1,1 +1,1 @@
-#include <LangYa/SentryLib/Resource.hpp>
+#include <LangYa/SentryLib/Common/Resource.hpp>
