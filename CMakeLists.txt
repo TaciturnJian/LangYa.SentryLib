@@ -1,5 +1,11 @@
 cmake_minimum_required(VERSION 3.16)
 
+# 跨平台支持 在这里写了 编译器版本
+if(CMAKE_SYSTEM_NAME MATCHES "Linux") 
+	set(CMAKE_C_COMPILER "/bin/gcc-10")
+	set(CMAKE_CXX_COMPILER "/bin/g++-10")
+endif()
+
 # 在这里设置项目的基本属性
 project(SentryLib 
 	VERSION 1.0.2
@@ -16,10 +22,7 @@ if(CMAKE_SYSTEM_NAME MATCHES "Linux")
     set(SC_PUBLIC_PTHREAD PUBLIC pthread)
 	add_definitions(-DSC_LINUX)
 	set(Boost_USE_STATIC_LIBS ON)
-	set (CMAKE_C_COMPILER "/bin/gcc-10")
-	set (CMAKE_CXX_COMPILER "/bin/g++-10")
 	add_compile_options(-fconcepts)
-	message("!! You may need use -DCMAKE_CXX_COMPILER to specific compiler")
 	message("!! You may need add new line in your cmake: 'add_compile_options(-fconcepts)' ")
 elseif(CMAKE_SYSTEM_NAME MATCHES "Windows") 
     set(SC_PUBLIC_PTHREAD)

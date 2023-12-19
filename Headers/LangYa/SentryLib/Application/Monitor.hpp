@@ -23,15 +23,11 @@ namespace LangYa::SentryLib
 			}
 		};
 
-		auto &NormalPackageCounter = MonitorInfo.Items[0].Value;
-		auto &ErrorPackageCounter = MonitorInfo.Items[1].Value;
-		auto &TotalPackageCounter = MonitorInfo.Items[2].Value;
-
 		void ResetMonitorInfo()
 		{
-			NormalPackageCounter = 0;
-			ErrorPackageCounter = 0;
-			TotalPackageCounter = 0;
+			MonitorInfo.Items[0].Value = 0;
+			MonitorInfo.Items[1].Value = 0;
+			MonitorInfo.Items[2].Value = 0;
 		}
 
 	public:
