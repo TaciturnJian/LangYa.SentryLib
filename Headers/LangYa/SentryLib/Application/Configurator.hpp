@@ -2,14 +2,11 @@
 
 #include <string>
 #include <functional>
-#include <iostream>
 
 #include <boost/json.hpp>
 #include <boost/program_options.hpp>
 
 #include <LangYa/SentryLib/Application/CommandLineArguments.hpp>
-#include <spdlog/sinks/rotating_file_sink.h>
-#include <spdlog/sinks/stdout_color_sinks.h>
 
 namespace LangYa::SentryLib
 {

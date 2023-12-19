@@ -1,4 +1,5 @@
-#include <LangYa/SentryLib/Application/MonitorSender.hpp>
+#include <LangYa/SentryLib/Application/MonitorPackage.hpp>
+#include <LangYa/SentryLib/Common/TCPConnection.hpp>
 
 int main()
 {
@@ -22,12 +23,14 @@ int main()
 	};
 
 	// 获取发送器
-	MonitorSender sender{};
+	boost::asio::io_context ioc;
+	auto shared_connection = TCPConnection::BuildShared(ioc, "127.0.0.1", 8989);
 
 	while (true)
 	{
 		// 发送包裹
-		sender << dynamic_package_1 << dynamic_package_2;
+		dynamic_package_1.WriteJsonToSharedConnection(shared_connection);
+		dynamic_package_2.WriteJsonToSharedConnection(shared_connection);
 
 		// 自己修改包裹
 		dynamic_package_1.Items[1].Value++;

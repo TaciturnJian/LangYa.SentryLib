@@ -35,10 +35,4 @@ namespace LangYa::SentryLib
 		///	或者你可以自己实现一个稳频器。
 		virtual void Tick() = 0;
 	};
-
-	class Controller : public Device
-	{
-	public:
-		
-	}; 
 }

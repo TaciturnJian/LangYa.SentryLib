@@ -1,16 +1,11 @@
 #pragma once
+
 #include <functional>
 
 #include <boost/asio.hpp>
 
 namespace LangYa::SentryLib
 {
-
-	/// 服务器 接收来自客户端的连接
-	///
-	/// Acceptor <- C1
-	///
-	/// 新线程 处理有关C1的内容 (C1)
 	class TinyTCPServer
 	{
 	public:
@@ -20,7 +15,10 @@ namespace LangYa::SentryLib
 		boost::asio::io_context IOContext;
 		boost::asio::ip::tcp::acceptor Acceptor{
 			IOContext,
-			{boost::asio::ip::make_address("127.0.0.1"), 8989}
+			{
+				boost::asio::ip::make_address("127.0.0.1"),
+				8989
+			}
 		};
 		ClientCallbackType Callback;
 

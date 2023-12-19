@@ -7,9 +7,32 @@
 
 namespace LangYa::SentryLib
 {
+	/// @brief 一个用来格式化数据的显示器。
+	///	通过右移 >> 运算符，可以将数据包传出到流中。
+	///	通过左移 << 运算符，可以将数据包直接传入显示器，显示器会自动解析数据包并显示。
 	class Monitor
 	{
 		std::map<std::string, MonitorPackage> Packages{};
+
+		MonitorPackage MonitorInfo {
+			"MonitorInfo",
+			{
+				{"Normal", 0},
+				{"Error", 0},
+				{"Total", 0},
+			}
+		};
+
+		auto &NormalPackageCounter = MonitorInfo.Items[0].Value;
+		auto &ErrorPackageCounter = MonitorInfo.Items[1].Value;
+		auto &TotalPackageCounter = MonitorInfo.Items[2].Value;
+
+		void ResetMonitorInfo()
+		{
+			NormalPackageCounter = 0;
+			ErrorPackageCounter = 0;
+			TotalPackageCounter = 0;
+		}
 
 	public:
 		Monitor& operator<<(const MonitorPackage& package)
@@ -21,7 +44,12 @@ namespace LangYa::SentryLib
 		Monitor& operator<<(const std::string& json)
 		{
 			MonitorPackage package{"ErrorPackage"};
-			package.ParseJson(json);
+			package.ParseJson(json) ? ++MonitorInfo.Items[0].Value : ++MonitorInfo.Items[1].Value;
+
+			if (++MonitorInfo.Items[2].Value > 10000)
+			{
+				ResetMonitorInfo();
+			}
 
 			return *this << package;
 		}
