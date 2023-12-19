@@ -1,5 +1,5 @@
 <map id="LangYa::SentryLib::MonitorPackage::ItemType" name="LangYa::SentryLib::MonitorPackage::ItemType">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,188,182,231"/>
+<area shape="rect" id="Node000001" title="监视器的单个物品。 定义了监视器的基本物品格式，可以转换为Json格式和控制台格式。 因为实在找不到合适的名字所以放在了 Monitor 里面。 实际使用起来对此类型几乎无感。" alt="" coords="5,188,182,231"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="54,97,133,124"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,140,96,187,91,187,91,140"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="31,5,156,48"/>

@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.2</span>
+   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A robot lib by LangYa.Sango mostly for softwares on sentry</div>
   </td>
@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('struct_lang_ya_1_1_sentry_lib_1_1_reso
 </div><!--header-->
 <div class="contents">
 
-<p>Represent a resource with flag (usage indicators), usually this resource is used in multi-threads. If you want to get the content, use '=' operator to copy the memory. The memory may be reading/writing in another thread!  
+<p>代表一个在多线程中流通的资源。 使用内部的 Flag 为资源上锁。  
  <a href="struct_lang_ya_1_1_sentry_lib_1_1_resource.html#details">更多...</a></p>
 
 <p><code>#include &lt;<a class="el" href="">Resource.hpp</a>&gt;</code></p>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('struct_lang_ya_1_1_sentry_lib_1_1_reso
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_resource__inherit__graph.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_resource_3_01_t_content_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_resource_3_01_t_content_01_4_inherit__map" id="a_lang_ya_1_1_sentry_lib_1_1_resource_3_01_t_content_01_4_inherit__map">
-<area shape="rect" title="Represent a resource with flag (usage indicators), usually this resource is used in multi&#45;threads...." alt="" coords="27,5,179,48"/>
+<area shape="rect" title="代表一个在多线程中流通的资源。 使用内部的 Flag 为资源上锁。" alt="" coords="27,5,179,48"/>
 <area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_resource.html" title=" " alt="" coords="5,128,201,187"/>
 <area shape="poly" title=" " alt="" coords="106,63,106,127,100,127,100,63"/>
 </map>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('struct_lang_ya_1_1_sentry_lib_1_1_reso
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_resource__coll__graph.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_resource_3_01_t_content_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_resource_3_01_t_content_01_4_coll__map" id="a_lang_ya_1_1_sentry_lib_1_1_resource_3_01_t_content_01_4_coll__map">
-<area shape="rect" title="Represent a resource with flag (usage indicators), usually this resource is used in multi&#45;threads...." alt="" coords="24,277,177,320"/>
+<area shape="rect" title="代表一个在多线程中流通的资源。 使用内部的 Flag 为资源上锁。" alt="" coords="24,277,177,320"/>
 <area shape="rect" title=" " alt="" coords="5,187,196,213"/>
 <area shape="poly" title=" " alt="" coords="103,229,103,277,98,277,98,229"/>
 <area shape="rect" title=" " alt="" coords="42,96,159,123"/>
@@ -135,27 +135,33 @@ $(document).ready(function(){initNavTree('struct_lang_ya_1_1_sentry_lib_1_1_reso
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:ac9403f61598dbfbc5ee51b2bd80b10ad" id="r_ac9403f61598dbfbc5ee51b2bd80b10ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_resource.html#ac9403f61598dbfbc5ee51b2bd80b10ad">Resource</a> ()</td></tr>
-<tr class="memdesc:ac9403f61598dbfbc5ee51b2bd80b10ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <br /></td></tr>
+<tr class="memdesc:ac9403f61598dbfbc5ee51b2bd80b10ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认构造。  <br /></td></tr>
 <tr class="separator:ac9403f61598dbfbc5ee51b2bd80b10ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cc1fc4995d5398781963c3bbc10405f" id="r_a4cc1fc4995d5398781963c3bbc10405f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_resource.html#a4cc1fc4995d5398781963c3bbc10405f">Resource</a> (const <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a36d2882e7661f30e5caf0f74c85df62d">ResourceFlag</a> &amp;flag, const TContent &amp;content)</td></tr>
-<tr class="memdesc:a4cc1fc4995d5398781963c3bbc10405f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct with given things.  <br /></td></tr>
+<tr class="memdesc:a4cc1fc4995d5398781963c3bbc10405f"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用指定的内容构造资源。  <br /></td></tr>
 <tr class="separator:a4cc1fc4995d5398781963c3bbc10405f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a287b5af29f26437851a3fd6b26cf759c" id="r_a287b5af29f26437851a3fd6b26cf759c"><td class="memItemLeft" align="right" valign="top">TContent *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_resource.html#a287b5af29f26437851a3fd6b26cf759c">operator-&gt;</a> ()</td></tr>
+<tr class="memdesc:a287b5af29f26437851a3fd6b26cf759c"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用指针的方式获取内容的内容。 如果内容是一个结构体，那么利用到 C++ 的特性，你可以通过此指针直接访问它的成员。  <br /></td></tr>
+<tr class="separator:a287b5af29f26437851a3fd6b26cf759c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0a68a1ad0dec195116778fe70c907f1" id="r_ac0a68a1ad0dec195116778fe70c907f1"><td class="memItemLeft" align="right" valign="top">const TContent *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_resource.html#ac0a68a1ad0dec195116778fe70c907f1">operator-&gt;</a> () const</td></tr>
+<tr class="memdesc:ac0a68a1ad0dec195116778fe70c907f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用指针的方式获取内容的内容。 如果内容是一个结构体，那么利用到 C++ 的特性，你可以通过此指针直接访问它的成员。  <br /></td></tr>
+<tr class="separator:ac0a68a1ad0dec195116778fe70c907f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
 <tr class="memitem:abd7d9a21de83fb93f713d524fb6931ab" id="r_abd7d9a21de83fb93f713d524fb6931ab"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a36d2882e7661f30e5caf0f74c85df62d">ResourceFlag</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_resource.html#abd7d9a21de83fb93f713d524fb6931ab">Flag</a> {<a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a36d2882e7661f30e5caf0f74c85df62dace2c8aed9c2fa0cfbed56cbda4d8bf07">ResourceFlag::Empty</a>}</td></tr>
-<tr class="memdesc:abd7d9a21de83fb93f713d524fb6931ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate the status of the resource.  <br /></td></tr>
+<tr class="memdesc:abd7d9a21de83fb93f713d524fb6931ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表资源的状态。  <br /></td></tr>
 <tr class="separator:abd7d9a21de83fb93f713d524fb6931ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c18693d7353eeda0c06c30316be7f1f" id="r_a9c18693d7353eeda0c06c30316be7f1f"><td class="memItemLeft" align="right" valign="top">TContent&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_resource.html#a9c18693d7353eeda0c06c30316be7f1f">Content</a> {}</td></tr>
-<tr class="memdesc:a9c18693d7353eeda0c06c30316be7f1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The volatile content. May be reading/writing in different threads.  <br /></td></tr>
+<tr class="memdesc:a9c18693d7353eeda0c06c30316be7f1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">可能在不同线程中读取的内容。 如果你需要保证不会出现坏字节，使用等号赋值来取出内部的内容。  <br /></td></tr>
 <tr class="separator:a9c18693d7353eeda0c06c30316be7f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename TContent&gt;<br />
-struct LangYa::SentryLib::Resource&lt; TContent &gt;</div><p>Represent a resource with flag (usage indicators), usually this resource is used in multi-threads. If you want to get the content, use '=' operator to copy the memory. The memory may be reading/writing in another thread! </p>
+struct LangYa::SentryLib::Resource&lt; TContent &gt;</div><p>代表一个在多线程中流通的资源。 使用内部的 Flag 为资源上锁。 </p>
 <dl class="tparams"><dt>模板参数</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TContent</td><td>The type of content, must be trivially copyable. </td></tr>
+    <tr><td class="paramname">TContent</td><td>内容的类型，必须是可以使用等号操作符复制的类型。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -185,7 +191,7 @@ template&lt;typename TContent &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Default constructor. </p>
+<p>默认构造。 </p>
 
 </div>
 </div>
@@ -217,14 +223,59 @@ template&lt;typename TContent &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Construct with given things. </p>
+<p>使用指定的内容构造资源。 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">flag</td><td>Indicate the primary status of the content. </td></tr>
-    <tr><td class="paramname">content</td><td>Indicate the primary content. </td></tr>
+    <tr><td class="paramname">flag</td><td>指代资源的初始状态。 </td></tr>
+    <tr><td class="paramname">content</td><td>指代初始资源。 </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a287b5af29f26437851a3fd6b26cf759c" name="a287b5af29f26437851a3fd6b26cf759c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a287b5af29f26437851a3fd6b26cf759c">&#9670;&#160;</a></span>operator-&gt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TContent &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">TContent * <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_resource.html">LangYa::SentryLib::Resource</a>&lt; TContent &gt;::operator-&gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用指针的方式获取内容的内容。 如果内容是一个结构体，那么利用到 C++ 的特性，你可以通过此指针直接访问它的成员。 </p>
+<dl class="section return"><dt>返回</dt><dd>Content 的指针。 </dd></dl>
+
+</div>
+</div>
+<a id="ac0a68a1ad0dec195116778fe70c907f1" name="ac0a68a1ad0dec195116778fe70c907f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0a68a1ad0dec195116778fe70c907f1">&#9670;&#160;</a></span>operator-&gt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TContent &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const TContent * <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_resource.html">LangYa::SentryLib::Resource</a>&lt; TContent &gt;::operator-&gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用指针的方式获取内容的内容。 如果内容是一个结构体，那么利用到 C++ 的特性，你可以通过此指针直接访问它的成员。 </p>
+<dl class="section return"><dt>返回</dt><dd>Content 的常量指针。 </dd></dl>
 
 </div>
 </div>
@@ -243,7 +294,7 @@ template&lt;typename TContent &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>The volatile content. May be reading/writing in different threads. </p>
+<p>可能在不同线程中读取的内容。 如果你需要保证不会出现坏字节，使用等号赋值来取出内部的内容。 </p>
 
 </div>
 </div>
@@ -261,12 +312,12 @@ template&lt;typename TContent &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Indicate the status of the resource. </p>
+<p>代表资源的状态。 </p>
 
 </div>
 </div>
 <hr/>该结构体的文档由以下文件生成:<ul>
-<li>Headers/LangYa/SentryLib/<a class="el" href="">Resource.hpp</a></li>
+<li>Headers/LangYa/SentryLib/Common/<a class="el" href="">Resource.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -274,7 +325,7 @@ template&lt;typename TContent &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_lang_ya.html">LangYa</a></li><li class="navelem"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">SentryLib</a></li><li class="navelem"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_resource.html">Resource</a></li>
-    <li class="footer">生成于 2023年 十二月 13日 星期三 20:05:23 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 19日 星期二 23:40:51 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

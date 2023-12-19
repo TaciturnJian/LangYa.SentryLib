@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.2</span>
+   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A robot lib by LangYa.Sango mostly for softwares on sentry</div>
   </td>
@@ -96,7 +96,8 @@ $(document).ready(function(){initNavTree('_monitor_tester_8cpp.html',''); initRe
   <div class="headertitle"><div class="title">MonitorTester.cpp 文件参考</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="">LangYa/SentryLib/Application/MonitorSender.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="">LangYa/SentryLib/Application/MonitorPackage.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="">LangYa/SentryLib/Common/TCPConnection.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> MonitorTester.cpp 的引用(Include)关系图:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -104,47 +105,40 @@ $(document).ready(function(){initNavTree('_monitor_tester_8cpp.html',''); initRe
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_monitor_tester_8cpp__incl.png" border="0" usemap="#a_testers_2_monitor_tester_8cpp" alt=""/></div>
 <map name="a_testers_2_monitor_tester_8cpp" id="a_testers_2_monitor_tester_8cpp">
-<area shape="rect" title=" " alt="" coords="374,5,546,32"/>
-<area shape="rect" href="_monitor_sender_8hpp.html" title=" " alt="" coords="364,80,556,123"/>
-<area shape="poly" title=" " alt="" coords="463,33,463,65,457,65,457,33"/>
-<area shape="rect" title=" " alt="" coords="268,179,340,205"/>
-<area shape="poly" title=" " alt="" coords="425,126,341,173,338,168,422,121"/>
-<area shape="rect" href="_t_c_p_connection_8hpp.html" title=" " alt="" coords="708,179,951,205"/>
-<area shape="poly" title=" " alt="" coords="547,121,762,172,761,177,546,126"/>
-<area shape="rect" href="_monitor_package_8hpp.html" title=" " alt="" coords="364,171,556,213"/>
-<area shape="poly" title=" " alt="" coords="463,123,463,155,457,155,457,123"/>
-<area shape="rect" title=" " alt="" coords="1083,344,1136,371"/>
-<area shape="poly" title=" " alt="" coords="845,204,892,243,955,286,986,302,1012,311,1072,334,1073,334,1071,339,1070,338,1010,316,984,306,952,290,889,247,841,208"/>
-<area shape="rect" title=" " alt="" coords="966,261,1072,288"/>
-<area shape="poly" title=" " alt="" coords="860,203,977,253,974,258,858,208"/>
-<area shape="rect" href="_connection_8hpp.html" title=" " alt="" coords="622,261,840,288"/>
-<area shape="poly" title=" " alt="" coords="816,208,759,254,756,250,812,204"/>
-<area shape="poly" title=" " alt="" coords="841,284,953,303,1013,316,1072,333,1075,335,1073,340,1070,339,1012,321,952,308,840,289"/>
-<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="590,427,818,453"/>
-<area shape="poly" title=" " alt="" coords="691,291,657,309,642,322,630,337,624,357,630,377,646,399,667,416,663,420,642,403,626,380,619,357,626,335,638,318,654,305,689,286"/>
-<area shape="rect" href="_memory_i_o_8hpp.html" title=" " alt="" coords="845,344,1059,371"/>
-<area shape="poly" title=" " alt="" coords="766,286,904,336,902,341,764,291"/>
-<area shape="rect" href="_c_sharpp_8hpp.html" title=" " alt="" coords="641,336,821,379"/>
-<area shape="poly" title=" " alt="" coords="733,289,733,321,728,321,728,289"/>
-<area shape="rect" title=" " alt="" coords="207,501,276,528"/>
-<area shape="poly" title=" " alt="" coords="623,457,291,508,290,503,623,451"/>
-<area shape="rect" title=" " alt="" coords="539,501,594,528"/>
-<area shape="poly" title=" " alt="" coords="681,456,605,496,603,491,679,452"/>
-<area shape="rect" title=" " alt="" coords="633,501,775,528"/>
-<area shape="poly" title=" " alt="" coords="707,454,707,486,701,486,701,454"/>
-<area shape="poly" title=" " alt="" coords="914,374,758,424,757,419,912,369"/>
-<area shape="poly" title=" " alt="" coords="557,200,698,221,776,238,853,259,881,272,909,286,954,300,990,309,1026,318,1072,334,1074,335,1072,340,1070,338,1025,323,989,314,953,305,907,290,879,277,851,264,775,243,697,227,556,205"/>
-<area shape="poly" title=" " alt="" coords="531,211,674,254,672,259,529,216"/>
-<area shape="poly" title=" " alt="" coords="364,214,352,216,277,221,179,224,130,227,86,235,50,246,26,263,15,279,9,295,8,311,11,327,28,360,56,392,92,422,130,450,203,491,200,496,128,454,88,427,52,396,24,363,6,329,3,311,4,294,10,277,22,259,48,241,85,229,130,222,179,218,277,215,352,211,363,209"/>
-<area shape="poly" title=" " alt="" coords="498,212,524,233,545,260,558,289,567,320,576,383,577,441,573,486,568,486,571,441,571,383,562,321,553,291,540,263,520,236,495,216"/>
-<area shape="rect" title=" " alt="" coords="37,261,105,288"/>
-<area shape="poly" title=" " alt="" coords="364,214,120,264,119,258,363,209"/>
-<area shape="rect" title=" " alt="" coords="130,261,196,288"/>
-<area shape="poly" title=" " alt="" coords="384,217,212,263,210,258,382,211"/>
-<area shape="rect" title=" " alt="" coords="219,261,365,288"/>
-<area shape="poly" title=" " alt="" coords="418,216,333,257,331,252,416,212"/>
-<area shape="rect" title=" " alt="" coords="389,261,531,288"/>
-<area shape="poly" title=" " alt="" coords="463,214,463,245,457,245,457,214"/>
+<area shape="rect" title=" " alt="" coords="483,5,655,32"/>
+<area shape="rect" href="_monitor_package_8hpp.html" title=" " alt="" coords="367,80,560,123"/>
+<area shape="poly" title=" " alt="" coords="554,35,504,72,501,68,551,30"/>
+<area shape="rect" href="_t_c_p_connection_8hpp.html" title=" " alt="" coords="621,80,802,123"/>
+<area shape="poly" title=" " alt="" coords="592,30,663,70,660,74,590,35"/>
+<area shape="rect" title=" " alt="" coords="5,179,74,205"/>
+<area shape="poly" title=" " alt="" coords="367,118,236,140,94,173,85,176,84,171,92,168,235,135,366,113"/>
+<area shape="rect" title=" " alt="" coords="474,443,541,469"/>
+<area shape="poly" title=" " alt="" coords="469,123,475,170,507,427,502,428,470,171,464,123"/>
+<area shape="rect" title=" " alt="" coords="244,443,299,469"/>
+<area shape="poly" title=" " alt="" coords="367,112,299,120,231,133,174,150,153,161,139,172,128,188,122,205,119,240,129,276,147,313,170,348,197,380,247,430,243,434,193,384,166,351,142,316,124,278,114,240,117,204,124,186,135,169,150,156,172,145,230,127,298,115,366,107"/>
+<area shape="rect" title=" " alt="" coords="536,269,589,296"/>
+<area shape="poly" title=" " alt="" coords="484,121,519,169,541,213,556,254,551,255,536,215,515,172,480,125"/>
+<area shape="rect" title=" " alt="" coords="150,179,295,205"/>
+<area shape="poly" title=" " alt="" coords="408,126,272,175,270,170,406,121"/>
+<area shape="rect" title=" " alt="" coords="319,179,461,205"/>
+<area shape="poly" title=" " alt="" coords="449,125,412,169,408,165,444,121"/>
+<area shape="rect" href="_connection_8hpp.html" title=" " alt="" coords="587,171,767,213"/>
+<area shape="poly" title=" " alt="" coords="515,121,614,162,612,167,513,126"/>
+<area shape="poly" title=" " alt="" coords="652,216,592,262,588,258,649,212"/>
+<area shape="rect" href="_memory_i_o_8hpp.html" title=" " alt="" coords="613,261,794,304"/>
+<area shape="poly" title=" " alt="" coords="686,213,696,246,690,247,680,215"/>
+<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="536,352,716,395"/>
+<area shape="poly" title=" " alt="" coords="688,306,656,342,652,339,684,303"/>
+<area shape="poly" title=" " alt="" coords="597,397,540,436,537,432,594,393"/>
+<area shape="poly" title=" " alt="" coords="536,398,315,448,314,442,535,392"/>
+<area shape="rect" title=" " alt="" coords="583,443,651,469"/>
+<area shape="poly" title=" " alt="" coords="626,396,623,428,617,427,621,395"/>
+<area shape="rect" title=" " alt="" coords="676,443,817,469"/>
+<area shape="poly" title=" " alt="" coords="659,393,716,431,713,436,656,397"/>
+<area shape="poly" title=" " alt="" coords="741,121,762,141,781,164,789,190,788,203,782,215,762,235,742,247,722,252,700,253,654,253,629,256,602,264,599,265,597,260,600,259,628,251,654,248,700,248,721,247,740,242,759,231,777,212,783,201,784,190,776,167,758,144,737,125"/>
+<area shape="poly" title=" " alt="" coords="706,124,693,157,688,155,701,122"/>
+<area shape="rect" title=" " alt="" coords="842,179,949,205"/>
+<area shape="poly" title=" " alt="" coords="756,121,857,169,854,174,753,126"/>
 </map>
 </div>
 </div>
@@ -179,7 +173,7 @@ $(document).ready(function(){initNavTree('_monitor_tester_8cpp.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_45e67ffd9957cb1794b0765c53759ee1.html">Testers</a></li><li class="navelem"><a class="el" href="_monitor_tester_8cpp.html">MonitorTester.cpp</a></li>
-    <li class="footer">生成于 2023年 十二月 13日 星期三 20:05:23 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 19日 星期二 23:40:51 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

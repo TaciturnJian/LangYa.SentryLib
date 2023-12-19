@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.2</span>
+   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A robot lib by LangYa.Sango mostly for softwares on sentry</div>
   </td>
@@ -91,10 +91,13 @@ $(document).ready(function(){initNavTree('_monitor_package_8cpp.html',''); initR
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#namespaces">命名空间</a>  </div>
   <div class="headertitle"><div class="title">MonitorPackage.cpp 文件参考</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="">LangYa/SentryLib/Application/MonitorPackage.hpp</a>&gt;</code><br />
+<code>#include &lt;spdlog/spdlog.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> MonitorPackage.cpp 的引用(Include)关系图:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -102,48 +105,55 @@ $(document).ready(function(){initNavTree('_monitor_package_8cpp.html',''); initR
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_monitor_package_8cpp__incl.png" border="0" usemap="#a_sources_2_monitor_package_8cpp" alt=""/></div>
 <map name="a_sources_2_monitor_package_8cpp" id="a_sources_2_monitor_package_8cpp">
-<area shape="rect" title=" " alt="" coords="230,5,422,32"/>
-<area shape="rect" href="_monitor_package_8hpp.html" title=" " alt="" coords="230,80,422,123"/>
-<area shape="poly" title=" " alt="" coords="329,33,329,65,324,65,324,33"/>
-<area shape="rect" title=" " alt="" coords="5,171,74,197"/>
-<area shape="poly" title=" " alt="" coords="253,126,89,172,88,166,252,121"/>
-<area shape="rect" title=" " alt="" coords="98,171,165,197"/>
-<area shape="poly" title=" " alt="" coords="277,126,177,167,175,162,275,121"/>
-<area shape="rect" title=" " alt="" coords="296,411,351,437"/>
-<area shape="poly" title=" " alt="" coords="306,125,263,177,243,210,230,246,228,268,230,290,247,332,273,369,300,398,296,402,269,373,242,335,225,291,222,268,225,245,239,208,259,174,302,122"/>
-<area shape="rect" title=" " alt="" coords="240,253,293,280"/>
-<area shape="poly" title=" " alt="" coords="310,125,294,147,281,172,272,206,269,239,263,238,267,205,276,170,289,144,306,122"/>
-<area shape="rect" title=" " alt="" coords="755,411,823,437"/>
-<area shape="poly" title=" " alt="" coords="423,106,548,115,683,128,797,146,836,157,857,169,874,197,880,227,878,259,870,292,841,353,810,400,806,397,837,350,865,290,873,259,875,228,869,198,854,173,834,162,796,151,683,134,547,120,423,111"/>
-<area shape="rect" title=" " alt="" coords="532,171,678,197"/>
-<area shape="poly" title=" " alt="" coords="399,121,547,163,545,168,397,126"/>
-<area shape="rect" title=" " alt="" coords="702,171,844,197"/>
-<area shape="poly" title=" " alt="" coords="423,117,688,165,687,170,422,123"/>
-<area shape="rect" href="_connection_8hpp.html" title=" " alt="" coords="290,171,509,197"/>
-<area shape="poly" title=" " alt="" coords="347,121,380,157,376,161,343,125"/>
-<area shape="poly" title=" " alt="" coords="380,200,301,247,299,243,377,196"/>
-<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="381,336,610,363"/>
-<area shape="poly" title=" " alt="" coords="472,196,512,213,530,227,545,244,551,265,546,288,535,309,521,327,517,324,531,306,541,286,546,266,540,247,526,231,509,218,470,200"/>
-<area shape="rect" href="_memory_i_o_8hpp.html" title=" " alt="" coords="317,253,530,280"/>
-<area shape="poly" title=" " alt="" coords="406,197,418,238,413,239,401,199"/>
-<area shape="rect" href="_c_sharpp_8hpp.html" title=" " alt="" coords="605,245,786,288"/>
-<area shape="poly" title=" " alt="" coords="446,195,605,238,604,243,445,200"/>
-<area shape="poly" title=" " alt="" coords="467,366,366,408,364,403,465,361"/>
-<area shape="poly" title=" " alt="" coords="548,361,740,408,739,413,546,366"/>
-<area shape="rect" title=" " alt="" coords="425,411,566,437"/>
-<area shape="poly" title=" " alt="" coords="498,363,498,395,493,395,493,363"/>
-<area shape="poly" title=" " alt="" coords="437,279,477,323,473,327,433,282"/>
+<area shape="rect" title=" " alt="" coords="282,5,474,32"/>
+<area shape="rect" href="_monitor_package_8hpp.html" title=" " alt="" coords="194,80,386,123"/>
+<area shape="poly" title=" " alt="" coords="366,34,326,71,322,67,363,31"/>
+<area shape="rect" title=" " alt="" coords="410,88,522,115"/>
+<area shape="poly" title=" " alt="" coords="394,31,443,76,440,80,390,34"/>
+<area shape="rect" title=" " alt="" coords="5,179,74,205"/>
+<area shape="poly" title=" " alt="" coords="230,126,94,173,88,175,86,170,92,168,228,121"/>
+<area shape="rect" title=" " alt="" coords="82,443,149,469"/>
+<area shape="poly" title=" " alt="" coords="231,125,198,145,170,172,151,203,137,237,120,309,115,376,116,427,111,427,110,375,115,308,132,236,146,201,165,169,194,141,229,121"/>
+<area shape="rect" title=" " alt="" coords="175,443,230,469"/>
+<area shape="poly" title=" " alt="" coords="241,125,212,145,190,172,176,205,169,239,167,275,169,311,180,377,195,427,190,429,175,378,163,312,162,275,164,239,171,203,185,169,208,141,238,121"/>
+<area shape="rect" title=" " alt="" coords="405,269,458,296"/>
+<area shape="poly" title=" " alt="" coords="335,121,367,142,395,169,418,211,430,253,424,255,413,213,391,172,364,146,333,126"/>
+<area shape="rect" title=" " alt="" coords="456,179,602,205"/>
+<area shape="poly" title=" " alt="" coords="347,121,481,170,480,175,345,126"/>
+<area shape="rect" title=" " alt="" coords="626,179,768,205"/>
+<area shape="poly" title=" " alt="" coords="387,120,615,168,631,172,630,177,614,173,386,125"/>
+<area shape="rect" href="_connection_8hpp.html" title=" " alt="" coords="200,171,380,213"/>
+<area shape="poly" title=" " alt="" coords="293,123,293,155,288,155,288,123"/>
+<area shape="poly" title=" " alt="" coords="325,212,400,258,397,263,322,216"/>
+<area shape="rect" href="_memory_i_o_8hpp.html" title=" " alt="" coords="200,261,380,304"/>
+<area shape="poly" title=" " alt="" coords="293,214,293,246,288,246,288,214"/>
+<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="200,352,380,395"/>
+<area shape="poly" title=" " alt="" coords="293,304,293,337,288,337,288,304"/>
+<area shape="poly" title=" " alt="" coords="246,398,158,438,156,433,244,393"/>
+<area shape="poly" title=" " alt="" coords="269,397,229,434,225,430,266,393"/>
+<area shape="rect" title=" " alt="" coords="255,443,323,469"/>
+<area shape="poly" title=" " alt="" coords="292,395,292,427,287,427,287,395"/>
+<area shape="rect" title=" " alt="" coords="348,443,489,469"/>
+<area shape="poly" title=" " alt="" coords="325,393,387,432,384,436,322,398"/>
 </map>
 </div>
 </div>
 <p><a href="">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:namespace_lang_ya" id="r_namespace_lang_ya"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya.html">LangYa</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_lang_ya_1_1_sentry_lib" id="r_namespace_lang_ya_1_1_sentry_lib"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">LangYa::SentryLib</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a class="el" href="_monitor_package_8cpp.html">MonitorPackage.cpp</a></li>
-    <li class="footer">生成于 2023年 十二月 13日 星期三 20:05:23 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 19日 星期二 23:40:51 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

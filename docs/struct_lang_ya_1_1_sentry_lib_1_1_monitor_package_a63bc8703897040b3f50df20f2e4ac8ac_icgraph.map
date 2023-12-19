@@ -1,7 +1,5 @@
 <map id="LangYa::SentryLib::MonitorPackage::FormatToJson" name="LangYa::SentryLib::MonitorPackage::FormatToJson">
-<area shape="rect" id="Node000001" title=" " alt="" coords="473,13,678,56"/>
-<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html#adc08702013b1ddbe6bd71d15ad40ea45" title=" " alt="" coords="230,5,425,64"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="458,37,426,37,426,32,458,32"/>
-<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_monitor_sender.html#ad92a52d10ac85e0e566e0554e010a18a" title=" " alt="" coords="5,13,182,56"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="214,37,182,37,182,32,214,32"/>
+<area shape="rect" id="Node000001" title="将此包转换为 json 格式。 此格式大致为：{&quot;Name&quot;:&quot;&lt;PackageName&gt;&quot;,&quot;Items&quot;:[{&quot;Name&quot;:&quot;&lt;ItemName&gt;&quot;,&quot;Value&quot;:&quot;&lt;ItemValue&gt;&quot;},..." alt="" coords="249,13,454,56"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html#a3c5f277f0cb99fea13c5248bbdb06256" title="将包格式化为 json 文本，然后将文本写入到连接中。" alt="" coords="5,5,201,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,37,201,37,201,32,233,32"/>
 </map>

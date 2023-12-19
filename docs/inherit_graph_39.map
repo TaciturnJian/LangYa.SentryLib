@@ -1,3 +1,13 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" href="$struct_lang_ya_1_1_sentry_lib_1_1_vi_map_1_1_pixel_list_sample_option.html" title=" " alt="" coords="5,5,204,48"/>
+<area shape="rect" id="Node000000" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="5,139,213,181"/>
+<area shape="rect" id="Node000001" href="$class_lang_ya_1_1_sentry_lib_1_1_vector2.html" title=" " alt="" coords="300,5,436,48"/>
+<area shape="poly" id="edge19_Node000000_Node000001" title=" " alt="" coords="148,127,200,91,260,58,298,42,300,47,262,62,203,96,151,131"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_vector2.html" title=" " alt="" coords="300,72,436,115"/>
+<area shape="poly" id="edge20_Node000000_Node000002" title=" " alt="" coords="208,132,299,108,300,113,210,137"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_vector3.html" title=" " alt="" coords="300,139,436,181"/>
+<area shape="poly" id="edge21_Node000000_Node000003" title=" " alt="" coords="228,157,299,157,299,163,228,163"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_vector2.html" title=" " alt="" coords="261,205,475,248"/>
+<area shape="poly" id="edge22_Node000000_Node000004" title=" " alt="" coords="210,183,283,202,282,207,209,188"/>
+<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_vector3.html" title=" " alt="" coords="261,272,475,315"/>
+<area shape="poly" id="edge23_Node000000_Node000005" title=" " alt="" coords="151,189,203,224,262,258,289,269,287,274,259,262,200,229,148,193"/>
 </map>

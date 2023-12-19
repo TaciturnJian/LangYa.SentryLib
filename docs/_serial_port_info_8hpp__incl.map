@@ -1,5 +1,9 @@
-<map id="Headers/LangYa/SentryLib/SerialPortInfo.hpp" name="Headers/LangYa/SentryLib/SerialPortInfo.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,182,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="67,96,120,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,49,96,80,91,80,91,49"/>
+<map id="Headers/LangYa/SentryLib/Common/SerialPortInfo.hpp" name="Headers/LangYa/SentryLib/Common/SerialPortInfo.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="11,5,194,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,104,59,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,50,54,93,49,90,84,47"/>
+<area shape="rect" id="Node000003" href="$_string_format_by_stream_8hpp.html" title=" " alt="" coords="83,96,266,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,47,151,82,146,86,117,50"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="141,187,209,213"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="177,139,177,171,172,171,172,139"/>
 </map>

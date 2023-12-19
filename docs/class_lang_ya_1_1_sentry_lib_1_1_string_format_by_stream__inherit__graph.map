@@ -1,0 +1,5 @@
+<map id="LangYa::SentryLib::StringFormatByStream" name="LangYa::SentryLib::StringFormatByStream">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,160,48"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_serial_port_info.html" title="构建串口连接的必要内容。 包含了构建串口的必要信息，许多复杂设置都略去了。 请配合下面的类使用。" alt="" coords="14,96,151,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,64,85,96,80,96,80,64"/>
+</map>

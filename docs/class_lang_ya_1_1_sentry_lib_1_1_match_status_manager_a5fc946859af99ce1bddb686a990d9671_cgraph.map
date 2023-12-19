@@ -1,5 +1,21 @@
 <map id="LangYa::SentryLib::MatchStatusManager::operator[]" name="LangYa::SentryLib::MatchStatusManager::operator[]">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,159,64"/>
-<area shape="rect" id="Node000002" href="$_ideal_logic_8cpp.html#af0c41fd4d35984fb4a68604b2ea9c87d" title=" " alt="" coords="207,21,324,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,32,191,32,191,37,159,37"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,40,159,99"/>
+<area shape="rect" id="Node000002" href="$_tiny_sentry_mind_8cpp.html#ad28c42ef79391f81f7c2ad3636c6508d" title=" " alt="" coords="212,5,296,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,44,196,33,197,38,160,49"/>
+<area shape="rect" id="Node000004" href="$_tiny_sentry_mind_8cpp.html#acbd1311bd33ae655eca7058d89a409f3" title=" " alt="" coords="207,56,301,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,67,191,67,191,72,159,72"/>
+<area shape="rect" id="Node000005" href="$_tiny_sentry_mind_8cpp.html#ae2f83cd5a2399cc55508ae121221e7db" title=" " alt="" coords="220,107,288,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="160,89,206,103,205,108,158,95"/>
+<area shape="rect" id="Node000003" href="$_tiny_sentry_mind_8cpp.html#a21612896652466204a004b74f15ac669" title=" " alt="" coords="349,5,479,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="297,16,334,16,334,21,297,21"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="298,53,354,35,356,40,299,58"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="282,104,299,93,313,79,322,67,332,55,347,42,355,37,358,42,351,46,336,58,327,70,317,83,303,97,285,108"/>
+<area shape="rect" id="Node000006" href="$_tiny_sentry_mind_8cpp.html#acc72032da42919db2b3342a311ad84cb" title=" " alt="" coords="353,56,476,83"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="287,107,354,85,356,90,289,112"/>
+<area shape="rect" id="Node000007" href="$_tiny_sentry_mind_8cpp.html#a1c07b5ac86c40d6f2e9a7e677512264c" title=" " alt="" coords="353,107,475,133"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="288,117,338,117,338,123,288,123"/>
+<area shape="rect" id="Node000008" href="$_tiny_sentry_mind_8cpp.html#a695ddf97ad351f772576363c5962272e" title=" " alt="" coords="361,157,467,184"/>
+<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="289,128,356,150,354,155,287,133"/>
+<area shape="rect" id="Node000009" href="$_tiny_sentry_mind_8cpp.html#a211226346e2b53888805a8ff6fa7cde1" title=" " alt="" coords="373,208,455,235"/>
+<area shape="poly" id="edge10_Node000005_Node000009" title=" " alt="" coords="271,132,306,162,350,194,360,199,357,204,348,198,303,166,268,136"/>
 </map>

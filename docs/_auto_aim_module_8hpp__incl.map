@@ -1,10 +1,7 @@
 <map id="Headers/LangYa/SentryLib/AutoAimModule.hpp" name="Headers/LangYa/SentryLib/AutoAimModule.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="93,5,269,48"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="79,5,256,48"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,96,143,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,51,104,88,101,84,152,46"/>
-<area shape="rect" id="Node000003" href="$_c_sharpp_8hpp.html" title=" " alt="" coords="157,171,338,213"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="187,48,195,83,208,122,227,156,222,159,204,124,190,84,182,49"/>
-<area shape="rect" id="Node000004" href="$_device_8hpp.html" title=" " alt="" coords="218,96,410,123"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="216,46,282,85,279,90,214,51"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="306,125,276,161,272,157,302,121"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,51,102,88,98,84,142,47"/>
+<area shape="rect" id="Node000003" href="$_device_8hpp.html" title=" " alt="" coords="166,96,358,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,47,237,84,234,88,190,51"/>
 </map>

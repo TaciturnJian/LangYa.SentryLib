@@ -1,5 +1,5 @@
 <map id="LangYa::SentryLib::DeserializableContentSensor&lt; TSensorData &gt;" name="LangYa::SentryLib::DeserializableContentSensor&lt; TSensorData &gt;">
-<area shape="rect" id="Node000001" title="代表一个机器人传感器。 TODO 注释与文档 Tick this device so it will update sensor data from connection,..." alt="" coords="5,80,194,139"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="70,5,129,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,48,102,79,97,79,97,48"/>
+<area shape="rect" id="Node000001" title="代表一个机器人传感器。 TODO 注释与文档 Tick this device so it will update sensor data from connection,..." alt="" coords="5,96,194,155"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_device.html" title="代表一种虚拟的设备，它需要有一个外部循环去调用。 大多数使用情况都是在一个线程中调用 Tick() 方法。" alt="" coords="31,5,168,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,63,102,96,97,96,97,63"/>
 </map>

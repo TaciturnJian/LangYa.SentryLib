@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.2</span>
+   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A robot lib by LangYa.Sango mostly for softwares on sentry</div>
   </td>
@@ -94,147 +94,15 @@ $(document).ready(function(){initNavTree('md__r_e_a_d_m_e.html',''); initResizab
   <div class="headertitle"><div class="title">SentryLib 代码文档</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="sentrylib-代码文档"></a> &gt;[!tip] 如果你不能打开下面的链接，请尝试在 <a href="https://github.com/TaciturnJian/LangYa.SentryLib.git">GitHub</a> 中打开。</p>
-<p><img src="https://img.shields.io/badge/RoboMaster-华中科技大学狼牙战队-blue" alt="HUST" class="inline"/> <img src="https://img.shields.io/badge/版本-1.0.2-blue" alt="Version" class="inline"/> <img src="https://img.shields.io/badge/CXX-20-green" alt="CXXStandard" class="inline"/> <img src="https://img.shields.io/badge/CMAKE-3.16-green" alt="CMakeVersion" class="inline"/></p>
-<p>SentryLib 是一个机器人工具库，它包含了如下功能或接口：</p>
-<ul>
-<li><a class="el" href="md__r_e_a_d_m_e.html#内存管理工具">内存管理（缓冲区，字节保护）</a></li>
-<li><a class="el" href="md__r_e_a_d_m_e.html#序列化与反序列化">序列化与反序列化接口</a></li>
-<li><a class="el" href="md__r_e_a_d_m_e.html#连接接口">连接接口及串口连接、TCP套接字连接实现</a></li>
-<li><a class="el" href="md__r_e_a_d_m_e.html#机器人设备">机器人设备：控制器和传感器</a></li>
-<li><a class="el" href="md__r_e_a_d_m_e.html#数学概念">一些简单的数学概念，便于表示一些数据</a></li>
-</ul>
-<p>未来规划</p>
-<ul>
-<li>TODO List</li>
-</ul>
-<h1><a class="anchor" id="内存管理工具"></a>
-内存管理工具</h1>
-<ul>
-<li><a href="./Headers/LangYa/SentryLib/MemoryView.hpp">内存视图 MemoryView.hpp</a></li>
-<li><a href="./Headers/LangYa/SentryLib/MemoryIO.hpp">内存输入输出 MemoryIO.hpp</a></li>
-<li><a href="./Headers/LangYa/SentryLib/UniqueBuffer.hpp">独有内存 UniqueBuffer.hpp</a></li>
-<li><a href="./Headers/LangYa/SentryLib/Resource.hpp">资源管理 Resource.hpp</a></li>
-<li><a href="./Headers/LangYa/SentryLib/PingPongBuffer.hpp">二重字节缓冲 PingPongBuffer.hpp</a></li>
-<li><a href="./Headers/LangYa/SentryLib/TripleBuffer.hpp">三重内容缓冲 TripleBuffer.hpp</a></li>
-</ul>
-<h1><a class="anchor" id="序列化与反序列化"></a>
-序列化与反序列化</h1>
-<ul>
-<li><a href="./Headers/LangYa/SentryLib/SerializableContent.hpp">可序列化内容 SerializableContent.hpp</a></li>
-<li><a href="./Headers/LangYa/SentryLib/SerializableContent.hpp">可序列化概念 SerializableContent.hpp</a></li>
-<li><a href="./Headers/LangYa/SentryLib/SerializableContent.hpp">可反序列化内容 DeserializableContent.hpp</a></li>
-<li><a href="./Headers/LangYa/SentryLib/SerializableContent.hpp">可反序列化概念 DeserializableContent.hpp</a></li>
-</ul>
-<h1><a class="anchor" id="连接接口"></a>
-连接接口</h1>
-<ul>
-<li><a href="./Headers/LangYa/SentryLib/Connection.hpp">连接 Connection.hpp</a></li>
-<li><a href="./Headers/LangYa/SentryLib/SerialPortInfo.hpp">串口信息 SerialPortInfo.hpp</a></li>
-<li><a href="./Headers/LangYa/SentryLib/SerialPort.hpp">串口连接 SerialPort.hpp</a></li>
-<li><a href="./Headers/LangYa/SentryLib/TCPConnection.hpp">网络连接 TCPConnection.hpp</a></li>
-<li><a href="./Headers/LangYa/SentryLib/LangYaConnection.hpp">狼牙连接 LangYaConnection.hpp</a></li>
-<li><a href="./Headers/LangYa/SentryLib/MemoryAccess.hpp">内存访问 MemoryAccess.hpp</a></li>
-</ul>
-<h1><a class="anchor" id="数学概念"></a>
-数学概念</h1>
-<ul>
-<li>位置<ul>
-<li><a href="./Headers/LangYa/SentryLib/Math/Position1.hpp">一维位置 Position1</a></li>
-<li><a href="./Headers/LangYa/SentryLib/Math/Position2.hpp">二维位置 Position2</a></li>
-<li><a href="./Headers/LangYa/SentryLib/Math/Position3.hpp">三维位置 Position3</a></li>
-</ul>
-</li>
-<li>向量<ul>
-<li><a href="./Headers/LangYa/SentryLib/Math/Vector.hpp">向量 Vector</a></li>
-<li><a href="./Headers/LangYa/SentryLib/Math/Vector2.hpp">二维向量 Vector2</a></li>
-<li><a href="./Headers/LangYa/SentryLib/Math/Vector3.hpp">三维向量 Vector3</a></li>
-</ul>
-</li>
-</ul>
-<h1><a class="anchor" id="机器人设备"></a>
-机器人设备</h1>
-<ul>
-<li><a href="./Headers/LangYa/SentryLib/Device.hpp">设备 Device.hpp</a></li>
-</ul>
-<h1><a class="anchor" id="监视器使用指南"></a>
-监视器使用指南</h1>
-<p>可选操作：检查你的电脑的 127.0.0.1:8989 是否被哪个程序占用</p>
-<p>代码如下：</p>
-<div class="fragment"><div class="line"> ++</div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="_monitor_sender_8hpp.html">LangYa/SentryLib/Application/MonitorSender.hpp</a>&gt;</span></div>
-<div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="x64-_debug_2_c_make_files_2_show_includes_2main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
-<div class="line">{</div>
-<div class="line">    <span class="keyword">using namespace </span>std::chrono_literals;</div>
-<div class="line">    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_lang_ya_1_1_sentry_lib.html">LangYa::SentryLib</a>;</div>
-<div class="line"> </div>
-<div class="line">    <span class="comment">// 使用 vector 的一些方法构造包</span></div>
-<div class="line">    <a class="code hl_struct" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html">MonitorPackage</a> dynamic_package_1{<span class="stringliteral">&quot;Test&quot;</span>};</div>
-<div class="line">    dynamic_package_1.<a class="code hl_variable" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html#a616affc851c8d9ba7314ac76d75d0e08">Items</a>.emplace_back(<span class="stringliteral">&quot;A&quot;</span>, 9);</div>
-<div class="line">    dynamic_package_1.Items.emplace_back(<span class="stringliteral">&quot;B&quot;</span>, 100);</div>
-<div class="line">    dynamic_package_1.Items.emplace_back(<span class="stringliteral">&quot;C&quot;</span>, 100);</div>
-<div class="line"> </div>
-<div class="line">    <span class="comment">// 使用直接构造</span></div>
-<div class="line">    <a class="code hl_struct" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html">MonitorPackage</a> dynamic_package_2{<span class="stringliteral">&quot;Test2&quot;</span>,</div>
-<div class="line">        {           <span class="comment">// 注意这里两层括号</span></div>
-<div class="line">            {<span class="stringliteral">&quot;A&quot;</span>, 9},</div>
-<div class="line">            {<span class="stringliteral">&quot;B&quot;</span>, 100},</div>
-<div class="line">            {<span class="stringliteral">&quot;C&quot;</span>, 100},</div>
-<div class="line">            {<span class="stringliteral">&quot;D&quot;</span>, 100}</div>
-<div class="line">        }</div>
-<div class="line">    };</div>
-<div class="line"> </div>
-<div class="line">    <span class="comment">// 获取发送器</span></div>
-<div class="line">    <a class="code hl_class" href="class_lang_ya_1_1_sentry_lib_1_1_monitor_sender.html">MonitorSender</a> sender{};</div>
-<div class="line"> </div>
-<div class="line">    <span class="keywordflow">while</span> (<span class="keyword">true</span>)</div>
-<div class="line">    {</div>
-<div class="line">        <span class="comment">// 发送包裹</span></div>
-<div class="line">        sender &lt;&lt; dynamic_package_1 &lt;&lt; dynamic_package_2;</div>
-<div class="line"> </div>
-<div class="line">        <span class="comment">// 自己修改包裹</span></div>
-<div class="line">        dynamic_package_1.Items[1].Value++;</div>
-<div class="line">        dynamic_package_2.Items[2].Value++;</div>
-<div class="line"> </div>
-<div class="line">        <span class="comment">// 建议频率不要太大，延时最低不要低于 10ms</span></div>
-<div class="line">        std::this_thread::sleep_for(50ms);</div>
-<div class="line">    }</div>
-<div class="line">}</div>
-<div class="ttc" id="a_monitor_sender_8hpp_html"><div class="ttname"><a href="_monitor_sender_8hpp.html">MonitorSender.hpp</a></div></div>
-<div class="ttc" id="aclass_lang_ya_1_1_sentry_lib_1_1_monitor_sender_html"><div class="ttname"><a href="class_lang_ya_1_1_sentry_lib_1_1_monitor_sender.html">LangYa::SentryLib::MonitorSender</a></div><div class="ttdef"><b>Definition</b> MonitorSender.hpp:11</div></div>
-<div class="ttc" id="anamespace_lang_ya_1_1_sentry_lib_html"><div class="ttname"><a href="namespace_lang_ya_1_1_sentry_lib.html">LangYa::SentryLib</a></div><div class="ttdef"><b>Definition</b> ApplicationInfo.hpp:8</div></div>
-<div class="ttc" id="astruct_lang_ya_1_1_sentry_lib_1_1_monitor_package_html"><div class="ttname"><a href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html">LangYa::SentryLib::MonitorPackage</a></div><div class="ttdef"><b>Definition</b> MonitorPackage.hpp:17</div></div>
-<div class="ttc" id="astruct_lang_ya_1_1_sentry_lib_1_1_monitor_package_html_a616affc851c8d9ba7314ac76d75d0e08"><div class="ttname"><a href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html#a616affc851c8d9ba7314ac76d75d0e08">LangYa::SentryLib::MonitorPackage::Items</a></div><div class="ttdeci">std::vector&lt; ItemType &gt; Items</div><div class="ttdef"><b>Definition</b> MonitorPackage.hpp:44</div></div>
-<div class="ttc" id="ax64-_debug_2_c_make_files_2_show_includes_2main_8c_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="x64-_debug_2_c_make_files_2_show_includes_2main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition</b> main.c:2</div></div>
-</div><!-- fragment --><h1><a class="anchor" id="todolist"></a>
-TODOList</h1>
-<ul>
-<li>[x] 移动到 <code><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">LangYa::SentryLib</a></code>（修改所有文件）<ul>
-<li>[x] 把ToBeManaged所有头文件都放在 ./Headers/LangYa/Sentry/ 下</li>
-<li>[x] 把ToBeManaged所有源文件都放在 ./Sources/ 下</li>
-<li>[x] 修改所有文件的命名空间</li>
-</ul>
-</li>
-<li>[ ] 检查源文件问题<ul>
-<li>[ ] 多线程问题检查</li>
-<li>[x] 内存泄漏检查</li>
-<li>[x] 静态函数优化</li>
-</ul>
-</li>
-<li>[x] 头文件代码注释</li>
-<li>[x] 使用方法</li>
-<li>[ ] 优化代码结构</li>
-<li>[ ] 记录所有依赖库，其他库只要链接此库就会自动链接依赖库</li>
-<li>[ ] GitHub 代码管理 </li>
-</ul>
+<div class="textblock"><p><a class="anchor" id="sentrylib-代码文档"></a> <img src="https://img.shields.io/badge/RoboMaster-华中科技大学狼牙战队-blue" alt="HUST" class="inline"/> <img src="https://img.shields.io/badge/版本-1.0.3-blue" alt="Version" class="inline"/> <img src="https://img.shields.io/badge/CXX-20-green" alt="CXXStandard" class="inline"/> <img src="https://img.shields.io/badge/CMAKE-3.16-green" alt="CMakeVersion" class="inline"/></p>
+<p>README正在编写中…… </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">生成于 2023年 十二月 13日 星期三 20:05:23 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 19日 星期二 23:40:51 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

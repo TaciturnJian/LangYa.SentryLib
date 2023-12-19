@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.2</span>
+   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A robot lib by LangYa.Sango mostly for softwares on sentry</div>
   </td>
@@ -100,6 +100,9 @@ $(document).ready(function(){initNavTree('struct_lang_ya_1_1_sentry_lib_1_1_moni
 </div><!--header-->
 <div class="contents">
 
+<p>监视器包裹，提供格式化  
+ <a href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html#details">更多...</a></p>
+
 <p><code>#include &lt;<a class="el" href="">MonitorPackage.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> LangYa::SentryLib::MonitorPackage 的协作图:</div>
@@ -108,10 +111,10 @@ $(document).ready(function(){initNavTree('struct_lang_ya_1_1_sentry_lib_1_1_moni
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package__coll__graph.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_monitor_package_coll__map" alt="Collaboration graph"/></div>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_monitor_package_coll__map" id="a_lang_ya_1_1_sentry_lib_1_1_monitor_package_coll__map">
-<area shape="rect" title=" " alt="" coords="1034,99,1170,141"/>
+<area shape="rect" title="监视器包裹，提供格式化" alt="" coords="1034,99,1170,141"/>
 <area shape="rect" title=" " alt="" coords="180,101,259,128"/>
 <area shape="poly" title=" " alt="" coords="275,113,364,113,1034,117,1034,122,364,119,275,118"/>
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type.html" title=" " alt="" coords="364,61,541,104"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type.html" title="监视器的单个物品。 定义了监视器的基本物品格式，可以转换为Json格式和控制台格式。 因为实在找不到合适的名字所以放在了 Monitor 里面。 实际使用起来对此类型几乎无感。" alt="" coords="364,61,541,104"/>
 <area shape="poly" title=" " alt="" coords="274,105,363,92,364,97,275,110"/>
 <area shape="rect" title=" " alt="" coords="5,93,131,136"/>
 <area shape="poly" title=" " alt="" coords="146,112,179,112,179,117,146,117"/>
@@ -128,36 +131,41 @@ $(document).ready(function(){initNavTree('struct_lang_ya_1_1_sentry_lib_1_1_moni
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 类</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type.html">ItemType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">监视器的单个物品。 定义了监视器的基本物品格式，可以转换为Json格式和控制台格式。 因为实在找不到合适的名字所以放在了 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_monitor.html" title="一个用来格式化数据的显示器。 通过右移 &gt;&gt; 运算符，可以将数据包传出到流中。 通过左移 &lt;&lt; 运算符，可以将数据包直接传入显示器，显示器会自动解析数据包并显示。">Monitor</a> 里面。 实际使用起来对此类型几乎无感。  <a href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:ac2779916789e5a1854d051dc3da1a5cf" id="r_ac2779916789e5a1854d051dc3da1a5cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html#ac2779916789e5a1854d051dc3da1a5cf">ParseJson</a> (const std::string &amp;jsonText)</td></tr>
+<tr class="memdesc:ac2779916789e5a1854d051dc3da1a5cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">从 json 文本中解析出包。  <br /></td></tr>
 <tr class="separator:ac2779916789e5a1854d051dc3da1a5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63bc8703897040b3f50df20f2e4ac8ac" id="r_a63bc8703897040b3f50df20f2e4ac8ac"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html#a63bc8703897040b3f50df20f2e4ac8ac">FormatToJson</a> (std::ostream &amp;stream) const</td></tr>
+<tr class="memdesc:a63bc8703897040b3f50df20f2e4ac8ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">将此包转换为 json 格式。 此格式大致为：{"Name":"&lt;PackageName&gt;","Items":[{"Name":"&lt;ItemName&gt;","Value":"&lt;ItemValue&gt;"},...]}  <br /></td></tr>
 <tr class="separator:a63bc8703897040b3f50df20f2e4ac8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2713f740d3c519f4b572d1a3f1265e3a" id="r_a2713f740d3c519f4b572d1a3f1265e3a"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html#a2713f740d3c519f4b572d1a3f1265e3a">FormatToConsole</a> (std::ostream &amp;stream) const</td></tr>
+<tr class="memdesc:a2713f740d3c519f4b572d1a3f1265e3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">将此包转换为控制台格式。 此格式大致为： PackageName:  <br /></td></tr>
 <tr class="separator:a2713f740d3c519f4b572d1a3f1265e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc08702013b1ddbe6bd71d15ad40ea45" id="r_adc08702013b1ddbe6bd71d15ad40ea45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html#adc08702013b1ddbe6bd71d15ad40ea45">WriteJsonToConnection</a> (const std::shared_ptr&lt; <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ac7fbf750abad4ec779b73457a20b0f9c">Connection</a> &gt; &amp;connectionPtr) const</td></tr>
-<tr class="separator:adc08702013b1ddbe6bd71d15ad40ea45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c5f277f0cb99fea13c5248bbdb06256" id="r_a3c5f277f0cb99fea13c5248bbdb06256"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html#a3c5f277f0cb99fea13c5248bbdb06256">WriteJsonToSharedConnection</a> (const std::shared_ptr&lt; <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_connection.html">Connection</a> &gt; &amp;connectionPtr) const</td></tr>
+<tr class="memdesc:a3c5f277f0cb99fea13c5248bbdb06256"><td class="mdescLeft">&#160;</td><td class="mdescRight">将包格式化为 json 文本，然后将文本写入到连接中。  <br /></td></tr>
+<tr class="separator:a3c5f277f0cb99fea13c5248bbdb06256"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
 <tr class="memitem:a67f4610a2d9203e100be466b5074d75b" id="r_a67f4610a2d9203e100be466b5074d75b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html#a67f4610a2d9203e100be466b5074d75b">Name</a> {&quot;PackageName&quot;}</td></tr>
+<tr class="memdesc:a67f4610a2d9203e100be466b5074d75b"><td class="mdescLeft">&#160;</td><td class="mdescRight">整个包的名称。  <br /></td></tr>
 <tr class="separator:a67f4610a2d9203e100be466b5074d75b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a616affc851c8d9ba7314ac76d75d0e08" id="r_a616affc851c8d9ba7314ac76d75d0e08"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type.html">ItemType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html#a616affc851c8d9ba7314ac76d75d0e08">Items</a> {}</td></tr>
+<tr class="memdesc:a616affc851c8d9ba7314ac76d75d0e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">整个包的物品。  <br /></td></tr>
 <tr class="separator:a616affc851c8d9ba7314ac76d75d0e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"></div><h2 class="groupheader">成员函数说明</h2>
+<div class="textblock"><p>监视器包裹，提供格式化 </p>
+</div><h2 class="groupheader">成员函数说明</h2>
 <a id="a2713f740d3c519f4b572d1a3f1265e3a" name="a2713f740d3c519f4b572d1a3f1265e3a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2713f740d3c519f4b572d1a3f1265e3a">&#9670;&#160;</a></span>FormatToConsole()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::ostream &amp; LangYa::SentryLib::MonitorPackage::FormatToConsole </td>
@@ -167,12 +175,20 @@ Public 属性</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>将此包转换为控制台格式。 此格式大致为： PackageName: </p>
+<ul>
+<li>ItemName1: Value1(长度为10)</li>
+<li>ItemName2: Value2(长度为10) <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>流对象。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>参数中传入的流对象，已经向其中写入了控制台格式的包。 </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -181,9 +197,6 @@ Public 属性</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::ostream &amp; LangYa::SentryLib::MonitorPackage::FormatToJson </td>
@@ -193,12 +206,16 @@ Public 属性</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>将此包转换为 json 格式。 此格式大致为：{"Name":"&lt;PackageName&gt;","Items":[{"Name":"&lt;ItemName&gt;","Value":"&lt;ItemValue&gt;"},...]} </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>流对象。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>参数中传入的流对象，已经向其中写入了 json 格式的包。 </dd></dl>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -206,11 +223,9 @@ Public 属性</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_a63bc8703897040b3f50df20f2e4ac8ac_icgraph.png" border="0" usemap="#astruct_lang_ya_1_1_sentry_lib_1_1_monitor_package_a63bc8703897040b3f50df20f2e4ac8ac_icgraph" alt=""/></div>
 <map name="astruct_lang_ya_1_1_sentry_lib_1_1_monitor_package_a63bc8703897040b3f50df20f2e4ac8ac_icgraph" id="astruct_lang_ya_1_1_sentry_lib_1_1_monitor_package_a63bc8703897040b3f50df20f2e4ac8ac_icgraph">
-<area shape="rect" title=" " alt="" coords="473,13,678,56"/>
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html#adc08702013b1ddbe6bd71d15ad40ea45" title=" " alt="" coords="230,5,425,64"/>
-<area shape="poly" title=" " alt="" coords="458,37,426,37,426,32,458,32"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_monitor_sender.html#ad92a52d10ac85e0e566e0554e010a18a" title=" " alt="" coords="5,13,182,56"/>
-<area shape="poly" title=" " alt="" coords="214,37,182,37,182,32,214,32"/>
+<area shape="rect" title="将此包转换为 json 格式。 此格式大致为：{&quot;Name&quot;:&quot;&lt;PackageName&gt;&quot;,&quot;Items&quot;:[{&quot;Name&quot;:&quot;&lt;ItemName&gt;&quot;,&quot;Value&quot;:&quot;&lt;ItemValue&gt;&quot;},..." alt="" coords="249,13,454,56"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html#a3c5f277f0cb99fea13c5248bbdb06256" title="将包格式化为 json 文本，然后将文本写入到连接中。" alt="" coords="5,5,201,64"/>
+<area shape="poly" title=" " alt="" coords="233,37,201,37,201,32,233,32"/>
 </map>
 </div>
 
@@ -221,9 +236,6 @@ Public 属性</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool LangYa::SentryLib::MonitorPackage::ParseJson </td>
@@ -233,12 +245,17 @@ Public 属性</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>从 json 文本中解析出包。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jsonText</td><td>json 文本，需要保证有效，如果无效则返回 false 。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>是否完全成功解析 json 并且此 json 格式与此包裹的格式相符合。 详细格式见： <div class="fragment"><div class="line">LangYa::SentryLib::FormatToJson </div>
+</div><!-- fragment --> </dd></dl>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -246,7 +263,7 @@ Public 属性</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_ac2779916789e5a1854d051dc3da1a5cf_icgraph.png" border="0" usemap="#astruct_lang_ya_1_1_sentry_lib_1_1_monitor_package_ac2779916789e5a1854d051dc3da1a5cf_icgraph" alt=""/></div>
 <map name="astruct_lang_ya_1_1_sentry_lib_1_1_monitor_package_ac2779916789e5a1854d051dc3da1a5cf_icgraph" id="astruct_lang_ya_1_1_sentry_lib_1_1_monitor_package_ac2779916789e5a1854d051dc3da1a5cf_icgraph">
-<area shape="rect" title=" " alt="" coords="190,5,374,48"/>
+<area shape="rect" title="从 json 文本中解析出包。" alt="" coords="190,5,374,48"/>
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_monitor.html#a37e006d32be8a52671716e2336dad38c" title=" " alt="" coords="5,5,142,48"/>
 <area shape="poly" title=" " alt="" coords="174,29,142,29,142,24,174,24"/>
 </map>
@@ -254,51 +271,39 @@ Public 属性</h2></td></tr>
 
 </div>
 </div>
-<a id="adc08702013b1ddbe6bd71d15ad40ea45" name="adc08702013b1ddbe6bd71d15ad40ea45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc08702013b1ddbe6bd71d15ad40ea45">&#9670;&#160;</a></span>WriteJsonToConnection()</h2>
+<a id="a3c5f277f0cb99fea13c5248bbdb06256" name="a3c5f277f0cb99fea13c5248bbdb06256"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c5f277f0cb99fea13c5248bbdb06256">&#9670;&#160;</a></span>WriteJsonToSharedConnection()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void LangYa::SentryLib::MonitorPackage::WriteJsonToConnection </td>
+          <td class="memname">void LangYa::SentryLib::MonitorPackage::WriteJsonToSharedConnection </td>
           <td>(</td>
-          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ac7fbf750abad4ec779b73457a20b0f9c">Connection</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_connection.html">Connection</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>connectionPtr</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>将包格式化为 json 文本，然后将文本写入到连接中。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">connectionPtr</td><td>连接的共享指针，调用方应该确定此连接有效，且当前仅被此函数占用。 </td></tr>
+  </table>
+  </dd>
+</dl>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_adc08702013b1ddbe6bd71d15ad40ea45_cgraph.png" border="0" usemap="#astruct_lang_ya_1_1_sentry_lib_1_1_monitor_package_adc08702013b1ddbe6bd71d15ad40ea45_cgraph" alt=""/></div>
-<map name="astruct_lang_ya_1_1_sentry_lib_1_1_monitor_package_adc08702013b1ddbe6bd71d15ad40ea45_cgraph" id="astruct_lang_ya_1_1_sentry_lib_1_1_monitor_package_adc08702013b1ddbe6bd71d15ad40ea45_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,201,64"/>
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html#a63bc8703897040b3f50df20f2e4ac8ac" title=" " alt="" coords="249,13,454,56"/>
+<div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_a3c5f277f0cb99fea13c5248bbdb06256_cgraph.png" border="0" usemap="#astruct_lang_ya_1_1_sentry_lib_1_1_monitor_package_a3c5f277f0cb99fea13c5248bbdb06256_cgraph" alt=""/></div>
+<map name="astruct_lang_ya_1_1_sentry_lib_1_1_monitor_package_a3c5f277f0cb99fea13c5248bbdb06256_cgraph" id="astruct_lang_ya_1_1_sentry_lib_1_1_monitor_package_a3c5f277f0cb99fea13c5248bbdb06256_cgraph">
+<area shape="rect" title="将包格式化为 json 文本，然后将文本写入到连接中。" alt="" coords="5,5,201,64"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html#a63bc8703897040b3f50df20f2e4ac8ac" title="将此包转换为 json 格式。 此格式大致为：{&quot;Name&quot;:&quot;&lt;PackageName&gt;&quot;,&quot;Items&quot;:[{&quot;Name&quot;:&quot;&lt;ItemName&gt;&quot;,&quot;Value&quot;:&quot;&lt;ItemValue&gt;&quot;},..." alt="" coords="249,13,454,56"/>
 <area shape="poly" title=" " alt="" coords="201,32,233,32,233,37,201,37"/>
-</map>
-</div>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_adc08702013b1ddbe6bd71d15ad40ea45_icgraph.png" border="0" usemap="#astruct_lang_ya_1_1_sentry_lib_1_1_monitor_package_adc08702013b1ddbe6bd71d15ad40ea45_icgraph" alt=""/></div>
-<map name="astruct_lang_ya_1_1_sentry_lib_1_1_monitor_package_adc08702013b1ddbe6bd71d15ad40ea45_icgraph" id="astruct_lang_ya_1_1_sentry_lib_1_1_monitor_package_adc08702013b1ddbe6bd71d15ad40ea45_icgraph">
-<area shape="rect" title=" " alt="" coords="230,5,425,64"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_monitor_sender.html#ad92a52d10ac85e0e566e0554e010a18a" title=" " alt="" coords="5,13,182,56"/>
-<area shape="poly" title=" " alt="" coords="214,37,182,37,182,32,214,32"/>
 </map>
 </div>
 
@@ -317,6 +322,8 @@ Public 属性</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>整个包的物品。 </p>
+
 </div>
 </div>
 <a id="a67f4610a2d9203e100be466b5074d75b" name="a67f4610a2d9203e100be466b5074d75b"></a>
@@ -331,10 +338,13 @@ Public 属性</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>整个包的名称。 </p>
+
 </div>
 </div>
 <hr/>该结构体的文档由以下文件生成:<ul>
 <li>Headers/LangYa/SentryLib/Application/<a class="el" href="">MonitorPackage.hpp</a></li>
+<li>Sources/<a class="el" href="">MonitorPackage.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -342,7 +352,7 @@ Public 属性</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_lang_ya.html">LangYa</a></li><li class="navelem"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">SentryLib</a></li><li class="navelem"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html">MonitorPackage</a></li>
-    <li class="footer">生成于 2023年 十二月 13日 星期三 20:05:23 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 19日 星期二 23:40:51 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

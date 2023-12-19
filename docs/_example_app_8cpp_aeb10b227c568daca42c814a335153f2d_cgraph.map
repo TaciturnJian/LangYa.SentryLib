@@ -1,6 +1,6 @@
 <map id="TestServer" name="TestServer">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,47,88,73"/>
-<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html#ae7ec604552bc47c68a178c9b6dc3815a" title=" " alt="" coords="136,5,294,48"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html#ae7ec604552bc47c68a178c9b6dc3815a" title="从缓冲区中反序列化资源。" alt="" coords="136,5,294,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,49,120,43,121,48,88,55"/>
 <area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html#aa4fcd6178787270ed4e8a69d28e60303" title="Get the view of the unique memory in the buffer." alt="" coords="139,72,291,115"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="88,65,124,73,123,78,87,71"/>

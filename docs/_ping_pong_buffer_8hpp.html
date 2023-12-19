@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LangYa.SentryLib: Headers/LangYa/SentryLib/PingPongBuffer.hpp 文件参考</title>
+<title>LangYa.SentryLib: Headers/LangYa/SentryLib/Common/PingPongBuffer.hpp 文件参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.2</span>
+   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A robot lib by LangYa.Sango mostly for softwares on sentry</div>
   </td>
@@ -97,29 +97,31 @@ $(document).ready(function(){initNavTree('_ping_pong_buffer_8hpp.html',''); init
   <div class="headertitle"><div class="title">PingPongBuffer.hpp 文件参考</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="">LangYa/SentryLib/MemoryView.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="">LangYa/SentryLib/UniqueBuffer.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="">LangYa/SentryLib/Common/MemoryView.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="">LangYa/SentryLib/Common/UniqueBuffer.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> PingPongBuffer.hpp 的引用(Include)关系图:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="_ping_pong_buffer_8hpp__incl.png" border="0" usemap="#a_headers_2_lang_ya_2_sentry_lib_2_ping_pong_buffer_8hpp" alt=""/></div>
-<map name="a_headers_2_lang_ya_2_sentry_lib_2_ping_pong_buffer_8hpp" id="a_headers_2_lang_ya_2_sentry_lib_2_ping_pong_buffer_8hpp">
-<area shape="rect" title=" " alt="" coords="111,5,288,48"/>
-<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="11,171,239,197"/>
-<area shape="poly" title=" " alt="" coords="184,50,153,97,141,127,133,156,128,155,136,125,148,95,180,47"/>
-<area shape="rect" href="_unique_buffer_8hpp.html" title=" " alt="" coords="162,96,389,123"/>
-<area shape="poly" title=" " alt="" coords="221,47,255,83,251,86,217,50"/>
-<area shape="rect" title=" " alt="" coords="5,245,74,272"/>
-<area shape="poly" title=" " alt="" coords="112,200,67,237,64,233,108,196"/>
-<area shape="rect" title=" " alt="" coords="97,245,153,272"/>
-<area shape="poly" title=" " alt="" coords="128,198,128,230,122,230,122,198"/>
-<area shape="rect" title=" " alt="" coords="177,245,318,272"/>
-<area shape="poly" title=" " alt="" coords="148,196,214,235,211,239,145,200"/>
-<area shape="poly" title=" " alt="" coords="250,126,166,166,164,161,248,121"/>
-<area shape="rect" title=" " alt="" coords="263,171,376,197"/>
-<area shape="poly" title=" " alt="" coords="285,122,306,156,302,159,281,125"/>
+<div class="center"><img src="_ping_pong_buffer_8hpp__incl.png" border="0" usemap="#a_headers_2_lang_ya_2_sentry_lib_2_common_2_ping_pong_buffer_8hpp" alt=""/></div>
+<map name="a_headers_2_lang_ya_2_sentry_lib_2_common_2_ping_pong_buffer_8hpp" id="a_headers_2_lang_ya_2_sentry_lib_2_common_2_ping_pong_buffer_8hpp">
+<area shape="rect" title=" " alt="" coords="141,5,336,48"/>
+<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="84,187,264,229"/>
+<area shape="poly" title=" " alt="" coords="227,50,202,97,190,135,182,172,177,171,185,134,197,95,222,47"/>
+<area shape="rect" href="_unique_buffer_8hpp.html" title=" " alt="" coords="212,96,392,139"/>
+<area shape="poly" title=" " alt="" coords="255,47,281,82,276,85,251,50"/>
+<area shape="rect" title=" " alt="" coords="5,277,74,304"/>
+<area shape="poly" title=" " alt="" coords="141,232,75,271,72,267,138,228"/>
+<area shape="rect" title=" " alt="" coords="98,277,165,304"/>
+<area shape="poly" title=" " alt="" coords="166,231,148,265,143,262,161,229"/>
+<area shape="rect" title=" " alt="" coords="189,277,245,304"/>
+<area shape="poly" title=" " alt="" coords="188,229,205,262,201,265,183,231"/>
+<area shape="rect" title=" " alt="" coords="269,277,410,304"/>
+<area shape="poly" title=" " alt="" coords="218,228,301,268,299,273,216,232"/>
+<area shape="poly" title=" " alt="" coords="274,141,218,180,215,175,271,137"/>
+<area shape="rect" title=" " alt="" coords="289,195,401,221"/>
+<area shape="poly" title=" " alt="" coords="314,138,335,180,330,182,310,140"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -127,28 +129,28 @@ $(document).ready(function(){initNavTree('_ping_pong_buffer_8hpp.html',''); init
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="_ping_pong_buffer_8hpp__dep__incl.png" border="0" usemap="#a_headers_2_lang_ya_2_sentry_lib_2_ping_pong_buffer_8hppdep" alt=""/></div>
-<map name="a_headers_2_lang_ya_2_sentry_lib_2_ping_pong_buffer_8hppdep" id="a_headers_2_lang_ya_2_sentry_lib_2_ping_pong_buffer_8hppdep">
-<area shape="rect" title=" " alt="" coords="471,5,648,48"/>
-<area shape="rect" href="_sentry_lib_8hpp.html" title=" " alt="" coords="257,195,459,221"/>
-<area shape="poly" title=" " alt="" coords="514,59,461,98,408,151,370,196,366,192,404,147,458,94,511,55"/>
-<area shape="rect" href="_lang_ya_connection_8hpp.html" title=" " alt="" coords="471,96,648,139"/>
-<area shape="poly" title=" " alt="" coords="562,64,562,96,557,96,557,64"/>
-<area shape="rect" href="_ping_pong_buffer_8cpp.html" title=" " alt="" coords="671,104,858,131"/>
-<area shape="poly" title=" " alt="" coords="623,52,736,101,734,106,620,57"/>
+<div class="center"><img src="_ping_pong_buffer_8hpp__dep__incl.png" border="0" usemap="#a_headers_2_lang_ya_2_sentry_lib_2_common_2_ping_pong_buffer_8hppdep" alt=""/></div>
+<map name="a_headers_2_lang_ya_2_sentry_lib_2_common_2_ping_pong_buffer_8hppdep" id="a_headers_2_lang_ya_2_sentry_lib_2_common_2_ping_pong_buffer_8hppdep">
+<area shape="rect" title=" " alt="" coords="459,5,654,48"/>
+<area shape="rect" href="_sentry_lib_8hpp.html" title=" " alt="" coords="255,195,456,221"/>
+<area shape="poly" title=" " alt="" coords="511,59,458,98,405,151,367,196,363,192,402,147,455,94,508,55"/>
+<area shape="rect" href="_lang_ya_connection_8hpp.html" title=" " alt="" coords="469,96,645,139"/>
+<area shape="poly" title=" " alt="" coords="559,64,559,96,554,96,554,64"/>
+<area shape="rect" href="_ping_pong_buffer_8cpp.html" title=" " alt="" coords="668,104,856,131"/>
+<area shape="poly" title=" " alt="" coords="620,52,734,101,732,106,618,57"/>
 <area shape="rect" href="_sentry_lib_8cpp.html" title=" " alt="" coords="5,277,159,304"/>
-<area shape="poly" title=" " alt="" coords="301,229,126,279,125,274,299,224"/>
+<area shape="poly" title=" " alt="" coords="299,229,126,279,124,274,297,224"/>
 <area shape="rect" href="_example_app_8cpp.html" title=" " alt="" coords="182,277,350,304"/>
-<area shape="poly" title=" " alt="" coords="334,234,282,279,278,275,331,230"/>
-<area shape="rect" href="_ideal_logic_8cpp.html" title=" " alt="" coords="374,277,526,304"/>
-<area shape="poly" title=" " alt="" coords="385,230,438,275,434,279,382,234"/>
-<area shape="rect" href="_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和 json 配置文件的处理工具，使用操作见" alt="" coords="550,277,691,304"/>
-<area shape="poly" title=" " alt="" coords="414,224,580,274,579,279,413,229"/>
-<area shape="poly" title=" " alt="" coords="499,148,388,196,386,192,497,143"/>
-<area shape="rect" href="_lang_ya_connection_8cpp.html" title=" " alt="" coords="482,195,690,221"/>
-<area shape="poly" title=" " alt="" coords="572,153,585,193,580,195,567,154"/>
-<area shape="rect" href="_controller_sensor_tester_8cpp.html" title=" " alt="" coords="713,187,878,229"/>
-<area shape="poly" title=" " alt="" coords="630,142,741,184,739,189,628,147"/>
+<area shape="poly" title=" " alt="" coords="332,234,281,279,278,275,329,230"/>
+<area shape="rect" href="_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和 json 配置文件的处理工具，使用操作见" alt="" coords="374,277,515,304"/>
+<area shape="poly" title=" " alt="" coords="382,230,433,275,429,279,379,234"/>
+<area shape="rect" href="_tiny_sentry_mind_8cpp.html" title=" " alt="" coords="540,277,723,304"/>
+<area shape="poly" title=" " alt="" coords="414,224,589,274,587,279,412,229"/>
+<area shape="poly" title=" " alt="" coords="497,148,385,196,383,192,495,143"/>
+<area shape="rect" href="_lang_ya_connection_8cpp.html" title=" " alt="" coords="480,195,687,221"/>
+<area shape="poly" title=" " alt="" coords="570,153,582,193,577,195,565,154"/>
+<area shape="rect" href="_controller_sensor_tester_8cpp.html" title=" " alt="" coords="711,187,875,229"/>
+<area shape="poly" title=" " alt="" coords="627,142,738,184,736,189,625,147"/>
 </map>
 </div>
 </div>
@@ -172,8 +174,8 @@ $(document).ready(function(){initNavTree('_ping_pong_buffer_8hpp.html',''); init
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_692516b589a32b3bfce781ca9f6d1534.html">Headers</a></li><li class="navelem"><a class="el" href="dir_b117d0d76b03a6360b87a590e39f53f6.html">LangYa</a></li><li class="navelem"><a class="el" href="dir_0479bb77a485cc0baf99073ab05914e0.html">SentryLib</a></li><li class="navelem"><a class="el" href="_ping_pong_buffer_8hpp.html">PingPongBuffer.hpp</a></li>
-    <li class="footer">生成于 2023年 十二月 13日 星期三 20:05:23 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a class="el" href="dir_692516b589a32b3bfce781ca9f6d1534.html">Headers</a></li><li class="navelem"><a class="el" href="dir_b117d0d76b03a6360b87a590e39f53f6.html">LangYa</a></li><li class="navelem"><a class="el" href="dir_0479bb77a485cc0baf99073ab05914e0.html">SentryLib</a></li><li class="navelem"><a class="el" href="dir_d65952f734cbdf932d9a0650ea0dead9.html">Common</a></li><li class="navelem"><a class="el" href="_ping_pong_buffer_8hpp.html">PingPongBuffer.hpp</a></li>
+    <li class="footer">生成于 2023年 十二月 19日 星期二 23:40:51 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

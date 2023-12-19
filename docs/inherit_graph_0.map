@@ -1,11 +1,7 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,113,92,140"/>
-<area shape="rect" id="Node000001" href="$class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html" title="代表一个使用狼牙通信方式的连接，用来装饰一个连接。 真正的数据发送过程在下面的函数中" alt="" coords="140,5,276,48"/>
-<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="77,101,138,58,159,46,161,51,141,62,80,106"/>
-<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_memory_access.html" title="代表对与内存的访问，本质是对于" alt="" coords="140,72,276,115"/>
-<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="107,112,139,105,140,110,108,117"/>
-<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_serial_port.html" title="代表系统中的一个串口，本质是" alt="" coords="140,139,276,181"/>
-<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="108,136,140,143,139,148,107,141"/>
-<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_t_c_p_connection.html" title=" " alt="" coords="140,205,276,248"/>
-<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="80,148,141,191,161,202,159,207,138,196,77,152"/>
+<area shape="rect" id="Node000000" href="$class_action.html" title=" " alt="" coords="5,5,64,32"/>
+<area shape="rect" id="Node000001" href="$class_single_action.html" title=" " alt="" coords="112,5,206,32"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="79,16,111,16,111,21,79,21"/>
+<area shape="rect" id="Node000002" href="$class_action_group.html" title=" " alt="" coords="254,5,347,32"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="221,16,254,16,254,21,221,21"/>
 </map>

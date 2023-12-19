@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.2</span>
+   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A robot lib by LangYa.Sango mostly for softwares on sentry</div>
   </td>
@@ -110,9 +110,11 @@ $(document).ready(function(){initNavTree('class_lang_ya_1_1_sentry_lib_1_1_lang_
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection__inherit__graph.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection_inherit__map" id="a_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection_inherit__map">
-<area shape="rect" title="代表一个使用狼牙通信方式的连接，用来装饰一个连接。 真正的数据发送过程在下面的函数中" alt="" coords="5,80,142,123"/>
-<area shape="rect" title=" " alt="" coords="30,5,117,32"/>
-<area shape="poly" title=" " alt="" coords="76,48,76,80,71,80,71,48"/>
+<area shape="rect" title="代表一个使用狼牙通信方式的连接，用来装饰一个连接。 真正的数据发送过程在下面的函数中" alt="" coords="5,187,142,229"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_connection.html" title="代表一个类似 IO 的连接，只提供基本的读写和开启/关闭连接的功能。" alt="" coords="5,96,142,139"/>
+<area shape="poly" title=" " alt="" coords="76,154,76,186,71,186,71,154"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html" title="代表一个基本的读写类，在读和写的时候使用" alt="" coords="5,5,142,48"/>
+<area shape="poly" title=" " alt="" coords="76,64,76,96,71,96,71,64"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -122,15 +124,17 @@ $(document).ready(function(){initNavTree('class_lang_ya_1_1_sentry_lib_1_1_lang_
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection__coll__graph.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection_coll__map" alt="Collaboration graph"/></div>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection_coll__map" id="a_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection_coll__map">
-<area shape="rect" title="代表一个使用狼牙通信方式的连接，用来装饰一个连接。 真正的数据发送过程在下面的函数中" alt="" coords="5,80,142,123"/>
-<area shape="rect" title=" " alt="" coords="30,5,117,32"/>
-<area shape="poly" title=" " alt="" coords="76,48,76,80,71,80,71,48"/>
+<area shape="rect" title="代表一个使用狼牙通信方式的连接，用来装饰一个连接。 真正的数据发送过程在下面的函数中" alt="" coords="5,187,142,229"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_connection.html" title="代表一个类似 IO 的连接，只提供基本的读写和开启/关闭连接的功能。" alt="" coords="5,96,142,139"/>
+<area shape="poly" title=" " alt="" coords="76,154,76,186,71,186,71,154"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html" title="代表一个基本的读写类，在读和写的时候使用" alt="" coords="5,5,142,48"/>
+<area shape="poly" title=" " alt="" coords="76,64,76,96,71,96,71,64"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a6dbab87ee47132516c86602c2aa7a9b0" id="r_a6dbab87ee47132516c86602c2aa7a9b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html#a6dbab87ee47132516c86602c2aa7a9b0">LangYaConnection</a> (<a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a> rawReceiveSize, <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a> rawSendSize, const std::weak_ptr&lt; <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ac7fbf750abad4ec779b73457a20b0f9c">Connection</a> &gt; &amp;weakConnection)</td></tr>
+<tr class="memitem:a6dbab87ee47132516c86602c2aa7a9b0" id="r_a6dbab87ee47132516c86602c2aa7a9b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html#a6dbab87ee47132516c86602c2aa7a9b0">LangYaConnection</a> (<a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a> rawReceiveSize, <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a> rawSendSize, const std::weak_ptr&lt; <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_connection.html">Connection</a> &gt; &amp;weakConnection)</td></tr>
 <tr class="memdesc:a6dbab87ee47132516c86602c2aa7a9b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用给定的缓冲区大小和内部连接构建一个连接。  <br /></td></tr>
 <tr class="separator:a6dbab87ee47132516c86602c2aa7a9b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16e106a30eea25531bde3a2c04d6b7f1" id="r_a16e106a30eea25531bde3a2c04d6b7f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html#a16e106a30eea25531bde3a2c04d6b7f1">HandleIO</a> ()</td></tr>
@@ -151,6 +155,14 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a03740d2de5358e31eec9b227b22154d5" id="r_a03740d2de5358e31eec9b227b22154d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html#a03740d2de5358e31eec9b227b22154d5">Disconnect</a> () override</td></tr>
 <tr class="memdesc:a03740d2de5358e31eec9b227b22154d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect and release all the resources.  <br /></td></tr>
 <tr class="separator:a03740d2de5358e31eec9b227b22154d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_lang_ya_1_1_sentry_lib_1_1_connection"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_lang_ya_1_1_sentry_lib_1_1_connection')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_connection.html">LangYa::SentryLib::Connection</a></td></tr>
+<tr class="memitem:a1d914478d3b57b4d99852fc6657e7d5f inherit pub_methods_class_lang_ya_1_1_sentry_lib_1_1_connection" id="r_a1d914478d3b57b4d99852fc6657e7d5f"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_connection.html#a1d914478d3b57b4d99852fc6657e7d5f">ToString</a> ()</td></tr>
+<tr class="memdesc:a1d914478d3b57b4d99852fc6657e7d5f inherit pub_methods_class_lang_ya_1_1_sentry_lib_1_1_connection"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取此连接的字符串格式的信息，通常使用了 fmt 库，性能不算太好。  <br /></td></tr>
+<tr class="separator:a1d914478d3b57b4d99852fc6657e7d5f inherit pub_methods_class_lang_ya_1_1_sentry_lib_1_1_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_lang_ya_1_1_sentry_lib_1_1_memory_i_o"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_lang_ya_1_1_sentry_lib_1_1_memory_i_o')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html">LangYa::SentryLib::MemoryIO</a></td></tr>
+<tr class="memitem:aa96f095bebd5d4a4d6ca2730bb5e00e1 inherit pub_methods_class_lang_ya_1_1_sentry_lib_1_1_memory_i_o" id="r_aa96f095bebd5d4a4d6ca2730bb5e00e1"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html#aa96f095bebd5d4a4d6ca2730bb5e00e1">~MemoryIO</a> ()</td></tr>
+<tr class="memdesc:aa96f095bebd5d4a4d6ca2730bb5e00e1 inherit pub_methods_class_lang_ya_1_1_sentry_lib_1_1_memory_i_o"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认虚析构函数。  <br /></td></tr>
+<tr class="separator:aa96f095bebd5d4a4d6ca2730bb5e00e1 inherit pub_methods_class_lang_ya_1_1_sentry_lib_1_1_memory_i_o"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
@@ -185,7 +197,7 @@ Public 属性</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::weak_ptr&lt; <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ac7fbf750abad4ec779b73457a20b0f9c">Connection</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::weak_ptr&lt; <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_connection.html">Connection</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>weakConnection</em>&#160;</td>
         </tr>
         <tr>
@@ -227,12 +239,14 @@ Public 属性</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>让此连接的内部内容开始连接到目标。 </p>
+
+<p>实现了 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_connection.html#aeac58bb4874b83f55fdbfee8d899f910">LangYa::SentryLib::Connection</a>.</p>
 
 </div>
 </div>
@@ -254,12 +268,14 @@ Public 属性</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Disconnect and release all the resources. </p>
+
+<p>实现了 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_connection.html#a9102333d8cb0e2a0f8b02225abc3b987">LangYa::SentryLib::Connection</a>.</p>
 
 </div>
 </div>
@@ -300,13 +316,15 @@ Public 属性</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Check whether this connection is connected. </p>
 <dl class="section return"><dt>返回</dt><dd>Whether this connection is connected. </dd></dl>
+
+<p>实现了 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_connection.html#a6080795689d7949b33f55f4d4bfd17f1">LangYa::SentryLib::Connection</a>.</p>
 
 </div>
 </div>
@@ -329,7 +347,7 @@ Public 属性</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -342,6 +360,8 @@ Public 属性</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>如果提供的内存视图的大小较小，则不会读取任何数据，返回 0 ，否则返回读取的数据包的数据大小。 </dd></dl>
+
+<p>实现了 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html#aac88bdd5b43067b961a844c4bde678cd">LangYa::SentryLib::MemoryIO</a>.</p>
 
 </div>
 </div>
@@ -364,7 +384,7 @@ Public 属性</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -376,6 +396,8 @@ Public 属性</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>实现了 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html#a0dc3293dea137ec363fdfd9644bd7fe6">LangYa::SentryLib::MemoryIO</a>.</p>
 
 </div>
 </div>
@@ -408,7 +430,7 @@ Public 属性</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_lang_ya.html">LangYa</a></li><li class="navelem"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">SentryLib</a></li><li class="navelem"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html">LangYaConnection</a></li>
-    <li class="footer">生成于 2023年 十二月 13日 星期三 20:05:23 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 19日 星期二 23:40:51 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

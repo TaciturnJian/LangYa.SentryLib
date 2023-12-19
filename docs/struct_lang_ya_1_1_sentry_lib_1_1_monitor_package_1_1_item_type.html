@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.2</span>
+   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A robot lib by LangYa.Sango mostly for softwares on sentry</div>
   </td>
@@ -99,6 +99,9 @@ $(document).ready(function(){initNavTree('struct_lang_ya_1_1_sentry_lib_1_1_moni
 </div><!--header-->
 <div class="contents">
 
+<p>监视器的单个物品。 定义了监视器的基本物品格式，可以转换为Json格式和控制台格式。 因为实在找不到合适的名字所以放在了 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_monitor.html" title="一个用来格式化数据的显示器。 通过右移 &gt;&gt; 运算符，可以将数据包传出到流中。 通过左移 &lt;&lt; 运算符，可以将数据包直接传入显示器，显示器会自动解析数据包并显示。">Monitor</a> 里面。 实际使用起来对此类型几乎无感。  
+ <a href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type.html#details">更多...</a></p>
+
 <p><code>#include &lt;<a class="el" href="">MonitorPackage.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> LangYa::SentryLib::MonitorPackage::ItemType 的协作图:</div>
@@ -107,7 +110,7 @@ $(document).ready(function(){initNavTree('struct_lang_ya_1_1_sentry_lib_1_1_moni
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type__coll__graph.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type_coll__map" alt="Collaboration graph"/></div>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type_coll__map" id="a_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type_coll__map">
-<area shape="rect" title=" " alt="" coords="5,188,182,231"/>
+<area shape="rect" title="监视器的单个物品。 定义了监视器的基本物品格式，可以转换为Json格式和控制台格式。 因为实在找不到合适的名字所以放在了 Monitor 里面。 实际使用起来对此类型几乎无感。" alt="" coords="5,188,182,231"/>
 <area shape="rect" title=" " alt="" coords="54,97,133,124"/>
 <area shape="poly" title=" " alt="" coords="96,140,96,187,91,187,91,140"/>
 <area shape="rect" title=" " alt="" coords="31,5,156,48"/>
@@ -117,26 +120,33 @@ $(document).ready(function(){initNavTree('struct_lang_ya_1_1_sentry_lib_1_1_moni
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a3679f9cdec43f105fd01b1760d5f8bc4" id="r_a3679f9cdec43f105fd01b1760d5f8bc4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type.html#a3679f9cdec43f105fd01b1760d5f8bc4">ItemType</a> ()=default</td></tr>
-<tr class="separator:a3679f9cdec43f105fd01b1760d5f8bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5eb86b2e07216cca5fa45d218ad7dd0c" id="r_a5eb86b2e07216cca5fa45d218ad7dd0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type.html#a5eb86b2e07216cca5fa45d218ad7dd0c">ItemType</a> (std::string name, const long long value)</td></tr>
-<tr class="separator:a5eb86b2e07216cca5fa45d218ad7dd0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7349e8dd1c7fcf54cf5790d2174917c8" id="r_a7349e8dd1c7fcf54cf5790d2174917c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type.html#a7349e8dd1c7fcf54cf5790d2174917c8">ItemType</a> ()</td></tr>
+<tr class="memdesc:a7349e8dd1c7fcf54cf5790d2174917c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认构造函数。 指定名称为 ItemName ，值为 0 。  <br /></td></tr>
+<tr class="separator:a7349e8dd1c7fcf54cf5790d2174917c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab8b78fe20e85040122fd3c8f521df8f" id="r_aab8b78fe20e85040122fd3c8f521df8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type.html#aab8b78fe20e85040122fd3c8f521df8f">ItemType</a> (std::string name, long long value)</td></tr>
+<tr class="memdesc:aab8b78fe20e85040122fd3c8f521df8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">给定参数构造物品。  <br /></td></tr>
+<tr class="separator:aab8b78fe20e85040122fd3c8f521df8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f1cd908897e89062722a3ac5543843e" id="r_a8f1cd908897e89062722a3ac5543843e"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type.html#a8f1cd908897e89062722a3ac5543843e">FormatToConsole</a> (std::ostream &amp;stream) const</td></tr>
+<tr class="memdesc:a8f1cd908897e89062722a3ac5543843e"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用流将物品转换为在屏幕上打印的格式。 格式为 Name: Value(长度为10) 。 末尾没有换行符。  <br /></td></tr>
 <tr class="separator:a8f1cd908897e89062722a3ac5543843e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dd7a7c9e96a776a71bab5464b2c7a0c" id="r_a1dd7a7c9e96a776a71bab5464b2c7a0c"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type.html#a1dd7a7c9e96a776a71bab5464b2c7a0c">FormatToJson</a> (std::ostream &amp;stream) const</td></tr>
+<tr class="memdesc:a1dd7a7c9e96a776a71bab5464b2c7a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用流将物品转换为 Json 格式。 格式为 {"Name":"&lt;ItemName&gt;","Value":"&lt;ItemValue&gt;"} 。 末尾没有换行符。  <br /></td></tr>
 <tr class="separator:a1dd7a7c9e96a776a71bab5464b2c7a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
 <tr class="memitem:a9a4c622c4eb5e762bd5b52c65b94c8fb" id="r_a9a4c622c4eb5e762bd5b52c65b94c8fb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type.html#a9a4c622c4eb5e762bd5b52c65b94c8fb">Name</a> {&quot;ItemName&quot;}</td></tr>
+<tr class="memdesc:a9a4c622c4eb5e762bd5b52c65b94c8fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">物品的名称。 在显示器上，显示的物品名称，最好不要包括特殊字符或中文字符。  <br /></td></tr>
 <tr class="separator:a9a4c622c4eb5e762bd5b52c65b94c8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5502b011ed5447bfa9cc0f078c5949a6" id="r_a5502b011ed5447bfa9cc0f078c5949a6"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type.html#a5502b011ed5447bfa9cc0f078c5949a6">Value</a> {0}</td></tr>
+<tr class="memdesc:a5502b011ed5447bfa9cc0f078c5949a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">物品的数值。 在显示器上显示的物品数值，注意只能是 long long 类型。  <br /></td></tr>
 <tr class="separator:a5502b011ed5447bfa9cc0f078c5949a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"></div><h2 class="groupheader">构造及析构函数说明</h2>
-<a id="a3679f9cdec43f105fd01b1760d5f8bc4" name="a3679f9cdec43f105fd01b1760d5f8bc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3679f9cdec43f105fd01b1760d5f8bc4">&#9670;&#160;</a></span>ItemType() <span class="overload">[1/2]</span></h2>
+<div class="textblock"><p>监视器的单个物品。 定义了监视器的基本物品格式，可以转换为Json格式和控制台格式。 因为实在找不到合适的名字所以放在了 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_monitor.html" title="一个用来格式化数据的显示器。 通过右移 &gt;&gt; 运算符，可以将数据包传出到流中。 通过左移 &lt;&lt; 运算符，可以将数据包直接传入显示器，显示器会自动解析数据包并显示。">Monitor</a> 里面。 实际使用起来对此类型几乎无感。 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a7349e8dd1c7fcf54cf5790d2174917c8" name="a7349e8dd1c7fcf54cf5790d2174917c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7349e8dd1c7fcf54cf5790d2174917c8">&#9670;&#160;</a></span>ItemType() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -158,16 +168,15 @@ Public 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>默认构造函数。 指定名称为 ItemName ，值为 0 。 </p>
+
 </div>
 </div>
-<a id="a5eb86b2e07216cca5fa45d218ad7dd0c" name="a5eb86b2e07216cca5fa45d218ad7dd0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5eb86b2e07216cca5fa45d218ad7dd0c">&#9670;&#160;</a></span>ItemType() <span class="overload">[2/2]</span></h2>
+<a id="aab8b78fe20e85040122fd3c8f521df8f" name="aab8b78fe20e85040122fd3c8f521df8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab8b78fe20e85040122fd3c8f521df8f">&#9670;&#160;</a></span>ItemType() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">LangYa::SentryLib::MonitorPackage::ItemType::ItemType </td>
@@ -178,7 +187,7 @@ Public 属性</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const long long&#160;</td>
+          <td class="paramtype">long long&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -187,12 +196,16 @@ Public 属性</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>给定参数构造物品。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>物品名称，最好不要包括特殊字符或中文字符。 </td></tr>
+    <tr><td class="paramname">value</td><td>物品值，是一个 long long。 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -202,9 +215,6 @@ Public 属性</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::ostream &amp; LangYa::SentryLib::MonitorPackage::ItemType::FormatToConsole </td>
@@ -214,12 +224,16 @@ Public 属性</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>使用流将物品转换为在屏幕上打印的格式。 格式为 Name: Value(长度为10) 。 末尾没有换行符。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>流对象。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>参数中传入的流对象。 </dd></dl>
 
 </div>
 </div>
@@ -228,9 +242,6 @@ Public 属性</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::ostream &amp; LangYa::SentryLib::MonitorPackage::ItemType::FormatToJson </td>
@@ -240,12 +251,16 @@ Public 属性</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>使用流将物品转换为 Json 格式。 格式为 {"Name":"&lt;ItemName&gt;","Value":"&lt;ItemValue&gt;"} 。 末尾没有换行符。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>流对象。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>参数中传入的流对象。 </dd></dl>
 
 </div>
 </div>
@@ -262,6 +277,8 @@ Public 属性</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>物品的名称。 在显示器上，显示的物品名称，最好不要包括特殊字符或中文字符。 </p>
+
 </div>
 </div>
 <a id="a5502b011ed5447bfa9cc0f078c5949a6" name="a5502b011ed5447bfa9cc0f078c5949a6"></a>
@@ -276,10 +293,13 @@ Public 属性</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>物品的数值。 在显示器上显示的物品数值，注意只能是 long long 类型。 </p>
+
 </div>
 </div>
 <hr/>该结构体的文档由以下文件生成:<ul>
 <li>Headers/LangYa/SentryLib/Application/<a class="el" href="">MonitorPackage.hpp</a></li>
+<li>Sources/<a class="el" href="">MonitorPackage.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -287,7 +307,7 @@ Public 属性</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_lang_ya.html">LangYa</a></li><li class="navelem"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">SentryLib</a></li><li class="navelem"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html">MonitorPackage</a></li><li class="navelem"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type.html">ItemType</a></li>
-    <li class="footer">生成于 2023年 十二月 13日 星期三 20:05:23 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 19日 星期二 23:40:51 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

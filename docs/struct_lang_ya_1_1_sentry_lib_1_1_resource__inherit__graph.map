@@ -1,5 +1,5 @@
 <map id="LangYa::SentryLib::Resource&lt; TContent &gt;" name="LangYa::SentryLib::Resource&lt; TContent &gt;">
-<area shape="rect" id="Node000001" title="Represent a resource with flag (usage indicators), usually this resource is used in multi&#45;threads...." alt="" coords="27,5,179,48"/>
+<area shape="rect" id="Node000001" title="代表一个在多线程中流通的资源。 使用内部的 Flag 为资源上锁。" alt="" coords="27,5,179,48"/>
 <area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_resource.html" title=" " alt="" coords="5,128,201,187"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,63,106,127,100,127,100,63"/>
 </map>

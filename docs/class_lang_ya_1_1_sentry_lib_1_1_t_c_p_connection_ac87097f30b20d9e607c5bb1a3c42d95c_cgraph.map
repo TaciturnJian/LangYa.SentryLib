@@ -1,5 +1,5 @@
 <map id="LangYa::SentryLib::TCPConnection::Read" name="LangYa::SentryLib::TCPConnection::Read">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,155,48"/>
+<area shape="rect" id="Node000001" title="读取字节（最多读取 view 的所有字节）。" alt="" coords="5,5,155,48"/>
 <area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#ab03cdbd7de9a9347dd56d11b6b94f4ab" title="将此类型转化为 boost::asio::mutable_buffer" alt="" coords="203,5,354,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,24,187,24,187,29,155,29"/>
 </map>

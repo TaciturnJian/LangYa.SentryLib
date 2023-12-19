@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LangYa.SentryLib: Testers/ExceptionHandler.cpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.3</span>
+   </div>
+   <div id="projectbrief">A robot lib by LangYa.Sango mostly for softwares on sentry</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_exception_handler_8cpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#concepts">概念</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">ExceptionHandler.cpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;ostream&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;spdlog/spdlog.h&gt;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> ExceptionHandler.cpp 的引用(Include)关系图:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_exception_handler_8cpp__incl.png" border="0" usemap="#a_testers_2_exception_handler_8cpp" alt=""/></div>
+<map name="a_testers_2_exception_handler_8cpp" id="a_testers_2_exception_handler_8cpp">
+<area shape="rect" title=" " alt="" coords="210,5,405,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,82,107"/>
+<area shape="poly" title=" " alt="" coords="262,35,97,80,96,75,261,30"/>
+<area shape="rect" title=" " alt="" coords="105,80,177,107"/>
+<area shape="poly" title=" " alt="" coords="280,35,185,76,183,71,277,30"/>
+<area shape="rect" title=" " alt="" coords="201,80,257,107"/>
+<area shape="poly" title=" " alt="" coords="296,35,255,71,252,67,292,31"/>
+<area shape="rect" title=" " alt="" coords="281,80,334,107"/>
+<area shape="poly" title=" " alt="" coords="310,33,310,64,305,64,305,33"/>
+<area shape="rect" title=" " alt="" coords="359,80,427,107"/>
+<area shape="poly" title=" " alt="" coords="324,31,369,68,365,72,321,35"/>
+<area shape="rect" title=" " alt="" coords="451,80,508,107"/>
+<area shape="poly" title=" " alt="" coords="338,30,438,72,436,77,336,35"/>
+<area shape="rect" title=" " alt="" coords="533,80,645,107"/>
+<area shape="poly" title=" " alt="" coords="357,30,526,73,524,78,356,35"/>
+</map>
+</div>
+</div>
+<p><a href="">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_named_item.html">NamedItem</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manager.html">Manager&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_action_info.html">ActionInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_action.html">Action</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_single_action.html">SingleAction</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_action_group.html">ActionGroup</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="concepts" name="concepts"></a>
+概念</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="concept_t_named_item.html">TNamedItem</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ab86d4a5de9510d7271236631b3952fa6" id="r_ab86d4a5de9510d7271236631b3952fa6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_exception_handler_8cpp.html#ab86d4a5de9510d7271236631b3952fa6">RawActionFunction</a> = void()</td></tr>
+<tr class="separator:ab86d4a5de9510d7271236631b3952fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aa8ef38cb65612b7d5959d6e4efff2d" id="r_a6aa8ef38cb65612b7d5959d6e4efff2d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_exception_handler_8cpp.html#a6aa8ef38cb65612b7d5959d6e4efff2d">RawActionFunctionPointer</a> = <a class="el" href="_exception_handler_8cpp.html#ab86d4a5de9510d7271236631b3952fa6">RawActionFunction</a> *</td></tr>
+<tr class="separator:a6aa8ef38cb65612b7d5959d6e4efff2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dcae8290b937bf734550bda1e0d0f92" id="r_a5dcae8290b937bf734550bda1e0d0f92"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_exception_handler_8cpp.html#a5dcae8290b937bf734550bda1e0d0f92">RawActionFunctionPointerList</a> = <a class="el" href="_exception_handler_8cpp.html#ab86d4a5de9510d7271236631b3952fa6">RawActionFunction</a> *</td></tr>
+<tr class="separator:a5dcae8290b937bf734550bda1e0d0f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70dfede174de564f648beb07457ae958" id="r_a70dfede174de564f648beb07457ae958"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_exception_handler_8cpp.html#a70dfede174de564f648beb07457ae958">ActionFunction</a> = std::function&lt; <a class="el" href="_exception_handler_8cpp.html#ab86d4a5de9510d7271236631b3952fa6">RawActionFunction</a> &gt;</td></tr>
+<tr class="separator:a70dfede174de564f648beb07457ae958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb1920196aaff3d36b27f3cc1f9c2e81" id="r_adb1920196aaff3d36b27f3cc1f9c2e81"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_exception_handler_8cpp.html#adb1920196aaff3d36b27f3cc1f9c2e81">ActionFunctionList</a> = std::vector&lt; <a class="el" href="_exception_handler_8cpp.html#a70dfede174de564f648beb07457ae958">ActionFunction</a> &gt;</td></tr>
+<tr class="separator:adb1920196aaff3d36b27f3cc1f9c2e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6321e86c8162c53b9183fc8edee4af3" id="r_ac6321e86c8162c53b9183fc8edee4af3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_exception_handler_8cpp.html#ac6321e86c8162c53b9183fc8edee4af3">MaxTimeCost</a> = unsigned long long</td></tr>
+<tr class="separator:ac6321e86c8162c53b9183fc8edee4af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7016e5c2aaa346a15ddd90dce5cd2003" id="r_a7016e5c2aaa346a15ddd90dce5cd2003"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_exception_handler_8cpp.html#a7016e5c2aaa346a15ddd90dce5cd2003">Index</a> = unsigned long long</td></tr>
+<tr class="separator:a7016e5c2aaa346a15ddd90dce5cd2003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ad9b9fff69f2f6bdccfd3f8e694858021" id="r_ad9b9fff69f2f6bdccfd3f8e694858021"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_exception_handler_8cpp.html#ad9b9fff69f2f6bdccfd3f8e694858021">EmptyFunction</a> ()</td></tr>
+<tr class="separator:ad9b9fff69f2f6bdccfd3f8e694858021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b0010ae5774b1b69fd61264d906a0b" id="r_a83b0010ae5774b1b69fd61264d906a0b"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_exception_handler_8cpp.html#a83b0010ae5774b1b69fd61264d906a0b">GenerateAction</a> (std::chrono::milliseconds time, int index)</td></tr>
+<tr class="separator:a83b0010ae5774b1b69fd61264d906a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_exception_handler_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">类型定义说明</h2>
+<a id="a70dfede174de564f648beb07457ae958" name="a70dfede174de564f648beb07457ae958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70dfede174de564f648beb07457ae958">&#9670;&#160;</a></span>ActionFunction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="_exception_handler_8cpp.html#a70dfede174de564f648beb07457ae958">ActionFunction</a> =  std::function&lt;<a class="el" href="_exception_handler_8cpp.html#ab86d4a5de9510d7271236631b3952fa6">RawActionFunction</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb1920196aaff3d36b27f3cc1f9c2e81" name="adb1920196aaff3d36b27f3cc1f9c2e81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb1920196aaff3d36b27f3cc1f9c2e81">&#9670;&#160;</a></span>ActionFunctionList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="_exception_handler_8cpp.html#adb1920196aaff3d36b27f3cc1f9c2e81">ActionFunctionList</a> =  std::vector&lt;<a class="el" href="_exception_handler_8cpp.html#a70dfede174de564f648beb07457ae958">ActionFunction</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7016e5c2aaa346a15ddd90dce5cd2003" name="a7016e5c2aaa346a15ddd90dce5cd2003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7016e5c2aaa346a15ddd90dce5cd2003">&#9670;&#160;</a></span>Index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="_exception_handler_8cpp.html#a7016e5c2aaa346a15ddd90dce5cd2003">Index</a> =  unsigned long long</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6321e86c8162c53b9183fc8edee4af3" name="ac6321e86c8162c53b9183fc8edee4af3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6321e86c8162c53b9183fc8edee4af3">&#9670;&#160;</a></span>MaxTimeCost</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="_exception_handler_8cpp.html#ac6321e86c8162c53b9183fc8edee4af3">MaxTimeCost</a> =  unsigned long long</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab86d4a5de9510d7271236631b3952fa6" name="ab86d4a5de9510d7271236631b3952fa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab86d4a5de9510d7271236631b3952fa6">&#9670;&#160;</a></span>RawActionFunction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="_exception_handler_8cpp.html#ab86d4a5de9510d7271236631b3952fa6">RawActionFunction</a> =  void()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6aa8ef38cb65612b7d5959d6e4efff2d" name="a6aa8ef38cb65612b7d5959d6e4efff2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aa8ef38cb65612b7d5959d6e4efff2d">&#9670;&#160;</a></span>RawActionFunctionPointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="_exception_handler_8cpp.html#a6aa8ef38cb65612b7d5959d6e4efff2d">RawActionFunctionPointer</a> =  <a class="el" href="_exception_handler_8cpp.html#ab86d4a5de9510d7271236631b3952fa6">RawActionFunction</a>*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5dcae8290b937bf734550bda1e0d0f92" name="a5dcae8290b937bf734550bda1e0d0f92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dcae8290b937bf734550bda1e0d0f92">&#9670;&#160;</a></span>RawActionFunctionPointerList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="_exception_handler_8cpp.html#a5dcae8290b937bf734550bda1e0d0f92">RawActionFunctionPointerList</a> =  <a class="el" href="_exception_handler_8cpp.html#ab86d4a5de9510d7271236631b3952fa6">RawActionFunction</a>*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="ad9b9fff69f2f6bdccfd3f8e694858021" name="ad9b9fff69f2f6bdccfd3f8e694858021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9b9fff69f2f6bdccfd3f8e694858021">&#9670;&#160;</a></span>EmptyFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EmptyFunction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a83b0010ae5774b1b69fd61264d906a0b" name="a83b0010ae5774b1b69fd61264d906a0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83b0010ae5774b1b69fd61264d906a0b">&#9670;&#160;</a></span>GenerateAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt; void()&gt; GenerateAction </td>
+          <td>(</td>
+          <td class="paramtype">std::chrono::milliseconds&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_exception_handler_8cpp_a83b0010ae5774b1b69fd61264d906a0b_icgraph.png" border="0" usemap="#a_exception_handler_8cpp_a83b0010ae5774b1b69fd61264d906a0b_icgraph" alt=""/></div>
+<map name="a_exception_handler_8cpp_a83b0010ae5774b1b69fd61264d906a0b_icgraph" id="a_exception_handler_8cpp_a83b0010ae5774b1b69fd61264d906a0b_icgraph">
+<area shape="rect" title=" " alt="" coords="103,5,214,32"/>
+<area shape="rect" href="_exception_handler_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_exception_handler_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.png" border="0" usemap="#a_exception_handler_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" alt=""/></div>
+<map name="a_exception_handler_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" id="a_exception_handler_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,55,57"/>
+<area shape="rect" href="class_action_group.html#af64ccd182dc0f89150ea91f16abee9ad" title=" " alt="" coords="103,5,252,32"/>
+<area shape="poly" title=" " alt="" coords="55,37,87,32,88,37,56,42"/>
+<area shape="rect" href="_exception_handler_8cpp.html#a83b0010ae5774b1b69fd61264d906a0b" title=" " alt="" coords="122,56,233,83"/>
+<area shape="poly" title=" " alt="" coords="56,46,107,55,106,60,55,51"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_45e67ffd9957cb1794b0765c53759ee1.html">Testers</a></li><li class="navelem"><a class="el" href="_exception_handler_8cpp.html">ExceptionHandler.cpp</a></li>
+    <li class="footer">生成于 2023年 十二月 19日 星期二 23:40:51 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

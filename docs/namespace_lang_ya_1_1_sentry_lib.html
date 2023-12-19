@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.2</span>
+   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A robot lib by LangYa.Sango mostly for softwares on sentry</div>
   </td>
@@ -95,9 +95,7 @@ $(document).ready(function(){initNavTree('namespace_lang_ya_1_1_sentry_lib.html'
 <a href="#nested-classes">类</a> &#124;
 <a href="#concepts">概念</a> &#124;
 <a href="#typedef-members">类型定义</a> &#124;
-<a href="#enum-members">枚举</a> &#124;
-<a href="#func-members">函数</a> &#124;
-<a href="#var-members">变量</a>  </div>
+<a href="#enum-members">枚举</a>  </div>
   <div class="headertitle"><div class="title">LangYa::SentryLib 命名空间参考</div></div>
 </div><!--header-->
 <div class="contents">
@@ -105,7 +103,7 @@ $(document).ready(function(){initNavTree('namespace_lang_ya_1_1_sentry_lib.html'
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 类</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html">ApplicationInfo</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">一些简单的应用程序信息，包装了简单的信息输出方法。 主要利用到 stream , spdlog 和 fmt 等将保存的信息格式化输出到控制台。 一方面使程序代码更美观，另一方面也方便开发者在调试时（日志中）查看程序的一些基本信息。 使用例：  <a href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html#details">更多...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">一些简单的应用程序信息，包装了简单的信息输出方法。 使用 stream , spdlog 和 fmt 等将保存的信息格式化输出到控制台。 在使程序代码更美观的同时，方便开发者在调试时（日志中）查看程序的一些基本信息。  <a href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_armor_plate_info.html">ArmorPlateInfo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表一个装甲板的信息。 内部使用 Position3F 表示位置，使用 Vector3F 表示法向量。  <a href="struct_lang_ya_1_1_sentry_lib_1_1_armor_plate_info.html#details">更多...</a><br /></td></tr>
@@ -113,19 +111,35 @@ $(document).ready(function(){initNavTree('namespace_lang_ya_1_1_sentry_lib.html'
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_auto_aim_module.html">AutoAimModule</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">辅助瞄准模块，提供机器人视觉相关内容  <a href="class_lang_ya_1_1_sentry_lib_1_1_auto_aim_module.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_camera_device.html">CameraDevice</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表一个相机设备  <a href="class_lang_ya_1_1_sentry_lib_1_1_camera_device.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_collection.html">Collection</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">我也不知道为什么这个会出现在这里，这不应该是语言层面的接口吗？  <a href="class_lang_ya_1_1_sentry_lib_1_1_collection.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html">CommandLineArguments</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">记录控制台参数。 本质就是包装了一层的main函数的参数，方便使用。  <a href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_configurator.html">Configurator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_connection.html">Connection</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表一个类似 IO 的连接，只提供基本的读写和开启/关闭连接的功能。  <a href="class_lang_ya_1_1_sentry_lib_1_1_connection.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html">ConsoleManipulator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">控制台操作器 封装了许多控制台的常用操作。  <a href="class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_content_acceptor.html">ContentAcceptor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_content_provider.html">ContentProvider</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_deserializable_content.html">DeserializableContent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表一种可以反序列化的内容。 此接口提供了反序列时所需要的两个函数： 获取反序列化资源的最小大小，以及从缓冲区中反序列化资源。  <a href="class_lang_ya_1_1_sentry_lib_1_1_deserializable_content.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_deserializable_content_sensor.html">DeserializableContentSensor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表一个机器人传感器。 TODO 注释与文档 Tick this device so it will update sensor data from connection, read the data from its members.  <a href="class_lang_ya_1_1_sentry_lib_1_1_deserializable_content_sensor.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_device.html">Device</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表一种虚拟的设备，它需要有一个外部循环去调用。 大多数使用情况都是在一个线程中调用 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_device.html#aac035948b3e832729ec3ad053bbdbcdc" title="调用此方法，设备会在短时间内阻塞线程完成工作。">Tick()</a> 方法。  <a href="class_lang_ya_1_1_sentry_lib_1_1_device.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html">LangYaConnection</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表一个使用狼牙通信方式的连接，用来装饰一个连接。 真正的数据发送过程在下面的函数中  <a href="class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html#details">更多...</a><br /></td></tr>
@@ -145,10 +159,10 @@ $(document).ready(function(){initNavTree('namespace_lang_ya_1_1_sentry_lib.html'
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表一个内存的视图，保存内存的头指针和长度，供其他读写。 不能保证作为传入的参数时得到的内存视图是有效的，因此作为函数参数时，这个类的基础是对调用者的信任。 类中提供了有关内存的操作函数，CopyTo 和 ReadFrom ， 它们都是对 memcpy 的封装，但是会使用内存视图中的数据检查调用 memcpy 的参数。  <a href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_monitor.html">Monitor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">一个用来格式化数据的显示器。 通过右移 &gt;&gt; 运算符，可以将数据包传出到流中。 通过左移 &lt;&lt; 运算符，可以将数据包直接传入显示器，显示器会自动解析数据包并显示。  <a href="class_lang_ya_1_1_sentry_lib_1_1_monitor.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html">MonitorPackage</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_monitor_sender.html">MonitorSender</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">监视器包裹，提供格式化  <a href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html">PingPongBuffer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">一个二重字节缓冲区，用于交换数据并保证最终得到的数据一定以 '!' 开头。  <a href="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html#details">更多...</a><br /></td></tr>
@@ -161,9 +175,12 @@ $(document).ready(function(){initNavTree('namespace_lang_ya_1_1_sentry_lib.html'
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_position3.html">Position3</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_resource.html">Resource</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represent a resource with flag (usage indicators), usually this resource is used in multi-threads. If you want to get the content, use '=' operator to copy the memory. The memory may be reading/writing in another thread!  <a href="struct_lang_ya_1_1_sentry_lib_1_1_resource.html#details">更多...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表一个在多线程中流通的资源。 使用内部的 Flag 为资源上锁。  <a href="struct_lang_ya_1_1_sentry_lib_1_1_resource.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html">SentryData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html">SerializableContent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表一个可被序列化的东西。 可被序列化即信息可以无损地转换为二进制数据。 一般将内容序列化后，将其写入文件或者网络传输，可以减轻读写传输等IO操作的压力。  <a href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content_controller.html">SerializableContentController</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表一个机器人控制器 修改此控制器的变量并在合适的时机调用  <a href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content_controller.html#details">更多...</a><br /></td></tr>
@@ -175,12 +192,18 @@ $(document).ready(function(){initNavTree('namespace_lang_ya_1_1_sentry_lib.html'
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表系统中的一个串口，本质是  <a href="class_lang_ya_1_1_sentry_lib_1_1_serial_port.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_serial_port_info.html">SerialPortInfo</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The essential component for building a serial port. Contains the information of a serial port connection.  <a href="struct_lang_ya_1_1_sentry_lib_1_1_serial_port_info.html#details">更多...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">构建串口连接的必要内容。 包含了构建串口的必要信息，许多复杂设置都略去了。 请配合下面的类使用。  <a href="struct_lang_ya_1_1_sentry_lib_1_1_serial_port_info.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_string_format_by_stream.html">StringFormatByStream</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_t_c_p_connection.html">TCPConnection</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_time_stamp.html">TimeStamp</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表通用的时间戳  <a href="struct_lang_ya_1_1_sentry_lib_1_1_time_stamp.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_tiny_json_stream.html">TinyJsonStream</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_tiny_t_c_p_server.html">TinyTCPServer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_triple_buffer.html">TripleBuffer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_triple_buffer.html" title="TripleBuffer is a thread-safe buffer that can be used to transfer data between threads....">TripleBuffer</a> is a thread-safe buffer that can be used to transfer data between threads. Construct this buffer by sizeof(Content) * 3.  <a href="class_lang_ya_1_1_sentry_lib_1_1_triple_buffer.html#details">更多...</a><br /></td></tr>
@@ -269,7 +292,7 @@ $(document).ready(function(){initNavTree('namespace_lang_ya_1_1_sentry_lib.html'
 , <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a36d2882e7661f30e5caf0f74c85df62dace2c8aed9c2fa0cfbed56cbda4d8bf07">Empty</a> = 0
 , <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a36d2882e7661f30e5caf0f74c85df62da78945de8de090e90045d299651a68a9b">Available</a> = 1
  }</td></tr>
-<tr class="memdesc:a36d2882e7661f30e5caf0f74c85df62d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the status of resources.  <a href="namespace_lang_ya_1_1_sentry_lib.html#a36d2882e7661f30e5caf0f74c85df62d">更多...</a><br /></td></tr>
+<tr class="memdesc:a36d2882e7661f30e5caf0f74c85df62d"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表资源的状态。  <a href="namespace_lang_ya_1_1_sentry_lib.html#a36d2882e7661f30e5caf0f74c85df62d">更多...</a><br /></td></tr>
 <tr class="separator:a36d2882e7661f30e5caf0f74c85df62d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7259725b9fc06bee926bd34a470aa18" id="r_af7259725b9fc06bee926bd34a470aa18"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#af7259725b9fc06bee926bd34a470aa18">UnitTeam</a> : char { <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#af7259725b9fc06bee926bd34a470aa18aee38e4d5dd68c4e440825018d549cb47">Red</a> = -1
 , <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#af7259725b9fc06bee926bd34a470aa18ae9bb5320b3890b6747c91b5a71ae5a01">Neutral</a> = 0
@@ -307,73 +330,6 @@ $(document).ready(function(){initNavTree('namespace_lang_ya_1_1_sentry_lib.html'
  }</td></tr>
 <tr class="memdesc:a0016e34c68ca1078acf541153a27177b"><td class="mdescLeft">&#160;</td><td class="mdescRight">比赛时的单位种类的编号，可以使用位运算快速操作此类型。  <a href="namespace_lang_ya_1_1_sentry_lib.html#a0016e34c68ca1078acf541153a27177b">更多...</a><br /></td></tr>
 <tr class="separator:a0016e34c68ca1078acf541153a27177b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-函数</h2></td></tr>
-<tr class="memitem:abbe1387985ec3c0564ed05c9480e1863" id="r_abbe1387985ec3c0564ed05c9480e1863"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#abbe1387985ec3c0564ed05c9480e1863">GetPicture</a> (PictureType &amp;picture)=0</td></tr>
-<tr class="separator:abbe1387985ec3c0564ed05c9480e1863"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a867d0ab0a61dd949340f0b83e40f0c14" id="r_a867d0ab0a61dd949340f0b83e40f0c14"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a867d0ab0a61dd949340f0b83e40f0c14">~Collection</a> ()=default</td></tr>
-<tr class="separator:a867d0ab0a61dd949340f0b83e40f0c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adce8ccc8eef06ac1e63da8c430e6d1ea" id="r_adce8ccc8eef06ac1e63da8c430e6d1ea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#adce8ccc8eef06ac1e63da8c430e6d1ea">AddItem</a> (const ItemType &amp;item)=0</td></tr>
-<tr class="separator:adce8ccc8eef06ac1e63da8c430e6d1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a825f087beeaf696e908b1694fb473e80" id="r_a825f087beeaf696e908b1694fb473e80"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a825f087beeaf696e908b1694fb473e80">RemoveItem</a> (const ItemType &amp;item)=0</td></tr>
-<tr class="separator:a825f087beeaf696e908b1694fb473e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56f53af2b3a1a09be7d690d3a656ab20" id="r_a56f53af2b3a1a09be7d690d3a656ab20"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a56f53af2b3a1a09be7d690d3a656ab20">ContainItem</a> (const ItemType &amp;item)=0</td></tr>
-<tr class="separator:a56f53af2b3a1a09be7d690d3a656ab20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c635252bf3eced5c341b97f20a8a027" id="r_a9c635252bf3eced5c341b97f20a8a027"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a9c635252bf3eced5c341b97f20a8a027">IsConnected</a> ()=0</td></tr>
-<tr class="memdesc:a9c635252bf3eced5c341b97f20a8a027"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取是否连接到目标。  <br /></td></tr>
-<tr class="separator:a9c635252bf3eced5c341b97f20a8a027"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79f4e7d110322207f06f9e439cfdb267" id="r_a79f4e7d110322207f06f9e439cfdb267"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a79f4e7d110322207f06f9e439cfdb267">Disconnect</a> ()=0</td></tr>
-<tr class="memdesc:a79f4e7d110322207f06f9e439cfdb267"><td class="mdescLeft">&#160;</td><td class="mdescRight">从目标断开连接。  <br /></td></tr>
-<tr class="separator:a79f4e7d110322207f06f9e439cfdb267"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc40251a566cd246949976a93060735c" id="r_acc40251a566cd246949976a93060735c"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#acc40251a566cd246949976a93060735c">ToString</a> ()</td></tr>
-<tr class="memdesc:acc40251a566cd246949976a93060735c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取此连接的字符串格式的信息，通常使用了 fmt 库，性能不算太好。  <br /></td></tr>
-<tr class="separator:acc40251a566cd246949976a93060735c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f5e637b2ce38d6942c0d3a57ab076ad" id="r_a7f5e637b2ce38d6942c0d3a57ab076ad"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a7f5e637b2ce38d6942c0d3a57ab076ad">GetDeserializationResourceSize</a> () const =0</td></tr>
-<tr class="memdesc:a7f5e637b2ce38d6942c0d3a57ab076ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取此内容的反序列化资源大小，大多数时候就是此内容的内存视图大小。  <br /></td></tr>
-<tr class="separator:a7f5e637b2ce38d6942c0d3a57ab076ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a497aaaadfd4be9fc5072075bb2b21776" id="r_a497aaaadfd4be9fc5072075bb2b21776"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a497aaaadfd4be9fc5072075bb2b21776">Deserialize</a> (const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;buffer)=0</td></tr>
-<tr class="memdesc:a497aaaadfd4be9fc5072075bb2b21776"><td class="mdescLeft">&#160;</td><td class="mdescRight">从缓冲区中反序列化资源。  <br /></td></tr>
-<tr class="separator:a497aaaadfd4be9fc5072075bb2b21776"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2c19e9f9141be71118b7ca839b164ba" id="r_ae2c19e9f9141be71118b7ca839b164ba"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ae2c19e9f9141be71118b7ca839b164ba">Tick</a> ()=0</td></tr>
-<tr class="memdesc:ae2c19e9f9141be71118b7ca839b164ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">调用此方法，设备会在短时间内阻塞线程完成工作。  <br /></td></tr>
-<tr class="separator:ae2c19e9f9141be71118b7ca839b164ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7c04397e8375dbc607747d639b22d8e" id="r_aa7c04397e8375dbc607747d639b22d8e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#aa7c04397e8375dbc607747d639b22d8e">Open</a> ()=0</td></tr>
-<tr class="memdesc:aa7c04397e8375dbc607747d639b22d8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">在设备的系统资源已经分配完毕后开启设备。 如果没有获取需要的资源，则往往设备会开启失败。  <br /></td></tr>
-<tr class="separator:aa7c04397e8375dbc607747d639b22d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0983582ffafeafbc6c7f5cb9d6cd3f3" id="r_aa0983582ffafeafbc6c7f5cb9d6cd3f3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#aa0983582ffafeafbc6c7f5cb9d6cd3f3">Close</a> ()=0</td></tr>
-<tr class="memdesc:aa0983582ffafeafbc6c7f5cb9d6cd3f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁此设备占用的系统资源。 此函数需要确保设备关闭或者在无法关闭时报错，往往会阻塞当前线程。  <br /></td></tr>
-<tr class="separator:aa0983582ffafeafbc6c7f5cb9d6cd3f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99763d48f903f1a36ee95492ebb84671" id="r_a99763d48f903f1a36ee95492ebb84671"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a99763d48f903f1a36ee95492ebb84671">GetSerializationResultSize</a> () const =0</td></tr>
-<tr class="memdesc:a99763d48f903f1a36ee95492ebb84671"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取序列化结果的大小。 返回序列化结果的大小，如果值为0，那么这个东西不可以被序列化。（谁继承这个接口然后返回0啊？） 建议遇到这种情况时直接抛出异常。  <br /></td></tr>
-<tr class="separator:a99763d48f903f1a36ee95492ebb84671"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fd6d6a1654ae99db6f7e94a47245ef2" id="r_a7fd6d6a1654ae99db6f7e94a47245ef2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a7fd6d6a1654ae99db6f7e94a47245ef2">Serialize</a> (const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;buffer)=0</td></tr>
-<tr class="memdesc:a7fd6d6a1654ae99db6f7e94a47245ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">序列化此内容，将序列化的结果写入缓冲区。 当提供的缓冲区太小时，不会执行序列化操作，返回false。  <br /></td></tr>
-<tr class="separator:a7fd6d6a1654ae99db6f7e94a47245ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-变量</h2></td></tr>
-<tr class="memitem:aed41b646f090a8aea7ef7c3e2b428392" id="r_aed41b646f090a8aea7ef7c3e2b428392"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_sharpp_8hpp.html#ae935b23055599eaed6237dd4d1b16e07">SC_INTERFACE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#aed41b646f090a8aea7ef7c3e2b428392">CameraDevice</a></td></tr>
-<tr class="memdesc:aed41b646f090a8aea7ef7c3e2b428392"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表一个相机设备  <br /></td></tr>
-<tr class="separator:aed41b646f090a8aea7ef7c3e2b428392"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91cf7e2142fe436ff64e310e4e5dd777" id="r_a91cf7e2142fe436ff64e310e4e5dd777"><td class="memTemplParams" colspan="2">template&lt;typename TItem &gt; </td></tr>
-<tr class="memitem:a91cf7e2142fe436ff64e310e4e5dd777"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_c_sharpp_8hpp.html#ae935b23055599eaed6237dd4d1b16e07">SC_INTERFACE</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a91cf7e2142fe436ff64e310e4e5dd777">Collection</a></td></tr>
-<tr class="memdesc:a91cf7e2142fe436ff64e310e4e5dd777"><td class="mdescLeft">&#160;</td><td class="mdescRight">我也不知道为什么这个会出现在这里，这不应该是语言层面的接口吗？  <br /></td></tr>
-<tr class="separator:a91cf7e2142fe436ff64e310e4e5dd777"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7fbf750abad4ec779b73457a20b0f9c" id="r_ac7fbf750abad4ec779b73457a20b0f9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_sharpp_8hpp.html#ae935b23055599eaed6237dd4d1b16e07">SC_INTERFACE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ac7fbf750abad4ec779b73457a20b0f9c">Connection</a></td></tr>
-<tr class="memdesc:ac7fbf750abad4ec779b73457a20b0f9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表一个类似 IO 的连接，只提供基本的读写和开启/关闭连接的功能。 一个连接可以是一个文件，也可以是一个网络连接，也可以是一个内存映射文件。 只要能提供基于字节的读写方式，就可以被视为一个连接。 一般请使用智能指针来管理连接的生命周期（推荐 shared_ptr）。  <br /></td></tr>
-<tr class="separator:ac7fbf750abad4ec779b73457a20b0f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15d8bc87de629e83ef52d1ebf56c0a3a" id="r_a15d8bc87de629e83ef52d1ebf56c0a3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_sharpp_8hpp.html#ae935b23055599eaed6237dd4d1b16e07">SC_INTERFACE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a15d8bc87de629e83ef52d1ebf56c0a3a">DeserializableContent</a></td></tr>
-<tr class="memdesc:a15d8bc87de629e83ef52d1ebf56c0a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表一种可以反序列化的内容。 此接口提供了反序列时所需要的两个函数： 获取反序列化资源的最小大小，以及从缓冲区中反序列化资源。  <br /></td></tr>
-<tr class="separator:a15d8bc87de629e83ef52d1ebf56c0a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a350d508ec1dac2447f8aceb139c72c" id="r_a5a350d508ec1dac2447f8aceb139c72c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_sharpp_8hpp.html#ae935b23055599eaed6237dd4d1b16e07">SC_INTERFACE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a5a350d508ec1dac2447f8aceb139c72c">Device</a></td></tr>
-<tr class="memdesc:a5a350d508ec1dac2447f8aceb139c72c"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表一种虚拟的设备，它需要有一个外部循环去调用。 大多数使用情况都是在一个线程中调用 <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ae2c19e9f9141be71118b7ca839b164ba" title="调用此方法，设备会在短时间内阻塞线程完成工作。">Tick()</a> 方法。  <br /></td></tr>
-<tr class="separator:a5a350d508ec1dac2447f8aceb139c72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af044f96d2cd8deb25efe568036123ee9" id="r_af044f96d2cd8deb25efe568036123ee9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_sharpp_8hpp.html#ae935b23055599eaed6237dd4d1b16e07">SC_INTERFACE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#af044f96d2cd8deb25efe568036123ee9">Controller</a></td></tr>
-<tr class="separator:af044f96d2cd8deb25efe568036123ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9f49ebc9210cb1f99aac3d7e75e8333" id="r_ab9f49ebc9210cb1f99aac3d7e75e8333"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_sharpp_8hpp.html#ae935b23055599eaed6237dd4d1b16e07">SC_INTERFACE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ab9f49ebc9210cb1f99aac3d7e75e8333">SerializableContent</a></td></tr>
-<tr class="memdesc:ab9f49ebc9210cb1f99aac3d7e75e8333"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表一个可被序列化的东西。 可被序列化即信息可以无损地转换为二进制数据。 一般将内容序列化后，将其写入文件或者网络传输，可以减轻读写传输等IO操作的压力。  <br /></td></tr>
-<tr class="separator:ab9f49ebc9210cb1f99aac3d7e75e8333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">类型定义说明</h2>
 <a id="a8dda87ed0957d8867ea66452d11a0372" name="a8dda87ed0957d8867ea66452d11a0372"></a>
@@ -739,7 +695,7 @@ template&lt;<a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.ht
 </table>
 </div><div class="memdoc">
 
-<p>Represents the status of resources. </p>
+<p>代表资源的状态。 </p>
 <table class="fieldtable">
 <tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a36d2882e7661f30e5caf0f74c85df62dad8a942ef2b04672adfafef0ad817a407" name="a36d2882e7661f30e5caf0f74c85df62dad8a942ef2b04672adfafef0ad817a407"></a>Busy&#160;</td><td class="fielddoc"><p>Indicate the resource is in busy status, which means you cannot read or write this now. </p>
 </td></tr>
@@ -849,624 +805,13 @@ template&lt;<a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.ht
 
 </div>
 </div>
-<h2 class="groupheader">函数说明</h2>
-<a id="adce8ccc8eef06ac1e63da8c430e6d1ea" name="adce8ccc8eef06ac1e63da8c430e6d1ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adce8ccc8eef06ac1e63da8c430e6d1ea">&#9670;&#160;</a></span>AddItem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void LangYa::SentryLib::AddItem </td>
-          <td>(</td>
-          <td class="paramtype">const ItemType &amp;&#160;</td>
-          <td class="paramname"><em>item</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa0983582ffafeafbc6c7f5cb9d6cd3f3" name="aa0983582ffafeafbc6c7f5cb9d6cd3f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0983582ffafeafbc6c7f5cb9d6cd3f3">&#9670;&#160;</a></span>Close()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void LangYa::SentryLib::Close </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>销毁此设备占用的系统资源。 此函数需要确保设备关闭或者在无法关闭时报错，往往会阻塞当前线程。 </p>
-
-</div>
-</div>
-<a id="a56f53af2b3a1a09be7d690d3a656ab20" name="a56f53af2b3a1a09be7d690d3a656ab20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56f53af2b3a1a09be7d690d3a656ab20">&#9670;&#160;</a></span>ContainItem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool LangYa::SentryLib::ContainItem </td>
-          <td>(</td>
-          <td class="paramtype">const ItemType &amp;&#160;</td>
-          <td class="paramname"><em>item</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a497aaaadfd4be9fc5072075bb2b21776" name="a497aaaadfd4be9fc5072075bb2b21776"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a497aaaadfd4be9fc5072075bb2b21776">&#9670;&#160;</a></span>Deserialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool LangYa::SentryLib::Deserialize </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;&#160;</td>
-          <td class="paramname"><em>buffer</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>从缓冲区中反序列化资源。 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buffer</td><td>反序列化资源数据的缓冲区。 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>是否反序列化成功。 </dd></dl>
-
-</div>
-</div>
-<a id="a79f4e7d110322207f06f9e439cfdb267" name="a79f4e7d110322207f06f9e439cfdb267"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79f4e7d110322207f06f9e439cfdb267">&#9670;&#160;</a></span>Disconnect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void LangYa::SentryLib::Disconnect </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>从目标断开连接。 </p>
-<dl class="section warning"><dt>警告</dt><dd>大多数实现都会阻塞当前线程直到断开连接成功或失败。 </dd></dl>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="namespace_lang_ya_1_1_sentry_lib_a79f4e7d110322207f06f9e439cfdb267_icgraph.png" border="0" usemap="#anamespace_lang_ya_1_1_sentry_lib_a79f4e7d110322207f06f9e439cfdb267_icgraph" alt=""/></div>
-<map name="anamespace_lang_ya_1_1_sentry_lib_a79f4e7d110322207f06f9e439cfdb267_icgraph" id="anamespace_lang_ya_1_1_sentry_lib_a79f4e7d110322207f06f9e439cfdb267_icgraph">
-<area shape="rect" title="从目标断开连接。" alt="" coords="271,39,407,81"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_serial_port.html#af3616c5b46f7b002c7f4c6798d0cc82c" title="清理串口占用的资源。" alt="" coords="38,5,190,48"/>
-<area shape="poly" title=" " alt="" coords="255,50,190,41,191,35,255,45"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_t_c_p_connection.html#ad05bbcd7681b39998121c2325f03b437" title=" " alt="" coords="5,72,223,115"/>
-<area shape="poly" title=" " alt="" coords="256,75,223,80,223,75,255,70"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a7f5e637b2ce38d6942c0d3a57ab076ad" name="a7f5e637b2ce38d6942c0d3a57ab076ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f5e637b2ce38d6942c0d3a57ab076ad">&#9670;&#160;</a></span>GetDeserializationResourceSize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a> LangYa::SentryLib::GetDeserializationResourceSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>获取此内容的反序列化资源大小，大多数时候就是此内容的内存视图大小。 </p>
-<dl class="section return"><dt>返回</dt><dd>反序列化资源大小。 </dd></dl>
-
-</div>
-</div>
-<a id="abbe1387985ec3c0564ed05c9480e1863" name="abbe1387985ec3c0564ed05c9480e1863"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbe1387985ec3c0564ed05c9480e1863">&#9670;&#160;</a></span>GetPicture()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool LangYa::SentryLib::GetPicture </td>
-          <td>(</td>
-          <td class="paramtype">PictureType &amp;&#160;</td>
-          <td class="paramname"><em>picture</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a99763d48f903f1a36ee95492ebb84671" name="a99763d48f903f1a36ee95492ebb84671"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99763d48f903f1a36ee95492ebb84671">&#9670;&#160;</a></span>GetSerializationResultSize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a> LangYa::SentryLib::GetSerializationResultSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>获取序列化结果的大小。 返回序列化结果的大小，如果值为0，那么这个东西不可以被序列化。（谁继承这个接口然后返回0啊？） 建议遇到这种情况时直接抛出异常。 </p>
-<dl class="section return"><dt>返回</dt><dd>序列化结果的大小。 </dd></dl>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="namespace_lang_ya_1_1_sentry_lib_a99763d48f903f1a36ee95492ebb84671_icgraph.png" border="0" usemap="#anamespace_lang_ya_1_1_sentry_lib_a99763d48f903f1a36ee95492ebb84671_icgraph" alt=""/></div>
-<map name="anamespace_lang_ya_1_1_sentry_lib_a99763d48f903f1a36ee95492ebb84671_icgraph" id="anamespace_lang_ya_1_1_sentry_lib_a99763d48f903f1a36ee95492ebb84671_icgraph">
-<area shape="rect" title="获取序列化结果的大小。 返回序列化结果的大小，如果值为0，那么这个东西不可以被序列化。（谁继承这个接口然后返回0啊？） 建议遇到这种情况时直接抛出异常。" alt="" coords="103,5,279,48"/>
-<area shape="rect" href="_test_app_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,13,55,40"/>
-<area shape="poly" title=" " alt="" coords="87,29,55,29,55,24,87,24"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a9c635252bf3eced5c341b97f20a8a027" name="a9c635252bf3eced5c341b97f20a8a027"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c635252bf3eced5c341b97f20a8a027">&#9670;&#160;</a></span>IsConnected()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool LangYa::SentryLib::IsConnected </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>获取是否连接到目标。 </p>
-<dl class="section return"><dt>返回</dt><dd>是否连接到目标。 </dd></dl>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="namespace_lang_ya_1_1_sentry_lib_a9c635252bf3eced5c341b97f20a8a027_icgraph.png" border="0" usemap="#anamespace_lang_ya_1_1_sentry_lib_a9c635252bf3eced5c341b97f20a8a027_icgraph" alt=""/></div>
-<map name="anamespace_lang_ya_1_1_sentry_lib_a9c635252bf3eced5c341b97f20a8a027_icgraph" id="anamespace_lang_ya_1_1_sentry_lib_a9c635252bf3eced5c341b97f20a8a027_icgraph">
-<area shape="rect" title="获取是否连接到目标。" alt="" coords="412,5,548,48"/>
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_serial_port_info.html#a6ca301a778f952e7249b092ffb9d7de5" title="Used to log this." alt="" coords="210,5,364,48"/>
-<area shape="poly" title=" " alt="" coords="396,29,365,29,365,24,396,24"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_serial_port.html#a881fa8f54a86841727bb8e2aee769a84" title="构建串口，返回共享串口指针，请提供有效的串口信息。" alt="" coords="5,5,162,48"/>
-<area shape="poly" title=" " alt="" coords="194,29,162,29,162,24,194,24"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="aa7c04397e8375dbc607747d639b22d8e" name="aa7c04397e8375dbc607747d639b22d8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7c04397e8375dbc607747d639b22d8e">&#9670;&#160;</a></span>Open()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool LangYa::SentryLib::Open </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>在设备的系统资源已经分配完毕后开启设备。 如果没有获取需要的资源，则往往设备会开启失败。 </p>
-<dl class="section return"><dt>返回</dt><dd>设备是否成功开启。 </dd></dl>
-
-</div>
-</div>
-<a id="a825f087beeaf696e908b1694fb473e80" name="a825f087beeaf696e908b1694fb473e80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a825f087beeaf696e908b1694fb473e80">&#9670;&#160;</a></span>RemoveItem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void LangYa::SentryLib::RemoveItem </td>
-          <td>(</td>
-          <td class="paramtype">const ItemType &amp;&#160;</td>
-          <td class="paramname"><em>item</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7fd6d6a1654ae99db6f7e94a47245ef2" name="a7fd6d6a1654ae99db6f7e94a47245ef2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fd6d6a1654ae99db6f7e94a47245ef2">&#9670;&#160;</a></span>Serialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool LangYa::SentryLib::Serialize </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;&#160;</td>
-          <td class="paramname"><em>buffer</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>序列化此内容，将序列化的结果写入缓冲区。 当提供的缓冲区太小时，不会执行序列化操作，返回false。 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buffer</td><td>保存序列化结果的缓冲区。 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>操作是否全部成功。 </dd></dl>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="namespace_lang_ya_1_1_sentry_lib_a7fd6d6a1654ae99db6f7e94a47245ef2_icgraph.png" border="0" usemap="#anamespace_lang_ya_1_1_sentry_lib_a7fd6d6a1654ae99db6f7e94a47245ef2_icgraph" alt=""/></div>
-<map name="anamespace_lang_ya_1_1_sentry_lib_a7fd6d6a1654ae99db6f7e94a47245ef2_icgraph" id="anamespace_lang_ya_1_1_sentry_lib_a7fd6d6a1654ae99db6f7e94a47245ef2_icgraph">
-<area shape="rect" title="序列化此内容，将序列化的结果写入缓冲区。 当提供的缓冲区太小时，不会执行序列化操作，返回false。" alt="" coords="103,5,239,48"/>
-<area shape="rect" href="_test_app_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,13,55,40"/>
-<area shape="poly" title=" " alt="" coords="87,29,55,29,55,24,87,24"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ae2c19e9f9141be71118b7ca839b164ba" name="ae2c19e9f9141be71118b7ca839b164ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2c19e9f9141be71118b7ca839b164ba">&#9670;&#160;</a></span>Tick()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LangYa::SentryLib::Tick </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>调用此方法，设备会在短时间内阻塞线程完成工作。 </p>
-<p>激活设备使其运作一次 如果设备未开启，则此函数应当使设备开启，如果成功则开始运作。 如果运作发生严重错误则抛出异常。 如果设备运作一次的时间较长，则此函数会阻塞当前线程。 如果你希望此设备保持运行，那么使用一个循环是最佳选择，简单的代码如下：</p>
-<dl class="section return"><dt>返回</dt><dd>设备是否工作正常，任何异常都会导致此值为 false 。 当出现多次异常时，考虑将此设备标记为不可用，或刷新此设备。</dd></dl>
-<div class="fragment"><div class="line"><span class="comment">//#include &lt;thread&gt; //引用此头文件，让当前线程可以休眠</span></div>
-<div class="line"><span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
-<div class="line">    <span class="keyword">using namespace </span>std::chrono_literals;</div>
-<div class="line">    std::this_thread::sleep_for(1ms); <span class="comment">//设置最大频率为 1000Hz</span></div>
-<div class="line">    device.Tick();</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> 或者你可以自己实现一个稳频器。 </p>
-
-</div>
-</div>
-<a id="acc40251a566cd246949976a93060735c" name="acc40251a566cd246949976a93060735c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc40251a566cd246949976a93060735c">&#9670;&#160;</a></span>ToString()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual std::string LangYa::SentryLib::ToString </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>获取此连接的字符串格式的信息，通常使用了 fmt 库，性能不算太好。 </p>
-<dl class="section return"><dt>返回</dt><dd>连接内部的某些信息的字符串格式。 </dd></dl>
-
-</div>
-</div>
-<a id="a867d0ab0a61dd949340f0b83e40f0c14" name="a867d0ab0a61dd949340f0b83e40f0c14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a867d0ab0a61dd949340f0b83e40f0c14">&#9670;&#160;</a></span>~Collection()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual LangYa::SentryLib::~Collection </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">变量说明</h2>
-<a id="aed41b646f090a8aea7ef7c3e2b428392" name="aed41b646f090a8aea7ef7c3e2b428392"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed41b646f090a8aea7ef7c3e2b428392">&#9670;&#160;</a></span>CameraDevice</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_c_sharpp_8hpp.html#ae935b23055599eaed6237dd4d1b16e07">SC_INTERFACE</a> LangYa::SentryLib::CameraDevice</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>代表一个相机设备 </p>
-
-</div>
-</div>
-<a id="a91cf7e2142fe436ff64e310e4e5dd777" name="a91cf7e2142fe436ff64e310e4e5dd777"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91cf7e2142fe436ff64e310e4e5dd777">&#9670;&#160;</a></span>Collection</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TItem &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_c_sharpp_8hpp.html#ae935b23055599eaed6237dd4d1b16e07">SC_INTERFACE</a> LangYa::SentryLib::Collection</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>初始值:</b><div class="fragment"><div class="line">{</div>
-<div class="line">    <span class="keyword">public</span>:</div>
-<div class="line">        <span class="keyword">using </span>ItemType = TItem</div>
-</div><!-- fragment -->
-<p>我也不知道为什么这个会出现在这里，这不应该是语言层面的接口吗？ </p>
-
-</div>
-</div>
-<a id="ac7fbf750abad4ec779b73457a20b0f9c" name="ac7fbf750abad4ec779b73457a20b0f9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7fbf750abad4ec779b73457a20b0f9c">&#9670;&#160;</a></span>Connection</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_c_sharpp_8hpp.html#ae935b23055599eaed6237dd4d1b16e07">SC_INTERFACE</a> LangYa::SentryLib::Connection</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>代表一个类似 IO 的连接，只提供基本的读写和开启/关闭连接的功能。 一个连接可以是一个文件，也可以是一个网络连接，也可以是一个内存映射文件。 只要能提供基于字节的读写方式，就可以被视为一个连接。 一般请使用智能指针来管理连接的生命周期（推荐 shared_ptr）。 </p>
-
-</div>
-</div>
-<a id="af044f96d2cd8deb25efe568036123ee9" name="af044f96d2cd8deb25efe568036123ee9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af044f96d2cd8deb25efe568036123ee9">&#9670;&#160;</a></span>Controller</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_c_sharpp_8hpp.html#ae935b23055599eaed6237dd4d1b16e07">SC_INTERFACE</a> LangYa::SentryLib::Controller</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a15d8bc87de629e83ef52d1ebf56c0a3a" name="a15d8bc87de629e83ef52d1ebf56c0a3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15d8bc87de629e83ef52d1ebf56c0a3a">&#9670;&#160;</a></span>DeserializableContent</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_c_sharpp_8hpp.html#ae935b23055599eaed6237dd4d1b16e07">SC_INTERFACE</a> LangYa::SentryLib::DeserializableContent</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>初始值:</b><div class="fragment"><div class="line">{</div>
-<div class="line">    <span class="keyword">public</span>:</div>
-<div class="line">        </div>
-<div class="line">        <span class="keyword">virtual</span> ~DeserializableContent()</div>
-</div><!-- fragment -->
-<p>代表一种可以反序列化的内容。 此接口提供了反序列时所需要的两个函数： 获取反序列化资源的最小大小，以及从缓冲区中反序列化资源。 </p>
-
-</div>
-</div>
-<a id="a5a350d508ec1dac2447f8aceb139c72c" name="a5a350d508ec1dac2447f8aceb139c72c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a350d508ec1dac2447f8aceb139c72c">&#9670;&#160;</a></span>Device</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_c_sharpp_8hpp.html#ae935b23055599eaed6237dd4d1b16e07">SC_INTERFACE</a> LangYa::SentryLib::Device</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>初始值:</b><div class="fragment"><div class="line">{</div>
-<div class="line">    <span class="keyword">public</span>:</div>
-<div class="line">        </div>
-<div class="line">        <span class="keyword">virtual</span> ~Device()</div>
-</div><!-- fragment -->
-<p>代表一种虚拟的设备，它需要有一个外部循环去调用。 大多数使用情况都是在一个线程中调用 <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ae2c19e9f9141be71118b7ca839b164ba" title="调用此方法，设备会在短时间内阻塞线程完成工作。">Tick()</a> 方法。 </p>
-
-</div>
-</div>
-<a id="ab9f49ebc9210cb1f99aac3d7e75e8333" name="ab9f49ebc9210cb1f99aac3d7e75e8333"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9f49ebc9210cb1f99aac3d7e75e8333">&#9670;&#160;</a></span>SerializableContent</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_c_sharpp_8hpp.html#ae935b23055599eaed6237dd4d1b16e07">SC_INTERFACE</a> LangYa::SentryLib::SerializableContent</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>初始值:</b><div class="fragment"><div class="line">{</div>
-<div class="line">    <span class="keyword">public</span>:</div>
-<div class="line">        </div>
-<div class="line">        <span class="keyword">virtual</span> ~SerializableContent()</div>
-</div><!-- fragment -->
-<p>代表一个可被序列化的东西。 可被序列化即信息可以无损地转换为二进制数据。 一般将内容序列化后，将其写入文件或者网络传输，可以减轻读写传输等IO操作的压力。 </p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_lang_ya.html">LangYa</a></li><li class="navelem"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">SentryLib</a></li>
-    <li class="footer">生成于 2023年 十二月 13日 星期三 20:05:23 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 19日 星期二 23:40:51 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,0 +1,9 @@
+<map id="LangYa::SentryLib::Device" name="LangYa::SentryLib::Device">
+<area shape="rect" id="Node000001" title="代表一种虚拟的设备，它需要有一个外部循环去调用。 大多数使用情况都是在一个线程中调用 Tick() 方法。" alt="" coords="5,80,142,123"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_camera_device.html" title="代表一个相机设备" alt="" coords="216,5,352,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,72,189,57,221,46,222,51,191,63,151,77"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_deserializable_content_sensor.html" title="代表一个机器人传感器。 TODO 注释与文档 Tick this device so it will update sensor data from connection,..." alt="" coords="190,72,378,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,99,189,99,189,104,157,104"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_serializable_content_controller.html" title="代表一个机器人控制器 修改此控制器的变量并在合适的时机调用" alt="" coords="190,155,378,213"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="145,126,208,152,206,157,143,131"/>
+</map>

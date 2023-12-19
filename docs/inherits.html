@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.2</span>
+   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A robot lib by LangYa.Sango mostly for softwares on sentry</div>
   </td>
@@ -97,110 +97,118 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 <div class="textblock">
 <p><a href="hierarchy.html">浏览类继承关系表</a></p>
 </div><table border="0" cellspacing="10" cellpadding="0">
-<tr><td><img src="inherit_graph_0.png" border="0" usemap="#a_connection" alt=""/>
-<map name="a_connection" id="a_connection">
-<area shape="rect" title=" " alt="" coords="5,113,92,140"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html" title="代表一个使用狼牙通信方式的连接，用来装饰一个连接。 真正的数据发送过程在下面的函数中" alt="" coords="140,5,276,48"/>
-<area shape="poly" title=" " alt="" coords="77,101,138,58,159,46,161,51,141,62,80,106"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_memory_access.html" title="代表对与内存的访问，本质是对于" alt="" coords="140,72,276,115"/>
-<area shape="poly" title=" " alt="" coords="107,112,139,105,140,110,108,117"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_serial_port.html" title="代表系统中的一个串口，本质是" alt="" coords="140,139,276,181"/>
-<area shape="poly" title=" " alt="" coords="108,136,140,143,139,148,107,141"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_t_c_p_connection.html" title=" " alt="" coords="140,205,276,248"/>
-<area shape="poly" title=" " alt="" coords="80,148,141,191,161,202,159,207,138,196,77,152"/>
+<tr><td><img src="inherit_graph_0.png" border="0" usemap="#a_action" alt=""/>
+<map name="a_action" id="a_action">
+<area shape="rect" href="class_action.html" title=" " alt="" coords="5,5,64,32"/>
+<area shape="rect" href="class_single_action.html" title=" " alt="" coords="112,5,206,32"/>
+<area shape="poly" title=" " alt="" coords="79,16,111,16,111,21,79,21"/>
+<area shape="rect" href="class_action_group.html" title=" " alt="" coords="254,5,347,32"/>
+<area shape="poly" title=" " alt="" coords="221,16,254,16,254,21,221,21"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_1.png" border="0" usemap="#a_deserializable_content" alt=""/>
-<map name="a_deserializable_content" id="a_deserializable_content">
-<area shape="rect" title=" " alt="" coords="5,5,153,32"/>
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html" title=" " alt="" coords="201,23,337,65"/>
-<area shape="poly" title=" " alt="" coords="169,28,201,32,200,38,168,33"/>
-<area shape="rect" title=" " alt="" coords="12,56,146,83"/>
-<area shape="poly" title=" " alt="" coords="161,56,200,50,201,56,162,61"/>
-</map>
-</td></tr>
-<tr><td><img src="inherit_graph_2.png" border="0" usemap="#a_device" alt=""/>
-<map name="a_device" id="a_device">
-<area shape="rect" title=" " alt="" coords="5,63,65,89"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_deserializable_content_sensor.html" title="代表一个机器人传感器。 TODO 注释与文档 Tick this device so it will update sensor data from connection,..." alt="" coords="113,5,301,64"/>
-<area shape="poly" title=" " alt="" coords="79,63,111,55,113,60,80,68"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content_controller.html" title="代表一个机器人控制器 修改此控制器的变量并在合适的时机调用" alt="" coords="113,88,301,147"/>
-<area shape="poly" title=" " alt="" coords="80,84,113,92,111,97,79,89"/>
-</map>
-</td></tr>
-<tr><td><img src="inherit_graph_3.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_application_info" alt=""/>
+<tr><td><img src="inherit_graph_1.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_application_info" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_application_info" id="a_lang_ya_1_1_sentry_lib_1_1_application_info">
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html" title="一些简单的应用程序信息，包装了简单的信息输出方法。 主要利用到 stream , spdlog 和 fmt 等将保存的信息格式化输出到控制台。 一方面使程序代码更美观，另一方面也方便开发者在调试时（日志..." alt="" coords="5,5,142,48"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html" title="一些简单的应用程序信息，包装了简单的信息输出方法。 使用 stream , spdlog 和 fmt 等将保存的信息格式化输出到控制台。 在使程序代码更美观的同时，方便开发者在调试时（日志中）查看程序的..." alt="" coords="5,5,142,48"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_4.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_auto_aim_module" alt=""/>
+<tr><td><img src="inherit_graph_2.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_auto_aim_module" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_auto_aim_module" id="a_lang_ya_1_1_sentry_lib_1_1_auto_aim_module">
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_auto_aim_module.html" title="辅助瞄准模块，提供机器人视觉相关内容" alt="" coords="5,5,142,48"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_5.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_command_line_arguments" alt=""/>
+<tr><td><img src="inherit_graph_3.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_collection_3_01_t_item_01_4" alt=""/>
+<map name="a_lang_ya_1_1_sentry_lib_1_1_collection_3_01_t_item_01_4" id="a_lang_ya_1_1_sentry_lib_1_1_collection_3_01_t_item_01_4">
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_collection.html" title="我也不知道为什么这个会出现在这里，这不应该是语言层面的接口吗？" alt="" coords="5,5,142,48"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_4.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_command_line_arguments" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_command_line_arguments" id="a_lang_ya_1_1_sentry_lib_1_1_command_line_arguments">
 <area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html" title="记录控制台参数。 本质就是包装了一层的main函数的参数，方便使用。" alt="" coords="5,5,173,48"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_6.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_configurator" alt=""/>
+<tr><td><img src="inherit_graph_5.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_configurator" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_configurator" id="a_lang_ya_1_1_sentry_lib_1_1_configurator">
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_configurator.html" title=" " alt="" coords="5,5,142,48"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_7.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_console_manipulator" alt=""/>
+<tr><td><img src="inherit_graph_6.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_console_manipulator" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_console_manipulator" id="a_lang_ya_1_1_sentry_lib_1_1_console_manipulator">
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html" title=" " alt="" coords="5,5,142,48"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html" title="控制台操作器 封装了许多控制台的常用操作。" alt="" coords="5,5,142,48"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_8.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_content_acceptor_3_01_t_content_01_4" alt=""/>
+<tr><td><img src="inherit_graph_7.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_content_acceptor_3_01_t_content_01_4" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_content_acceptor_3_01_t_content_01_4" id="a_lang_ya_1_1_sentry_lib_1_1_content_acceptor_3_01_t_content_01_4">
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_content_acceptor.html" title=" " alt="" coords="5,5,200,48"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_9.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_content_provider_3_01_t_content_01_4" alt=""/>
+<tr><td><img src="inherit_graph_8.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_content_provider_3_01_t_content_01_4" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_content_provider_3_01_t_content_01_4" id="a_lang_ya_1_1_sentry_lib_1_1_content_provider_3_01_t_content_01_4">
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_content_provider.html" title=" " alt="" coords="5,5,194,48"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_10.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_manager_3_01_t_item_00_01_t_key_01_4" alt=""/>
+<tr><td><img src="inherit_graph_9.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_deserializable_content" alt=""/>
+<map name="a_lang_ya_1_1_sentry_lib_1_1_deserializable_content" id="a_lang_ya_1_1_sentry_lib_1_1_deserializable_content">
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_deserializable_content.html" title="代表一种可以反序列化的内容。 此接口提供了反序列时所需要的两个函数： 获取反序列化资源的最小大小，以及从缓冲区中反序列化资源。" alt="" coords="5,5,153,48"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html" title=" " alt="" coords="201,39,337,81"/>
+<area shape="poly" title=" " alt="" coords="169,40,201,45,200,51,168,45"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html" title="代表一个可被序列化的东西。 可被序列化即信息可以无损地转换为二进制数据。 一般将内容序列化后，将其写入文件或者网络传输，可以减轻读写传输等IO操作的压力。" alt="" coords="11,72,147,115"/>
+<area shape="poly" title=" " alt="" coords="162,76,200,69,201,75,163,81"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_10.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_device" alt=""/>
+<map name="a_lang_ya_1_1_sentry_lib_1_1_device" id="a_lang_ya_1_1_sentry_lib_1_1_device">
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_device.html" title="代表一种虚拟的设备，它需要有一个外部循环去调用。 大多数使用情况都是在一个线程中调用 Tick() 方法。" alt="" coords="5,80,142,123"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_camera_device.html" title="代表一个相机设备" alt="" coords="216,5,352,48"/>
+<area shape="poly" title=" " alt="" coords="149,72,189,57,221,46,222,51,191,63,151,77"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_deserializable_content_sensor.html" title="代表一个机器人传感器。 TODO 注释与文档 Tick this device so it will update sensor data from connection,..." alt="" coords="190,72,378,131"/>
+<area shape="poly" title=" " alt="" coords="157,99,189,99,189,104,157,104"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content_controller.html" title="代表一个机器人控制器 修改此控制器的变量并在合适的时机调用" alt="" coords="190,155,378,213"/>
+<area shape="poly" title=" " alt="" coords="145,126,208,152,206,157,143,131"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_11.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_manager_3_01_t_item_00_01_t_key_01_4" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_manager_3_01_t_item_00_01_t_key_01_4" id="a_lang_ya_1_1_sentry_lib_1_1_manager_3_01_t_item_00_01_t_key_01_4">
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_manager.html" title=" " alt="" coords="5,5,171,48"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_11.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_match_status_manager" alt=""/>
+<tr><td><img src="inherit_graph_12.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_match_status_manager" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_match_status_manager" id="a_lang_ya_1_1_sentry_lib_1_1_match_status_manager">
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_match_status_manager.html" title="简单的状态机，用于根据比赛状态切换执行的回调函数。" alt="" coords="5,5,151,48"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_12.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_memory_i_o" alt=""/>
+<tr><td><img src="inherit_graph_13.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_memory_i_o" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_memory_i_o" id="a_lang_ya_1_1_sentry_lib_1_1_memory_i_o">
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html" title="代表一个基本的读写类，在读和写的时候使用" alt="" coords="5,5,142,48"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html" title="代表一个基本的读写类，在读和写的时候使用" alt="" coords="5,105,142,148"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_connection.html" title="代表一个类似 IO 的连接，只提供基本的读写和开启/关闭连接的功能。" alt="" coords="190,105,326,148"/>
+<area shape="poly" title=" " alt="" coords="157,124,189,124,189,129,157,129"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html" title="代表一个使用狼牙通信方式的连接，用来装饰一个连接。 真正的数据发送过程在下面的函数中" alt="" coords="374,5,510,48"/>
+<area shape="poly" title=" " alt="" coords="307,95,373,58,395,46,397,51,375,62,310,100"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_memory_access.html" title="代表对与内存的访问，本质是对于" alt="" coords="374,72,510,115"/>
+<area shape="poly" title=" " alt="" coords="341,109,373,103,374,108,342,114"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_serial_port.html" title="代表系统中的一个串口，本质是" alt="" coords="374,139,510,181"/>
+<area shape="poly" title=" " alt="" coords="342,139,374,145,373,150,341,144"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_t_c_p_connection.html" title=" " alt="" coords="374,205,510,248"/>
+<area shape="poly" title=" " alt="" coords="310,154,375,191,397,202,395,207,373,196,307,158"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_13.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_memory_view" alt=""/>
+<tr><td><img src="inherit_graph_14.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_memory_view" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_memory_view" id="a_lang_ya_1_1_sentry_lib_1_1_memory_view">
 <area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html" title="代表一个内存的视图，保存内存的头指针和长度，供其他读写。 不能保证作为传入的参数时得到的内存视图是有效的，因此作为函数参数时，这个类的基础是对调用者的信任。 类中提供了有关内存的操作函数，CopyTo ..." alt="" coords="5,5,142,48"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_14.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_monitor" alt=""/>
+<tr><td><img src="inherit_graph_15.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_monitor" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_monitor" id="a_lang_ya_1_1_sentry_lib_1_1_monitor">
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_monitor.html" title=" " alt="" coords="5,5,142,48"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_monitor.html" title="一个用来格式化数据的显示器。 通过右移 &gt;&gt; 运算符，可以将数据包传出到流中。 通过左移 &lt;&lt; 运算符，可以将数据包直接传入显示器，显示器会自动解析数据包并显示。" alt="" coords="5,5,142,48"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_15.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_monitor_package" alt=""/>
+<tr><td><img src="inherit_graph_16.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_monitor_package" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_monitor_package" id="a_lang_ya_1_1_sentry_lib_1_1_monitor_package">
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html" title=" " alt="" coords="5,5,142,48"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html" title="监视器包裹，提供格式化" alt="" coords="5,5,142,48"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_16.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type" alt=""/>
+<tr><td><img src="inherit_graph_17.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type" id="a_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type">
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type.html" title=" " alt="" coords="5,5,182,48"/>
-</map>
-</td></tr>
-<tr><td><img src="inherit_graph_17.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_monitor_sender" alt=""/>
-<map name="a_lang_ya_1_1_sentry_lib_1_1_monitor_sender" id="a_lang_ya_1_1_sentry_lib_1_1_monitor_sender">
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_monitor_sender.html" title=" " alt="" coords="5,5,142,48"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type.html" title="监视器的单个物品。 定义了监视器的基本物品格式，可以转换为Json格式和控制台格式。 因为实在找不到合适的名字所以放在了 Monitor 里面。 实际使用起来对此类型几乎无感。" alt="" coords="5,5,182,48"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_18.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer" alt=""/>
@@ -233,7 +241,7 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 </td></tr>
 <tr><td><img src="inherit_graph_22.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_resource_3_01_t_content_01_4" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_resource_3_01_t_content_01_4" id="a_lang_ya_1_1_sentry_lib_1_1_resource_3_01_t_content_01_4">
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_resource.html" title="Represent a resource with flag (usage indicators), usually this resource is used in multi&#45;threads...." alt="" coords="5,5,158,48"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_resource.html" title="代表一个在多线程中流通的资源。 使用内部的 Flag 为资源上锁。" alt="" coords="5,5,158,48"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_23.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_sentry_data_1_1_complex_fire_byte" alt=""/>
@@ -261,9 +269,11 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 <area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_serial_numbers.html" title=" " alt="" coords="5,5,176,64"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_28.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_serial_port_info" alt=""/>
-<map name="a_lang_ya_1_1_sentry_lib_1_1_serial_port_info" id="a_lang_ya_1_1_sentry_lib_1_1_serial_port_info">
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_serial_port_info.html" title="The essential component for building a serial port. Contains the information of a serial port connect..." alt="" coords="5,5,142,48"/>
+<tr><td><img src="inherit_graph_28.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_string_format_by_stream" alt=""/>
+<map name="a_lang_ya_1_1_sentry_lib_1_1_string_format_by_stream" id="a_lang_ya_1_1_sentry_lib_1_1_string_format_by_stream">
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_string_format_by_stream.html" title=" " alt="" coords="5,5,160,48"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_serial_port_info.html" title="构建串口连接的必要内容。 包含了构建串口的必要信息，许多复杂设置都略去了。 请配合下面的类使用。" alt="" coords="208,5,344,48"/>
+<area shape="poly" title=" " alt="" coords="175,24,207,24,207,29,175,29"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_29.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_time_stamp" alt=""/>
@@ -273,42 +283,52 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 <area shape="poly" title=" " alt="" coords="157,24,189,24,189,29,157,29"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_30.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_triple_buffer" alt=""/>
+<tr><td><img src="inherit_graph_30.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_tiny_json_stream" alt=""/>
+<map name="a_lang_ya_1_1_sentry_lib_1_1_tiny_json_stream" id="a_lang_ya_1_1_sentry_lib_1_1_tiny_json_stream">
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_tiny_json_stream.html" title=" " alt="" coords="5,5,142,48"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_31.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_tiny_t_c_p_server" alt=""/>
+<map name="a_lang_ya_1_1_sentry_lib_1_1_tiny_t_c_p_server" id="a_lang_ya_1_1_sentry_lib_1_1_tiny_t_c_p_server">
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_tiny_t_c_p_server.html" title=" " alt="" coords="5,5,142,48"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_32.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_triple_buffer" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_triple_buffer" id="a_lang_ya_1_1_sentry_lib_1_1_triple_buffer">
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_triple_buffer.html" title="TripleBuffer is a thread&#45;safe buffer that can be used to transfer data between threads...." alt="" coords="5,5,142,48"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_31.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_unique_buffer" alt=""/>
+<tr><td><img src="inherit_graph_33.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_unique_buffer" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_unique_buffer" id="a_lang_ya_1_1_sentry_lib_1_1_unique_buffer">
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html" title="Represent a buffer with unique memory." alt="" coords="5,5,142,48"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_32.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_vector_3_01char_00_012_01_4" alt=""/>
+<tr><td><img src="inherit_graph_34.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_vector_3_01char_00_012_01_4" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_vector_3_01char_00_012_01_4" id="a_lang_ya_1_1_sentry_lib_1_1_vector_3_01char_00_012_01_4">
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="5,5,142,48"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_33.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_vector_3_01float_00_012_01_4" alt=""/>
+<tr><td><img src="inherit_graph_35.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_vector_3_01float_00_012_01_4" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_vector_3_01float_00_012_01_4" id="a_lang_ya_1_1_sentry_lib_1_1_vector_3_01float_00_012_01_4">
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="5,5,142,48"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_34.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_vector_3_01float_00_013_01_4" alt=""/>
+<tr><td><img src="inherit_graph_36.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_vector_3_01float_00_013_01_4" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_vector_3_01float_00_013_01_4" id="a_lang_ya_1_1_sentry_lib_1_1_vector_3_01float_00_013_01_4">
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="5,5,142,48"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_35.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_vector_3_01_t_element_00_012_01_4" alt=""/>
+<tr><td><img src="inherit_graph_37.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_vector_3_01_t_element_00_012_01_4" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_vector_3_01_t_element_00_012_01_4" id="a_lang_ya_1_1_sentry_lib_1_1_vector_3_01_t_element_00_012_01_4">
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="5,5,159,48"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_36.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_vector_3_01_t_element_00_013_01_4" alt=""/>
+<tr><td><img src="inherit_graph_38.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_vector_3_01_t_element_00_013_01_4" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_vector_3_01_t_element_00_013_01_4" id="a_lang_ya_1_1_sentry_lib_1_1_vector_3_01_t_element_00_013_01_4">
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="5,5,159,48"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_37.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_vector_3_01_t_element_00_01_dimension_01_4" alt=""/>
+<tr><td><img src="inherit_graph_39.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_vector_3_01_t_element_00_01_dimension_01_4" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_vector_3_01_t_element_00_01_dimension_01_4" id="a_lang_ya_1_1_sentry_lib_1_1_vector_3_01_t_element_00_01_dimension_01_4">
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="5,139,213,181"/>
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_vector2.html" title=" " alt="" coords="300,5,436,48"/>
@@ -323,24 +343,31 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 <area shape="poly" title=" " alt="" coords="151,189,203,224,262,258,289,269,287,274,259,262,200,229,148,193"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_38.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_vi_map" alt=""/>
+<tr><td><img src="inherit_graph_40.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_vi_map" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_vi_map" id="a_lang_ya_1_1_sentry_lib_1_1_vi_map">
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_vi_map.html" title=" " alt="" coords="5,5,142,48"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_39.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_vi_map_1_1_pixel_list_sample_option" alt=""/>
+<tr><td><img src="inherit_graph_41.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_vi_map_1_1_pixel_list_sample_option" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_vi_map_1_1_pixel_list_sample_option" id="a_lang_ya_1_1_sentry_lib_1_1_vi_map_1_1_pixel_list_sample_option">
 <area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_vi_map_1_1_pixel_list_sample_option.html" title=" " alt="" coords="5,5,204,48"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_40.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_vi_map_1_1_point_list_sample_option" alt=""/>
+<tr><td><img src="inherit_graph_42.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_vi_map_1_1_point_list_sample_option" alt=""/>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_vi_map_1_1_point_list_sample_option" id="a_lang_ya_1_1_sentry_lib_1_1_vi_map_1_1_point_list_sample_option">
 <area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_vi_map_1_1_point_list_sample_option.html" title=" " alt="" coords="5,5,205,48"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_41.png" border="0" usemap="#a_robot_post" alt=""/>
-<map name="a_robot_post" id="a_robot_post">
-<area shape="rect" href="struct_robot_post.html" title=" " alt="" coords="5,5,88,32"/>
+<tr><td><img src="inherit_graph_43.png" border="0" usemap="#a_manager_3_01_t_01_4" alt=""/>
+<map name="a_manager_3_01_t_01_4" id="a_manager_3_01_t_01_4">
+<area shape="rect" href="class_manager.html" title=" " alt="" coords="5,5,108,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_44.png" border="0" usemap="#a_named_item" alt=""/>
+<map name="a_named_item" id="a_named_item">
+<area shape="rect" href="class_named_item.html" title=" " alt="" coords="5,5,93,32"/>
+<area shape="rect" href="struct_action_info.html" title=" " alt="" coords="141,5,219,32"/>
+<area shape="poly" title=" " alt="" coords="108,16,140,16,140,21,108,21"/>
 </map>
 </td></tr>
 </table>
@@ -349,7 +376,7 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">生成于 2023年 十二月 13日 星期三 20:05:23 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 19日 星期二 23:40:51 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

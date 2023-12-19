@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.2</span>
+   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A robot lib by LangYa.Sango mostly for softwares on sentry</div>
   </td>
@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('_serial_port_8cpp.html',''); initResiz
   <div class="headertitle"><div class="title">SerialPort.cpp 文件参考</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="">LangYa/SentryLib/SerialPort.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="">LangYa/SentryLib/Common/SerialPort.hpp</a>&gt;</code><br />
 <code>#include &lt;spdlog/spdlog.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> SerialPort.cpp 的引用(Include)关系图:</div>
@@ -106,35 +106,37 @@ $(document).ready(function(){initNavTree('_serial_port_8cpp.html',''); initResiz
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_serial_port_8cpp__incl.png" border="0" usemap="#a_sources_2_serial_port_8cpp" alt=""/></div>
 <map name="a_sources_2_serial_port_8cpp" id="a_sources_2_serial_port_8cpp">
-<area shape="rect" title=" " alt="" coords="250,5,405,32"/>
-<area shape="rect" href="_serial_port_8hpp.html" title=" " alt="" coords="130,80,341,107"/>
-<area shape="poly" title=" " alt="" coords="313,35,265,73,261,68,310,30"/>
-<area shape="rect" title=" " alt="" coords="365,80,477,107"/>
-<area shape="poly" title=" " alt="" coords="345,30,394,68,391,73,342,35"/>
-<area shape="rect" title=" " alt="" coords="5,163,74,189"/>
-<area shape="poly" title=" " alt="" coords="204,110,87,157,83,159,81,154,85,152,202,105"/>
-<area shape="rect" title=" " alt="" coords="98,163,205,189"/>
-<area shape="poly" title=" " alt="" coords="224,109,177,154,173,150,221,105"/>
-<area shape="rect" href="_connection_8hpp.html" title=" " alt="" coords="437,163,655,189"/>
-<area shape="poly" title=" " alt="" coords="285,105,483,156,482,161,284,110"/>
-<area shape="rect" href="_serial_port_info_8hpp.html" title=" " alt="" coords="228,155,414,197"/>
-<area shape="poly" title=" " alt="" coords="251,105,290,142,286,146,247,109"/>
-<area shape="rect" title=" " alt="" coords="304,253,357,280"/>
-<area shape="poly" title=" " alt="" coords="516,192,372,251,370,246,514,187"/>
-<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="360,336,588,363"/>
-<area shape="poly" title=" " alt="" coords="504,192,462,213,444,228,430,247,425,266,429,286,439,305,453,323,448,326,435,308,424,288,419,266,425,244,440,225,460,209,501,188"/>
-<area shape="rect" href="_memory_i_o_8hpp.html" title=" " alt="" coords="440,253,653,280"/>
-<area shape="poly" title=" " alt="" coords="549,190,549,238,544,238,544,190"/>
-<area shape="rect" href="_c_sharpp_8hpp.html" title=" " alt="" coords="677,245,858,288"/>
-<area shape="poly" title=" " alt="" coords="579,187,703,237,701,242,577,192"/>
-<area shape="rect" title=" " alt="" coords="355,411,423,437"/>
-<area shape="poly" title=" " alt="" coords="461,365,417,403,413,399,458,361"/>
-<area shape="rect" title=" " alt="" coords="447,411,502,437"/>
-<area shape="poly" title=" " alt="" coords="477,363,477,395,472,395,472,363"/>
-<area shape="rect" title=" " alt="" coords="526,411,668,437"/>
-<area shape="poly" title=" " alt="" coords="497,361,563,400,561,405,494,366"/>
-<area shape="poly" title=" " alt="" coords="537,282,497,327,493,323,533,279"/>
-<area shape="poly" title=" " alt="" coords="326,197,330,238,325,238,320,198"/>
+<area shape="rect" title=" " alt="" coords="243,5,399,32"/>
+<area shape="rect" href="_serial_port_8hpp.html" title=" " alt="" coords="145,80,326,123"/>
+<area shape="poly" title=" " alt="" coords="309,34,270,71,267,67,306,31"/>
+<area shape="rect" title=" " alt="" coords="350,88,462,115"/>
+<area shape="poly" title=" " alt="" coords="336,31,384,76,380,80,332,34"/>
+<area shape="rect" title=" " alt="" coords="5,179,74,205"/>
+<area shape="poly" title=" " alt="" coords="191,126,82,174,80,169,188,121"/>
+<area shape="rect" title=" " alt="" coords="98,179,205,205"/>
+<area shape="poly" title=" " alt="" coords="218,125,176,169,172,165,214,121"/>
+<area shape="rect" href="_connection_8hpp.html" title=" " alt="" coords="229,171,410,213"/>
+<area shape="poly" title=" " alt="" coords="257,121,292,158,288,161,253,125"/>
+<area shape="rect" href="_serial_port_info_8hpp.html" title=" " alt="" coords="433,171,614,213"/>
+<area shape="poly" title=" " alt="" coords="304,121,442,163,441,168,302,126"/>
+<area shape="rect" title=" " alt="" coords="433,269,486,296"/>
+<area shape="poly" title=" " alt="" coords="354,212,428,258,425,263,351,216"/>
+<area shape="rect" href="_memory_i_o_8hpp.html" title=" " alt="" coords="228,261,408,304"/>
+<area shape="poly" title=" " alt="" coords="322,214,321,246,316,246,317,214"/>
+<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="228,352,408,395"/>
+<area shape="poly" title=" " alt="" coords="321,304,321,337,316,337,316,304"/>
+<area shape="rect" title=" " alt="" coords="489,443,558,469"/>
+<area shape="poly" title=" " alt="" coords="372,393,478,434,476,439,370,398"/>
+<area shape="rect" title=" " alt="" coords="153,443,219,469"/>
+<area shape="poly" title=" " alt="" coords="286,398,221,437,218,432,283,393"/>
+<area shape="rect" title=" " alt="" coords="244,443,299,469"/>
+<area shape="poly" title=" " alt="" coords="308,397,289,430,284,428,304,394"/>
+<area shape="rect" title=" " alt="" coords="324,443,465,469"/>
+<area shape="poly" title=" " alt="" coords="340,393,374,429,370,433,336,397"/>
+<area shape="poly" title=" " alt="" coords="511,215,480,258,475,255,506,212"/>
+<area shape="rect" href="_string_format_by_stream_8hpp.html" title=" " alt="" coords="432,352,615,395"/>
+<area shape="poly" title=" " alt="" coords="526,214,526,336,521,336,521,214"/>
+<area shape="poly" title=" " alt="" coords="526,395,526,427,521,427,521,395"/>
 </map>
 </div>
 </div>
@@ -162,7 +164,7 @@ $(document).ready(function(){initNavTree('_serial_port_8cpp.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a class="el" href="_serial_port_8cpp.html">SerialPort.cpp</a></li>
-    <li class="footer">生成于 2023年 十二月 13日 星期三 20:05:23 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 19日 星期二 23:40:51 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

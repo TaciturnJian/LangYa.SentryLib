@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.16)
 
 # 在这里设置项目的基本属性
 project(SentryLib 
-	VERSION 1.0.2
+	VERSION 1.0.3
 	DESCRIPTION "A C++ Library for Robot Programing"
 	HOMEPAGE_URL "https://github.com/TaciturnJian/LangYa.SentryLib"
 	LANGUAGES CXX

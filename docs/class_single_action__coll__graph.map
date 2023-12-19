@@ -1,0 +1,13 @@
+<map id="SingleAction" name="SingleAction">
+<area shape="rect" id="Node000001" title=" " alt="" coords="21,355,115,381"/>
+<area shape="rect" id="Node000002" href="$class_action.html" title=" " alt="" coords="5,264,64,291"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="47,304,66,353,61,355,42,306"/>
+<area shape="rect" id="Node000003" href="$struct_action_info.html" title=" " alt="" coords="87,264,166,291"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="112,305,78,356,74,353,108,302"/>
+<area shape="rect" id="Node000004" href="$class_named_item.html" title=" " alt="" coords="83,188,170,215"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="129,230,129,264,124,264,124,230"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="87,97,166,124"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="129,140,129,187,124,187,124,140"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="64,5,189,48"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="129,64,129,97,124,97,124,64"/>
+</map>

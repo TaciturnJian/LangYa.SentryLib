@@ -1,16 +1,18 @@
-<map id="Headers/LangYa/SentryLib/PingPongBuffer.hpp" name="Headers/LangYa/SentryLib/PingPongBuffer.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="111,5,288,48"/>
-<area shape="rect" id="Node000002" href="$_memory_view_8hpp.html" title=" " alt="" coords="11,171,239,197"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,50,153,97,141,127,133,156,128,155,136,125,148,95,180,47"/>
-<area shape="rect" id="Node000006" href="$_unique_buffer_8hpp.html" title=" " alt="" coords="162,96,389,123"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="221,47,255,83,251,86,217,50"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,245,74,272"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="112,200,67,237,64,233,108,196"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="97,245,153,272"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="128,198,128,230,122,230,122,198"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="177,245,318,272"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="148,196,214,235,211,239,145,200"/>
-<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="250,126,166,166,164,161,248,121"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="263,171,376,197"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="285,122,306,156,302,159,281,125"/>
+<map id="Headers/LangYa/SentryLib/Common/PingPongBuffer.hpp" name="Headers/LangYa/SentryLib/Common/PingPongBuffer.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="141,5,336,48"/>
+<area shape="rect" id="Node000002" href="$_memory_view_8hpp.html" title=" " alt="" coords="84,187,264,229"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,50,202,97,190,135,182,172,177,171,185,134,197,95,222,47"/>
+<area shape="rect" id="Node000007" href="$_unique_buffer_8hpp.html" title=" " alt="" coords="212,96,392,139"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="255,47,281,82,276,85,251,50"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,277,74,304"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="141,232,75,271,72,267,138,228"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="98,277,165,304"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="166,231,148,265,143,262,161,229"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="189,277,245,304"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="188,229,205,262,201,265,183,231"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="269,277,410,304"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="218,228,301,268,299,273,216,232"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="274,141,218,180,215,175,271,137"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="289,195,401,221"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="314,138,335,180,330,182,310,140"/>
 </map>

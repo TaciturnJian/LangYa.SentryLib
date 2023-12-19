@@ -1,7 +1,9 @@
 <map id="LangYa::SentryLib::SerialPortInfo" name="LangYa::SentryLib::SerialPortInfo">
-<area shape="rect" id="Node000001" title="The essential component for building a serial port. Contains the information of a serial port connect..." alt="" coords="5,188,142,231"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="34,97,113,124"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,140,76,187,71,187,71,140"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="11,5,136,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="76,64,76,97,71,97,71,64"/>
+<area shape="rect" id="Node000001" title="构建串口连接的必要内容。 包含了构建串口的必要信息，许多复杂设置都略去了。 请配合下面的类使用。" alt="" coords="36,204,172,247"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_string_format_by_stream.html" title=" " alt="" coords="5,97,160,140"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,155,102,203,97,204,87,156"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="184,105,264,132"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,144,129,205,126,201,197,140"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="161,5,287,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="227,63,227,105,221,105,221,63"/>
 </map>

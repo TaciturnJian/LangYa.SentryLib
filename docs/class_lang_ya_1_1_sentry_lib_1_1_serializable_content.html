@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A robot lib by LangYa.Sango mostly for softwares on sentry</div>
   </td>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('class_lang_ya_1_1_sentry_lib_1_1_seria
 </div><!--header-->
 <div class="contents">
 
-<p>Represent a content that is serializable.  
+<p>代表一个可被序列化的东西。 可被序列化即信息可以无损地转换为二进制数据。 一般将内容序列化后，将其写入文件或者网络传输，可以减轻读写传输等IO操作的压力。  
  <a href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html#details">更多...</a></p>
 
 <p><code>#include &lt;<a class="el" href="">SerializableContent.hpp</a>&gt;</code></p>
@@ -109,37 +109,26 @@ $(document).ready(function(){initNavTree('class_lang_ya_1_1_sentry_lib_1_1_seria
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_lang_ya_1_1_sentry_lib_1_1_serializable_content__inherit__graph.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_serializable_content_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_serializable_content_inherit__map" id="a_lang_ya_1_1_sentry_lib_1_1_serializable_content_inherit__map">
-<area shape="rect" title="Represent a content that is serializable." alt="" coords="5,99,142,141"/>
-<area shape="rect" href="struct_auto_aimer_software_controller_data.html" title=" " alt="" coords="190,5,405,32"/>
-<area shape="poly" title=" " alt="" coords="112,87,148,63,189,42,222,30,224,35,191,46,151,67,115,91"/>
-<area shape="rect" href="struct_embedded_software_controller_data.html" title=" " alt="" coords="190,56,405,83"/>
-<area shape="poly" title=" " alt="" coords="156,99,234,81,236,86,157,104"/>
-<area shape="rect" href="struct_navigator_software_controller_data.html" title=" " alt="" coords="194,107,401,133"/>
-<area shape="poly" title=" " alt="" coords="157,117,194,117,194,123,157,123"/>
-<area shape="rect" href="struct_referee_system_controller_data.html" title=" " alt="" coords="201,157,394,184"/>
-<area shape="poly" title=" " alt="" coords="157,136,236,154,234,159,156,141"/>
-<area shape="rect" href="struct_sentry_data.html" title=" " alt="" coords="254,208,341,235"/>
-<area shape="poly" title=" " alt="" coords="115,149,151,173,191,194,223,205,255,212,253,217,221,210,189,198,148,177,112,153"/>
+<area shape="rect" title="代表一个可被序列化的东西。 可被序列化即信息可以无损地转换为二进制数据。 一般将内容序列化后，将其写入文件或者网络传输，可以减轻读写传输等IO操作的压力。" alt="" coords="5,5,142,48"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html" title=" " alt="" coords="5,96,142,139"/>
+<area shape="poly" title=" " alt="" coords="76,64,76,96,71,96,71,64"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:acd1dfb04ca0ace078b3010ccc6c9bf9d" id="r_acd1dfb04ca0ace078b3010ccc6c9bf9d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html#acd1dfb04ca0ace078b3010ccc6c9bf9d">~SerializableContent</a> ()</td></tr>
-<tr class="memdesc:acd1dfb04ca0ace078b3010ccc6c9bf9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <br /></td></tr>
+<tr class="memdesc:acd1dfb04ca0ace078b3010ccc6c9bf9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">虚拟的析构器，防止有笨蛋把指针强制转换为此类后错误解析了内容。  <br /></td></tr>
 <tr class="separator:acd1dfb04ca0ace078b3010ccc6c9bf9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5fff15b28e2924e53584ce4cefafc80" id="r_ab5fff15b28e2924e53584ce4cefafc80"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html#ab5fff15b28e2924e53584ce4cefafc80">GetSerializationMemoryView</a> () const =0</td></tr>
-<tr class="memdesc:ab5fff15b28e2924e53584ce4cefafc80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the memory view of this content.  <br /></td></tr>
-<tr class="separator:ab5fff15b28e2924e53584ce4cefafc80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59c0dce20997dbd6f72646e9702b875d" id="r_a59c0dce20997dbd6f72646e9702b875d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html#a59c0dce20997dbd6f72646e9702b875d">GetSerializationResultSize</a> () const</td></tr>
-<tr class="memdesc:a59c0dce20997dbd6f72646e9702b875d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of the serialization result.  <br /></td></tr>
-<tr class="separator:a59c0dce20997dbd6f72646e9702b875d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a95ef16153e0810f476e17f6af5b8cb" id="r_a5a95ef16153e0810f476e17f6af5b8cb"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html#a5a95ef16153e0810f476e17f6af5b8cb">Serialize</a> (const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;buffer)</td></tr>
-<tr class="memdesc:a5a95ef16153e0810f476e17f6af5b8cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize data and write the result to buffer.  <br /></td></tr>
-<tr class="separator:a5a95ef16153e0810f476e17f6af5b8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fecc0402253646bd4d1d6fa6992ab7c" id="r_a4fecc0402253646bd4d1d6fa6992ab7c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html#a4fecc0402253646bd4d1d6fa6992ab7c">GetSerializationResultSize</a> () const =0</td></tr>
+<tr class="memdesc:a4fecc0402253646bd4d1d6fa6992ab7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取序列化结果的大小。 返回序列化结果的大小，如果值为0，那么这个东西不可以被序列化。（谁继承这个接口然后返回0啊？） 建议遇到这种情况时直接抛出异常。  <br /></td></tr>
+<tr class="separator:a4fecc0402253646bd4d1d6fa6992ab7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2720ba97257dbf02d329f1f68799c29e" id="r_a2720ba97257dbf02d329f1f68799c29e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html#a2720ba97257dbf02d329f1f68799c29e">Serialize</a> (const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;buffer)=0</td></tr>
+<tr class="memdesc:a2720ba97257dbf02d329f1f68799c29e"><td class="mdescLeft">&#160;</td><td class="mdescRight">序列化此内容，将序列化的结果写入缓冲区。 当提供的缓冲区太小时，不会执行序列化操作，返回false。  <br /></td></tr>
+<tr class="separator:a2720ba97257dbf02d329f1f68799c29e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>Represent a content that is serializable. </p>
+<div class="textblock"><p>代表一个可被序列化的东西。 可被序列化即信息可以无损地转换为二进制数据。 一般将内容序列化后，将其写入文件或者网络传输，可以减轻读写传输等IO操作的压力。 </p>
 </div><h2 class="groupheader">构造及析构函数说明</h2>
 <a id="acd1dfb04ca0ace078b3010ccc6c9bf9d" name="acd1dfb04ca0ace078b3010ccc6c9bf9d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd1dfb04ca0ace078b3010ccc6c9bf9d">&#9670;&#160;</a></span>~SerializableContent()</h2>
@@ -164,13 +153,13 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Virtual destructor. </p>
+<p>虚拟的析构器，防止有笨蛋把指针强制转换为此类后错误解析了内容。 </p>
 
 </div>
 </div>
 <h2 class="groupheader">成员函数说明</h2>
-<a id="ab5fff15b28e2924e53584ce4cefafc80" name="ab5fff15b28e2924e53584ce4cefafc80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5fff15b28e2924e53584ce4cefafc80">&#9670;&#160;</a></span>GetSerializationMemoryView()</h2>
+<a id="a4fecc0402253646bd4d1d6fa6992ab7c" name="a4fecc0402253646bd4d1d6fa6992ab7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fecc0402253646bd4d1d6fa6992ab7c">&#9670;&#160;</a></span>GetSerializationResultSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,7 +168,7 @@ Public 成员函数</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> LangYa::SentryLib::SerializableContent::GetSerializationMemoryView </td>
+          <td class="memname">virtual <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a> LangYa::SentryLib::SerializableContent::GetSerializationResultSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -192,15 +181,27 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the memory view of this content. </p>
-<dl class="section return"><dt>返回</dt><dd>The memory view of this content. </dd></dl>
+<p>获取序列化结果的大小。 返回序列化结果的大小，如果值为0，那么这个东西不可以被序列化。（谁继承这个接口然后返回0啊？） 建议遇到这种情况时直接抛出异常。 </p>
+<dl class="section return"><dt>返回</dt><dd>序列化结果的大小。 </dd></dl>
 
-<p>在 <a class="el" href="struct_sentry_data.html#aa95102ca949d64290feac41786f6886f">SentryData</a>, <a class="el" href="struct_embedded_software_controller_data.html#aeb5af5c0dcdecaf93bea5b66b1a49424">EmbeddedSoftwareControllerData</a>, <a class="el" href="struct_auto_aimer_software_controller_data.html#a15a5ebf65ae43234d000233f8fc32ac9">AutoAimerSoftwareControllerData</a>, <a class="el" href="struct_navigator_software_controller_data.html#ad10a187cf6087bb895d665c309406579">NavigatorSoftwareControllerData</a> , 以及 <a class="el" href="struct_referee_system_controller_data.html#a8f9559ed211f5aee87b0b64e7e0346c1">RefereeSystemControllerData</a> 内被实现.</p>
+<p>在 <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html#acb57e7e288551f4786bcd83573ad13e6">LangYa::SentryLib::SentryData</a> 内被实现.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_lang_ya_1_1_sentry_lib_1_1_serializable_content_a4fecc0402253646bd4d1d6fa6992ab7c_icgraph.png" border="0" usemap="#aclass_lang_ya_1_1_sentry_lib_1_1_serializable_content_a4fecc0402253646bd4d1d6fa6992ab7c_icgraph" alt=""/></div>
+<map name="aclass_lang_ya_1_1_sentry_lib_1_1_serializable_content_a4fecc0402253646bd4d1d6fa6992ab7c_icgraph" id="aclass_lang_ya_1_1_sentry_lib_1_1_serializable_content_a4fecc0402253646bd4d1d6fa6992ab7c_icgraph">
+<area shape="rect" title="获取序列化结果的大小。 返回序列化结果的大小，如果值为0，那么这个东西不可以被序列化。（谁继承这个接口然后返回0啊？） 建议遇到这种情况时直接抛出异常。" alt="" coords="103,5,287,64"/>
+<area shape="rect" href="_test_app_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,21,55,48"/>
+<area shape="poly" title=" " alt="" coords="87,37,55,37,55,32,87,32"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="a59c0dce20997dbd6f72646e9702b875d" name="a59c0dce20997dbd6f72646e9702b875d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59c0dce20997dbd6f72646e9702b875d">&#9670;&#160;</a></span>GetSerializationResultSize()</h2>
+<a id="a2720ba97257dbf02d329f1f68799c29e" name="a2720ba97257dbf02d329f1f68799c29e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2720ba97257dbf02d329f1f68799c29e">&#9670;&#160;</a></span>Serialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,37 +210,7 @@ Public 成员函数</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a> LangYa::SentryLib::SerializableContent::GetSerializationResultSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the size of the serialization result. </p>
-<dl class="section return"><dt>返回</dt><dd>The size of the serialization result. </dd></dl>
-
-<p>被 <a class="el" href="struct_sentry_data.html#a5f8dd4b5ab1499152377b1986e291de4">SentryData</a> 重载.</p>
-
-</div>
-</div>
-<a id="a5a95ef16153e0810f476e17f6af5b8cb" name="a5a95ef16153e0810f476e17f6af5b8cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a95ef16153e0810f476e17f6af5b8cb">&#9670;&#160;</a></span>Serialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool LangYa::SentryLib::SerializableContent::Serialize </td>
+          <td class="memname">virtual bool LangYa::SentryLib::SerializableContent::Serialize </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;&#160;</td>
           <td class="paramname"><em>buffer</em></td><td>)</td>
@@ -248,26 +219,38 @@ Public 成员函数</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Serialize data and write the result to buffer. </p>
+<p>序列化此内容，将序列化的结果写入缓冲区。 当提供的缓冲区太小时，不会执行序列化操作，返回false。 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buffer</td><td>Where to write the result. </td></tr>
+    <tr><td class="paramname">buffer</td><td>保存序列化结果的缓冲区。 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>返回</dt><dd>Whether the serialization is succeeded. </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>操作是否全部成功。 </dd></dl>
 
-<p>被 <a class="el" href="struct_sentry_data.html#a9ffd5403d5b83380106e57cd324e4b7d">SentryData</a> 重载.</p>
+<p>在 <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html#af1ab01d5c9b616ec5dad448f6a53f027">LangYa::SentryLib::SentryData</a> 内被实现.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_lang_ya_1_1_sentry_lib_1_1_serializable_content_a2720ba97257dbf02d329f1f68799c29e_icgraph.png" border="0" usemap="#aclass_lang_ya_1_1_sentry_lib_1_1_serializable_content_a2720ba97257dbf02d329f1f68799c29e_icgraph" alt=""/></div>
+<map name="aclass_lang_ya_1_1_sentry_lib_1_1_serializable_content_a2720ba97257dbf02d329f1f68799c29e_icgraph" id="aclass_lang_ya_1_1_sentry_lib_1_1_serializable_content_a2720ba97257dbf02d329f1f68799c29e_icgraph">
+<area shape="rect" title="序列化此内容，将序列化的结果写入缓冲区。 当提供的缓冲区太小时，不会执行序列化操作，返回false。" alt="" coords="103,5,239,64"/>
+<area shape="rect" href="_test_app_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,21,55,48"/>
+<area shape="poly" title=" " alt="" coords="87,37,55,37,55,32,87,32"/>
+</map>
+</div>
 
 </div>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
-<li>Headers/LangYa/SentryLib/<a class="el" href="">SerializableContent.hpp</a></li>
+<li>Headers/LangYa/SentryLib/Common/<a class="el" href="">SerializableContent.hpp</a></li>
 <li>Sources/<a class="el" href="">SerializableContent.cpp</a></li>
 </ul>
 </div><!-- contents -->
@@ -276,7 +259,7 @@ Public 成员函数</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_lang_ya.html">LangYa</a></li><li class="navelem"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">SentryLib</a></li><li class="navelem"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html">SerializableContent</a></li>
-    <li class="footer">生成于 2023年 十二月 7日 星期四 00:32:51 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 19日 星期二 23:40:51 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

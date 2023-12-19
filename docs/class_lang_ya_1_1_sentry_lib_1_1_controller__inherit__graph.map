@@ -1,5 +1,5 @@
-<map id="LangYa::SentryLib::Controller&lt; TControllerData &gt;" name="LangYa::SentryLib::Controller&lt; TControllerData &gt;">
-<area shape="rect" id="Node000001" title="代表一个机器人控制器 修改此控制器的变量并在合适的时机调用" alt="" coords="5,80,195,123"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="70,5,130,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,48,103,80,97,80,97,48"/>
+<map id="LangYa::SentryLib::Controller" name="LangYa::SentryLib::Controller">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,96,142,139"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_device.html" title="代表一种虚拟的设备，它需要有一个外部循环去调用。 大多数使用情况都是在一个线程中调用 Tick() 方法。" alt="" coords="5,5,142,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,64,76,96,71,96,71,64"/>
 </map>

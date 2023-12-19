@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.2</span>
+   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.3</span>
    </div>
    <div id="projectbrief">A robot lib by LangYa.Sango mostly for softwares on sentry</div>
   </td>
@@ -99,8 +99,8 @@ $(document).ready(function(){initNavTree('_armor_plate_info_8hpp.html',''); init
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="">LangYa/SentryLib/Math/Position3.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="">LangYa/SentryLib/Math/Vector3.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="">LangYa/SentryLib/RoboMaster.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="">LangYa/SentryLib/TimeStamp.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="">LangYa/SentryLib/Common/RoboMaster.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="">LangYa/SentryLib/Common/TimeStamp.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> ArmorPlateInfo.hpp 的引用(Include)关系图:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -108,15 +108,15 @@ $(document).ready(function(){initNavTree('_armor_plate_info_8hpp.html',''); init
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_armor_plate_info_8hpp__incl.png" border="0" usemap="#a_headers_2_lang_ya_2_sentry_lib_2_armor_plate_info_8hpp" alt=""/></div>
 <map name="a_headers_2_lang_ya_2_sentry_lib_2_armor_plate_info_8hpp" id="a_headers_2_lang_ya_2_sentry_lib_2_armor_plate_info_8hpp">
-<area shape="rect" title=" " alt="" coords="293,5,470,48"/>
+<area shape="rect" title=" " alt="" coords="283,5,459,48"/>
 <area shape="rect" href="_position3_8hpp.html" title=" " alt="" coords="13,96,171,139"/>
-<area shape="poly" title=" " alt="" coords="314,51,175,93,174,88,313,46"/>
+<area shape="poly" title=" " alt="" coords="306,51,173,93,171,88,305,46"/>
 <area shape="rect" href="_vector3_8hpp.html" title=" " alt="" coords="196,96,353,139"/>
-<area shape="poly" title=" " alt="" coords="358,50,313,88,309,84,355,46"/>
-<area shape="rect" href="_robo_master_8hpp.html" title=" " alt="" coords="378,104,601,131"/>
-<area shape="poly" title=" " alt="" coords="408,46,464,92,461,96,405,50"/>
-<area shape="rect" href="_time_stamp_8hpp.html" title=" " alt="" coords="625,104,844,131"/>
-<area shape="poly" title=" " alt="" coords="465,46,670,97,669,102,464,51"/>
+<area shape="poly" title=" " alt="" coords="350,50,310,87,306,83,347,46"/>
+<area shape="rect" href="_robo_master_8hpp.html" title=" " alt="" coords="378,96,558,139"/>
+<area shape="poly" title=" " alt="" coords="395,46,436,83,432,87,391,50"/>
+<area shape="rect" href="_time_stamp_8hpp.html" title=" " alt="" coords="582,96,762,139"/>
+<area shape="poly" title=" " alt="" coords="442,46,587,89,586,94,441,51"/>
 <area shape="rect" href="_position2_8hpp.html" title=" " alt="" coords="11,187,168,229"/>
 <area shape="poly" title=" " alt="" coords="94,139,93,171,88,171,89,139"/>
 <area shape="rect" href="_position1_8hpp.html" title=" " alt="" coords="5,277,163,320"/>
@@ -125,21 +125,23 @@ $(document).ready(function(){initNavTree('_armor_plate_info_8hpp.html',''); init
 <area shape="poly" title=" " alt="" coords="286,138,301,171,296,173,281,140"/>
 <area shape="rect" title=" " alt="" coords="187,285,240,312"/>
 <area shape="poly" title=" " alt="" coords="292,232,240,277,237,273,288,228"/>
-<area shape="rect" title=" " alt="" coords="383,368,452,395"/>
-<area shape="poly" title=" " alt="" coords="307,230,297,274,297,297,305,319,317,334,333,347,369,365,367,370,330,351,314,338,300,321,292,298,291,273,302,229"/>
+<area shape="rect" title=" " alt="" coords="326,368,394,395"/>
+<area shape="poly" title=" " alt="" coords="308,230,300,273,300,296,305,319,317,339,333,356,329,360,313,342,300,321,294,297,294,272,303,229"/>
 <area shape="rect" title=" " alt="" coords="315,285,384,312"/>
 <area shape="poly" title=" " alt="" coords="324,229,341,270,336,272,319,231"/>
 <area shape="rect" title=" " alt="" coords="408,285,504,312"/>
 <area shape="poly" title=" " alt="" coords="348,228,424,275,422,279,345,232"/>
-<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="529,285,757,312"/>
-<area shape="poly" title=" " alt="" coords="391,227,582,278,580,283,390,233"/>
-<area shape="poly" title=" " alt="" coords="608,315,467,365,465,360,607,310"/>
-<area shape="rect" title=" " alt="" coords="554,368,609,395"/>
-<area shape="poly" title=" " alt="" coords="635,314,602,358,598,354,631,311"/>
-<area shape="rect" title=" " alt="" coords="633,368,775,395"/>
-<area shape="poly" title=" " alt="" coords="654,311,688,354,683,358,650,314"/>
-<area shape="rect" title=" " alt="" coords="705,195,765,221"/>
-<area shape="poly" title=" " alt="" coords="737,131,737,179,732,179,732,131"/>
+<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="529,277,709,320"/>
+<area shape="poly" title=" " alt="" coords="386,227,533,270,532,275,384,233"/>
+<area shape="poly" title=" " alt="" coords="553,323,410,367,408,362,551,318"/>
+<area shape="rect" title=" " alt="" coords="500,368,567,395"/>
+<area shape="poly" title=" " alt="" coords="599,323,559,359,556,355,595,319"/>
+<area shape="rect" title=" " alt="" coords="591,368,646,395"/>
+<area shape="poly" title=" " alt="" coords="621,321,621,352,616,352,616,321"/>
+<area shape="rect" title=" " alt="" coords="671,368,812,395"/>
+<area shape="poly" title=" " alt="" coords="652,318,711,357,708,362,649,323"/>
+<area shape="rect" title=" " alt="" coords="642,195,702,221"/>
+<area shape="poly" title=" " alt="" coords="675,139,675,179,669,179,669,139"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -149,19 +151,19 @@ $(document).ready(function(){initNavTree('_armor_plate_info_8hpp.html',''); init
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_armor_plate_info_8hpp__dep__incl.png" border="0" usemap="#a_headers_2_lang_ya_2_sentry_lib_2_armor_plate_info_8hppdep" alt=""/></div>
 <map name="a_headers_2_lang_ya_2_sentry_lib_2_armor_plate_info_8hppdep" id="a_headers_2_lang_ya_2_sentry_lib_2_armor_plate_info_8hppdep">
-<area shape="rect" title=" " alt="" coords="378,5,554,48"/>
-<area shape="rect" href="_sentry_lib_8hpp.html" title=" " alt="" coords="257,96,459,123"/>
-<area shape="poly" title=" " alt="" coords="427,60,377,98,373,93,424,56"/>
-<area shape="rect" href="_armor_plate_info_8cpp.html" title=" " alt="" coords="482,96,666,123"/>
-<area shape="poly" title=" " alt="" coords="508,56,559,93,555,98,505,60"/>
+<area shape="rect" title=" " alt="" coords="375,5,552,48"/>
+<area shape="rect" href="_sentry_lib_8hpp.html" title=" " alt="" coords="255,96,456,123"/>
+<area shape="poly" title=" " alt="" coords="425,60,374,98,371,93,422,56"/>
+<area shape="rect" href="_armor_plate_info_8cpp.html" title=" " alt="" coords="480,96,663,123"/>
+<area shape="poly" title=" " alt="" coords="505,56,556,93,553,98,502,60"/>
 <area shape="rect" href="_sentry_lib_8cpp.html" title=" " alt="" coords="5,171,159,197"/>
-<area shape="poly" title=" " alt="" coords="296,129,131,173,130,167,295,124"/>
+<area shape="poly" title=" " alt="" coords="294,130,131,173,129,167,292,125"/>
 <area shape="rect" href="_example_app_8cpp.html" title=" " alt="" coords="182,171,350,197"/>
-<area shape="poly" title=" " alt="" coords="332,135,283,172,280,168,329,130"/>
-<area shape="rect" href="_ideal_logic_8cpp.html" title=" " alt="" coords="374,171,526,197"/>
-<area shape="poly" title=" " alt="" coords="387,130,436,168,433,172,384,135"/>
-<area shape="rect" href="_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和 json 配置文件的处理工具，使用操作见" alt="" coords="550,171,691,197"/>
-<area shape="poly" title=" " alt="" coords="419,125,575,167,574,173,418,130"/>
+<area shape="poly" title=" " alt="" coords="330,135,283,172,280,168,326,131"/>
+<area shape="rect" href="_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和 json 配置文件的处理工具，使用操作见" alt="" coords="374,171,515,197"/>
+<area shape="poly" title=" " alt="" coords="384,131,431,168,428,172,381,135"/>
+<area shape="rect" href="_tiny_sentry_mind_8cpp.html" title=" " alt="" coords="540,171,723,197"/>
+<area shape="poly" title=" " alt="" coords="418,124,584,167,582,173,417,129"/>
 </map>
 </div>
 </div>
@@ -186,7 +188,7 @@ $(document).ready(function(){initNavTree('_armor_plate_info_8hpp.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_692516b589a32b3bfce781ca9f6d1534.html">Headers</a></li><li class="navelem"><a class="el" href="dir_b117d0d76b03a6360b87a590e39f53f6.html">LangYa</a></li><li class="navelem"><a class="el" href="dir_0479bb77a485cc0baf99073ab05914e0.html">SentryLib</a></li><li class="navelem"><a class="el" href="_armor_plate_info_8hpp.html">ArmorPlateInfo.hpp</a></li>
-    <li class="footer">生成于 2023年 十二月 13日 星期三 20:05:23 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 19日 星期二 23:40:51 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
