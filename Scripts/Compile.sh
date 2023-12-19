@@ -8,7 +8,7 @@ mkdir build
 [[ -d build ]] && \
 echo "Created build directory" && \
 cd build && \
-cmake .. && \
+cmake .. -DCMAKE_CXX_COMPILER="/bin/g++-10" && \
 make -j8 && \
 cd .. && \
 exit 0

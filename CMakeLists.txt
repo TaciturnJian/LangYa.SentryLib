@@ -1,11 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
 
-# 跨平台支持 在这里写了 编译器版本
-if(CMAKE_SYSTEM_NAME MATCHES "Linux") 
-	set(CMAKE_C_COMPILER "/bin/gcc-10")
-	set(CMAKE_CXX_COMPILER "/bin/g++-10")
-endif()
-
 # 在这里设置项目的基本属性
 project(SentryLib 
 	VERSION 1.0.2

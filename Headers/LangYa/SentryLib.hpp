@@ -23,7 +23,6 @@
 #include <LangYa/SentryLib/Application/Configurator.hpp>
 #include <LangYa/SentryLib/Application/Monitor.hpp>
 #include <LangYa/SentryLib/Application/MonitorPackage.hpp>
-#include <LangYa/SentryLib/Application/MonitorSender.hpp>
 #include <LangYa/SentryLib/Common/Connection.hpp>
 #include <LangYa/SentryLib/Common/CSharpp.hpp>
 #include <LangYa/SentryLib/Common/DeserializableContent.hpp>
