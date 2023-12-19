@@ -27,14 +27,5 @@ namespace LangYa::SentryLib
 	///	@tparam T 受检查的类型。
 	template <typename T>
 	concept Deserializable = requires
-	(
-		DeserializableContent* base,
-		T* p,
-		MemoryView view,
-		MemoryView::SizeType size,
-		bool result
-	)
-		{
-			base = p;
-		};
+	(DeserializableContent* base, T* p){ base = p; };
 }

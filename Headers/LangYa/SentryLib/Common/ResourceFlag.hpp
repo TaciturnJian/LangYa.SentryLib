@@ -2,7 +2,7 @@
 
 namespace LangYa::SentryLib
 {
-	/// @brief Represents the status of resources.
+	/// @brief 代表资源的状态。
 	enum class ResourceFlag : char
 	{
 		/// @brief Indicate the resource is in busy status, which means you cannot read or write this now.

@@ -3,8 +3,6 @@
 #include <atomic>
 #include <functional>
 
-#include <spdlog/spdlog.h>
-
 namespace LangYa::SentryLib
 {
 	/// @brief 简单的状态机，用于根据比赛状态切换执行的回调函数。

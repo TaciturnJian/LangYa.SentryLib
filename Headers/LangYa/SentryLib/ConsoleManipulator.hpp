@@ -3,6 +3,8 @@
 #include <LangYa/SentryLib/Math/Vector2.hpp>
 
 namespace LangYa::SentryLib {
+	/// @brief 控制台操作器
+	///	封装了许多控制台的常用操作。
 	class ConsoleManipulator 
 	{
 	public:

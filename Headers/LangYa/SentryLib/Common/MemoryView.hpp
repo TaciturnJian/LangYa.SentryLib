@@ -12,7 +12,6 @@ namespace LangYa::SentryLib
 	///	类中提供了有关内存的操作函数，CopyTo 和 ReadFrom ，
 	///	它们都是对 memcpy 的封装，但是会使用内存视图中的数据检查调用 memcpy 的参数。
 	///	@author Sango
-	///	@example 
 	struct MemoryView
 	{
 		/// @brief 代表 Size 的数据类型。
@@ -49,7 +48,7 @@ namespace LangYa::SentryLib
 		explicit MemoryView(THead* const head, const SizeType& count = 1) :
 			// 鬼知道这里应该使用什么类型的强制转化，所以我使用了 C 风格的强制转化。qwq 不会有人读这里的代码吧。
 			// ReSharper disable once CppCStyleCast
-			Head((ByteType*)head),
+			Head((ByteType*)head),  // NOLINT(clang-diagnostic-cast-qual)
 			Size(count * sizeof(THead))
 		{
 		}

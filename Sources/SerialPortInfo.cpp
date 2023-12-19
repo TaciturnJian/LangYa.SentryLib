@@ -1,6 +1,6 @@
 #include <LangYa/SentryLib/Common/SerialPortInfo.hpp>
 
-#include <fmt/format.h>
+#include <sstream>
 
 namespace LangYa::SentryLib
 {
@@ -20,12 +20,22 @@ namespace LangYa::SentryLib
 	SerialPortInfo
 	::ToString() const
 	{
-		return fmt::format(
-			R"({{"IsConnected":"{}","CharacterSize":"{}","BaudRate":"{}","DeviceName":"{}"}})",
-			IsConnected,
-			CharacterSize,
-			BaudRate,
-			DeviceName
-		);
+		return (std::stringstream{} << *this).str();
+	}
+
+	std::ostream& 
+	SerialPortInfo::FormatToString(std::ostream& stream) const
+	{
+		return stream
+			<< R"({"IsConnected":)" << IsConnected
+			<< R"(,"CharacterSize":)"<< CharacterSize
+			<< R"(,"BaudRate":)" << BaudRate
+			<< R"(,"DeviceName":")" << DeviceName << "\"}";
+	}
+
+	std::ostream& 
+	operator<<(std::ostream& stream, const SerialPortInfo& info)
+	{
+		return info.FormatToString(stream);
 	}
 }

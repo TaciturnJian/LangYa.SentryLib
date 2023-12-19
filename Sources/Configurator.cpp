@@ -7,6 +7,8 @@
 
 #include <LangYa/SentryLib/Application/Configurator.hpp>
 
+/* 上面这一堆头文件真的是一个正常的 .cpp 应该有的东西吗？ */
+
 namespace LangYa::SentryLib
 {
 	Configurator
@@ -31,7 +33,7 @@ namespace LangYa::SentryLib
 	Configurator
 	::Load(const CommandLineArguments& commandLineArguments)
 	{
-		try
+		try /* 可能会报错，所以使用了 try-catch，具体报什么错，我不想测 (￢︿￢) */
 		{
 			spdlog::info("Configurator> Begin parsing command line arguments.");
 			store(
@@ -55,15 +57,17 @@ namespace LangYa::SentryLib
 			spdlog::error("Configurator> Caught exception in loading arguments: unknown exception ($1)");
 			return false;
 		}
+
+		/* try catch catch 每个分支都有 return，这代码谁写的 */
 	}
 
 	std::string
 	Configurator
 	::GetHelpContent() const
 	{
-		std::stringstream stream;
-		stream << OptionsWithDescription;
-		return fmt::format("Configurator> Command Line Argument Help Content:\n{}", stream.str());
+		/* 原来这里用的 fmt，代码可好看了，现在换成了 stream */
+		/* 谁要可读性啊，cpp 程序员看不得一点性能损失 (●'◡'●) */ 
+		return (std::stringstream{} << "Configurator> Command Line Argument Help Content:\n" << OptionsWithDescription).str();
 	}
 
 	bool
@@ -121,6 +125,8 @@ namespace LangYa::SentryLib
 		spdlog::info("Configurator> Closing json file({})", jsonFilePath);
 		try
 		{
+			/* 按道理，我完全不需要 close 这个文件，因为 ifsream 回收时会自己管理 */
+			/* 但是我就是想 close，因为我想多写几句写 try catch (*^_^*)  */
 			file.close();
 		}
 		catch (const std::exception& ex)

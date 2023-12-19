@@ -6,16 +6,16 @@
 namespace LangYa::SentryLib
 {
 	/// @brief 一个二重字节缓冲区，用于交换数据并保证最终得到的数据一定以 '!' 开头。
-	///	@warning Not thread-safe.
+	///	@warning 不是线程安全的类型。
 	class PingPongBuffer
 	{
-		/// @brief A view of ping buffer.
+		/// @brief 缓冲区的前半段。
 		MemoryView Ping{};
 
-		/// @brief A view of pong buffer.
+		/// @brief 缓冲区的后半段。
 		MemoryView Pong{};
 
-		/// @brief A huge buffer where there stores ping and pong.
+		/// @brief 缓冲区的总内存。
 		UniqueBuffer InnerBuffer{};
 
  	public:

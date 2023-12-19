@@ -1,5 +1,7 @@
 #include <thread>
 
+#include <spdlog/spdlog.h>
+
 #include <LangYa/SentryLib/MatchStatusManager.hpp>
 
 namespace LangYa::SentryLib

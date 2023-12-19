@@ -351,6 +351,5 @@ namespace LangYa::SentryLib
 		return *this;
 	}
 
-
 #endif
 }

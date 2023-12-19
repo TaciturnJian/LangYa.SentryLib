@@ -52,7 +52,7 @@ target_link_libraries(${PROJECT_NAME}
 )
 
 # 添加测试应用程序
-aux_source_directory(Testers TesterSources)
+#aux_source_directory(Testers TesterSources)
 foreach(TesterSource ${TesterSources})
 	get_filename_component(TesterName ${TesterSource} NAME_WLE)
 	message("Found Tester: ${TesterName} -> ${TesterSource}")

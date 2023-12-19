@@ -46,14 +46,8 @@ namespace LangYa::SentryLib
 		/// @brief 禁止拷贝构造。
 		SerialPort(const SerialPort&) = delete;
 
-		/// @brief 禁止拷贝赋值。
-		SerialPort& operator=(const SerialPort&) = delete;
-
 		/// @brief 禁止移动构造。
 		SerialPort(SerialPort&&) = delete;
-
-		/// @brief 禁止移动赋值。
-		SerialPort& operator=(SerialPort&&) = delete;
 
 		/// @brief 清理串口占用的资源。
 		~SerialPort() override;
@@ -72,10 +66,18 @@ namespace LangYa::SentryLib
 		///	@return 不可修改的串口信息。
 		[[nodiscard]] const SerialPortInfo& GetInfo() const;
 
+		/// @brief 从串口中读取数据。
+		///	@param view 用于接收数据的内存视图。
+		///	@return 读取的字节数。
 		MemoryView::SizeType Read(const MemoryView& view) override;
 
+		/// @brief 向串口中写入数据。
+		///	@param view 用于写入数据的内存视图。
+		///	@return 写入的字节数。
 		MemoryView::SizeType Write(const MemoryView& view) override;
 
-		std::string ToString() override;
+		/// @brief 提供串口信息。
+		///	@return 串口信息的字符串表示。
+		[[nodiscard]] std::string ToString() override;
 	};
 }

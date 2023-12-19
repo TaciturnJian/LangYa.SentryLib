@@ -6,26 +6,36 @@
 
 namespace LangYa::SentryLib
 {
-	/// @brief Represent a resource with flag (usage indicators), usually this resource is used in multi-threads.
-	///	If you want to get the content, use '=' operator to copy the memory.
-	///	The memory may be reading/writing in another thread!
-	/// @tparam TContent The type of content, must be trivially copyable.
+	/// @brief 代表一个在多线程中流通的资源。
+	/// 使用内部的 Flag 为资源上锁。
+	/// @tparam TContent 内容的类型，必须是可以使用等号操作符复制的类型。
 	template <typename TContent>
 	struct Resource final
 	{
-		/// @brief Indicate the status of the resource.
+		/// @brief 代表资源的状态。
 		std::atomic<ResourceFlag> Flag{ResourceFlag::Empty};
 
-		/// @brief The volatile content. May be reading/writing in different threads.
+		/// @brief 可能在不同线程中读取的内容。
+		///	如果你需要保证不会出现坏字节，使用等号赋值来取出内部的内容。
 		TContent Content{};
 
-		/// @brief Default constructor.
+		/// @brief 默认构造。
 		Resource();
 
-		/// @brief Construct with given things.
-		///	@param flag Indicate the primary status of the content.
-		///	@param content Indicate the primary content.
+		/// @brief 使用指定的内容构造资源。
+		///	@param flag 指代资源的初始状态。
+		///	@param content 指代初始资源。
 		Resource(const ResourceFlag& flag, const TContent& content);
+
+		/// @brief 使用指针的方式获取内容的内容。
+		/// 如果内容是一个结构体，那么利用到 C++ 的特性，你可以通过此指针直接访问它的成员。
+		///	@return Content 的指针。
+		TContent* operator->();
+
+		/// @brief 使用指针的方式获取内容的内容。
+		///	如果内容是一个结构体，那么利用到 C++ 的特性，你可以通过此指针直接访问它的成员。
+		///	@return Content 的常量指针。
+		const TContent* operator->() const;
 	};
 
 #pragma region 函数实现
@@ -36,6 +46,18 @@ namespace LangYa::SentryLib
 	template <typename TContent>
 	Resource<TContent>::Resource(const ResourceFlag& flag, const TContent& content): Flag(flag), Content(content)
 	{
+	}
+
+	template <typename TContent>
+	TContent* Resource<TContent>::operator->()
+	{
+		return &Content;
+	}
+
+	template <typename TContent>
+	const TContent* Resource<TContent>::operator->() const
+	{
+		return &Content;
 	}
 
 #pragma endregion
