@@ -41,6 +41,11 @@ namespace LangYa::SentryLib
 		/// @brief 更新控制器，将控制器的数据发送给机器人
 		///	@return 是否成功发送
 		bool Tick() override;
+
+		TControllerData* operator->()
+		{
+			return &LatestData;
+		}
 	};
 
 	//TODO 检测连接异常，如果异常则选择处理方式

@@ -23,7 +23,6 @@ namespace LangYa::SentryLib {
 		UnitTeam Team{UnitTeam::Neutral};
 
 		/// @brief 此装甲板对应的机器人ID。
-		/// 如果
 		UnitID ID{};
 
 		/// @brief 此装甲板对应的机器人类型。

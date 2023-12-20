@@ -1,0 +1,163 @@
+#pragma once
+
+#include <LangYa/SentryLib/Common/DeserializableContent.hpp>
+#include <LangYa/SentryLib/Common/SerializableContent.hpp>
+#include <LangYa/SentryLib/ArmorPlateInfo.hpp>
+
+namespace LangYa::SentryLib
+{
+	// 裁判数据
+	struct RefereeData final : DeserializableContent, SerializableContent
+	{
+		enum class MatchStatus : char
+		{
+			BeforeMatch = 0,
+			InMatch     = 1,
+			AfterMatch  = 2
+		};
+
+		MatchStatus CurrentMatchStatus{MatchStatus::BeforeMatch};
+		unsigned OutpostHealth{1000};
+
+		bool IUseRevive{false};
+		bool IUseReload{false};
+
+		[[nodiscard]] MemoryView::SizeType GetDeserializationResourceSize() const override
+		{
+			return sizeof(CurrentMatchStatus) + sizeof(OutpostHealth);
+		}
+
+		[[nodiscard]] bool Deserialize(const MemoryView& buffer) override
+		{
+			if (buffer.Size < GetDeserializationResourceSize())
+			{
+				return false;
+			}
+
+			auto ptr = buffer.Head;
+			CurrentMatchStatus = *reinterpret_cast<const MatchStatus*>(ptr);
+			ptr += sizeof(CurrentMatchStatus);
+			OutpostHealth = *reinterpret_cast<const unsigned*>(ptr);
+			return true;
+		}
+
+		[[nodiscard]] MemoryView::SizeType GetSerializationResultSize() const override
+		{
+			return sizeof(CurrentMatchStatus) + sizeof(OutpostHealth);
+		}
+
+		[[nodiscard]] bool Serialize(const MemoryView& buffer) override
+		{
+			if (buffer.Size < GetSerializationResultSize())
+			{
+				return false;
+			}
+
+			auto ptr = buffer.Head;
+			*reinterpret_cast<MatchStatus*>(ptr) = CurrentMatchStatus;
+			ptr += sizeof(CurrentMatchStatus);
+			*reinterpret_cast<unsigned*>(ptr) = OutpostHealth;
+			return true;
+		}
+	};
+
+	// 控制器数据
+	struct FullControlData final : DeserializableContent, SerializableContent
+	{
+		int HitTarget{0};
+		int MoveDestination{0};
+		bool StartScanMode{false};
+
+		[[nodiscard]] MemoryView::SizeType GetDeserializationResourceSize() const override
+		{
+			return sizeof(HitTarget) + sizeof(MoveDestination) + sizeof(StartScanMode);
+		}
+
+		[[nodiscard]] bool Deserialize(const MemoryView& buffer) override
+		{
+			if (buffer.Size < GetDeserializationResourceSize())
+			{
+				return false;
+			}
+
+			auto ptr = buffer.Head;
+			HitTarget = *reinterpret_cast<const int*>(ptr);
+			ptr += sizeof(HitTarget);
+			MoveDestination = *reinterpret_cast<const int*>(ptr);
+			ptr += sizeof(MoveDestination);
+			StartScanMode = *reinterpret_cast<const bool*>(ptr);
+			return true;
+		}
+
+		[[nodiscard]] MemoryView::SizeType GetSerializationResultSize() const override
+		{
+			return sizeof(HitTarget) + sizeof(MoveDestination) + sizeof(StartScanMode);
+		}
+
+		[[nodiscard]] bool Serialize(const MemoryView& buffer) override
+		{
+			if (buffer.Size < GetSerializationResultSize())
+			{
+				return false;
+			}
+
+			auto ptr = buffer.Head;
+			*reinterpret_cast<int*>(ptr) = HitTarget;
+			ptr += sizeof(HitTarget);
+			*reinterpret_cast<int*>(ptr) = MoveDestination;
+			ptr += sizeof(MoveDestination);
+			*reinterpret_cast<bool*>(ptr) = StartScanMode;
+			return true;
+		}
+	};
+
+	// 传感器数据
+	struct FullSensorData final : DeserializableContent, SerializableContent
+	{
+		ArmorPlateInfo LatestArmorPlate{};
+
+		[[nodiscard]] MemoryView::SizeType GetDeserializationResourceSize() const override
+		{
+			return sizeof(LatestArmorPlate);
+		}
+
+		[[nodiscard]] bool Deserialize(const MemoryView& buffer) override
+		{
+			//TODO 未完成
+			if (buffer.Size == 0)
+			{
+				return false;
+			}
+
+			if (buffer[0] == 1)
+			{
+				LatestArmorPlate.Position = {0, 1, 0};
+				LatestArmorPlate.Normal = {0, 0, 0};
+				LatestArmorPlate.Team = UnitTeam::Blue;
+				LatestArmorPlate.ID = UnitID::Hero;
+				LatestArmorPlate.Type = UnitType::Hero;
+			}
+			else
+			{
+				LatestArmorPlate = ArmorPlateInfo{};
+			}
+			return true;
+		}
+
+		[[nodiscard]] MemoryView::SizeType GetSerializationResultSize() const override
+		{
+			return sizeof(LatestArmorPlate);
+		}
+
+		[[nodiscard]] bool Serialize(const MemoryView& buffer) override
+		{
+			if (buffer.Size == 0)
+			{
+				return false;
+			}
+
+			buffer[0] = LatestArmorPlate.ID != UnitID::Empty ? 1 : 0;
+			return true;
+		}
+	};
+}

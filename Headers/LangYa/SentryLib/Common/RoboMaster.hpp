@@ -5,14 +5,15 @@ namespace LangYa::SentryLib
 	/// @brief 比赛时的所有团队。
 	enum class UnitTeam : char
 	{
-		Red = -1,
+		Red     = -1,
 		Neutral = 0,
-		Blue = 1
+		Blue    = 1
 	};
 
 	/// @brief 比赛时的所有机器人的ID。
 	enum class UnitID : char
 	{
+		Empty     = 0,
 		Hero      = 1,
 		Engineer  = 2,
 		Infantry1 = 3,

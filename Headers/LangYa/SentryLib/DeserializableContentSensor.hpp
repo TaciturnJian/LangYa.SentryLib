@@ -26,6 +26,11 @@ namespace LangYa::SentryLib
 		void GetData(TSensorData& data);
 
 		bool Tick() override;
+
+		TSensorData* operator->()
+		{
+			return &LatestData;
+		}
 	};
 
 	template <Deserializable TSensorData>

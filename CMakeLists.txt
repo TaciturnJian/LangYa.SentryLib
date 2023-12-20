@@ -52,7 +52,7 @@ target_link_libraries(${PROJECT_NAME}
 )
 
 # 添加测试应用程序
-#aux_source_directory(Testers TesterSources)
+aux_source_directory(Testers TesterSources)
 foreach(TesterSource ${TesterSources})
 	get_filename_component(TesterName ${TesterSource} NAME_WLE)
 	message("Found Tester: ${TesterName} -> ${TesterSource}")
@@ -61,3 +61,16 @@ foreach(TesterSource ${TesterSources})
 	set_target_properties(${TesterName} PROPERTIES CXX_STANDARD 20)
 	target_link_libraries(${TesterName} PRIVATE ${PROJECT_NAME})
 endforeach()
+
+# 添加 SentryFramework
+add_executable(SentryController "./SentryFramework/SentryController.cpp")
+add_executable(SentryMind "./SentryFramework/SentryMind.cpp")
+add_executable(SentryMonitor "./SentryFramework/SentryMonitor.cpp")
+add_executable(SentryReferee "./SentryFramework/SentryReferee.cpp")
+target_link_libraries(SentryController PRIVATE ${PROJECT_NAME})
+target_link_libraries(SentryMind PRIVATE ${PROJECT_NAME})
+target_link_libraries(SentryMonitor PRIVATE ${PROJECT_NAME})
+target_link_libraries(SentryReferee PRIVATE ${PROJECT_NAME})
+set_target_properties(SentryController SentryMind SentryMonitor SentryReferee
+	PROPERTIES CXX_STANDARD 20
+)

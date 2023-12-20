@@ -1,11 +1,9 @@
 #pragma once
 
 #include <sstream>
-#include <iomanip>
 #include <vector>
 #include <string>
 
-#include <boost/json/object.hpp>
 #include <boost/json/parse.hpp>
 
 #include <LangYa/SentryLib/Common/Connection.hpp>

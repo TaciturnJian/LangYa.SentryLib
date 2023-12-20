@@ -55,7 +55,6 @@ SC_ENTRY_POINT
 		}
 	}.detach();
 
-	// ReSharper disable once CppLocalVariableMayBeConst
 	std::atomic_bool stop_signal{false};
 	LangYa::SentryLib::TinyTCPServer server{HandleClient};
 	server.Start(stop_signal);
