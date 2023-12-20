@@ -20,7 +20,9 @@ namespace LangYa::SentryLib
 	SerialPortInfo
 	::ToString() const
 	{
-		return (std::stringstream{} << *this).str();
+		std::stringstream stream{};
+		stream << *this;
+		return stream.str();
 	}
 
 	std::ostream& 
