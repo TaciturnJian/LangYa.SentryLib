@@ -66,8 +66,10 @@ namespace LangYa::SentryLib
 	::GetHelpContent() const
 	{
 		/* 原来这里用的 fmt，代码可好看了，现在换成了 stream */
-		/* 谁要可读性啊，cpp 程序员看不得一点性能损失 (●'◡'●) */ 
-		return (std::stringstream{} << "Configurator> Command Line Argument Help Content:\n" << OptionsWithDescription).str();
+		/* 谁要可读性啊，cpp 程序员看不得一点性能损失 (●'◡'●) */
+		std::stringstream stream{"Configurator> Command Line Argument Help Content:\n"};
+		stream << OptionsWithDescription;
+		return stream.str();
 	}
 
 	bool
