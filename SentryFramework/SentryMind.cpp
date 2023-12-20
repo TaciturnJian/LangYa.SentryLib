@@ -61,7 +61,8 @@ int main()
 	}
 
 	// 初始化传感器与控制器
-	auto shared_full_data_controller = std::make_shared<SerializableContentController<FullControlData>>(device_connection);
+	auto shared_full_data_controller = std::make_shared<SerializableContentController<FullControlData>>(
+		device_connection);
 	auto shared_full_data_sensor = std::make_shared<DeserializableContentSensor<FullSensorData>>(device_connection);
 	auto shared_referee_sensor = std::make_shared<DeserializableContentSensor<RefereeData>>(referee_connection);
 	auto shared_referee_controller = std::make_shared<SerializableContentController<RefereeData>>(referee_connection);
@@ -69,26 +70,46 @@ int main()
 	std::thread device_ticking{
 		[=]
 		{
-			std::thread controller_tick{[=]
-			{
-				auto& controller = *shared_full_data_controller;
-				controller.Tick();
-			}};
-			std::thread referee_controller_tick{[=]
-			{
-				auto& controller = *shared_referee_controller;
-				controller.Tick();
-			}};
-			std::thread sensor_tick{[=]
-			{
-				auto& sensor = *shared_full_data_sensor;
-				sensor.Tick();
-			}};
-			std::thread referee_sensor_tick{[=]
-			{
-				auto& sensor = *shared_referee_sensor;
-				sensor.Tick();
-			}};
+			std::thread controller_tick{
+				[=]
+				{
+					while (true)
+					{
+						auto& controller = *shared_full_data_controller;
+						controller.Tick();
+					}
+				}
+			};
+			std::thread referee_controller_tick{
+				[=]
+				{
+					while (true)
+					{
+						auto& controller = *shared_referee_controller;
+						controller.Tick();
+					}
+				}
+			};
+			std::thread sensor_tick{
+				[=]
+				{
+					while (true)
+					{
+						auto& sensor = *shared_full_data_sensor;
+						sensor.Tick();
+					}
+				}
+			};
+			std::thread referee_sensor_tick{
+				[=]
+				{
+					while (true)
+					{
+						auto& sensor = *shared_referee_sensor;
+						sensor.Tick();
+					}
+				}
+			};
 
 			controller_tick.join();
 			referee_controller_tick.join();
@@ -122,7 +143,8 @@ int main()
 
 			// 每次都重新获取设备的引用，此时可以 TODO 检查设备是否掉线
 
-			if (auto& referee_sensor = *shared_referee_sensor; referee_sensor->CurrentMatchStatus == RefereeData::MatchStatus::InMatch)
+			if (auto& referee_sensor = *shared_referee_sensor; referee_sensor->CurrentMatchStatus ==
+				RefereeData::MatchStatus::InMatch)
 			{
 				matchBegin = true;
 				mind_status_package.Items[0].Value = 0;
@@ -139,7 +161,8 @@ int main()
 			// 执行其他策略
 		},
 
-		[&mind_status_package, &shared_full_data_sensor, &shared_referee_sensor, monitor_connection, shared_full_data_controller](std::atomic_bool& matchEnd)
+		[&mind_status_package, &shared_full_data_sensor, &shared_referee_sensor, monitor_connection,
+			shared_full_data_controller](std::atomic_bool& matchEnd)
 		{
 			mind_status_package.WriteJsonToSharedConnection(monitor_connection);
 
@@ -173,7 +196,9 @@ int main()
 
 			// 攻击装甲板
 			const bool attack_valid_armor = find_valid_armor && latest_armor_unit_id != UnitID::Sentry;
-			device_controller->HitTarget = static_cast<long long>((attack_valid_armor ? latest_armor_unit_id : UnitID::Empty));
+			device_controller->HitTarget = static_cast<long long>((attack_valid_armor
+				                                                       ? latest_armor_unit_id
+				                                                       : UnitID::Empty));
 			mind_status_package.Items[4].Value = device_controller->HitTarget;
 
 			// 去前哨
@@ -193,7 +218,8 @@ int main()
 			if (matchReset) return;
 
 			// 每次都重新获取设备的引用，此时可以 TODO 检查设备是否掉线
-			if (auto& referee_sensor = *shared_referee_sensor; referee_sensor->CurrentMatchStatus == RefereeData::MatchStatus::BeforeMatch)
+			if (auto& referee_sensor = *shared_referee_sensor; referee_sensor->CurrentMatchStatus ==
+				RefereeData::MatchStatus::BeforeMatch)
 			{
 				matchReset = true;
 				mind_status_package.Items[0].Value = 1;
