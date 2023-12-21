@@ -1,29 +1,31 @@
 #pragma once
 
 #include <ostream>
-#include <iomanip>
 #include <vector>
+
 #include <boost/asio/buffer.hpp>
 
 namespace LangYa::SentryLib
 {
-	/// @brief 代表一个内存的视图，保存内存的头指针和长度，供其他读写。
-	/// 不能保证作为传入的参数时得到的内存视图是有效的，因此作为函数参数时，这个类的基础是对调用者的信任。
+	/// @brief MemoryView 代表一个内存的视图，保存内存的头指针和长度，供其他读写。
+	/// @details 
+	/// MemoryView 提供关于内存的视图，
+	/// 它不能保证作为传入的参数时得到的内存视图是有效的，
+	/// 因此作为函数参数时，这个类的基础是对调用者的信任。
 	///	类中提供了有关内存的操作函数，CopyTo 和 ReadFrom ，
 	///	它们都是对 memcpy 的封装，但是会使用内存视图中的数据检查调用 memcpy 的参数。
-	///	@author Sango
 	struct MemoryView
 	{
 		/// @brief 代表 Size 的数据类型。
-		///	直接采用目前看来最大的整数类型。
+		///	@details 直接采用目前看来最大的整数类型。
 		using SizeType = unsigned long long;
 
 		/// @brief 代表字节类型。
-		///	字节类型是视图中的最小单位，偏移量都是对于字节类型来说的。
+		///	@details 字节类型是视图中的最小单位，偏移量都是对于字节类型来说的。
 		using ByteType = unsigned char;
 
 		/// @brief 代表一个内存的开头。
-		///	此类型采用了字节类型的指针，便于使用偏移量访问后面的内容。
+		///	@details 此类型采用了字节类型的指针，便于使用偏移量访问后面的内容。
 		using HeadType = ByteType*;
 
 		/// @brief 记录内存的开头，可以使用偏移量访问后面的内容。
@@ -102,15 +104,7 @@ namespace LangYa::SentryLib
 		///	@param stream 支持字节输出的流。
 		///	@param view 字节资源。
 		///	@return 参数中 stream 的引用。
-		friend std::ostream& operator<<(std::ostream& stream, const MemoryView& view)
-		{
-			for (SizeType i = 0; i < view.Size; i++)
-			{
-				stream << std::hex << static_cast<int>(view[i]) << ' ';
-			}
-
-			return stream;
-		}
+		friend std::ostream& operator<<(std::ostream& stream, const MemoryView& view);
 
 		/// @brief 将内存视图的数据利用指针强制转化，视为某个元素，然后放入 std::vector 中。
 		///	@tparam T std::vector 元素的类型。
@@ -129,7 +123,7 @@ namespace LangYa::SentryLib
 			return vector;
 		}
 
-		/// @brief 将此类型转化为 boost::asio::mutable_buffer
+		/// @brief 将此类型转化为 boost::asio::mutable_buffer 。
 		///	@return boost::asio::mutable_buffer 的一个实例。
 		[[nodiscard]] boost::asio::mutable_buffer ToBuffer() const;
 	};

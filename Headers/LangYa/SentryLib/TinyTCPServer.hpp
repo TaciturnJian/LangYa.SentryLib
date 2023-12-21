@@ -6,6 +6,9 @@
 
 namespace LangYa::SentryLib
 {
+	/// @brief 一个简单的 TCP 服务器。
+	///	@details TinyTCPServer 是一个理论上能响应无限 TCP 客户端的服务器。
+	///
 	class TinyTCPServer
 	{
 	public:

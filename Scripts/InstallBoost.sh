@@ -2,7 +2,7 @@
 
 echo Updating 
 sudo apt-get update
-sudo apt-get install zip wget curl git cmake build-essential -y
+sudo apt-get -y install zip wget curl git cmake build-essential
 
 mkdir ~/repos
 cd ~/repos

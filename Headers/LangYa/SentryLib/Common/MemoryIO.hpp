@@ -4,8 +4,9 @@
 
 namespace LangYa::SentryLib
 {
-	/// @brief 代表一个基本的读写类，在读和写的时候使用 @code LangYa::SentryLib::MemoryView @endcode.
-	///	一般来说，称读取操作为 Read/Receive ，写入操作为 Write/Send 。
+	/// @brief 代表一个基本的读写类，提供基本的 IO 功能。
+	/// @details 在读和写的时候使用如下类作为函数参数 @code LangYa::SentryLib::MemoryView @endcode.
+	///	一般来说读取操作为 Read/Receive ，写入操作为 Write/Send 。
 	class MemoryIO
 	{
 	public:

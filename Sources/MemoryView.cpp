@@ -1,6 +1,6 @@
-#include <LangYa/SentryLib/Common/MemoryView.hpp>
-
 #include <cstring>
+
+#include <LangYa/SentryLib/Common/MemoryView.hpp>
 
 namespace LangYa::SentryLib
 {
@@ -93,5 +93,16 @@ namespace LangYa::SentryLib
 	::ToBuffer() const
 	{
 		return boost::asio::buffer(Head, Size);
+	}
+
+	std::ostream& 
+	operator<<(std::ostream& stream, const MemoryView& view)
+	{
+		for (MemoryView::SizeType i = 0; i < view.Size; i++)
+		{
+			stream << std::hex << static_cast<int>(view[i]) << ' ';
+		}
+
+		return stream;
 	}
 }

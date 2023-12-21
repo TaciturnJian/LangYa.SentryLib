@@ -1,10 +1,9 @@
 /*
- *	Brief: Included all the headers of SentryLib
+ *	Brief: Included all the headers of SentryLib.
  *	Include this header to avoid too many include macro in your code.
  *
  *	Author: Sango|TaciturnJian@github.com
  *	Encode: UTF-8
- *  LastModify: 2023/12/7
  */
 
 #pragma once
