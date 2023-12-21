@@ -34,7 +34,7 @@ int main()
 			{
 				if (i % 2 == 0)
 				{
-					data.LatestArmorPlate.ID = LangYa::SentryLib::UnitID::Empty;
+					data.LatestArmorPlate.ID = 0;
 					spdlog::info("Device> No target.");
 					while (!data.Serialize(buffer_view))
 					{
@@ -48,7 +48,7 @@ int main()
 				}
 				else
 				{
-					data.LatestArmorPlate.ID = LangYa::SentryLib::UnitID::Hero;
+					data.LatestArmorPlate.ID = 1;
 					spdlog::info("Device> Hero target.");
 					while (!data.Serialize(buffer_view))
 					{

@@ -8,7 +8,6 @@
 
 #pragma once
 
-#include <LangYa/SentryLib/ArmorPlateInfo.hpp>
 #include <LangYa/SentryLib/ConsoleManipulator.hpp>
 #include <LangYa/SentryLib/DeserializableContentSensor.hpp>
 #include <LangYa/SentryLib/Device.hpp>

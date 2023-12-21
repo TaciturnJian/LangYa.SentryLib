@@ -2,7 +2,7 @@
 
 #include <LangYa/SentryLib/Common/DeserializableContent.hpp>
 #include <LangYa/SentryLib/Common/SerializableContent.hpp>
-#include <LangYa/SentryLib/ArmorPlateInfo.hpp>
+#include <LangYa/SentryLib/Interface/ArmorPlate.hpp>
 
 namespace LangYa::SentryLib
 {
@@ -114,7 +114,7 @@ namespace LangYa::SentryLib
 	// 传感器数据
 	struct FullSensorData final : DeserializableContent, SerializableContent
 	{
-		ArmorPlateInfo LatestArmorPlate{};
+		ArmorPlate LatestArmorPlate{};
 
 		[[nodiscard]] MemoryView::SizeType GetDeserializationResourceSize() const override
 		{
@@ -132,14 +132,12 @@ namespace LangYa::SentryLib
 			if (buffer[0] == 1)
 			{
 				LatestArmorPlate.Position = {0, 1, 0};
-				LatestArmorPlate.Normal = {0, 0, 0};
-				LatestArmorPlate.Team = UnitTeam::Blue;
-				LatestArmorPlate.ID = UnitID::Hero;
-				LatestArmorPlate.Type = UnitType::Hero;
+				LatestArmorPlate.NormalDirection = {0, 0, 0};
+				LatestArmorPlate.ID = 1;
 			}
 			else
 			{
-				LatestArmorPlate = ArmorPlateInfo{};
+				LatestArmorPlate = ArmorPlate{};
 			}
 			return true;
 		}
@@ -156,7 +154,7 @@ namespace LangYa::SentryLib
 				return false;
 			}
 
-			buffer[0] = LatestArmorPlate.ID != UnitID::Empty ? 1 : 0;
+			buffer[0] = static_cast<MemoryView::ByteType>(LatestArmorPlate.ID);
 			return true;
 		}
 	};

@@ -189,16 +189,16 @@ int main()
 
 			// 寻找装甲板
 			const auto latest_armor_unit_id = device_sensor->LatestArmorPlate.ID;
-			const bool find_valid_armor = latest_armor_unit_id != UnitID::Empty;
+			const bool find_valid_armor = latest_armor_unit_id != 0;
 			mind_status_package.Items[3].Value = find_valid_armor ? static_cast<long long>(latest_armor_unit_id) : 0;
 
 			// TODO 检查弹药
 
 			// 攻击装甲板
-			const bool attack_valid_armor = find_valid_armor && latest_armor_unit_id != UnitID::Sentry;
+			const bool attack_valid_armor = find_valid_armor && latest_armor_unit_id != 2;
 			device_controller->HitTarget = static_cast<long long>((attack_valid_armor
 				                                                       ? latest_armor_unit_id
-				                                                       : UnitID::Empty));
+				                                                       : 0));
 			mind_status_package.Items[4].Value = device_controller->HitTarget;
 
 			// 去前哨
