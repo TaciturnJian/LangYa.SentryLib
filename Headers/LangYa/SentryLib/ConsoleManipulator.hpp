@@ -1,6 +1,7 @@
 #pragma once
 
-#include <LangYa/SentryLib/Math/Vector2.hpp>
+#include <LangYa/SentryLib/Math/Vector.hpp>
+#include <LangYa/SentryLib/Math/Position2.hpp>
 
 namespace LangYa::SentryLib {
 	/// @brief 控制台操作器
@@ -29,7 +30,7 @@ namespace LangYa::SentryLib {
 		ConsoleManipulator& TurnOnInverseColor();
 		ConsoleManipulator& SetForegroundColor(CommonColor color);
 		ConsoleManipulator& SetBackgroundColor(CommonColor color);
-		ConsoleManipulator& MoveCursor(Vector2S offset);
+		ConsoleManipulator& MoveCursor(const Vector2S& offset);
 		ConsoleManipulator& MoveCursorTo(const Position2Ui& position);
 		ConsoleManipulator& ClearScreen();
 		ConsoleManipulator& ClearToLineEnd();

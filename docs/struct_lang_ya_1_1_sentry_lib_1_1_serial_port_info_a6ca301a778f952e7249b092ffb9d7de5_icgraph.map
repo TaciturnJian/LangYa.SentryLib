@@ -1,5 +1,0 @@
-<map id="LangYa::SentryLib::SerialPortInfo::ToString" name="LangYa::SentryLib::SerialPortInfo::ToString">
-<area shape="rect" id="Node000001" title="将串口信息转换为 json 格式字符串。 用于日志。" alt="" coords="210,5,364,48"/>
-<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_serial_port.html#a881fa8f54a86841727bb8e2aee769a84" title="构建串口，返回共享串口指针，请提供有效的串口信息。" alt="" coords="5,5,162,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,29,162,29,162,24,194,24"/>
-</map>

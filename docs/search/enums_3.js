@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['unitid_0',['UnitID',['../namespace_lang_ya_1_1_sentry_lib.html#a01fa38254edec1ace0c91eeeabbc84ea',1,'LangYa::SentryLib']]],
-  ['unitteam_1',['UnitTeam',['../namespace_lang_ya_1_1_sentry_lib.html#af7259725b9fc06bee926bd34a470aa18',1,'LangYa::SentryLib']]],
-  ['unittype_2',['UnitType',['../namespace_lang_ya_1_1_sentry_lib.html#a0016e34c68ca1078acf541153a27177b',1,'LangYa::SentryLib']]]
+  ['resourceflag_0',['ResourceFlag',['../namespace_lang_ya_1_1_sentry_lib.html#a36d2882e7661f30e5caf0f74c85df62d',1,'LangYa::SentryLib']]],
+  ['robomasterteam_1',['RoboMasterTeam',['../_team_armor_color_8h.html#a4f93a24abe53b4811e78b440f059c94b',1,'TeamArmorColor.h']]]
 ];

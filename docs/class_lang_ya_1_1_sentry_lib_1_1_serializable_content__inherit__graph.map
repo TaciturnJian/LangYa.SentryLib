@@ -1,5 +1,11 @@
 <map id="LangYa::SentryLib::SerializableContent" name="LangYa::SentryLib::SerializableContent">
-<area shape="rect" id="Node000001" title="代表一个可被序列化的东西。 可被序列化即信息可以无损地转换为二进制数据。 一般将内容序列化后，将其写入文件或者网络传输，可以减轻读写传输等IO操作的压力。" alt="" coords="5,5,142,48"/>
-<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html" title=" " alt="" coords="5,96,142,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,64,76,96,71,96,71,64"/>
+<area shape="rect" id="Node000001" title="代表一个可被序列化的东西。 可被序列化即信息可以无损地转换为二进制数据。 一般将内容序列化后，将其写入文件或者网络传输，可以减轻读写传输等IO操作的压力。" alt="" coords="5,105,142,148"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_full_control_data.html" title=" " alt="" coords="190,5,326,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,95,188,58,210,46,213,51,191,62,125,100"/>
+<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_sentry_lib_1_1_full_sensor_data.html" title=" " alt="" coords="190,72,326,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,109,189,103,190,108,157,114"/>
+<area shape="rect" id="Node000004" href="$struct_lang_ya_1_1_sentry_lib_1_1_referee_data.html" title=" " alt="" coords="190,139,326,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="157,139,190,145,189,150,156,144"/>
+<area shape="rect" id="Node000005" href="$struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html" title=" " alt="" coords="190,205,326,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="125,154,191,191,213,202,210,207,188,196,123,158"/>
 </map>

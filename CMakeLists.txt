@@ -63,14 +63,14 @@ foreach(TesterSource ${TesterSources})
 endforeach()
 
 # 添加 SentryFramework
-add_executable(SentryDevice "./SentryFramework/SentryDevice.cpp")
-add_executable(SentryMind "./SentryFramework/SentryMind.cpp")
-add_executable(SentryMonitor "./SentryFramework/SentryMonitor.cpp")
-add_executable(SentryReferee "./SentryFramework/SentryReferee.cpp")
-target_link_libraries(SentryDevice PRIVATE ${PROJECT_NAME})
-target_link_libraries(SentryMind PRIVATE ${PROJECT_NAME})
-target_link_libraries(SentryMonitor PRIVATE ${PROJECT_NAME})
-target_link_libraries(SentryReferee PRIVATE ${PROJECT_NAME})
-set_target_properties(SentryDevice SentryMind SentryMonitor SentryReferee
-	PROPERTIES CXX_STANDARD 20
-)
+#add_executable(SentryDevice "./SentryFramework/SentryDevice.cpp")
+#add_executable(SentryMind "./SentryFramework/SentryMind.cpp")
+#add_executable(SentryMonitor "./SentryFramework/SentryMonitor.cpp")
+#add_executable(SentryReferee "./SentryFramework/SentryReferee.cpp")
+#target_link_libraries(SentryDevice PRIVATE ${PROJECT_NAME})
+#target_link_libraries(SentryMind PRIVATE ${PROJECT_NAME})
+#target_link_libraries(SentryMonitor PRIVATE ${PROJECT_NAME})
+#target_link_libraries(SentryReferee PRIVATE ${PROJECT_NAME})
+#set_target_properties(SentryDevice SentryMind SentryMonitor SentryReferee
+#	PROPERTIES CXX_STANDARD 20
+#)

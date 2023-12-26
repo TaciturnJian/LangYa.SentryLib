@@ -57,6 +57,8 @@ var NAVTREE =
         [ "函数", "globals_func.html", null ],
         [ "变量", "globals_vars.html", null ],
         [ "类型定义", "globals_type.html", null ],
+        [ "枚举", "globals_enum.html", null ],
+        [ "枚举值", "globals_eval.html", null ],
         [ "宏定义", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -66,11 +68,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_info_8cpp.html",
-"build_2_c_make_files_23_827_89_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#adbc5372f40838899018fadbc89bd588b",
-"class_lang_ya_1_1_sentry_lib_1_1_memory_access.html#a70c4d8dd8097b25a0900b1799c9c65e2",
-"class_lang_ya_1_1_sentry_lib_1_1_vector2.html#ae222c39f97a348bf257c01995fcb952c",
-"namespace_lang_ya_1_1_sentry_lib.html#ad3d83d6076fb9f6a953512df2382cab6",
-"struct_lang_ya_1_1_sentry_lib_1_1_sentry_data_1_1_serialization_result.html#a75b44c81fc725a9c405a6088a34801c9"
+"_vector_8hpp.html#a1f5062a805058dadf821a48f7fb135bb",
+"class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html#a81156b89996d13c13843df36128e8039",
+"class_lang_ya_1_1_sentry_lib_1_1_vector.html#a4dba5586909542d9eb8baca2e2968178",
+"namespace_lang_ya_1_1_sentry_lib.html#aff6e0071203ffd7774480a01982a8039",
+"struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html#af1ab01d5c9b616ec5dad448f6a53f027"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

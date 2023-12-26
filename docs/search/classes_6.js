@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nameditem_0',['NamedItem',['../class_named_item.html',1,'']]]
+  ['langyaconnection_0',['LangYaConnection',['../class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html',1,'LangYa::SentryLib']]]
 ];

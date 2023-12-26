@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['tcp_5fconnection_5fptr_0',['tcp_connection_ptr',['../_controller_sensor_tester_8cpp.html#a51c612baff8ae179d262969d78d7ae58',1,'ControllerSensorTester.cpp']]],
-  ['team_1',['Team',['../struct_lang_ya_1_1_sentry_lib_1_1_armor_plate_info.html#ad34f4c47afddcb9888e61acc564af23d',1,'LangYa::SentryLib::ArmorPlateInfo']]],
-  ['temp_5fsentry_5fdata_2',['temp_sentry_data',['../_controller_sensor_tester_8cpp.html#a56927f6439586081cc7d77333f8d5768',1,'ControllerSensorTester.cpp']]],
-  ['timecost_3',['TimeCost',['../struct_action_info.html#a3e484f9fe24ead5b02c1f4ddccc991a4',1,'ActionInfo']]],
-  ['timepoint_4',['TimePoint',['../struct_lang_ya_1_1_sentry_lib_1_1_time_stamp.html#a654060ad1a4cd01b0499550230430463',1,'LangYa::SentryLib::TimeStamp']]],
-  ['type_5',['Type',['../struct_lang_ya_1_1_sentry_lib_1_1_armor_plate_info.html#a8e8a4ba9702dfa84b771382b40f600df',1,'LangYa::SentryLib::ArmorPlateInfo']]]
+  ['sc_5fentry_5fpoint_0',['SC_ENTRY_POINT',['../_controller_sensor_tester_8cpp.html#a63b77ba28007a109428fef0c55dbb0d1',1,'ControllerSensorTester.cpp']]],
+  ['sensor_5fptr_1',['sensor_ptr',['../_controller_sensor_tester_8cpp.html#a52eb9b155bdc1556c1581c3b55f62b39',1,'ControllerSensorTester.cpp']]],
+  ['size_2',['Size',['../struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#aebfa91b719ebd4721036343261fc35d3',1,'LangYa::SentryLib::MemoryView']]],
+  ['startscanmode_3',['StartScanMode',['../struct_lang_ya_1_1_sentry_lib_1_1_full_control_data.html#a50018e97286e24cedd2645e6d4a5b914',1,'LangYa::SentryLib::FullControlData']]]
 ];

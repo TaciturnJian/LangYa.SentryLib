@@ -1,5 +1,5 @@
 <map id="LangYa::SentryLib::Connection" name="LangYa::SentryLib::Connection">
 <area shape="rect" id="Node000001" title="代表一个类似 IO 的连接，只提供基本的读写和开启/关闭连接的功能。" alt="" coords="5,96,142,139"/>
-<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html" title="代表一个基本的读写类，在读和写的时候使用" alt="" coords="5,5,142,48"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html" title="代表一个基本的读写类，提供基本的 IO 功能。" alt="" coords="5,5,142,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,64,76,96,71,96,71,64"/>
 </map>

@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('class_lang_ya_1_1_sentry_lib_1_1_seria
 <area shape="rect" title="代表系统中的一个串口，本质是" alt="" coords="5,187,142,229"/>
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_connection.html" title="代表一个类似 IO 的连接，只提供基本的读写和开启/关闭连接的功能。" alt="" coords="5,96,142,139"/>
 <area shape="poly" title=" " alt="" coords="76,154,76,186,71,186,71,154"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html" title="代表一个基本的读写类，在读和写的时候使用" alt="" coords="5,5,142,48"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html" title="代表一个基本的读写类，提供基本的 IO 功能。" alt="" coords="5,5,142,48"/>
 <area shape="poly" title=" " alt="" coords="76,64,76,96,71,96,71,64"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('class_lang_ya_1_1_sentry_lib_1_1_seria
 <area shape="rect" title="代表系统中的一个串口，本质是" alt="" coords="5,187,142,229"/>
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_connection.html" title="代表一个类似 IO 的连接，只提供基本的读写和开启/关闭连接的功能。" alt="" coords="5,96,142,139"/>
 <area shape="poly" title=" " alt="" coords="76,154,76,186,71,186,71,154"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html" title="代表一个基本的读写类，在读和写的时候使用" alt="" coords="5,5,142,48"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html" title="代表一个基本的读写类，提供基本的 IO 功能。" alt="" coords="5,5,142,48"/>
 <area shape="poly" title=" " alt="" coords="76,64,76,96,71,96,71,64"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
@@ -387,18 +387,6 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>共享串口指针。 </dd></dl>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="class_lang_ya_1_1_sentry_lib_1_1_serial_port_a881fa8f54a86841727bb8e2aee769a84_cgraph.png" border="0" usemap="#aclass_lang_ya_1_1_sentry_lib_1_1_serial_port_a881fa8f54a86841727bb8e2aee769a84_cgraph" alt=""/></div>
-<map name="aclass_lang_ya_1_1_sentry_lib_1_1_serial_port_a881fa8f54a86841727bb8e2aee769a84_cgraph" id="aclass_lang_ya_1_1_sentry_lib_1_1_serial_port_a881fa8f54a86841727bb8e2aee769a84_cgraph">
-<area shape="rect" title="构建串口，返回共享串口指针，请提供有效的串口信息。" alt="" coords="5,5,162,48"/>
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_serial_port_info.html#a6ca301a778f952e7249b092ffb9d7de5" title="将串口信息转换为 json 格式字符串。 用于日志。" alt="" coords="210,5,364,48"/>
-<area shape="poly" title=" " alt="" coords="162,24,194,24,194,29,162,29"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -544,18 +532,6 @@ Public 成员函数</h2></td></tr>
 <dl class="section return"><dt>返回</dt><dd>读取的字节数。 </dd></dl>
 
 <p>实现了 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html#aac88bdd5b43067b961a844c4bde678cd">LangYa::SentryLib::MemoryIO</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="class_lang_ya_1_1_sentry_lib_1_1_serial_port_a04f1221f610007de35947a05a0f67b49_cgraph.png" border="0" usemap="#aclass_lang_ya_1_1_sentry_lib_1_1_serial_port_a04f1221f610007de35947a05a0f67b49_cgraph" alt=""/></div>
-<map name="aclass_lang_ya_1_1_sentry_lib_1_1_serial_port_a04f1221f610007de35947a05a0f67b49_cgraph" id="aclass_lang_ya_1_1_sentry_lib_1_1_serial_port_a04f1221f610007de35947a05a0f67b49_cgraph">
-<area shape="rect" title="从串口中读取数据。" alt="" coords="5,5,142,48"/>
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#ab03cdbd7de9a9347dd56d11b6b94f4ab" title="将此类型转化为 boost::asio::mutable_buffer" alt="" coords="190,5,341,48"/>
-<area shape="poly" title=" " alt="" coords="142,24,174,24,174,29,142,29"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -623,18 +599,6 @@ Public 成员函数</h2></td></tr>
 <dl class="section return"><dt>返回</dt><dd>写入的字节数。 </dd></dl>
 
 <p>实现了 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html#a0dc3293dea137ec363fdfd9644bd7fe6">LangYa::SentryLib::MemoryIO</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="class_lang_ya_1_1_sentry_lib_1_1_serial_port_a64d607b65c48584afbbd3f6f4a827cfa_cgraph.png" border="0" usemap="#aclass_lang_ya_1_1_sentry_lib_1_1_serial_port_a64d607b65c48584afbbd3f6f4a827cfa_cgraph" alt=""/></div>
-<map name="aclass_lang_ya_1_1_sentry_lib_1_1_serial_port_a64d607b65c48584afbbd3f6f4a827cfa_cgraph" id="aclass_lang_ya_1_1_sentry_lib_1_1_serial_port_a64d607b65c48584afbbd3f6f4a827cfa_cgraph">
-<area shape="rect" title="向串口中写入数据。" alt="" coords="5,5,142,48"/>
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#ab03cdbd7de9a9347dd56d11b6b94f4ab" title="将此类型转化为 boost::asio::mutable_buffer" alt="" coords="190,5,341,48"/>
-<area shape="poly" title=" " alt="" coords="142,24,174,24,174,29,142,29"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -648,7 +612,7 @@ Public 成员函数</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_lang_ya.html">LangYa</a></li><li class="navelem"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">SentryLib</a></li><li class="navelem"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_serial_port.html">SerialPort</a></li>
-    <li class="footer">生成于 2023年 十二月 19日 星期二 23:40:51 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 26日 星期二 17:08:20 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

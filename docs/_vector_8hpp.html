@@ -94,15 +94,15 @@ $(document).ready(function(){initNavTree('_vector_8hpp.html',''); initResizable(
   <div class="summary">
 <a href="#nested-classes">类</a> &#124;
 <a href="#namespaces">命名空间</a> &#124;
-<a href="#typedef-members">类型定义</a>  </div>
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
   <div class="headertitle"><div class="title">Vector.hpp 文件参考</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
-<code>#include &lt;ostream&gt;</code><br />
-<code>#include &lt;sstream&gt;</code><br />
-<code>#include &lt;initializer_list&gt;</code><br />
+<div class="textblock"><code>#include &lt;initializer_list&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;<a class="el" href="">LangYa/SentryLib/Common/MemoryView.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="">LangYa/SentryLib/CanStreamFormatToJson.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Vector.hpp 的引用(Include)关系图:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -110,24 +110,23 @@ $(document).ready(function(){initNavTree('_vector_8hpp.html',''); initResizable(
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_vector_8hpp__incl.png" border="0" usemap="#a_headers_2_lang_ya_2_sentry_lib_2_math_2_vector_8hpp" alt=""/></div>
 <map name="a_headers_2_lang_ya_2_sentry_lib_2_math_2_vector_8hpp" id="a_headers_2_lang_ya_2_sentry_lib_2_math_2_vector_8hpp">
-<area shape="rect" title=" " alt="" coords="80,5,256,48"/>
-<area shape="rect" title=" " alt="" coords="5,104,59,131"/>
-<area shape="poly" title=" " alt="" coords="138,51,65,98,63,93,135,46"/>
-<area shape="rect" title=" " alt="" coords="145,187,213,213"/>
-<area shape="poly" title=" " alt="" coords="151,50,136,72,124,97,119,118,124,138,136,158,151,175,147,178,131,161,119,140,114,118,119,95,131,69,147,47"/>
-<area shape="rect" title=" " alt="" coords="134,104,202,131"/>
-<area shape="poly" title=" " alt="" coords="171,48,171,88,165,88,165,48"/>
-<area shape="rect" title=" " alt="" coords="227,104,323,131"/>
-<area shape="poly" title=" " alt="" coords="194,46,249,92,246,96,191,50"/>
-<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="347,96,528,139"/>
-<area shape="poly" title=" " alt="" coords="232,46,361,88,359,93,230,51"/>
-<area shape="poly" title=" " alt="" coords="372,142,229,186,227,181,370,137"/>
-<area shape="rect" title=" " alt="" coords="319,187,385,213"/>
-<area shape="poly" title=" " alt="" coords="417,141,378,178,374,174,414,137"/>
-<area shape="rect" title=" " alt="" coords="410,187,465,213"/>
-<area shape="poly" title=" " alt="" coords="440,139,440,171,435,171,435,139"/>
-<area shape="rect" title=" " alt="" coords="489,187,631,213"/>
-<area shape="poly" title=" " alt="" coords="470,137,530,176,527,180,467,142"/>
+<area shape="rect" title=" " alt="" coords="115,5,291,48"/>
+<area shape="rect" title=" " alt="" coords="5,104,102,131"/>
+<area shape="poly" title=" " alt="" coords="169,51,89,98,87,93,166,46"/>
+<area shape="rect" title=" " alt="" coords="114,187,169,213"/>
+<area shape="poly" title=" " alt="" coords="191,50,167,97,155,136,148,172,143,171,150,134,162,95,187,47"/>
+<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="177,96,357,139"/>
+<area shape="poly" title=" " alt="" coords="220,47,245,82,241,85,216,50"/>
+<area shape="rect" href="_can_stream_format_to_json_8hpp.html" title=" " alt="" coords="381,96,574,139"/>
+<area shape="poly" title=" " alt="" coords="268,46,400,88,398,93,266,51"/>
+<area shape="poly" title=" " alt="" coords="236,142,175,180,172,176,233,137"/>
+<area shape="rect" title=" " alt="" coords="361,187,429,213"/>
+<area shape="poly" title=" " alt="" coords="301,137,363,176,360,180,298,142"/>
+<area shape="rect" title=" " alt="" coords="195,187,336,213"/>
+<area shape="poly" title=" " alt="" coords="269,139,269,171,263,171,264,139"/>
+<area shape="poly" title=" " alt="" coords="458,141,421,178,417,174,454,137"/>
+<area shape="rect" title=" " alt="" coords="453,187,566,213"/>
+<area shape="poly" title=" " alt="" coords="488,138,501,171,496,173,483,140"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -137,52 +136,75 @@ $(document).ready(function(){initNavTree('_vector_8hpp.html',''); initResizable(
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_vector_8hpp__dep__incl.png" border="0" usemap="#a_headers_2_lang_ya_2_sentry_lib_2_math_2_vector_8hppdep" alt=""/></div>
 <map name="a_headers_2_lang_ya_2_sentry_lib_2_math_2_vector_8hppdep" id="a_headers_2_lang_ya_2_sentry_lib_2_math_2_vector_8hppdep">
-<area shape="rect" title=" " alt="" coords="1154,5,1330,48"/>
-<area shape="rect" href="_sentry_lib_8hpp.html" title=" " alt="" coords="1009,285,1211,312"/>
-<area shape="poly" title=" " alt="" coords="1141,52,1107,71,1082,98,1070,121,1066,147,1067,173,1071,200,1088,249,1105,284,1100,286,1083,251,1066,201,1061,174,1061,146,1065,119,1077,94,1104,67,1138,48"/>
-<area shape="rect" href="_vector2_8hpp.html" title=" " alt="" coords="1091,96,1268,139"/>
-<area shape="poly" title=" " alt="" coords="1221,62,1196,97,1192,94,1217,59"/>
-<area shape="rect" href="_math_8cpp.html" title=" " alt="" coords="1317,195,1444,221"/>
-<area shape="poly" title=" " alt="" coords="1269,59,1373,193,1369,196,1265,62"/>
-<area shape="rect" href="_vector3_8hpp.html" title=" " alt="" coords="1381,96,1557,139"/>
-<area shape="poly" title=" " alt="" coords="1310,52,1416,93,1414,98,1308,57"/>
-<area shape="rect" href="_sentry_lib_8cpp.html" title=" " alt="" coords="760,368,913,395"/>
-<area shape="poly" title=" " alt="" coords="1053,319,880,370,879,365,1052,314"/>
-<area shape="rect" href="_example_app_8cpp.html" title=" " alt="" coords="937,368,1104,395"/>
-<area shape="poly" title=" " alt="" coords="1087,324,1036,370,1032,366,1083,320"/>
-<area shape="rect" href="_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和 json 配置文件的处理工具，使用操作见" alt="" coords="1129,368,1270,395"/>
-<area shape="poly" title=" " alt="" coords="1137,320,1188,366,1184,370,1133,324"/>
-<area shape="rect" href="_tiny_sentry_mind_8cpp.html" title=" " alt="" coords="1294,368,1478,395"/>
-<area shape="poly" title=" " alt="" coords="1169,314,1343,365,1342,370,1167,319"/>
-<area shape="poly" title=" " alt="" coords="1136,151,1120,168,1107,188,1100,213,1100,240,1108,284,1103,285,1095,240,1095,213,1102,186,1115,165,1132,147"/>
-<area shape="rect" href="_console_manipulator_8hpp.html" title=" " alt="" coords="430,187,606,229"/>
-<area shape="poly" title=" " alt="" coords="1076,135,607,198,606,192,1076,130"/>
-<area shape="rect" href="_sentry_data_8hpp.html" title=" " alt="" coords="815,187,992,229"/>
-<area shape="poly" title=" " alt="" coords="1101,146,969,189,967,183,1099,141"/>
-<area shape="rect" href="_vi_map_8hpp.html" title=" " alt="" coords="1117,187,1293,229"/>
-<area shape="poly" title=" " alt="" coords="1192,153,1201,186,1196,187,1187,154"/>
-<area shape="poly" title=" " alt="" coords="1241,143,1353,192,1351,196,1239,148"/>
-<area shape="poly" title=" " alt="" coords="622,220,998,275,1042,282,1041,287,998,280,621,226"/>
-<area shape="rect" href="_console_manipulator_8cpp.html" title=" " alt="" coords="191,285,403,312"/>
-<area shape="poly" title=" " alt="" coords="453,238,329,287,327,282,451,233"/>
-<area shape="rect" href="_console_manipulator_tester_8cpp.html" title=" " alt="" coords="427,277,609,320"/>
-<area shape="poly" title=" " alt="" coords="521,245,521,277,515,277,515,245"/>
-<area shape="rect" href="_t_c_p_monitor_8cpp.html" title=" " alt="" coords="5,285,167,312"/>
-<area shape="poly" title=" " alt="" coords="415,232,179,280,144,287,143,282,177,275,414,227"/>
-<area shape="poly" title=" " alt="" coords="967,234,1081,282,1079,287,965,238"/>
-<area shape="rect" href="_sentry_data_8cpp.html" title=" " alt="" coords="634,285,797,312"/>
-<area shape="poly" title=" " alt="" coords="847,239,743,287,741,282,844,234"/>
-<area shape="rect" href="_controller_sensor_tester_8cpp.html" title=" " alt="" coords="821,277,986,320"/>
-<area shape="poly" title=" " alt="" coords="906,245,906,277,901,277,901,245"/>
-<area shape="rect" href="_vi_map_8cpp.html" title=" " alt="" coords="1234,285,1370,312"/>
-<area shape="poly" title=" " alt="" coords="1240,238,1290,283,1286,287,1237,242"/>
-<area shape="poly" title=" " alt="" coords="1477,154,1476,194,1470,214,1458,232,1354,255,1180,287,1179,282,1353,250,1455,227,1465,211,1471,193,1472,154"/>
-<area shape="poly" title=" " alt="" coords="1439,152,1395,196,1391,192,1436,148"/>
-<area shape="rect" href="_armor_plate_info_8hpp.html" title=" " alt="" coords="1519,187,1696,229"/>
-<area shape="poly" title=" " alt="" coords="1515,145,1576,184,1574,188,1512,150"/>
-<area shape="poly" title=" " alt="" coords="1504,231,1501,232,1222,280,1181,287,1180,282,1222,275,1500,227,1504,226"/>
-<area shape="rect" href="_armor_plate_info_8cpp.html" title=" " alt="" coords="1516,285,1699,312"/>
-<area shape="poly" title=" " alt="" coords="1610,245,1610,285,1605,285,1605,245"/>
+<area shape="rect" title=" " alt="" coords="1735,5,1911,48"/>
+<area shape="rect" href="_sentry_lib_8hpp.html" title=" " alt="" coords="705,195,907,221"/>
+<area shape="poly" title=" " alt="" coords="1720,35,1355,57,1169,75,1092,86,1035,99,973,120,914,147,826,197,824,192,912,142,971,115,1033,93,1092,81,1168,70,1355,52,1719,30"/>
+<area shape="rect" href="_console_manipulator_8hpp.html" title=" " alt="" coords="487,96,663,139"/>
+<area shape="poly" title=" " alt="" coords="1720,38,855,99,664,112,663,107,855,93,1719,33"/>
+<area shape="rect" href="_armor_plate_8hpp.html" title=" " alt="" coords="1735,96,1911,139"/>
+<area shape="poly" title=" " alt="" coords="1826,64,1826,96,1821,96,1821,64"/>
+<area shape="rect" href="_exchange_cube_8hpp.html" title=" " alt="" coords="1477,96,1668,139"/>
+<area shape="poly" title=" " alt="" coords="1751,56,1632,98,1630,93,1749,51"/>
+<area shape="rect" href="_navigator_8hpp.html" title=" " alt="" coords="1935,96,2111,139"/>
+<area shape="poly" title=" " alt="" coords="1885,52,1977,93,1975,98,1883,57"/>
+<area shape="rect" href="_sentry_data_8hpp.html" title=" " alt="" coords="1046,96,1222,139"/>
+<area shape="poly" title=" " alt="" coords="1720,44,1223,107,1222,102,1719,39"/>
+<area shape="rect" href="_vi_map_8hpp.html" title=" " alt="" coords="2135,96,2311,139"/>
+<area shape="poly" title=" " alt="" coords="1927,48,2135,94,2134,99,1926,53"/>
+<area shape="rect" href="_math_8cpp.html" title=" " alt="" coords="2336,104,2463,131"/>
+<area shape="poly" title=" " alt="" coords="1927,36,2113,59,2324,93,2355,101,2354,106,2323,99,2112,64,1927,41"/>
+<area shape="rect" href="_json_tester_8cpp.html" title=" " alt="" coords="2486,104,2643,131"/>
+<area shape="poly" title=" " alt="" coords="1927,32,2178,55,2327,72,2476,93,2513,101,2512,106,2475,99,2326,77,2177,60,1927,38"/>
+<area shape="rect" href="_sentry_lib_8cpp.html" title=" " alt="" coords="825,285,979,312"/>
+<area shape="poly" title=" " alt="" coords="832,230,890,283,886,287,829,234"/>
+<area shape="rect" href="_example_app_8cpp.html" title=" " alt="" coords="1002,285,1170,312"/>
+<area shape="poly" title=" " alt="" coords="861,224,1047,282,1045,287,860,229"/>
+<area shape="rect" href="_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和 json 配置文件的处理工具，使用操作见" alt="" coords="453,285,594,312"/>
+<area shape="poly" title=" " alt="" coords="752,229,564,287,563,282,750,224"/>
+<area shape="rect" href="_tiny_sentry_mind_8cpp.html" title=" " alt="" coords="618,285,802,312"/>
+<area shape="poly" title=" " alt="" coords="783,234,725,287,722,283,779,230"/>
+<area shape="poly" title=" " alt="" coords="644,142,774,192,772,197,642,147"/>
+<area shape="rect" href="_sentry_monitor_8cpp.html" title=" " alt="" coords="212,195,445,221"/>
+<area shape="poly" title=" " alt="" coords="504,147,365,197,363,192,502,142"/>
+<area shape="rect" href="_console_manipulator_8cpp.html" title=" " alt="" coords="469,195,681,221"/>
+<area shape="poly" title=" " alt="" coords="578,154,578,194,573,194,573,154"/>
+<area shape="rect" href="_console_manipulator_tester_8cpp.html" title=" " alt="" coords="5,187,188,229"/>
+<area shape="poly" title=" " alt="" coords="472,140,200,189,189,191,188,186,199,184,471,134"/>
+<area shape="rect" href="_vision_sensor_8hpp.html" title=" " alt="" coords="1568,187,1748,229"/>
+<area shape="poly" title=" " alt="" coords="1772,149,1698,189,1695,184,1770,144"/>
+<area shape="rect" href="_interfaces_8hpp.html" title=" " alt="" coords="1615,277,1791,320"/>
+<area shape="poly" title=" " alt="" coords="1904,144,1930,162,1949,185,1958,208,1956,219,1949,231,1929,243,1891,255,1793,281,1791,275,1890,250,1927,238,1945,227,1951,218,1952,209,1945,188,1926,166,1901,148"/>
+<area shape="rect" href="_test_data_8hpp.html" title=" " alt="" coords="2060,187,2237,229"/>
+<area shape="poly" title=" " alt="" coords="1915,141,2073,183,2071,189,1913,146"/>
+<area shape="rect" href="_armor_plate_8cpp.html" title=" " alt="" coords="1772,195,1936,221"/>
+<area shape="poly" title=" " alt="" coords="1838,152,1852,193,1847,195,1833,154"/>
+<area shape="poly" title=" " alt="" coords="1678,242,1695,276,1690,278,1673,244"/>
+<area shape="rect" href="_vision_sensor_8cpp.html" title=" " alt="" coords="1416,285,1591,312"/>
+<area shape="poly" title=" " alt="" coords="1610,240,1527,287,1524,282,1607,235"/>
+<area shape="rect" href="_interfaces_8cpp.html" title=" " alt="" coords="1626,368,1780,395"/>
+<area shape="poly" title=" " alt="" coords="1706,336,1706,367,1701,367,1701,336"/>
+<area shape="rect" href="_sentry_device_8cpp.html" title=" " alt="" coords="2248,285,2476,312"/>
+<area shape="poly" title=" " alt="" coords="2214,233,2332,282,2330,287,2212,238"/>
+<area shape="rect" href="_sentry_mind_8cpp.html" title=" " alt="" coords="2501,285,2719,312"/>
+<area shape="poly" title=" " alt="" coords="2252,227,2542,282,2541,287,2251,233"/>
+<area shape="rect" href="_sentry_referee_8cpp.html" title=" " alt="" coords="1815,285,2050,312"/>
+<area shape="poly" title=" " alt="" coords="2085,238,1964,287,1962,282,2083,233"/>
+<area shape="rect" href="_test_data_8cpp.html" title=" " alt="" coords="2073,285,2224,312"/>
+<area shape="poly" title=" " alt="" coords="2151,245,2151,285,2146,285,2146,245"/>
+<area shape="poly" title=" " alt="" coords="1605,148,1640,185,1636,188,1601,152"/>
+<area shape="poly" title=" " alt="" coords="1558,154,1549,192,1551,211,1557,228,1584,255,1619,274,1616,279,1581,260,1553,231,1545,212,1544,191,1553,153"/>
+<area shape="rect" href="_exchange_cube_8cpp.html" title=" " alt="" coords="1306,195,1492,221"/>
+<area shape="poly" title=" " alt="" coords="1520,149,1425,196,1423,192,1517,144"/>
+<area shape="poly" title=" " alt="" coords="2017,155,2001,195,1988,215,1971,232,1947,242,1903,255,1792,281,1791,276,1902,250,1945,237,1968,227,1984,211,1996,192,2012,153"/>
+<area shape="rect" href="_navigator_8cpp.html" title=" " alt="" coords="2261,195,2412,221"/>
+<area shape="poly" title=" " alt="" coords="2112,141,2292,191,2291,197,2110,146"/>
+<area shape="poly" title=" " alt="" coords="1043,146,854,197,852,191,1042,141"/>
+<area shape="rect" href="_sentry_data_8cpp.html" title=" " alt="" coords="1119,195,1282,221"/>
+<area shape="poly" title=" " alt="" coords="1161,149,1193,193,1189,196,1156,153"/>
+<area shape="rect" href="_controller_sensor_tester_8cpp.html" title=" " alt="" coords="930,187,1095,229"/>
+<area shape="poly" title=" " alt="" coords="1095,150,1042,188,1039,184,1092,146"/>
+<area shape="rect" href="_vi_map_8cpp.html" title=" " alt="" coords="2437,195,2572,221"/>
+<area shape="poly" title=" " alt="" coords="2304,141,2465,192,2463,197,2303,146"/>
 </map>
 </div>
 </div>
@@ -202,15 +224,38 @@ $(document).ready(function(){initNavTree('_vector_8hpp.html',''); initResizable(
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 类型定义</h2></td></tr>
-<tr class="memitem:ae40742336061da4404bd9821387ef411" id="r_ae40742336061da4404bd9821387ef411"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a> Dimension&gt; </td></tr>
-<tr class="memitem:ae40742336061da4404bd9821387ef411"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ae40742336061da4404bd9821387ef411">LangYa::SentryLib::VectorI</a> = <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_vector.html">Vector</a>&lt; int, Dimension &gt;</td></tr>
-<tr class="separator:ae40742336061da4404bd9821387ef411"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33fddd78d4426547367986c99acece4d" id="r_a33fddd78d4426547367986c99acece4d"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a> Dimension&gt; </td></tr>
-<tr class="memitem:a33fddd78d4426547367986c99acece4d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a33fddd78d4426547367986c99acece4d">LangYa::SentryLib::VectorF</a> = <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_vector.html">Vector</a>&lt; float, Dimension &gt;</td></tr>
-<tr class="separator:a33fddd78d4426547367986c99acece4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4692fbf280550e34145f9bef21935a47" id="r_a4692fbf280550e34145f9bef21935a47"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a> Dimension&gt; </td></tr>
-<tr class="memitem:a4692fbf280550e34145f9bef21935a47"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a4692fbf280550e34145f9bef21935a47">LangYa::SentryLib::VectorD</a> = <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_vector.html">Vector</a>&lt; double, Dimension &gt;</td></tr>
-<tr class="separator:a4692fbf280550e34145f9bef21935a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae23ea945c4af9f74c96cf80d38f9ee50" id="r_ae23ea945c4af9f74c96cf80d38f9ee50"><td class="memTemplParams" colspan="2">template&lt;typename TElement &gt; </td></tr>
+<tr class="memitem:ae23ea945c4af9f74c96cf80d38f9ee50"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ae23ea945c4af9f74c96cf80d38f9ee50">LangYa::SentryLib::Vector2</a> = <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_vector.html">Vector</a>&lt; TElement, 2 &gt;</td></tr>
+<tr class="separator:ae23ea945c4af9f74c96cf80d38f9ee50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4460be3d8ab3dff72be0e2e015483727" id="r_a4460be3d8ab3dff72be0e2e015483727"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a4460be3d8ab3dff72be0e2e015483727">LangYa::SentryLib::Vector2C</a> = <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ae23ea945c4af9f74c96cf80d38f9ee50">Vector2</a>&lt; char &gt;</td></tr>
+<tr class="separator:a4460be3d8ab3dff72be0e2e015483727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac29cd3ba3964118d24799fa6f602ccea" id="r_ac29cd3ba3964118d24799fa6f602ccea"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ac29cd3ba3964118d24799fa6f602ccea">LangYa::SentryLib::Vector2S</a> = <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ae23ea945c4af9f74c96cf80d38f9ee50">Vector2</a>&lt; short &gt;</td></tr>
+<tr class="separator:ac29cd3ba3964118d24799fa6f602ccea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f5062a805058dadf821a48f7fb135bb" id="r_a1f5062a805058dadf821a48f7fb135bb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a1f5062a805058dadf821a48f7fb135bb">LangYa::SentryLib::Vector2I</a> = <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ae23ea945c4af9f74c96cf80d38f9ee50">Vector2</a>&lt; int &gt;</td></tr>
+<tr class="separator:a1f5062a805058dadf821a48f7fb135bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fb5ad7b11cd4592f729d4568e0447f5" id="r_a6fb5ad7b11cd4592f729d4568e0447f5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a6fb5ad7b11cd4592f729d4568e0447f5">LangYa::SentryLib::Vector2F</a> = <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ae23ea945c4af9f74c96cf80d38f9ee50">Vector2</a>&lt; float &gt;</td></tr>
+<tr class="separator:a6fb5ad7b11cd4592f729d4568e0447f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada67cdfcf97b98ab9b00d1d0a774fff8" id="r_ada67cdfcf97b98ab9b00d1d0a774fff8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ada67cdfcf97b98ab9b00d1d0a774fff8">LangYa::SentryLib::Vector2D</a> = <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ae23ea945c4af9f74c96cf80d38f9ee50">Vector2</a>&lt; double &gt;</td></tr>
+<tr class="separator:ada67cdfcf97b98ab9b00d1d0a774fff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5638d7fb2b4a93c885317e03f58d632" id="r_ad5638d7fb2b4a93c885317e03f58d632"><td class="memTemplParams" colspan="2">template&lt;typename TElement &gt; </td></tr>
+<tr class="memitem:ad5638d7fb2b4a93c885317e03f58d632"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ad5638d7fb2b4a93c885317e03f58d632">LangYa::SentryLib::Vector3</a> = <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_vector.html">Vector</a>&lt; TElement, 3 &gt;</td></tr>
+<tr class="separator:ad5638d7fb2b4a93c885317e03f58d632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6891e4f89eed5c0e4023768bff94b2d3" id="r_a6891e4f89eed5c0e4023768bff94b2d3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a6891e4f89eed5c0e4023768bff94b2d3">LangYa::SentryLib::Vector3C</a> = <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ad5638d7fb2b4a93c885317e03f58d632">Vector3</a>&lt; char &gt;</td></tr>
+<tr class="separator:a6891e4f89eed5c0e4023768bff94b2d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fc54114cbf8fa09ea2c45ca19763f28" id="r_a1fc54114cbf8fa09ea2c45ca19763f28"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a1fc54114cbf8fa09ea2c45ca19763f28">LangYa::SentryLib::Vector3S</a> = <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ad5638d7fb2b4a93c885317e03f58d632">Vector3</a>&lt; short &gt;</td></tr>
+<tr class="separator:a1fc54114cbf8fa09ea2c45ca19763f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf2b0dd77e6afc426cafbd0ee31d31f5" id="r_abf2b0dd77e6afc426cafbd0ee31d31f5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#abf2b0dd77e6afc426cafbd0ee31d31f5">LangYa::SentryLib::Vector3I</a> = <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ad5638d7fb2b4a93c885317e03f58d632">Vector3</a>&lt; int &gt;</td></tr>
+<tr class="separator:abf2b0dd77e6afc426cafbd0ee31d31f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afac38c55c9e5c258bc00c9d3afc95305" id="r_afac38c55c9e5c258bc00c9d3afc95305"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#afac38c55c9e5c258bc00c9d3afc95305">LangYa::SentryLib::Vector3F</a> = <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ad5638d7fb2b4a93c885317e03f58d632">Vector3</a>&lt; float &gt;</td></tr>
+<tr class="separator:afac38c55c9e5c258bc00c9d3afc95305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3477b823228de876ab50f248bcc47fbe" id="r_a3477b823228de876ab50f248bcc47fbe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a3477b823228de876ab50f248bcc47fbe">LangYa::SentryLib::Vector3D</a> = <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ad5638d7fb2b4a93c885317e03f58d632">Vector3</a>&lt; double &gt;</td></tr>
+<tr class="separator:a3477b823228de876ab50f248bcc47fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a6cae9b04330475046844b724f82ec6c7" id="r_a6cae9b04330475046844b724f82ec6c7"><td class="memTemplParams" colspan="2">template&lt;typename TElement &gt; </td></tr>
+<tr class="memitem:a6cae9b04330475046844b724f82ec6c7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ad5638d7fb2b4a93c885317e03f58d632">Vector3</a>&lt; TElement &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#a6cae9b04330475046844b724f82ec6c7">LangYa::SentryLib::operator^</a> (const <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ad5638d7fb2b4a93c885317e03f58d632">Vector3</a>&lt; TElement &gt; &amp;left, const <a class="el" href="namespace_lang_ya_1_1_sentry_lib.html#ad5638d7fb2b4a93c885317e03f58d632">Vector3</a>&lt; TElement &gt; &amp;right)</td></tr>
+<tr class="separator:a6cae9b04330475046844b724f82ec6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -218,7 +263,7 @@ $(document).ready(function(){initNavTree('_vector_8hpp.html',''); initResizable(
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_692516b589a32b3bfce781ca9f6d1534.html">Headers</a></li><li class="navelem"><a class="el" href="dir_b117d0d76b03a6360b87a590e39f53f6.html">LangYa</a></li><li class="navelem"><a class="el" href="dir_0479bb77a485cc0baf99073ab05914e0.html">SentryLib</a></li><li class="navelem"><a class="el" href="dir_9e03ec43f3f9ef8707fd7d4152cdf600.html">Math</a></li><li class="navelem"><a class="el" href="_vector_8hpp.html">Vector.hpp</a></li>
-    <li class="footer">生成于 2023年 十二月 19日 星期二 23:40:51 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 26日 星期二 17:08:19 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

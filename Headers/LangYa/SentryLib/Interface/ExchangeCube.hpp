@@ -1,7 +1,7 @@
 #pragma once
 
-#include <LangYa/SentryLib/Math/Vector3.hpp>
 #include <LangYa/SentryLib/Math/Position3.hpp>
+#include <LangYa/SentryLib/Math/Vector.hpp>
 
 namespace LangYa::SentryLib {
 	/// @brief 代表兑换框，避免歧义

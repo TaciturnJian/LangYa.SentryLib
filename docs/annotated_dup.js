@@ -3,10 +3,8 @@ var annotated_dup =
     [ "LangYa", "namespace_lang_ya.html", [
       [ "SentryLib", "namespace_lang_ya_1_1_sentry_lib.html", [
         [ "ApplicationInfo", "struct_lang_ya_1_1_sentry_lib_1_1_application_info.html", "struct_lang_ya_1_1_sentry_lib_1_1_application_info" ],
-        [ "ArmorPlateInfo", "struct_lang_ya_1_1_sentry_lib_1_1_armor_plate_info.html", "struct_lang_ya_1_1_sentry_lib_1_1_armor_plate_info" ],
-        [ "AutoAimModule", "class_lang_ya_1_1_sentry_lib_1_1_auto_aim_module.html", "class_lang_ya_1_1_sentry_lib_1_1_auto_aim_module" ],
-        [ "CameraDevice", "class_lang_ya_1_1_sentry_lib_1_1_camera_device.html", "class_lang_ya_1_1_sentry_lib_1_1_camera_device" ],
-        [ "Collection", "class_lang_ya_1_1_sentry_lib_1_1_collection.html", "class_lang_ya_1_1_sentry_lib_1_1_collection" ],
+        [ "ArmorPlate", "class_lang_ya_1_1_sentry_lib_1_1_armor_plate.html", "class_lang_ya_1_1_sentry_lib_1_1_armor_plate" ],
+        [ "CanStreamFormatToJson", "class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json.html", "class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json" ],
         [ "CommandLineArguments", "struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html", "struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments" ],
         [ "Configurator", "class_lang_ya_1_1_sentry_lib_1_1_configurator.html", "class_lang_ya_1_1_sentry_lib_1_1_configurator" ],
         [ "Connection", "class_lang_ya_1_1_sentry_lib_1_1_connection.html", "class_lang_ya_1_1_sentry_lib_1_1_connection" ],
@@ -16,6 +14,9 @@ var annotated_dup =
         [ "DeserializableContent", "class_lang_ya_1_1_sentry_lib_1_1_deserializable_content.html", "class_lang_ya_1_1_sentry_lib_1_1_deserializable_content" ],
         [ "DeserializableContentSensor", "class_lang_ya_1_1_sentry_lib_1_1_deserializable_content_sensor.html", "class_lang_ya_1_1_sentry_lib_1_1_deserializable_content_sensor" ],
         [ "Device", "class_lang_ya_1_1_sentry_lib_1_1_device.html", "class_lang_ya_1_1_sentry_lib_1_1_device" ],
+        [ "ExchangeCube", "class_lang_ya_1_1_sentry_lib_1_1_exchange_cube.html", "class_lang_ya_1_1_sentry_lib_1_1_exchange_cube" ],
+        [ "FullControlData", "struct_lang_ya_1_1_sentry_lib_1_1_full_control_data.html", "struct_lang_ya_1_1_sentry_lib_1_1_full_control_data" ],
+        [ "FullSensorData", "struct_lang_ya_1_1_sentry_lib_1_1_full_sensor_data.html", "struct_lang_ya_1_1_sentry_lib_1_1_full_sensor_data" ],
         [ "LangYaConnection", "class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html", "class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection" ],
         [ "Manager", "class_lang_ya_1_1_sentry_lib_1_1_manager.html", "class_lang_ya_1_1_sentry_lib_1_1_manager" ],
         [ "MatchStatusManager", "class_lang_ya_1_1_sentry_lib_1_1_match_status_manager.html", "class_lang_ya_1_1_sentry_lib_1_1_match_status_manager" ],
@@ -24,10 +25,12 @@ var annotated_dup =
         [ "MemoryView", "struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html", "struct_lang_ya_1_1_sentry_lib_1_1_memory_view" ],
         [ "Monitor", "class_lang_ya_1_1_sentry_lib_1_1_monitor.html", "class_lang_ya_1_1_sentry_lib_1_1_monitor" ],
         [ "MonitorPackage", "struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html", "struct_lang_ya_1_1_sentry_lib_1_1_monitor_package" ],
+        [ "Navigator", "class_lang_ya_1_1_sentry_lib_1_1_navigator.html", "class_lang_ya_1_1_sentry_lib_1_1_navigator" ],
         [ "PingPongBuffer", "class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html", "class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer" ],
         [ "Position1", "struct_lang_ya_1_1_sentry_lib_1_1_position1.html", "struct_lang_ya_1_1_sentry_lib_1_1_position1" ],
         [ "Position2", "struct_lang_ya_1_1_sentry_lib_1_1_position2.html", "struct_lang_ya_1_1_sentry_lib_1_1_position2" ],
         [ "Position3", "struct_lang_ya_1_1_sentry_lib_1_1_position3.html", "struct_lang_ya_1_1_sentry_lib_1_1_position3" ],
+        [ "RefereeData", "struct_lang_ya_1_1_sentry_lib_1_1_referee_data.html", "struct_lang_ya_1_1_sentry_lib_1_1_referee_data" ],
         [ "Resource", "struct_lang_ya_1_1_sentry_lib_1_1_resource.html", "struct_lang_ya_1_1_sentry_lib_1_1_resource" ],
         [ "SentryData", "struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html", "struct_lang_ya_1_1_sentry_lib_1_1_sentry_data" ],
         [ "SerializableContent", "class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html", "class_lang_ya_1_1_sentry_lib_1_1_serializable_content" ],
@@ -43,9 +46,8 @@ var annotated_dup =
         [ "TripleBuffer", "class_lang_ya_1_1_sentry_lib_1_1_triple_buffer.html", "class_lang_ya_1_1_sentry_lib_1_1_triple_buffer" ],
         [ "UniqueBuffer", "class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html", "class_lang_ya_1_1_sentry_lib_1_1_unique_buffer" ],
         [ "Vector", "class_lang_ya_1_1_sentry_lib_1_1_vector.html", "class_lang_ya_1_1_sentry_lib_1_1_vector" ],
-        [ "Vector2", "class_lang_ya_1_1_sentry_lib_1_1_vector2.html", "class_lang_ya_1_1_sentry_lib_1_1_vector2" ],
-        [ "Vector3", "class_lang_ya_1_1_sentry_lib_1_1_vector3.html", "class_lang_ya_1_1_sentry_lib_1_1_vector3" ],
-        [ "ViMap", "class_lang_ya_1_1_sentry_lib_1_1_vi_map.html", "class_lang_ya_1_1_sentry_lib_1_1_vi_map" ]
+        [ "ViMap", "class_lang_ya_1_1_sentry_lib_1_1_vi_map.html", "class_lang_ya_1_1_sentry_lib_1_1_vi_map" ],
+        [ "VisionSensor", "class_lang_ya_1_1_sentry_lib_1_1_vision_sensor.html", "class_lang_ya_1_1_sentry_lib_1_1_vision_sensor" ]
       ] ]
     ] ],
     [ "Action", "class_action.html", "class_action" ],

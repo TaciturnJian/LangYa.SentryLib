@@ -1,5 +1,11 @@
 <map id="Headers/LangYa/SentryLib/Math/Position2.hpp" name="Headers/LangYa/SentryLib/Math/Position2.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,182,48"/>
-<area shape="rect" id="Node000002" href="$_position1_8hpp.html" title=" " alt="" coords="15,96,172,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,48,96,81,91,81,91,48"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="14,5,190,48"/>
+<area shape="rect" id="Node000002" href="$_position1_8hpp.html" title=" " alt="" coords="23,96,181,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,48,105,81,99,81,99,48"/>
+<area shape="rect" id="Node000003" href="$_can_stream_format_to_json_8hpp.html" title=" " alt="" coords="5,187,199,229"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,139,105,171,99,171,99,139"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="11,277,79,304"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="89,231,65,266,60,263,85,228"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="103,277,216,304"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="119,228,144,263,139,266,115,231"/>
 </map>

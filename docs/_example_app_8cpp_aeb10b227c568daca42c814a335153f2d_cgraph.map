@@ -1,7 +1,12 @@
 <map id="TestServer" name="TestServer">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,88,73"/>
-<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html#ae7ec604552bc47c68a178c9b6dc3815a" title="从缓冲区中反序列化资源。" alt="" coords="136,5,294,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,49,120,43,121,48,88,55"/>
-<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html#aa4fcd6178787270ed4e8a69d28e60303" title="Get the view of the unique memory in the buffer." alt="" coords="139,72,291,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="88,65,124,73,123,78,87,71"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,88,88,115"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html#ae7ec604552bc47c68a178c9b6dc3815a" title="从缓冲区中反序列化资源。" alt="" coords="144,13,303,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,85,150,59,152,64,85,90"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html#aa4fcd6178787270ed4e8a69d28e60303" title="Get the view of the unique memory in the buffer." alt="" coords="148,80,299,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="88,99,132,99,132,104,88,104"/>
+<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html#a68b67fc2a71e1b22c6b97862ab97e7a7" title="Construct a new UniqueBuffer object with provided size." alt="" coords="136,171,311,213"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="76,113,168,161,165,165,73,118"/>
+<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_sentry_lib_1_1_sentry_data_1_1_deserialize_resource.html#a579fe8a91d4804e62573160c0916d195" title=" " alt="" coords="359,5,572,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="303,32,344,32,344,37,303,37"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="189,170,188,161,193,152,205,146,223,144,243,146,254,153,252,157,241,152,223,149,207,151,197,156,193,162,194,170"/>
 </map>

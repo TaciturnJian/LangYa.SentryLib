@@ -1,9 +1,0 @@
-<map id="Behavior::ShootAt" name="Behavior::ShootAt">
-<area shape="rect" id="Node000001" title=" " alt="" coords="516,5,642,32"/>
-<area shape="rect" id="Node000002" href="$namespace_behavior.html#acd9457620893308730554647608035b6" title=" " alt="" coords="352,5,468,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="501,21,468,21,468,16,501,16"/>
-<area shape="rect" id="Node000003" href="$namespace_behavior.html#aab401882a8cf10638c20e7e8bfe9fec1" title=" " alt="" coords="178,5,304,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="336,21,304,21,304,16,336,16"/>
-<area shape="rect" id="Node000004" href="$_sentry_a_i_8cpp.html#a480b8753a80377c8bbf71563ba134e0e" title=" " alt="" coords="5,5,130,32"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="162,21,130,21,130,16,162,16"/>
-</map>

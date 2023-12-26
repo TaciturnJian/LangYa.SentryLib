@@ -1,7 +1,9 @@
 <map id="LangYa::SentryLib::ApplicationInfo::OutputTo_spdlog" name="LangYa::SentryLib::ApplicationInfo::OutputTo_spdlog">
-<area shape="rect" id="Node000001" title="使用 spdlog 输出。 输出的内容不再是 json 格式，并且有一定的缩进。 如果使用了spdlog配置多个日志记录器，还可以在日志中确定内容。" alt="" coords="103,15,269,73"/>
-<area shape="rect" id="Node000002" href="$_example_app_8cpp.html#ac762d48b889bd832ec0d42abcbc50624" title=" " alt="" coords="5,5,55,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,31,55,25,55,20,88,25"/>
-<area shape="rect" id="Node000003" href="$_test_app_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,56,55,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="88,63,55,68,55,63,87,57"/>
+<area shape="rect" id="Node000001" title="使用 spdlog 输出。 输出的内容不再是 json 格式，并且有一定的缩进。 如果使用了spdlog配置多个日志记录器，还可以在日志中确定内容。" alt="" coords="103,40,269,99"/>
+<area shape="rect" id="Node000002" href="$_sentry_mind_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,40,54,29,56,24,89,35"/>
+<area shape="rect" id="Node000003" href="$_example_app_8cpp.html#ac762d48b889bd832ec0d42abcbc50624" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="87,72,55,72,55,67,87,67"/>
+<area shape="rect" id="Node000004" href="$_test_app_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,107,55,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="89,104,56,115,54,110,87,99"/>
 </map>

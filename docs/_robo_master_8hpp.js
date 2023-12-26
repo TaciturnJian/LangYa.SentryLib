@@ -1,6 +1,7 @@
 var _robo_master_8hpp =
 [
     [ "UnitID", "_robo_master_8hpp.html#a01fa38254edec1ace0c91eeeabbc84ea", [
+      [ "Empty", "_robo_master_8hpp.html#a01fa38254edec1ace0c91eeeabbc84eaace2c8aed9c2fa0cfbed56cbda4d8bf07", null ],
       [ "Hero", "_robo_master_8hpp.html#a01fa38254edec1ace0c91eeeabbc84eaae0a67c8c63f8f7362917abef6ca24c6b", null ],
       [ "Engineer", "_robo_master_8hpp.html#a01fa38254edec1ace0c91eeeabbc84eaa0e78a3833926aa1f49dd9f4bb86b7386", null ],
       [ "Infantry1", "_robo_master_8hpp.html#a01fa38254edec1ace0c91eeeabbc84eaaeba1c03b2c0e1ca5c2cb48283bf4df11", null ],

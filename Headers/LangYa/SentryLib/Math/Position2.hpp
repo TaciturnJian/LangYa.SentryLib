@@ -14,6 +14,15 @@ namespace LangYa::SentryLib
 		Position2(const TElement& x, const TElement& y) : Position1<TElement>{x}, Y{y}
 		{
 		}
+
+		std::ostream& FormatToJson(std::ostream& stream) const override
+		{
+			return stream
+				<< '{'
+				<< R"("X":)" << this->X << ','
+				<< R"("Y":)" << this->Y
+				<< '}';
+		}
 	};
 
 	using Position2C = Position2<char>;

@@ -1,22 +1,20 @@
 <map id="Sources/MemoryAccess.cpp" name="Sources/MemoryAccess.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="41,5,230,32"/>
-<area shape="rect" id="Node000002" href="$_memory_access_8hpp.html" title=" " alt="" coords="45,80,226,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,33,138,65,133,65,133,33"/>
-<area shape="rect" id="Node000003" href="$_memory_view_8hpp.html" title=" " alt="" coords="84,352,264,395"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,124,109,146,99,172,90,209,85,239,87,268,99,303,112,323,129,340,126,344,108,326,94,305,82,269,79,238,84,208,94,170,105,144,118,122"/>
-<area shape="rect" id="Node000008" href="$_connection_8hpp.html" title=" " alt="" coords="109,171,290,213"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="153,122,178,157,174,160,148,125"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="5,443,74,469"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="141,398,75,437,72,432,138,393"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="98,443,165,469"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="166,397,148,430,143,427,161,394"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="189,443,245,469"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="188,394,205,427,201,430,183,397"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="269,443,410,469"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="218,393,301,433,299,438,216,398"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="109,269,162,296"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="187,215,156,258,151,255,182,212"/>
-<area shape="rect" id="Node000010" href="$_memory_i_o_8hpp.html" title=" " alt="" coords="187,261,367,304"/>
-<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="219,212,251,248,247,251,215,216"/>
-<area shape="poly" id="edge10_Node000010_Node000003" title=" " alt="" coords="255,306,211,344,208,340,251,302"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,195,32"/>
+<area shape="rect" id="Node000002" href="$_memory_access_8hpp.html" title=" " alt="" coords="10,80,190,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,33,103,65,97,65,97,33"/>
+<area shape="rect" id="Node000003" href="$_memory_view_8hpp.html" title=" " alt="" coords="49,352,229,395"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,124,74,146,64,172,54,209,49,239,52,268,64,303,77,323,94,340,90,344,73,326,59,305,46,269,44,238,49,208,59,170,69,144,83,122"/>
+<area shape="rect" id="Node000007" href="$_connection_8hpp.html" title=" " alt="" coords="74,171,254,213"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="117,122,143,157,138,160,113,125"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="19,443,88,469"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="119,397,79,434,76,430,115,393"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="111,443,166,469"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="141,395,141,427,136,427,136,395"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="191,443,332,469"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="172,393,231,432,228,436,169,398"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="73,269,127,296"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="151,215,120,258,116,255,147,212"/>
+<area shape="rect" id="Node000009" href="$_memory_i_o_8hpp.html" title=" " alt="" coords="151,261,332,304"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="184,212,215,248,211,251,180,216"/>
+<area shape="poly" id="edge9_Node000009_Node000003" title=" " alt="" coords="219,306,176,344,172,340,216,302"/>
 </map>

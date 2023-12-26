@@ -1,11 +1,13 @@
 <map id="Headers/LangYa/SentryLib/Application/Configurator.hpp" name="Headers/LangYa/SentryLib/Application/Configurator.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="470,5,657,48"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="603,5,790,48"/>
 <area shape="rect" id="Node000002" href="$_sentry_lib_8hpp.html" title=" " alt="" coords="255,104,456,131"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="502,57,386,106,384,101,500,52"/>
-<area shape="rect" id="Node000007" href="$_configurator_8cpp.html" title=" " alt="" coords="480,104,647,131"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="566,64,566,104,561,104,561,64"/>
-<area shape="rect" id="Node000008" href="$_controller_sensor_tester_8cpp.html" title=" " alt="" coords="671,96,835,139"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="623,53,710,93,707,98,620,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="603,55,405,106,404,101,601,50"/>
+<area shape="rect" id="Node000007" href="$_sentry_mind_8cpp.html" title=" " alt="" coords="480,104,698,131"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="662,60,606,106,602,102,659,56"/>
+<area shape="rect" id="Node000008" href="$_configurator_8cpp.html" title=" " alt="" coords="722,104,890,131"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="735,56,792,102,789,106,732,60"/>
+<area shape="rect" id="Node000009" href="$_controller_sensor_tester_8cpp.html" title=" " alt="" coords="913,96,1078,139"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="782,50,926,93,924,98,780,55"/>
 <area shape="rect" id="Node000003" href="$_sentry_lib_8cpp.html" title=" " alt="" coords="5,187,159,213"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="299,138,126,189,124,184,297,133"/>
 <area shape="rect" id="Node000004" href="$_example_app_8cpp.html" title=" " alt="" coords="182,187,350,213"/>

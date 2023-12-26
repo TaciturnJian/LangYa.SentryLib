@@ -1,5 +1,0 @@
-<map id="LangYa::SentryLib::ArmorPlateInfo" name="LangYa::SentryLib::ArmorPlateInfo">
-<area shape="rect" id="Node000001" title="代表一个装甲板的信息。 内部使用 Position3F 表示位置，使用 Vector3F 表示法向量。" alt="" coords="5,96,142,139"/>
-<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_time_stamp.html" title="代表通用的时间戳" alt="" coords="5,5,142,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,64,76,96,71,96,71,64"/>
-</map>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['keytype_0',['KeyType',['../class_lang_ya_1_1_sentry_lib_1_1_manager.html#a0d0ceb3312269ab7bae6ea3ba806da36',1,'LangYa::SentryLib::Manager']]]
+  ['jsonmapper_0',['JsonMapper',['../class_lang_ya_1_1_sentry_lib_1_1_configurator.html#a89f513eb7458c0f05bfc8ceb7c211900',1,'LangYa::SentryLib::Configurator']]]
 ];

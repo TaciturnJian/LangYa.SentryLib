@@ -1,32 +1,27 @@
 #pragma once
 
-#include <string>
-#include <ostream>
-#include <sstream>
 #include <initializer_list>
+#include <vector>
 
 #include <LangYa/SentryLib/Common/MemoryView.hpp>
+
+#include <LangYa/SentryLib/CanStreamFormatToJson.hpp>
 
 namespace LangYa::SentryLib
 {
 	template <typename TElement, MemoryView::SizeType Dimension>
-	class Vector
+	class Vector final : public CanStreamFormatToJson
 	{
 	protected:
 		TElement Element[Dimension]{0};
 
 	public:
-		using Myself = Vector&;
-
 		static constexpr MemoryView::SizeType GetDimension()
 		{
 			return Dimension;
 		}
 
 		Vector() = default;
-
-		Vector(Vector&& other) = default;
-		Myself operator=(Vector&& other) = default;
 
 		explicit Vector(const TElement& element)
 		{
@@ -46,26 +41,21 @@ namespace LangYa::SentryLib
 			}
 		}
 
-		Vector(const Vector& other) = default;
+		explicit Vector(const std::vector<TElement>& vector)
+		{
+			MemoryView::SizeType dimension = 0;
+			for (const auto& element : vector)
+			{
+				if (dimension >= Dimension) return;
+				Element[dimension++] = element;
+			}
+		}
 
-		~Vector() = default;
-
-		Myself operator=(const TElement& right)
+		Vector& operator=(const TElement& right)
 		{
 			for (MemoryView::SizeType i = 0; i < Dimension; ++i)
 			{
 				Element[i] = right;
-			}
-			return *this;
-		}
-
-		Myself operator=(const Vector& right) = default;
-
-		Myself operator+=(const Vector& right)
-		{
-			for (MemoryView::SizeType i = 0; i < Dimension; ++i)
-			{
-				Element[i] += right;
 			}
 			return *this;
 		}
@@ -78,15 +68,6 @@ namespace LangYa::SentryLib
 				result[i] = left[i] + right[i];
 			}
 			return result;
-		}
-
-		Myself operator-=(const Vector& right)
-		{
-			for (MemoryView::SizeType i = 0; i < Dimension; ++i)
-			{
-				Element[i] -= right;
-			}
-			return *this;
 		}
 
 		friend Vector operator-(const Vector& left, const Vector& right)
@@ -109,27 +90,22 @@ namespace LangYa::SentryLib
 			return result;
 		}
 
-		friend std::ostream& operator<<(std::ostream& left, const Vector& right)
+		Vector& operator+=(const Vector& right)
 		{
-			left << '(';
-			for (MemoryView::SizeType i = 0; i < Dimension - 1; ++i)
+			for (MemoryView::SizeType i = 0; i < Dimension; ++i)
 			{
-				left << right[i] << ',';
+				Element[i] += right[i];
 			}
-			left << right[Dimension - 1] << ')';
-			return left;
+			return *this;
 		}
 
-		[[nodiscard]] std::string ToString() const
+		Vector& operator-=(const Vector& right)
 		{
-			std::stringstream stream;
-			stream << '(';
-			for (MemoryView::SizeType i = 0; i < Dimension - 1; ++i)
+			for (MemoryView::SizeType i = 0; i < Dimension; ++i)
 			{
-				stream << Element[i] << ',';
+				Element[i] -= right[i];
 			}
-			stream << Element[Dimension - 1] << ')';
-			return stream.str();
+			return *this;
 		}
 
 		TElement& operator[](const MemoryView::SizeType& dimension)
@@ -141,14 +117,54 @@ namespace LangYa::SentryLib
 		{
 			return Element[dimension];
 		}
+
+		std::ostream& FormatToJson(std::ostream& stream) const override
+		{
+			if (Dimension == 0)
+			{
+				return stream << "[]";
+			}
+
+			stream << '[';
+			for (MemoryView::SizeType i = 0; i < Dimension - 1; ++i)
+			{
+				stream << Element[i] << ',';
+			}
+			return stream << Element[Dimension - 1] << ']';
+		}
 	};
 
-	template<MemoryView::SizeType Dimension>
-	using VectorI = Vector<int, Dimension>;
+	template <typename TElement>
+	using Vector2 = Vector<TElement, 2>;
+	using Vector2C = Vector2<char>;
+	using Vector2S = Vector2<short>;
+	using Vector2I = Vector2<int>;
+	using Vector2F = Vector2<float>;
+	using Vector2D = Vector2<double>;
 
-	template<MemoryView::SizeType Dimension>
-	using VectorF = Vector<float, Dimension>;
+	template <typename TElement>
+	using Vector3 = Vector<TElement, 3>;
+	using Vector3C = Vector3<char>;
+	using Vector3S = Vector3<short>;
+	using Vector3I = Vector3<int>;
+	using Vector3F = Vector3<float>;
+	using Vector3D = Vector3<double>;
 
-	template<MemoryView::SizeType Dimension>
-	using VectorD = Vector<double, Dimension>;
+	template <typename TElement>
+	Vector3<TElement> operator^(const Vector3<TElement>& left, const Vector3<TElement>& right)
+	{
+		const auto& x1 = left[0];
+		const auto& y1 = left[1];
+		const auto& z1 = left[2];
+
+		const auto& x2 = right[0];
+		const auto& y2 = right[1];
+		const auto& z2 = right[2];
+
+		return {
+			y1 * z2 - z1 * y2,
+			z1 * x2 - x1 * z2,
+			x1 * y2 - y1 * x2
+		};
+	}
 }

@@ -39,9 +39,9 @@ void HandleClient(ip::tcp::socket& client)
 	}
 }
 
-SC_ENTRY_POINT
+int main(const int argc, const char* argv[])
 {
-	SC_TIME_TEXT;
+	using namespace std::chrono_literals;
 
 	std::thread{
 		[]

@@ -1,26 +1,9 @@
 <map id="LangYa::SentryLib::Vector&lt; TElement, Dimension &gt;" name="LangYa::SentryLib::Vector&lt; TElement, Dimension &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,259,213,301"/>
-<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_vector2.html" title=" " alt="" coords="674,9,810,52"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,243,140,206,164,162,196,119,235,82,287,50,344,27,403,13,464,5,523,3,579,4,674,15,673,20,579,10,523,8,464,10,404,18,345,32,289,55,238,86,200,122,169,165,144,208,127,246"/>
-<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_vector2.html" title=" " alt="" coords="674,88,810,131"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,248,194,227,236,209,354,173,474,146,585,126,673,114,674,119,585,132,475,151,355,178,238,214,197,232,159,253"/>
-<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_vector3.html" title=" " alt="" coords="674,184,810,227"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="200,251,236,241,296,223,358,211,425,204,477,203,597,204,673,203,674,208,597,209,477,208,425,209,359,216,298,229,237,246,201,256"/>
-<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_vector2.html" title=" " alt="" coords="359,57,573,100"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="126,243,144,212,169,177,200,144,235,116,264,102,295,91,358,79,359,84,297,96,266,107,238,121,203,148,173,180,149,215,130,246"/>
-<area shape="rect" id="Node000006" href="$class_lang_ya_1_1_sentry_lib_1_1_vector3.html" title=" " alt="" coords="359,225,573,268"/>
-<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="228,266,358,254,359,259,229,271"/>
-<area shape="rect" id="Node000007" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="389,292,543,335"/>
-<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="229,288,389,303,389,309,228,294"/>
-<area shape="rect" id="Node000008" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="389,359,543,401"/>
-<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="189,304,237,319,389,359,388,364,236,324,188,309"/>
-<area shape="rect" id="Node000009" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="398,425,534,468"/>
-<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="151,309,192,338,238,366,297,391,359,411,398,423,396,428,358,416,295,396,235,370,189,342,147,313"/>
-<area shape="rect" id="Node000010" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="398,492,534,535"/>
-<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="135,312,180,368,208,397,238,423,277,447,318,467,398,495,397,500,316,472,274,452,235,427,204,401,176,372,131,316"/>
-<area shape="rect" id="Node000011" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="398,559,534,601"/>
-<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="125,314,143,355,167,403,199,451,238,494,275,520,316,540,358,555,398,566,396,571,357,560,314,545,273,525,235,498,195,455,163,406,138,357,120,316"/>
-<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="588,55,673,40,674,45,589,60"/>
-<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="589,90,674,99,673,104,588,95"/>
-<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="588,229,650,220,673,216,674,221,650,225,589,234"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="50,97,257,140"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="5,204,142,247"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="131,154,91,205,87,202,126,151"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="165,204,302,247"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="181,151,220,202,216,205,176,154"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json.html" title="表示此类可以格式化为 json 字符串并输出到流中。" alt="" coords="69,5,238,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,64,156,97,151,97,151,64"/>
 </map>

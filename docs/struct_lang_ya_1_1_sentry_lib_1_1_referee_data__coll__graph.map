@@ -1,0 +1,7 @@
+<map id="LangYa::SentryLib::RefereeData" name="LangYa::SentryLib::RefereeData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="94,96,230,139"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_deserializable_content.html" title="代表一种可以反序列化的内容。 此接口提供了反序列时所需要的两个函数： 获取反序列化资源的最小大小，以及从缓冲区中反序列化资源。" alt="" coords="5,5,153,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,58,145,94,141,98,107,61"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html" title="代表一个可被序列化的东西。 可被序列化即信息可以无损地转换为二进制数据。 一般将内容序列化后，将其写入文件或者网络传输，可以减轻读写传输等IO操作的压力。" alt="" coords="176,5,313,48"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,61,183,98,179,94,213,58"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="LangYa::SentryLib::SerialPort::Disconnect" name="LangYa::SentryLib::SerialPort::Disconnect">
+<area shape="rect" id="Node000001" title="断开当前串口的连接。" alt="" coords="205,5,356,48"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_serial_port.html#af3616c5b46f7b002c7f4c6798d0cc82c" title="清理串口占用的资源。" alt="" coords="5,5,157,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,29,157,29,157,24,189,24"/>
+</map>

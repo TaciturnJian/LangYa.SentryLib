@@ -1,9 +1,0 @@
-<map id="Sources/AutoAimModule.cpp" name="Sources/AutoAimModule.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="72,5,263,32"/>
-<area shape="rect" id="Node000002" href="$_auto_aim_module_8hpp.html" title=" " alt="" coords="78,80,257,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,33,170,65,165,65,165,33"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,171,143,197"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="145,125,102,162,98,158,142,121"/>
-<area shape="rect" id="Node000004" href="$_device_8hpp.html" title=" " alt="" coords="166,171,358,197"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="193,121,237,158,234,162,190,125"/>
-</map>

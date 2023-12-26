@@ -2,7 +2,7 @@
 
 #include <LangYa/SentryLib/Common/DeserializableContent.hpp>
 #include <LangYa/SentryLib/Common/SerializableContent.hpp>
-#include <LangYa/SentryLib/Math/Vector2.hpp>
+#include <LangYa/SentryLib/Math/Vector.hpp>
 
 namespace LangYa::SentryLib
 {
@@ -20,9 +20,7 @@ namespace LangYa::SentryLib
 		/// @brief 开火标志位，当取反时表示开火。
 		bool FireFlag{false};
 
-#pragma region 便于序列化而创建的一些结构体
-
-#pragma pack(push,1)
+#pragma pack(push, 1)
 
 		struct ComplexFireByte
 		{
@@ -60,8 +58,6 @@ namespace LangYa::SentryLib
 		};
 
 #pragma pack(pop)
-
-#pragma endregion
 
 		[[nodiscard]] MemoryView::SizeType GetDeserializationResourceSize() const override;
 

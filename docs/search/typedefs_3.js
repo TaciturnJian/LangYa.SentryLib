@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['errorcodetype_0',['ErrorCodeType',['../namespace_lang_ya_1_1_sentry_lib.html#abd61adbcb82ce68d6682a7313a2a41fc',1,'LangYa::SentryLib']]]
+  ['destinationidtype_0',['DestinationIDType',['../class_lang_ya_1_1_sentry_lib_1_1_navigator.html#ac6c45bdff9e433636cc87d95dc1184f5',1,'LangYa::SentryLib::Navigator']]]
 ];

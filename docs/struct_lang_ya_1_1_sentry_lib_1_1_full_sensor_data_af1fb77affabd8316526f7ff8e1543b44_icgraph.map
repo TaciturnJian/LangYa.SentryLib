@@ -1,0 +1,5 @@
+<map id="LangYa::SentryLib::FullSensorData::GetSerializationResultSize" name="LangYa::SentryLib::FullSensorData::GetSerializationResultSize">
+<area shape="rect" id="Node000001" title="获取序列化结果的大小。 返回序列化结果的大小，如果值为0，那么这个东西不可以被序列化。（谁继承这个接口然后返回0啊？） 建议遇到这种情况时直接抛出异常。" alt="" coords="103,5,313,64"/>
+<area shape="rect" id="Node000002" href="$_sentry_device_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,21,55,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,37,55,37,55,32,87,32"/>
+</map>

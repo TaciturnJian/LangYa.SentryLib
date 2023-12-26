@@ -1,20 +1,18 @@
 <map id="LangYa::SentryLib::SentryData" name="LangYa::SentryLib::SentryData">
-<area shape="rect" id="Node000001" title=" " alt="" coords="881,103,1017,145"/>
-<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html" title="代表一个可被序列化的东西。 可被序列化即信息可以无损地转换为二进制数据。 一般将内容序列化后，将其写入文件或者网络传输，可以减轻读写传输等IO操作的压力。" alt="" coords="583,5,719,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="735,49,858,88,890,100,888,105,856,93,733,54"/>
-<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_deserializable_content.html" title="代表一种可以反序列化的内容。 此接口提供了反序列时所需要的两个函数： 获取反序列化资源的最小大小，以及从缓冲区中反序列化资源。" alt="" coords="577,72,725,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="740,100,881,114,880,120,740,105"/>
-<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_vector2.html" title=" " alt="" coords="583,139,719,181"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="734,148,856,133,880,130,880,136,857,139,735,153"/>
-<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="266,111,473,153"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="489,141,583,151,582,156,488,146"/>
-<area shape="rect" id="Node000006" href="$class_lang_ya_1_1_sentry_lib_1_1_vector2.html" title=" " alt="" coords="262,177,476,220"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="492,179,582,167,583,172,492,184"/>
-<area shape="rect" id="Node000008" href="$class_lang_ya_1_1_sentry_lib_1_1_vector2.html" title=" " alt="" coords="583,205,719,248"/>
-<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="492,211,501,212,583,219,582,225,500,217,492,216"/>
-<area shape="rect" id="Node000007" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="5,177,213,220"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="228,196,262,196,262,201,228,201"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="734,206,794,189,856,168,908,143,911,148,858,173,796,194,735,211"/>
-<area shape="rect" id="Node000009" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="266,244,473,287"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="488,246,582,233,583,239,489,252"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="835,103,971,145"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html" title="代表一个可被序列化的东西。 可被序列化即信息可以无损地转换为二进制数据。 一般将内容序列化后，将其写入文件或者网络传输，可以减轻读写传输等IO操作的压力。" alt="" coords="537,5,673,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="689,49,812,88,844,100,842,105,810,93,687,54"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_deserializable_content.html" title="代表一种可以反序列化的内容。 此接口提供了反序列时所需要的两个函数： 获取反序列化资源的最小大小，以及从缓冲区中反序列化资源。" alt="" coords="531,72,679,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="694,100,835,114,834,120,694,105"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="537,139,673,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="688,148,810,133,834,130,834,136,811,139,689,153"/>
+<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json.html" title="表示此类可以格式化为 json 字符串并输出到流中。" alt="" coords="5,176,174,219"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="181,169,223,161,302,151,365,146,507,149,536,151,536,156,507,155,365,152,303,156,223,167,182,175"/>
+<area shape="rect" id="Node000006" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="223,176,430,219"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="189,195,223,195,223,200,189,200"/>
+<area shape="rect" id="Node000007" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="537,205,673,248"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="180,220,223,228,307,235,392,236,536,230,536,235,392,242,307,240,223,233,179,225"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="445,179,536,166,537,172,446,184"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="446,211,455,212,537,219,536,225,454,217,445,216"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="688,206,748,189,810,168,862,143,865,148,812,173,750,194,689,211"/>
 </map>

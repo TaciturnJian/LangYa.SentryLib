@@ -1,15 +1,17 @@
 <map id="LangYa::SentryLib::Position1&lt; TElement &gt;" name="LangYa::SentryLib::Position1&lt; TElement &gt;">
-<area shape="rect" id="Node000001" title="使用一个元素 X 代表坐标。 包装了一个元素，为了与其他 Position 保持一致。" alt="" coords="5,64,160,107"/>
-<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title=" " alt="" coords="523,5,659,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,64,259,49,348,39,438,32,522,27,523,32,438,37,349,44,260,55,175,69"/>
-<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title=" " alt="" coords="260,64,414,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="175,83,259,83,259,88,175,88"/>
-<area shape="rect" id="Node000006" href="$struct_lang_ya_1_1_sentry_lib_1_1_position1.html" title=" " alt="" coords="269,131,405,173"/>
-<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="175,107,269,132,267,137,174,112"/>
-<area shape="poly" id="edge6_Node000003_Node000002" title=" " alt="" coords="428,62,489,48,522,40,523,46,491,53,429,67"/>
-<area shape="rect" id="Node000004" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title=" " alt="" coords="768,104,905,147"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="430,89,745,113,768,116,767,121,744,119,429,94"/>
-<area shape="rect" id="Node000005" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title=" " alt="" coords="514,133,668,176"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="427,109,439,112,514,132,513,138,437,117,425,114"/>
-<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="684,141,768,131,768,136,684,146"/>
+<area shape="rect" id="Node000001" title="使用一个元素 X 代表坐标。 包装了一个元素，为了与其他 Position 保持一致。" alt="" coords="223,64,377,107"/>
+<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title=" " alt="" coords="741,5,877,48"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="392,64,477,49,566,39,655,32,740,27,740,32,656,37,567,44,478,55,393,69"/>
+<area shape="rect" id="Node000004" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title=" " alt="" coords="477,64,632,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="393,83,477,83,477,88,393,88"/>
+<area shape="rect" id="Node000007" href="$struct_lang_ya_1_1_sentry_lib_1_1_position1.html" title=" " alt="" coords="486,131,623,173"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="393,107,486,132,485,137,391,112"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json.html" title="表示此类可以格式化为 json 字符串并输出到流中。" alt="" coords="5,64,174,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,83,222,83,222,88,189,88"/>
+<area shape="poly" id="edge7_Node000004_Node000003" title=" " alt="" coords="646,62,707,48,740,40,741,46,708,53,647,67"/>
+<area shape="rect" id="Node000005" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title=" " alt="" coords="986,104,1122,147"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="647,88,962,112,986,114,985,120,962,117,647,93"/>
+<area shape="rect" id="Node000006" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title=" " alt="" coords="732,133,886,176"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="645,109,656,112,732,132,731,138,655,117,643,114"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="901,141,985,131,986,136,902,146"/>
 </map>

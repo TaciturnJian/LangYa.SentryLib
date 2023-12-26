@@ -1,0 +1,29 @@
+<map id="LangYa::SentryLib::FullSensorData" name="LangYa::SentryLib::FullSensorData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1721,72,1857,115"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_deserializable_content.html" title="代表一种可以反序列化的内容。 此接口提供了反序列时所需要的两个函数： 获取反序列化资源的最小大小，以及从缓冲区中反序列化资源。" alt="" coords="1421,5,1568,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1584,44,1721,75,1720,81,1583,49"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html" title="代表一个可被序列化的东西。 可被序列化即信息可以无损地转换为二进制数据。 一般将内容序列化后，将其写入文件或者网络传输，可以减轻读写传输等IO操作的压力。" alt="" coords="1426,72,1563,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1578,91,1721,91,1721,96,1578,96"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_armor_plate.html" title="ArmorPlate 装甲板信息，储存装甲板的位置、法向量、颜色、ID。" alt="" coords="1426,139,1563,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1577,139,1696,112,1720,107,1721,112,1698,117,1578,144"/>
+<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json.html" title="表示此类可以格式化为 json 字符串并输出到流中。" alt="" coords="5,125,174,168"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="137,115,176,95,223,76,273,62,325,56,1255,56,1329,85,1445,136,1443,140,1327,90,1254,61,325,61,274,67,224,81,178,100,140,120"/>
+<area shape="rect" id="Node000008" href="$struct_lang_ya_1_1_sentry_lib_1_1_position1.html" title="使用一个元素 X 代表坐标。 包装了一个元素，为了与其他 Position 保持一致。" alt="" coords="250,96,404,139"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="189,132,249,124,249,130,190,137"/>
+<area shape="rect" id="Node000011" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="539,213,676,256"/>
+<area shape="poly" id="edge13_Node000011_Node000005" title=" " alt="" coords="189,158,507,211,540,217,539,222,506,216,189,164"/>
+<area shape="rect" id="Node000012" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="223,213,430,256"/>
+<area shape="poly" id="edge15_Node000012_Node000005" title=" " alt="" coords="151,172,199,192,251,210,249,215,197,197,149,177"/>
+<area shape="rect" id="Node000006" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title=" " alt="" coords="1185,139,1322,181"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="1337,157,1426,157,1426,163,1337,163"/>
+<area shape="rect" id="Node000007" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title=" " alt="" coords="709,88,863,131"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="879,111,1013,122,1162,139,1185,143,1184,148,1161,144,1012,127,878,117"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="420,113,708,108,708,113,420,118"/>
+<area shape="rect" id="Node000010" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title=" " alt="" coords="530,147,685,189"/>
+<area shape="poly" id="edge11_Node000010_Node000008" title=" " alt="" coords="420,131,530,151,529,157,419,137"/>
+<area shape="rect" id="Node000009" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title=" " alt="" coords="887,147,1041,189"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="1057,163,1185,159,1185,165,1057,168"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="700,165,887,165,887,171,700,171"/>
+<area shape="poly" id="edge12_Node000004_Node000011" title=" " alt="" coords="691,231,971,220,1146,209,1321,191,1425,173,1426,178,1322,196,1146,214,971,226,691,236"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="446,232,539,232,539,237,446,237"/>
+</map>

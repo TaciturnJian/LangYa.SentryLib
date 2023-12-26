@@ -1,11 +1,7 @@
 <map id="FindDestinationID" name="FindDestinationID">
-<area shape="rect" id="Node000001" title=" " alt="" coords="322,88,445,115"/>
-<area shape="rect" id="Node000002" href="$_tiny_sentry_mind_8cpp.html#ae2f83cd5a2399cc55508ae121221e7db" title=" " alt="" coords="207,88,274,115"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="306,104,274,104,274,99,306,99"/>
-<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_match_status_manager.html#a6c6bd75459d70b0bf310e8cf9a0dd2a2" title=" " alt="" coords="5,5,159,64"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="191,84,152,67,154,62,194,79"/>
-<area shape="rect" id="Node000004" href="$_tiny_sentry_mind_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="57,88,107,115"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="191,104,107,104,107,99,191,99"/>
-<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_match_status_manager.html#a5fc946859af99ce1bddb686a990d9671" title=" " alt="" coords="5,139,159,197"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="194,124,154,141,152,136,191,119"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="218,5,341,32"/>
+<area shape="rect" id="Node000002" href="$_tiny_sentry_mind_8cpp.html#ae2f83cd5a2399cc55508ae121221e7db" title=" " alt="" coords="103,5,170,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,21,170,21,170,16,202,16"/>
+<area shape="rect" id="Node000003" href="$_tiny_sentry_mind_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
 </map>

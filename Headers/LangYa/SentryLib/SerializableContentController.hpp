@@ -50,8 +50,6 @@ namespace LangYa::SentryLib
 
 	//TODO 检测连接异常，如果异常则选择处理方式
 
-#pragma region 函数实现
-
 	template <Serializable TControllerData>
 	SerializableContentController<TControllerData>::SerializableContentController(const std::weak_ptr<Connection>& connection):
 		WeakConnection(connection),
@@ -112,7 +110,5 @@ namespace LangYa::SentryLib
 
 		return true;
 	}
-
-#pragma endregion
 
 }

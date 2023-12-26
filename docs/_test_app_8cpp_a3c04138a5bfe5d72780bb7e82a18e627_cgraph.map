@@ -1,23 +1,26 @@
 <map id="main" name="main">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,341,55,368"/>
-<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_configurator.html#a1218b925827295e15d29931caf5cdb40" title=" " alt="" coords="118,5,278,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="30,341,53,197,74,114,86,81,101,58,104,55,108,58,105,62,91,83,79,115,58,198,36,341"/>
-<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_configurator.html#a7447635c660fa1b0e1d15a2f39517021" title=" " alt="" coords="103,72,293,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="29,341,32,299,43,242,64,180,80,151,101,125,103,122,107,126,105,128,85,154,69,182,48,243,37,300,34,341"/>
-<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html#a4fecc0402253646bd4d1d6fa6992ab7c" title="获取序列化结果的大小。 返回序列化结果的大小，如果值为0，那么这个东西不可以被序列化。（谁继承这个接口然后返回0啊？） 建议遇到这种情况时直接抛出异常。" alt="" coords="106,139,290,197"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="32,340,54,278,74,240,101,208,103,205,107,209,105,211,79,243,59,280,37,342"/>
-<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html#aa4fcd6178787270ed4e8a69d28e60303" title="Get the view of the unique memory in the buffer." alt="" coords="122,221,274,264"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="38,339,64,307,101,274,109,269,112,274,104,278,68,311,42,343"/>
-<area shape="rect" id="Node000006" href="$class_lang_ya_1_1_sentry_lib_1_1_configurator.html#a811f32e3e4a647f57bc258a01f6d61d9" title=" " alt="" coords="111,288,285,347"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="54,347,95,337,96,343,56,352"/>
-<area shape="rect" id="Node000007" href="$class_lang_ya_1_1_sentry_lib_1_1_configurator.html#a0452562497ba6db92763762ff3657558" title=" " alt="" coords="130,371,266,413"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="56,357,116,371,114,376,54,363"/>
-<area shape="rect" id="Node000008" href="$_test_app_8cpp.html#a11fcbaa685391ebab8d7fa5459082ebf" title=" " alt="" coords="115,437,281,464"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="43,366,69,395,104,423,115,429,113,434,101,428,65,399,39,370"/>
-<area shape="rect" id="Node000009" href="$struct_lang_ya_1_1_sentry_lib_1_1_application_info.html#aef2b02b359c1204402f7cbb4ad4a12c1" title="使用 spdlog 输出。 输出的内容不再是 json 格式，并且有一定的缩进。 如果使用了spdlog配置多个日志记录器，还可以在日志中确定内容。" alt="" coords="115,488,281,547"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="39,367,62,419,81,448,105,474,108,477,104,481,101,478,77,451,58,421,34,370"/>
-<area shape="rect" id="Node000010" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a4d6f24e486ceeee0feed63560d68eff2" title="从目标复制内存直到填满当前视图。" alt="" coords="116,571,280,613"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="35,368,39,405,51,456,71,510,86,535,105,557,107,559,103,563,101,560,82,538,67,512,45,457,34,406,30,368"/>
-<area shape="rect" id="Node000011" href="$class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html#a2720ba97257dbf02d329f1f68799c29e" title="序列化此内容，将序列化的结果写入缓冲区。 当提供的缓冲区太小时，不会执行序列化操作，返回false。" alt="" coords="130,637,266,696"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="34,368,35,415,44,483,53,520,66,557,83,592,105,624,118,636,115,640,101,627,78,595,61,559,48,522,39,484,30,416,28,368"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,345,55,372"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html#afcce8a46c14b15295e2dcb4cf66bcc2a" title="构造，初始化控制台参数为指定的值。" alt="" coords="105,5,280,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="28,345,29,296,38,225,47,185,60,146,77,108,101,74,101,74,105,77,105,78,82,111,65,148,52,187,43,226,35,296,34,345"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_configurator.html#a2531ca07172da9910b279e50cbdefb93" title="初始化一个空的配置器" alt="" coords="109,88,276,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="29,345,33,305,44,251,66,193,81,165,101,141,103,138,107,142,105,144,86,168,70,195,49,253,39,306,35,345"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html#aa4fcd6178787270ed4e8a69d28e60303" title="Get the view of the unique memory in the buffer." alt="" coords="117,155,268,197"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="32,344,53,280,73,241,101,207,104,205,108,209,105,211,77,244,58,282,37,346"/>
+<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_configurator.html#a811f32e3e4a647f57bc258a01f6d61d9" title=" " alt="" coords="106,221,279,280"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="42,343,68,317,101,290,108,286,110,290,104,294,71,321,45,347"/>
+<area shape="rect" id="Node000006" href="$class_lang_ya_1_1_sentry_lib_1_1_configurator.html#a0452562497ba6db92763762ff3657558" title=" " alt="" coords="124,304,261,347"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="55,351,108,340,109,345,56,356"/>
+<area shape="rect" id="Node000007" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#ad10f23c49b3cda581559e45136a79d21" title="基于一个内存视图加上偏移构建一个新的内存视图。" alt="" coords="103,371,282,413"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="56,361,88,368,87,373,55,366"/>
+<area shape="rect" id="Node000008" href="$class_lang_ya_1_1_sentry_lib_1_1_configurator.html#af7a830fa2f8b2ccdf86abb395f36780d" title=" " alt="" coords="116,437,269,480"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="45,371,71,397,104,423,112,428,110,432,101,428,67,401,41,374"/>
+<area shape="rect" id="Node000009" href="$struct_lang_ya_1_1_sentry_lib_1_1_application_info.html#aef2b02b359c1204402f7cbb4ad4a12c1" title="使用 spdlog 输出。 输出的内容不再是 json 格式，并且有一定的缩进。 如果使用了spdlog配置多个日志记录器，还可以在日志中确定内容。" alt="" coords="109,504,276,563"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="38,372,61,428,80,461,105,490,107,492,103,496,101,494,76,464,56,430,33,374"/>
+<area shape="rect" id="Node000010" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a4d6f24e486ceeee0feed63560d68eff2" title="从目标复制内存直到填满当前视图。" alt="" coords="110,587,275,629"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="35,372,39,411,49,465,70,522,86,549,105,573,107,575,103,579,101,576,81,552,66,524,44,466,33,412,29,373"/>
+<area shape="rect" id="Node000012" href="$class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html#a68b67fc2a71e1b22c6b97862ab97e7a7" title="Construct a new UniqueBuffer object with provided size." alt="" coords="105,677,280,720"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="34,372,37,420,46,490,68,568,84,605,105,640,133,667,129,670,101,643,79,608,63,569,41,491,31,421,29,373"/>
+<area shape="rect" id="Node000011" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a0b0dae0e12aeccb9fc1c4d9dd074e9cf" title="检查此视图是否有效，即不为空指针或长度大于 0 。" alt="" coords="330,587,473,629"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="275,605,314,605,314,611,275,611"/>
+<area shape="poly" id="edge12_Node000012_Node000012" title=" " alt="" coords="161,677,160,667,165,659,176,653,192,651,210,653,221,659,218,664,208,658,192,656,177,658,168,662,165,668,166,676"/>
 </map>

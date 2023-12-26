@@ -1,3 +1,23 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" href="$class_lang_ya_1_1_sentry_lib_1_1_auto_aim_module.html" title="辅助瞄准模块，提供机器人视觉相关内容" alt="" coords="5,5,142,48"/>
+<area shape="rect" id="Node000000" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json.html" title="表示此类可以格式化为 json 字符串并输出到流中。" alt="" coords="5,172,174,215"/>
+<area shape="rect" id="Node000001" href="$struct_lang_ya_1_1_sentry_lib_1_1_position1.html" title=" " alt="" coords="257,5,394,48"/>
+<area shape="poly" id="edge3_Node000000_Node000001" title=" " alt="" coords="114,158,160,107,189,80,220,58,256,41,258,46,223,62,192,85,164,110,118,162"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="257,72,394,115"/>
+<area shape="poly" id="edge4_Node000000_Node000002" title=" " alt="" coords="142,162,221,124,256,111,258,116,223,129,144,167"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="257,139,394,181"/>
+<area shape="poly" id="edge5_Node000000_Node000003" title=" " alt="" coords="188,177,256,167,257,172,189,182"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_armor_plate.html" title="ArmorPlate 装甲板信息，储存装甲板的位置、法向量、颜色、ID。" alt="" coords="257,205,394,248"/>
+<area shape="poly" id="edge6_Node000000_Node000004" title=" " alt="" coords="189,205,257,214,256,220,188,210"/>
+<area shape="rect" id="Node000005" href="$struct_lang_ya_1_1_sentry_lib_1_1_position1.html" title="使用一个元素 X 代表坐标。 包装了一个元素，为了与其他 Position 保持一致。" alt="" coords="248,272,403,315"/>
+<area shape="poly" id="edge7_Node000000_Node000005" title=" " alt="" coords="144,220,223,258,253,269,251,274,221,262,142,225"/>
+<area shape="rect" id="Node000010" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="222,339,429,381"/>
+<area shape="poly" id="edge12_Node000000_Node000010" title=" " alt="" coords="118,225,164,276,192,302,223,324,245,336,243,341,220,329,189,306,160,280,114,229"/>
+<area shape="rect" id="Node000006" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title=" " alt="" coords="486,239,622,281"/>
+<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="417,277,485,267,486,273,418,283"/>
+<area shape="rect" id="Node000007" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title=" " alt="" coords="477,305,631,348"/>
+<area shape="poly" id="edge9_Node000005_Node000007" title=" " alt="" coords="418,304,477,313,476,318,417,309"/>
+<area shape="rect" id="Node000008" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title=" " alt="" coords="688,272,825,315"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="646,309,687,302,688,307,647,314"/>
+<area shape="rect" id="Node000009" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title=" " alt="" coords="679,339,834,381"/>
+<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="647,339,680,345,679,350,646,344"/>
 </map>

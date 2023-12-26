@@ -209,6 +209,22 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
+<p class="reference">引用了 <a class="el" href="#l00049">LangYa::SentryLib::UniqueBuffer::GetView()</a>, <a class="el" href="#l00012">LangYa::SentryLib::MemoryView::MemoryView()</a> , 以及 <a class="el" href="#l00037">LangYa::SentryLib::MemoryView::Size</a>.</p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer_a5067c0508f2f920f3d92df845c8edcd8_cgraph.png" border="0" usemap="#aclass_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer_a5067c0508f2f920f3d92df845c8edcd8_cgraph" alt=""/></div>
+<map name="aclass_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer_a5067c0508f2f920f3d92df845c8edcd8_cgraph" id="aclass_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer_a5067c0508f2f920f3d92df845c8edcd8_cgraph">
+<area shape="rect" title="Construct a new PingPongBuffer object with provided unique buffer. Its size must be sizeof(element) *..." alt="" coords="5,39,213,81"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html#aa4fcd6178787270ed4e8a69d28e60303" title="Get the view of the unique memory in the buffer." alt="" coords="275,5,426,48"/>
+<area shape="poly" title=" " alt="" coords="213,43,259,37,260,42,214,48"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#ad10f23c49b3cda581559e45136a79d21" title="基于一个内存视图加上偏移构建一个新的内存视图。" alt="" coords="261,72,440,115"/>
+<area shape="poly" title=" " alt="" coords="214,72,246,76,245,82,213,77"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a9fc55d1f9b363af584dd6af9935d2941" name="a9fc55d1f9b363af584dd6af9935d2941"></a>
@@ -317,16 +333,25 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>Whether this buffer get a resource from the ping pong buffer. </dd></dl>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+
+<p class="reference">引用了 <a class="el" href="#l00033">LangYa::SentryLib::MemoryView::Head</a>, <a class="el" href="#l00027">LangYa::SentryLib::MemoryView::operator[]()</a>, <a class="el" href="#l00045">LangYa::SentryLib::MemoryView::ReadFrom()</a>, <a class="el" href="#l00034">LangYa::SentryLib::MemoryView::ReadFrom()</a> , 以及 <a class="el" href="#l00037">LangYa::SentryLib::MemoryView::Size</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer_aa81263f72efc7b80c6430b5300de851b_cgraph.png" border="0" usemap="#aclass_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer_aa81263f72efc7b80c6430b5300de851b_cgraph" alt=""/></div>
 <map name="aclass_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer_aa81263f72efc7b80c6430b5300de851b_cgraph" id="aclass_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer_aa81263f72efc7b80c6430b5300de851b_cgraph">
-<area shape="rect" title="Input the resource, try to read bytes and then write them to destination. To make sure the destinatio..." alt="" coords="5,5,182,48"/>
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a4d6f24e486ceeee0feed63560d68eff2" title="从目标复制内存直到填满当前视图。" alt="" coords="230,5,394,48"/>
-<area shape="poly" title=" " alt="" coords="182,24,214,24,214,29,182,29"/>
+<area shape="rect" title="Input the resource, try to read bytes and then write them to destination. To make sure the destinatio..." alt="" coords="5,72,182,115"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a382b2718add95dfe0916f58b30bfd50e" title="提供快速访问某字节的运算符。 注意，内存不一定有效，而且此运算符不会检查索引是否越界。" alt="" coords="232,5,392,48"/>
+<area shape="poly" title=" " alt="" coords="165,69,224,50,226,56,166,74"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a06db61b6c19ed6a77e3bc7882a5c8658" title="从目标读取内存，直到当前内存被填满或目标内存不足。" alt="" coords="230,72,394,115"/>
+<area shape="poly" title=" " alt="" coords="182,91,214,91,214,96,182,96"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a4d6f24e486ceeee0feed63560d68eff2" title="从目标复制内存直到填满当前视图。" alt="" coords="230,139,394,181"/>
+<area shape="poly" title=" " alt="" coords="166,113,226,131,224,136,165,118"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a0b0dae0e12aeccb9fc1c4d9dd074e9cf" title="检查此视图是否有效，即不为空指针或长度大于 0 。" alt="" coords="442,105,585,148"/>
+<area shape="poly" title=" " alt="" coords="395,104,427,110,426,115,394,110"/>
+<area shape="poly" title=" " alt="" coords="394,144,426,138,427,144,395,149"/>
 </map>
 </div>
 
@@ -359,16 +384,25 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>Whether this buffer get a resource from the ping pong buffer. </dd></dl>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+
+<p class="reference">引用了 <a class="el" href="#l00033">LangYa::SentryLib::MemoryView::Head</a>, <a class="el" href="#l00027">LangYa::SentryLib::MemoryView::operator[]()</a>, <a class="el" href="#l00045">LangYa::SentryLib::MemoryView::ReadFrom()</a>, <a class="el" href="#l00034">LangYa::SentryLib::MemoryView::ReadFrom()</a> , 以及 <a class="el" href="#l00037">LangYa::SentryLib::MemoryView::Size</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer_a75430d1719685502a598b1789a213425_cgraph.png" border="0" usemap="#aclass_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer_a75430d1719685502a598b1789a213425_cgraph" alt=""/></div>
 <map name="aclass_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer_a75430d1719685502a598b1789a213425_cgraph" id="aclass_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer_a75430d1719685502a598b1789a213425_cgraph">
-<area shape="rect" title="Assume the resource has been inputted after" alt="" coords="5,5,209,64"/>
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a4d6f24e486ceeee0feed63560d68eff2" title="从目标复制内存直到填满当前视图。" alt="" coords="257,13,421,56"/>
-<area shape="poly" title=" " alt="" coords="209,32,241,32,241,37,209,37"/>
+<area shape="rect" title="Assume the resource has been inputted after" alt="" coords="5,64,209,123"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a382b2718add95dfe0916f58b30bfd50e" title="提供快速访问某字节的运算符。 注意，内存不一定有效，而且此运算符不会检查索引是否越界。" alt="" coords="259,5,419,48"/>
+<area shape="poly" title=" " alt="" coords="208,62,247,50,248,55,210,67"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a06db61b6c19ed6a77e3bc7882a5c8658" title="从目标读取内存，直到当前内存被填满或目标内存不足。" alt="" coords="257,72,421,115"/>
+<area shape="poly" title=" " alt="" coords="209,91,241,91,241,96,209,96"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a4d6f24e486ceeee0feed63560d68eff2" title="从目标复制内存直到填满当前视图。" alt="" coords="257,139,421,181"/>
+<area shape="poly" title=" " alt="" coords="210,120,248,131,247,136,208,125"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a0b0dae0e12aeccb9fc1c4d9dd074e9cf" title="检查此视图是否有效，即不为空指针或长度大于 0 。" alt="" coords="469,105,612,148"/>
+<area shape="poly" title=" " alt="" coords="422,104,454,110,453,115,421,110"/>
+<area shape="poly" title=" " alt="" coords="421,144,453,138,454,144,422,149"/>
 </map>
 </div>
 
@@ -514,7 +548,7 @@ Public 成员函数</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_lang_ya.html">LangYa</a></li><li class="navelem"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">SentryLib</a></li><li class="navelem"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html">PingPongBuffer</a></li>
-    <li class="footer">生成于 2023年 十二月 19日 星期二 23:40:51 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 26日 星期二 17:08:20 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

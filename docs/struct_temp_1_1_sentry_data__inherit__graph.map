@@ -1,7 +1,0 @@
-<map id="Temp::SentryData" name="Temp::SentryData">
-<area shape="rect" id="Node000001" title=" " alt="" coords="90,80,217,107"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,139,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,41,141,78,138,82,96,44"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="162,5,310,32"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="212,45,169,82,166,78,208,40"/>
-</map>

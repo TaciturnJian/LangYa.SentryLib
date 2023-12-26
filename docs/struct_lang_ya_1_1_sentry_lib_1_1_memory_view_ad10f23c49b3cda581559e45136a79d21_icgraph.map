@@ -1,0 +1,7 @@
+<map id="LangYa::SentryLib::MemoryView::MemoryView" name="LangYa::SentryLib::MemoryView::MemoryView">
+<area shape="rect" id="Node000001" title="基于一个内存视图加上偏移构建一个新的内存视图。" alt="" coords="261,27,440,69"/>
+<area shape="rect" id="Node000002" href="$_test_app_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="84,5,134,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,38,134,24,134,19,245,33"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html#a5067c0508f2f920f3d92df845c8edcd8" title="Construct a new PingPongBuffer object with provided unique buffer. Its size must be sizeof(element) *..." alt="" coords="5,56,213,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="245,63,213,67,213,62,245,58"/>
+</map>

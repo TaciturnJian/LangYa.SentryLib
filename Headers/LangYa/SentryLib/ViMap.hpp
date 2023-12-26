@@ -5,7 +5,7 @@
 #include <unordered_map>
 
 #include <LangYa/SentryLib/Math/Position2.hpp>
-#include <LangYa/SentryLib/Math/Vector2.hpp>
+#include <LangYa/SentryLib/Math/Vector.hpp>
 
 namespace LangYa::SentryLib
 {

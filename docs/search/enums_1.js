@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['matchstatus_0',['MatchStatus',['../class_lang_ya_1_1_sentry_lib_1_1_match_status_manager.html#a3e62cea893dada9aaa69b7e26e90788f',1,'LangYa::SentryLib::MatchStatusManager']]]
+  ['commoncolor_0',['CommonColor',['../class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html#ac7a137824050901043e8767147fbc9f1',1,'LangYa::SentryLib::ConsoleManipulator']]]
 ];
