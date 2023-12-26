@@ -78,7 +78,7 @@ namespace LangYa::SentryLib
 
 	ConsoleManipulator&
 	ConsoleManipulator
-	::MoveCursor(const Vector2S offset)
+	::MoveCursor(const Vector2S& offset)
 	{
 		if (offset[0] == offset[1] && offset[0] == 0) return *this;
 
