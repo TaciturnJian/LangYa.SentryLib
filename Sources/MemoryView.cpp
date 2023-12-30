@@ -98,11 +98,11 @@ namespace LangYa::SentryLib
 	std::ostream& 
 	operator<<(std::ostream& stream, const MemoryView& view)
 	{
-		for (MemoryView::SizeType i = 0; i < view.Size; i++)
+		for (MemoryView::SizeType i = 0; i < view.Size - 1; i++)
 		{
 			stream << std::hex << static_cast<int>(view[i]) << ' ';
 		}
 
-		return stream;
+		return stream << std::hex << static_cast<int>(view[view.Size - 1]);
 	}
 }

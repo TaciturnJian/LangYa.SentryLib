@@ -8,14 +8,21 @@ namespace LangYa::SentryLib
 {
 	/// @brief 一个简单的 TCP 服务器。
 	///	@details TinyTCPServer 是一个理论上能响应无限 TCP 客户端的服务器。
-	///
+	///	相信我，你不会想知道这个的实现源码有多脏。 (QwQ)
 	class TinyTCPServer
 	{
 	public:
 		using ClientCallbackType = std::function<void(boost::asio::ip::tcp::socket& client)>;
 
+		struct SharedThreadWithSharedTerminateSignal
+		{
+			std::shared_ptr<std::atomic_bool> IsTerminatedPtr;
+			std::shared_ptr<std::thread> ThreadPtr;
+		};
+
 	private:
-		boost::asio::io_context IOContext;
+		/// @brief Acceptor 的 IOContext 。
+		boost::asio::io_context IOContext{};
 		boost::asio::ip::tcp::acceptor Acceptor{
 			IOContext,
 			{
@@ -28,6 +35,7 @@ namespace LangYa::SentryLib
 		bool NextThread{true};
 		std::atomic_bool AcceptedClient{false};
 		std::vector<std::tuple<std::shared_ptr<std::atomic_bool>, std::shared_ptr<std::thread>>> ThreadInfoList;
+
 		void WaitForClient(std::atomic_bool& terminated, std::atomic_bool& accepted);
 
 	public:
