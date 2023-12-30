@@ -2,14 +2,13 @@
 
 #include <boost/asio/ip/address.hpp>
 
-#include <spdlog/spdlog.h>
-
-#include <LangYa/SentryLib/CanStreamFormatToJson.hpp>
+#include <LangYa/SentryLib/CanStreamFormatToConsoleFriendlyString.hpp>
 
 namespace LangYa::SentryLib
 {
 	/// @brief 代表 IPv4 地址。
-	struct IPv4Address final : CanStreamFormatToJson
+	///	解析字符串的时候小心点，这玩意儿的问题好多好多。
+	struct IPv4Address final : CanStreamFormatToConsoleFriendlyString
 	{
 		/// @brief IPv4 地址中每个位置的数字类型。
 		///	@details 因为每个位置的范围是 [0, 255] 的整数，所以采用的是 unsigned char。
@@ -49,13 +48,12 @@ namespace LangYa::SentryLib
 		///	@code LangYa::SentryLib::IPv4Address::Parse(std::istream&) @endcode
 		IPv4Address& operator=(std::string_view address);
 
-		/// @brief 利用流转换为 json 格式的字符串。
-		///	@details 格式为 "[0].[1].[2].[3]" 。
-		std::ostream& FormatToJson(std::ostream& stream) const override;
+		/// @brief 从 boost 的地址中获取 IPv4 地址。
+		IPv4Address& operator=(const boost::asio::ip::address& address);
 
 		/// @brief 转换为字符串格式的 IPv4 地址。
 		///	@details 格式为 [0].[1].[2].[3] 。
-		std::ostream& FormatToString(std::ostream& stream) const;
+		std::ostream& FormatToConsoleFriendlyString(std::ostream& stream) const override;
 
 		/// @brief 转换为 boost 的地址。
 		[[nodiscard]] boost::asio::ip::address_v4 ToBoostAddress() const;

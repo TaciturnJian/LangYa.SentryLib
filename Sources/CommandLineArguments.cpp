@@ -18,7 +18,7 @@ namespace LangYa::SentryLib
 	{
 	}
 
-	/* 理论上上下两种格式都可以接收，但是编译器对 signed 和 unsigned 的区分很严格，所以默认都改成 unsigned */
+	/* 理论上，上下两种格式都可以接收，但是编译器对 signed 和 unsigned 的区分很严格，所以默认都改成 unsigned */
 
 	CommandLineArguments
 	::CommandLineArguments(const unsigned count, const CommandLineArgumentListType list) :
