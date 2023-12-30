@@ -17,5 +17,11 @@ var searchData=
   ['position2ui_14',['Position2Ui',['../namespace_lang_ya_1_1_sentry_lib.html#a49af55a812aa195b8ab41afd218014ab',1,'LangYa::SentryLib']]],
   ['position3d_15',['Position3D',['../namespace_lang_ya_1_1_sentry_lib.html#a4c62e0205269c5a069b8d1449753358a',1,'LangYa::SentryLib']]],
   ['position3f_16',['Position3F',['../namespace_lang_ya_1_1_sentry_lib.html#ad3d83d6076fb9f6a953512df2382cab6',1,'LangYa::SentryLib']]],
-  ['position3i_17',['Position3I',['../namespace_lang_ya_1_1_sentry_lib.html#a77bc72648368bdaa93efaac2570d0cbe',1,'LangYa::SentryLib']]]
+  ['position3i_17',['Position3I',['../namespace_lang_ya_1_1_sentry_lib.html#a77bc72648368bdaa93efaac2570d0cbe',1,'LangYa::SentryLib']]],
+  ['positionedvector2d_18',['PositionedVector2D',['../namespace_lang_ya_1_1_sentry_lib.html#aff3387e4f13de95a1fe149fa3fffa67a',1,'LangYa::SentryLib']]],
+  ['positionedvector2f_19',['PositionedVector2F',['../namespace_lang_ya_1_1_sentry_lib.html#a420ec35bd9d412abfd3eee61b3b3d4cc',1,'LangYa::SentryLib']]],
+  ['positionedvector2i_20',['PositionedVector2I',['../namespace_lang_ya_1_1_sentry_lib.html#a417288a3b51ee630fbba5f7291d280da',1,'LangYa::SentryLib']]],
+  ['positionedvector3d_21',['PositionedVector3D',['../namespace_lang_ya_1_1_sentry_lib.html#a9077d32836721e2e8b4bdf0585d5a0d7',1,'LangYa::SentryLib']]],
+  ['positionedvector3f_22',['PositionedVector3F',['../namespace_lang_ya_1_1_sentry_lib.html#a98b7df78733a83cc1f4628c53a5db16e',1,'LangYa::SentryLib']]],
+  ['positionedvector3i_23',['PositionedVector3I',['../namespace_lang_ya_1_1_sentry_lib.html#a4a2969a6b08cff8ce7dc005fe2e0d4c5',1,'LangYa::SentryLib']]]
 ];

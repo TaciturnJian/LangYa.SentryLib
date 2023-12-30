@@ -1,0 +1,10 @@
+<map id="LangYa::SentryLib::PositionedVector2&lt; TElement &gt;" name="LangYa::SentryLib::PositionedVector2&lt; TElement &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="803,5,1009,48"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="561,5,700,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="716,24,802,24,802,29,716,29"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json.html" title="表示此类可以格式化为 json 字符串并输出到流中。" alt="" coords="5,11,174,53"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="189,26,198,25,367,19,537,19,561,20,561,25,537,24,368,24,198,31,189,31"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="223,40,430,83"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="189,42,223,46,222,51,189,47"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="445,45,537,35,561,32,561,37,538,40,446,51"/>
+</map>

@@ -30,6 +30,8 @@ var annotated_dup =
         [ "Position1", "struct_lang_ya_1_1_sentry_lib_1_1_position1.html", "struct_lang_ya_1_1_sentry_lib_1_1_position1" ],
         [ "Position2", "struct_lang_ya_1_1_sentry_lib_1_1_position2.html", "struct_lang_ya_1_1_sentry_lib_1_1_position2" ],
         [ "Position3", "struct_lang_ya_1_1_sentry_lib_1_1_position3.html", "struct_lang_ya_1_1_sentry_lib_1_1_position3" ],
+        [ "PositionedVector2", "struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector2.html", "struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector2" ],
+        [ "PositionedVector3", "struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector3.html", "struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector3" ],
         [ "RefereeData", "struct_lang_ya_1_1_sentry_lib_1_1_referee_data.html", "struct_lang_ya_1_1_sentry_lib_1_1_referee_data" ],
         [ "Resource", "struct_lang_ya_1_1_sentry_lib_1_1_resource.html", "struct_lang_ya_1_1_sentry_lib_1_1_resource" ],
         [ "SentryData", "struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html", "struct_lang_ya_1_1_sentry_lib_1_1_sentry_data" ],

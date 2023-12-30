@@ -150,6 +150,12 @@ namespace LangYa::SentryLib
 	using Vector3F = Vector3<float>;
 	using Vector3D = Vector3<double>;
 
+
+	/// @brief 叉乘运算符。
+	/// @tparam TElement 向量的元素 。
+	/// @param left 左边的向量（函数的第一个参数）。
+	/// @param right 右边的向量（函数的第二个参数）。
+	/// @return 叉乘的结果向量。
 	template <typename TElement>
 	Vector3<TElement> operator^(const Vector3<TElement>& left, const Vector3<TElement>& right)
 	{

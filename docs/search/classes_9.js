@@ -8,5 +8,7 @@ var searchData=
   ['position2_5',['Position2',['../struct_lang_ya_1_1_sentry_lib_1_1_position2.html',1,'LangYa::SentryLib']]],
   ['position2_3c_20float_20_3e_6',['Position2&lt; float &gt;',['../struct_lang_ya_1_1_sentry_lib_1_1_position2.html',1,'LangYa::SentryLib']]],
   ['position3_7',['Position3',['../struct_lang_ya_1_1_sentry_lib_1_1_position3.html',1,'LangYa::SentryLib']]],
-  ['position3_3c_20float_20_3e_8',['Position3&lt; float &gt;',['../struct_lang_ya_1_1_sentry_lib_1_1_position3.html',1,'LangYa::SentryLib']]]
+  ['position3_3c_20float_20_3e_8',['Position3&lt; float &gt;',['../struct_lang_ya_1_1_sentry_lib_1_1_position3.html',1,'LangYa::SentryLib']]],
+  ['positionedvector2_9',['PositionedVector2',['../struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector2.html',1,'LangYa::SentryLib']]],
+  ['positionedvector3_10',['PositionedVector3',['../struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector3.html',1,'LangYa::SentryLib']]]
 ];

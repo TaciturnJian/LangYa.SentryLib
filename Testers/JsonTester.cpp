@@ -1,8 +1,8 @@
 #include <iostream>
 
-#include <LangYa/SentryLib/Math/Position3.hpp>
+#include <LangYa/SentryLib/Position.hpp>
 
-#include <LangYa/SentryLib/Math/Vector.hpp>
+#include <LangYa/SentryLib/Vector.hpp>
 
 int main() {
 	using namespace LangYa::SentryLib;

@@ -4,8 +4,8 @@
 #include <istream>
 #include <unordered_map>
 
-#include <LangYa/SentryLib/Math/Position2.hpp>
-#include <LangYa/SentryLib/Math/Vector.hpp>
+#include <LangYa/SentryLib/Position.hpp>
+#include <LangYa/SentryLib/Vector.hpp>
 
 namespace LangYa::SentryLib
 {

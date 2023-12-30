@@ -2,7 +2,7 @@
 
 #include <LangYa/SentryLib/Common/DeserializableContent.hpp>
 #include <LangYa/SentryLib/Common/SerializableContent.hpp>
-#include <LangYa/SentryLib/Math/Vector.hpp>
+#include <LangYa/SentryLib/Vector.hpp>
 
 namespace LangYa::SentryLib
 {

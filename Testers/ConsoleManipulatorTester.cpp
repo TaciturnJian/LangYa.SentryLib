@@ -7,7 +7,8 @@
 using namespace LangYa::SentryLib;
 using namespace std::chrono_literals;
 
-int main() {
+int main()
+{
 	ConsoleManipulator console{};
 	console.ClearScreen().HideCursor();
 
@@ -17,6 +18,5 @@ int main() {
 		std::cout << "[2]: B-> " << std::setw(3) << i * 317 % 1000 << '\n';
 		console.MoveCursorTo({0,0});
 		std::this_thread::sleep_for(10ms);
-
 	}
 }

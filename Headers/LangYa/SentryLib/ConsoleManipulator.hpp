@@ -1,7 +1,7 @@
 #pragma once
 
-#include <LangYa/SentryLib/Math/Vector.hpp>
-#include <LangYa/SentryLib/Math/Position2.hpp>
+#include <LangYa/SentryLib/Vector.hpp>
+#include <LangYa/SentryLib/Position.hpp>
 
 namespace LangYa::SentryLib {
 	/// @brief 控制台操作器

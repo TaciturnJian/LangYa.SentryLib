@@ -11,6 +11,7 @@ var hierarchy =
     [ "LangYa::SentryLib::CanStreamFormatToJson", "class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json.html", [
       [ "LangYa::SentryLib::Position1< float >", "struct_lang_ya_1_1_sentry_lib_1_1_position1.html", null ],
       [ "LangYa::SentryLib::Vector< float >", "class_lang_ya_1_1_sentry_lib_1_1_vector.html", null ],
+      [ "LangYa::SentryLib::Vector< TElement >", "class_lang_ya_1_1_sentry_lib_1_1_vector.html", null ],
       [ "LangYa::SentryLib::Vector< char >", "class_lang_ya_1_1_sentry_lib_1_1_vector.html", null ],
       [ "LangYa::SentryLib::ArmorPlate", "class_lang_ya_1_1_sentry_lib_1_1_armor_plate.html", null ],
       [ "LangYa::SentryLib::Position1< TElement >", "struct_lang_ya_1_1_sentry_lib_1_1_position1.html", [
@@ -63,6 +64,8 @@ var hierarchy =
     [ "LangYa::SentryLib::PingPongBuffer", "class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html", null ],
     [ "LangYa::SentryLib::ViMap::PixelListSampleOption", "struct_lang_ya_1_1_sentry_lib_1_1_vi_map_1_1_pixel_list_sample_option.html", null ],
     [ "LangYa::SentryLib::ViMap::PointListSampleOption", "struct_lang_ya_1_1_sentry_lib_1_1_vi_map_1_1_point_list_sample_option.html", null ],
+    [ "LangYa::SentryLib::PositionedVector2< TElement >", "struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector2.html", null ],
+    [ "LangYa::SentryLib::PositionedVector3< TElement >", "struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector3.html", null ],
     [ "LangYa::SentryLib::Resource< TContent >", "struct_lang_ya_1_1_sentry_lib_1_1_resource.html", null ],
     [ "LangYa::SentryLib::Resource< LangYa::SentryLib::MemoryView >", "struct_lang_ya_1_1_sentry_lib_1_1_resource.html", null ],
     [ "LangYa::SentryLib::SerializableContent", "class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html", [

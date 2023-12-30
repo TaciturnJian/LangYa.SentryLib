@@ -1,7 +1,7 @@
 #pragma once
 
-#include <LangYa/SentryLib/Math/Vector.hpp>
-#include <LangYa/SentryLib/Math/Position3.hpp>
+#include <LangYa/SentryLib/Vector.hpp>
+#include <LangYa/SentryLib/Position.hpp>
 #include <LangYa/SentryLib/Interface/TeamArmorColor.h>
 
 namespace LangYa::SentryLib
@@ -35,10 +35,10 @@ namespace LangYa::SentryLib
 		std::ostream& FormatToJson(std::ostream& stream) const override
 		{
 			return stream << "{"
-				<< "\"ID\":" << static_cast<int>(ID) << ','
-				<< "\"Color\":" << static_cast<int>(Color) << ','
-				<< "\"Position\":" << Position << ','
-				<< "\"NormalDirection\":" << NormalDirection
+				<< R"("ID":)" << static_cast<int>(ID) << ','
+				<< R"("Color":)" << static_cast<int>(Color) << ','
+				<< R"("Position":)" << Position << ','
+				<< R"("NormalDirection":)" << NormalDirection
 				<< "}";
 		}
 	};

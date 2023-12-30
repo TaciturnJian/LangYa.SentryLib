@@ -1,5 +1,5 @@
 <map id="LangYa::SentryLib::ExchangeCube" name="LangYa::SentryLib::ExchangeCube">
-<area shape="rect" id="Node000001" title="代表兑换框，避免歧义" alt="" coords="1422,35,1558,77"/>
+<area shape="rect" id="Node000001" title="代表兑换框，避免歧义。" alt="" coords="1422,35,1558,77"/>
 <area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="539,5,676,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="691,23,1002,26,1199,32,1398,43,1421,45,1421,50,1397,48,1199,37,1002,31,691,29"/>
 <area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json.html" title="表示此类可以格式化为 json 字符串并输出到流中。" alt="" coords="5,31,174,73"/>

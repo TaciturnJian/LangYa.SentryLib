@@ -97,8 +97,8 @@ $(document).ready(function(){initNavTree('_console_manipulator_8hpp.html',''); i
   <div class="headertitle"><div class="title">ConsoleManipulator.hpp 文件参考</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="">LangYa/SentryLib/Math/Vector.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="">LangYa/SentryLib/Math/Position2.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="">LangYa/SentryLib/Vector.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="">LangYa/SentryLib/Position.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> ConsoleManipulator.hpp 的引用(Include)关系图:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -106,30 +106,28 @@ $(document).ready(function(){initNavTree('_console_manipulator_8hpp.html',''); i
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_console_manipulator_8hpp__incl.png" border="0" usemap="#a_headers_2_lang_ya_2_sentry_lib_2_console_manipulator_8hpp" alt=""/></div>
 <map name="a_headers_2_lang_ya_2_sentry_lib_2_console_manipulator_8hpp" id="a_headers_2_lang_ya_2_sentry_lib_2_console_manipulator_8hpp">
-<area shape="rect" title=" " alt="" coords="268,5,444,48"/>
-<area shape="rect" href="_vector_8hpp.html" title=" " alt="" coords="188,187,346,229"/>
-<area shape="poly" title=" " alt="" coords="348,50,286,174,281,172,344,47"/>
-<area shape="rect" href="_position2_8hpp.html" title=" " alt="" coords="352,96,510,139"/>
-<area shape="poly" title=" " alt="" coords="376,47,406,83,402,86,371,50"/>
-<area shape="rect" title=" " alt="" coords="5,285,102,312"/>
-<area shape="poly" title=" " alt="" coords="218,232,99,281,97,276,216,228"/>
-<area shape="rect" title=" " alt="" coords="114,368,169,395"/>
-<area shape="poly" title=" " alt="" coords="222,232,192,252,166,279,151,316,145,353,139,352,145,314,162,276,188,248,219,228"/>
-<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="177,277,357,320"/>
-<area shape="poly" title=" " alt="" coords="270,230,270,262,264,262,264,230"/>
-<area shape="rect" href="_can_stream_format_to_json_8hpp.html" title=" " alt="" coords="381,277,574,320"/>
-<area shape="poly" title=" " alt="" coords="317,228,415,268,413,273,315,232"/>
-<area shape="poly" title=" " alt="" coords="236,323,175,362,172,357,233,318"/>
-<area shape="rect" title=" " alt="" coords="361,368,429,395"/>
-<area shape="poly" title=" " alt="" coords="301,318,363,357,360,362,298,323"/>
-<area shape="rect" title=" " alt="" coords="195,368,336,395"/>
-<area shape="poly" title=" " alt="" coords="269,321,269,352,263,352,264,321"/>
-<area shape="poly" title=" " alt="" coords="458,323,421,359,417,355,454,319"/>
-<area shape="rect" title=" " alt="" coords="453,368,566,395"/>
-<area shape="poly" title=" " alt="" coords="488,320,501,352,496,354,483,322"/>
-<area shape="rect" href="_position1_8hpp.html" title=" " alt="" coords="384,187,542,229"/>
-<area shape="poly" title=" " alt="" coords="441,138,453,171,448,173,436,140"/>
-<area shape="poly" title=" " alt="" coords="469,229,474,262,469,263,464,230"/>
+<area shape="rect" title=" " alt="" coords="279,5,455,48"/>
+<area shape="rect" href="_vector_8hpp.html" title=" " alt="" coords="162,96,353,123"/>
+<area shape="poly" title=" " alt="" coords="340,51,288,89,285,85,337,46"/>
+<area shape="rect" href="_position_8hpp.html" title=" " alt="" coords="377,96,578,123"/>
+<area shape="poly" title=" " alt="" coords="397,46,450,85,446,89,394,51"/>
+<area shape="rect" title=" " alt="" coords="5,179,102,205"/>
+<area shape="poly" title=" " alt="" coords="227,126,100,175,98,170,225,121"/>
+<area shape="rect" title=" " alt="" coords="114,261,169,288"/>
+<area shape="poly" title=" " alt="" coords="227,126,195,145,166,172,157,190,150,209,145,246,139,245,145,208,152,188,162,169,191,140,225,121"/>
+<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="177,171,357,213"/>
+<area shape="poly" title=" " alt="" coords="262,123,265,155,260,156,256,123"/>
+<area shape="rect" href="_can_stream_format_to_json_8hpp.html" title=" " alt="" coords="381,171,574,213"/>
+<area shape="poly" title=" " alt="" coords="293,121,407,162,405,167,291,126"/>
+<area shape="poly" title=" " alt="" coords="236,216,175,255,172,250,233,212"/>
+<area shape="rect" title=" " alt="" coords="361,261,429,288"/>
+<area shape="poly" title=" " alt="" coords="301,212,363,250,360,255,298,216"/>
+<area shape="rect" title=" " alt="" coords="195,261,336,288"/>
+<area shape="poly" title=" " alt="" coords="269,214,269,246,263,245,264,214"/>
+<area shape="poly" title=" " alt="" coords="458,216,421,252,417,248,454,212"/>
+<area shape="rect" title=" " alt="" coords="453,261,566,288"/>
+<area shape="poly" title=" " alt="" coords="488,213,501,246,496,248,483,215"/>
+<area shape="poly" title=" " alt="" coords="480,123,480,155,475,155,475,123"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -180,7 +178,7 @@ $(document).ready(function(){initNavTree('_console_manipulator_8hpp.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_692516b589a32b3bfce781ca9f6d1534.html">Headers</a></li><li class="navelem"><a class="el" href="dir_b117d0d76b03a6360b87a590e39f53f6.html">LangYa</a></li><li class="navelem"><a class="el" href="dir_0479bb77a485cc0baf99073ab05914e0.html">SentryLib</a></li><li class="navelem"><a class="el" href="_console_manipulator_8hpp.html">ConsoleManipulator.hpp</a></li>
-    <li class="footer">生成于 2023年 十二月 26日 星期二 17:08:19 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 30日 星期六 15:08:02 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
