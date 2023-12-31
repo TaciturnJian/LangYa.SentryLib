@@ -1,0 +1,38 @@
+<map id="Headers/LangYa/SentryLib/Network/IPv4TCPServer.hpp" name="Headers/LangYa/SentryLib/Network/IPv4TCPServer.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="116,5,302,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,104,66,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,51,75,99,73,94,167,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="90,104,147,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="190,50,144,95,140,91,186,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="171,104,247,131"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="212,48,212,88,206,88,206,48"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="214,285,356,312"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="230,47,248,69,262,95,276,142,284,190,288,270,283,270,279,190,271,143,257,97,243,72,226,50"/>
+<area shape="rect" id="Node000006" href="$_i_pv4_t_c_p_socket_8hpp.html" title=" " alt="" coords="436,96,611,139"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="283,46,436,89,434,94,282,51"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="777,195,846,221"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="609,137,686,158,767,184,772,186,770,191,765,189,685,163,607,142"/>
+<area shape="rect" id="Node000008" href="$_i_o_connection_8hpp.html" title=" " alt="" coords="523,195,754,221"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="552,137,612,183,609,187,548,141"/>
+<area shape="rect" id="Node000014" href="$_i_pv4_endpoint_8hpp.html" title=" " alt="" coords="323,187,498,229"/>
+<area shape="poly" id="edge14_Node000006_Node000014" title=" " alt="" coords="499,141,450,179,447,175,496,137"/>
+<area shape="rect" id="Node000009" href="$_memory_view_8hpp.html" title=" " alt="" coords="632,376,812,419"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="638,222,634,267,636,293,643,319,659,344,680,364,676,368,655,347,638,321,631,294,628,267,633,222"/>
+<area shape="rect" id="Node000013" href="$_memory_i_o_8hpp.html" title=" " alt="" coords="653,277,834,320"/>
+<area shape="poly" id="edge12_Node000008_Node000013" title=" " alt="" coords="655,220,709,265,706,269,652,224"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="529,475,598,501"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="686,422,601,469,598,464,684,417"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="633,475,689,501"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="710,421,680,464,676,460,706,418"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="713,475,854,501"/>
+<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="739,418,768,460,764,464,734,421"/>
+<area shape="poly" id="edge13_Node000013_Node000009" title=" " alt="" coords="742,321,733,361,727,360,736,320"/>
+<area shape="poly" id="edge15_Node000014_Node000005" title=" " alt="" coords="383,232,316,279,313,274,380,228"/>
+<area shape="rect" id="Node000015" href="$_i_pv4_address_8hpp.html" title=" " alt="" coords="380,277,555,320"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="426,228,448,263,444,266,421,231"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="176,384,346,411"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="424,323,303,380,300,375,422,318"/>
+<area shape="rect" id="Node000017" href="$_can_stream_format_to_console_friendly_string_8hpp.html" title=" " alt="" coords="370,368,608,427"/>
+<area shape="poly" id="edge18_Node000015_Node000017" title=" " alt="" coords="475,320,482,352,477,353,469,321"/>
+<area shape="poly" id="edge19_Node000017_Node000010" title=" " alt="" coords="515,425,545,461,541,464,511,429"/>
+</map>

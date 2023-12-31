@@ -1,5 +1,7 @@
 #pragma once
 
+#include <atomic>
+#include <thread>
 #include <functional>
 
 #include <boost/asio/ip/tcp.hpp>

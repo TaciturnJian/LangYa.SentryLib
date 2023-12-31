@@ -1,26 +1,5 @@
-<map id="Sources/ConsoleManipulator.cpp" name="Sources/ConsoleManipulator.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="261,5,473,32"/>
-<area shape="rect" id="Node000002" href="$_console_manipulator_8hpp.html" title=" " alt="" coords="279,80,455,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="370,33,370,65,364,65,364,33"/>
-<area shape="rect" id="Node000003" href="$_vector_8hpp.html" title=" " alt="" coords="162,171,353,197"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="340,125,288,164,285,159,337,121"/>
-<area shape="rect" id="Node000011" href="$_position_8hpp.html" title=" " alt="" coords="377,171,578,197"/>
-<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="397,121,450,159,446,164,394,125"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="5,253,102,280"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="227,200,100,250,98,245,225,195"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="114,336,169,363"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="227,200,195,219,166,247,157,264,150,284,145,321,139,320,145,282,152,262,162,244,191,215,225,196"/>
-<area shape="rect" id="Node000006" href="$_memory_view_8hpp.html" title=" " alt="" coords="177,245,357,288"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="262,198,265,230,260,230,256,198"/>
-<area shape="rect" id="Node000009" href="$_can_stream_format_to_json_8hpp.html" title=" " alt="" coords="381,245,574,288"/>
-<area shape="poly" id="edge9_Node000003_Node000009" title=" " alt="" coords="293,195,407,237,405,242,291,200"/>
-<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="236,291,175,330,172,325,233,286"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="361,336,429,363"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="301,286,363,325,360,330,298,291"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="195,336,336,363"/>
-<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="269,289,269,320,263,320,264,289"/>
-<area shape="poly" id="edge10_Node000009_Node000007" title=" " alt="" coords="458,291,421,327,417,323,454,287"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="453,336,566,363"/>
-<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="488,288,501,320,496,322,483,290"/>
-<area shape="poly" id="edge13_Node000011_Node000009" title=" " alt="" coords="480,198,480,230,475,230,475,198"/>
+<map id="Obsoleted/ConsoleManipulator.cpp" name="Obsoleted/ConsoleManipulator.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,229,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="29,80,205,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,33,120,65,114,65,114,33"/>
 </map>

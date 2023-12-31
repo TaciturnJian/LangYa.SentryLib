@@ -18,8 +18,9 @@ var searchData=
   ['setenemy_15',['SetEnemy',['../_tiny_sentry_mind_8cpp.html#a211226346e2b53888805a8ff6fa7cde1',1,'TinySentryMind.cpp']]],
   ['setforegroundcolor_16',['SetForegroundColor',['../class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html#aa944aabea782511d170f6da81d292e5a',1,'LangYa::SentryLib::ConsoleManipulator']]],
   ['setvalue_17',['SetValue',['../struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#aad786c08d4874c4b0fd76dadabb23f05',1,'LangYa::SentryLib::MemoryView']]],
-  ['showcursor_18',['ShowCursor',['../class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html#a5ba40456c5440bb9bc9cf2aba3e6b636',1,'LangYa::SentryLib::ConsoleManipulator']]],
-  ['singleaction_19',['singleaction',['../class_single_action.html#adce709d8166d27c8b445a661a0cc48f0',1,'SingleAction::SingleAction()=default'],['../class_single_action.html#ae97251d6431a75e99d5aaaf0c5d9dd13',1,'SingleAction::SingleAction(ActionInfo info)'],['../class_single_action.html#adce709d8166d27c8b445a661a0cc48f0',1,'SingleAction::SingleAction()=default'],['../class_single_action.html#ae97251d6431a75e99d5aaaf0c5d9dd13',1,'SingleAction::SingleAction(ActionInfo info)']]],
-  ['start_20',['Start',['../class_lang_ya_1_1_sentry_lib_1_1_tiny_t_c_p_server.html#a20803951f94b2518aeba2a6302a16c02',1,'LangYa::SentryLib::TinyTCPServer']]],
-  ['stop_21',['Stop',['../class_lang_ya_1_1_sentry_lib_1_1_match_status_manager.html#aa7a80c2138418316da41f10076caac44',1,'LangYa::SentryLib::MatchStatusManager']]]
+  ['show_18',['Show',['../class_lang_ya_1_1_sentry_lib_1_1_console_cursor.html#a5319ffa4976442bb992aa7c05769e2cb',1,'LangYa::SentryLib::ConsoleCursor']]],
+  ['showcursor_19',['ShowCursor',['../class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html#a5ba40456c5440bb9bc9cf2aba3e6b636',1,'LangYa::SentryLib::ConsoleManipulator']]],
+  ['singleaction_20',['singleaction',['../class_single_action.html#adce709d8166d27c8b445a661a0cc48f0',1,'SingleAction::SingleAction()=default'],['../class_single_action.html#ae97251d6431a75e99d5aaaf0c5d9dd13',1,'SingleAction::SingleAction(ActionInfo info)'],['../class_single_action.html#adce709d8166d27c8b445a661a0cc48f0',1,'SingleAction::SingleAction()=default'],['../class_single_action.html#ae97251d6431a75e99d5aaaf0c5d9dd13',1,'SingleAction::SingleAction(ActionInfo info)']]],
+  ['start_21',['Start',['../class_lang_ya_1_1_sentry_lib_1_1_tiny_t_c_p_server.html#a20803951f94b2518aeba2a6302a16c02',1,'LangYa::SentryLib::TinyTCPServer']]],
+  ['stop_22',['Stop',['../class_lang_ya_1_1_sentry_lib_1_1_match_status_manager.html#aa7a80c2138418316da41f10076caac44',1,'LangYa::SentryLib::MatchStatusManager']]]
 ];

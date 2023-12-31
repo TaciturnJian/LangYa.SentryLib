@@ -1,22 +1,22 @@
 <map id="LangYa::SentryLib::ExchangeCube" name="LangYa::SentryLib::ExchangeCube">
-<area shape="rect" id="Node000001" title="代表兑换框，避免歧义。" alt="" coords="1422,35,1558,77"/>
-<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="539,5,676,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="691,23,1002,26,1199,32,1398,43,1421,45,1421,50,1397,48,1199,37,1002,31,691,29"/>
-<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json.html" title="表示此类可以格式化为 json 字符串并输出到流中。" alt="" coords="5,31,174,73"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="179,24,223,16,302,8,364,6,507,13,539,16,539,21,506,19,364,11,302,13,223,21,180,29"/>
-<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="223,31,430,73"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="189,49,223,49,223,55,189,55"/>
-<area shape="rect" id="Node000007" href="$struct_lang_ya_1_1_sentry_lib_1_1_position1.html" title="使用一个元素 X 代表坐标。 包装了一个元素，为了与其他 Position 保持一致。" alt="" coords="250,97,404,140"/>
-<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="183,75,250,94,248,100,181,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="446,39,539,30,539,35,446,44"/>
-<area shape="rect" id="Node000005" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title=" " alt="" coords="1141,64,1278,107"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="1293,74,1421,60,1422,66,1294,79"/>
-<area shape="rect" id="Node000006" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title=" " alt="" coords="709,64,863,107"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="879,83,1141,83,1141,88,879,88"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="419,109,708,88,708,94,419,115"/>
-<area shape="rect" id="Node000009" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title=" " alt="" coords="530,123,685,165"/>
-<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="420,124,530,134,530,140,419,130"/>
-<area shape="rect" id="Node000008" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title=" " alt="" coords="887,123,1041,165"/>
-<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="1056,130,1117,117,1156,105,1157,110,1118,123,1057,135"/>
-<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="700,141,887,141,887,147,700,147"/>
+<area shape="rect" id="Node000001" title="代表兑换框，避免歧义。" alt="" coords="1456,35,1592,77"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="573,5,710,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="725,23,1036,26,1233,32,1432,43,1455,45,1455,50,1431,48,1233,37,1036,31,725,29"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json_string.html" title="表示此类可以格式化为 json 字符串并输出到流中。" alt="" coords="5,31,208,73"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="206,24,257,16,336,9,398,7,540,13,573,16,573,21,540,19,398,12,337,14,257,21,207,30"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="257,31,464,73"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="223,49,257,49,257,55,223,55"/>
+<area shape="rect" id="Node000007" href="$struct_lang_ya_1_1_sentry_lib_1_1_position1.html" title="使用一个元素 X 代表坐标。" alt="" coords="284,97,438,140"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="206,75,284,96,282,101,204,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="480,39,573,30,573,35,480,44"/>
+<area shape="rect" id="Node000005" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title=" " alt="" coords="1175,64,1312,107"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="1327,74,1455,60,1456,66,1328,79"/>
+<area shape="rect" id="Node000006" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title="使用两个元素 X Y 代表二维坐标。" alt="" coords="743,64,897,107"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="913,83,1175,83,1175,88,913,88"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="453,109,742,88,742,94,453,115"/>
+<area shape="rect" id="Node000009" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title="使用两个元素 X Y 代表二维坐标。" alt="" coords="564,123,719,165"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="454,124,564,134,564,140,453,130"/>
+<area shape="rect" id="Node000008" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title="使用两个元素 X Y 代表三维坐标。" alt="" coords="921,123,1075,165"/>
+<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="1090,130,1151,117,1190,105,1191,110,1152,123,1091,135"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="734,141,921,141,921,147,734,147"/>
 </map>

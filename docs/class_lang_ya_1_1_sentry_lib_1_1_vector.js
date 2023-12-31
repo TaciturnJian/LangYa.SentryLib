@@ -4,7 +4,7 @@ var class_lang_ya_1_1_sentry_lib_1_1_vector =
     [ "Vector", "class_lang_ya_1_1_sentry_lib_1_1_vector.html#a2f71b85d724344b2f938b91b5eec23ef", null ],
     [ "Vector", "class_lang_ya_1_1_sentry_lib_1_1_vector.html#aeb83b044870367d98a7d977f1e70b78d", null ],
     [ "Vector", "class_lang_ya_1_1_sentry_lib_1_1_vector.html#a515e6b03b068a02f5f7a673b1d54a9e7", null ],
-    [ "FormatToJson", "class_lang_ya_1_1_sentry_lib_1_1_vector.html#a971acf9cdf3d9232a15d2885eb2de52c", null ],
+    [ "FormatToJsonString", "class_lang_ya_1_1_sentry_lib_1_1_vector.html#a267be02b6821b5c75f1a5f14668afeb5", null ],
     [ "operator+=", "class_lang_ya_1_1_sentry_lib_1_1_vector.html#a0c1ae8df29cd5a5ffd7e11d738cc8496", null ],
     [ "operator-=", "class_lang_ya_1_1_sentry_lib_1_1_vector.html#a95fd613c134f06a3734ebfa69df9002c", null ],
     [ "operator=", "class_lang_ya_1_1_sentry_lib_1_1_vector.html#a30ada906b0013df4ad0810f0cb9846bd", null ],

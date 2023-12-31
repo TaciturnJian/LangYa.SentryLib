@@ -1,5 +1,6 @@
 var struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector3 =
 [
+    [ "FormatToJsonString", "struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector3.html#a83f063aa91b6f83ababd87b2a5c78379", null ],
     [ "operator+=", "struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector3.html#aa0841de822070d5d868f5f9c48d08c9b", null ],
     [ "operator+=", "struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector3.html#aac1a683c2e7f641be3eb4b9574009a8b", null ],
     [ "operator=", "struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector3.html#a27b4187b9058fb03dab03ad02621c975", null ],

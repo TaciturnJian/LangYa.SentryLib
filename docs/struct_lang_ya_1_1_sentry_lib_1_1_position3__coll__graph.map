@@ -1,9 +1,9 @@
 <map id="LangYa::SentryLib::Position3&lt; TElement &gt;" name="LangYa::SentryLib::Position3&lt; TElement &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="12,277,167,320"/>
-<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title=" " alt="" coords="12,187,167,229"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,245,92,277,87,277,87,245"/>
-<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_sentry_lib_1_1_position1.html" title="使用一个元素 X 代表坐标。 包装了一个元素，为了与其他 Position 保持一致。" alt="" coords="12,96,167,139"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,154,92,186,87,186,87,154"/>
-<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json.html" title="表示此类可以格式化为 json 字符串并输出到流中。" alt="" coords="5,5,174,48"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="92,64,92,96,87,96,87,64"/>
+<area shape="rect" id="Node000001" title="使用两个元素 X Y 代表三维坐标。" alt="" coords="29,277,184,320"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title="使用两个元素 X Y 代表二维坐标。" alt="" coords="29,187,184,229"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,245,109,277,104,277,104,245"/>
+<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_sentry_lib_1_1_position1.html" title="使用一个元素 X 代表坐标。" alt="" coords="29,96,184,139"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="109,154,109,186,104,186,104,154"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json_string.html" title="表示此类可以格式化为 json 字符串并输出到流中。" alt="" coords="5,5,208,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="109,64,109,96,104,96,104,64"/>
 </map>

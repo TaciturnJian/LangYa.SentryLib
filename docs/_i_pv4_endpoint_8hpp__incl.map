@@ -1,0 +1,13 @@
+<map id="Headers/LangYa/SentryLib/Network/IPv4Endpoint.hpp" name="Headers/LangYa/SentryLib/Network/IPv4Endpoint.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="79,5,255,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,104,148,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,50,102,95,98,91,144,46"/>
+<area shape="rect" id="Node000003" href="$_i_pv4_address_8hpp.html" title=" " alt="" coords="172,96,347,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="190,46,229,84,225,87,187,50"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="59,203,230,229"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="237,141,173,195,169,191,233,137"/>
+<area shape="rect" id="Node000005" href="$_can_stream_format_to_console_friendly_string_8hpp.html" title=" " alt="" coords="253,187,492,245"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="285,137,329,175,326,179,281,141"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="338,293,407,320"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="375,246,375,277,370,277,370,246"/>
+</map>

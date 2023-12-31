@@ -1,0 +1,5 @@
+<map id="LangYa::SentryLib::IPv4Endpoint::FormatToConsoleFriendlyString" name="LangYa::SentryLib::IPv4Endpoint::FormatToConsoleFriendlyString">
+<area shape="rect" id="Node000001" title="格式化并输出到流中。" alt="" coords="5,5,212,64"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html#a91be8b50de8b588eaaf841ce0c19fb07" title="转换为字符串格式的 IPv4 地址。" alt="" coords="260,5,463,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,32,244,32,244,37,212,37"/>
+</map>

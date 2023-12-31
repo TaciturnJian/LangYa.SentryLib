@@ -1,5 +1,5 @@
 <map id="LangYa::SentryLib::Position1&lt; TElement &gt;" name="LangYa::SentryLib::Position1&lt; TElement &gt;">
-<area shape="rect" id="Node000001" title="使用一个元素 X 代表坐标。 包装了一个元素，为了与其他 Position 保持一致。" alt="" coords="12,96,167,139"/>
-<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json.html" title="表示此类可以格式化为 json 字符串并输出到流中。" alt="" coords="5,5,174,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,64,92,96,87,96,87,64"/>
+<area shape="rect" id="Node000001" title="使用一个元素 X 代表坐标。" alt="" coords="29,96,184,139"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json_string.html" title="表示此类可以格式化为 json 字符串并输出到流中。" alt="" coords="5,5,208,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,64,109,96,104,96,104,64"/>
 </map>

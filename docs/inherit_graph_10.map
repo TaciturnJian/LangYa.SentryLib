@@ -1,3 +1,16 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" href="$class_lang_ya_1_1_sentry_lib_1_1_exchange_cube.html" title="代表兑换框，避免歧义。" alt="" coords="5,5,142,48"/>
+<area shape="rect" id="Node000000" href="$class_lang_ya_1_1_sentry_lib_1_1_deserializable_content.html" title="代表一种可以反序列化的内容。 此接口提供了反序列时所需要的两个函数： 获取反序列化资源的最小大小，以及从缓冲区中反序列化资源。" alt="" coords="5,72,153,115"/>
+<area shape="rect" id="Node000001" href="$struct_lang_ya_1_1_sentry_lib_1_1_full_control_data.html" title=" " alt="" coords="201,139,337,181"/>
+<area shape="poly" id="edge18_Node000000_Node000001" title=" " alt="" coords="157,118,207,136,205,141,155,123"/>
+<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_sentry_lib_1_1_full_sensor_data.html" title=" " alt="" coords="201,205,337,248"/>
+<area shape="poly" id="edge19_Node000000_Node000003" title=" " alt="" coords="150,121,154,125,170,142,179,159,188,175,202,191,218,203,215,207,199,195,183,178,174,161,166,145,151,129,147,126"/>
+<area shape="rect" id="Node000004" href="$struct_lang_ya_1_1_sentry_lib_1_1_referee_data.html" title=" " alt="" coords="201,5,337,48"/>
+<area shape="poly" id="edge20_Node000000_Node000004" title=" " alt="" coords="155,64,205,46,207,51,157,69"/>
+<area shape="rect" id="Node000005" href="$struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html" title=" " alt="" coords="201,72,337,115"/>
+<area shape="poly" id="edge21_Node000000_Node000005" title=" " alt="" coords="168,91,201,91,201,96,168,96"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html" title="代表一个可被序列化的东西。 可被序列化即信息可以无损地转换为二进制数据。 一般将内容序列化后，将其写入文件或者网络传输，可以减轻读写传输等IO操作的压力。" alt="" coords="11,139,147,181"/>
+<area shape="poly" id="edge22_Node000002_Node000001" title=" " alt="" coords="163,157,200,157,200,163,163,163"/>
+<area shape="poly" id="edge23_Node000002_Node000003" title=" " alt="" coords="157,184,207,202,205,207,155,189"/>
+<area shape="poly" id="edge24_Node000002_Node000004" title=" " alt="" coords="147,128,151,125,166,108,174,92,183,76,199,58,215,46,218,51,202,62,188,79,179,95,170,111,154,129,150,132"/>
+<area shape="poly" id="edge25_Node000002_Node000005" title=" " alt="" coords="155,131,205,113,207,118,157,136"/>
 </map>

@@ -1,0 +1,7 @@
+<map id="LangYa::SentryLib::IPv4Endpoint::FormatToJsonString" name="LangYa::SentryLib::IPv4Endpoint::FormatToJsonString">
+<area shape="rect" id="Node000001" title="格式化为 json 字符串并输出到流中。" alt="" coords="5,5,192,64"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html#a00e1079b28a56c91ffc242554c8a9e3b" title="利用流转换为 json 格式的字符串。" alt="" coords="240,13,457,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,32,224,32,224,37,192,37"/>
+<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html#a91be8b50de8b588eaaf841ce0c19fb07" title="转换为字符串格式的 IPv4 地址。" alt="" coords="505,5,708,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="457,32,490,32,490,37,457,37"/>
+</map>

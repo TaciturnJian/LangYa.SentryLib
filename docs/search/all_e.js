@@ -5,7 +5,9 @@ var searchData=
   ['navigator_2',['Navigator',['../class_lang_ya_1_1_sentry_lib_1_1_navigator.html',1,'LangYa::SentryLib']]],
   ['navigator_2ecpp_3',['Navigator.cpp',['../_navigator_8cpp.html',1,'']]],
   ['navigator_2ehpp_4',['Navigator.hpp',['../_navigator_8hpp.html',1,'']]],
-  ['neutral_5',['Neutral',['../namespace_lang_ya_1_1_sentry_lib.html#af7259725b9fc06bee926bd34a470aa18ae9bb5320b3890b6747c91b5a71ae5a01',1,'LangYa::SentryLib']]],
-  ['normaldirection_6',['normaldirection',['../class_lang_ya_1_1_sentry_lib_1_1_armor_plate.html#a391576e127fcffec0eb05d69f094b6eb',1,'LangYa::SentryLib::ArmorPlate::NormalDirection'],['../class_lang_ya_1_1_sentry_lib_1_1_exchange_cube.html#a3c7ed88fec6ce76d44abdfb7fd228e99',1,'LangYa::SentryLib::ExchangeCube::NormalDirection']]],
-  ['numbers_7',['Numbers',['../struct_lang_ya_1_1_sentry_lib_1_1_serial_numbers.html#affcd0481bac063323588579b389b52bc',1,'LangYa::SentryLib::SerialNumbers']]]
+  ['network_2ehpp_5',['Network.hpp',['../_network_8hpp.html',1,'']]],
+  ['neutral_6',['Neutral',['../namespace_lang_ya_1_1_sentry_lib.html#af7259725b9fc06bee926bd34a470aa18ae9bb5320b3890b6747c91b5a71ae5a01',1,'LangYa::SentryLib']]],
+  ['normaldirection_7',['NormalDirection',['../class_lang_ya_1_1_sentry_lib_1_1_exchange_cube.html#a3c7ed88fec6ce76d44abdfb7fd228e99',1,'LangYa::SentryLib::ExchangeCube']]],
+  ['numbers_8',['numbers',['../struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html#a285b68940dddd17f4663fb79b209d711',1,'LangYa::SentryLib::IPv4Address::Numbers'],['../struct_lang_ya_1_1_sentry_lib_1_1_serial_numbers.html#affcd0481bac063323588579b389b52bc',1,'LangYa::SentryLib::SerialNumbers::Numbers']]],
+  ['numbertype_9',['NumberType',['../struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html#adb1bf8a21a32cd9b0b2775a98f1eb340',1,'LangYa::SentryLib::IPv4Address']]]
 ];

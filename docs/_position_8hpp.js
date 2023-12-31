@@ -15,6 +15,7 @@ var _position_8hpp =
     [ "Position2I", "_position_8hpp.html#a5c9530ea3825efb9db43f5b34731f1cd", null ],
     [ "Position2S", "_position_8hpp.html#a4bb5bfdbcffcb5290819f7e703358cdd", null ],
     [ "Position2Ui", "_position_8hpp.html#a49af55a812aa195b8ab41afd218014ab", null ],
+    [ "Position2Us", "_position_8hpp.html#a7f49bd60bfcd13f1591f3ba9ec0b607c", null ],
     [ "Position3D", "_position_8hpp.html#a4c62e0205269c5a069b8d1449753358a", null ],
     [ "Position3F", "_position_8hpp.html#ad3d83d6076fb9f6a953512df2382cab6", null ],
     [ "Position3I", "_position_8hpp.html#a77bc72648368bdaa93efaac2570d0cbe", null ]

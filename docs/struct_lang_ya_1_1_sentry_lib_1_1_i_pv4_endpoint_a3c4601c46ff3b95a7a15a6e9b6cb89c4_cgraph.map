@@ -1,0 +1,5 @@
+<map id="LangYa::SentryLib::IPv4Endpoint::Parse" name="LangYa::SentryLib::IPv4Endpoint::Parse">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,144,48"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html#aaa534d4a6510a741ec2e3bc5c4b5e9c2" title="从输入流中读取连续四个 unsigned char 作为 IPv4 地址。" alt="" coords="192,5,328,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,24,176,24,176,29,144,29"/>
+</map>

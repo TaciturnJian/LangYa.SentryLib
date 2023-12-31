@@ -1,11 +1,11 @@
 <map id="LangYa::SentryLib::Vector&lt; TElement, Dimension &gt;" name="LangYa::SentryLib::Vector&lt; TElement, Dimension &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="223,72,430,115"/>
-<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="562,5,699,48"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="441,66,561,39,563,44,442,71"/>
-<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="561,72,700,115"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="446,91,561,91,561,96,446,96"/>
-<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="562,139,699,181"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="442,116,563,143,561,148,441,121"/>
-<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json.html" title="表示此类可以格式化为 json 字符串并输出到流中。" alt="" coords="5,72,174,115"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,91,223,91,223,96,189,96"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="257,72,464,115"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="596,5,733,48"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="475,66,595,39,597,44,476,71"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="595,72,734,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="480,91,595,91,595,96,480,96"/>
+<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="596,139,733,181"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="476,116,597,143,595,148,475,121"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json_string.html" title="表示此类可以格式化为 json 字符串并输出到流中。" alt="" coords="5,72,208,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,91,257,91,257,96,223,96"/>
 </map>

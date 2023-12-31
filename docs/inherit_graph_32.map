@@ -1,3 +1,5 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" href="$class_lang_ya_1_1_sentry_lib_1_1_tiny_t_c_p_server.html" title="一个简单的 TCP 服务器。" alt="" coords="5,5,142,48"/>
+<area shape="rect" id="Node000000" href="$class_lang_ya_1_1_sentry_lib_1_1_string_format_by_stream.html" title=" " alt="" coords="5,5,160,48"/>
+<area shape="rect" id="Node000001" href="$struct_lang_ya_1_1_sentry_lib_1_1_serial_port_info.html" title="构建串口连接的必要内容。 包含了构建串口的必要信息，许多复杂设置都略去了。 请配合下面的类使用。" alt="" coords="208,5,344,48"/>
+<area shape="poly" id="edge35_Node000000_Node000001" title=" " alt="" coords="175,24,207,24,207,29,175,29"/>
 </map>

@@ -1,25 +1,7 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json.html" title="表示此类可以格式化为 json 字符串并输出到流中。" alt="" coords="5,205,174,248"/>
-<area shape="rect" id="Node000001" href="$struct_lang_ya_1_1_sentry_lib_1_1_position1.html" title=" " alt="" coords="257,5,394,48"/>
-<area shape="poly" id="edge3_Node000000_Node000001" title=" " alt="" coords="108,190,153,123,184,88,220,58,256,40,258,45,223,62,188,92,158,126,112,193"/>
-<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="257,72,394,115"/>
-<area shape="poly" id="edge4_Node000000_Node000002" title=" " alt="" coords="124,193,168,157,220,124,256,109,258,114,223,129,171,162,127,197"/>
-<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="256,139,395,181"/>
-<area shape="poly" id="edge5_Node000000_Node000003" title=" " alt="" coords="181,198,255,177,256,182,183,203"/>
-<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="257,205,394,248"/>
-<area shape="poly" id="edge6_Node000000_Node000004" title=" " alt="" coords="189,224,257,224,257,229,189,229"/>
-<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_armor_plate.html" title="ArmorPlate 装甲板信息，储存装甲板的位置、法向量、颜色、ID。" alt="" coords="257,272,394,315"/>
-<area shape="poly" id="edge7_Node000000_Node000005" title=" " alt="" coords="182,250,257,271,256,277,181,255"/>
-<area shape="rect" id="Node000006" href="$struct_lang_ya_1_1_sentry_lib_1_1_position1.html" title="使用一个元素 X 代表坐标。 包装了一个元素，为了与其他 Position 保持一致。" alt="" coords="248,339,403,381"/>
-<area shape="poly" id="edge8_Node000000_Node000006" title=" " alt="" coords="127,256,171,292,223,324,249,336,247,341,220,329,168,296,124,261"/>
-<area shape="rect" id="Node000011" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="222,405,429,448"/>
-<area shape="poly" id="edge13_Node000000_Node000011" title=" " alt="" coords="112,260,158,327,188,361,223,391,243,403,241,407,220,396,184,365,153,330,108,263"/>
-<area shape="rect" id="Node000007" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title=" " alt="" coords="486,305,622,348"/>
-<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="417,344,485,334,486,339,418,349"/>
-<area shape="rect" id="Node000008" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title=" " alt="" coords="477,372,631,415"/>
-<area shape="poly" id="edge10_Node000006_Node000008" title=" " alt="" coords="418,371,477,379,476,385,417,376"/>
-<area shape="rect" id="Node000009" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title=" " alt="" coords="688,339,825,381"/>
-<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="646,376,687,369,688,374,647,381"/>
-<area shape="rect" id="Node000010" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title=" " alt="" coords="679,405,834,448"/>
-<area shape="poly" id="edge12_Node000008_Node000010" title=" " alt="" coords="647,406,680,411,679,417,646,411"/>
+<area shape="rect" id="Node000000" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_console_friendly_string.html" title="表示可以转换为短且信息量大的字符串并输出到流中的对象。" alt="" coords="5,31,240,89"/>
+<area shape="rect" id="Node000001" href="$struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html" title="代表 IPv4 地址。" alt="" coords="288,5,424,48"/>
+<area shape="poly" id="edge3_Node000000_Node000001" title=" " alt="" coords="255,38,287,34,288,39,256,44"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_endpoint.html" title="代表 IPv4 协议下的目的点。" alt="" coords="288,72,424,115"/>
+<area shape="poly" id="edge4_Node000000_Node000002" title=" " alt="" coords="256,76,288,81,287,86,255,82"/>
 </map>

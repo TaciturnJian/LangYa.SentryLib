@@ -1,10 +1,11 @@
 <map id="LangYa::SentryLib::PositionedVector3&lt; TElement &gt;" name="LangYa::SentryLib::PositionedVector3&lt; TElement &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="803,5,1009,48"/>
-<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="561,5,700,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="716,24,802,24,802,29,716,29"/>
-<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json.html" title="表示此类可以格式化为 json 字符串并输出到流中。" alt="" coords="5,11,174,53"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="189,26,198,25,367,19,537,19,561,20,561,25,537,24,368,24,198,31,189,31"/>
-<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="223,40,430,83"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="189,42,223,46,222,51,189,47"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="445,45,537,35,561,32,561,37,538,40,446,51"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="837,5,1043,48"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json_string.html" title="表示此类可以格式化为 json 字符串并输出到流中。" alt="" coords="5,27,208,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,30,231,29,379,20,494,17,758,17,813,17,836,18,836,23,813,23,758,23,494,23,379,25,232,35,224,35"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="595,35,734,77"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="223,47,595,52,595,58,223,52"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="257,85,464,128"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="217,71,266,82,264,87,216,76"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="749,44,836,35,837,40,749,50"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="479,94,571,80,594,75,595,80,572,85,480,99"/>
 </map>

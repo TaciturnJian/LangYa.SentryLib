@@ -109,17 +109,21 @@ $(document).ready(function(){initNavTree('class_lang_ya_1_1_sentry_lib_1_1_memor
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_lang_ya_1_1_sentry_lib_1_1_memory_i_o__inherit__graph.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_memory_i_o_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_lang_ya_1_1_sentry_lib_1_1_memory_i_o_inherit__map" id="a_lang_ya_1_1_sentry_lib_1_1_memory_i_o_inherit__map">
-<area shape="rect" title="代表一个基本的读写类，提供基本的 IO 功能。" alt="" coords="5,105,142,148"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_connection.html" title="代表一个类似 IO 的连接，只提供基本的读写和开启/关闭连接的功能。" alt="" coords="190,105,326,148"/>
-<area shape="poly" title=" " alt="" coords="157,124,189,124,189,129,157,129"/>
+<area shape="rect" title="代表一个基本的读写类，提供基本的 IO 功能。" alt="" coords="5,205,142,248"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_connection.html" title="代表一个类似 IO 的连接，只提供基本的读写和开启/关闭连接的功能。" alt="" coords="190,139,326,181"/>
+<area shape="poly" title=" " alt="" coords="147,197,196,179,198,184,149,202"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_i_o_connection.html" title=" " alt="" coords="190,239,326,281"/>
+<area shape="poly" title=" " alt="" coords="157,239,190,245,189,250,156,244"/>
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html" title="代表一个使用狼牙通信方式的连接，用来装饰一个连接。 真正的数据发送过程在下面的函数中" alt="" coords="374,5,510,48"/>
-<area shape="poly" title=" " alt="" coords="307,95,373,58,395,46,397,51,375,62,310,100"/>
+<area shape="poly" title=" " alt="" coords="290,126,328,92,373,58,392,46,395,51,375,62,331,96,293,130"/>
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_memory_access.html" title="代表对与内存的访问，本质是对于" alt="" coords="374,72,510,115"/>
-<area shape="poly" title=" " alt="" coords="341,109,373,103,374,108,342,114"/>
+<area shape="poly" title=" " alt="" coords="332,131,380,113,382,118,334,136"/>
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_serial_port.html" title="代表系统中的一个串口，本质是" alt="" coords="374,139,510,181"/>
-<area shape="poly" title=" " alt="" coords="342,139,374,145,373,150,341,144"/>
+<area shape="poly" title=" " alt="" coords="341,157,373,157,373,163,341,163"/>
 <area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_t_c_p_connection.html" title=" " alt="" coords="374,205,510,248"/>
-<area shape="poly" title=" " alt="" coords="310,154,375,191,397,202,395,207,373,196,307,158"/>
+<area shape="poly" title=" " alt="" coords="334,184,382,202,380,207,332,189"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_socket.html" title=" " alt="" coords="374,272,510,315"/>
+<area shape="poly" title=" " alt="" coords="342,272,374,278,373,284,341,278"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
 <table class="memberdecls">
@@ -203,7 +207,7 @@ Public 成员函数</h2></td></tr>
 <dl class="section warning"><dt>警告</dt><dd>此函数的实现一般不会检查视图是否有效，所以调用者必须自己保证视图有效。 </dd></dl>
 <dl class="section return"><dt>返回</dt><dd>读取并存放了多少个字节。 </dd></dl>
 
-<p>在 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_memory_access.html#a70c4d8dd8097b25a0900b1799c9c65e2">LangYa::SentryLib::MemoryAccess</a>, <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_serial_port.html#a04f1221f610007de35947a05a0f67b49">LangYa::SentryLib::SerialPort</a>, <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_t_c_p_connection.html#ac87097f30b20d9e607c5bb1a3c42d95c">LangYa::SentryLib::TCPConnection</a> , 以及 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html#a8b14d31cedc8ecd516db667a1042f940">LangYa::SentryLib::LangYaConnection</a> 内被实现.</p>
+<p>在 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_memory_access.html#a70c4d8dd8097b25a0900b1799c9c65e2">LangYa::SentryLib::MemoryAccess</a>, <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_serial_port.html#a04f1221f610007de35947a05a0f67b49">LangYa::SentryLib::SerialPort</a>, <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_t_c_p_connection.html#ac87097f30b20d9e607c5bb1a3c42d95c">LangYa::SentryLib::TCPConnection</a>, <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html#a8b14d31cedc8ecd516db667a1042f940">LangYa::SentryLib::LangYaConnection</a> , 以及 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_socket.html#a14b18b6fc9a6535eb9bc431ac6f6bcb2">LangYa::SentryLib::IPv4TCPSocket</a> 内被实现.</p>
 
 </div>
 </div>
@@ -241,7 +245,7 @@ Public 成员函数</h2></td></tr>
 <dl class="section warning"><dt>警告</dt><dd>此函数的实现一般不会检查视图是否有效，所以调用者必须自己保证视图有效。 </dd></dl>
 <dl class="section return"><dt>返回</dt><dd>写入了多少个字节。 </dd></dl>
 
-<p>在 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_memory_access.html#a5e2792d4ce52eae89f9e32226bf58835">LangYa::SentryLib::MemoryAccess</a>, <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_serial_port.html#a64d607b65c48584afbbd3f6f4a827cfa">LangYa::SentryLib::SerialPort</a>, <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_t_c_p_connection.html#a9db88a07fe44fe0731f3cd425f357ae1">LangYa::SentryLib::TCPConnection</a> , 以及 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html#af12e0cdb44b00c4c8c94d71323a3511e">LangYa::SentryLib::LangYaConnection</a> 内被实现.</p>
+<p>在 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_memory_access.html#a5e2792d4ce52eae89f9e32226bf58835">LangYa::SentryLib::MemoryAccess</a>, <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_serial_port.html#a64d607b65c48584afbbd3f6f4a827cfa">LangYa::SentryLib::SerialPort</a>, <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_t_c_p_connection.html#a9db88a07fe44fe0731f3cd425f357ae1">LangYa::SentryLib::TCPConnection</a>, <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html#af12e0cdb44b00c4c8c94d71323a3511e">LangYa::SentryLib::LangYaConnection</a> , 以及 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_socket.html#a2342b31d0e65b5b8620d6270d143be09">LangYa::SentryLib::IPv4TCPSocket</a> 内被实现.</p>
 
 </div>
 </div>
@@ -255,7 +259,7 @@ Public 成员函数</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_lang_ya.html">LangYa</a></li><li class="navelem"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">SentryLib</a></li><li class="navelem"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html">MemoryIO</a></li>
-    <li class="footer">生成于 2023年 十二月 30日 星期六 15:08:02 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2023年 十二月 31日 星期日 15:07:41 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

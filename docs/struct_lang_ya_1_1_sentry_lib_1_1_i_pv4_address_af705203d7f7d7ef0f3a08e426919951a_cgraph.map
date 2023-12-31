@@ -1,0 +1,7 @@
+<map id="LangYa::SentryLib::IPv4Address::IPv4Address" name="LangYa::SentryLib::IPv4Address::IPv4Address">
+<area shape="rect" id="Node000001" title="从字符串中解析 IPv4 地址。" alt="" coords="5,5,179,48"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html#a94706e4db77489b6e7f21d814da76e4b" title="从字符串中解析四个数字。" alt="" coords="227,5,383,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,24,211,24,211,29,179,29"/>
+<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html#ab924692b8ded5830fa5c264ea167c47e" title="解析字符串填充此地址，内部调用如下函数：" alt="" coords="431,5,567,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="384,24,415,24,415,29,384,29"/>
+</map>

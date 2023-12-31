@@ -1,0 +1,8 @@
+<map id="LangYa::SentryLib::IPv4Endpoint" name="LangYa::SentryLib::IPv4Endpoint">
+<area shape="rect" id="Node000001" title="代表 IPv4 协议下的目的点。" alt="" coords="525,8,662,51"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_console_friendly_string.html" title="表示可以转换为短且信息量大的字符串并输出到流中的对象。" alt="" coords="5,5,240,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="255,25,375,21,501,21,525,22,525,28,501,27,375,26,256,30"/>
+<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html" title="代表 IPv4 地址。" alt="" coords="289,43,425,85"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="255,49,289,53,289,58,255,54"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="440,49,524,37,525,42,441,54"/>
+</map>

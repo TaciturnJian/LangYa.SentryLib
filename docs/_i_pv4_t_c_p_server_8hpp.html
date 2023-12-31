@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LangYa.SentryLib: Headers/LangYa/SentryLib/Network/IPv4TCPServer.hpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.3</span>
+   </div>
+   <div id="projectbrief">A robot lib by LangYa.Sango mostly for softwares on sentry</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_i_pv4_t_c_p_server_8hpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#namespaces">命名空间</a>  </div>
+  <div class="headertitle"><div class="title">IPv4TCPServer.hpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;atomic&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;boost/asio/ip/tcp.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="">LangYa/SentryLib/Network/IPv4TCPSocket.hpp</a>&gt;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> IPv4TCPServer.hpp 的引用(Include)关系图:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_i_pv4_t_c_p_server_8hpp__incl.png" border="0" usemap="#a_headers_2_lang_ya_2_sentry_lib_2_network_2_i_pv4_t_c_p_server_8hpp" alt=""/></div>
+<map name="a_headers_2_lang_ya_2_sentry_lib_2_network_2_i_pv4_t_c_p_server_8hpp" id="a_headers_2_lang_ya_2_sentry_lib_2_network_2_i_pv4_t_c_p_server_8hpp">
+<area shape="rect" title=" " alt="" coords="116,5,302,48"/>
+<area shape="rect" title=" " alt="" coords="5,104,66,131"/>
+<area shape="poly" title=" " alt="" coords="169,51,75,99,73,94,167,46"/>
+<area shape="rect" title=" " alt="" coords="90,104,147,131"/>
+<area shape="poly" title=" " alt="" coords="190,50,144,95,140,91,186,46"/>
+<area shape="rect" title=" " alt="" coords="171,104,247,131"/>
+<area shape="poly" title=" " alt="" coords="212,48,212,88,206,88,206,48"/>
+<area shape="rect" title=" " alt="" coords="214,285,356,312"/>
+<area shape="poly" title=" " alt="" coords="230,47,248,69,262,95,276,142,284,190,288,270,283,270,279,190,271,143,257,97,243,72,226,50"/>
+<area shape="rect" href="_i_pv4_t_c_p_socket_8hpp.html" title=" " alt="" coords="436,96,611,139"/>
+<area shape="poly" title=" " alt="" coords="283,46,436,89,434,94,282,51"/>
+<area shape="rect" title=" " alt="" coords="777,195,846,221"/>
+<area shape="poly" title=" " alt="" coords="609,137,686,158,767,184,772,186,770,191,765,189,685,163,607,142"/>
+<area shape="rect" href="_i_o_connection_8hpp.html" title=" " alt="" coords="523,195,754,221"/>
+<area shape="poly" title=" " alt="" coords="552,137,612,183,609,187,548,141"/>
+<area shape="rect" href="_i_pv4_endpoint_8hpp.html" title=" " alt="" coords="323,187,498,229"/>
+<area shape="poly" title=" " alt="" coords="499,141,450,179,447,175,496,137"/>
+<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="632,376,812,419"/>
+<area shape="poly" title=" " alt="" coords="638,222,634,267,636,293,643,319,659,344,680,364,676,368,655,347,638,321,631,294,628,267,633,222"/>
+<area shape="rect" href="_memory_i_o_8hpp.html" title=" " alt="" coords="653,277,834,320"/>
+<area shape="poly" title=" " alt="" coords="655,220,709,265,706,269,652,224"/>
+<area shape="rect" title=" " alt="" coords="529,475,598,501"/>
+<area shape="poly" title=" " alt="" coords="686,422,601,469,598,464,684,417"/>
+<area shape="rect" title=" " alt="" coords="633,475,689,501"/>
+<area shape="poly" title=" " alt="" coords="710,421,680,464,676,460,706,418"/>
+<area shape="rect" title=" " alt="" coords="713,475,854,501"/>
+<area shape="poly" title=" " alt="" coords="739,418,768,460,764,464,734,421"/>
+<area shape="poly" title=" " alt="" coords="742,321,733,361,727,360,736,320"/>
+<area shape="poly" title=" " alt="" coords="383,232,316,279,313,274,380,228"/>
+<area shape="rect" href="_i_pv4_address_8hpp.html" title=" " alt="" coords="380,277,555,320"/>
+<area shape="poly" title=" " alt="" coords="426,228,448,263,444,266,421,231"/>
+<area shape="rect" title=" " alt="" coords="176,384,346,411"/>
+<area shape="poly" title=" " alt="" coords="424,323,303,380,300,375,422,318"/>
+<area shape="rect" href="_can_stream_format_to_console_friendly_string_8hpp.html" title=" " alt="" coords="370,368,608,427"/>
+<area shape="poly" title=" " alt="" coords="475,320,482,352,477,353,469,321"/>
+<area shape="poly" title=" " alt="" coords="515,425,545,461,541,464,511,429"/>
+</map>
+</div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> 此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_i_pv4_t_c_p_server_8hpp__dep__incl.png" border="0" usemap="#a_headers_2_lang_ya_2_sentry_lib_2_network_2_i_pv4_t_c_p_server_8hppdep" alt=""/></div>
+<map name="a_headers_2_lang_ya_2_sentry_lib_2_network_2_i_pv4_t_c_p_server_8hppdep" id="a_headers_2_lang_ya_2_sentry_lib_2_network_2_i_pv4_t_c_p_server_8hppdep">
+<area shape="rect" title=" " alt="" coords="600,5,786,48"/>
+<area shape="rect" href="_network_8hpp.html" title=" " alt="" coords="503,96,680,139"/>
+<area shape="poly" title=" " alt="" coords="660,60,617,97,613,93,656,56"/>
+<area shape="rect" href="_i_pv4_t_c_p_server_8cpp.html" title=" " alt="" coords="704,104,887,131"/>
+<area shape="poly" title=" " alt="" coords="730,56,783,102,779,106,726,60"/>
+<area shape="rect" href="_sentry_lib_8hpp.html" title=" " alt="" coords="255,187,456,213"/>
+<area shape="poly" title=" " alt="" coords="517,147,394,189,392,183,515,142"/>
+<area shape="rect" href="_t_c_p_application_i_o_host_8cpp.html" title=" " alt="" coords="480,187,703,213"/>
+<area shape="poly" title=" " alt="" coords="594,155,594,186,589,186,589,155"/>
+<area shape="rect" href="_t_c_p_tester_8cpp.html" title=" " alt="" coords="726,187,881,213"/>
+<area shape="poly" title=" " alt="" coords="661,142,771,184,769,189,659,147"/>
+<area shape="rect" href="_sentry_lib_8cpp.html" title=" " alt="" coords="5,261,159,288"/>
+<area shape="poly" title=" " alt="" coords="294,220,131,263,129,258,292,215"/>
+<area shape="rect" href="_example_app_8cpp.html" title=" " alt="" coords="182,261,350,288"/>
+<area shape="poly" title=" " alt="" coords="330,226,283,263,280,259,326,221"/>
+<area shape="rect" href="_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和 json 配置文件的处理工具，使用操作见" alt="" coords="374,261,515,288"/>
+<area shape="poly" title=" " alt="" coords="384,221,431,259,428,263,381,226"/>
+<area shape="rect" href="_tiny_sentry_mind_8cpp.html" title=" " alt="" coords="540,261,723,288"/>
+<area shape="poly" title=" " alt="" coords="418,215,584,258,582,263,417,220"/>
+</map>
+</div>
+</div>
+<p><a href="">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_server.html">LangYa::SentryLib::IPv4TCPServer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_server_1_1_client_thread_info.html">LangYa::SentryLib::IPv4TCPServer::ClientThreadInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:namespace_lang_ya" id="r_namespace_lang_ya"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya.html">LangYa</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_lang_ya_1_1_sentry_lib" id="r_namespace_lang_ya_1_1_sentry_lib"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">LangYa::SentryLib</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_692516b589a32b3bfce781ca9f6d1534.html">Headers</a></li><li class="navelem"><a class="el" href="dir_b117d0d76b03a6360b87a590e39f53f6.html">LangYa</a></li><li class="navelem"><a class="el" href="dir_0479bb77a485cc0baf99073ab05914e0.html">SentryLib</a></li><li class="navelem"><a class="el" href="dir_d3b5431ac6ba86bf2d1fdbe6b484bdce.html">Network</a></li><li class="navelem"><a class="el" href="_i_pv4_t_c_p_server_8hpp.html">IPv4TCPServer.hpp</a></li>
+    <li class="footer">生成于 2023年 十二月 31日 星期日 15:07:40 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>
