@@ -131,8 +131,8 @@ namespace LangYa::SentryLib
 
 			if (buffer[0] == 1)
 			{
-				LatestArmorPlate.Position = {0, 1, 0};
-				LatestArmorPlate.NormalDirection = {0, 0, 0};
+				LatestArmorPlate.Particle.Position = {0, 1, 0};
+				LatestArmorPlate.Particle.Direction = {0, 0, 0};
 				LatestArmorPlate.ID = 1;
 			}
 			else
