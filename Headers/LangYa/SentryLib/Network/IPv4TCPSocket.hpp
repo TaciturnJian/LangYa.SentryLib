@@ -3,7 +3,7 @@
 #include <memory>
 
 #include <LangYa/SentryLib/IOConnection.hpp>
-#include <LangYa/SentryLib/IPv4Endpoint.hpp>
+#include <LangYa/SentryLib/Network/IPv4Endpoint.hpp>
 
 namespace LangYa::SentryLib
 {

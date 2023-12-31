@@ -13,6 +13,7 @@
 #include <LangYa/SentryLib/Device.hpp>
 #include <LangYa/SentryLib/LangYaConnection.hpp>
 #include <LangYa/SentryLib/MatchStatusManager.hpp>
+#include <LangYa/SentryLib/Network.hpp>
 #include <LangYa/SentryLib/SentryData.hpp>
 #include <LangYa/SentryLib/SerializableContentController.hpp>
 #include <LangYa/SentryLib/TinyTCPServer.hpp>

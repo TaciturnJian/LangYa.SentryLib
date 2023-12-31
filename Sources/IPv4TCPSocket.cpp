@@ -1,7 +1,7 @@
 #include <boost/asio/read.hpp>
 #include <boost/asio/write.hpp>
 
-#include <LangYa/SentryLib/IPv4TCPSocket.hpp>
+#include <LangYa/SentryLib/Network/IPv4TCPSocket.hpp>
 
 namespace LangYa::SentryLib
 {
@@ -38,7 +38,15 @@ namespace LangYa::SentryLib
 			)
 		)
 	{
-		LocalEndpoint = SharedSocketPtr->local_endpoint();
+		boost::system::error_code result{};
+		LocalEndpoint = SharedSocketPtr->local_endpoint(result);
+		if (result.failed())
+		{
+			spdlog::warn(
+				"IPv4TCPSocket> Failed to construct with specific targetEndpoint: {}",
+				result.to_string()
+			);
+		}
 	}
 
 	IPv4TCPSocket
@@ -174,7 +182,7 @@ namespace LangYa::SentryLib
 			break;
 		}
 
-		spdlog::debug(
+		spdlog::info(
 			"IPv4TCPSocket> Built connection({}->{})",
 			FormatToConsoleFriendlyString(LocalEndpoint),
 			FormatToConsoleFriendlyString(RemoteEndpoint)

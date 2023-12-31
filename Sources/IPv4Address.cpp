@@ -3,7 +3,7 @@
 
 #include <spdlog/spdlog.h>
 
-#include <LangYa/SentryLib/IPv4Address.hpp>
+#include <LangYa/SentryLib/Network/IPv4Address.hpp>
 
 namespace LangYa::SentryLib
 {

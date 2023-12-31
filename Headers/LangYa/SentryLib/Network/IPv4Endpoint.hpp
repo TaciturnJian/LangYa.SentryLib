@@ -2,7 +2,7 @@
 
 #include <boost/asio/ip/tcp.hpp>
 
-#include <LangYa/SentryLib/IPv4Address.hpp>
+#include <LangYa/SentryLib/Network/IPv4Address.hpp>
 
 namespace LangYa::SentryLib
 {
