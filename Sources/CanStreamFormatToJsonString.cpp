@@ -1,11 +1,13 @@
 #include <sstream>
 #include <spdlog/spdlog.h>
 
-#include <LangYa/SentryLib/CanStreamFormatToJsonString.hpp>
+#include <LangYa/SentryLib/StreamFormat/CanStreamFormatToJsonString.hpp>
 
 namespace LangYa::SentryLib
 {
-	CanStreamFormatToJsonString::~CanStreamFormatToJsonString() = default;
+	CanStreamFormatToJsonString
+	::~CanStreamFormatToJsonString()
+	= default;
 
 	std::string
 	FormatToJsonString(const CanStreamFormatToJsonString& obj)

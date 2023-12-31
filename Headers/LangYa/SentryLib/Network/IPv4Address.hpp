@@ -2,12 +2,18 @@
 
 #include <boost/asio/ip/address.hpp>
 
-#include <LangYa/SentryLib/CanStreamFormatToConsoleFriendlyString.hpp>
+#include <LangYa/SentryLib/StreamFormat/CanStreamFormatToConsoleFriendlyString.hpp>
 
 namespace LangYa::SentryLib
 {
 	/// @brief 代表 IPv4 地址。
-	///	解析字符串的时候小心点，这玩意儿的问题好多好多。
+	///	@details 本质上是一个 unsigned char[4] ，但是为了方便使用，所以封装了一下。
+	///	顺序是 A.B.C.D，不包含端口，如果需要端口请使用 endpoint 。
+	///	@code
+	///	LangYa::SentryLib
+	///	@endcode
+	///
+	///	@warning 解析字符串的时候小心点，这玩意儿的问题好多好多，而且我没想过去修。
 	struct IPv4Address final : CanStreamFormatToConsoleFriendlyString
 	{
 		/// @brief IPv4 地址中每个位置的数字类型。

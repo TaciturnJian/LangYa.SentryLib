@@ -8,7 +8,7 @@
 
 #pragma once
 
-#include <LangYa/SentryLib/ConsoleManipulator.hpp>
+#include <LangYa/SentryLib/ConsoleCursor.hpp>
 #include <LangYa/SentryLib/DeserializableContentSensor.hpp>
 #include <LangYa/SentryLib/Device.hpp>
 #include <LangYa/SentryLib/LangYaConnection.hpp>

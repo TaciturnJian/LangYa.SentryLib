@@ -5,7 +5,7 @@
 
 namespace LangYa::SentryLib {
 	template<typename TElement>
-	struct PositionedVector3 {
+	struct PositionedVector3 final : CanStreamFormatToJsonString {
 		Position3<TElement> Position{};
 		Vector3<TElement> Direction{};
 
@@ -51,6 +51,19 @@ namespace LangYa::SentryLib {
 		{
 			Direction = direction;
 			return *this;
+		}
+
+		std::ostream& FormatToJsonString(std::ostream& stream) const override
+		{
+			stream << "{";
+			stream << R"("Position":)";
+			Position.FormatToJsonString(stream);
+			stream << ",";
+			stream << R"("Direction":)";
+			Direction.FormatToJsonString(stream);
+			stream << "}";
+			return stream;
+		
 		}
 	};
 

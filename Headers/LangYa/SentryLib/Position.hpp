@@ -1,11 +1,11 @@
 #pragma once
 
-#include <LangYa/SentryLib/CanStreamFormatToJsonString.hpp>
+#include <LangYa/SentryLib/StreamFormat/CanStreamFormatToJsonString.hpp>
 
 namespace LangYa::SentryLib
 {
 	/// @brief 使用一个元素 X 代表坐标。
-	///	包装了一个元素，为了与其他 Position 保持一致。
+	///	@details 包装了一个元素，可格式化为 json 对象 {"X":X}。
 	///	@tparam TElement 能够完全表示此位置的一个元素，此元素必须具有类似数字的功能，
 	///	即提供等于赋值、加减乘除等四则运算等基本数字都有的功能。
 	template <typename TElement>
@@ -29,6 +29,8 @@ namespace LangYa::SentryLib
 		}
 	};
 
+	/// @brief 使用两个元素 X Y 代表二维坐标。
+	///	@details 包装两个元素，能够执行二维坐标相关运算。
 	template <typename TElement>
 	struct Position2 : Position1<TElement>
 	{
@@ -50,6 +52,8 @@ namespace LangYa::SentryLib
 		}
 	};
 
+	/// @brief 使用两个元素 X Y 代表三维坐标。
+	///	@details 包装两个元素，能够执行三维坐标相关运算。
 	template <typename TElement>
 	struct Position3 final : Position2<TElement>
 	{
@@ -83,6 +87,7 @@ namespace LangYa::SentryLib
 
 	using Position2C = Position2<char>;
 	using Position2S = Position2<short>;
+	using Position2Us = Position2<unsigned short>;
 	using Position2I = Position2<int>;
 	using Position2Ui = Position2<unsigned int>;
 	using Position2F = Position2<float>;

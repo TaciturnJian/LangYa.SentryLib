@@ -4,8 +4,7 @@
 #include <vector>
 
 #include <LangYa/SentryLib/Common/MemoryView.hpp>
-
-#include <LangYa/SentryLib/CanStreamFormatToJsonString.hpp>
+#include <LangYa/SentryLib/StreamFormat/CanStreamFormatToJsonString.hpp>
 
 namespace LangYa::SentryLib
 {

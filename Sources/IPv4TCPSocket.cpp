@@ -1,3 +1,5 @@
+
+#include <spdlog/spdlog.h>
 #include <boost/asio/read.hpp>
 #include <boost/asio/write.hpp>
 

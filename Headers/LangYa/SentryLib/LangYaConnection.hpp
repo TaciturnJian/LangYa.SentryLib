@@ -39,8 +39,8 @@ namespace LangYa::SentryLib
 		volatile bool IsWorking{false};
 
 		/// @brief 使用给定的缓冲区大小和内部连接构建一个连接。
-		///	@param rawReceiveSize 接收数据的原始大小，使用 sizeof() 获取是你的最佳选择。（此数据需要你和通信对方协商）
-		///	@param rawSendSize 发送数据的原始大小，使用 sizeof() 获取是你的最佳选择。（此数据需要你和通信对方协商）
+		///	@param rawReceiveSize 接收数据的原始大小，最好使用 sizeof()。（此数据需要你和通信对方协商）
+		///	@param rawSendSize 发送数据的原始大小，最好使用 sizeof()。（此数据需要你和通信对方协商）
 		///	@param weakConnection 内部真正用于通信的连接。
 		LangYaConnection(
 			MemoryView::SizeType rawReceiveSize, 

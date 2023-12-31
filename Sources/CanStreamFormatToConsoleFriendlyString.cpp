@@ -1,4 +1,7 @@
-#include <LangYa/SentryLib/CanStreamFormatToConsoleFriendlyString.hpp>
+#include <sstream>
+#include <spdlog/spdlog.h>
+
+#include <LangYa/SentryLib/StreamFormat/CanStreamFormatToConsoleFriendlyString.hpp>
 
 namespace LangYa::SentryLib
 {

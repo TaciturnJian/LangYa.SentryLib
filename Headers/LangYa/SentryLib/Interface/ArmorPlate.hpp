@@ -1,7 +1,6 @@
 #pragma once
 
-#include <LangYa/SentryLib/Vector.hpp>
-#include <LangYa/SentryLib/Position.hpp>
+#include <LangYa/SentryLib/PositionedVector.hpp>
 #include <LangYa/SentryLib/Interface/TeamArmorColor.h>
 
 namespace LangYa::SentryLib
@@ -19,27 +18,13 @@ namespace LangYa::SentryLib
 		/// @brief 装甲板上 LED 的色彩。
 		ArmorColor Color{};
 
-		/// @brief 三维 float 位置。
-		Position3F Position{};
+		/// @brief 装甲板中心质点，包含位置和法向量。
+		PositionedVector3F Particle{};
 
-		/// @brief 三维 float 法向量，其模不一定为 1，此向量仅代表装甲板方向。
-		Vector3F NormalDirection{};
+		ArmorPlate();
 
-		ArmorPlate() = default;
+		ArmorPlate(char id, ArmorColor color, PositionedVector3F particle);
 
-		ArmorPlate(const char id, const ArmorColor color, Position3F position, Vector3F normalDirection) :
-			ID(id), Color(color), Position(std::move(position)), NormalDirection(std::move(normalDirection))
-		{
-		}
-
-		std::ostream& FormatToJsonString(std::ostream& stream) const override
-		{
-			return stream << "{"
-				<< R"("ID":)" << static_cast<int>(ID) << ','
-				<< R"("Color":)" << static_cast<int>(Color) << ','
-				<< R"("Position":)" << Position << ','
-				<< R"("NormalDirection":)" << NormalDirection
-				<< "}";
-		}
+		std::ostream& FormatToJsonString(std::ostream& stream) const override;
 	};
 }

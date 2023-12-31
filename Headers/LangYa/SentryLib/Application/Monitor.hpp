@@ -14,7 +14,7 @@ namespace LangYa::SentryLib
 	{
 		std::map<std::string, MonitorPackage> Packages{};
 
-		MonitorPackage MonitorInfo {
+		MonitorPackage MonitorInfo{
 			"MonitorInfo",
 			{
 				{"Normal", 0},

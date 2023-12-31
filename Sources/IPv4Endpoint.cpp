@@ -1,3 +1,5 @@
+#include <spdlog/spdlog.h>
+
 #include <LangYa/SentryLib/Network/IPv4Endpoint.hpp>
 
 namespace LangYa::SentryLib
