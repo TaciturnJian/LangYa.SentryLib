@@ -6,6 +6,7 @@
 
 namespace LangYa::SentryLib
 {
+	/// @brief 用于解析Json数据流
 	class TinyJsonStream
 	{
 	public:
@@ -21,5 +22,7 @@ namespace LangYa::SentryLib
 		explicit TinyJsonStream(PackageCallbackType callback);
 
 		TinyJsonStream& operator<<(char ch);
+
+		TinyJsonStream& operator<<(const std::string_view view);
 	};
 }

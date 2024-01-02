@@ -63,7 +63,6 @@ namespace LangYa::SentryLib {
 			Direction.FormatToJsonString(stream);
 			stream << "}";
 			return stream;
-		
 		}
 	};
 

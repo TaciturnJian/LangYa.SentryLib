@@ -12,8 +12,8 @@ namespace LangYa::SentryLib
 
 		TimePointType TimePoint{};
 
-		TimeStamp() = default;
-		explicit TimeStamp(const TimePointType& timePoint) : TimePoint{ timePoint } {}
+		TimeStamp();
+		explicit TimeStamp(const TimePointType& timePoint);
 	};
 
 	/// @brief 表明一个类型含有时间戳成员。

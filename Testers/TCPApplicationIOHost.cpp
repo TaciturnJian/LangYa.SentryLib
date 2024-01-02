@@ -5,7 +5,10 @@
 int main(int argc, const char* argv[])
 {
 	using namespace LangYa::SentryLib;
-	IPv4TCPServer server{IPv4Endpoint{argv[1]}};
+	IPv4Endpoint endpoint{};
+	endpoint.Parse(argv[1]);
+
+	IPv4TCPServer server{endpoint};
 
 	std::atomic_bool interrupt_signal = false;
 	server.Run(interrupt_signal, [&interrupt_signal](IPv4TCPSocket& client, const std::atomic_bool& interruptSignal)

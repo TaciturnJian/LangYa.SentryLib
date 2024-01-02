@@ -2,12 +2,6 @@
 
 #include <LangYa/SentryLib/Common/TCPConnection.hpp>
 
-#ifdef SC_WINDOWS
-#define RESULT_MESSAGE(result) result.what()
-#elif SC_LINUX
-#define RESULT_MESSAGE(result) result.message()
-#endif
-
 namespace LangYa::SentryLib
 {
 	using IOContextType = boost::asio::io_context;
@@ -27,10 +21,10 @@ namespace LangYa::SentryLib
 	::RefreshConnection(ErrorCodeType& result)
 	{
 		spdlog::info("TCPConnection({})> Refreshing connection", RemoteEndpoint);
-		Socket->connect(Endpoint, result);
+		(void)Socket->connect(Endpoint, result);
 		if (result.failed())
 		{
-			spdlog::warn("TCPConnection({})> Cannot connect: {}", RemoteEndpoint, RESULT_MESSAGE(result));
+			spdlog::warn("TCPConnection({})> Cannot connect: {}", RemoteEndpoint, result.what());
 		}
 	}
 
@@ -70,7 +64,7 @@ namespace LangYa::SentryLib
 		RefreshConnection(result);
 		if (result.failed())
 		{
-			spdlog::warn("TCPConnection({})> Cannot connect: {}", RemoteEndpoint, RESULT_MESSAGE(result));
+			spdlog::warn("TCPConnection({})> Cannot connect: {}", RemoteEndpoint, result.what());
 			Connected = false;
 			return;
 		}
@@ -90,10 +84,10 @@ namespace LangYa::SentryLib
 	::Disconnect()
 	{
 		boost::system::error_code result;
-		Socket->close(result);
+		(void)Socket->close(result);
 		if (result.failed())
 		{
-			spdlog::warn("TCPConnection({})> Cannot close tcp connection: {}", RemoteEndpoint, RESULT_MESSAGE(result));
+			spdlog::warn("TCPConnection({})> Cannot close tcp connection: {}", RemoteEndpoint, result.what());
 		}
 
 		Connected = false;
@@ -112,7 +106,7 @@ namespace LangYa::SentryLib
 			bytes,
 			view.Size,
 			result.failed(),
-			RESULT_MESSAGE(result)
+			result.what()
 		);
 #endif
 
@@ -135,7 +129,7 @@ namespace LangYa::SentryLib
 			bytes,
 			view.Size,
 			result.failed(),
-			RESULT_MESSAGE(result)
+			result.what()
 		);
 #endif
 
@@ -149,4 +143,3 @@ namespace LangYa::SentryLib
 		return fmt::format("TCPConnection({})", RemoteEndpoint);
 	}
 }
-#undef RESULT_MESSAGE

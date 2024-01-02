@@ -4,7 +4,8 @@
 
 namespace LangYa::SentryLib
 {
-	IPv4TCPServer::~IPv4TCPServer()
+	IPv4TCPServer
+	::~IPv4TCPServer()
 	{
 		// 关闭线程处理
 		CanAcceptNextClient = false;
@@ -22,8 +23,13 @@ namespace LangYa::SentryLib
 		SharedAcceptorPtr->close();
 	}
 
-	void IPv4TCPServer::AcceptClient(const ClientThreadInfo& threadInfo, const ClientHandler& handler,
-	                                 const std::atomic_bool& interruptSignal)
+	void
+	IPv4TCPServer
+	::AcceptClient(
+		const ClientThreadInfo& threadInfo, 
+		const ClientHandler& handler,
+	    const std::atomic_bool& interruptSignal
+	)
 	{
 		boost::asio::io_context client_io_context{};
 		std::shared_ptr<IPv4TCPSocket> client_socket{nullptr};
@@ -71,7 +77,9 @@ namespace LangYa::SentryLib
 		threadInfo.IsTerminated->store(true);
 	}
 
-	IPv4TCPServer::ClientThreadInfo& IPv4TCPServer::GetAvailableInfo()
+	IPv4TCPServer
+	::ClientThreadInfo& 
+	IPv4TCPServer::GetAvailableInfo()
 	{
 		for (auto& info : ClientThreadInfos)
 		{
@@ -85,7 +93,8 @@ namespace LangYa::SentryLib
 		return ClientThreadInfos.back();
 	}
 
-	IPv4TCPServer::IPv4TCPServer(SharedAcceptorType acceptor):
+	IPv4TCPServer
+	::IPv4TCPServer(SharedAcceptorType acceptor) :
 		SharedAcceptorPtr(std::move(acceptor))
 	{
 		LocalEndPoint = SharedAcceptorPtr->local_endpoint();

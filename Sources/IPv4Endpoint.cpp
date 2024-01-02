@@ -15,9 +15,9 @@ namespace LangYa::SentryLib
 	}
 
 	IPv4Endpoint::IPv4Endpoint(const std::string_view address, const PortType port):
-		Address(address),
 		Port(port)
 	{
+		Address.Parse(address);
 	}
 
 	IPv4Endpoint
@@ -42,7 +42,7 @@ namespace LangYa::SentryLib
 	IPv4Endpoint
 	::operator=(const boost::asio::ip::tcp::endpoint& endpoint)
 	{
-		Address = endpoint.address();
+		Address.Parse(endpoint.address().to_string());
 		Port = endpoint.port();
 		return *this;
 	}

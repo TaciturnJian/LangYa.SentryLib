@@ -9,10 +9,6 @@ namespace LangYa::SentryLib
 	/// @brief 代表 IPv4 地址。
 	///	@details 本质上是一个 unsigned char[4] ，但是为了方便使用，所以封装了一下。
 	///	顺序是 A.B.C.D，不包含端口，如果需要端口请使用 endpoint 。
-	///	@code
-	///	LangYa::SentryLib
-	///	@endcode
-	///
 	///	@warning 解析字符串的时候小心点，这玩意儿的问题好多好多，而且我没想过去修。
 	struct IPv4Address final : CanStreamFormatToConsoleFriendlyString
 	{
@@ -29,13 +25,9 @@ namespace LangYa::SentryLib
 		/// @brief 初始化 IPv4 地址为 a.b.c.d 。
 		IPv4Address(NumberType a, NumberType b, NumberType c, NumberType d);
 
-		/// @brief 从字符串中解析 IPv4 地址。
-		///	@details 在大多数时候，解析失败都不会抛出异常，请自行规范自己的参数输入。
-		///	本质是调用如下函数：
-		///	@code LangYa::SentryLib::IPv4Address::Parse(std::istream&) @endcode
-		explicit IPv4Address(std::string_view address);
-
-		/// 使用简单的方式获取里面的内容。
+		/// 使用简单的方式获取里面的第N个数字。
+		///	@details [0].[1].[2].[3] 对应 A.B.C.D 。
+		///	@exception std::out_of_range 如果 index 不在 [0, 3] 之间，将会抛出此异常。
 		NumberType& operator[](NumberType index);
 
 		/// @brief 从输入流中读取连续四个 unsigned char 作为 IPv4 地址。
@@ -49,19 +41,12 @@ namespace LangYa::SentryLib
 		///	@code LangYa::SentryLib::IPv4Address::Parse(std::istream&) @endcode
 		bool Parse(std::string_view address);
 
-		/// @brief 从字符串中解析四个数字。
-		///	@details 调用如下函数：
-		///	@code LangYa::SentryLib::IPv4Address::Parse(std::istream&) @endcode
-		IPv4Address& operator=(std::string_view address);
-
-		/// @brief 从 boost 的地址中获取 IPv4 地址。
-		IPv4Address& operator=(const boost::asio::ip::address& address);
-
 		/// @brief 转换为字符串格式的 IPv4 地址。
 		///	@details 格式为 [0].[1].[2].[3] 。
 		std::ostream& FormatToConsoleFriendlyString(std::ostream& stream) const override;
 
 		/// @brief 转换为 boost 的地址。
+		///	@details 使用 boost::asio 的 make_address_v4() 函数
 		[[nodiscard]] boost::asio::ip::address_v4 ToBoostAddress() const;
 	};
 }

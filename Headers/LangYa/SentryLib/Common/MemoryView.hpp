@@ -9,9 +9,10 @@ namespace LangYa::SentryLib
 {
 	/// @brief MemoryView 代表一个内存的视图，保存内存的头指针和长度，供其他读写。
 	/// @details 
-	/// MemoryView 提供关于内存的视图，
+	/// # MemoryView
+	/// 提供关于内存的视图，
 	/// 它不能保证作为传入的参数时得到的内存视图是有效的，
-	/// 因此作为函数参数时，这个类的基础是对调用者的信任。
+	/// 因此作为函数参数时，你需要信任调用方。
 	///	类中提供了有关内存的操作函数，CopyTo 和 ReadFrom ，
 	///	它们都是对 memcpy 的封装，但是会使用内存视图中的数据检查调用 memcpy 的参数。
 	struct MemoryView
