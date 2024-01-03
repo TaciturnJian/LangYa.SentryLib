@@ -1,0 +1,22 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,163,55,189"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments_afcce8a46c14b15295e2dcb4cf66bcc2a.html#afcce8a46c14b15295e2dcb4cf66bcc2a" title="构造，初始化控制台参数为指定的值。" alt="" coords="103,5,278,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="36,161,61,119,80,95,101,74,105,71,108,75,104,78,84,99,66,122,41,163"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_configurator_a2531ca07172da9910b279e50cbdefb93.html#a2531ca07172da9910b279e50cbdefb93" title="初始化一个空的配置器" alt="" coords="107,88,274,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="54,162,102,140,116,134,118,139,104,145,56,167"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_configurator_a0452562497ba6db92763762ff3657558.html#a0452562497ba6db92763762ff3657558" title=" " alt="" coords="122,155,259,197"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="55,173,107,173,107,179,55,179"/>
+<area shape="rect" id="Node000005" href="$struct_lang_ya_1_1_sentry_lib_1_1_application_info_aef2b02b359c1204402f7cbb4ad4a12c1.html#aef2b02b359c1204402f7cbb4ad4a12c1" title="使用 spdlog 输出。 输出的内容不再是 json 格式，并且有一定的缩进。 如果使用了spdlog配置多个日志记录器，还可以在日志中确定内容。" alt="" coords="107,221,274,280"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="56,185,114,212,111,217,54,190"/>
+<area shape="rect" id="Node000006" href="$_example_app_8cpp_aeb10b227c568daca42c814a335153f2d.html#aeb10b227c568daca42c814a335153f2d" title=" " alt="" coords="149,304,232,331"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="38,189,62,238,81,266,104,290,135,305,133,310,101,294,76,270,57,241,34,191"/>
+<area shape="rect" id="Node000007" href="$struct_lang_ya_1_1_sentry_lib_1_1_sentry_data_ae7ec604552bc47c68a178c9b6dc3815a.html#ae7ec604552bc47c68a178c9b6dc3815a" title="从缓冲区中反序列化资源。" alt="" coords="335,229,493,272"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="231,303,277,289,327,274,328,280,279,295,233,308"/>
+<area shape="rect" id="Node000009" href="$class_lang_ya_1_1_sentry_lib_1_1_unique_buffer_aa4fcd6178787270ed4e8a69d28e60303.html#aa4fcd6178787270ed4e8a69d28e60303" title="Get the view of the unique memory in the buffer." alt="" coords="338,296,489,339"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="232,315,323,315,323,320,232,320"/>
+<area shape="rect" id="Node000010" href="$class_lang_ya_1_1_sentry_lib_1_1_unique_buffer_a68b67fc2a71e1b22c6b97862ab97e7a7.html#a68b67fc2a71e1b22c6b97862ab97e7a7" title="Construct a new UniqueBuffer object with provided size." alt="" coords="326,387,501,429"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="227,329,346,378,344,383,225,334"/>
+<area shape="rect" id="Node000008" href="$struct_lang_ya_1_1_sentry_lib_1_1_sentry_data_1_1_deserialize_resource_a579fe8a91d4804e62573160c0916d195.html#a579fe8a91d4804e62573160c0916d195" title=" " alt="" coords="549,221,763,280"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="493,248,534,248,534,253,493,253"/>
+<area shape="poly" id="edge10_Node000010_Node000010" title=" " alt="" coords="371,387,370,377,377,368,391,362,414,360,438,362,452,369,450,374,436,368,414,365,393,367,380,372,375,378,376,386"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="LangYa::SentryLib::IParseStringView" name="LangYa::SentryLib::IParseStringView">
+<area shape="rect" id="Node000001" title=" " alt="" coords="85,5,222,48"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html" title="代表 IPv4 地址，封装了 std::uint8_t[4]。" alt="" coords="5,96,142,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,61,94,97,90,94,123,58"/>
+<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_endpoint.html" title="代表 IPv4 协议下的目的点。" alt="" coords="165,96,302,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="184,58,217,94,213,97,180,61"/>
+</map>

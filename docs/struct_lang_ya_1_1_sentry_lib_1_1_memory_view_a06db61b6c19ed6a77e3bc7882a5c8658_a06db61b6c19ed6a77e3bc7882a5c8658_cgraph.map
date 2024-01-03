@@ -1,0 +1,5 @@
+<map id="LangYa::SentryLib::MemoryView::ReadFrom" name="LangYa::SentryLib::MemoryView::ReadFrom">
+<area shape="rect" id="Node000001" title="从目标读取内存，直到当前内存被填满或目标内存不足。" alt="" coords="5,5,170,48"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a0b0dae0e12aeccb9fc1c4d9dd074e9cf.html#a0b0dae0e12aeccb9fc1c4d9dd074e9cf" title="检查此视图是否有效，即不为空指针或长度大于 0 。" alt="" coords="218,5,361,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,24,202,24,202,29,170,29"/>
+</map>

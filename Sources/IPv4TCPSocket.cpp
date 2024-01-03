@@ -15,8 +15,8 @@ namespace LangYa::SentryLib
 		{
 			spdlog::warn(
 				"IPv4TCPSocket> Socket({}->{}) failed to reconnect.",
-				FormatToConsoleFriendlyString(LocalEndpoint),
-				FormatToConsoleFriendlyString(RemoteEndpoint)
+				FormatToString(LocalEndpoint),
+				FormatToString(RemoteEndpoint)
 			);
 		}
 	}
@@ -41,7 +41,7 @@ namespace LangYa::SentryLib
 		)
 	{
 		boost::system::error_code result{};
-		LocalEndpoint = SharedSocketPtr->local_endpoint(result);
+		LocalEndpoint = IPv4Endpoint(SharedSocketPtr->local_endpoint(result));
 		if (result.failed())
 		{
 			spdlog::warn(
@@ -59,7 +59,7 @@ namespace LangYa::SentryLib
 		SharedSocketPtr(
 			std::make_shared<boost::asio::ip::tcp::socket>(
 				*SharedIOContextPtr, 
-				LocalEndpoint.ToBoostTCPEndPoint()
+				static_cast<boost::asio::ip::tcp::endpoint>(LocalEndpoint)
 			)
 		)
 	{
@@ -73,7 +73,7 @@ namespace LangYa::SentryLib
 		SharedSocketPtr(
 			std::make_shared<boost::asio::ip::tcp::socket>(
 				*SharedIOContextPtr,
-				LocalEndpoint.ToBoostTCPEndPoint()
+				static_cast<boost::asio::ip::tcp::endpoint>(LocalEndpoint)
 			)
 		)
 	{
@@ -84,15 +84,15 @@ namespace LangYa::SentryLib
 		RemoteEndpoint(std::move(targetEndpoint)),
 		SharedSocketPtr(std::move(sharedSocket))
 	{
-		LocalEndpoint = SharedSocketPtr->local_endpoint();
+		LocalEndpoint = IPv4Endpoint(SharedSocketPtr->local_endpoint());
 	}
 
 	IPv4TCPSocket
 	::IPv4TCPSocket(SharedTCPSocketType sharedSocket):
 		SharedSocketPtr(std::move(sharedSocket))
 	{
-		LocalEndpoint = SharedSocketPtr->local_endpoint();
-		RemoteEndpoint = SharedSocketPtr->remote_endpoint();
+		LocalEndpoint = IPv4Endpoint(SharedSocketPtr->local_endpoint());
+		RemoteEndpoint = IPv4Endpoint(SharedSocketPtr->remote_endpoint());
 	}
 
 	MemoryView::SizeType
@@ -108,8 +108,8 @@ namespace LangYa::SentryLib
 			// 打印失败信息
 			spdlog::warn(
 				"IPv4TCPSocket> Socket({}<-{}) read ({}/{})bytes: {}",
-				FormatToConsoleFriendlyString(LocalEndpoint),
-				FormatToConsoleFriendlyString(RemoteEndpoint),
+				FormatToString(LocalEndpoint),
+				FormatToString(RemoteEndpoint),
 				bytes,
 				view.Size,
 				result.to_string()
@@ -134,8 +134,8 @@ namespace LangYa::SentryLib
 			// 打印失败信息
 			spdlog::warn(
 				"IPv4TCPSocket> Socket({}->{}) sent ({}/{})bytes: {}",
-				FormatToConsoleFriendlyString(LocalEndpoint),
-				FormatToConsoleFriendlyString(RemoteEndpoint),
+				FormatToString(LocalEndpoint),
+				FormatToString(RemoteEndpoint),
 				bytes,
 				view.Size,
 				result.to_string()
@@ -150,8 +150,8 @@ namespace LangYa::SentryLib
 	IPv4TCPSocket
 	::Open()
 	{
-		const auto target = RemoteEndpoint.ToBoostTCPEndPoint();
-		const auto target_info = FormatToConsoleFriendlyString(RemoteEndpoint);
+		const auto target = static_cast<boost::asio::ip::tcp::endpoint>(RemoteEndpoint);
+		const auto target_info = FormatToString(RemoteEndpoint);
 
 		constexpr auto max_attempt = 5;
 
@@ -186,8 +186,8 @@ namespace LangYa::SentryLib
 
 		spdlog::info(
 			"IPv4TCPSocket> Built connection({}->{})",
-			FormatToConsoleFriendlyString(LocalEndpoint),
-			FormatToConsoleFriendlyString(RemoteEndpoint)
+			FormatToString(LocalEndpoint),
+			FormatToString(RemoteEndpoint)
 		);
 
 		return true;
@@ -203,8 +203,8 @@ namespace LangYa::SentryLib
 		{
 			spdlog::warn(
 				"IPv4TCPSocket> Failed to close the socket({}->{}): {}",
-				FormatToConsoleFriendlyString(LocalEndpoint),
-				FormatToConsoleFriendlyString(RemoteEndpoint),
+				FormatToString(LocalEndpoint),
+				FormatToString(RemoteEndpoint),
 				result.to_string()
 			);
 		}

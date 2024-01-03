@@ -92,8 +92,7 @@ $(document).ready(function(){initNavTree('class_lang_ya_1_1_sentry_lib_1_1_seria
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content-members.html">所有成员列表</a>  </div>
+<a href="#pub-methods">Public 成员函数</a>  </div>
   <div class="headertitle"><div class="title">LangYa::SentryLib::SerializableContent类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
@@ -123,115 +122,19 @@ $(document).ready(function(){initNavTree('class_lang_ya_1_1_sentry_lib_1_1_seria
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:acd1dfb04ca0ace078b3010ccc6c9bf9d" id="r_acd1dfb04ca0ace078b3010ccc6c9bf9d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html#acd1dfb04ca0ace078b3010ccc6c9bf9d">~SerializableContent</a> ()</td></tr>
+<tr class="memitem:acd1dfb04ca0ace078b3010ccc6c9bf9d" id="r_acd1dfb04ca0ace078b3010ccc6c9bf9d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content_acd1dfb04ca0ace078b3010ccc6c9bf9d.html#acd1dfb04ca0ace078b3010ccc6c9bf9d">~SerializableContent</a> ()</td></tr>
 <tr class="memdesc:acd1dfb04ca0ace078b3010ccc6c9bf9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">虚拟的析构器，防止有笨蛋把指针强制转换为此类后错误解析了内容。  <br /></td></tr>
 <tr class="separator:acd1dfb04ca0ace078b3010ccc6c9bf9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fecc0402253646bd4d1d6fa6992ab7c" id="r_a4fecc0402253646bd4d1d6fa6992ab7c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html#a4fecc0402253646bd4d1d6fa6992ab7c">GetSerializationResultSize</a> () const =0</td></tr>
+<tr class="memitem:a4fecc0402253646bd4d1d6fa6992ab7c" id="r_a4fecc0402253646bd4d1d6fa6992ab7c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a31da2070cd759fdfd599d1a779d189a7.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content_a4fecc0402253646bd4d1d6fa6992ab7c.html#a4fecc0402253646bd4d1d6fa6992ab7c">GetSerializationResultSize</a> () const =0</td></tr>
 <tr class="memdesc:a4fecc0402253646bd4d1d6fa6992ab7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取序列化结果的大小。 返回序列化结果的大小，如果值为0，那么这个东西不可以被序列化。（谁继承这个接口然后返回0啊？） 建议遇到这种情况时直接抛出异常。  <br /></td></tr>
 <tr class="separator:a4fecc0402253646bd4d1d6fa6992ab7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2720ba97257dbf02d329f1f68799c29e" id="r_a2720ba97257dbf02d329f1f68799c29e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html#a2720ba97257dbf02d329f1f68799c29e">Serialize</a> (const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;buffer)=0</td></tr>
+<tr class="memitem:a2720ba97257dbf02d329f1f68799c29e" id="r_a2720ba97257dbf02d329f1f68799c29e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content_a2720ba97257dbf02d329f1f68799c29e.html#a2720ba97257dbf02d329f1f68799c29e">Serialize</a> (const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;buffer)=0</td></tr>
 <tr class="memdesc:a2720ba97257dbf02d329f1f68799c29e"><td class="mdescLeft">&#160;</td><td class="mdescRight">序列化此内容，将序列化的结果写入缓冲区。 当提供的缓冲区太小时，不会执行序列化操作，返回false。  <br /></td></tr>
 <tr class="separator:a2720ba97257dbf02d329f1f68799c29e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>代表一个可被序列化的东西。 可被序列化即信息可以无损地转换为二进制数据。 一般将内容序列化后，将其写入文件或者网络传输，可以减轻读写传输等IO操作的压力。 </p>
-</div><h2 class="groupheader">构造及析构函数说明</h2>
-<a id="acd1dfb04ca0ace078b3010ccc6c9bf9d" name="acd1dfb04ca0ace078b3010ccc6c9bf9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd1dfb04ca0ace078b3010ccc6c9bf9d">&#9670;&#160;</a></span>~SerializableContent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">LangYa::SentryLib::SerializableContent::~SerializableContent </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>虚拟的析构器，防止有笨蛋把指针强制转换为此类后错误解析了内容。 </p>
-
-</div>
-</div>
-<h2 class="groupheader">成员函数说明</h2>
-<a id="a4fecc0402253646bd4d1d6fa6992ab7c" name="a4fecc0402253646bd4d1d6fa6992ab7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fecc0402253646bd4d1d6fa6992ab7c">&#9670;&#160;</a></span>GetSerializationResultSize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a> LangYa::SentryLib::SerializableContent::GetSerializationResultSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>获取序列化结果的大小。 返回序列化结果的大小，如果值为0，那么这个东西不可以被序列化。（谁继承这个接口然后返回0啊？） 建议遇到这种情况时直接抛出异常。 </p>
-<dl class="section return"><dt>返回</dt><dd>序列化结果的大小。 </dd></dl>
-
-<p>在 <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html#acb57e7e288551f4786bcd83573ad13e6">LangYa::SentryLib::SentryData</a>, <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_referee_data.html#a31ce95075ab0b0c91838e2e4e86d1f94">LangYa::SentryLib::RefereeData</a>, <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_full_control_data.html#a1eeda5c0b2218623e116c0294c16dae2">LangYa::SentryLib::FullControlData</a> , 以及 <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_full_sensor_data.html#af1fb77affabd8316526f7ff8e1543b44">LangYa::SentryLib::FullSensorData</a> 内被实现.</p>
-
-</div>
-</div>
-<a id="a2720ba97257dbf02d329f1f68799c29e" name="a2720ba97257dbf02d329f1f68799c29e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2720ba97257dbf02d329f1f68799c29e">&#9670;&#160;</a></span>Serialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool LangYa::SentryLib::SerializableContent::Serialize </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;&#160;</td>
-          <td class="paramname"><em>buffer</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>序列化此内容，将序列化的结果写入缓冲区。 当提供的缓冲区太小时，不会执行序列化操作，返回false。 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buffer</td><td>保存序列化结果的缓冲区。 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>操作是否全部成功。 </dd></dl>
-
-<p>在 <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html#af1ab01d5c9b616ec5dad448f6a53f027">LangYa::SentryLib::SentryData</a>, <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_referee_data.html#a4dd4417a575671898c7999e788bcaa69">LangYa::SentryLib::RefereeData</a>, <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_full_control_data.html#a896bf9b00a5dce71b16479451195a925">LangYa::SentryLib::FullControlData</a> , 以及 <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_full_sensor_data.html#a9c6ff3ed2c230caf9f8e79ebf09fc975">LangYa::SentryLib::FullSensorData</a> 内被实现.</p>
-
-</div>
-</div>
-<hr/>该类的文档由以下文件生成:<ul>
+</div><hr/>该类的文档由以下文件生成:<ul>
 <li>Headers/LangYa/SentryLib/Common/<a class="el" href="">SerializableContent.hpp</a></li>
 <li>Sources/<a class="el" href="">SerializableContent.cpp</a></li>
 </ul>
@@ -241,7 +144,7 @@ Public 成员函数</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_lang_ya.html">LangYa</a></li><li class="navelem"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">SentryLib</a></li><li class="navelem"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html">SerializableContent</a></li>
-    <li class="footer">生成于 2023年 十二月 31日 星期日 15:07:41 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2024年 一月 3日 星期三 16:30:41 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

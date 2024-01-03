@@ -98,6 +98,7 @@ $(document).ready(function(){initNavTree('_i_pv4_t_c_p_server_8cpp.html',''); in
 <div class="contents">
 <div class="textblock"><code>#include &lt;spdlog/spdlog.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="">LangYa/SentryLib/Network/IPv4TCPServer.hpp</a>&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> IPv4TCPServer.cpp 的引用(Include)关系图:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -105,46 +106,64 @@ $(document).ready(function(){initNavTree('_i_pv4_t_c_p_server_8cpp.html',''); in
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_i_pv4_t_c_p_server_8cpp__incl.png" border="0" usemap="#a_sources_2_i_pv4_t_c_p_server_8cpp" alt=""/></div>
 <map name="a_sources_2_i_pv4_t_c_p_server_8cpp" id="a_sources_2_i_pv4_t_c_p_server_8cpp">
-<area shape="rect" title=" " alt="" coords="54,5,237,32"/>
-<area shape="rect" title=" " alt="" coords="5,88,118,115"/>
-<area shape="poly" title=" " alt="" coords="134,34,87,80,83,76,131,31"/>
-<area shape="rect" href="_i_pv4_t_c_p_server_8hpp.html" title=" " alt="" coords="142,80,317,123"/>
-<area shape="poly" title=" " alt="" coords="160,31,199,68,196,71,157,34"/>
-<area shape="rect" title=" " alt="" coords="26,179,86,205"/>
-<area shape="poly" title=" " alt="" coords="190,126,96,174,93,169,188,121"/>
-<area shape="rect" title=" " alt="" coords="110,179,168,205"/>
-<area shape="poly" title=" " alt="" coords="210,125,164,170,161,166,207,121"/>
-<area shape="rect" title=" " alt="" coords="191,179,268,205"/>
-<area shape="poly" title=" " alt="" coords="232,123,232,163,227,163,227,123"/>
-<area shape="rect" title=" " alt="" coords="234,360,377,387"/>
-<area shape="poly" title=" " alt="" coords="251,121,268,143,283,170,297,216,305,264,309,344,304,345,300,265,292,218,278,172,264,146,247,125"/>
-<area shape="rect" href="_i_pv4_t_c_p_socket_8hpp.html" title=" " alt="" coords="457,171,632,213"/>
-<area shape="poly" title=" " alt="" coords="304,121,456,163,455,169,303,126"/>
-<area shape="rect" title=" " alt="" coords="798,269,866,296"/>
-<area shape="poly" title=" " alt="" coords="629,211,707,233,788,259,792,261,791,266,786,264,705,238,628,216"/>
-<area shape="rect" href="_i_o_connection_8hpp.html" title=" " alt="" coords="543,269,775,296"/>
-<area shape="poly" title=" " alt="" coords="572,212,633,258,629,262,569,216"/>
-<area shape="rect" href="_i_pv4_endpoint_8hpp.html" title=" " alt="" coords="343,261,519,304"/>
-<area shape="poly" title=" " alt="" coords="520,216,471,254,467,250,516,212"/>
-<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="653,451,833,493"/>
-<area shape="poly" title=" " alt="" coords="659,297,654,341,657,368,664,394,680,418,701,439,697,443,676,422,659,396,651,369,649,341,653,296"/>
-<area shape="rect" href="_memory_i_o_8hpp.html" title=" " alt="" coords="674,352,854,395"/>
-<area shape="poly" title=" " alt="" coords="676,295,730,340,726,344,672,299"/>
-<area shape="rect" title=" " alt="" coords="550,549,618,576"/>
-<area shape="poly" title=" " alt="" coords="707,496,621,544,619,539,704,492"/>
-<area shape="rect" title=" " alt="" coords="654,549,709,576"/>
-<area shape="poly" title=" " alt="" coords="731,495,701,538,697,535,726,492"/>
-<area shape="rect" title=" " alt="" coords="734,549,875,576"/>
-<area shape="poly" title=" " alt="" coords="759,492,789,535,785,538,755,495"/>
-<area shape="poly" title=" " alt="" coords="762,396,753,436,748,435,757,394"/>
-<area shape="poly" title=" " alt="" coords="403,307,337,353,334,349,400,302"/>
-<area shape="rect" href="_i_pv4_address_8hpp.html" title=" " alt="" coords="401,352,576,395"/>
-<area shape="poly" title=" " alt="" coords="446,303,469,338,465,341,442,306"/>
-<area shape="rect" title=" " alt="" coords="196,459,367,485"/>
-<area shape="poly" title=" " alt="" coords="445,398,323,454,321,449,443,393"/>
-<area shape="rect" href="_can_stream_format_to_console_friendly_string_8hpp.html" title=" " alt="" coords="390,443,629,501"/>
-<area shape="poly" title=" " alt="" coords="495,394,502,427,497,428,490,396"/>
-<area shape="poly" title=" " alt="" coords="536,500,566,535,562,539,532,503"/>
+<area shape="rect" title=" " alt="" coords="497,5,681,32"/>
+<area shape="rect" title=" " alt="" coords="365,88,477,115"/>
+<area shape="poly" title=" " alt="" coords="564,35,462,84,459,79,561,30"/>
+<area shape="rect" href="_i_pv4_t_c_p_server_8hpp.html" title=" " alt="" coords="501,80,677,123"/>
+<area shape="poly" title=" " alt="" coords="592,33,592,65,586,65,586,33"/>
+<area shape="rect" title=" " alt="" coords="700,88,752,115"/>
+<area shape="poly" title=" " alt="" coords="612,30,693,78,690,82,609,35"/>
+<area shape="rect" title=" " alt="" coords="5,269,66,296"/>
+<area shape="poly" title=" " alt="" coords="501,123,489,125,394,130,270,132,208,135,151,142,103,154,69,173,55,190,46,211,38,254,33,253,40,209,50,187,66,169,101,149,150,137,208,130,270,127,394,125,489,120,500,118"/>
+<area shape="rect" title=" " alt="" coords="740,179,798,205"/>
+<area shape="poly" title=" " alt="" coords="632,121,730,169,728,174,630,126"/>
+<area shape="rect" title=" " alt="" coords="821,179,898,205"/>
+<area shape="poly" title=" " alt="" coords="662,121,811,168,817,170,815,175,809,173,661,126"/>
+<area shape="rect" title=" " alt="" coords="631,360,773,387"/>
+<area shape="poly" title=" " alt="" coords="605,122,642,182,679,260,693,304,701,344,695,345,687,305,674,262,637,185,601,125"/>
+<area shape="rect" href="_i_pv4_t_c_p_socket_8hpp.html" title=" " alt="" coords="388,171,563,213"/>
+<area shape="poly" title=" " alt="" coords="564,125,515,163,512,159,561,121"/>
+<area shape="rect" href="_managed_stack_8hpp.html" title=" " alt="" coords="80,171,261,213"/>
+<area shape="poly" title=" " alt="" coords="501,124,277,171,276,166,500,119"/>
+<area shape="rect" title=" " alt="" coords="141,269,210,296"/>
+<area shape="poly" title=" " alt="" coords="388,216,307,237,222,264,217,266,215,261,220,259,305,232,387,211"/>
+<area shape="rect" href="_i_o_connection_8hpp.html" title=" " alt="" coords="233,269,465,296"/>
+<area shape="poly" title=" " alt="" coords="448,216,381,263,377,258,445,212"/>
+<area shape="rect" href="_i_pv4_endpoint_8hpp.html" title=" " alt="" coords="489,261,665,304"/>
+<area shape="poly" title=" " alt="" coords="501,212,544,249,540,253,497,216"/>
+<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="141,443,322,485"/>
+<area shape="poly" title=" " alt="" coords="353,296,353,342,348,370,336,396,317,419,294,437,291,432,314,415,332,393,343,368,348,342,348,296"/>
+<area shape="rect" href="_memory_i_o_8hpp.html" title=" " alt="" coords="141,352,322,395"/>
+<area shape="poly" title=" " alt="" coords="334,299,272,345,269,341,330,294"/>
+<area shape="rect" title=" " alt="" coords="472,533,540,560"/>
+<area shape="poly" title=" " alt="" coords="303,483,458,529,457,534,301,488"/>
+<area shape="rect" title=" " alt="" coords="79,533,134,560"/>
+<area shape="poly" title=" " alt="" coords="201,488,140,527,137,522,198,484"/>
+<area shape="rect" title=" " alt="" coords="161,533,302,560"/>
+<area shape="poly" title=" " alt="" coords="234,486,234,517,229,517,229,486"/>
+<area shape="poly" title=" " alt="" coords="234,395,234,427,229,427,229,395"/>
+<area shape="poly" title=" " alt="" coords="607,302,674,349,671,353,604,307"/>
+<area shape="rect" href="_i_pv4_address_8hpp.html" title=" " alt="" coords="432,352,607,395"/>
+<area shape="poly" title=" " alt="" coords="566,306,543,341,539,338,561,303"/>
+<area shape="rect" title=" " alt="" coords="345,451,406,477"/>
+<area shape="poly" title=" " alt="" coords="487,398,410,445,407,440,484,393"/>
+<area shape="rect" title=" " alt="" coords="430,451,601,477"/>
+<area shape="poly" title=" " alt="" coords="521,395,519,435,514,435,516,395"/>
+<area shape="rect" href="_i_format_by_stream_8hpp.html" title=" " alt="" coords="625,443,798,485"/>
+<area shape="poly" title=" " alt="" coords="566,393,654,433,652,438,563,398"/>
+<area shape="rect" href="_i_parse_8hpp.html" title=" " alt="" coords="822,451,1012,477"/>
+<area shape="poly" title=" " alt="" coords="608,392,846,444,845,449,607,397"/>
+<area shape="poly" title=" " alt="" coords="660,488,553,530,552,525,658,483"/>
+<area shape="rect" title=" " alt="" coords="697,533,750,560"/>
+<area shape="poly" title=" " alt="" coords="717,486,722,517,717,518,712,486"/>
+<area shape="poly" title=" " alt="" coords="888,480,766,531,763,526,886,475"/>
+<area shape="rect" title=" " alt="" coords="835,533,900,560"/>
+<area shape="poly" title=" " alt="" coords="911,479,885,522,881,519,907,476"/>
+<area shape="rect" title=" " alt="" coords="924,533,1008,560"/>
+<area shape="poly" title=" " alt="" coords="927,476,953,519,948,522,922,479"/>
+<area shape="poly" title=" " alt="" coords="140,216,69,263,66,258,137,212"/>
+<area shape="poly" title=" " alt="" coords="174,214,176,253,171,254,169,214"/>
+<area shape="poly" title=" " alt="" coords="157,215,143,237,131,262,115,333,107,404,105,469,107,518,102,518,100,469,102,404,110,332,126,260,138,235,152,212"/>
 </map>
 </div>
 </div>
@@ -163,7 +182,7 @@ $(document).ready(function(){initNavTree('_i_pv4_t_c_p_server_8cpp.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a class="el" href="_i_pv4_t_c_p_server_8cpp.html">IPv4TCPServer.cpp</a></li>
-    <li class="footer">生成于 2023年 十二月 31日 星期日 15:07:41 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2024年 一月 3日 星期三 16:30:40 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

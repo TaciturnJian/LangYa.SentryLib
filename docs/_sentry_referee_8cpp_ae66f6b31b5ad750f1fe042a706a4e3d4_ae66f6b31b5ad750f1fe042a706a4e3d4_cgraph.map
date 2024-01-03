@@ -1,0 +1,13 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,76,55,102"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_referee_data_a31ce95075ab0b0c91838e2e4e86d1f94.html#a31ce95075ab0b0c91838e2e4e86d1f94" title="获取序列化结果的大小。 返回序列化结果的大小，如果值为0，那么这个东西不可以被序列化。（谁继承这个接口然后返回0啊？） 建议遇到这种情况时直接抛出异常。" alt="" coords="326,30,518,89"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="39,73,65,45,82,30,102,20,159,6,218,4,275,11,328,23,327,28,274,16,217,9,159,11,104,25,85,35,68,48,43,77"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_unique_buffer_aa4fcd6178787270ed4e8a69d28e60303.html#aa4fcd6178787270ed4e8a69d28e60303" title="Get the view of the unique memory in the buffer." alt="" coords="115,34,266,77"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="55,81,99,72,100,77,56,86"/>
+<area shape="rect" id="Node000004" href="$struct_lang_ya_1_1_sentry_lib_1_1_referee_data_a4dd4417a575671898c7999e788bcaa69.html#a4dd4417a575671898c7999e788bcaa69" title="序列化此内容，将序列化的结果写入缓冲区。 当提供的缓冲区太小时，不会执行序列化操作，返回false。" alt="" coords="115,101,266,144"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="56,91,101,101,99,106,55,97"/>
+<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_unique_buffer_a68b67fc2a71e1b22c6b97862ab97e7a7.html#a68b67fc2a71e1b22c6b97862ab97e7a7" title="Construct a new UniqueBuffer object with provided size." alt="" coords="103,192,278,234"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="47,101,104,153,142,180,139,185,101,158,43,105"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="265,99,310,87,312,92,267,104"/>
+<area shape="poly" id="edge6_Node000005_Node000005" title=" " alt="" coords="159,191,158,182,163,173,174,167,190,165,208,167,218,174,216,178,206,172,190,170,176,172,167,177,163,183,164,191"/>
+</map>

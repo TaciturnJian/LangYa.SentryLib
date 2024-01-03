@@ -1,0 +1,5 @@
+<map id="LangYa::SentryLib::MemoryView::CopyTo" name="LangYa::SentryLib::MemoryView::CopyTo">
+<area shape="rect" id="Node000001" title="将视图内的所有内存复制到目标地址，直到当前内存不足或目标被填满。" alt="" coords="204,5,352,48"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_memory_access_a70c4d8dd8097b25a0900b1799c9c65e2.html#a70c4d8dd8097b25a0900b1799c9c65e2" title="从内存读取字符，如果内存太小，将读取尽可能多的字符。" alt="" coords="5,5,156,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,29,156,29,156,24,188,24"/>
+</map>

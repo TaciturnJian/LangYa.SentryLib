@@ -1,15 +1,12 @@
 var struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address =
 [
-    [ "NumberType", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html#adb1bf8a21a32cd9b0b2775a98f1eb340", null ],
-    [ "IPv4Address", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html#a7737ef5a9d71606416b8dde047b26a07", null ],
-    [ "IPv4Address", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html#ac2586fda53b5be3b013760ff979f5552", null ],
-    [ "IPv4Address", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html#af705203d7f7d7ef0f3a08e426919951a", null ],
-    [ "FormatToConsoleFriendlyString", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html#a91be8b50de8b588eaaf841ce0c19fb07", null ],
-    [ "operator=", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html#afa3705452039821526c2103ce2795563", null ],
-    [ "operator=", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html#a94706e4db77489b6e7f21d814da76e4b", null ],
-    [ "operator[]", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html#a03c969a7394702993a74a13a3026c735", null ],
-    [ "Parse", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html#aaa534d4a6510a741ec2e3bc5c4b5e9c2", null ],
-    [ "Parse", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html#ab924692b8ded5830fa5c264ea167c47e", null ],
-    [ "ToBoostAddress", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html#a2e599098c73ff8b2407ad7a7b74dc68d", null ],
-    [ "Numbers", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html#a285b68940dddd17f4663fb79b209d711", null ]
+    [ "NumberType", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address_a79abd88f6c940ae12804733e272a8c76.html#a79abd88f6c940ae12804733e272a8c76", null ],
+    [ "IPv4Address", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address_a7737ef5a9d71606416b8dde047b26a07.html#a7737ef5a9d71606416b8dde047b26a07", null ],
+    [ "IPv4Address", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address_ac2586fda53b5be3b013760ff979f5552.html#ac2586fda53b5be3b013760ff979f5552", null ],
+    [ "IPv4Address", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address_aca88cb9fe5e9323afb6680f938842981.html#aca88cb9fe5e9323afb6680f938842981", null ],
+    [ "FormatByStream", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address_a5635c78061216645bdeef18ed9306bcf.html#a5635c78061216645bdeef18ed9306bcf", null ],
+    [ "operator boost::asio::ip::address_v4", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address_a694a076966ac69a1bde289b5b7e21e93.html#a694a076966ac69a1bde289b5b7e21e93", null ],
+    [ "Parse", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address_a2bb088160e56bbfb9ad38fa8ed3da63d.html#a2bb088160e56bbfb9ad38fa8ed3da63d", null ],
+    [ "Parse", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address_a783f50adaf405fe2924795eb1b7931a5.html#a783f50adaf405fe2924795eb1b7931a5", null ],
+    [ "Numbers", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address_a285b68940dddd17f4663fb79b209d711.html#a285b68940dddd17f4663fb79b209d711", null ]
 ];

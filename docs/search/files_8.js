@@ -1,19 +1,5 @@
 var searchData=
 [
-  ['main_2ec_0',['main.c',['../main_8c.html',1,'']]],
-  ['manager_2ecpp_1',['Manager.cpp',['../_manager_8cpp.html',1,'']]],
-  ['manager_2ehpp_2',['Manager.hpp',['../_manager_8hpp.html',1,'']]],
-  ['matchstatusmanager_2ecpp_3',['MatchStatusManager.cpp',['../_match_status_manager_8cpp.html',1,'']]],
-  ['matchstatusmanager_2ehpp_4',['MatchStatusManager.hpp',['../_match_status_manager_8hpp.html',1,'']]],
-  ['memoryaccess_2ecpp_5',['MemoryAccess.cpp',['../_memory_access_8cpp.html',1,'']]],
-  ['memoryaccess_2ehpp_6',['MemoryAccess.hpp',['../_memory_access_8hpp.html',1,'']]],
-  ['memoryio_2ecpp_7',['MemoryIO.cpp',['../_memory_i_o_8cpp.html',1,'']]],
-  ['memoryio_2ehpp_8',['MemoryIO.hpp',['../_memory_i_o_8hpp.html',1,'']]],
-  ['memoryview_2ecpp_9',['MemoryView.cpp',['../_memory_view_8cpp.html',1,'']]],
-  ['memoryview_2ehpp_10',['MemoryView.hpp',['../_memory_view_8hpp.html',1,'']]],
-  ['memoryviewtester_2ecpp_11',['MemoryViewTester.cpp',['../_memory_view_tester_8cpp.html',1,'']]],
-  ['monitor_2ecpp_12',['Monitor.cpp',['../_monitor_8cpp.html',1,'']]],
-  ['monitor_2ehpp_13',['Monitor.hpp',['../_monitor_8hpp.html',1,'']]],
-  ['monitorpackage_2ecpp_14',['MonitorPackage.cpp',['../_monitor_package_8cpp.html',1,'']]],
-  ['monitorpackage_2ehpp_15',['MonitorPackage.hpp',['../_monitor_package_8hpp.html',1,'']]]
+  ['langyaconnection_2ecpp_0',['LangYaConnection.cpp',['../_lang_ya_connection_8cpp.html',1,'']]],
+  ['langyaconnection_2ehpp_1',['LangYaConnection.hpp',['../_lang_ya_connection_8hpp.html',1,'']]]
 ];

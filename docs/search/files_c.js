@@ -1,23 +1,11 @@
 var searchData=
 [
-  ['sentrydata_2ecpp_0',['SentryData.cpp',['../_sentry_data_8cpp.html',1,'']]],
-  ['sentrydata_2ehpp_1',['SentryData.hpp',['../_sentry_data_8hpp.html',1,'']]],
-  ['sentrydevice_2ecpp_2',['SentryDevice.cpp',['../_sentry_device_8cpp.html',1,'']]],
-  ['sentrylib_2ecpp_3',['SentryLib.cpp',['../_sentry_lib_8cpp.html',1,'']]],
-  ['sentrylib_2ehpp_4',['SentryLib.hpp',['../_sentry_lib_8hpp.html',1,'']]],
-  ['sentrymind_2ecpp_5',['SentryMind.cpp',['../_sentry_mind_8cpp.html',1,'']]],
-  ['sentrymonitor_2ecpp_6',['SentryMonitor.cpp',['../_sentry_monitor_8cpp.html',1,'']]],
-  ['sentryreferee_2ecpp_7',['SentryReferee.cpp',['../_sentry_referee_8cpp.html',1,'']]],
-  ['serializablecontent_2ecpp_8',['SerializableContent.cpp',['../_serializable_content_8cpp.html',1,'']]],
-  ['serializablecontent_2ehpp_9',['SerializableContent.hpp',['../_serializable_content_8hpp.html',1,'']]],
-  ['serializablecontentcontroller_2ecpp_10',['SerializableContentController.cpp',['../_serializable_content_controller_8cpp.html',1,'']]],
-  ['serializablecontentcontroller_2ehpp_11',['SerializableContentController.hpp',['../_serializable_content_controller_8hpp.html',1,'']]],
-  ['serialnumbers_2ecpp_12',['SerialNumbers.cpp',['../_serial_numbers_8cpp.html',1,'']]],
-  ['serialnumbers_2ehpp_13',['SerialNumbers.hpp',['../_serial_numbers_8hpp.html',1,'']]],
-  ['serialport_2ecpp_14',['SerialPort.cpp',['../_serial_port_8cpp.html',1,'']]],
-  ['serialport_2ehpp_15',['SerialPort.hpp',['../_serial_port_8hpp.html',1,'']]],
-  ['serialportinfo_2ecpp_16',['SerialPortInfo.cpp',['../_serial_port_info_8cpp.html',1,'']]],
-  ['serialportinfo_2ehpp_17',['SerialPortInfo.hpp',['../_serial_port_info_8hpp.html',1,'']]],
-  ['stringformatbystream_2ecpp_18',['StringFormatByStream.cpp',['../_string_format_by_stream_8cpp.html',1,'']]],
-  ['stringformatbystream_2ehpp_19',['StringFormatByStream.hpp',['../_string_format_by_stream_8hpp.html',1,'']]]
+  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['resource_2ecpp_1',['Resource.cpp',['../_resource_8cpp.html',1,'']]],
+  ['resource_2ehpp_2',['Resource.hpp',['../_resource_8hpp.html',1,'']]],
+  ['resourceflag_2ehpp_3',['ResourceFlag.hpp',['../_resource_flag_8hpp.html',1,'']]],
+  ['robomaster_2ecpp_4',['RoboMaster.cpp',['../_robo_master_8cpp.html',1,'']]],
+  ['robomaster_2ehpp_5',['RoboMaster.hpp',['../_robo_master_8hpp.html',1,'']]],
+  ['robotdevice_2ecpp_6',['RobotDevice.cpp',['../_robot_device_8cpp.html',1,'']]],
+  ['robotdevice_2ehpp_7',['RobotDevice.hpp',['../_robot_device_8hpp.html',1,'']]]
 ];

@@ -1,0 +1,12 @@
+<map id="LangYa::SentryLib::PingPongBuffer::Exchange" name="LangYa::SentryLib::PingPongBuffer::Exchange">
+<area shape="rect" id="Node000001" title="Input the resource, try to read bytes and then write them to destination. To make sure the destinatio..." alt="" coords="5,72,182,115"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a382b2718add95dfe0916f58b30bfd50e.html#a382b2718add95dfe0916f58b30bfd50e" title="提供快速访问某字节的运算符。 注意，内存不一定有效，而且此运算符不会检查索引是否越界。" alt="" coords="232,5,392,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,69,224,50,226,56,166,74"/>
+<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a06db61b6c19ed6a77e3bc7882a5c8658.html#a06db61b6c19ed6a77e3bc7882a5c8658" title="从目标读取内存，直到当前内存被填满或目标内存不足。" alt="" coords="230,72,394,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,91,214,91,214,96,182,96"/>
+<area shape="rect" id="Node000005" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a4d6f24e486ceeee0feed63560d68eff2.html#a4d6f24e486ceeee0feed63560d68eff2" title="从目标复制内存直到填满当前视图。" alt="" coords="230,139,394,181"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="166,113,226,131,224,136,165,118"/>
+<area shape="rect" id="Node000004" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a0b0dae0e12aeccb9fc1c4d9dd074e9cf.html#a0b0dae0e12aeccb9fc1c4d9dd074e9cf" title="检查此视图是否有效，即不为空指针或长度大于 0 。" alt="" coords="442,105,585,148"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="395,104,427,110,426,115,394,110"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="394,144,426,138,427,144,395,149"/>
+</map>

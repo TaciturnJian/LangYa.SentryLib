@@ -1,0 +1,19 @@
+<map id="LangYa::SentryLib::ManagedStack&lt; TItem &gt;" name="LangYa::SentryLib::ManagedStack&lt; TItem &gt;">
+<area shape="rect" id="Node000001" title="代表一个堆栈，管理一组对象的生命周期，在对象销毁后腾出空间供新对象使用。" alt="" coords="228,565,393,608"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="221,443,400,501"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="313,517,313,565,308,565,308,517"/>
+<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_sentry_lib_1_1_managed_stack_1_1_item_info.html" title=" " alt="" coords="174,320,327,379"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="274,392,299,441,294,443,269,394"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,197,144,240"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="116,247,213,317,210,322,113,252"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="178,96,318,123"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="164,125,138,135,115,149,95,172,83,198,78,196,91,169,111,145,136,130,162,120"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="168,205,333,232"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="246,139,245,147,245,173,250,204,245,205,240,174,240,147,241,138"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="290,5,328,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="294,47,259,97,254,94,289,44"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="314,147,427,173"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="323,45,367,145,363,147,318,47"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="253,247,253,320,248,320,248,247"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="375,189,377,234,375,292,367,357,350,420,337,444,332,441,345,418,362,356,370,292,372,234,370,189"/>
+</map>

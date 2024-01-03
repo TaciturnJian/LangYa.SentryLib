@@ -1,29 +1,3 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json_string.html" title="表示此类可以格式化为 json 字符串并输出到流中。" alt="" coords="5,272,208,315"/>
-<area shape="rect" id="Node000001" href="$struct_lang_ya_1_1_sentry_lib_1_1_position1.html" title=" " alt="" coords="291,5,428,48"/>
-<area shape="poly" id="edge5_Node000000_Node000001" title=" " alt="" coords="119,257,139,211,169,158,207,104,254,58,290,39,292,44,257,62,211,108,173,161,144,214,124,259"/>
-<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector3.html" title=" " alt="" coords="272,72,447,115"/>
-<area shape="poly" id="edge6_Node000000_Node000002" title=" " alt="" coords="128,258,180,190,215,155,254,124,276,113,278,118,257,129,219,159,184,194,132,261"/>
-<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="291,139,428,181"/>
-<area shape="poly" id="edge7_Node000000_Node000003" title=" " alt="" coords="145,260,196,225,254,191,290,176,292,181,257,196,199,229,148,265"/>
-<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="290,205,429,248"/>
-<area shape="poly" id="edge8_Node000000_Node000004" title=" " alt="" coords="204,265,289,242,291,247,205,270"/>
-<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="291,272,428,315"/>
-<area shape="poly" id="edge9_Node000000_Node000005" title=" " alt="" coords="223,291,291,291,291,296,223,296"/>
-<area shape="rect" id="Node000006" href="$class_lang_ya_1_1_sentry_lib_1_1_armor_plate.html" title="ArmorPlate 装甲板信息，储存装甲板的位置、法向量、颜色、ID。" alt="" coords="291,339,428,381"/>
-<area shape="poly" id="edge10_Node000000_Node000006" title=" " alt="" coords="206,317,291,339,290,345,204,322"/>
-<area shape="rect" id="Node000007" href="$struct_lang_ya_1_1_sentry_lib_1_1_position1.html" title="使用一个元素 X 代表坐标。" alt="" coords="282,405,437,448"/>
-<area shape="poly" id="edge11_Node000000_Node000007" title=" " alt="" coords="148,322,199,357,257,391,284,402,282,407,254,396,196,362,145,326"/>
-<area shape="rect" id="Node000012" href="$struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector3.html" title=" " alt="" coords="256,472,463,515"/>
-<area shape="poly" id="edge16_Node000000_Node000012" title=" " alt="" coords="132,326,184,393,219,428,257,458,278,469,276,474,254,462,215,432,180,396,128,329"/>
-<area shape="rect" id="Node000013" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="256,539,463,581"/>
-<area shape="poly" id="edge17_Node000000_Node000013" title=" " alt="" coords="124,328,144,373,173,426,211,479,257,525,275,536,273,540,254,529,207,482,169,429,139,375,119,330"/>
-<area shape="rect" id="Node000008" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title=" " alt="" coords="520,372,656,415"/>
-<area shape="poly" id="edge12_Node000007_Node000008" title=" " alt="" coords="451,411,519,401,520,406,452,416"/>
-<area shape="rect" id="Node000009" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title="使用两个元素 X Y 代表二维坐标。" alt="" coords="511,439,665,481"/>
-<area shape="poly" id="edge13_Node000007_Node000009" title=" " alt="" coords="452,437,511,446,510,451,451,443"/>
-<area shape="rect" id="Node000010" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title=" " alt="" coords="722,405,859,448"/>
-<area shape="poly" id="edge14_Node000009_Node000010" title=" " alt="" coords="680,442,721,435,722,441,681,447"/>
-<area shape="rect" id="Node000011" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title="使用两个元素 X Y 代表三维坐标。" alt="" coords="713,472,868,515"/>
-<area shape="poly" id="edge15_Node000009_Node000011" title=" " alt="" coords="681,473,714,478,713,483,680,478"/>
+<area shape="rect" id="Node000000" href="$struct_console_key_info.html" title=" " alt="" coords="5,5,117,32"/>
 </map>

@@ -1,52 +1,73 @@
 #pragma once
 
+#include <cstdint>
+
 #include <boost/asio/ip/address.hpp>
 
-#include <LangYa/SentryLib/StreamFormat/CanStreamFormatToConsoleFriendlyString.hpp>
+#include <LangYa/SentryLib/IFormatByStream.hpp>
+#include <LangYa/SentryLib/IParse.hpp>
 
 namespace LangYa::SentryLib
 {
-	/// @brief 代表 IPv4 地址。
-	///	@details 本质上是一个 unsigned char[4] ，但是为了方便使用，所以封装了一下。
-	///	顺序是 A.B.C.D，不包含端口，如果需要端口请使用 endpoint 。
+	/// @brief 代表 IPv4 地址，封装了 std::uint8_t[4]。
+	///	@details IPv4 的地址顺序是 A.B.C.D，不包含端口，如果需要包含端口请使用 endpoint 。
 	///	@warning 解析字符串的时候小心点，这玩意儿的问题好多好多，而且我没想过去修。
-	struct IPv4Address final : CanStreamFormatToConsoleFriendlyString
+	struct IPv4Address final : IFormatByStream, IParseStream, IParseStringView
 	{
 		/// @brief IPv4 地址中每个位置的数字类型。
-		///	@details 因为每个位置的范围是 [0, 255] 的整数，所以采用的是 unsigned char。
-		using NumberType = unsigned char;
+		///	@details 因为每个位置的范围是 [0, 255] 的整数，所以采用的是 std::uint8_t。
+		using NumberType = std::uint8_t;
 
 		/// @brief IPv4 地址中每个位置的数字。
 		NumberType Numbers[4]{0};
 
+#pragma region Constructors
+
 		/// @brief 默认构造为 0.0.0.0 。
+		///	@details 内部数组初始化为 0 0 0 0 。
 		IPv4Address();
 
 		/// @brief 初始化 IPv4 地址为 a.b.c.d 。
+		///	@details 分别存储 a,b,c,d 到内部数组 Numbers 中。
 		IPv4Address(NumberType a, NumberType b, NumberType c, NumberType d);
 
-		/// 使用简单的方式获取里面的第N个数字。
-		///	@details [0].[1].[2].[3] 对应 A.B.C.D 。
-		///	@exception std::out_of_range 如果 index 不在 [0, 3] 之间，将会抛出此异常。
-		NumberType& operator[](NumberType index);
+		/// @brief 从字符串中解析 IPv4 地址。
+		///	@details 构建一个空的 IPv4 地址，然后再调用 Parse(std::string_view) 。
+		///	只图一个方便，可能导致性能损失。
+		explicit IPv4Address(std::string_view addressString);
 
-		/// @brief 从输入流中读取连续四个 unsigned char 作为 IPv4 地址。
+#pragma endregion
+
+#pragma region ParseFromString
+
+		/// @brief 从输入流中读取连续四个 std::uint8_t 作为 IPv4 地址。
 		/// @details 找到四个无符号字符整数返回 true ，否则，将会返回 false 。
-		///	例如 "192l168?137:1" 和 "192.168.137.1" 都会被解析成 unsigned char[4]{192, 168, 137, 1} 。
+		///	例如 "192l168?137:1" 和 "192.168.137.1" 都会被解析成 std::uint8_t[4]{192, 168, 137, 1} 。
 		///	@warning 因为作者实际上不会 C++，对 std::istream 完全不了解，所以函数在不正确的参数输入下也可能解析出东西。
 		/// @TODO 谁能帮我修一下这个bug QAQ
-		bool Parse(std::istream& stream);
+		bool Parse(std::istream& stream, int option = 0) override;
 
-		/// @brief 解析字符串填充此地址，内部调用如下函数：
-		///	@code LangYa::SentryLib::IPv4Address::Parse(std::istream&) @endcode
-		bool Parse(std::string_view address);
+		/// @brief 利用 std::istringstream 转化为 istream 后调用 Parse(std::istream) 。
+		bool Parse(std::string_view view, int option = 0) override;
+
+#pragma endregion
+
+#pragma region FormatToString
 
 		/// @brief 转换为字符串格式的 IPv4 地址。
 		///	@details 格式为 [0].[1].[2].[3] 。
-		std::ostream& FormatToConsoleFriendlyString(std::ostream& stream) const override;
+		std::ostream& FormatByStream(std::ostream& stream, int option = 0) const override;
 
-		/// @brief 转换为 boost 的地址。
-		///	@details 使用 boost::asio 的 make_address_v4() 函数
-		[[nodiscard]] boost::asio::ip::address_v4 ToBoostAddress() const;
+#pragma endregion
+
+#pragma region Converter
+
+		/// @brief 显示转换为 boost::asio::ip::address_v4 。
+		///	@details 先转换为字符串，然后调用 boost::asio::ip::make_address_v4 。
+		///	有性能损失，如果需要，请自行实现更高效的函数。
+		explicit operator boost::asio::ip::address_v4() const;
+
+#pragma endregion
+
 	};
 }

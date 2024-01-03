@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LangYa.SentryLib: LangYa::SentryLib::MemoryView::IsValid</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">LangYa.SentryLib<span id="projectnumber">&#160;1.0.3</span>
+   </div>
+   <div id="projectbrief">A robot lib by LangYa.Sango mostly for softwares on sentry</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a0b0dae0e12aeccb9fc1c4d9dd074e9cf.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="contents">
+<a id="a0b0dae0e12aeccb9fc1c4d9dd074e9cf" name="a0b0dae0e12aeccb9fc1c4d9dd074e9cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b0dae0e12aeccb9fc1c4d9dd074e9cf">&#9670;&#160;</a></span>IsValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LangYa::SentryLib::MemoryView::IsValid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>检查此视图是否有效，即不为空指针或长度大于 0 。 </p>
+<dl class="section warning"><dt>警告</dt><dd>此检查不能保证对应的内存真正有效，如野指针构造的内容视图仅从此类的角度出发无法判断是否有效。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>“指针不指向一个空内容” 是否成立。 </dd></dl>
+
+<p class="reference">引用了 <a class="el" href="#l00034">Head</a> , 以及 <a class="el" href="#l00038">Size</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="#l00067">CopyTo()</a>, <a class="el" href="#l00056">CopyTo()</a>, <a class="el" href="#l00018">LangYa::SentryLib::MemoryAccess::IsConnected()</a>, <a class="el" href="#l00045">ReadFrom()</a>, <a class="el" href="#l00034">ReadFrom()</a> , 以及 <a class="el" href="#l00077">SetValue()</a>.</p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a0b0dae0e12aeccb9fc1c4d9dd074e9cf_a0b0dae0e12aeccb9fc1c4d9dd074e9cf_icgraph.png" border="0" usemap="#astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a0b0dae0e12aeccb9fc1c4d9dd074e9cf_a0b0dae0e12aeccb9fc1c4d9dd074e9cf_icgraph" alt=""/></div>
+<map name="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a0b0dae0e12aeccb9fc1c4d9dd074e9cf_a0b0dae0e12aeccb9fc1c4d9dd074e9cf_icgraph" id="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a0b0dae0e12aeccb9fc1c4d9dd074e9cf_a0b0dae0e12aeccb9fc1c4d9dd074e9cf_icgraph">
+<area shape="rect" title="检查此视图是否有效，即不为空指针或长度大于 0 。" alt="" coords="497,172,640,215"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a2d20011eaf93c38dc74d197fd284b308.html#a2d20011eaf93c38dc74d197fd284b308" title="将视图内的所有内存复制到目标地址，直到当前内存不足或目标被填满。" alt="" coords="279,5,427,48"/>
+<area shape="poly" title=" " alt="" coords="543,161,502,110,476,85,448,62,426,50,429,46,450,58,479,81,506,107,547,158"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a37636a8019c52cdd8d5dad2a1b654fd4.html#a37636a8019c52cdd8d5dad2a1b654fd4" title="将视图内所有的内存复制到目标地址。" alt="" coords="279,72,427,115"/>
+<area shape="poly" title=" " alt="" coords="518,166,448,129,420,118,422,113,450,124,520,161"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_memory_access_a28d91fd0eac2ab6a5b69104b9c6456fb.html#a28d91fd0eac2ab6a5b69104b9c6456fb" title="指示内存是否有效。" alt="" coords="257,139,449,181"/>
+<area shape="poly" title=" " alt="" coords="481,183,449,178,450,172,482,177"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a06db61b6c19ed6a77e3bc7882a5c8658.html#a06db61b6c19ed6a77e3bc7882a5c8658" title="从目标读取内存，直到当前内存被填满或目标内存不足。" alt="" coords="271,272,435,315"/>
+<area shape="poly" title=" " alt="" coords="520,225,450,262,422,274,420,269,448,258,518,221"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a4d6f24e486ceeee0feed63560d68eff2.html#a4d6f24e486ceeee0feed63560d68eff2" title="从目标复制内存直到填满当前视图。" alt="" coords="271,205,435,248"/>
+<area shape="poly" title=" " alt="" coords="482,209,436,217,435,211,481,204"/>
+<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_aad786c08d4874c4b0fd76dadabb23f05.html#aad786c08d4874c4b0fd76dadabb23f05" title="设置整块内存的值。 本质是调用 memset 函数，这个函数在使用过程中很奇怪，Windows 下不用引用头文件，但是 Linux 下必须引用头文件。 索性包装了此内容。" alt="" coords="274,339,432,381"/>
+<area shape="poly" title=" " alt="" coords="547,229,506,280,479,306,450,329,430,340,427,336,448,324,476,302,502,276,543,226"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_memory_access_a70c4d8dd8097b25a0900b1799c9c65e2.html#a70c4d8dd8097b25a0900b1799c9c65e2" title="从内存读取字符，如果内存太小，将读取尽可能多的字符。" alt="" coords="32,5,182,48"/>
+<area shape="poly" title=" " alt="" coords="263,29,183,29,183,24,263,24"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer_aa81263f72efc7b80c6430b5300de851b.html#aa81263f72efc7b80c6430b5300de851b" title="Input the resource, try to read bytes and then write them to destination. To make sure the destinatio..." alt="" coords="19,131,195,173"/>
+<area shape="poly" title=" " alt="" coords="260,266,255,262,238,243,230,224,223,205,207,187,189,176,192,172,210,183,227,202,235,222,243,240,258,258,264,262"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer_a75430d1719685502a598b1789a213425.html#a75430d1719685502a598b1789a213425" title="Assume the resource has been inputted after" alt="" coords="5,197,209,256"/>
+<area shape="poly" title=" " alt="" coords="256,270,208,257,210,252,258,265"/>
+<area shape="rect" href="_test_app_8cpp_a3c04138a5bfe5d72780bb7e82a18e627.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="82,280,132,307"/>
+<area shape="poly" title=" " alt="" coords="255,296,132,296,132,291,255,291"/>
+<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_memory_access_a5e2792d4ce52eae89f9e32226bf58835.html#a5e2792d4ce52eae89f9e32226bf58835" title="向内存填充字符，如果内存不足，将舍弃多余的字符。" alt="" coords="31,331,183,373"/>
+<area shape="poly" title=" " alt="" coords="256,319,184,337,182,331,255,314"/>
+<area shape="poly" title=" " alt="" coords="265,203,179,177,181,171,266,198"/>
+<area shape="poly" title=" " alt="" coords="255,229,209,229,209,224,255,224"/>
+<area shape="poly" title=" " alt="" coords="264,255,209,271,133,290,132,285,208,265,263,250"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_lang_ya.html">LangYa</a></li><li class="navelem"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">SentryLib</a></li><li class="navelem"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a></li>
+    <li class="footer">生成于 2024年 一月 3日 星期三 16:30:41 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,9 +1,20 @@
 <map id="Headers/LangYa/SentryLib/Network/IPv4Address.hpp" name="Headers/LangYa/SentryLib/Network/IPv4Address.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="116,5,292,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,112,176,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,50,118,104,115,100,178,46"/>
-<area shape="rect" id="Node000003" href="$_can_stream_format_to_console_friendly_string_8hpp.html" title=" " alt="" coords="199,96,438,155"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="230,46,275,84,271,88,226,50"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="284,203,353,229"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="321,155,321,187,316,187,316,155"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="185,5,361,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,104,66,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,51,79,98,76,100,74,95,77,94,208,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="90,104,261,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="252,50,202,95,199,91,248,46"/>
+<area shape="rect" id="Node000004" href="$_i_format_by_stream_8hpp.html" title=" " alt="" coords="285,96,458,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="297,46,339,83,335,87,294,50"/>
+<area shape="rect" id="Node000007" href="$_i_parse_8hpp.html" title=" " alt="" coords="482,104,672,131"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="345,46,519,97,518,102,343,51"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="337,187,406,213"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="374,139,374,171,369,171,369,139"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="449,187,502,213"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="400,137,449,175,446,179,397,141"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="563,133,504,179,501,175,559,129"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="535,187,600,213"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="578,131,573,172,568,171,573,131"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="624,187,708,213"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="593,129,643,174,639,178,589,133"/>
 </map>

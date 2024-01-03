@@ -1,0 +1,5 @@
+<map id="LangYa::SentryLib::RefereeData::Serialize" name="LangYa::SentryLib::RefereeData::Serialize">
+<area shape="rect" id="Node000001" title="序列化此内容，将序列化的结果写入缓冲区。 当提供的缓冲区太小时，不会执行序列化操作，返回false。" alt="" coords="5,13,156,56"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_referee_data_a31ce95075ab0b0c91838e2e4e86d1f94.html#a31ce95075ab0b0c91838e2e4e86d1f94" title="获取序列化结果的大小。 返回序列化结果的大小，如果值为0，那么这个东西不可以被序列化。（谁继承这个接口然后返回0啊？） 建议遇到这种情况时直接抛出异常。" alt="" coords="204,5,396,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,32,188,32,188,37,156,37"/>
+</map>

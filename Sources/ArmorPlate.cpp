@@ -11,7 +11,7 @@ namespace LangYa::SentryLib
 	{
 	}
 
-	std::ostream& ArmorPlate::FormatToJsonString(std::ostream& stream) const
+	std::ostream& ArmorPlate::FormatByStream(std::ostream& stream, int option) const
 	{
 		return stream << "{"
 			<< R"("ID":)" << static_cast<int>(ID) << ','

@@ -1,4 +1,3 @@
-#include <sstream>
 #include <istream>
 
 #include <spdlog/spdlog.h>
@@ -16,17 +15,18 @@ namespace LangYa::SentryLib
 	{
 	}
 
-	IPv4Address::NumberType&
 	IPv4Address
-	::operator[](const NumberType index)
+	::IPv4Address(const std::string_view addressString)
 	{
-		if (index >= 4)  throw std::out_of_range("index out of range"); // TODO 指定异常消息
-		return Numbers[index];
+		if (!Parse(addressString))
+		{
+			throw std::invalid_argument("IPv4Address> Cannot parse address string!"); // TODO 指定异常消息
+		}
 	}
 
 	bool
 	IPv4Address
-	::Parse(std::istream& stream)
+	::Parse(std::istream& stream, int option)
 	{
 		try
 		{
@@ -53,15 +53,15 @@ namespace LangYa::SentryLib
 
 	bool
 	IPv4Address
-	::Parse(std::string_view address)
+	::Parse(const std::string_view view, const int option)
 	{
-		std::stringstream stream{address.data()};
-		return Parse(stream);
+		std::istringstream stream{std::string{view}};
+		return Parse(stream, option);
 	}
 
 	std::ostream&
 	IPv4Address
-	::FormatToConsoleFriendlyString(std::ostream& stream) const
+	::FormatByStream(std::ostream& stream, int option) const
 	{
 		return stream
 			<< static_cast<int>(Numbers[0]) << '.'
@@ -70,12 +70,12 @@ namespace LangYa::SentryLib
 			<< static_cast<int>(Numbers[3]);
 	}
 
-	boost::asio::ip::address_v4
 	IPv4Address
-	::ToBoostAddress() const
+	::operator
+	boost::asio::ip::address_v4() const
 	{
 		return boost::asio::ip::make_address_v4(
-			SentryLib::FormatToConsoleFriendlyString(
+			FormatToString(
 				*this
 			)
 		);

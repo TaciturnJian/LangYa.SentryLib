@@ -1,0 +1,5 @@
+<map id="LangYa::SentryLib::SentryData::SerializationResult::operator()" name="LangYa::SentryLib::SentryData::SerializationResult::operator()">
+<area shape="rect" id="Node000001" title=" " alt="" coords="198,5,400,64"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_sentry_data_af1ab01d5c9b616ec5dad448f6a53f027.html#af1ab01d5c9b616ec5dad448f6a53f027" title="序列化此内容，将序列化的结果写入缓冲区。 当提供的缓冲区太小时，不会执行序列化操作，返回false。" alt="" coords="5,13,150,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,37,150,37,150,32,182,32"/>
+</map>

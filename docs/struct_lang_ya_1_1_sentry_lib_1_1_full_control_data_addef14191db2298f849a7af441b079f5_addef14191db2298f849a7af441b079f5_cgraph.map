@@ -1,0 +1,5 @@
+<map id="LangYa::SentryLib::FullControlData::Deserialize" name="LangYa::SentryLib::FullControlData::Deserialize">
+<area shape="rect" id="Node000001" title="从缓冲区中反序列化资源。" alt="" coords="5,13,188,56"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_full_control_data_a3e5de50aad2bb818e531e477eb9eeb0c.html#a3e5de50aad2bb818e531e477eb9eeb0c" title="获取此内容的反序列化资源大小，大多数时候就是此内容的内存视图大小。" alt="" coords="236,5,460,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,32,220,32,220,37,188,37"/>
+</map>

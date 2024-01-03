@@ -1,0 +1,14 @@
+<map id="LangYa::SentryLib::UniqueBuffer::UniqueBuffer" name="LangYa::SentryLib::UniqueBuffer::UniqueBuffer">
+<area shape="rect" id="Node000001" title="Construct a new UniqueBuffer object with provided size." alt="" coords="308,73,483,116"/>
+<area shape="poly" id="edge6_Node000001_Node000001" title=" " alt="" coords="430,60,417,54,396,52,376,54,363,59,358,65,360,72,355,73,353,63,360,54,374,49,396,47,419,49,432,55"/>
+<area shape="rect" id="Node000002" href="$_sentry_device_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="157,5,206,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="323,70,259,47,206,29,207,24,261,41,325,65"/>
+<area shape="rect" id="Node000003" href="$_test_app_8cpp_a3c04138a5bfe5d72780bb7e82a18e627.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="157,56,206,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="292,85,206,75,207,70,293,80"/>
+<area shape="rect" id="Node000004" href="$_example_app_8cpp_aeb10b227c568daca42c814a335153f2d.html#aeb10b227c568daca42c814a335153f2d" title=" " alt="" coords="140,107,223,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="293,109,223,118,222,113,292,104"/>
+<area shape="rect" id="Node000006" href="$class_lang_ya_1_1_sentry_lib_1_1_triple_buffer_ad38cc7de99c50b07182a090ae2a75f07.html#ad38cc7de99c50b07182a090ae2a75f07" title="Construct a TripleBuffer with the given size." alt="" coords="103,157,260,200"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="326,125,239,159,237,154,324,120"/>
+<area shape="rect" id="Node000005" href="$_example_app_8cpp_ac762d48b889bd832ec0d42abcbc50624.html#ac762d48b889bd832ec0d42abcbc50624" title=" " alt="" coords="5,107,55,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="125,123,55,123,55,117,125,117"/>
+</map>

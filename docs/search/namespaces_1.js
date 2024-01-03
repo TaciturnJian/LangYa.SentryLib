@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['usememoryview_0',['UseMemoryView',['../namespace_use_memory_view.html',1,'']]]
+  ['sango_0',['Sango',['../namespace_sango.html',1,'']]]
 ];

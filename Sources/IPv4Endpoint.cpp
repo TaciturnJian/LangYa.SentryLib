@@ -14,42 +14,35 @@ namespace LangYa::SentryLib
 	{
 	}
 
-	IPv4Endpoint::IPv4Endpoint(const std::string_view address, const PortType port):
+	IPv4Endpoint
+	::IPv4Endpoint(const std::string_view address, const PortType port):
+		Address(address),
 		Port(port)
 	{
-		Address.Parse(address);
 	}
 
 	IPv4Endpoint
 	::IPv4Endpoint(const std::string_view endpoint)
 	{
-		*this = endpoint;
-	}
-
-	IPv4Endpoint&
-	IPv4Endpoint
-	::operator=(const std::string_view endpoint)
-	{
 		if (!Parse(endpoint))
 		{
 			throw std::exception(); // TODO 指定异常消息
 		}
-
-		return *this;
 	}
 
-	IPv4Endpoint&
 	IPv4Endpoint
-	::operator=(const boost::asio::ip::tcp::endpoint& endpoint)
+	::IPv4Endpoint(const boost::asio::ip::tcp::endpoint& endpoint)
 	{
-		Address.Parse(endpoint.address().to_string());
+		if (!Address.Parse(endpoint.address().to_string()))
+		{
+			throw std::exception(); // TODO 指定异常消息
+		}
 		Port = endpoint.port();
-		return *this;
 	}
 
 	bool
 	IPv4Endpoint
-	::Parse(std::istream& stream)
+	::Parse(std::istream& stream, int option)
 	{
 		if (!Address.Parse(stream)) return false;
 
@@ -72,23 +65,23 @@ namespace LangYa::SentryLib
 
 	bool
 	IPv4Endpoint
-	::Parse(std::string_view endpoint)
+	::Parse(const std::string_view view, int option)
 	{
-		std::stringstream stream{endpoint.data()};
+		std::istringstream stream{std::string{view}};
 		return Parse(stream);
-	}
-
-	boost::asio::ip::tcp::endpoint
-	IPv4Endpoint
-	::ToBoostTCPEndPoint() const
-	{
-		return {Address.ToBoostAddress(), Port};
 	}
 
 	std::ostream&
 	IPv4Endpoint
-	::FormatToConsoleFriendlyString(std::ostream& stream) const
+	::FormatByStream(std::ostream& stream, int option) const
 	{
-		return Address.FormatToConsoleFriendlyString(stream) << ':' << Port;
+		return Address.FormatByStream(stream) << ':' << Port;
+	}
+
+	IPv4Endpoint
+	::operator
+	boost::asio::ip::tcp::endpoint() const
+	{
+		return {static_cast<boost::asio::ip::address_v4>(Address), Port};
 	}
 }

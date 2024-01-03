@@ -1,14 +1,14 @@
 var indexSectionsWithContent =
 {
-  0: "_abcdefghijklmnoprstuvwxyz~代连",
-  1: "acdefilmnprstuv",
-  2: "lu",
-  3: "acdefijlmnprstuv",
+  0: "_abcdefghijklmnoprstuvwxyz~代内常连",
+  1: "acdefilmnprstuvw",
+  2: "lsu",
+  3: "acdefhijlmnprstuv",
   4: "abcdefghijlmnoprstuvw~",
-  5: "abcdefghijlmnoprstvxyz",
+  5: "abcdefghijklmnoprstvxyz",
   6: "abcdefhijkmnprstv",
   7: "acmru",
-  8: "abceghimnorswy",
+  8: "abceghilmnorswy",
   9: "o",
   10: "_acdhps",
   11: "s代",
@@ -35,7 +35,7 @@ var indexSectionNames =
 var indexSectionLabels =
 {
   0: "全部",
-  1: "类",
+  1: "结构体",
   2: "命名空间",
   3: "文件",
   4: "函数",

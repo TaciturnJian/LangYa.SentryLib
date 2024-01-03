@@ -2,6 +2,6 @@
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,97,212,140"/>
 <area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector3.html" title=" " alt="" coords="21,204,196,247"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="111,156,111,203,106,203,106,156"/>
-<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json_string.html" title="表示此类可以格式化为 json 字符串并输出到流中。" alt="" coords="7,5,210,48"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_i_format_by_stream.html" title="代表一种可以通过流格式化的对象。" alt="" coords="40,5,177,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,64,111,97,106,97,106,64"/>
 </map>

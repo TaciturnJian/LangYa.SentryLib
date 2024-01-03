@@ -2,11 +2,12 @@ var searchData=
 [
   ['udpreceiver_2ecpp_0',['UDPReceiver.cpp',['../_u_d_p_receiver_8cpp.html',1,'']]],
   ['udptester_2ecpp_1',['UDPTester.cpp',['../_u_d_p_tester_8cpp.html',1,'']]],
-  ['uniquebuffer_2',['uniquebuffer',['../class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html',1,'LangYa::SentryLib::UniqueBuffer'],['../class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html#aceca3e6418033a341810626d81f5e4f5',1,'LangYa::SentryLib::UniqueBuffer::UniqueBuffer()'],['../class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html#a68b67fc2a71e1b22c6b97862ab97e7a7',1,'LangYa::SentryLib::UniqueBuffer::UniqueBuffer(const MemoryView::SizeType &amp;size)'],['../class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html#a252ecedc19f4bd6db1771423ad5bb378',1,'LangYa::SentryLib::UniqueBuffer::UniqueBuffer(const UniqueBuffer &amp;)=delete'],['../class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html#a59a52cd61a2d67e76054881c49b02389',1,'LangYa::SentryLib::UniqueBuffer::UniqueBuffer(UniqueBuffer &amp;&amp;other) noexcept']]],
+  ['uniquebuffer_2',['uniquebuffer',['../class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html',1,'LangYa::SentryLib::UniqueBuffer'],['../class_lang_ya_1_1_sentry_lib_1_1_unique_buffer_aceca3e6418033a341810626d81f5e4f5.html#aceca3e6418033a341810626d81f5e4f5',1,'LangYa::SentryLib::UniqueBuffer::UniqueBuffer()'],['../class_lang_ya_1_1_sentry_lib_1_1_unique_buffer_a68b67fc2a71e1b22c6b97862ab97e7a7.html#a68b67fc2a71e1b22c6b97862ab97e7a7',1,'LangYa::SentryLib::UniqueBuffer::UniqueBuffer(const MemoryView::SizeType &amp;size)'],['../class_lang_ya_1_1_sentry_lib_1_1_unique_buffer_a252ecedc19f4bd6db1771423ad5bb378.html#a252ecedc19f4bd6db1771423ad5bb378',1,'LangYa::SentryLib::UniqueBuffer::UniqueBuffer(const UniqueBuffer &amp;)=delete'],['../class_lang_ya_1_1_sentry_lib_1_1_unique_buffer_a59a52cd61a2d67e76054881c49b02389.html#a59a52cd61a2d67e76054881c49b02389',1,'LangYa::SentryLib::UniqueBuffer::UniqueBuffer(UniqueBuffer &amp;&amp;other) noexcept']]],
   ['uniquebuffer_2ecpp_3',['UniqueBuffer.cpp',['../_unique_buffer_8cpp.html',1,'']]],
   ['uniquebuffer_2ehpp_4',['UniqueBuffer.hpp',['../_unique_buffer_8hpp.html',1,'']]],
-  ['unitid_5',['UnitID',['../namespace_lang_ya_1_1_sentry_lib.html#a01fa38254edec1ace0c91eeeabbc84ea',1,'LangYa::SentryLib']]],
-  ['unitteam_6',['UnitTeam',['../namespace_lang_ya_1_1_sentry_lib.html#af7259725b9fc06bee926bd34a470aa18',1,'LangYa::SentryLib']]],
-  ['unittype_7',['UnitType',['../namespace_lang_ya_1_1_sentry_lib.html#a0016e34c68ca1078acf541153a27177b',1,'LangYa::SentryLib']]],
-  ['usememoryview_8',['UseMemoryView',['../namespace_use_memory_view.html',1,'']]]
+  ['unitid_5',['UnitID',['../namespace_lang_ya_1_1_sentry_lib_a01fa38254edec1ace0c91eeeabbc84ea.html#a01fa38254edec1ace0c91eeeabbc84ea',1,'LangYa::SentryLib']]],
+  ['unitteam_6',['UnitTeam',['../namespace_lang_ya_1_1_sentry_lib_af7259725b9fc06bee926bd34a470aa18.html#af7259725b9fc06bee926bd34a470aa18',1,'LangYa::SentryLib']]],
+  ['unittype_7',['UnitType',['../namespace_lang_ya_1_1_sentry_lib_a0016e34c68ca1078acf541153a27177b.html#a0016e34c68ca1078acf541153a27177b',1,'LangYa::SentryLib']]],
+  ['usememoryview_8',['UseMemoryView',['../namespace_use_memory_view.html',1,'']]],
+  ['userinterfaceexp_2ecpp_9',['UserInterfaceExp.cpp',['../_user_interface_exp_8cpp.html',1,'']]]
 ];

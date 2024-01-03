@@ -1,6 +1,7 @@
 #include <spdlog/spdlog.h>
 
 #include <LangYa/SentryLib/Network/IPv4TCPServer.hpp>
+#include <utility>
 
 namespace LangYa::SentryLib
 {
@@ -9,26 +10,21 @@ namespace LangYa::SentryLib
 	{
 		// 关闭线程处理
 		CanAcceptNextClient = false;
-		ReleaseSignal = true;
-		auto local_endpoint = FormatToConsoleFriendlyString(LocalEndPoint);
+		ReleaseSignal->store(true);
+		auto local_endpoint = FormatToString(LocalEndPoint);
 		spdlog::info("IPv4Server> Shutting down server at ({})", local_endpoint);
 
 		// 释放资源
-		ReleaseSignal = true;
-		for (const auto& [IsTerminated, _] : ClientThreadInfos)
-		{
-			IsTerminated->store(false); // 阻止进一步线程分配
-		}
-
-		SharedAcceptorPtr->close();
+		Acceptor.cancel();
+		Acceptor.close();
 	}
 
 	void
 	IPv4TCPServer
 	::AcceptClient(
-		const ClientThreadInfo& threadInfo, 
-		const ClientHandler& handler,
-	    const std::atomic_bool& interruptSignal
+		const ThreadInfoType& threadInfo, 
+		ClientHandler handler,
+	    std::shared_ptr<std::atomic_bool> interruptSignal
 	)
 	{
 		boost::asio::io_context client_io_context{};
@@ -37,7 +33,7 @@ namespace LangYa::SentryLib
 		{
 			client_socket = std::make_shared<IPv4TCPSocket>(
 				std::make_shared<boost::asio::ip::tcp::socket>(
-					SharedAcceptorPtr->accept(client_io_context)
+					Acceptor.accept(client_io_context)
 				)
 			);
 		}
@@ -61,7 +57,7 @@ namespace LangYa::SentryLib
 			spdlog::info("IPv4Server> Build client connection from ({}), calling client handler", stream.str());
 			try
 			{
-				handler(*client_socket, interruptSignal);
+				handler(*client_socket, std::move(interruptSignal));
 			}
 			catch (const std::exception& ex)
 			{
@@ -74,73 +70,33 @@ namespace LangYa::SentryLib
 		}
 
 		client_socket->Close();
-		threadInfo.IsTerminated->store(true);
-	}
-
-	IPv4TCPServer
-	::ClientThreadInfo& 
-	IPv4TCPServer::GetAvailableInfo()
-	{
-		for (auto& info : ClientThreadInfos)
-		{
-			if (info.IsTerminated)
-			{
-				return info;
-			}
-		}
-
-		ClientThreadInfos.emplace_back();
-		return ClientThreadInfos.back();
-	}
-
-	IPv4TCPServer
-	::IPv4TCPServer(SharedAcceptorType acceptor) :
-		SharedAcceptorPtr(std::move(acceptor))
-	{
-		LocalEndPoint = SharedAcceptorPtr->local_endpoint();
-	}
-
-	IPv4TCPServer::IPv4TCPServer(IPv4TCPSocket::SharedIOContextType sharedIOContext,
-	                             IPv4Endpoint listenTarget):
-		SharedIOContext(std::move(sharedIOContext)),
-		LocalEndPoint(std::move(listenTarget)),
-		SharedAcceptorPtr(
-			std::make_shared<boost::asio::ip::tcp::acceptor>(
-				*SharedIOContext,
-				LocalEndPoint.ToBoostTCPEndPoint()
-			)
-		)
-	{
+		threadInfo.Available->store(true);
 	}
 
 	IPv4TCPServer::IPv4TCPServer(IPv4Endpoint listenTarget):
-		SharedIOContext(std::make_shared<boost::asio::io_context>()),
 		LocalEndPoint(std::move(listenTarget)),
-		SharedAcceptorPtr(
-			std::make_shared<boost::asio::ip::tcp::acceptor>(
-				*SharedIOContext,
-				LocalEndPoint.ToBoostTCPEndPoint()
-			)
+		Acceptor(
+			AcceptorIOContext,
+			static_cast<boost::asio::ip::tcp::endpoint>(LocalEndPoint)
 		)
 	{
 	}
 
-	void IPv4TCPServer::Run(std::atomic_bool& interruptSignal, ClientHandler handler)
+	void IPv4TCPServer::Run(std::shared_ptr<std::atomic_bool> interruptSignal, ClientHandler newClientCallback)  // NOLINT(performance-unnecessary-value-param)
 	{
-		if (interruptSignal)
+		if (interruptSignal)	// 检查中断信号
 		{
 			spdlog::warn("IPv4TCPServer> Interrupt signal activated when server is starting.");
 			return;
 		}
 
-		auto local_endpoint = FormatToConsoleFriendlyString(LocalEndPoint);
+		auto local_endpoint = FormatToString(LocalEndPoint);
 		spdlog::info("IPv4TCPServer> Server is starting on {}.", local_endpoint);
 
 		boost::system::error_code result{};
-		(void)SharedAcceptorPtr->listen(boost::asio::socket_base::max_listen_connections, result);
+		(void)Acceptor.listen(boost::asio::socket_base::max_listen_connections, result);
 
-		// 进入客户端循环，好戏现在才开始 qwq
-
+		// 进入客户端循环，好戏现在才开始
 		try
 		{
 			CanAcceptNextClient = true;
@@ -157,26 +113,26 @@ namespace LangYa::SentryLib
 
 				// 可以接收新的客户端了
 				CanAcceptNextClient = false;
-				auto& client_thread_info = GetAvailableInfo();
-				client_thread_info.IsTerminated->store(false);
-				client_thread_info.Thread = std::make_shared<std::thread>(
-					[this, &client_thread_info, &handler, &interruptSignal]()
+				auto& client_thread_info = ClientThreadStack.GetAvailableItem();
+				client_thread_info.Available->store(false);
+				client_thread_info.Item = std::make_shared<std::thread>(
+					[this, &client_thread_info, &newClientCallback, interruptSignal]()
 					{
-						AcceptClient(client_thread_info, handler, interruptSignal);
+						AcceptClient(client_thread_info, newClientCallback, interruptSignal);
 					}
 				);
-				client_thread_info.Thread->detach();
+				client_thread_info.Item->detach();
 			}
 		}
 		catch (const std::exception& ex)
 		{
 			spdlog::error("IPv4TCPServer> Cannot hold up running: {}", ex.what());
-			interruptSignal = true;
+			interruptSignal->store(true);
 		}
 		catch (...)
 		{
 			spdlog::error("IPv4TCPServer> Cannot hold up running: Unknown exception");
-			interruptSignal = true;
+			interruptSignal->store(true);
 		}
 
 		CanAcceptNextClient = false;

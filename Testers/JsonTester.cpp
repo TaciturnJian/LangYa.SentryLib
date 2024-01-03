@@ -1,7 +1,5 @@
 #include <iostream>
 
-#include <LangYa/SentryLib/Position.hpp>
-
 #include <LangYa/SentryLib/Vector.hpp>
 
 int main() {

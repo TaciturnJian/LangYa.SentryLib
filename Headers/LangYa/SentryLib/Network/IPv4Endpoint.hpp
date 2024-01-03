@@ -8,7 +8,7 @@ namespace LangYa::SentryLib
 {
 	/// @brief 代表 IPv4 协议下的目的点。
 	/// @details 表达式为 Address:Port 其中 Address 表达为 [0].[1].[2].[3]
-	struct IPv4Endpoint final : CanStreamFormatToConsoleFriendlyString
+	struct IPv4Endpoint final : IFormatByStream, IParseStream, IParseStringView
 	{
 		using PortType = unsigned short;
 
@@ -24,16 +24,14 @@ namespace LangYa::SentryLib
 
 		explicit IPv4Endpoint(std::string_view endpoint);
 
-		bool Parse(std::istream& stream);
+		explicit IPv4Endpoint(const boost::asio::ip::tcp::endpoint& endpoint);
 
-		bool Parse(std::string_view endpoint);
+		bool Parse(std::istream& stream, int option = 0) override;
 
-		IPv4Endpoint& operator=(std::string_view endpoint);
+		bool Parse(std::string_view view, int option = 0) override;
 
-		IPv4Endpoint& operator=(const boost::asio::ip::tcp::endpoint& endpoint);
+		std::ostream& FormatByStream(std::ostream& stream, int option = 0) const override;
 
-		[[nodiscard]] boost::asio::ip::tcp::endpoint ToBoostTCPEndPoint() const;
-
-		std::ostream& FormatToConsoleFriendlyString(std::ostream& stream) const override;
+		explicit operator boost::asio::ip::tcp::endpoint() const;
 	};
 }

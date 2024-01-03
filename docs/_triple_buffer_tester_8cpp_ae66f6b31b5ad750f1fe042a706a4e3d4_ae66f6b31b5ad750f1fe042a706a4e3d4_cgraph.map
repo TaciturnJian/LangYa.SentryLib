@@ -1,0 +1,8 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,59,55,85"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_unique_buffer_aa4fcd6178787270ed4e8a69d28e60303.html#aa4fcd6178787270ed4e8a69d28e60303" title="Get the view of the unique memory in the buffer." alt="" coords="115,5,266,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,63,99,50,100,55,56,68"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_unique_buffer_a68b67fc2a71e1b22c6b97862ab97e7a7.html#a68b67fc2a71e1b22c6b97862ab97e7a7" title="Construct a new UniqueBuffer object with provided size." alt="" coords="103,96,278,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,76,99,89,97,94,55,81"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="159,96,158,86,163,77,174,71,190,69,208,72,218,78,216,83,206,77,190,75,176,76,167,81,163,87,164,95"/>
+</map>

@@ -1,14 +1,14 @@
 <map id="LangYa::SentryLib::Position2&lt; TElement &gt;" name="LangYa::SentryLib::Position2&lt; TElement &gt;">
-<area shape="rect" id="Node000001" title="使用两个元素 X Y 代表二维坐标。" alt="" coords="461,35,615,77"/>
-<area shape="rect" id="Node000004" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title=" " alt="" coords="969,5,1106,48"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="630,33,715,20,830,10,945,13,969,15,969,21,945,19,830,15,715,25,631,39"/>
-<area shape="rect" id="Node000005" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title="使用两个元素 X Y 代表三维坐标。" alt="" coords="715,35,869,77"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="630,53,714,53,714,59,630,59"/>
-<area shape="rect" id="Node000006" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title=" " alt="" coords="724,101,860,144"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="630,77,724,102,723,107,629,83"/>
-<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_position1.html" title="使用一个元素 X 代表坐标。" alt="" coords="257,35,411,77"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="427,53,460,53,460,59,427,59"/>
-<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json_string.html" title="表示此类可以格式化为 json 字符串并输出到流中。" alt="" coords="5,35,208,77"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="223,53,256,53,256,59,223,59"/>
-<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="885,42,969,32,969,37,885,48"/>
+<area shape="rect" id="Node000001" title="使用两个元素 X Y 代表二维坐标。" alt="" coords="395,35,549,77"/>
+<area shape="rect" id="Node000004" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title=" " alt="" coords="903,5,1040,48"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="564,33,649,20,764,10,879,13,903,15,903,21,879,19,764,15,649,25,565,39"/>
+<area shape="rect" id="Node000005" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title="使用两个元素 X Y 代表三维坐标。" alt="" coords="649,35,803,77"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="564,53,648,53,648,59,564,59"/>
+<area shape="rect" id="Node000006" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title=" " alt="" coords="658,101,794,144"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="564,77,658,102,657,107,563,83"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_position1.html" title="使用一个元素 X 代表坐标。" alt="" coords="191,35,345,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="361,53,394,53,394,59,361,59"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_i_format_by_stream.html" title="代表一种可以通过流格式化的对象。" alt="" coords="5,35,142,77"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="157,53,191,53,191,59,157,59"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="819,42,903,32,903,37,819,48"/>
 </map>

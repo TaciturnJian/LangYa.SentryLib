@@ -1,0 +1,12 @@
+<map id="LangYa::SentryLib::ManagedStack&lt; TItem &gt;::ItemInfo" name="LangYa::SentryLib::ManagedStack&lt; TItem &gt;::ItemInfo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="86,293,239,352"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,187,144,229"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,240,142,291,138,295,98,243"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="93,96,232,123"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="113,132,94,148,84,167,79,187,74,186,79,165,90,145,109,128"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="168,195,333,221"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="200,129,218,145,236,169,248,193,243,195,231,172,214,148,197,133"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="143,5,182,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="165,48,165,95,160,95,160,48"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="233,235,187,295,183,291,229,232"/>
+</map>

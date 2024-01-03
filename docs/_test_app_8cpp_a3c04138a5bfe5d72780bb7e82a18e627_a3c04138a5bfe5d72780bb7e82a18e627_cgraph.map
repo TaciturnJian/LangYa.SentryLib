@@ -1,0 +1,29 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,379,55,405"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments_afcce8a46c14b15295e2dcb4cf66bcc2a.html#afcce8a46c14b15295e2dcb4cf66bcc2a" title="构造，初始化控制台参数为指定的值。" alt="" coords="105,5,280,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="30,378,53,224,74,135,86,100,100,74,101,74,105,77,105,78,91,102,79,137,58,225,35,379"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_configurator_a2531ca07172da9910b279e50cbdefb93.html#a2531ca07172da9910b279e50cbdefb93" title="初始化一个空的配置器" alt="" coords="109,88,276,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="29,378,31,333,40,270,62,202,79,170,101,141,103,139,107,143,105,144,83,173,67,204,46,272,36,334,34,378"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_unique_buffer_aa4fcd6178787270ed4e8a69d28e60303.html#aa4fcd6178787270ed4e8a69d28e60303" title="Get the view of the unique memory in the buffer." alt="" coords="117,155,268,197"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="30,378,36,344,49,298,69,250,84,228,101,207,103,205,107,209,105,211,88,231,74,253,54,300,41,345,36,378"/>
+<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_configurator_a811f32e3e4a647f57bc258a01f6d61d9.html#a811f32e3e4a647f57bc258a01f6d61d9" title=" " alt="" coords="106,221,279,280"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="36,377,61,335,79,311,101,290,105,287,108,291,104,294,83,315,65,338,40,380"/>
+<area shape="rect" id="Node000006" href="$class_lang_ya_1_1_sentry_lib_1_1_configurator_a0452562497ba6db92763762ff3657558.html#a0452562497ba6db92763762ff3657558" title=" " alt="" coords="124,304,261,347"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="54,378,102,356,116,350,118,355,104,361,56,383"/>
+<area shape="rect" id="Node000007" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view_ad10f23c49b3cda581559e45136a79d21.html#ad10f23c49b3cda581559e45136a79d21" title="基于一个内存视图加上偏移构建一个新的内存视图。" alt="" coords="103,371,282,413"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="55,389,87,389,87,395,55,395"/>
+<area shape="rect" id="Node000008" href="$class_lang_ya_1_1_sentry_lib_1_1_configurator_af7a830fa2f8b2ccdf86abb395f36780d.html#af7a830fa2f8b2ccdf86abb395f36780d" title=" " alt="" coords="116,437,269,480"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="56,401,104,423,118,429,116,434,102,428,54,406"/>
+<area shape="rect" id="Node000009" href="$struct_lang_ya_1_1_sentry_lib_1_1_application_info_aef2b02b359c1204402f7cbb4ad4a12c1.html#aef2b02b359c1204402f7cbb4ad4a12c1" title="使用 spdlog 输出。 输出的内容不再是 json 格式，并且有一定的缩进。 如果使用了spdlog配置多个日志记录器，还可以在日志中确定内容。" alt="" coords="109,504,276,563"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="40,404,65,446,83,469,104,490,108,493,105,497,101,494,79,473,61,449,36,407"/>
+<area shape="rect" id="Node000010" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a06db61b6c19ed6a77e3bc7882a5c8658.html#a06db61b6c19ed6a77e3bc7882a5c8658" title="从目标读取内存，直到当前内存被填满或目标内存不足。" alt="" coords="110,587,275,629"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="36,406,41,439,54,484,74,531,88,553,105,573,107,575,103,579,101,577,84,556,69,534,49,486,36,440,30,406"/>
+<area shape="rect" id="Node000012" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a4d6f24e486ceeee0feed63560d68eff2.html#a4d6f24e486ceeee0feed63560d68eff2" title="从目标复制内存直到填满当前视图。" alt="" coords="110,653,275,696"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="34,406,36,450,46,512,67,580,83,611,105,640,107,641,103,645,101,643,79,614,62,582,40,514,31,451,29,406"/>
+<area shape="rect" id="Node000013" href="$class_lang_ya_1_1_sentry_lib_1_1_unique_buffer_a68b67fc2a71e1b22c6b97862ab97e7a7.html#a68b67fc2a71e1b22c6b97862ab97e7a7" title="Construct a new UniqueBuffer object with provided size." alt="" coords="105,744,280,787"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="34,405,35,458,43,536,52,580,65,624,82,667,105,706,133,733,129,737,101,710,77,669,60,626,47,581,38,537,29,458,28,405"/>
+<area shape="rect" id="Node000011" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a0b0dae0e12aeccb9fc1c4d9dd074e9cf.html#a0b0dae0e12aeccb9fc1c4d9dd074e9cf" title="检查此视图是否有效，即不为空指针或长度大于 0 。" alt="" coords="330,620,473,663"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="275,618,315,625,314,630,274,624"/>
+<area shape="poly" id="edge12_Node000012_Node000011" title=" " alt="" coords="274,659,314,652,315,658,275,664"/>
+<area shape="poly" id="edge14_Node000013_Node000013" title=" " alt="" coords="161,744,160,734,165,725,176,719,192,717,210,720,221,726,218,731,208,725,192,723,177,724,168,729,165,735,166,743"/>
+</map>

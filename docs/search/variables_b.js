@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['manipulator_0',['Manipulator',['../_sentry_monitor_8cpp.html#abc71a59d6611c5e3ae218cd0428e34f5',1,'SentryMonitor.cpp']]],
-  ['movedestination_1',['MoveDestination',['../struct_lang_ya_1_1_sentry_lib_1_1_full_control_data.html#a9148c28dbf732ca08ac6b254eab60732',1,'LangYa::SentryLib::FullControlData']]]
+  ['lang_5fya_5fconnection_5fptr_0',['lang_ya_connection_ptr',['../_controller_sensor_tester_8cpp_a2923dcb407f9b78d57aa73fdca155fe4.html#a2923dcb407f9b78d57aa73fdca155fe4',1,'ControllerSensorTester.cpp']]],
+  ['latestarmorplate_1',['LatestArmorPlate',['../struct_lang_ya_1_1_sentry_lib_1_1_full_sensor_data_a0b310a98d9e24adee666f3f4e10cb73e.html#a0b310a98d9e24adee666f3f4e10cb73e',1,'LangYa::SentryLib::FullSensorData']]]
 ];

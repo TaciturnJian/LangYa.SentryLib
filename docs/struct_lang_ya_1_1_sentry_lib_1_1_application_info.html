@@ -93,9 +93,8 @@ $(document).ready(function(){initNavTree('struct_lang_ya_1_1_sentry_lib_1_1_appl
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="#pub-attribs">Public 属性</a> &#124;
-<a href="#friends">友元</a> &#124;
-<a href="struct_lang_ya_1_1_sentry_lib_1_1_application_info-members.html">所有成员列表</a>  </div>
+<a href="#pub-attribs">成员变量</a> &#124;
+<a href="#friends">友元</a>  </div>
   <div class="headertitle"><div class="title">LangYa::SentryLib::ApplicationInfo结构体 参考<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
@@ -134,28 +133,28 @@ $(document).ready(function(){initNavTree('struct_lang_ya_1_1_sentry_lib_1_1_appl
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:add17857784497951061de77939330ff3" id="r_add17857784497951061de77939330ff3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html#add17857784497951061de77939330ff3">ToString</a> () const</td></tr>
+<tr class="memitem:add17857784497951061de77939330ff3" id="r_add17857784497951061de77939330ff3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info_add17857784497951061de77939330ff3.html#add17857784497951061de77939330ff3">ToString</a> () const</td></tr>
 <tr class="memdesc:add17857784497951061de77939330ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">转为 json 字符串。 调用了流式输出，见  <br /></td></tr>
 <tr class="separator:add17857784497951061de77939330ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef2b02b359c1204402f7cbb4ad4a12c1" id="r_aef2b02b359c1204402f7cbb4ad4a12c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html#aef2b02b359c1204402f7cbb4ad4a12c1">OutputTo_spdlog</a> () const</td></tr>
+<tr class="memitem:aef2b02b359c1204402f7cbb4ad4a12c1" id="r_aef2b02b359c1204402f7cbb4ad4a12c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info_aef2b02b359c1204402f7cbb4ad4a12c1.html#aef2b02b359c1204402f7cbb4ad4a12c1">OutputTo_spdlog</a> () const</td></tr>
 <tr class="memdesc:aef2b02b359c1204402f7cbb4ad4a12c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用 spdlog 输出。 输出的内容不再是 json 格式，并且有一定的缩进。 如果使用了spdlog配置多个日志记录器，还可以在日志中确定内容。  <br /></td></tr>
 <tr class="separator:aef2b02b359c1204402f7cbb4ad4a12c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public 属性</h2></td></tr>
-<tr class="memitem:aec696c8717aef7cae37f2d4b1f2f42d6" id="r_aec696c8717aef7cae37f2d4b1f2f42d6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html#aec696c8717aef7cae37f2d4b1f2f42d6">Name</a> {&quot;ApplicationName&quot;}</td></tr>
+成员变量</h2></td></tr>
+<tr class="memitem:aec696c8717aef7cae37f2d4b1f2f42d6" id="r_aec696c8717aef7cae37f2d4b1f2f42d6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info_aec696c8717aef7cae37f2d4b1f2f42d6.html#aec696c8717aef7cae37f2d4b1f2f42d6">Name</a> {&quot;ApplicationName&quot;}</td></tr>
 <tr class="memdesc:aec696c8717aef7cae37f2d4b1f2f42d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">应用程序的名称。 一般在主线程的日志输出中会打印类似这种格式的内容： "Name&gt; Message"。 使用此种格式可以方便地区分应用程序不同模块的日志输出。  <br /></td></tr>
 <tr class="separator:aec696c8717aef7cae37f2d4b1f2f42d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a250c16bff4858eefcfe9e92a46e8dd02" id="r_a250c16bff4858eefcfe9e92a46e8dd02"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html#a250c16bff4858eefcfe9e92a46e8dd02">Description</a> {&quot;ApplicationDescription&quot;}</td></tr>
+<tr class="memitem:a250c16bff4858eefcfe9e92a46e8dd02" id="r_a250c16bff4858eefcfe9e92a46e8dd02"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info_a250c16bff4858eefcfe9e92a46e8dd02.html#a250c16bff4858eefcfe9e92a46e8dd02">Description</a> {&quot;ApplicationDescription&quot;}</td></tr>
 <tr class="memdesc:a250c16bff4858eefcfe9e92a46e8dd02"><td class="mdescLeft">&#160;</td><td class="mdescRight">应用程序的简述。 在程序运行时会打印的简短描述。  <br /></td></tr>
 <tr class="separator:a250c16bff4858eefcfe9e92a46e8dd02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebe5a72d758ca1639fe307aeb3f9af42" id="r_aebe5a72d758ca1639fe307aeb3f9af42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_serial_numbers.html">SerialNumbers</a>&lt; unsigned short &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html#aebe5a72d758ca1639fe307aeb3f9af42">Version</a> {1, 0, 0, 0}</td></tr>
+<tr class="memitem:aebe5a72d758ca1639fe307aeb3f9af42" id="r_aebe5a72d758ca1639fe307aeb3f9af42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_serial_numbers.html">SerialNumbers</a>&lt; unsigned short &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info_aebe5a72d758ca1639fe307aeb3f9af42.html#aebe5a72d758ca1639fe307aeb3f9af42">Version</a> {1, 0, 0, 0}</td></tr>
 <tr class="memdesc:aebe5a72d758ca1639fe307aeb3f9af42"><td class="mdescLeft">&#160;</td><td class="mdescRight">应用程序的版本。 在程序运行时会打印的版本号，便于开发者确定问题是否在新的版本中存在。  <br /></td></tr>
 <tr class="separator:aebe5a72d758ca1639fe307aeb3f9af42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 友元</h2></td></tr>
-<tr class="memitem:a0b07fe49ea97f999e8538fe0b5a434c1" id="r_a0b07fe49ea97f999e8538fe0b5a434c1"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html#a0b07fe49ea97f999e8538fe0b5a434c1">operator&lt;&lt;</a> (std::ostream &amp;stream, const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html">ApplicationInfo</a> &amp;info)</td></tr>
+<tr class="memitem:a0b07fe49ea97f999e8538fe0b5a434c1" id="r_a0b07fe49ea97f999e8538fe0b5a434c1"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info_a0b07fe49ea97f999e8538fe0b5a434c1.html#a0b07fe49ea97f999e8538fe0b5a434c1">operator&lt;&lt;</a> (std::ostream &amp;stream, const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html">ApplicationInfo</a> &amp;info)</td></tr>
 <tr class="memdesc:a0b07fe49ea97f999e8538fe0b5a434c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">向流中输入内容。 输出格式为{"Name":"&lt;Name&gt;","Description":"&lt;Description&gt;","Version":"&lt;Version&gt;"}。 此种 json 格式可以简单地转化成 C# 中的 JObject 对象。  <br /></td></tr>
 <tr class="separator:a0b07fe49ea97f999e8538fe0b5a434c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -166,165 +165,10 @@ Public 属性</h2></td></tr>
 <div class="line">    <span class="stringliteral">&quot;ExampleApp&quot;</span>,</div>
 <div class="line">    <span class="stringliteral">&quot;An application with sentry lib!&quot;</span>,</div>
 <div class="line">    {1, 0, 0, 0}</div>
-<div class="line">}.<a class="code hl_function" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html#aef2b02b359c1204402f7cbb4ad4a12c1">OutputTo_spdlog</a>();</div>
+<div class="line">}.<a class="code hl_function" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info_aef2b02b359c1204402f7cbb4ad4a12c1.html#aef2b02b359c1204402f7cbb4ad4a12c1">OutputTo_spdlog</a>();</div>
+<div class="ttc" id="astruct_lang_ya_1_1_sentry_lib_1_1_application_info_aef2b02b359c1204402f7cbb4ad4a12c1_html_aef2b02b359c1204402f7cbb4ad4a12c1"><div class="ttname"><a href="struct_lang_ya_1_1_sentry_lib_1_1_application_info_aef2b02b359c1204402f7cbb4ad4a12c1.html#aef2b02b359c1204402f7cbb4ad4a12c1">LangYa::SentryLib::ApplicationInfo::OutputTo_spdlog</a></div><div class="ttdeci">void OutputTo_spdlog() const</div><div class="ttdoc">使用 spdlog 输出。 输出的内容不再是 json 格式，并且有一定的缩进。 如果使用了spdlog配置多个日志记录器，还可以在日志中确定内容。</div></div>
 <div class="ttc" id="astruct_lang_ya_1_1_sentry_lib_1_1_application_info_html"><div class="ttname"><a href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html">LangYa::SentryLib::ApplicationInfo</a></div><div class="ttdoc">一些简单的应用程序信息，包装了简单的信息输出方法。 使用 stream , spdlog 和 fmt 等将保存的信息格式化输出到控制台。 在使程序代码更美观的同时，方便开发者在调试时（日志中）查看程序的...</div><div class="ttdef"><b>Definition</b> ApplicationInfo.hpp:21</div></div>
-<div class="ttc" id="astruct_lang_ya_1_1_sentry_lib_1_1_application_info_html_aef2b02b359c1204402f7cbb4ad4a12c1"><div class="ttname"><a href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html#aef2b02b359c1204402f7cbb4ad4a12c1">LangYa::SentryLib::ApplicationInfo::OutputTo_spdlog</a></div><div class="ttdeci">void OutputTo_spdlog() const</div><div class="ttdoc">使用 spdlog 输出。 输出的内容不再是 json 格式，并且有一定的缩进。 如果使用了spdlog配置多个日志记录器，还可以在日志中确定内容。</div></div>
-</div><!-- fragment --> </div><h2 class="groupheader">成员函数说明</h2>
-<a id="aef2b02b359c1204402f7cbb4ad4a12c1" name="aef2b02b359c1204402f7cbb4ad4a12c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef2b02b359c1204402f7cbb4ad4a12c1">&#9670;&#160;</a></span>OutputTo_spdlog()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LangYa::SentryLib::ApplicationInfo::OutputTo_spdlog </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>使用 spdlog 输出。 输出的内容不再是 json 格式，并且有一定的缩进。 如果使用了spdlog配置多个日志记录器，还可以在日志中确定内容。 </p>
-
-<p class="reference">被这些函数引用 <a class="el" href="#l00020">main()</a>, <a class="el" href="#l00063">main()</a> , 以及 <a class="el" href="#l00036">main()</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_application_info_aef2b02b359c1204402f7cbb4ad4a12c1_icgraph.png" border="0" usemap="#astruct_lang_ya_1_1_sentry_lib_1_1_application_info_aef2b02b359c1204402f7cbb4ad4a12c1_icgraph" alt=""/></div>
-<map name="astruct_lang_ya_1_1_sentry_lib_1_1_application_info_aef2b02b359c1204402f7cbb4ad4a12c1_icgraph" id="astruct_lang_ya_1_1_sentry_lib_1_1_application_info_aef2b02b359c1204402f7cbb4ad4a12c1_icgraph">
-<area shape="rect" title="使用 spdlog 输出。 输出的内容不再是 json 格式，并且有一定的缩进。 如果使用了spdlog配置多个日志记录器，还可以在日志中确定内容。" alt="" coords="103,40,269,99"/>
-<area shape="rect" href="_sentry_mind_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
-<area shape="poly" title=" " alt="" coords="87,40,54,29,56,24,89,35"/>
-<area shape="rect" href="_example_app_8cpp.html#ac762d48b889bd832ec0d42abcbc50624" title=" " alt="" coords="5,56,55,83"/>
-<area shape="poly" title=" " alt="" coords="87,72,55,72,55,67,87,67"/>
-<area shape="rect" href="_test_app_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,107,55,133"/>
-<area shape="poly" title=" " alt="" coords="89,104,56,115,54,110,87,99"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="add17857784497951061de77939330ff3" name="add17857784497951061de77939330ff3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add17857784497951061de77939330ff3">&#9670;&#160;</a></span>ToString()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string LangYa::SentryLib::ApplicationInfo::ToString </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>转为 json 字符串。 调用了流式输出，见 </p>
-<div class="fragment"><div class="line"><a class="code hl_friend" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html#a0b07fe49ea97f999e8538fe0b5a434c1">operator&lt;&lt;</a>(std::ostream&amp; stream, <span class="keyword">const</span> <a class="code hl_struct" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html">ApplicationInfo</a>&amp; info) </div>
-<div class="ttc" id="astruct_lang_ya_1_1_sentry_lib_1_1_application_info_html_a0b07fe49ea97f999e8538fe0b5a434c1"><div class="ttname"><a href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html#a0b07fe49ea97f999e8538fe0b5a434c1">LangYa::SentryLib::ApplicationInfo::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;stream, const ApplicationInfo &amp;info)</div><div class="ttdoc">向流中输入内容。 输出格式为{&quot;Name&quot;:&quot;&lt;Name&gt;&quot;,&quot;Description&quot;:&quot;&lt;Description&gt;&quot;,&quot;Version&quot;:&quot;&lt;Version&gt;&quot;}。 此种 json 格式可以简单地转...</div></div>
-</div><!-- fragment --> 
-</div>
-</div>
-<h2 class="groupheader">友元及相关函数文档</h2>
-<a id="a0b07fe49ea97f999e8538fe0b5a434c1" name="a0b07fe49ea97f999e8538fe0b5a434c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b07fe49ea97f999e8538fe0b5a434c1">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>stream</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html">ApplicationInfo</a> &amp;&#160;</td>
-          <td class="paramname"><em>info</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>向流中输入内容。 输出格式为{"Name":"&lt;Name&gt;","Description":"&lt;Description&gt;","Version":"&lt;Version&gt;"}。 此种 json 格式可以简单地转化成 C# 中的 JObject 对象。 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">stream</td><td>格式化的结果输出到此流中。 </td></tr>
-    <tr><td class="paramname">info</td><td>应用程序信息。 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>参数中的流。 </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">类成员变量说明</h2>
-<a id="a250c16bff4858eefcfe9e92a46e8dd02" name="a250c16bff4858eefcfe9e92a46e8dd02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a250c16bff4858eefcfe9e92a46e8dd02">&#9670;&#160;</a></span>Description</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string LangYa::SentryLib::ApplicationInfo::Description {&quot;ApplicationDescription&quot;}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>应用程序的简述。 在程序运行时会打印的简短描述。 </p>
-
-</div>
-</div>
-<a id="aec696c8717aef7cae37f2d4b1f2f42d6" name="aec696c8717aef7cae37f2d4b1f2f42d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec696c8717aef7cae37f2d4b1f2f42d6">&#9670;&#160;</a></span>Name</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string LangYa::SentryLib::ApplicationInfo::Name {&quot;ApplicationName&quot;}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>应用程序的名称。 一般在主线程的日志输出中会打印类似这种格式的内容： "Name&gt; Message"。 使用此种格式可以方便地区分应用程序不同模块的日志输出。 </p>
-
-</div>
-</div>
-<a id="aebe5a72d758ca1639fe307aeb3f9af42" name="aebe5a72d758ca1639fe307aeb3f9af42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebe5a72d758ca1639fe307aeb3f9af42">&#9670;&#160;</a></span>Version</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_serial_numbers.html">SerialNumbers</a>&lt;unsigned short&gt; LangYa::SentryLib::ApplicationInfo::Version {1, 0, 0, 0}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>应用程序的版本。 在程序运行时会打印的版本号，便于开发者确定问题是否在新的版本中存在。 </p>
-
-</div>
-</div>
-<hr/>该结构体的文档由以下文件生成:<ul>
+</div><!-- fragment --> </div><hr/>该结构体的文档由以下文件生成:<ul>
 <li>Headers/LangYa/SentryLib/Application/<a class="el" href="">ApplicationInfo.hpp</a></li>
 </ul>
 </div><!-- contents -->
@@ -333,7 +177,7 @@ Public 属性</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_lang_ya.html">LangYa</a></li><li class="navelem"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">SentryLib</a></li><li class="navelem"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_application_info.html">ApplicationInfo</a></li>
-    <li class="footer">生成于 2023年 十二月 31日 星期日 15:07:41 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2024年 一月 3日 星期三 16:30:41 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

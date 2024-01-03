@@ -1,0 +1,5 @@
+<map id="LangYa::SentryLib::FullSensorData::Serialize" name="LangYa::SentryLib::FullSensorData::Serialize">
+<area shape="rect" id="Node000001" title="序列化此内容，将序列化的结果写入缓冲区。 当提供的缓冲区太小时，不会执行序列化操作，返回false。" alt="" coords="103,5,271,48"/>
+<area shape="rect" id="Node000002" href="$_sentry_device_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,13,55,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,29,55,29,55,24,87,24"/>
+</map>

@@ -92,8 +92,7 @@ $(document).ready(function(){initNavTree('class_lang_ya_1_1_sentry_lib_1_1_deser
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="class_lang_ya_1_1_sentry_lib_1_1_deserializable_content-members.html">所有成员列表</a>  </div>
+<a href="#pub-methods">Public 成员函数</a>  </div>
   <div class="headertitle"><div class="title">LangYa::SentryLib::DeserializableContent类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
@@ -123,115 +122,19 @@ $(document).ready(function(){initNavTree('class_lang_ya_1_1_sentry_lib_1_1_deser
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a61075251ade6deda3d9ef2800b107ef2" id="r_a61075251ade6deda3d9ef2800b107ef2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_deserializable_content.html#a61075251ade6deda3d9ef2800b107ef2">~DeserializableContent</a> ()</td></tr>
+<tr class="memitem:a61075251ade6deda3d9ef2800b107ef2" id="r_a61075251ade6deda3d9ef2800b107ef2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_deserializable_content_a61075251ade6deda3d9ef2800b107ef2.html#a61075251ade6deda3d9ef2800b107ef2">~DeserializableContent</a> ()</td></tr>
 <tr class="memdesc:a61075251ade6deda3d9ef2800b107ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认虚析构函数。  <br /></td></tr>
 <tr class="separator:a61075251ade6deda3d9ef2800b107ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8b28b8746e8158398d8b90c77cc196d" id="r_ad8b28b8746e8158398d8b90c77cc196d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_deserializable_content.html#ad8b28b8746e8158398d8b90c77cc196d">GetDeserializationResourceSize</a> () const =0</td></tr>
+<tr class="memitem:ad8b28b8746e8158398d8b90c77cc196d" id="r_ad8b28b8746e8158398d8b90c77cc196d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a31da2070cd759fdfd599d1a779d189a7.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_deserializable_content_ad8b28b8746e8158398d8b90c77cc196d.html#ad8b28b8746e8158398d8b90c77cc196d">GetDeserializationResourceSize</a> () const =0</td></tr>
 <tr class="memdesc:ad8b28b8746e8158398d8b90c77cc196d"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取此内容的反序列化资源大小，大多数时候就是此内容的内存视图大小。  <br /></td></tr>
 <tr class="separator:ad8b28b8746e8158398d8b90c77cc196d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a413f34bb4ccac23bcaddd293e332e876" id="r_a413f34bb4ccac23bcaddd293e332e876"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_deserializable_content.html#a413f34bb4ccac23bcaddd293e332e876">Deserialize</a> (const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;buffer)=0</td></tr>
+<tr class="memitem:a413f34bb4ccac23bcaddd293e332e876" id="r_a413f34bb4ccac23bcaddd293e332e876"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_deserializable_content_a413f34bb4ccac23bcaddd293e332e876.html#a413f34bb4ccac23bcaddd293e332e876">Deserialize</a> (const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;buffer)=0</td></tr>
 <tr class="memdesc:a413f34bb4ccac23bcaddd293e332e876"><td class="mdescLeft">&#160;</td><td class="mdescRight">从缓冲区中反序列化资源。  <br /></td></tr>
 <tr class="separator:a413f34bb4ccac23bcaddd293e332e876"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>代表一种可以反序列化的内容。 此接口提供了反序列时所需要的两个函数： 获取反序列化资源的最小大小，以及从缓冲区中反序列化资源。 </p>
-</div><h2 class="groupheader">构造及析构函数说明</h2>
-<a id="a61075251ade6deda3d9ef2800b107ef2" name="a61075251ade6deda3d9ef2800b107ef2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61075251ade6deda3d9ef2800b107ef2">&#9670;&#160;</a></span>~DeserializableContent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">LangYa::SentryLib::DeserializableContent::~DeserializableContent </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>默认虚析构函数。 </p>
-
-</div>
-</div>
-<h2 class="groupheader">成员函数说明</h2>
-<a id="a413f34bb4ccac23bcaddd293e332e876" name="a413f34bb4ccac23bcaddd293e332e876"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a413f34bb4ccac23bcaddd293e332e876">&#9670;&#160;</a></span>Deserialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool LangYa::SentryLib::DeserializableContent::Deserialize </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;&#160;</td>
-          <td class="paramname"><em>buffer</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>从缓冲区中反序列化资源。 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buffer</td><td>反序列化资源数据的缓冲区。 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>是否反序列化成功。 </dd></dl>
-
-<p>在 <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html#ae7ec604552bc47c68a178c9b6dc3815a">LangYa::SentryLib::SentryData</a>, <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_referee_data.html#a19384ac0fe00ca42e45823b845594846">LangYa::SentryLib::RefereeData</a>, <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_full_control_data.html#addef14191db2298f849a7af441b079f5">LangYa::SentryLib::FullControlData</a> , 以及 <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_full_sensor_data.html#a7c17d6eafa9bbc4b8e05ade836b19155">LangYa::SentryLib::FullSensorData</a> 内被实现.</p>
-
-</div>
-</div>
-<a id="ad8b28b8746e8158398d8b90c77cc196d" name="ad8b28b8746e8158398d8b90c77cc196d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8b28b8746e8158398d8b90c77cc196d">&#9670;&#160;</a></span>GetDeserializationResourceSize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">MemoryView::SizeType</a> LangYa::SentryLib::DeserializableContent::GetDeserializationResourceSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>获取此内容的反序列化资源大小，大多数时候就是此内容的内存视图大小。 </p>
-<dl class="section return"><dt>返回</dt><dd>反序列化资源大小。 </dd></dl>
-
-<p>在 <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html#a312716ce64273c956056a3b464e3bb33">LangYa::SentryLib::SentryData</a>, <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_referee_data.html#afa4099db80c32eb6e27faa5cee9bcf9e">LangYa::SentryLib::RefereeData</a>, <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_full_control_data.html#a3e5de50aad2bb818e531e477eb9eeb0c">LangYa::SentryLib::FullControlData</a> , 以及 <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_full_sensor_data.html#a5c6d31dd87ef426e267a07b26a892438">LangYa::SentryLib::FullSensorData</a> 内被实现.</p>
-
-</div>
-</div>
-<hr/>该类的文档由以下文件生成:<ul>
+</div><hr/>该类的文档由以下文件生成:<ul>
 <li>Headers/LangYa/SentryLib/Common/<a class="el" href="">DeserializableContent.hpp</a></li>
 <li>Sources/<a class="el" href="">DeserializableContent.cpp</a></li>
 </ul>
@@ -241,7 +144,7 @@ Public 成员函数</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_lang_ya.html">LangYa</a></li><li class="navelem"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">SentryLib</a></li><li class="navelem"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_deserializable_content.html">DeserializableContent</a></li>
-    <li class="footer">生成于 2023年 十二月 31日 星期日 15:07:41 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2024年 一月 3日 星期三 16:30:41 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

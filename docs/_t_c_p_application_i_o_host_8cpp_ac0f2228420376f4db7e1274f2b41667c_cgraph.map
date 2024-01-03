@@ -1,0 +1,7 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,55,73"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_endpoint.html#a17573fc6fad7560523fac763bfe1aa1a" title=" " alt="" coords="103,5,282,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,52,87,46,88,51,56,58"/>
+<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_endpoint.html#ae1fa4fe45a0547c8098963f40f63637a" title=" " alt="" coords="116,72,269,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,62,101,72,100,77,55,68"/>
+</map>

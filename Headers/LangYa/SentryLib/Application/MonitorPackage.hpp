@@ -58,7 +58,7 @@ namespace LangYa::SentryLib
 		///	@param jsonText json 文本，需要保证有效，如果无效则返回 false 。
 		///	@return 是否完全成功解析 json 并且此 json 格式与此包裹的格式相符合。
 		///	详细格式见：
-		///	@code LangYa::SentryLib::FormatToJsonString @endcode
+		///	@code LangYa::SentryLib::FormatByStream @endcode
 		[[nodiscard]] bool ParseJson(const std::string& jsonText);
 
 		/// @brief 将此包转换为 json 格式。

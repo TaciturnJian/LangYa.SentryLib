@@ -94,9 +94,8 @@ $(document).ready(function(){initNavTree('struct_lang_ya_1_1_sentry_lib_1_1_memo
   <div class="summary">
 <a href="#pub-types">Public 类型</a> &#124;
 <a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="#pub-attribs">Public 属性</a> &#124;
-<a href="#friends">友元</a> &#124;
-<a href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view-members.html">所有成员列表</a>  </div>
+<a href="#pub-attribs">成员变量</a> &#124;
+<a href="#friends">友元</a>  </div>
   <div class="headertitle"><div class="title">LangYa::SentryLib::MemoryView结构体 参考</div></div>
 </div><!--header-->
 <div class="contents">
@@ -108,845 +107,81 @@ $(document).ready(function(){initNavTree('struct_lang_ya_1_1_sentry_lib_1_1_memo
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public 类型</h2></td></tr>
-<tr class="memitem:a31da2070cd759fdfd599d1a779d189a7" id="r_a31da2070cd759fdfd599d1a779d189a7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">SizeType</a> = unsigned long long</td></tr>
+<tr class="memitem:a31da2070cd759fdfd599d1a779d189a7" id="r_a31da2070cd759fdfd599d1a779d189a7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a31da2070cd759fdfd599d1a779d189a7.html#a31da2070cd759fdfd599d1a779d189a7">SizeType</a> = unsigned long long</td></tr>
 <tr class="memdesc:a31da2070cd759fdfd599d1a779d189a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表 Size 的数据类型。  <br /></td></tr>
 <tr class="separator:a31da2070cd759fdfd599d1a779d189a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8effbd12d5fe73ed9d2e9be2007f712b" id="r_a8effbd12d5fe73ed9d2e9be2007f712b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a8effbd12d5fe73ed9d2e9be2007f712b">ByteType</a> = unsigned char</td></tr>
+<tr class="memitem:a8effbd12d5fe73ed9d2e9be2007f712b" id="r_a8effbd12d5fe73ed9d2e9be2007f712b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a8effbd12d5fe73ed9d2e9be2007f712b.html#a8effbd12d5fe73ed9d2e9be2007f712b">ByteType</a> = unsigned char</td></tr>
 <tr class="memdesc:a8effbd12d5fe73ed9d2e9be2007f712b"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表字节类型。  <br /></td></tr>
 <tr class="separator:a8effbd12d5fe73ed9d2e9be2007f712b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2b3b39af309c5723c3bbff95272964b" id="r_ad2b3b39af309c5723c3bbff95272964b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#ad2b3b39af309c5723c3bbff95272964b">HeadType</a> = <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a8effbd12d5fe73ed9d2e9be2007f712b">ByteType</a> *</td></tr>
+<tr class="memitem:ad2b3b39af309c5723c3bbff95272964b" id="r_ad2b3b39af309c5723c3bbff95272964b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_ad2b3b39af309c5723c3bbff95272964b.html#ad2b3b39af309c5723c3bbff95272964b">HeadType</a> = <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a8effbd12d5fe73ed9d2e9be2007f712b.html#a8effbd12d5fe73ed9d2e9be2007f712b">ByteType</a> *</td></tr>
 <tr class="memdesc:ad2b3b39af309c5723c3bbff95272964b"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表一个内存的开头。  <br /></td></tr>
 <tr class="separator:ad2b3b39af309c5723c3bbff95272964b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:acff29aa7ca4e0da7f00bfa6c7e5fb2c7" id="r_acff29aa7ca4e0da7f00bfa6c7e5fb2c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#acff29aa7ca4e0da7f00bfa6c7e5fb2c7">MemoryView</a> () noexcept</td></tr>
+<tr class="memitem:acff29aa7ca4e0da7f00bfa6c7e5fb2c7" id="r_acff29aa7ca4e0da7f00bfa6c7e5fb2c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_acff29aa7ca4e0da7f00bfa6c7e5fb2c7.html#acff29aa7ca4e0da7f00bfa6c7e5fb2c7">MemoryView</a> () noexcept</td></tr>
 <tr class="memdesc:acff29aa7ca4e0da7f00bfa6c7e5fb2c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">构建一个完全无效的内存视图。 其内存的头部为 nullptr ，内存长度为 0。  <br /></td></tr>
 <tr class="separator:acff29aa7ca4e0da7f00bfa6c7e5fb2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a51ed691f9fb398295bddc91408597c" id="r_a3a51ed691f9fb398295bddc91408597c"><td class="memTemplParams" colspan="2">template&lt;typename THead &gt; </td></tr>
-<tr class="memitem:a3a51ed691f9fb398295bddc91408597c"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a3a51ed691f9fb398295bddc91408597c">MemoryView</a> (THead *const head, const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">SizeType</a> &amp;count=1)</td></tr>
+<tr class="memitem:a3a51ed691f9fb398295bddc91408597c"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a3a51ed691f9fb398295bddc91408597c.html#a3a51ed691f9fb398295bddc91408597c">MemoryView</a> (THead *const head, const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a31da2070cd759fdfd599d1a779d189a7.html#a31da2070cd759fdfd599d1a779d189a7">SizeType</a> &amp;count=1)</td></tr>
 <tr class="memdesc:a3a51ed691f9fb398295bddc91408597c"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用给定的内存头和内存长度构建一个内存视图。 如果提供的两个参数是非法的，那么此内存视图也是非法的，而且此类不会在构建时抛出异常。小心在之后的使用中出现段错误。  <br /></td></tr>
 <tr class="separator:a3a51ed691f9fb398295bddc91408597c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add6f824e808c50cbf0d461ba00e2c9e4" id="r_add6f824e808c50cbf0d461ba00e2c9e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#add6f824e808c50cbf0d461ba00e2c9e4">~MemoryView</a> ()</td></tr>
+<tr class="memitem:add6f824e808c50cbf0d461ba00e2c9e4" id="r_add6f824e808c50cbf0d461ba00e2c9e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_add6f824e808c50cbf0d461ba00e2c9e4.html#add6f824e808c50cbf0d461ba00e2c9e4">~MemoryView</a> ()</td></tr>
 <tr class="memdesc:add6f824e808c50cbf0d461ba00e2c9e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁内存视图，使其无效化。 在销毁时此函数会将内存头部和内存长度都设置为无效值。 （但其实完全没必要对吧）  <br /></td></tr>
 <tr class="separator:add6f824e808c50cbf0d461ba00e2c9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad10f23c49b3cda581559e45136a79d21" id="r_ad10f23c49b3cda581559e45136a79d21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#ad10f23c49b3cda581559e45136a79d21">MemoryView</a> (const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;view, const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">SizeType</a> &amp;offset, const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">SizeType</a> &amp;size=0)</td></tr>
+<tr class="memitem:ad10f23c49b3cda581559e45136a79d21" id="r_ad10f23c49b3cda581559e45136a79d21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_ad10f23c49b3cda581559e45136a79d21.html#ad10f23c49b3cda581559e45136a79d21">MemoryView</a> (const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;view, const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a31da2070cd759fdfd599d1a779d189a7.html#a31da2070cd759fdfd599d1a779d189a7">SizeType</a> &amp;offset, const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a31da2070cd759fdfd599d1a779d189a7.html#a31da2070cd759fdfd599d1a779d189a7">SizeType</a> &amp;size=0)</td></tr>
 <tr class="memdesc:ad10f23c49b3cda581559e45136a79d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">基于一个内存视图加上偏移构建一个新的内存视图。  <br /></td></tr>
 <tr class="separator:ad10f23c49b3cda581559e45136a79d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a382b2718add95dfe0916f58b30bfd50e" id="r_a382b2718add95dfe0916f58b30bfd50e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a8effbd12d5fe73ed9d2e9be2007f712b">ByteType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a382b2718add95dfe0916f58b30bfd50e">operator[]</a> (const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">SizeType</a> &amp;index) const</td></tr>
+<tr class="memitem:a382b2718add95dfe0916f58b30bfd50e" id="r_a382b2718add95dfe0916f58b30bfd50e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a8effbd12d5fe73ed9d2e9be2007f712b.html#a8effbd12d5fe73ed9d2e9be2007f712b">ByteType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a382b2718add95dfe0916f58b30bfd50e.html#a382b2718add95dfe0916f58b30bfd50e">operator[]</a> (const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a31da2070cd759fdfd599d1a779d189a7.html#a31da2070cd759fdfd599d1a779d189a7">SizeType</a> &amp;index) const</td></tr>
 <tr class="memdesc:a382b2718add95dfe0916f58b30bfd50e"><td class="mdescLeft">&#160;</td><td class="mdescRight">提供快速访问某字节的运算符。 注意，内存不一定有效，而且此运算符不会检查索引是否越界。  <br /></td></tr>
 <tr class="separator:a382b2718add95dfe0916f58b30bfd50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d6f24e486ceeee0feed63560d68eff2" id="r_a4d6f24e486ceeee0feed63560d68eff2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a4d6f24e486ceeee0feed63560d68eff2">ReadFrom</a> (const void *head) const</td></tr>
+<tr class="memitem:a4d6f24e486ceeee0feed63560d68eff2" id="r_a4d6f24e486ceeee0feed63560d68eff2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a4d6f24e486ceeee0feed63560d68eff2.html#a4d6f24e486ceeee0feed63560d68eff2">ReadFrom</a> (const void *head) const</td></tr>
 <tr class="memdesc:a4d6f24e486ceeee0feed63560d68eff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">从目标复制内存直到填满当前视图。  <br /></td></tr>
 <tr class="separator:a4d6f24e486ceeee0feed63560d68eff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06db61b6c19ed6a77e3bc7882a5c8658" id="r_a06db61b6c19ed6a77e3bc7882a5c8658"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a06db61b6c19ed6a77e3bc7882a5c8658">ReadFrom</a> (const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;view) const</td></tr>
+<tr class="memitem:a06db61b6c19ed6a77e3bc7882a5c8658" id="r_a06db61b6c19ed6a77e3bc7882a5c8658"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a06db61b6c19ed6a77e3bc7882a5c8658.html#a06db61b6c19ed6a77e3bc7882a5c8658">ReadFrom</a> (const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;view) const</td></tr>
 <tr class="memdesc:a06db61b6c19ed6a77e3bc7882a5c8658"><td class="mdescLeft">&#160;</td><td class="mdescRight">从目标读取内存，直到当前内存被填满或目标内存不足。  <br /></td></tr>
 <tr class="separator:a06db61b6c19ed6a77e3bc7882a5c8658"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37636a8019c52cdd8d5dad2a1b654fd4" id="r_a37636a8019c52cdd8d5dad2a1b654fd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a37636a8019c52cdd8d5dad2a1b654fd4">CopyTo</a> (void *head) const</td></tr>
+<tr class="memitem:a37636a8019c52cdd8d5dad2a1b654fd4" id="r_a37636a8019c52cdd8d5dad2a1b654fd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a37636a8019c52cdd8d5dad2a1b654fd4.html#a37636a8019c52cdd8d5dad2a1b654fd4">CopyTo</a> (void *head) const</td></tr>
 <tr class="memdesc:a37636a8019c52cdd8d5dad2a1b654fd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">将视图内所有的内存复制到目标地址。  <br /></td></tr>
 <tr class="separator:a37636a8019c52cdd8d5dad2a1b654fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d20011eaf93c38dc74d197fd284b308" id="r_a2d20011eaf93c38dc74d197fd284b308"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a2d20011eaf93c38dc74d197fd284b308">CopyTo</a> (const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;view) const</td></tr>
+<tr class="memitem:a2d20011eaf93c38dc74d197fd284b308" id="r_a2d20011eaf93c38dc74d197fd284b308"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a2d20011eaf93c38dc74d197fd284b308.html#a2d20011eaf93c38dc74d197fd284b308">CopyTo</a> (const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;view) const</td></tr>
 <tr class="memdesc:a2d20011eaf93c38dc74d197fd284b308"><td class="mdescLeft">&#160;</td><td class="mdescRight">将视图内的所有内存复制到目标地址，直到当前内存不足或目标被填满。  <br /></td></tr>
 <tr class="separator:a2d20011eaf93c38dc74d197fd284b308"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad786c08d4874c4b0fd76dadabb23f05" id="r_aad786c08d4874c4b0fd76dadabb23f05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#aad786c08d4874c4b0fd76dadabb23f05">SetValue</a> (<a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a8effbd12d5fe73ed9d2e9be2007f712b">ByteType</a> byte) const</td></tr>
+<tr class="memitem:aad786c08d4874c4b0fd76dadabb23f05" id="r_aad786c08d4874c4b0fd76dadabb23f05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_aad786c08d4874c4b0fd76dadabb23f05.html#aad786c08d4874c4b0fd76dadabb23f05">SetValue</a> (<a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a8effbd12d5fe73ed9d2e9be2007f712b.html#a8effbd12d5fe73ed9d2e9be2007f712b">ByteType</a> byte) const</td></tr>
 <tr class="memdesc:aad786c08d4874c4b0fd76dadabb23f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置整块内存的值。 本质是调用 memset 函数，这个函数在使用过程中很奇怪，Windows 下不用引用头文件，但是 Linux 下必须引用头文件。 索性包装了此内容。  <br /></td></tr>
 <tr class="separator:aad786c08d4874c4b0fd76dadabb23f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b0dae0e12aeccb9fc1c4d9dd074e9cf" id="r_a0b0dae0e12aeccb9fc1c4d9dd074e9cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a0b0dae0e12aeccb9fc1c4d9dd074e9cf">IsValid</a> () const noexcept</td></tr>
+<tr class="memitem:a0b0dae0e12aeccb9fc1c4d9dd074e9cf" id="r_a0b0dae0e12aeccb9fc1c4d9dd074e9cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a0b0dae0e12aeccb9fc1c4d9dd074e9cf.html#a0b0dae0e12aeccb9fc1c4d9dd074e9cf">IsValid</a> () const noexcept</td></tr>
 <tr class="memdesc:a0b0dae0e12aeccb9fc1c4d9dd074e9cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查此视图是否有效，即不为空指针或长度大于 0 。  <br /></td></tr>
 <tr class="separator:a0b0dae0e12aeccb9fc1c4d9dd074e9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab03cdbd7de9a9347dd56d11b6b94f4ab" id="r_ab03cdbd7de9a9347dd56d11b6b94f4ab"><td class="memItemLeft" align="right" valign="top">boost::asio::mutable_buffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#ab03cdbd7de9a9347dd56d11b6b94f4ab">ToBuffer</a> () const</td></tr>
+<tr class="memitem:ab03cdbd7de9a9347dd56d11b6b94f4ab" id="r_ab03cdbd7de9a9347dd56d11b6b94f4ab"><td class="memItemLeft" align="right" valign="top">boost::asio::mutable_buffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_ab03cdbd7de9a9347dd56d11b6b94f4ab.html#ab03cdbd7de9a9347dd56d11b6b94f4ab">ToBuffer</a> () const</td></tr>
 <tr class="memdesc:ab03cdbd7de9a9347dd56d11b6b94f4ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">将此类型转化为 boost::asio::mutable_buffer 。  <br /></td></tr>
 <tr class="separator:ab03cdbd7de9a9347dd56d11b6b94f4ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public 属性</h2></td></tr>
-<tr class="memitem:a6dd8056002a987d8c31ddbd69fc7e880" id="r_a6dd8056002a987d8c31ddbd69fc7e880"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#ad2b3b39af309c5723c3bbff95272964b">HeadType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a6dd8056002a987d8c31ddbd69fc7e880">Head</a> {nullptr}</td></tr>
+成员变量</h2></td></tr>
+<tr class="memitem:a6dd8056002a987d8c31ddbd69fc7e880" id="r_a6dd8056002a987d8c31ddbd69fc7e880"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_ad2b3b39af309c5723c3bbff95272964b.html#ad2b3b39af309c5723c3bbff95272964b">HeadType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a6dd8056002a987d8c31ddbd69fc7e880.html#a6dd8056002a987d8c31ddbd69fc7e880">Head</a> {nullptr}</td></tr>
 <tr class="memdesc:a6dd8056002a987d8c31ddbd69fc7e880"><td class="mdescLeft">&#160;</td><td class="mdescRight">记录内存的开头，可以使用偏移量访问后面的内容。  <br /></td></tr>
 <tr class="separator:a6dd8056002a987d8c31ddbd69fc7e880"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebfa91b719ebd4721036343261fc35d3" id="r_aebfa91b719ebd4721036343261fc35d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">SizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#aebfa91b719ebd4721036343261fc35d3">Size</a> {0}</td></tr>
+<tr class="memitem:aebfa91b719ebd4721036343261fc35d3" id="r_aebfa91b719ebd4721036343261fc35d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a31da2070cd759fdfd599d1a779d189a7.html#a31da2070cd759fdfd599d1a779d189a7">SizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_aebfa91b719ebd4721036343261fc35d3.html#aebfa91b719ebd4721036343261fc35d3">Size</a> {0}</td></tr>
 <tr class="memdesc:aebfa91b719ebd4721036343261fc35d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">记录内存的长度，使用偏移量时访问内存时不应该超过此长度。  <br /></td></tr>
 <tr class="separator:aebfa91b719ebd4721036343261fc35d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 友元</h2></td></tr>
-<tr class="memitem:af7271e03447cf1c38648468113e39ea3" id="r_af7271e03447cf1c38648468113e39ea3"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#af7271e03447cf1c38648468113e39ea3">operator&lt;&lt;</a> (std::ostream &amp;stream, const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;view)</td></tr>
+<tr class="memitem:af7271e03447cf1c38648468113e39ea3" id="r_af7271e03447cf1c38648468113e39ea3"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_af7271e03447cf1c38648468113e39ea3.html#af7271e03447cf1c38648468113e39ea3">operator&lt;&lt;</a> (std::ostream &amp;stream, const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;view)</td></tr>
 <tr class="memdesc:af7271e03447cf1c38648468113e39ea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">将内存视图中的所有字节以十六进制整数的形式写进流中，相邻两整数输出使用空格 ' ' 隔开。  <br /></td></tr>
 <tr class="separator:af7271e03447cf1c38648468113e39ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e506346f9cfa9626e050b73f1979c62" id="r_a2e506346f9cfa9626e050b73f1979c62"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a2e506346f9cfa9626e050b73f1979c62"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a2e506346f9cfa9626e050b73f1979c62">operator&lt;&lt;</a> (std::vector&lt; T &gt; &amp;vector, const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;view)</td></tr>
+<tr class="memitem:a2e506346f9cfa9626e050b73f1979c62"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a2e506346f9cfa9626e050b73f1979c62.html#a2e506346f9cfa9626e050b73f1979c62">operator&lt;&lt;</a> (std::vector&lt; T &gt; &amp;vector, const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;view)</td></tr>
 <tr class="memdesc:a2e506346f9cfa9626e050b73f1979c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">将内存视图的数据利用指针强制转化，视为某个元素，然后放入 std::vector 中。  <br /></td></tr>
 <tr class="separator:a2e506346f9cfa9626e050b73f1979c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html" title="MemoryView 代表一个内存的视图，保存内存的头指针和长度，供其他读写。">MemoryView</a> 代表一个内存的视图，保存内存的头指针和长度，供其他读写。 </p>
-<p><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html" title="MemoryView 代表一个内存的视图，保存内存的头指针和长度，供其他读写。">MemoryView</a> 提供关于内存的视图， 它不能保证作为传入的参数时得到的内存视图是有效的， 因此作为函数参数时，这个类的基础是对调用者的信任。 类中提供了有关内存的操作函数，CopyTo 和 ReadFrom ， 它们都是对 memcpy 的封装，但是会使用内存视图中的数据检查调用 memcpy 的参数。 </p>
-</div><h2 class="groupheader">成员类型定义说明</h2>
-<a id="a8effbd12d5fe73ed9d2e9be2007f712b" name="a8effbd12d5fe73ed9d2e9be2007f712b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8effbd12d5fe73ed9d2e9be2007f712b">&#9670;&#160;</a></span>ByteType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a8effbd12d5fe73ed9d2e9be2007f712b">LangYa::SentryLib::MemoryView::ByteType</a> =  unsigned char</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>代表字节类型。 </p>
-<p>字节类型是视图中的最小单位，偏移量都是对于字节类型来说的。 </p>
-
-</div>
-</div>
-<a id="ad2b3b39af309c5723c3bbff95272964b" name="ad2b3b39af309c5723c3bbff95272964b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2b3b39af309c5723c3bbff95272964b">&#9670;&#160;</a></span>HeadType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#ad2b3b39af309c5723c3bbff95272964b">LangYa::SentryLib::MemoryView::HeadType</a> =  <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a8effbd12d5fe73ed9d2e9be2007f712b">ByteType</a>*</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>代表一个内存的开头。 </p>
-<p>此类型采用了字节类型的指针，便于使用偏移量访问后面的内容。 </p>
-
-</div>
-</div>
-<a id="a31da2070cd759fdfd599d1a779d189a7" name="a31da2070cd759fdfd599d1a779d189a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31da2070cd759fdfd599d1a779d189a7">&#9670;&#160;</a></span>SizeType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">LangYa::SentryLib::MemoryView::SizeType</a> =  unsigned long long</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>代表 Size 的数据类型。 </p>
-<p>直接采用目前看来最大的整数类型。 </p>
-
-</div>
-</div>
-<h2 class="groupheader">构造及析构函数说明</h2>
-<a id="acff29aa7ca4e0da7f00bfa6c7e5fb2c7" name="acff29aa7ca4e0da7f00bfa6c7e5fb2c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acff29aa7ca4e0da7f00bfa6c7e5fb2c7">&#9670;&#160;</a></span>MemoryView() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">LangYa::SentryLib::MemoryView::MemoryView </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>构建一个完全无效的内存视图。 其内存的头部为 nullptr ，内存长度为 0。 </p>
-
-<p class="reference">被这些函数引用 <a class="el" href="#l00036">LangYa::SentryLib::UniqueBuffer::operator=()</a> , 以及 <a class="el" href="#l00027">LangYa::SentryLib::UniqueBuffer::UniqueBuffer()</a>.</p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_acff29aa7ca4e0da7f00bfa6c7e5fb2c7_icgraph.png" border="0" usemap="#astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_acff29aa7ca4e0da7f00bfa6c7e5fb2c7_icgraph" alt=""/></div>
-<map name="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_acff29aa7ca4e0da7f00bfa6c7e5fb2c7_icgraph" id="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_acff29aa7ca4e0da7f00bfa6c7e5fb2c7_icgraph">
-<area shape="rect" title="构建一个完全无效的内存视图。 其内存的头部为 nullptr ，内存长度为 0。" alt="" coords="229,39,408,81"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html#a9da6dba6d41bc3c0e2d331620e156945" title="Basic move assignment operator, delete the unused memory here and move the new one." alt="" coords="14,5,172,48"/>
-<area shape="poly" title=" " alt="" coords="213,47,172,41,173,36,214,42"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_unique_buffer.html#a59a52cd61a2d67e76054881c49b02389" title="Basic move constructor, delete the unused memory here and move the new one." alt="" coords="5,72,181,115"/>
-<area shape="poly" title=" " alt="" coords="214,78,182,83,181,78,213,73"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a3a51ed691f9fb398295bddc91408597c" name="a3a51ed691f9fb398295bddc91408597c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a51ed691f9fb398295bddc91408597c">&#9670;&#160;</a></span>MemoryView() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename THead &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">LangYa::SentryLib::MemoryView::MemoryView </td>
-          <td>(</td>
-          <td class="paramtype">THead *const&#160;</td>
-          <td class="paramname"><em>head</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">SizeType</a> &amp;&#160;</td>
-          <td class="paramname"><em>count</em> = <code>1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>使用给定的内存头和内存长度构建一个内存视图。 如果提供的两个参数是非法的，那么此内存视图也是非法的，而且此类不会在构建时抛出异常。小心在之后的使用中出现段错误。 </p>
-<dl class="tparams"><dt>模板参数</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">THead</td><td>头部，将会从参数 head 自动推断。 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">head</td><td>数组的头，它的元素类型将会自动推断，注意内存长度是 sizeof(*head) * count。 </td></tr>
-    <tr><td class="paramname">count</td><td>数组的元素数量，注意内存长度是 sizeof(*head) * count。 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section warning"><dt>警告</dt><dd>在使用时，经常会想当然认为第二个参数是内存的长度，这是错误的，它应该是数组的元素数量。 </dd></dl>
-
-</div>
-</div>
-<a id="add6f824e808c50cbf0d461ba00e2c9e4" name="add6f824e808c50cbf0d461ba00e2c9e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add6f824e808c50cbf0d461ba00e2c9e4">&#9670;&#160;</a></span>~MemoryView()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">LangYa::SentryLib::MemoryView::~MemoryView </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>销毁内存视图，使其无效化。 在销毁时此函数会将内存头部和内存长度都设置为无效值。 （但其实完全没必要对吧） </p>
-
-<p class="reference">引用了 <a class="el" href="#l00033">Head</a> , 以及 <a class="el" href="#l00037">Size</a>.</p>
-
-</div>
-</div>
-<a id="ad10f23c49b3cda581559e45136a79d21" name="ad10f23c49b3cda581559e45136a79d21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad10f23c49b3cda581559e45136a79d21">&#9670;&#160;</a></span>MemoryView() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">LangYa::SentryLib::MemoryView::MemoryView </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;&#160;</td>
-          <td class="paramname"><em>view</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">SizeType</a> &amp;&#160;</td>
-          <td class="paramname"><em>offset</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">SizeType</a> &amp;&#160;</td>
-          <td class="paramname"><em>size</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>基于一个内存视图加上偏移构建一个新的内存视图。 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">view</td><td>基础的内存视图。 </td></tr>
-    <tr><td class="paramname">offset</td><td>内存头部的偏移，只允许正整数。 </td></tr>
-    <tr><td class="paramname">size</td><td>新内存视图对应内存的长度，如果为 0 ，那么将设置为基础内存视图的长度减去偏移量。 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section warning"><dt>警告</dt><dd>如果新内存视图的长度超过基础内存视图的长度，那么新内存视图将可能是无效的（但不会抛出异常，会在某次不正确使用中造成段错误）。 </dd></dl>
-
-<p class="reference">引用了 <a class="el" href="#l00033">Head</a> , 以及 <a class="el" href="#l00037">Size</a>.</p>
-
-<p class="reference">被这些函数引用 <a class="el" href="#l00036">main()</a> , 以及 <a class="el" href="#l00013">LangYa::SentryLib::PingPongBuffer::PingPongBuffer()</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_ad10f23c49b3cda581559e45136a79d21_icgraph.png" border="0" usemap="#astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_ad10f23c49b3cda581559e45136a79d21_icgraph" alt=""/></div>
-<map name="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_ad10f23c49b3cda581559e45136a79d21_icgraph" id="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_ad10f23c49b3cda581559e45136a79d21_icgraph">
-<area shape="rect" title="基于一个内存视图加上偏移构建一个新的内存视图。" alt="" coords="261,27,440,69"/>
-<area shape="rect" href="_test_app_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="84,5,134,32"/>
-<area shape="poly" title=" " alt="" coords="245,38,134,24,134,19,245,33"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html#a5067c0508f2f920f3d92df845c8edcd8" title="Construct a new PingPongBuffer object with provided unique buffer. Its size must be sizeof(element) *..." alt="" coords="5,56,213,99"/>
-<area shape="poly" title=" " alt="" coords="245,63,213,67,213,62,245,58"/>
-</map>
-</div>
-
-</div>
-</div>
-<h2 class="groupheader">成员函数说明</h2>
-<a id="a2d20011eaf93c38dc74d197fd284b308" name="a2d20011eaf93c38dc74d197fd284b308"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d20011eaf93c38dc74d197fd284b308">&#9670;&#160;</a></span>CopyTo() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LangYa::SentryLib::MemoryView::CopyTo </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;&#160;</td>
-          <td class="paramname"><em>view</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>将视图内的所有内存复制到目标地址，直到当前内存不足或目标被填满。 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">view</td><td>目标内存的视图。 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">引用了 <a class="el" href="#l00033">Head</a>, <a class="el" href="#l00086">IsValid()</a> , 以及 <a class="el" href="#l00037">Size</a>.</p>
-
-<p class="reference">被这些函数引用 <a class="el" href="#l00030">LangYa::SentryLib::MemoryAccess::Read()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a2d20011eaf93c38dc74d197fd284b308_cgraph.png" border="0" usemap="#astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a2d20011eaf93c38dc74d197fd284b308_cgraph" alt=""/></div>
-<map name="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a2d20011eaf93c38dc74d197fd284b308_cgraph" id="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a2d20011eaf93c38dc74d197fd284b308_cgraph">
-<area shape="rect" title="将视图内的所有内存复制到目标地址，直到当前内存不足或目标被填满。" alt="" coords="5,5,154,48"/>
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a0b0dae0e12aeccb9fc1c4d9dd074e9cf" title="检查此视图是否有效，即不为空指针或长度大于 0 。" alt="" coords="202,5,345,48"/>
-<area shape="poly" title=" " alt="" coords="154,24,186,24,186,29,154,29"/>
-</map>
-</div>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a2d20011eaf93c38dc74d197fd284b308_icgraph.png" border="0" usemap="#astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a2d20011eaf93c38dc74d197fd284b308_icgraph" alt=""/></div>
-<map name="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a2d20011eaf93c38dc74d197fd284b308_icgraph" id="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a2d20011eaf93c38dc74d197fd284b308_icgraph">
-<area shape="rect" title="将视图内的所有内存复制到目标地址，直到当前内存不足或目标被填满。" alt="" coords="204,5,352,48"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_memory_access.html#a70c4d8dd8097b25a0900b1799c9c65e2" title="从内存读取字符，如果内存太小，将读取尽可能多的字符。" alt="" coords="5,5,156,48"/>
-<area shape="poly" title=" " alt="" coords="188,29,156,29,156,24,188,24"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a37636a8019c52cdd8d5dad2a1b654fd4" name="a37636a8019c52cdd8d5dad2a1b654fd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37636a8019c52cdd8d5dad2a1b654fd4">&#9670;&#160;</a></span>CopyTo() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LangYa::SentryLib::MemoryView::CopyTo </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>head</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>将视图内所有的内存复制到目标地址。 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">head</td><td>目标地址的头部。 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">引用了 <a class="el" href="#l00033">Head</a>, <a class="el" href="#l00086">IsValid()</a> , 以及 <a class="el" href="#l00037">Size</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a37636a8019c52cdd8d5dad2a1b654fd4_cgraph.png" border="0" usemap="#astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a37636a8019c52cdd8d5dad2a1b654fd4_cgraph" alt=""/></div>
-<map name="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a37636a8019c52cdd8d5dad2a1b654fd4_cgraph" id="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a37636a8019c52cdd8d5dad2a1b654fd4_cgraph">
-<area shape="rect" title="将视图内所有的内存复制到目标地址。" alt="" coords="5,5,154,48"/>
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a0b0dae0e12aeccb9fc1c4d9dd074e9cf" title="检查此视图是否有效，即不为空指针或长度大于 0 。" alt="" coords="202,5,345,48"/>
-<area shape="poly" title=" " alt="" coords="154,24,186,24,186,29,154,29"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a0b0dae0e12aeccb9fc1c4d9dd074e9cf" name="a0b0dae0e12aeccb9fc1c4d9dd074e9cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b0dae0e12aeccb9fc1c4d9dd074e9cf">&#9670;&#160;</a></span>IsValid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool LangYa::SentryLib::MemoryView::IsValid </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>检查此视图是否有效，即不为空指针或长度大于 0 。 </p>
-<dl class="section warning"><dt>警告</dt><dd>此检查不能保证对应的内存真正有效，如野指针构造的内容视图仅从此类的角度出发无法判断是否有效。 </dd></dl>
-<dl class="section return"><dt>返回</dt><dd>“指针不指向一个空内容” 是否成立。 </dd></dl>
-
-<p class="reference">引用了 <a class="el" href="#l00033">Head</a> , 以及 <a class="el" href="#l00037">Size</a>.</p>
-
-<p class="reference">被这些函数引用 <a class="el" href="#l00067">CopyTo()</a>, <a class="el" href="#l00056">CopyTo()</a>, <a class="el" href="#l00018">LangYa::SentryLib::MemoryAccess::IsConnected()</a>, <a class="el" href="#l00045">ReadFrom()</a>, <a class="el" href="#l00034">ReadFrom()</a> , 以及 <a class="el" href="#l00077">SetValue()</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a0b0dae0e12aeccb9fc1c4d9dd074e9cf_icgraph.png" border="0" usemap="#astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a0b0dae0e12aeccb9fc1c4d9dd074e9cf_icgraph" alt=""/></div>
-<map name="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a0b0dae0e12aeccb9fc1c4d9dd074e9cf_icgraph" id="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a0b0dae0e12aeccb9fc1c4d9dd074e9cf_icgraph">
-<area shape="rect" title="检查此视图是否有效，即不为空指针或长度大于 0 。" alt="" coords="497,172,640,215"/>
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a2d20011eaf93c38dc74d197fd284b308" title="将视图内的所有内存复制到目标地址，直到当前内存不足或目标被填满。" alt="" coords="279,5,427,48"/>
-<area shape="poly" title=" " alt="" coords="543,161,502,110,476,85,448,62,426,50,429,46,450,58,479,81,506,107,547,158"/>
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a37636a8019c52cdd8d5dad2a1b654fd4" title="将视图内所有的内存复制到目标地址。" alt="" coords="279,72,427,115"/>
-<area shape="poly" title=" " alt="" coords="518,166,448,129,420,118,422,113,450,124,520,161"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_memory_access.html#a28d91fd0eac2ab6a5b69104b9c6456fb" title="指示内存是否有效。" alt="" coords="257,139,449,181"/>
-<area shape="poly" title=" " alt="" coords="481,183,449,178,450,172,482,177"/>
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a06db61b6c19ed6a77e3bc7882a5c8658" title="从目标读取内存，直到当前内存被填满或目标内存不足。" alt="" coords="271,272,435,315"/>
-<area shape="poly" title=" " alt="" coords="520,225,450,262,422,274,420,269,448,258,518,221"/>
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a4d6f24e486ceeee0feed63560d68eff2" title="从目标复制内存直到填满当前视图。" alt="" coords="271,205,435,248"/>
-<area shape="poly" title=" " alt="" coords="482,209,436,217,435,211,481,204"/>
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#aad786c08d4874c4b0fd76dadabb23f05" title="设置整块内存的值。 本质是调用 memset 函数，这个函数在使用过程中很奇怪，Windows 下不用引用头文件，但是 Linux 下必须引用头文件。 索性包装了此内容。" alt="" coords="274,339,432,381"/>
-<area shape="poly" title=" " alt="" coords="547,229,506,280,479,306,450,329,430,340,427,336,448,324,476,302,502,276,543,226"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_memory_access.html#a70c4d8dd8097b25a0900b1799c9c65e2" title="从内存读取字符，如果内存太小，将读取尽可能多的字符。" alt="" coords="32,5,182,48"/>
-<area shape="poly" title=" " alt="" coords="263,29,183,29,183,24,263,24"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html#aa81263f72efc7b80c6430b5300de851b" title="Input the resource, try to read bytes and then write them to destination. To make sure the destinatio..." alt="" coords="19,131,195,173"/>
-<area shape="poly" title=" " alt="" coords="260,266,255,262,238,243,230,224,223,205,207,187,189,176,192,172,210,183,227,202,235,222,243,240,258,258,264,262"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html#a75430d1719685502a598b1789a213425" title="Assume the resource has been inputted after" alt="" coords="5,197,209,256"/>
-<area shape="poly" title=" " alt="" coords="256,270,208,257,210,252,258,265"/>
-<area shape="rect" href="_test_app_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="82,280,132,307"/>
-<area shape="poly" title=" " alt="" coords="255,296,132,296,132,291,255,291"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_memory_access.html#a5e2792d4ce52eae89f9e32226bf58835" title="向内存填充字符，如果内存不足，将舍弃多余的字符。" alt="" coords="31,331,183,373"/>
-<area shape="poly" title=" " alt="" coords="256,319,184,337,182,331,255,314"/>
-<area shape="poly" title=" " alt="" coords="265,203,179,177,181,171,266,198"/>
-<area shape="poly" title=" " alt="" coords="255,229,209,229,209,224,255,224"/>
-<area shape="poly" title=" " alt="" coords="264,255,209,271,133,290,132,285,208,265,263,250"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a382b2718add95dfe0916f58b30bfd50e" name="a382b2718add95dfe0916f58b30bfd50e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a382b2718add95dfe0916f58b30bfd50e">&#9670;&#160;</a></span>operator[]()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a8effbd12d5fe73ed9d2e9be2007f712b">MemoryView::ByteType</a> &amp; LangYa::SentryLib::MemoryView::operator[] </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">SizeType</a> &amp;&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>提供快速访问某字节的运算符。 注意，内存不一定有效，而且此运算符不会检查索引是否越界。 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>字节的下标，从 0 开始。 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>此字节的引用。 </dd></dl>
-
-<p class="reference">引用了 <a class="el" href="#l00033">Head</a>.</p>
-
-<p class="reference">被这些函数引用 <a class="el" href="#l00124">LangYa::SentryLib::FullSensorData::Deserialize()</a>, <a class="el" href="#l00044">LangYa::SentryLib::PingPongBuffer::Exchange()</a>, <a class="el" href="#l00077">LangYa::SentryLib::PingPongBuffer::ExchangeWithExchangeBuffer()</a> , 以及 <a class="el" href="#l00015">UseMemoryView::SeparateBufferManipulationToOneModifyAndOneView()</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a382b2718add95dfe0916f58b30bfd50e_icgraph.png" border="0" usemap="#astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a382b2718add95dfe0916f58b30bfd50e_icgraph" alt=""/></div>
-<map name="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a382b2718add95dfe0916f58b30bfd50e_icgraph" id="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a382b2718add95dfe0916f58b30bfd50e_icgraph">
-<area shape="rect" title="提供快速访问某字节的运算符。 注意，内存不一定有效，而且此运算符不会检查索引是否越界。" alt="" coords="396,109,555,152"/>
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_full_sensor_data.html#a7c17d6eafa9bbc4b8e05ade836b19155" title="从缓冲区中反序列化资源。" alt="" coords="134,5,317,48"/>
-<area shape="poly" title=" " alt="" coords="426,103,347,62,315,51,317,46,349,58,429,99"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html#aa81263f72efc7b80c6430b5300de851b" title="Input the resource, try to read bytes and then write them to destination. To make sure the destinatio..." alt="" coords="137,72,314,115"/>
-<area shape="poly" title=" " alt="" coords="380,119,313,109,314,104,381,114"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html#a75430d1719685502a598b1789a213425" title="Assume the resource has been inputted after" alt="" coords="124,139,327,197"/>
-<area shape="poly" title=" " alt="" coords="381,147,328,155,327,150,380,142"/>
-<area shape="rect" href="namespace_use_memory_view.html#a392eda88d84d1502057412fb48f39cec" title=" " alt="" coords="103,221,348,264"/>
-<area shape="poly" title=" " alt="" coords="434,163,394,189,349,212,319,223,317,218,347,207,391,184,431,159"/>
-<area shape="rect" href="_memory_view_tester_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,229,55,256"/>
-<area shape="poly" title=" " alt="" coords="87,245,55,245,55,240,87,240"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a06db61b6c19ed6a77e3bc7882a5c8658" name="a06db61b6c19ed6a77e3bc7882a5c8658"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06db61b6c19ed6a77e3bc7882a5c8658">&#9670;&#160;</a></span>ReadFrom() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LangYa::SentryLib::MemoryView::ReadFrom </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;&#160;</td>
-          <td class="paramname"><em>view</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>从目标读取内存，直到当前内存被填满或目标内存不足。 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">view</td><td>被读取的内存。 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">引用了 <a class="el" href="#l00033">Head</a>, <a class="el" href="#l00086">IsValid()</a> , 以及 <a class="el" href="#l00037">Size</a>.</p>
-
-<p class="reference">被这些函数引用 <a class="el" href="#l00044">LangYa::SentryLib::PingPongBuffer::Exchange()</a>, <a class="el" href="#l00077">LangYa::SentryLib::PingPongBuffer::ExchangeWithExchangeBuffer()</a>, <a class="el" href="#l00036">main()</a> , 以及 <a class="el" href="#l00037">LangYa::SentryLib::MemoryAccess::Write()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a06db61b6c19ed6a77e3bc7882a5c8658_cgraph.png" border="0" usemap="#astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a06db61b6c19ed6a77e3bc7882a5c8658_cgraph" alt=""/></div>
-<map name="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a06db61b6c19ed6a77e3bc7882a5c8658_cgraph" id="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a06db61b6c19ed6a77e3bc7882a5c8658_cgraph">
-<area shape="rect" title="从目标读取内存，直到当前内存被填满或目标内存不足。" alt="" coords="5,5,170,48"/>
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a0b0dae0e12aeccb9fc1c4d9dd074e9cf" title="检查此视图是否有效，即不为空指针或长度大于 0 。" alt="" coords="218,5,361,48"/>
-<area shape="poly" title=" " alt="" coords="170,24,202,24,202,29,170,29"/>
-</map>
-</div>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a06db61b6c19ed6a77e3bc7882a5c8658_icgraph.png" border="0" usemap="#astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a06db61b6c19ed6a77e3bc7882a5c8658_icgraph" alt=""/></div>
-<map name="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a06db61b6c19ed6a77e3bc7882a5c8658_icgraph" id="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a06db61b6c19ed6a77e3bc7882a5c8658_icgraph">
-<area shape="rect" title="从目标读取内存，直到当前内存被填满或目标内存不足。" alt="" coords="257,113,421,156"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html#aa81263f72efc7b80c6430b5300de851b" title="Input the resource, try to read bytes and then write them to destination. To make sure the destinatio..." alt="" coords="19,5,195,48"/>
-<area shape="poly" title=" " alt="" coords="290,107,208,62,179,51,181,46,210,58,292,102"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html#a75430d1719685502a598b1789a213425" title="Assume the resource has been inputted after" alt="" coords="5,72,209,131"/>
-<area shape="poly" title=" " alt="" coords="240,123,209,119,210,113,241,118"/>
-<area shape="rect" href="_test_app_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="82,155,132,181"/>
-<area shape="poly" title=" " alt="" coords="241,151,132,167,131,162,240,146"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_memory_access.html#a5e2792d4ce52eae89f9e32226bf58835" title="向内存填充字符，如果内存不足，将舍弃多余的字符。" alt="" coords="31,205,183,248"/>
-<area shape="poly" title=" " alt="" coords="280,165,210,196,179,207,177,202,208,191,278,161"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a4d6f24e486ceeee0feed63560d68eff2" name="a4d6f24e486ceeee0feed63560d68eff2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d6f24e486ceeee0feed63560d68eff2">&#9670;&#160;</a></span>ReadFrom() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LangYa::SentryLib::MemoryView::ReadFrom </td>
-          <td>(</td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>head</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>从目标复制内存直到填满当前视图。 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">head</td><td>被读取的内存的头部。 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">引用了 <a class="el" href="#l00033">Head</a>, <a class="el" href="#l00086">IsValid()</a> , 以及 <a class="el" href="#l00037">Size</a>.</p>
-
-<p class="reference">被这些函数引用 <a class="el" href="#l00044">LangYa::SentryLib::PingPongBuffer::Exchange()</a>, <a class="el" href="#l00077">LangYa::SentryLib::PingPongBuffer::ExchangeWithExchangeBuffer()</a> , 以及 <a class="el" href="#l00036">main()</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a4d6f24e486ceeee0feed63560d68eff2_cgraph.png" border="0" usemap="#astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a4d6f24e486ceeee0feed63560d68eff2_cgraph" alt=""/></div>
-<map name="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a4d6f24e486ceeee0feed63560d68eff2_cgraph" id="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a4d6f24e486ceeee0feed63560d68eff2_cgraph">
-<area shape="rect" title="从目标复制内存直到填满当前视图。" alt="" coords="5,5,170,48"/>
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a0b0dae0e12aeccb9fc1c4d9dd074e9cf" title="检查此视图是否有效，即不为空指针或长度大于 0 。" alt="" coords="218,5,361,48"/>
-<area shape="poly" title=" " alt="" coords="170,24,202,24,202,29,170,29"/>
-</map>
-</div>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a4d6f24e486ceeee0feed63560d68eff2_icgraph.png" border="0" usemap="#astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a4d6f24e486ceeee0feed63560d68eff2_icgraph" alt=""/></div>
-<map name="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a4d6f24e486ceeee0feed63560d68eff2_icgraph" id="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_a4d6f24e486ceeee0feed63560d68eff2_icgraph">
-<area shape="rect" title="从目标复制内存直到填满当前视图。" alt="" coords="257,80,421,123"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html#aa81263f72efc7b80c6430b5300de851b" title="Input the resource, try to read bytes and then write them to destination. To make sure the destinatio..." alt="" coords="19,5,195,48"/>
-<area shape="poly" title=" " alt="" coords="255,77,175,51,177,46,257,72"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html#a75430d1719685502a598b1789a213425" title="Assume the resource has been inputted after" alt="" coords="5,72,209,131"/>
-<area shape="poly" title=" " alt="" coords="241,104,209,104,209,99,241,99"/>
-<area shape="rect" href="_test_app_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="82,155,132,181"/>
-<area shape="poly" title=" " alt="" coords="258,130,209,145,133,165,131,160,208,140,257,125"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="aad786c08d4874c4b0fd76dadabb23f05" name="aad786c08d4874c4b0fd76dadabb23f05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad786c08d4874c4b0fd76dadabb23f05">&#9670;&#160;</a></span>SetValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LangYa::SentryLib::MemoryView::SetValue </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a8effbd12d5fe73ed9d2e9be2007f712b">ByteType</a>&#160;</td>
-          <td class="paramname"><em>byte</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>设置整块内存的值。 本质是调用 memset 函数，这个函数在使用过程中很奇怪，Windows 下不用引用头文件，但是 Linux 下必须引用头文件。 索性包装了此内容。 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">byte</td><td>内存视图最后会全部为此值。 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">引用了 <a class="el" href="#l00033">Head</a>, <a class="el" href="#l00086">IsValid()</a> , 以及 <a class="el" href="#l00037">Size</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="struct_lang_ya_1_1_sentry_lib_1_1_memory_view_aad786c08d4874c4b0fd76dadabb23f05_cgraph.png" border="0" usemap="#astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_aad786c08d4874c4b0fd76dadabb23f05_cgraph" alt=""/></div>
-<map name="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_aad786c08d4874c4b0fd76dadabb23f05_cgraph" id="astruct_lang_ya_1_1_sentry_lib_1_1_memory_view_aad786c08d4874c4b0fd76dadabb23f05_cgraph">
-<area shape="rect" title="设置整块内存的值。 本质是调用 memset 函数，这个函数在使用过程中很奇怪，Windows 下不用引用头文件，但是 Linux 下必须引用头文件。 索性包装了此内容。" alt="" coords="5,5,163,48"/>
-<area shape="rect" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a0b0dae0e12aeccb9fc1c4d9dd074e9cf" title="检查此视图是否有效，即不为空指针或长度大于 0 。" alt="" coords="211,5,354,48"/>
-<area shape="poly" title=" " alt="" coords="163,24,195,24,195,29,163,29"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ab03cdbd7de9a9347dd56d11b6b94f4ab" name="ab03cdbd7de9a9347dd56d11b6b94f4ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab03cdbd7de9a9347dd56d11b6b94f4ab">&#9670;&#160;</a></span>ToBuffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::asio::mutable_buffer LangYa::SentryLib::MemoryView::ToBuffer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>将此类型转化为 boost::asio::mutable_buffer 。 </p>
-<dl class="section return"><dt>返回</dt><dd>boost::asio::mutable_buffer 的一个实例。 </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">友元及相关函数文档</h2>
-<a id="af7271e03447cf1c38648468113e39ea3" name="af7271e03447cf1c38648468113e39ea3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7271e03447cf1c38648468113e39ea3">&#9670;&#160;</a></span>operator&lt;&lt; <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>stream</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;&#160;</td>
-          <td class="paramname"><em>view</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>将内存视图中的所有字节以十六进制整数的形式写进流中，相邻两整数输出使用空格 ' ' 隔开。 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">stream</td><td>支持字节输出的流。 </td></tr>
-    <tr><td class="paramname">view</td><td>字节资源。 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>参数中 stream 的引用。 </dd></dl>
-
-</div>
-</div>
-<a id="a2e506346f9cfa9626e050b73f1979c62" name="a2e506346f9cfa9626e050b73f1979c62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e506346f9cfa9626e050b73f1979c62">&#9670;&#160;</a></span>operator&lt;&lt; <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; T &gt; &amp; operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>vector</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;&#160;</td>
-          <td class="paramname"><em>view</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>将内存视图的数据利用指针强制转化，视为某个元素，然后放入 std::vector 中。 </p>
-<dl class="tparams"><dt>模板参数</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>std::vector 元素的类型。 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vector</td><td>一个类似于流的向量，用于接收数据。 </td></tr>
-    <tr><td class="paramname">view</td><td>内存视图，它储存了此类型的数据。 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>传入参数 vector 的引用。 </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">类成员变量说明</h2>
-<a id="a6dd8056002a987d8c31ddbd69fc7e880" name="a6dd8056002a987d8c31ddbd69fc7e880"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6dd8056002a987d8c31ddbd69fc7e880">&#9670;&#160;</a></span>Head</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#ad2b3b39af309c5723c3bbff95272964b">HeadType</a> LangYa::SentryLib::MemoryView::Head {nullptr}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>记录内存的开头，可以使用偏移量访问后面的内容。 </p>
-<dl class="section warning"><dt>警告</dt><dd>当它为 nullptr 时，此内存视图无效。 </dd></dl>
-
-<p class="reference">被这些函数引用 <a class="el" href="#l00067">CopyTo()</a>, <a class="el" href="#l00056">CopyTo()</a>, <a class="el" href="#l00039">LangYa::SentryLib::SentryData::Deserialize()</a>, <a class="el" href="#l00030">LangYa::SentryLib::RefereeData::Deserialize()</a>, <a class="el" href="#l00076">LangYa::SentryLib::FullControlData::Deserialize()</a>, <a class="el" href="#l00044">LangYa::SentryLib::PingPongBuffer::Exchange()</a>, <a class="el" href="#l00077">LangYa::SentryLib::PingPongBuffer::ExchangeWithExchangeBuffer()</a>, <a class="el" href="#l00086">IsValid()</a>, <a class="el" href="#l00012">main()</a>, <a class="el" href="#l00012">MemoryView()</a>, <a class="el" href="#l00036">LangYa::SentryLib::UniqueBuffer::operator=()</a>, <a class="el" href="#l00027">operator[]()</a>, <a class="el" href="#l00045">ReadFrom()</a>, <a class="el" href="#l00034">ReadFrom()</a>, <a class="el" href="#l00060">LangYa::SentryLib::SentryData::Serialize()</a>, <a class="el" href="#l00049">LangYa::SentryLib::RefereeData::Serialize()</a>, <a class="el" href="#l00097">LangYa::SentryLib::FullControlData::Serialize()</a>, <a class="el" href="#l00077">SetValue()</a>, <a class="el" href="#l00027">LangYa::SentryLib::UniqueBuffer::UniqueBuffer()</a>, <a class="el" href="#l00019">~MemoryView()</a> , 以及 <a class="el" href="#l00021">LangYa::SentryLib::UniqueBuffer::~UniqueBuffer()</a>.</p>
-
-</div>
-</div>
-<a id="aebfa91b719ebd4721036343261fc35d3" name="aebfa91b719ebd4721036343261fc35d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebfa91b719ebd4721036343261fc35d3">&#9670;&#160;</a></span>Size</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html#a31da2070cd759fdfd599d1a779d189a7">SizeType</a> LangYa::SentryLib::MemoryView::Size {0}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>记录内存的长度，使用偏移量时访问内存时不应该超过此长度。 </p>
-<dl class="section warning"><dt>警告</dt><dd>当它为 0 时，此内存视图无效。 </dd></dl>
-
-<p class="reference">被这些函数引用 <a class="el" href="#l00067">CopyTo()</a>, <a class="el" href="#l00056">CopyTo()</a>, <a class="el" href="#l00039">LangYa::SentryLib::SentryData::Deserialize()</a>, <a class="el" href="#l00030">LangYa::SentryLib::RefereeData::Deserialize()</a>, <a class="el" href="#l00076">LangYa::SentryLib::FullControlData::Deserialize()</a>, <a class="el" href="#l00124">LangYa::SentryLib::FullSensorData::Deserialize()</a>, <a class="el" href="#l00044">LangYa::SentryLib::PingPongBuffer::Exchange()</a>, <a class="el" href="#l00077">LangYa::SentryLib::PingPongBuffer::ExchangeWithExchangeBuffer()</a>, <a class="el" href="#l00086">IsValid()</a>, <a class="el" href="#l00036">main()</a>, <a class="el" href="#l00012">MemoryView()</a>, <a class="el" href="#l00013">LangYa::SentryLib::PingPongBuffer::PingPongBuffer()</a>, <a class="el" href="#l00030">LangYa::SentryLib::MemoryAccess::Read()</a>, <a class="el" href="#l00196">LangYa::SentryLib::LangYaConnection::Read()</a>, <a class="el" href="#l00045">ReadFrom()</a>, <a class="el" href="#l00034">ReadFrom()</a>, <a class="el" href="#l00060">LangYa::SentryLib::SentryData::Serialize()</a>, <a class="el" href="#l00049">LangYa::SentryLib::RefereeData::Serialize()</a>, <a class="el" href="#l00097">LangYa::SentryLib::FullControlData::Serialize()</a>, <a class="el" href="#l00150">LangYa::SentryLib::FullSensorData::Serialize()</a>, <a class="el" href="#l00077">SetValue()</a>, <a class="el" href="#l00038">LangYa::SentryLib::TripleBuffer::TripleBuffer()</a>, <a class="el" href="#l00037">LangYa::SentryLib::MemoryAccess::Write()</a>, <a class="el" href="#l00213">LangYa::SentryLib::LangYaConnection::Write()</a> , 以及 <a class="el" href="#l00019">~MemoryView()</a>.</p>
-
-</div>
-</div>
-<hr/>该结构体的文档由以下文件生成:<ul>
+<h1><a class="anchor" id="memoryview"></a>
+MemoryView</h1>
+<p>提供关于内存的视图， 它不能保证作为传入的参数时得到的内存视图是有效的， 因此作为函数参数时，你需要信任调用方。 类中提供了有关内存的操作函数，CopyTo 和 ReadFrom ， 它们都是对 memcpy 的封装，但是会使用内存视图中的数据检查调用 memcpy 的参数。 </p>
+</div><hr/>该结构体的文档由以下文件生成:<ul>
 <li>Headers/LangYa/SentryLib/Common/<a class="el" href="">MemoryView.hpp</a></li>
 <li>Sources/<a class="el" href="">MemoryView.cpp</a></li>
 </ul>
@@ -956,7 +191,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_lang_ya.html">LangYa</a></li><li class="navelem"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">SentryLib</a></li><li class="navelem"><a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a></li>
-    <li class="footer">生成于 2023年 十二月 31日 星期日 15:07:41 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2024年 一月 3日 星期三 16:30:41 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

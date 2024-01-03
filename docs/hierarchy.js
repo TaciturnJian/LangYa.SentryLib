@@ -8,32 +8,14 @@ var hierarchy =
       [ "SingleAction", "class_single_action.html", null ]
     ] ],
     [ "LangYa::SentryLib::ApplicationInfo", "struct_lang_ya_1_1_sentry_lib_1_1_application_info.html", null ],
-    [ "LangYa::SentryLib::CanStreamFormatToConsoleFriendlyString", "class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_console_friendly_string.html", [
-      [ "LangYa::SentryLib::IPv4Address", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html", null ],
-      [ "LangYa::SentryLib::IPv4Endpoint", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_endpoint.html", null ]
-    ] ],
-    [ "LangYa::SentryLib::CanStreamFormatToJsonString", "class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_json_string.html", [
-      [ "LangYa::SentryLib::Position1< float >", "struct_lang_ya_1_1_sentry_lib_1_1_position1.html", null ],
-      [ "LangYa::SentryLib::PositionedVector3< float >", "struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector3.html", null ],
-      [ "LangYa::SentryLib::Vector< float >", "class_lang_ya_1_1_sentry_lib_1_1_vector.html", null ],
-      [ "LangYa::SentryLib::Vector< TElement >", "class_lang_ya_1_1_sentry_lib_1_1_vector.html", null ],
-      [ "LangYa::SentryLib::Vector< char >", "class_lang_ya_1_1_sentry_lib_1_1_vector.html", null ],
-      [ "LangYa::SentryLib::ArmorPlate", "class_lang_ya_1_1_sentry_lib_1_1_armor_plate.html", null ],
-      [ "LangYa::SentryLib::Position1< TElement >", "struct_lang_ya_1_1_sentry_lib_1_1_position1.html", [
-        [ "LangYa::SentryLib::Position2< float >", "struct_lang_ya_1_1_sentry_lib_1_1_position2.html", null ],
-        [ "LangYa::SentryLib::Position2< TElement >", "struct_lang_ya_1_1_sentry_lib_1_1_position2.html", [
-          [ "LangYa::SentryLib::Position3< float >", "struct_lang_ya_1_1_sentry_lib_1_1_position3.html", null ],
-          [ "LangYa::SentryLib::Position3< TElement >", "struct_lang_ya_1_1_sentry_lib_1_1_position3.html", null ]
-        ] ]
-      ] ],
-      [ "LangYa::SentryLib::PositionedVector3< TElement >", "struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector3.html", null ],
-      [ "LangYa::SentryLib::Vector< TElement, Dimension >", "class_lang_ya_1_1_sentry_lib_1_1_vector.html", null ]
-    ] ],
-    [ "LangYa::SentryLib::IPv4TCPServer::ClientThreadInfo", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_server_1_1_client_thread_info.html", null ],
     [ "LangYa::SentryLib::CommandLineArguments", "struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments.html", null ],
     [ "LangYa::SentryLib::SentryData::ComplexFireByte", "struct_lang_ya_1_1_sentry_lib_1_1_sentry_data_1_1_complex_fire_byte.html", null ],
     [ "LangYa::SentryLib::Configurator", "class_lang_ya_1_1_sentry_lib_1_1_configurator.html", null ],
     [ "LangYa::SentryLib::ConsoleCursor", "class_lang_ya_1_1_sentry_lib_1_1_console_cursor.html", null ],
+    [ "ConsoleKey", "class_console_key.html", null ],
+    [ "ConsoleKeyboard", "class_console_keyboard.html", null ],
+    [ "LangYa::SentryLib::ConsoleKeyboard", "class_lang_ya_1_1_sentry_lib_1_1_console_keyboard.html", null ],
+    [ "ConsoleKeyInfo", "struct_console_key_info.html", null ],
     [ "LangYa::SentryLib::ConsoleManipulator", "class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html", null ],
     [ "LangYa::SentryLib::ContentAcceptor< TContent >", "class_lang_ya_1_1_sentry_lib_1_1_content_acceptor.html", null ],
     [ "LangYa::SentryLib::ContentProvider< TContent >", "class_lang_ya_1_1_sentry_lib_1_1_content_provider.html", null ],
@@ -49,8 +31,53 @@ var hierarchy =
       [ "LangYa::SentryLib::SerializableContentController< TControllerData >", "class_lang_ya_1_1_sentry_lib_1_1_serializable_content_controller.html", null ]
     ] ],
     [ "LangYa::SentryLib::ExchangeCube", "class_lang_ya_1_1_sentry_lib_1_1_exchange_cube.html", null ],
+    [ "Sango::IComparable< T >", "class_sango_1_1_i_comparable.html", null ],
+    [ "Sango::IComparable< NumberID< TNumber > >", "class_sango_1_1_i_comparable.html", [
+      [ "Sango::NumberID< TNumber >", "struct_sango_1_1_number_i_d.html", null ]
+    ] ],
+    [ "LangYa::SentryLib::IFormatByStream", "class_lang_ya_1_1_sentry_lib_1_1_i_format_by_stream.html", [
+      [ "LangYa::SentryLib::Position1< float >", "struct_lang_ya_1_1_sentry_lib_1_1_position1.html", null ],
+      [ "LangYa::SentryLib::PositionedVector3< float >", "struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector3.html", null ],
+      [ "LangYa::SentryLib::Vector< float >", "class_lang_ya_1_1_sentry_lib_1_1_vector.html", null ],
+      [ "LangYa::SentryLib::Vector< TElement >", "class_lang_ya_1_1_sentry_lib_1_1_vector.html", null ],
+      [ "LangYa::SentryLib::Vector< char >", "class_lang_ya_1_1_sentry_lib_1_1_vector.html", null ],
+      [ "LangYa::SentryLib::ArmorPlate", "class_lang_ya_1_1_sentry_lib_1_1_armor_plate.html", null ],
+      [ "LangYa::SentryLib::IPv4Address", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html", null ],
+      [ "LangYa::SentryLib::IPv4Endpoint", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_endpoint.html", null ],
+      [ "LangYa::SentryLib::Position1< TElement >", "struct_lang_ya_1_1_sentry_lib_1_1_position1.html", [
+        [ "LangYa::SentryLib::Position2< float >", "struct_lang_ya_1_1_sentry_lib_1_1_position2.html", null ],
+        [ "LangYa::SentryLib::Position2< TElement >", "struct_lang_ya_1_1_sentry_lib_1_1_position2.html", [
+          [ "LangYa::SentryLib::Position3< float >", "struct_lang_ya_1_1_sentry_lib_1_1_position3.html", null ],
+          [ "LangYa::SentryLib::Position3< TElement >", "struct_lang_ya_1_1_sentry_lib_1_1_position3.html", null ]
+        ] ]
+      ] ],
+      [ "LangYa::SentryLib::PositionedVector2< TElement >", "struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector2.html", null ],
+      [ "LangYa::SentryLib::PositionedVector3< TElement >", "struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector3.html", null ],
+      [ "LangYa::SentryLib::Vector< TElement, Dimension >", "class_lang_ya_1_1_sentry_lib_1_1_vector.html", null ]
+    ] ],
+    [ "Sango::IHasID< TID >", "class_sango_1_1_i_has_i_d.html", [
+      [ "Sango::InfoWithID< TID >", "struct_sango_1_1_info_with_i_d.html", null ]
+    ] ],
+    [ "Sango::IHasInfo< TInfo >", "class_sango_1_1_i_has_info.html", [
+      [ "Sango::WithInfo< TInfo >", "struct_sango_1_1_with_info.html", null ]
+    ] ],
+    [ "Sango::IHasName< TName >", "class_sango_1_1_i_has_name.html", [
+      [ "Sango::InfoWithName< TName >", "struct_sango_1_1_info_with_name.html", null ]
+    ] ],
+    [ "LangYa::SentryLib::IParse< TParseTarget >", "class_lang_ya_1_1_sentry_lib_1_1_i_parse.html", null ],
+    [ "LangYa::SentryLib::IParseStream", "class_lang_ya_1_1_sentry_lib_1_1_i_parse_stream.html", [
+      [ "LangYa::SentryLib::IPv4Address", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html", null ],
+      [ "LangYa::SentryLib::IPv4Endpoint", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_endpoint.html", null ]
+    ] ],
+    [ "LangYa::SentryLib::IParseStringView", "class_lang_ya_1_1_sentry_lib_1_1_i_parse_string_view.html", [
+      [ "LangYa::SentryLib::IPv4Address", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html", null ],
+      [ "LangYa::SentryLib::IPv4Endpoint", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_endpoint.html", null ]
+    ] ],
     [ "LangYa::SentryLib::IPv4TCPServer", "class_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_server.html", null ],
+    [ "LangYa::SentryLib::ManagedStack< TItem >::ItemInfo", "struct_lang_ya_1_1_sentry_lib_1_1_managed_stack_1_1_item_info.html", null ],
     [ "LangYa::SentryLib::MonitorPackage::ItemType", "struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type.html", null ],
+    [ "LangYa::SentryLib::ManagedStack< TItem >", "class_lang_ya_1_1_sentry_lib_1_1_managed_stack.html", null ],
+    [ "LangYa::SentryLib::ManagedStack< std::thread >", "class_lang_ya_1_1_sentry_lib_1_1_managed_stack.html", null ],
     [ "LangYa::SentryLib::Manager< TItem, TKey >", "class_lang_ya_1_1_sentry_lib_1_1_manager.html", null ],
     [ "Manager< T >", "class_manager.html", null ],
     [ "LangYa::SentryLib::MatchStatusManager", "class_lang_ya_1_1_sentry_lib_1_1_match_status_manager.html", null ],
@@ -76,7 +103,6 @@ var hierarchy =
     [ "LangYa::SentryLib::PingPongBuffer", "class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer.html", null ],
     [ "LangYa::SentryLib::ViMap::PixelListSampleOption", "struct_lang_ya_1_1_sentry_lib_1_1_vi_map_1_1_pixel_list_sample_option.html", null ],
     [ "LangYa::SentryLib::ViMap::PointListSampleOption", "struct_lang_ya_1_1_sentry_lib_1_1_vi_map_1_1_point_list_sample_option.html", null ],
-    [ "LangYa::SentryLib::PositionedVector2< TElement >", "struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector2.html", null ],
     [ "LangYa::SentryLib::Resource< TContent >", "struct_lang_ya_1_1_sentry_lib_1_1_resource.html", null ],
     [ "LangYa::SentryLib::Resource< LangYa::SentryLib::MemoryView >", "struct_lang_ya_1_1_sentry_lib_1_1_resource.html", null ],
     [ "LangYa::SentryLib::SerializableContent", "class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html", [

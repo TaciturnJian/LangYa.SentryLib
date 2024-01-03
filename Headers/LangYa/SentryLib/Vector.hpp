@@ -4,12 +4,12 @@
 #include <vector>
 
 #include <LangYa/SentryLib/Common/MemoryView.hpp>
-#include <LangYa/SentryLib/StreamFormat/CanStreamFormatToJsonString.hpp>
+#include <LangYa/SentryLib/IFormatByStream.hpp>
 
 namespace LangYa::SentryLib
 {
 	template <typename TElement, MemoryView::SizeType Dimension>
-	class Vector final : public CanStreamFormatToJsonString
+	class Vector final : public IFormatByStream
 	{
 	protected:
 		TElement Element[Dimension]{0};
@@ -117,7 +117,7 @@ namespace LangYa::SentryLib
 			return Element[dimension];
 		}
 
-		std::ostream& FormatToJsonString(std::ostream& stream) const override
+		std::ostream& FormatByStream(std::ostream& stream, int option = 0) const override
 		{
 			if (Dimension == 0)
 			{

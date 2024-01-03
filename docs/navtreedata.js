@@ -25,7 +25,11 @@
 var NAVTREE =
 [
   [ "LangYa.SentryLib", "index.html", [
-    [ "SentryLib 代码文档", "md__r_e_a_d_m_e.html", null ],
+    [ "SentryLib 代码文档", "md__r_e_a_d_m_e.html", [
+      [ "常用类型", "md__r_e_a_d_m_e.html#常用类型", [
+        [ "内存相关", "md__r_e_a_d_m_e.html#内存相关", null ]
+      ] ]
+    ] ],
     [ "命名空间", "namespaces.html", [
       [ "命名空间列表", "namespaces.html", "namespaces_dup" ],
       [ "命名空间成员", "namespacemembers.html", [
@@ -36,11 +40,11 @@ var NAVTREE =
       ] ]
     ] ],
     [ "概念", "concepts.html", "concepts" ],
-    [ "类", "annotated.html", [
-      [ "类列表", "annotated.html", "annotated_dup" ],
-      [ "类索引", "classes.html", null ],
+    [ "结构体", "annotated.html", [
+      [ "结构体", "annotated.html", "annotated_dup" ],
+      [ "结构体索引", "classes.html", null ],
       [ "类继承关系", "hierarchy.html", "hierarchy" ],
-      [ "类成员", "functions.html", [
+      [ "成员变量", "functions.html", [
         [ "全部", "functions.html", "functions_dup" ],
         [ "函数", "functions_func.html", "functions_func" ],
         [ "变量", "functions_vars.html", null ],
@@ -52,7 +56,7 @@ var NAVTREE =
     ] ],
     [ "文件", "files.html", [
       [ "文件列表", "files.html", "files_dup" ],
-      [ "文件成员", "globals.html", [
+      [ "全局定义", "globals.html", [
         [ "全部", "globals.html", null ],
         [ "函数", "globals_func.html", null ],
         [ "变量", "globals_vars.html", null ],
@@ -68,12 +72,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_info_8cpp.html",
-"_t_c_p_connection_8hpp.html",
-"class_lang_ya_1_1_sentry_lib_1_1_content_provider.html#a2e080b98e210b8adff65a4eb0fe28fe8",
-"class_lang_ya_1_1_sentry_lib_1_1_serial_port.html#af68767e2ba9f345c189462ea1653ee5a",
-"functions_func_p.html",
-"struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_server_1_1_client_thread_info.html",
-"struct_lang_ya_1_1_sentry_lib_1_1_sentry_data_1_1_serialization_result.html#a862a0cec082530ae8533b85040e3cc20"
+"_t_c_p_tester_8cpp_ac0f2228420376f4db7e1274f2b41667c.html#ac0f2228420376f4db7e1274f2b41667c",
+"class_lang_ya_1_1_sentry_lib_1_1_content_provider_ab36181b1a5b933419cb5ab89781cafdd.html#ab36181b1a5b933419cb5ab89781cafdd",
+"class_lang_ya_1_1_sentry_lib_1_1_serial_port.html",
+"class_sango_1_1_i_has_name_a7ca32f99826dadc11f52912cb7edd9db.html#a7ca32f99826dadc11f52912cb7edd9db",
+"struct_lang_ya_1_1_sentry_lib_1_1_command_line_arguments_a02f1e1ddebbd3cb0579921d6a02c7554.html#a02f1e1ddebbd3cb0579921d6a02c7554",
+"struct_lang_ya_1_1_sentry_lib_1_1_resource_ac0a68a1ad0dec195116778fe70c907f1.html#ac0a68a1ad0dec195116778fe70c907f1",
+"x64-_release_2_c_make_files_23_827_82-msvc1_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp_a46d5d95daa1bef867bd0179594310ed5.html#a46d5d95daa1bef867bd0179594310ed5"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

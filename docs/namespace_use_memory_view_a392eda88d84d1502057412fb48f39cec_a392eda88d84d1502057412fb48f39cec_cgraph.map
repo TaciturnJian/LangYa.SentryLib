@@ -1,0 +1,5 @@
+<map id="UseMemoryView::SeparateBufferManipulationToOneModifyAndOneView" name="UseMemoryView::SeparateBufferManipulationToOneModifyAndOneView">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,251,48"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a382b2718add95dfe0916f58b30bfd50e.html#a382b2718add95dfe0916f58b30bfd50e" title="提供快速访问某字节的运算符。 注意，内存不一定有效，而且此运算符不会检查索引是否越界。" alt="" coords="299,5,458,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="251,24,283,24,283,29,251,29"/>
+</map>

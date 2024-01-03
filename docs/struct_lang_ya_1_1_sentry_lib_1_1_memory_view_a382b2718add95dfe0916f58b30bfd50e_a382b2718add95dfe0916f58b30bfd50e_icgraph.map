@@ -1,0 +1,13 @@
+<map id="LangYa::SentryLib::MemoryView::operator[]" name="LangYa::SentryLib::MemoryView::operator[]">
+<area shape="rect" id="Node000001" title="提供快速访问某字节的运算符。 注意，内存不一定有效，而且此运算符不会检查索引是否越界。" alt="" coords="396,109,555,152"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_full_sensor_data_a7c17d6eafa9bbc4b8e05ade836b19155.html#a7c17d6eafa9bbc4b8e05ade836b19155" title="从缓冲区中反序列化资源。" alt="" coords="134,5,317,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="426,103,347,62,315,51,317,46,349,58,429,99"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer_aa81263f72efc7b80c6430b5300de851b.html#aa81263f72efc7b80c6430b5300de851b" title="Input the resource, try to read bytes and then write them to destination. To make sure the destinatio..." alt="" coords="137,72,314,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="380,119,313,109,314,104,381,114"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer_a75430d1719685502a598b1789a213425.html#a75430d1719685502a598b1789a213425" title="Assume the resource has been inputted after" alt="" coords="124,139,327,197"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="381,147,328,155,327,150,380,142"/>
+<area shape="rect" id="Node000005" href="$namespace_use_memory_view_a392eda88d84d1502057412fb48f39cec.html#a392eda88d84d1502057412fb48f39cec" title=" " alt="" coords="103,221,348,264"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="434,163,394,189,349,212,319,223,317,218,347,207,391,184,431,159"/>
+<area shape="rect" id="Node000006" href="$_memory_view_tester_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,229,55,256"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="87,245,55,245,55,240,87,240"/>
+</map>

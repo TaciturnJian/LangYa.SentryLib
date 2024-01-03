@@ -1,0 +1,6 @@
+<map id="LangYa::SentryLib::TripleBuffer::TripleBuffer" name="LangYa::SentryLib::TripleBuffer::TripleBuffer">
+<area shape="rect" id="Node000001" title="Construct a TripleBuffer with the given size." alt="" coords="5,29,163,72"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_unique_buffer_a68b67fc2a71e1b22c6b97862ab97e7a7.html#a68b67fc2a71e1b22c6b97862ab97e7a7" title="Construct a new UniqueBuffer object with provided size." alt="" coords="211,29,386,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,48,195,48,195,53,163,53"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="257,29,256,19,263,10,277,5,298,3,321,5,335,11,333,16,320,10,298,8,278,10,266,15,261,21,263,28"/>
+</map>

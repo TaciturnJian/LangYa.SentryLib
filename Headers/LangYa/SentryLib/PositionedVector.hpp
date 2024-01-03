@@ -1,66 +1,23 @@
 #pragma once
 
+#include <LangYa/SentryLib/IFormatByStream.hpp>
 #include <LangYa/SentryLib/Position.hpp>
 #include <LangYa/SentryLib/Vector.hpp>
 
 namespace LangYa::SentryLib {
 	template<typename TElement>
-	struct PositionedVector3 final : CanStreamFormatToJsonString {
+	struct PositionedVector3 final : IFormatByStream {
 		Position3<TElement> Position{};
 		Vector3<TElement> Direction{};
 
-		friend Vector3<TElement> operator-(const PositionedVector3& left, const Vector3<TElement>& right)
-		{
-			return left.Direction - right;
-		}
-
-		friend Vector3<TElement> operator-(const Vector3<TElement>& left, const PositionedVector3& right)
-		{
-			return left - right.Direction;
-		}
-
-		friend Vector3<TElement> operator+(const PositionedVector3& left, const Vector3<TElement>& right)
-		{
-			return left.Direction + right;
-		}
-
-		friend Vector3<TElement> operator+(const Vector3<TElement>& left, const PositionedVector3& right)
-		{
-			return left + right.Direction;
-		}
-
-		PositionedVector3& operator+=(const Position3<TElement>& position)
-		{
-			Position += position;
-			return *this;
-		}
-
-		PositionedVector3& operator+=(const Vector3<TElement>& direction)
-		{
-			Direction += direction;
-			return *this;
-		}
-
-		PositionedVector3& operator=(const Position3<TElement>& position)
-		{
-			Position = position;
-			return *this;
-		}
-
-		PositionedVector3& operator=(const Vector3<TElement>& direction)
-		{
-			Direction = direction;
-			return *this;
-		}
-
-		std::ostream& FormatToJsonString(std::ostream& stream) const override
+		std::ostream& FormatByStream(std::ostream& stream, int option = 0) const override
 		{
 			stream << "{";
 			stream << R"("Position":)";
-			Position.FormatToJsonString(stream);
+			Position.FormatByStream(stream);
 			stream << ",";
 			stream << R"("Direction":)";
-			Direction.FormatToJsonString(stream);
+			Direction.FormatByStream(stream);
 			stream << "}";
 			return stream;
 		}
@@ -71,52 +28,20 @@ namespace LangYa::SentryLib {
 	using PositionedVector3D = PositionedVector3<double>;
 
 	template<typename TElement>
-	struct PositionedVector2 {
+	struct PositionedVector2 : IFormatByStream {
 		Position2<TElement> Position{};
 		Vector2<TElement> Direction{};
 
-		friend Vector2<TElement> operator-(const PositionedVector2& left, const Vector2<TElement>& right)
+		std::ostream& FormatByStream(std::ostream& stream, int option) const override
 		{
-			return left.Direction - right;
-		}
-
-		friend Vector2<TElement> operator-(const Vector2<TElement>& left, const PositionedVector2& right)
-		{
-			return left - right.Direction;
-		}
-
-		friend Vector2<TElement> operator+(const PositionedVector2& left, const Vector2<TElement>& right)
-		{
-			return left.Direction + right;
-		}
-
-		friend Vector2<TElement> operator+(const Vector2<TElement>& left, const PositionedVector2& right)
-		{
-			return left + right.Direction;
-		}
-
-		PositionedVector2& operator+=(const Position2<TElement>& position)
-		{
-			Position += position;
-			return *this;
-		}
-
-		PositionedVector2& operator+=(const Vector2<TElement>& direction)
-		{
-			Direction += direction;
-			return *this;
-		}
-
-		PositionedVector2& operator=(const Position2<TElement>& position)
-		{
-			Position = position;
-			return *this;
-		}
-
-		PositionedVector2& operator=(const Vector2<TElement>& direction)
-		{
-			Direction = direction;
-			return *this;
+			stream << "{";
+			stream << R"("Position":)";
+			Position.FormatByStream(stream);
+			stream << ",";
+			stream << R"("Direction":)";
+			Direction.FormatByStream(stream);
+			stream << "}";
+			return stream;
 		}
 	};
 

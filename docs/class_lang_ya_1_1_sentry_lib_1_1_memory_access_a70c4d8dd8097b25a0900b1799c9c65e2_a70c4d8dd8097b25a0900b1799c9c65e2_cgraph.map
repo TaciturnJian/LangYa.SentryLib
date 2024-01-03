@@ -1,0 +1,7 @@
+<map id="LangYa::SentryLib::MemoryAccess::Read" name="LangYa::SentryLib::MemoryAccess::Read">
+<area shape="rect" id="Node000001" title="从内存读取字符，如果内存太小，将读取尽可能多的字符。" alt="" coords="5,5,156,48"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a2d20011eaf93c38dc74d197fd284b308.html#a2d20011eaf93c38dc74d197fd284b308" title="将视图内的所有内存复制到目标地址，直到当前内存不足或目标被填满。" alt="" coords="204,5,352,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,24,188,24,188,29,156,29"/>
+<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a0b0dae0e12aeccb9fc1c4d9dd074e9cf.html#a0b0dae0e12aeccb9fc1c4d9dd074e9cf" title="检查此视图是否有效，即不为空指针或长度大于 0 。" alt="" coords="400,5,543,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="353,24,384,24,384,29,353,29"/>
+</map>

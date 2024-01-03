@@ -1,0 +1,5 @@
+<map id="LangYa::SentryLib::UniqueBuffer::UniqueBuffer" name="LangYa::SentryLib::UniqueBuffer::UniqueBuffer">
+<area shape="rect" id="Node000001" title="Basic move constructor, delete the unused memory here and move the new one." alt="" coords="5,5,181,48"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view_acff29aa7ca4e0da7f00bfa6c7e5fb2c7.html#acff29aa7ca4e0da7f00bfa6c7e5fb2c7" title="构建一个完全无效的内存视图。 其内存的头部为 nullptr ，内存长度为 0。" alt="" coords="229,5,408,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,24,213,24,213,29,181,29"/>
+</map>

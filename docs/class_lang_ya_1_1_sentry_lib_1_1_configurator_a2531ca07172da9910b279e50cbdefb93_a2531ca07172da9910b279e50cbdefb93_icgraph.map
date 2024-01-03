@@ -1,0 +1,9 @@
+<map id="LangYa::SentryLib::Configurator::Configurator" name="LangYa::SentryLib::Configurator::Configurator">
+<area shape="rect" id="Node000001" title="初始化一个空的配置器" alt="" coords="103,48,270,91"/>
+<area shape="rect" id="Node000002" href="$_sentry_mind_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,45,54,29,56,24,105,40"/>
+<area shape="rect" id="Node000003" href="$_example_app_8cpp_ac762d48b889bd832ec0d42abcbc50624.html#ac762d48b889bd832ec0d42abcbc50624" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="87,72,55,72,55,67,87,67"/>
+<area shape="rect" id="Node000004" href="$_test_app_8cpp_a3c04138a5bfe5d72780bb7e82a18e627.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,107,55,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="105,99,56,115,54,110,103,93"/>
+</map>

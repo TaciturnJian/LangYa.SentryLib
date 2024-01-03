@@ -1,8 +1,14 @@
 <map id="LangYa::SentryLib::IPv4Endpoint" name="LangYa::SentryLib::IPv4Endpoint">
-<area shape="rect" id="Node000001" title="代表 IPv4 协议下的目的点。" alt="" coords="525,8,662,51"/>
-<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_can_stream_format_to_console_friendly_string.html" title="表示可以转换为短且信息量大的字符串并输出到流中的对象。" alt="" coords="5,5,240,64"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="255,25,375,21,501,21,525,22,525,28,501,27,375,26,256,30"/>
-<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html" title="代表 IPv4 地址。" alt="" coords="289,43,425,85"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="255,49,289,53,289,58,255,54"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="440,49,524,37,525,42,441,54"/>
+<area shape="rect" id="Node000001" title="代表 IPv4 协议下的目的点。" alt="" coords="427,76,564,119"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_i_format_by_stream.html" title="代表一种可以通过流格式化的对象。" alt="" coords="5,5,142,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,24,167,24,248,22,283,22,328,28,367,39,404,55,447,73,445,78,402,60,365,44,327,33,283,27,248,27,167,29,157,29"/>
+<area shape="rect" id="Node000005" href="$struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html" title="代表 IPv4 地址，封装了 std::uint8_t[4]。" alt="" coords="191,43,327,85"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="157,41,191,48,190,53,156,46"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_i_parse_stream.html" title=" " alt="" coords="5,89,142,132"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,105,427,97,427,102,158,111"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="156,87,190,79,191,84,157,92"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_i_parse_string_view.html" title=" " alt="" coords="5,160,142,203"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="156,162,426,108,427,113,157,167"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="127,150,140,142,226,84,229,88,143,146,130,154"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="343,73,427,85,426,90,342,78"/>
 </map>

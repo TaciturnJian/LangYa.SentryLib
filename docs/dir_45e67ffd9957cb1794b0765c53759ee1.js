@@ -11,5 +11,6 @@ var dir_45e67ffd9957cb1794b0765c53759ee1 =
     [ "TinySentryMind.cpp", "_tiny_sentry_mind_8cpp.html", "_tiny_sentry_mind_8cpp" ],
     [ "TripleBufferTester.cpp", "_triple_buffer_tester_8cpp.html", "_triple_buffer_tester_8cpp" ],
     [ "UDPReceiver.cpp", "_u_d_p_receiver_8cpp.html", "_u_d_p_receiver_8cpp" ],
-    [ "UDPTester.cpp", "_u_d_p_tester_8cpp.html", "_u_d_p_tester_8cpp" ]
+    [ "UDPTester.cpp", "_u_d_p_tester_8cpp.html", "_u_d_p_tester_8cpp" ],
+    [ "UserInterfaceExp.cpp", "_user_interface_exp_8cpp.html", "_user_interface_exp_8cpp" ]
 ];

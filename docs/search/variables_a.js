@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['lang_5fya_5fconnection_5fptr_0',['lang_ya_connection_ptr',['../_controller_sensor_tester_8cpp.html#a2923dcb407f9b78d57aa73fdca155fe4',1,'ControllerSensorTester.cpp']]],
-  ['latestarmorplate_1',['LatestArmorPlate',['../struct_lang_ya_1_1_sentry_lib_1_1_full_sensor_data.html#a0b310a98d9e24adee666f3f4e10cb73e',1,'LangYa::SentryLib::FullSensorData']]]
+  ['keychar_0',['KeyChar',['../struct_console_key_info_abdd0cfe50a784f193d4af277a38bfd1c.html#abdd0cfe50a784f193d4af277a38bfd1c',1,'ConsoleKeyInfo']]],
+  ['keyid_1',['KeyID',['../struct_console_key_info_a2bc86a672a6dd2c51a6847e595ee00fa.html#a2bc86a672a6dd2c51a6847e595ee00fa',1,'ConsoleKeyInfo']]]
 ];

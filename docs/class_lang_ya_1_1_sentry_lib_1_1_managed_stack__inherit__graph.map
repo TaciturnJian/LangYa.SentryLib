@@ -1,0 +1,5 @@
+<map id="LangYa::SentryLib::ManagedStack&lt; TItem &gt;" name="LangYa::SentryLib::ManagedStack&lt; TItem &gt;">
+<area shape="rect" id="Node000001" title="代表一个堆栈，管理一组对象的生命周期，在对象销毁后腾出空间供新对象使用。" alt="" coords="20,5,185,48"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_managed_stack.html" title=" " alt="" coords="5,112,200,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,64,105,111,100,111,100,64"/>
+</map>

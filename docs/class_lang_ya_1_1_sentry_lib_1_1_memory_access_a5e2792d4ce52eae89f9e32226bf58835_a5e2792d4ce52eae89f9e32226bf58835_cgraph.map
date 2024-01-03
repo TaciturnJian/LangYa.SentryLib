@@ -1,0 +1,7 @@
+<map id="LangYa::SentryLib::MemoryAccess::Write" name="LangYa::SentryLib::MemoryAccess::Write">
+<area shape="rect" id="Node000001" title="向内存填充字符，如果内存不足，将舍弃多余的字符。" alt="" coords="5,5,157,48"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a06db61b6c19ed6a77e3bc7882a5c8658.html#a06db61b6c19ed6a77e3bc7882a5c8658" title="从目标读取内存，直到当前内存被填满或目标内存不足。" alt="" coords="205,5,369,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,24,189,24,189,29,157,29"/>
+<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view_a0b0dae0e12aeccb9fc1c4d9dd074e9cf.html#a0b0dae0e12aeccb9fc1c4d9dd074e9cf" title="检查此视图是否有效，即不为空指针或长度大于 0 。" alt="" coords="417,5,560,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="369,24,402,24,402,29,369,29"/>
+</map>
