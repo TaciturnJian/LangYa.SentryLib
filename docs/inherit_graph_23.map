@@ -1,17 +1,43 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" href="$class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html" title="代表一个基本的读写类，提供基本的 IO 功能。" alt="" coords="5,205,142,248"/>
-<area shape="rect" id="Node000001" href="$class_lang_ya_1_1_sentry_lib_1_1_connection.html" title="代表一个类似 IO 的连接，只提供基本的读写和开启/关闭连接的功能。" alt="" coords="190,139,326,181"/>
-<area shape="poly" id="edge33_Node000000_Node000001" title=" " alt="" coords="147,197,196,179,198,184,149,202"/>
-<area shape="rect" id="Node000006" href="$class_lang_ya_1_1_sentry_lib_1_1_i_o_connection.html" title=" " alt="" coords="190,239,326,281"/>
-<area shape="poly" id="edge38_Node000000_Node000006" title=" " alt="" coords="157,239,190,245,189,250,156,244"/>
-<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html" title="代表一个使用狼牙通信方式的连接，用来装饰一个连接。 真正的数据发送过程在下面的函数中" alt="" coords="374,5,510,48"/>
-<area shape="poly" id="edge34_Node000001_Node000002" title=" " alt="" coords="290,126,328,92,373,58,392,46,395,51,375,62,331,96,293,130"/>
-<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_memory_access.html" title="代表对与内存的访问，本质是对于" alt="" coords="374,72,510,115"/>
-<area shape="poly" id="edge35_Node000001_Node000003" title=" " alt="" coords="332,131,380,113,382,118,334,136"/>
-<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_serial_port.html" title="代表系统中的一个串口，本质是" alt="" coords="374,139,510,181"/>
-<area shape="poly" id="edge36_Node000001_Node000004" title=" " alt="" coords="341,157,373,157,373,163,341,163"/>
-<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_t_c_p_connection.html" title=" " alt="" coords="374,205,510,248"/>
-<area shape="poly" id="edge37_Node000001_Node000005" title=" " alt="" coords="334,184,382,202,380,207,332,189"/>
-<area shape="rect" id="Node000007" href="$class_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_socket.html" title=" " alt="" coords="374,272,510,315"/>
-<area shape="poly" id="edge39_Node000006_Node000007" title=" " alt="" coords="342,272,374,278,373,284,341,278"/>
+<area shape="rect" id="Node000000" href="$class_lang_ya_1_1_sentry_lib_1_1_i_format_by_stream.html" title="代表一种可以通过流格式化的对象。" alt="" coords="5,405,142,448"/>
+<area shape="rect" id="Node000001" href="$struct_lang_ya_1_1_sentry_lib_1_1_position1.html" title=" " alt="" coords="225,405,362,448"/>
+<area shape="poly" id="edge15_Node000000_Node000001" title=" " alt="" coords="157,424,225,424,225,429,157,429"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector3.html" title=" " alt="" coords="206,472,381,515"/>
+<area shape="poly" id="edge16_Node000000_Node000002" title=" " alt="" coords="157,449,221,469,220,474,155,454"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="225,539,362,581"/>
+<area shape="poly" id="edge17_Node000000_Node000003" title=" " alt="" coords="107,457,145,492,191,524,226,540,224,545,188,529,142,496,103,461"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="224,605,363,648"/>
+<area shape="poly" id="edge18_Node000000_Node000004" title=" " alt="" coords="93,461,132,528,159,562,191,591,225,609,223,614,188,596,155,565,128,531,88,464"/>
+<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="225,672,362,715"/>
+<area shape="poly" id="edge19_Node000000_Node000005" title=" " alt="" coords="86,462,100,507,121,560,151,613,170,637,191,658,226,678,223,682,188,662,166,640,147,616,116,562,95,509,81,464"/>
+<area shape="rect" id="Node000006" href="$class_lang_ya_1_1_sentry_lib_1_1_armor_plate.html" title="ArmorPlate 装甲板信息，储存装甲板的位置、法向量、颜色、ID。" alt="" coords="225,5,362,48"/>
+<area shape="poly" id="edge20_Node000000_Node000006" title=" " alt="" coords="73,390,80,320,97,232,112,185,131,139,156,96,188,58,204,45,223,36,226,41,207,50,192,62,161,99,136,142,117,187,102,233,85,321,78,390"/>
+<area shape="rect" id="Node000007" href="$struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html" title="代表 IPv4 地址，封装了 std::uint8_t[4]。" alt="" coords="225,805,362,848"/>
+<area shape="poly" id="edge21_Node000000_Node000007" title=" " alt="" coords="85,463,102,543,127,641,158,732,174,768,192,791,207,804,226,812,223,817,204,808,188,795,170,770,153,734,122,642,97,544,79,464"/>
+<area shape="rect" id="Node000009" href="$struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_endpoint.html" title="代表 IPv4 协议下的目的点。" alt="" coords="225,739,362,781"/>
+<area shape="poly" id="edge22_Node000000_Node000009" title=" " alt="" coords="81,463,92,520,111,591,144,663,166,696,191,725,207,736,226,745,223,750,205,741,188,729,161,699,139,665,106,592,86,522,76,464"/>
+<area shape="rect" id="Node000011" href="$struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html" title="MemoryView 代表一个内存的视图，保存内存的头指针和长度，供其他读写。" alt="" coords="225,72,362,115"/>
+<area shape="poly" id="edge23_Node000000_Node000011" title=" " alt="" coords="76,389,86,332,106,261,139,188,161,155,188,125,205,112,223,103,226,108,207,117,191,129,166,158,144,191,111,263,92,333,81,390"/>
+<area shape="rect" id="Node000012" href="$struct_lang_ya_1_1_sentry_lib_1_1_position1.html" title="使用一个元素 X 代表坐标。" alt="" coords="216,139,371,181"/>
+<area shape="poly" id="edge24_Node000000_Node000012" title=" " alt="" coords="81,389,95,344,116,291,147,238,166,213,188,191,214,175,217,179,191,195,170,217,151,241,121,293,100,346,86,391"/>
+<area shape="rect" id="Node000017" href="$struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector2.html" title=" " alt="" coords="190,205,397,248"/>
+<area shape="poly" id="edge29_Node000000_Node000017" title=" " alt="" coords="88,390,128,323,155,288,188,258,207,246,210,251,191,262,159,292,132,326,93,392"/>
+<area shape="rect" id="Node000018" href="$struct_lang_ya_1_1_sentry_lib_1_1_positioned_vector3.html" title=" " alt="" coords="190,272,397,315"/>
+<area shape="poly" id="edge30_Node000000_Node000018" title=" " alt="" coords="103,392,142,357,188,324,212,313,215,318,191,329,145,361,107,396"/>
+<area shape="rect" id="Node000019" href="$class_lang_ya_1_1_sentry_lib_1_1_vector.html" title=" " alt="" coords="190,339,397,381"/>
+<area shape="poly" id="edge31_Node000000_Node000019" title=" " alt="" coords="155,399,220,379,221,385,157,404"/>
+<area shape="rect" id="Node000013" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title=" " alt="" coords="454,105,590,148"/>
+<area shape="poly" id="edge25_Node000012_Node000013" title=" " alt="" coords="385,144,453,134,454,139,386,149"/>
+<area shape="rect" id="Node000014" href="$struct_lang_ya_1_1_sentry_lib_1_1_position2.html" title="使用两个元素 X Y 代表二维坐标。" alt="" coords="445,172,599,215"/>
+<area shape="poly" id="edge26_Node000012_Node000014" title=" " alt="" coords="386,171,445,179,444,185,385,176"/>
+<area shape="rect" id="Node000015" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title=" " alt="" coords="656,139,793,181"/>
+<area shape="poly" id="edge27_Node000014_Node000015" title=" " alt="" coords="614,176,655,169,656,174,615,181"/>
+<area shape="rect" id="Node000016" href="$struct_lang_ya_1_1_sentry_lib_1_1_position3.html" title="使用两个元素 X Y 代表三维坐标。" alt="" coords="647,205,802,248"/>
+<area shape="poly" id="edge28_Node000014_Node000016" title=" " alt="" coords="615,206,648,211,647,217,614,211"/>
+<area shape="rect" id="Node000008" href="$class_lang_ya_1_1_sentry_lib_1_1_i_parse_stream.html" title=" " alt="" coords="5,805,142,848"/>
+<area shape="poly" id="edge32_Node000008_Node000007" title=" " alt="" coords="157,824,225,824,225,829,157,829"/>
+<area shape="poly" id="edge33_Node000008_Node000009" title=" " alt="" coords="155,799,224,778,225,783,157,804"/>
+<area shape="rect" id="Node000010" href="$class_lang_ya_1_1_sentry_lib_1_1_i_parse_string_view.html" title=" " alt="" coords="5,739,142,781"/>
+<area shape="poly" id="edge34_Node000010_Node000007" title=" " alt="" coords="157,782,225,803,224,809,155,788"/>
+<area shape="poly" id="edge35_Node000010_Node000009" title=" " alt="" coords="157,757,225,757,225,763,157,763"/>
 </map>

@@ -1,31 +1,26 @@
 <map id="Headers/LangYa/SentryLib/Device.hpp" name="Headers/LangYa/SentryLib/Device.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="534,5,710,48"/>
-<area shape="rect" id="Node000002" href="$_sentry_lib_8hpp.html" title=" " alt="" coords="255,195,456,221"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="520,36,483,44,447,56,413,74,384,98,369,121,361,147,357,194,352,194,356,146,364,118,380,94,410,70,445,52,482,39,519,31"/>
-<area shape="rect" id="Node000007" href="$_deserializable_content_sensor_8hpp.html" title=" " alt="" coords="635,96,852,139"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="664,55,716,93,713,98,661,59"/>
-<area shape="rect" id="Node000011" href="$_serializable_content_controller_8hpp.html" title=" " alt="" coords="393,96,611,139"/>
-<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="584,59,532,98,529,93,581,55"/>
-<area shape="rect" id="Node000013" href="$_device_8cpp.html" title=" " alt="" coords="877,104,1013,131"/>
-<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="713,50,899,101,898,106,712,55"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="487,5,664,48"/>
+<area shape="rect" id="Node000002" href="$_sentry_lib_8hpp.html" title=" " alt="" coords="153,195,355,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="473,44,402,64,368,79,336,98,310,121,289,148,262,196,257,193,285,145,306,117,332,94,365,74,400,59,471,39"/>
+<area shape="rect" id="Node000006" href="$_deserializable_content_sensor_8hpp.html" title=" " alt="" coords="588,96,805,139"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="617,55,670,93,667,98,614,59"/>
+<area shape="rect" id="Node000009" href="$_serializable_content_controller_8hpp.html" title=" " alt="" coords="347,96,564,139"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="537,59,485,98,482,93,534,55"/>
+<area shape="rect" id="Node000011" href="$_device_8cpp.html" title=" " alt="" coords="830,104,966,131"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="666,50,852,101,851,106,665,55"/>
 <area shape="rect" id="Node000003" href="$_sentry_lib_8cpp.html" title=" " alt="" coords="5,277,159,304"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="299,229,126,279,124,274,297,224"/>
-<area shape="rect" id="Node000004" href="$_example_app_8cpp.html" title=" " alt="" coords="182,277,350,304"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="332,234,281,279,278,275,329,230"/>
-<area shape="rect" id="Node000005" href="$_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和 json 配置文件的处理工具，使用操作见" alt="" coords="374,277,515,304"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="382,230,433,275,429,279,379,234"/>
-<area shape="rect" id="Node000006" href="$_tiny_sentry_mind_8cpp.html" title=" " alt="" coords="540,277,723,304"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="414,224,589,274,587,279,412,229"/>
-<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="638,145,412,197,410,191,637,140"/>
-<area shape="rect" id="Node000008" href="$_sentry_mind_8cpp.html" title=" " alt="" coords="669,195,887,221"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="759,152,776,193,771,195,755,154"/>
-<area shape="rect" id="Node000009" href="$_deserializable_content_sensor_8cpp.html" title=" " alt="" coords="912,187,1111,229"/>
-<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="822,142,949,183,948,189,820,147"/>
-<area shape="rect" id="Node000010" href="$_controller_sensor_tester_8cpp.html" title=" " alt="" coords="480,187,644,229"/>
-<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="688,148,605,189,603,184,686,143"/>
-<area shape="poly" id="edge12_Node000011_Node000002" title=" " alt="" coords="456,149,378,196,375,192,453,145"/>
-<area shape="poly" id="edge13_Node000011_Node000008" title=" " alt="" coords="582,141,739,192,738,197,580,146"/>
-<area shape="poly" id="edge15_Node000011_Node000010" title=" " alt="" coords="527,150,550,185,546,188,522,153"/>
-<area shape="rect" id="Node000012" href="$_serializable_content_controller_8cpp.html" title=" " alt="" coords="45,187,231,229"/>
-<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="403,145,224,189,223,183,401,140"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="214,231,110,279,108,275,212,226"/>
+<area shape="rect" id="Node000004" href="$_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和 json 配置文件的处理工具，使用操作见" alt="" coords="183,277,325,304"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="257,237,257,277,251,277,251,237"/>
+<area shape="rect" id="Node000005" href="$_tiny_sentry_mind_8cpp.html" title=" " alt="" coords="349,277,532,304"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="298,225,413,274,411,279,296,230"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="579,145,318,197,317,191,578,140"/>
+<area shape="rect" id="Node000007" href="$_sentry_mind_8cpp.html" title=" " alt="" coords="588,195,806,221"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="699,154,699,194,694,194,694,154"/>
+<area shape="rect" id="Node000008" href="$_deserializable_content_sensor_8cpp.html" title=" " alt="" coords="830,187,1030,229"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="766,142,876,184,874,189,764,147"/>
+<area shape="poly" id="edge10_Node000009_Node000002" title=" " alt="" coords="395,148,284,196,282,192,393,143"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="527,142,663,192,661,197,525,147"/>
+<area shape="rect" id="Node000010" href="$_serializable_content_controller_8cpp.html" title=" " alt="" coords="379,187,564,229"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="464,153,470,186,465,187,459,154"/>
 </map>

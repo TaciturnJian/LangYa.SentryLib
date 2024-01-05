@@ -1,3 +1,5 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" href="$struct_lang_ya_1_1_sentry_lib_1_1_managed_stack_1_1_item_info.html" title=" " alt="" coords="5,5,158,64"/>
+<area shape="rect" id="Node000000" href="$class_lang_ya_1_1_sentry_lib_1_1_i_client_handler.html" title=" " alt="" coords="5,5,200,64"/>
+<area shape="rect" id="Node000001" href="$class_temp_1_1_temp_handle_client.html" title=" " alt="" coords="248,21,414,48"/>
+<area shape="poly" id="edge14_Node000000_Node000001" title=" " alt="" coords="215,32,247,32,247,37,215,37"/>
 </map>

@@ -1,13 +1,13 @@
 <map id="Headers/LangYa/SentryLib" name="Headers/LangYa/SentryLib">
 <area shape="rect" id="node3" href="dir_d65952f734cbdf932d9a0650ea0dead9.html" title="Common" alt="" coords="38,139,111,165"/>
 <area shape="poly" id="edge3" href="dir_000019_000006.html" alt="" coords="169,93,108,132,105,128,166,88"/>
-<area shape="rect" id="edge3-headlabel" href="dir_000019_000006.html" title="20" alt="" coords="107,127,121,143"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000019_000006.html" title="16" alt="" coords="107,127,121,143"/>
 <area shape="rect" id="node4" href="dir_c31c5bda0afa14ca421b3ce0961ea5a5.html" title="Interface" alt="" coords="136,139,206,165"/>
 <area shape="poly" id="edge1" href="dir_000019_000012.html" alt="" coords="186,91,179,124,174,123,180,90"/>
 <area shape="rect" id="edge1-headlabel" href="dir_000019_000012.html" title="6" alt="" coords="182,114,189,130"/>
 <area shape="rect" id="node5" href="dir_d3b5431ac6ba86bf2d1fdbe6b484bdce.html" title="Network" alt="" coords="230,139,298,165"/>
 <area shape="poly" id="edge2" href="dir_000019_000014.html" alt="" coords="200,89,241,126,237,130,197,93"/>
-<area shape="rect" id="edge2-headlabel" href="dir_000019_000014.html" title="4" alt="" coords="239,112,246,128"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000019_000014.html" title="9" alt="" coords="239,112,246,128"/>
 <area shape="rect" id="node2" href="dir_d1dc2d85c1912ab79aa8a25f0fda4050.html" title="Application" alt="" coords="37,64,123,91"/>
 <area shape="poly" id="edge4" href="dir_000002_000006.html" alt="" coords="82,91,79,123,74,123,76,91"/>
 <area shape="rect" id="edge4-headlabel" href="dir_000002_000006.html" title="2" alt="" coords="82,113,89,129"/>

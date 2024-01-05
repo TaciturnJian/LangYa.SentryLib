@@ -19,6 +19,8 @@ var hierarchy =
     [ "LangYa::SentryLib::ConsoleManipulator", "class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html", null ],
     [ "LangYa::SentryLib::ContentAcceptor< TContent >", "class_lang_ya_1_1_sentry_lib_1_1_content_acceptor.html", null ],
     [ "LangYa::SentryLib::ContentProvider< TContent >", "class_lang_ya_1_1_sentry_lib_1_1_content_provider.html", null ],
+    [ "LangYa::SentryLib::Counter", "class_lang_ya_1_1_sentry_lib_1_1_counter.html", null ],
+    [ "LangYa::SentryLib::DebugData", "struct_lang_ya_1_1_sentry_lib_1_1_debug_data.html", null ],
     [ "LangYa::SentryLib::DeserializableContent", "class_lang_ya_1_1_sentry_lib_1_1_deserializable_content.html", [
       [ "LangYa::SentryLib::FullControlData", "struct_lang_ya_1_1_sentry_lib_1_1_full_control_data.html", null ],
       [ "LangYa::SentryLib::FullSensorData", "struct_lang_ya_1_1_sentry_lib_1_1_full_sensor_data.html", null ],
@@ -30,7 +32,18 @@ var hierarchy =
       [ "LangYa::SentryLib::DeserializableContentSensor< TSensorData >", "class_lang_ya_1_1_sentry_lib_1_1_deserializable_content_sensor.html", null ],
       [ "LangYa::SentryLib::SerializableContentController< TControllerData >", "class_lang_ya_1_1_sentry_lib_1_1_serializable_content_controller.html", null ]
     ] ],
+    [ "LangYa::SentryLib::DynamicStack< TElement >", "class_lang_ya_1_1_sentry_lib_1_1_dynamic_stack.html", null ],
     [ "LangYa::SentryLib::ExchangeCube", "class_lang_ya_1_1_sentry_lib_1_1_exchange_cube.html", null ],
+    [ "LangYa::SentryLib::IClientHandler< TClient >::HandleClientArgumentType", "struct_lang_ya_1_1_sentry_lib_1_1_i_client_handler_1_1_handle_client_argument_type.html", null ],
+    [ "LangYa::SentryLib::IClientAcceptor< TClient >", "class_lang_ya_1_1_sentry_lib_1_1_i_client_acceptor.html", null ],
+    [ "LangYa::SentryLib::IClientAcceptor< IPv4TCPSocket >", "class_lang_ya_1_1_sentry_lib_1_1_i_client_acceptor.html", [
+      [ "LangYa::SentryLib::IPv4TCPAcceptor", "class_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_acceptor.html", null ]
+    ] ],
+    [ "LangYa::SentryLib::IClientHandler< TClient >", "class_lang_ya_1_1_sentry_lib_1_1_i_client_handler.html", null ],
+    [ "LangYa::SentryLib::IClientHandler< LangYa::SentryLib::IPv4TCPSocket >", "class_lang_ya_1_1_sentry_lib_1_1_i_client_handler.html", [
+      [ "Temp::TempHandleClient", "class_temp_1_1_temp_handle_client.html", null ],
+      [ "Temp::TempHandleClient", "class_temp_1_1_temp_handle_client.html", null ]
+    ] ],
     [ "Sango::IComparable< T >", "class_sango_1_1_i_comparable.html", null ],
     [ "Sango::IComparable< NumberID< TNumber > >", "class_sango_1_1_i_comparable.html", [
       [ "Sango::NumberID< TNumber >", "struct_sango_1_1_number_i_d.html", null ]
@@ -44,6 +57,7 @@ var hierarchy =
       [ "LangYa::SentryLib::ArmorPlate", "class_lang_ya_1_1_sentry_lib_1_1_armor_plate.html", null ],
       [ "LangYa::SentryLib::IPv4Address", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html", null ],
       [ "LangYa::SentryLib::IPv4Endpoint", "struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_endpoint.html", null ],
+      [ "LangYa::SentryLib::MemoryView", "struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html", null ],
       [ "LangYa::SentryLib::Position1< TElement >", "struct_lang_ya_1_1_sentry_lib_1_1_position1.html", [
         [ "LangYa::SentryLib::Position2< float >", "struct_lang_ya_1_1_sentry_lib_1_1_position2.html", null ],
         [ "LangYa::SentryLib::Position2< TElement >", "struct_lang_ya_1_1_sentry_lib_1_1_position2.html", [
@@ -92,7 +106,6 @@ var hierarchy =
         [ "LangYa::SentryLib::IPv4TCPSocket", "class_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_socket.html", null ]
       ] ]
     ] ],
-    [ "LangYa::SentryLib::MemoryView", "struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html", null ],
     [ "LangYa::SentryLib::Monitor", "class_lang_ya_1_1_sentry_lib_1_1_monitor.html", null ],
     [ "LangYa::SentryLib::MonitorPackage", "struct_lang_ya_1_1_sentry_lib_1_1_monitor_package.html", null ],
     [ "NamedItem", "class_named_item.html", [
@@ -114,6 +127,8 @@ var hierarchy =
     [ "LangYa::SentryLib::SentryData::SerializationResult", "struct_lang_ya_1_1_sentry_lib_1_1_sentry_data_1_1_serialization_result.html", null ],
     [ "LangYa::SentryLib::SerialNumbers< TBasicNumber >", "struct_lang_ya_1_1_sentry_lib_1_1_serial_numbers.html", null ],
     [ "LangYa::SentryLib::SerialNumbers< unsigned short >", "struct_lang_ya_1_1_sentry_lib_1_1_serial_numbers.html", null ],
+    [ "LangYa::SentryLib::Server< TClient >", "class_lang_ya_1_1_sentry_lib_1_1_server.html", null ],
+    [ "LangYa::SentryLib::ServerInfo< TClient >", "struct_lang_ya_1_1_sentry_lib_1_1_server_info.html", null ],
     [ "LangYa::SentryLib::TinyTCPServer::SharedThreadWithSharedTerminateSignal", "struct_lang_ya_1_1_sentry_lib_1_1_tiny_t_c_p_server_1_1_shared_thread_with_shared_terminate_signal.html", null ],
     [ "LangYa::SentryLib::StringFormatByStream", "class_lang_ya_1_1_sentry_lib_1_1_string_format_by_stream.html", [
       [ "LangYa::SentryLib::SerialPortInfo", "struct_lang_ya_1_1_sentry_lib_1_1_serial_port_info.html", null ]

@@ -1,7 +1,5 @@
 <map id="LangYa::SentryLib::CommandLineArguments::CommandLineArguments" name="LangYa::SentryLib::CommandLineArguments::CommandLineArguments">
-<area shape="rect" id="Node000001" title="构造，初始化控制台参数为指定的值。" alt="" coords="103,15,278,73"/>
-<area shape="rect" id="Node000002" href="$_example_app_8cpp_ac762d48b889bd832ec0d42abcbc50624.html#ac762d48b889bd832ec0d42abcbc50624" title=" " alt="" coords="5,5,55,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,30,55,25,55,20,88,25"/>
-<area shape="rect" id="Node000003" href="$_test_app_8cpp_a3c04138a5bfe5d72780bb7e82a18e627.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,56,55,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="88,63,55,68,55,63,87,58"/>
+<area shape="rect" id="Node000001" title="构造，初始化控制台参数为指定的值。" alt="" coords="103,5,278,64"/>
+<area shape="rect" id="Node000002" href="$_test_app_8cpp_a3c04138a5bfe5d72780bb7e82a18e627.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,21,55,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,37,55,37,55,32,87,32"/>
 </map>

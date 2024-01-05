@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['return_0',['return',['../_controller_sensor_tester_8cpp_a9717e7bbecb906637e86cef6da3d83c2.html#a9717e7bbecb906637e86cef6da3d83c2',1,'ControllerSensorTester.cpp']]]
+  ['size_0',['Size',['../struct_lang_ya_1_1_sentry_lib_1_1_memory_view_aebfa91b719ebd4721036343261fc35d3.html#aebfa91b719ebd4721036343261fc35d3',1,'LangYa::SentryLib::MemoryView']]],
+  ['startscanmode_1',['StartScanMode',['../struct_lang_ya_1_1_sentry_lib_1_1_full_control_data_a50018e97286e24cedd2645e6d4a5b914.html#a50018e97286e24cedd2645e6d4a5b914',1,'LangYa::SentryLib::FullControlData']]]
 ];

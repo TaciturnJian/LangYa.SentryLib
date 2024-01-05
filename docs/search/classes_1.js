@@ -10,5 +10,6 @@ var searchData=
   ['consolekeyinfo_7',['ConsoleKeyInfo',['../struct_console_key_info.html',1,'']]],
   ['consolemanipulator_8',['ConsoleManipulator',['../class_lang_ya_1_1_sentry_lib_1_1_console_manipulator.html',1,'LangYa::SentryLib']]],
   ['contentacceptor_9',['ContentAcceptor',['../class_lang_ya_1_1_sentry_lib_1_1_content_acceptor.html',1,'LangYa::SentryLib']]],
-  ['contentprovider_10',['ContentProvider',['../class_lang_ya_1_1_sentry_lib_1_1_content_provider.html',1,'LangYa::SentryLib']]]
+  ['contentprovider_10',['ContentProvider',['../class_lang_ya_1_1_sentry_lib_1_1_content_provider.html',1,'LangYa::SentryLib']]],
+  ['counter_11',['Counter',['../class_lang_ya_1_1_sentry_lib_1_1_counter.html',1,'LangYa::SentryLib']]]
 ];

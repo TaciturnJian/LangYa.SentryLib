@@ -1,17 +1,15 @@
 <map id="Headers/LangYa/SentryLib/Network.hpp" name="Headers/LangYa/SentryLib/Network.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="503,5,680,48"/>
-<area shape="rect" id="Node000002" href="$_sentry_lib_8hpp.html" title=" " alt="" coords="255,96,456,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="517,56,394,98,392,93,515,51"/>
-<area shape="rect" id="Node000007" href="$_t_c_p_application_i_o_host_8cpp.html" title=" " alt="" coords="480,96,703,123"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="594,64,594,95,589,95,589,64"/>
-<area shape="rect" id="Node000008" href="$_t_c_p_tester_8cpp.html" title=" " alt="" coords="726,96,881,123"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="661,51,771,93,769,98,659,56"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="385,5,561,48"/>
+<area shape="rect" id="Node000002" href="$_sentry_lib_8hpp.html" title=" " alt="" coords="153,96,355,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="403,56,289,98,287,93,401,51"/>
+<area shape="rect" id="Node000006" href="$_t_c_p_client_tester_8cpp.html" title=" " alt="" coords="379,96,566,123"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="475,64,475,95,470,95,470,64"/>
+<area shape="rect" id="Node000007" href="$_t_c_p_server_tester_8cpp.html" title=" " alt="" coords="591,96,781,123"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="543,51,653,93,652,98,541,56"/>
 <area shape="rect" id="Node000003" href="$_sentry_lib_8cpp.html" title=" " alt="" coords="5,171,159,197"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="294,130,131,173,129,167,292,125"/>
-<area shape="rect" id="Node000004" href="$_example_app_8cpp.html" title=" " alt="" coords="182,171,350,197"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="330,135,283,172,280,168,326,131"/>
-<area shape="rect" id="Node000005" href="$_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和 json 配置文件的处理工具，使用操作见" alt="" coords="374,171,515,197"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="384,131,431,168,428,172,381,135"/>
-<area shape="rect" id="Node000006" href="$_tiny_sentry_mind_8cpp.html" title=" " alt="" coords="540,171,723,197"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="418,124,584,167,582,173,417,129"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="211,131,113,172,111,168,209,127"/>
+<area shape="rect" id="Node000004" href="$_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和 json 配置文件的处理工具，使用操作见" alt="" coords="183,171,325,197"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="257,138,257,170,251,170,251,138"/>
+<area shape="rect" id="Node000005" href="$_tiny_sentry_mind_8cpp.html" title=" " alt="" coords="349,171,532,197"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="302,126,409,168,407,173,300,131"/>
 </map>

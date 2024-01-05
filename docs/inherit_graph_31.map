@@ -1,3 +1,17 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" href="$struct_lang_ya_1_1_sentry_lib_1_1_resource.html" title="代表一个在多线程中流通的资源。 使用内部的 Flag 为资源上锁。" alt="" coords="5,5,158,48"/>
+<area shape="rect" id="Node000000" href="$class_lang_ya_1_1_sentry_lib_1_1_memory_i_o.html" title="代表一个基本的读写类，提供基本的 IO 功能。" alt="" coords="5,205,142,248"/>
+<area shape="rect" id="Node000001" href="$class_lang_ya_1_1_sentry_lib_1_1_connection.html" title="代表一个类似 IO 的连接，只提供基本的读写和开启/关闭连接的功能。" alt="" coords="190,139,326,181"/>
+<area shape="poly" id="edge36_Node000000_Node000001" title=" " alt="" coords="147,197,196,179,198,184,149,202"/>
+<area shape="rect" id="Node000006" href="$class_lang_ya_1_1_sentry_lib_1_1_i_o_connection.html" title=" " alt="" coords="190,239,326,281"/>
+<area shape="poly" id="edge41_Node000000_Node000006" title=" " alt="" coords="157,239,190,245,189,250,156,244"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_lang_ya_connection.html" title="代表一个使用狼牙通信方式的连接，用来装饰一个连接。 真正的数据发送过程在下面的函数中" alt="" coords="374,5,510,48"/>
+<area shape="poly" id="edge37_Node000001_Node000002" title=" " alt="" coords="290,126,328,92,373,58,392,46,395,51,375,62,331,96,293,130"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_memory_access.html" title="代表对与内存的访问，本质是对于" alt="" coords="374,72,510,115"/>
+<area shape="poly" id="edge38_Node000001_Node000003" title=" " alt="" coords="332,131,380,113,382,118,334,136"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_serial_port.html" title="代表系统中的一个串口，本质是" alt="" coords="374,139,510,181"/>
+<area shape="poly" id="edge39_Node000001_Node000004" title=" " alt="" coords="341,157,373,157,373,163,341,163"/>
+<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_t_c_p_connection.html" title=" " alt="" coords="374,205,510,248"/>
+<area shape="poly" id="edge40_Node000001_Node000005" title=" " alt="" coords="334,184,382,202,380,207,332,189"/>
+<area shape="rect" id="Node000007" href="$class_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_socket.html" title=" " alt="" coords="374,272,510,315"/>
+<area shape="poly" id="edge42_Node000006_Node000007" title=" " alt="" coords="342,272,374,278,373,284,341,278"/>
 </map>

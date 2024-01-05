@@ -10,6 +10,7 @@ var class_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_socket =
     [ "IPv4TCPSocket", "class_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_socket_ab2a41297e0db32f10b55fc95b73dcfd3.html#ab2a41297e0db32f10b55fc95b73dcfd3", null ],
     [ "IPv4TCPSocket", "class_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_socket_adbb4c44fc9188a158472148a1eddf4e5.html#adbb4c44fc9188a158472148a1eddf4e5", null ],
     [ "IPv4TCPSocket", "class_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_socket_a72eb61894514dd2443029eaf76288d3b.html#a72eb61894514dd2443029eaf76288d3b", null ],
+    [ "IPv4TCPSocket", "class_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_socket_a0b766d34ae22510fa687daed4990c39d.html#a0b766d34ae22510fa687daed4990c39d", null ],
     [ "Close", "class_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_socket_a08cad9029901b7e6d9f6381d27119d2e.html#a08cad9029901b7e6d9f6381d27119d2e", null ],
     [ "GetTargetInfo", "class_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_socket_aa8c8a5047f2fffa4137487e3662e3f55.html#aa8c8a5047f2fffa4137487e3662e3f55", null ],
     [ "Open", "class_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_socket_a19e4de6b63f47b56cffc95464868a6c5.html#a19e4de6b63f47b56cffc95464868a6c5", null ],

@@ -20,6 +20,8 @@ var searchData=
   ['serialport_2ehpp_17',['SerialPort.hpp',['../_serial_port_8hpp.html',1,'']]],
   ['serialportinfo_2ecpp_18',['SerialPortInfo.cpp',['../_serial_port_info_8cpp.html',1,'']]],
   ['serialportinfo_2ehpp_19',['SerialPortInfo.hpp',['../_serial_port_info_8hpp.html',1,'']]],
-  ['stringformatbystream_2ecpp_20',['StringFormatByStream.cpp',['../_string_format_by_stream_8cpp.html',1,'']]],
-  ['stringformatbystream_2ehpp_21',['StringFormatByStream.hpp',['../_string_format_by_stream_8hpp.html',1,'']]]
+  ['server_2ehpp_20',['Server.hpp',['../_server_8hpp.html',1,'']]],
+  ['serverinfo_2ehpp_21',['ServerInfo.hpp',['../_server_info_8hpp.html',1,'']]],
+  ['stringformatbystream_2ecpp_22',['StringFormatByStream.cpp',['../_string_format_by_stream_8cpp.html',1,'']]],
+  ['stringformatbystream_2ehpp_23',['StringFormatByStream.hpp',['../_string_format_by_stream_8hpp.html',1,'']]]
 ];

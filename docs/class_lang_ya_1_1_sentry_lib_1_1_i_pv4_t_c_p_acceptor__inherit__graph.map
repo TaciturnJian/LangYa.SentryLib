@@ -1,0 +1,7 @@
+<map id="LangYa::SentryLib::IPv4TCPAcceptor" name="LangYa::SentryLib::IPv4TCPAcceptor">
+<area shape="rect" id="Node000001" title=" " alt="" coords="49,204,185,247"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_i_client_acceptor.html" title=" " alt="" coords="5,112,229,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,170,120,204,114,204,114,170"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_i_client_acceptor.html" title="代表可以接收客户端的类。" alt="" coords="30,5,204,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="120,64,120,111,114,111,114,64"/>
+</map>

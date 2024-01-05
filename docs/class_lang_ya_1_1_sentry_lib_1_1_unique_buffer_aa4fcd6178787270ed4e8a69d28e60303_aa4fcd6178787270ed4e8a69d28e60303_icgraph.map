@@ -1,15 +1,11 @@
 <map id="LangYa::SentryLib::UniqueBuffer::GetView" name="LangYa::SentryLib::UniqueBuffer::GetView">
-<area shape="rect" id="Node000001" title="Get the view of the unique memory in the buffer." alt="" coords="358,107,509,149"/>
-<area shape="rect" id="Node000002" href="$_sentry_device_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="182,5,231,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="393,99,354,71,309,46,269,33,231,25,232,19,270,28,311,42,357,67,396,95"/>
-<area shape="rect" id="Node000003" href="$_test_app_8cpp_a3c04138a5bfe5d72780bb7e82a18e627.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="182,56,231,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="342,106,309,97,231,78,232,72,311,92,344,101"/>
-<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer_a5067c0508f2f920f3d92df845c8edcd8.html#a5067c0508f2f920f3d92df845c8edcd8" title="Construct a new PingPongBuffer object with provided unique buffer. Its size must be sizeof(element) *..." alt="" coords="103,107,310,149"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="342,131,311,131,311,125,342,125"/>
-<area shape="rect" id="Node000005" href="$_example_app_8cpp_aeb10b227c568daca42c814a335153f2d.html#aeb10b227c568daca42c814a335153f2d" title=" " alt="" coords="165,173,248,200"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="344,155,311,164,249,179,247,174,309,159,342,150"/>
-<area shape="rect" id="Node000007" href="$class_lang_ya_1_1_sentry_lib_1_1_triple_buffer_aa272b06a38aa898b3f587a7569e79d69.html#aa272b06a38aa898b3f587a7569e79d69" title="Construct an UniqueBuffer with the given UniqueBuffer. The size for each element (3 in total) is the ..." alt="" coords="128,224,285,267"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="395,161,356,189,311,214,285,226,282,221,309,210,353,184,392,157"/>
-<area shape="rect" id="Node000006" href="$_example_app_8cpp_ac762d48b889bd832ec0d42abcbc50624.html#ac762d48b889bd832ec0d42abcbc50624" title=" " alt="" coords="5,173,55,200"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="150,189,55,189,55,184,150,184"/>
+<area shape="rect" id="Node000001" title="Get the view of the unique memory in the buffer." alt="" coords="261,77,412,120"/>
+<area shape="rect" id="Node000002" href="$_sentry_device_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="84,5,134,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="277,73,212,47,134,26,135,21,214,41,279,68"/>
+<area shape="rect" id="Node000003" href="$_test_app_8cpp_a3c04138a5bfe5d72780bb7e82a18e627.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="84,56,134,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="245,90,134,75,134,70,245,84"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer_a5067c0508f2f920f3d92df845c8edcd8.html#a5067c0508f2f920f3d92df845c8edcd8" title="Construct a new PingPongBuffer object with provided unique buffer. Its size must be sizeof(element) *..." alt="" coords="5,107,213,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="245,113,214,117,213,112,245,108"/>
+<area shape="rect" id="Node000005" href="$class_lang_ya_1_1_sentry_lib_1_1_triple_buffer_aa272b06a38aa898b3f587a7569e79d69.html#aa272b06a38aa898b3f587a7569e79d69" title="Construct an UniqueBuffer with the given UniqueBuffer. The size for each element (3 in total) is the ..." alt="" coords="30,173,188,216"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="284,130,214,164,183,175,181,170,212,159,282,125"/>
 </map>

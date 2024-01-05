@@ -6,8 +6,11 @@ var dir_0479bb77a485cc0baf99073ab05914e0 =
     [ "Network", "dir_d3b5431ac6ba86bf2d1fdbe6b484bdce.html", "dir_d3b5431ac6ba86bf2d1fdbe6b484bdce" ],
     [ "ConsoleCursor.hpp", "_console_cursor_8hpp.html", "_console_cursor_8hpp" ],
     [ "ConsoleKeyboard.hpp", "_console_keyboard_8hpp.html", "_console_keyboard_8hpp" ],
+    [ "Counter.hpp", "_counter_8hpp.html", "_counter_8hpp" ],
+    [ "DebugData.hpp", "_debug_data_8hpp.html", "_debug_data_8hpp" ],
     [ "DeserializableContentSensor.hpp", "_deserializable_content_sensor_8hpp.html", "_deserializable_content_sensor_8hpp" ],
     [ "Device.hpp", "_device_8hpp.html", "_device_8hpp" ],
+    [ "DynamicStack.hpp", "_dynamic_stack_8hpp.html", "_dynamic_stack_8hpp" ],
     [ "IFormatByStream.hpp", "_i_format_by_stream_8hpp.html", "_i_format_by_stream_8hpp" ],
     [ "Interfaces.hpp", "_interfaces_8hpp.html", null ],
     [ "IOConnection.hpp", "_i_o_connection_8hpp.html", "_i_o_connection_8hpp" ],
@@ -16,6 +19,7 @@ var dir_0479bb77a485cc0baf99073ab05914e0 =
     [ "ManagedStack.hpp", "_managed_stack_8hpp.html", "_managed_stack_8hpp" ],
     [ "Manager.hpp", "_manager_8hpp.html", "_manager_8hpp" ],
     [ "MatchStatusManager.hpp", "_match_status_manager_8hpp.html", "_match_status_manager_8hpp" ],
+    [ "MemoryView.hpp", "_memory_view_8hpp.html", "_memory_view_8hpp" ],
     [ "Network.hpp", "_network_8hpp.html", null ],
     [ "Position.hpp", "_position_8hpp.html", "_position_8hpp" ],
     [ "PositionedVector.hpp", "_positioned_vector_8hpp.html", "_positioned_vector_8hpp" ],
@@ -23,7 +27,6 @@ var dir_0479bb77a485cc0baf99073ab05914e0 =
     [ "SentryData.hpp", "_sentry_data_8hpp.html", "_sentry_data_8hpp" ],
     [ "SerializableContentController.hpp", "_serializable_content_controller_8hpp.html", "_serializable_content_controller_8hpp" ],
     [ "TestData.hpp", "_test_data_8hpp.html", "_test_data_8hpp" ],
-    [ "TinyTCPServer.hpp", "_tiny_t_c_p_server_8hpp.html", "_tiny_t_c_p_server_8hpp" ],
     [ "Vector.hpp", "_vector_8hpp.html", "_vector_8hpp" ],
     [ "ViMap.hpp", "_vi_map_8hpp.html", "_vi_map_8hpp" ]
 ];
