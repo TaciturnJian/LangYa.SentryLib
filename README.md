@@ -9,7 +9,7 @@
 
 ### 内存相关
 
-[MemoryView](./Headers/LangYa/SentryLib/Common/MemoryView.hpp) 内存视图，包含长度和指针，用于传递内存数据。
+[MemoryView](./Headers/LangYa/SentryLib/MemoryView.hpp) 内存视图，包含长度和指针，用于传递内存数据。
 
 [MemoryIO](./Headers/LangYa/SentryLib/Common/MemoryIO.hpp) 内存IO，是读写数据的抽象接口，提供 Read/Write 。
 

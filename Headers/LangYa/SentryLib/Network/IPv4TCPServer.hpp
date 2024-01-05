@@ -14,6 +14,7 @@ namespace LangYa::SentryLib
 	/// @brief 理论上能接收无限客户端连接的 IPv4 TCP 服务器。
 	///	@details 实际不能接收无线客户端连接，而且你必须小心内存被这么多 TCP 连接占满。
 	///	启动服务器后，阻塞当前线程，并且监听指定的端口。
+	///	@warning 已经被弃用了，使用 Server.hpp 代替。
 	class IPv4TCPServer final
 	{
 	public:
@@ -46,16 +47,16 @@ namespace LangYa::SentryLib
 		std::atomic_bool CanAcceptNextClient{false};
 
 		/// @brief 指定当前是否正在释放资源。
-		std::shared_ptr<std::atomic_bool> ReleaseSignal{std::make_shared<std::atomic_bool>(false)};
+		std::shared_ptr<std::atomic_bool> ReleaseSignalPtr{std::make_shared<std::atomic_bool>(false)};
 
 		/// @brief 处理接收客户端的事务。
 		///	@param threadInfo 线程信息。
 		///	@param handler 处理客户端的函数，在客户端连接后调用。
-		///	@param interruptSignal 用于外部控制服务器的中断信号。
+		///	@param interruptSignalPtr 用于外部控制服务器的中断信号。
 		void AcceptClient(
 			const ThreadInfoType& threadInfo,
 			ClientHandler handler,
-			 std::shared_ptr<std::atomic_bool> interruptSignal
+			 std::shared_ptr<std::atomic_bool> interruptSignalPtr
 		);
 
 	public:
@@ -67,11 +68,11 @@ namespace LangYa::SentryLib
 		explicit IPv4TCPServer(IPv4Endpoint listenTarget);
 
 		/// @brief 启动服务器，阻塞当前线程。
-		///	@param interruptSignal 用于外部控制服务器的中断信号。
+		///	@param interruptSignalPtr 用于外部控制服务器的中断信号。
 		///	中断信号会在服务器启动时轮询。
 		///	服务器会在中断后逐个关闭所有连接，需要时间且仍然会阻塞当前线程。
 		///	当服务器异常时，中断信号会被设置为 true ，然后服务器会尝试释放资源。
 		///	@param newClientCallback 处理客户端连接的函数，在有新的客户端连接时会被调用。
-		void Run(std::shared_ptr<std::atomic_bool> interruptSignal, ClientHandler newClientCallback);
+		void Run(std::shared_ptr<std::atomic_bool> interruptSignalPtr, ClientHandler newClientCallback);
 	};
 }

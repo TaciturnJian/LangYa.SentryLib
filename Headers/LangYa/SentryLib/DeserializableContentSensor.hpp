@@ -5,7 +5,7 @@
 #include <LangYa/SentryLib/Common/Connection.hpp>
 #include <LangYa/SentryLib/Common/DeserializableContent.hpp>
 #include <LangYa/SentryLib/Device.hpp>
-#include <LangYa/SentryLib/Common/MemoryView.hpp>
+#include <LangYa/SentryLib/MemoryView.hpp>
 #include <LangYa/SentryLib/Common/UniqueBuffer.hpp>
 
 namespace LangYa::SentryLib

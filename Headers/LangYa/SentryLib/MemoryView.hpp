@@ -1,9 +1,12 @@
 #pragma once
 
+#include <cstdint>
 #include <ostream>
 #include <vector>
 
 #include <boost/asio/buffer.hpp>
+
+#include <LangYa/SentryLib/IFormatByStream.hpp>
 
 namespace LangYa::SentryLib
 {
@@ -15,11 +18,11 @@ namespace LangYa::SentryLib
 	/// 因此作为函数参数时，你需要信任调用方。
 	///	类中提供了有关内存的操作函数，CopyTo 和 ReadFrom ，
 	///	它们都是对 memcpy 的封装，但是会使用内存视图中的数据检查调用 memcpy 的参数。
-	struct MemoryView
+	struct MemoryView : IFormatByStream
 	{
 		/// @brief 代表 Size 的数据类型。
 		///	@details 直接采用目前看来最大的整数类型。
-		using SizeType = unsigned long long;
+		using SizeType = std::uint64_t;
 
 		/// @brief 代表字节类型。
 		///	@details 字节类型是视图中的最小单位，偏移量都是对于字节类型来说的。
@@ -59,7 +62,7 @@ namespace LangYa::SentryLib
 		/// @brief 销毁内存视图，使其无效化。
 		///	在销毁时此函数会将内存头部和内存长度都设置为无效值。
 		///	（但其实完全没必要对吧）
-		~MemoryView();
+		~MemoryView() override;
 
 		/// @brief 基于一个内存视图加上偏移构建一个新的内存视图。
 		///	@param view 基础的内存视图。
@@ -127,5 +130,10 @@ namespace LangYa::SentryLib
 		/// @brief 将此类型转化为 boost::asio::mutable_buffer 。
 		///	@return boost::asio::mutable_buffer 的一个实例。
 		[[nodiscard]] boost::asio::mutable_buffer ToBuffer() const;
+
+		std::ostream& FormatByStream(std::ostream& stream, int option) const override
+		{
+			return stream << *this;
+		}
 	};
 }

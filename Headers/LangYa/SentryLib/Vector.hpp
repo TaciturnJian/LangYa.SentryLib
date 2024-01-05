@@ -3,7 +3,7 @@
 #include <initializer_list>
 #include <vector>
 
-#include <LangYa/SentryLib/Common/MemoryView.hpp>
+#include <LangYa/SentryLib/MemoryView.hpp>
 #include <LangYa/SentryLib/IFormatByStream.hpp>
 
 namespace LangYa::SentryLib

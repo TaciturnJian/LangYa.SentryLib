@@ -48,6 +48,12 @@ namespace LangYa::SentryLib
 		/// @brief 包装已经建立好连接的套接字。
 		explicit IPv4TCPSocket(SharedTCPSocketType sharedSocket);
 
+		IPv4TCPSocket(SharedIOContextType sharedIOContext, SharedTCPSocketType sharedSocket) :
+			SharedIOContextPtr(std::move(sharedIOContext)),
+			SharedSocketPtr(std::move(sharedSocket))
+		{
+		}
+
 		MemoryView::SizeType Read(const MemoryView& view) override;
 
 		MemoryView::SizeType Write(const MemoryView& view) override;

@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include <LangYa/SentryLib/Common/MemoryView.hpp>
+#include <LangYa/SentryLib/MemoryView.hpp>
 
 using namespace LangYa::SentryLib;
 

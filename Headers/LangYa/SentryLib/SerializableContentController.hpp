@@ -4,7 +4,7 @@
 
 #include <spdlog/spdlog.h>
 
-#include <LangYa/SentryLib/Common/MemoryView.hpp>
+#include <LangYa/SentryLib/MemoryView.hpp>
 #include <LangYa/SentryLib/Common/UniqueBuffer.hpp>
 #include <LangYa/SentryLib/Common/SerializableContent.hpp>
 #include <LangYa/SentryLib/Common/Connection.hpp>

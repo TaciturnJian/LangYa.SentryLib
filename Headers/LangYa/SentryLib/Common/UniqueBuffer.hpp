@@ -3,7 +3,7 @@
 // ReSharper disable once CppUnusedIncludeDirective
 #include <spdlog/spdlog.h>
 
-#include <LangYa/SentryLib/Common/MemoryView.hpp>
+#include <LangYa/SentryLib/MemoryView.hpp>
 
 namespace LangYa::SentryLib
 {

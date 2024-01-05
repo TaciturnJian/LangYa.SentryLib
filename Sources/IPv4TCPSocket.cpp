@@ -45,7 +45,7 @@ namespace LangYa::SentryLib
 		if (result.failed())
 		{
 			spdlog::warn(
-				"IPv4TCPSocket> Failed to construct with specific targetEndpoint: {}",
+				"IPv4TCPSocket> Failed to get local endpoint: {}",
 				result.to_string()
 			);
 		}

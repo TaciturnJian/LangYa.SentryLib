@@ -10,7 +10,7 @@ namespace LangYa::SentryLib
 	{
 		// 关闭线程处理
 		CanAcceptNextClient = false;
-		ReleaseSignal->store(true);
+		ReleaseSignalPtr->store(true);
 		auto local_endpoint = FormatToString(LocalEndPoint);
 		spdlog::info("IPv4Server> Shutting down server at ({})", local_endpoint);
 
@@ -24,7 +24,7 @@ namespace LangYa::SentryLib
 	::AcceptClient(
 		const ThreadInfoType& threadInfo, 
 		ClientHandler handler,
-	    std::shared_ptr<std::atomic_bool> interruptSignal
+	    std::shared_ptr<std::atomic_bool> interruptSignalPtr
 	)
 	{
 		boost::asio::io_context client_io_context{};
@@ -50,14 +50,14 @@ namespace LangYa::SentryLib
 
 		CanAcceptNextClient = true;
 
-		if (!ReleaseSignal && client_socket != nullptr)
+		if (! *ReleaseSignalPtr && client_socket != nullptr)
 		{
 			std::stringstream stream{};
 			client_socket->GetTargetInfo(stream);
 			spdlog::info("IPv4Server> Build client connection from ({}), calling client handler", stream.str());
 			try
 			{
-				handler(*client_socket, std::move(interruptSignal));
+				handler(*client_socket, std::move(interruptSignalPtr));
 			}
 			catch (const std::exception& ex)
 			{
@@ -82,9 +82,9 @@ namespace LangYa::SentryLib
 	{
 	}
 
-	void IPv4TCPServer::Run(std::shared_ptr<std::atomic_bool> interruptSignal, ClientHandler newClientCallback)  // NOLINT(performance-unnecessary-value-param)
+	void IPv4TCPServer::Run(std::shared_ptr<std::atomic_bool> interruptSignalPtr, ClientHandler newClientCallback)  // NOLINT(performance-unnecessary-value-param)
 	{
-		if (interruptSignal)	// 检查中断信号
+		if (*interruptSignalPtr)	// 检查中断信号
 		{
 			spdlog::warn("IPv4TCPServer> Interrupt signal activated when server is starting.");
 			return;
@@ -100,7 +100,7 @@ namespace LangYa::SentryLib
 		try
 		{
 			CanAcceptNextClient = true;
-			while (!interruptSignal && !ReleaseSignal)
+			while (! *interruptSignalPtr && ! *ReleaseSignalPtr)
 			{
 				using namespace std::chrono_literals;
 
@@ -116,9 +116,9 @@ namespace LangYa::SentryLib
 				auto& client_thread_info = ClientThreadStack.GetAvailableItem();
 				client_thread_info.Available->store(false);
 				client_thread_info.Item = std::make_shared<std::thread>(
-					[this, &client_thread_info, &newClientCallback, interruptSignal]()
+					[this, &client_thread_info, &newClientCallback, interruptSignalPtr]()
 					{
-						AcceptClient(client_thread_info, newClientCallback, interruptSignal);
+						AcceptClient(client_thread_info, newClientCallback, interruptSignalPtr);
 					}
 				);
 				client_thread_info.Item->detach();
@@ -127,12 +127,12 @@ namespace LangYa::SentryLib
 		catch (const std::exception& ex)
 		{
 			spdlog::error("IPv4TCPServer> Cannot hold up running: {}", ex.what());
-			interruptSignal->store(true);
+			interruptSignalPtr->store(true);
 		}
 		catch (...)
 		{
 			spdlog::error("IPv4TCPServer> Cannot hold up running: Unknown exception");
-			interruptSignal->store(true);
+			interruptSignalPtr->store(true);
 		}
 
 		CanAcceptNextClient = false;
