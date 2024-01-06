@@ -1,0 +1,9 @@
+<map id="LangYa::TinyMath::RectangularSize&lt; TValue &gt;" name="LangYa::TinyMath::RectangularSize&lt; TValue &gt;">
+<area shape="rect" id="Node000001" title="代表矩形的大小（无偏移点）。" alt="" coords="248,39,451,81"/>
+<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_tiny_math_1_1_rectangular_size.html" title=" " alt="" coords="599,5,803,48"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="466,46,599,34,599,39,467,52"/>
+<area shape="rect" id="Node000004" href="$struct_lang_ya_1_1_tiny_math_1_1_rectangular_size.html" title=" " alt="" coords="599,72,803,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="467,68,599,81,599,86,466,74"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_common_1_1_i_format_by_stream.html" title="代表一种可以通过流格式化的对象。" alt="" coords="5,39,199,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,57,247,57,247,63,214,63"/>
+</map>

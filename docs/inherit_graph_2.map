@@ -1,3 +1,3 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" href="$class_console_keyboard.html" title=" " alt="" coords="5,5,129,32"/>
+<area shape="rect" id="Node000000" href="$class_lang_ya_1_1_common_1_1_i_controller.html" title="代表控制器，即处理当前对控制器的所有操作，存储到数据中，在合适的时机发送数据给远端。 如果使用多线程处理，请在传入的模板参数使用原子类型。" alt="" coords="5,5,197,48"/>
 </map>

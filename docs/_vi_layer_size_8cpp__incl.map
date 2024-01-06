@@ -1,0 +1,21 @@
+<map id="ViMap/Sources/ViLayerSize.cpp" name="ViMap/Sources/ViLayerSize.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="27,5,236,32"/>
+<area shape="rect" id="Node000002" href="$_vi_layer_size_8hpp.html" title=" " alt="" coords="29,80,234,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,33,134,64,129,64,129,33"/>
+<area shape="rect" id="Node000003" href="$_i_format_by_stream_8hpp.html" title=" " alt="" coords="5,245,258,272"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="86,110,51,128,35,140,23,156,16,176,23,196,45,220,72,236,70,241,41,224,19,199,11,176,18,153,32,137,48,123,84,105"/>
+<area shape="rect" id="Node000006" href="$_rectangular_size_8hpp.html" title=" " alt="" coords="255,155,451,197"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="167,105,282,146,280,151,165,110"/>
+<area shape="rect" id="Node000009" href="$_position_8hpp.html" title=" " alt="" coords="32,163,231,189"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="134,107,134,147,129,147,129,107"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="55,320,123,347"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="126,274,106,308,102,305,122,271"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="148,320,201,347"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="141,271,161,305,157,308,137,274"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="297,200,181,242,180,237,295,195"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="301,245,362,272"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="350,199,341,231,336,230,345,197"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="386,245,498,272"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="378,196,419,233,415,237,374,200"/>
+<area shape="poly" id="edge10_Node000009_Node000003" title=" " alt="" coords="134,190,134,230,129,230,129,190"/>
+</map>

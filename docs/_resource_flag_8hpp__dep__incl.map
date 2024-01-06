@@ -1,28 +1,9 @@
-<map id="Headers/LangYa/SentryLib/Common/ResourceFlag.hpp" name="Headers/LangYa/SentryLib/Common/ResourceFlag.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="173,5,359,48"/>
-<area shape="rect" id="Node000002" href="$_sentry_lib_8hpp.html" title=" " alt="" coords="153,368,355,395"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="261,63,257,96,252,177,252,256,256,367,251,368,247,256,247,177,251,96,256,63"/>
-<area shape="rect" id="Node000006" href="$_resource_8hpp.html" title=" " alt="" coords="266,96,442,139"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="299,57,336,94,332,98,295,61"/>
-<area shape="rect" id="Node000003" href="$_sentry_lib_8cpp.html" title=" " alt="" coords="5,443,159,469"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="211,403,113,444,111,440,209,399"/>
-<area shape="rect" id="Node000004" href="$_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和 json 配置文件的处理工具，使用操作见" alt="" coords="183,443,325,469"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="257,410,257,442,251,442,251,410"/>
-<area shape="rect" id="Node000005" href="$_tiny_sentry_mind_8cpp.html" title=" " alt="" coords="349,443,532,469"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="302,398,409,440,407,445,300,403"/>
-<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="329,152,307,188,287,238,273,290,258,368,253,367,268,289,282,237,302,185,325,149"/>
-<area shape="rect" id="Node000007" href="$_triple_buffer_8hpp.html" title=" " alt="" coords="317,187,493,229"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="376,151,395,185,391,188,371,154"/>
-<area shape="rect" id="Node000012" href="$_resource_8cpp.html" title=" " alt="" coords="517,195,671,221"/>
-<area shape="poly" id="edge14_Node000006_Node000012" title=" " alt="" coords="425,142,561,192,559,197,423,147"/>
-<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="370,242,332,279,293,328,264,369,260,366,289,325,328,276,367,238"/>
-<area shape="rect" id="Node000008" href="$_lang_ya_connection_8hpp.html" title=" " alt="" coords="342,277,518,320"/>
-<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="417,243,427,276,422,278,412,245"/>
-<area shape="rect" id="Node000010" href="$_triple_buffer_8cpp.html" title=" " alt="" coords="542,285,705,312"/>
-<area shape="poly" id="edge12_Node000007_Node000010" title=" " alt="" coords="471,233,593,282,591,287,469,238"/>
-<area shape="rect" id="Node000011" href="$_triple_buffer_tester_8cpp.html" title=" " alt="" coords="728,285,921,312"/>
-<area shape="poly" id="edge13_Node000007_Node000011" title=" " alt="" coords="508,228,765,282,764,287,507,234"/>
-<area shape="poly" id="edge10_Node000008_Node000002" title=" " alt="" coords="372,329,283,370,280,365,370,324"/>
-<area shape="rect" id="Node000009" href="$_lang_ya_connection_8cpp.html" title=" " alt="" coords="378,368,586,395"/>
-<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="454,332,476,366,472,369,449,335"/>
+<map id="Common/Headers/LangYa/Common/ResourceFlag.hpp" name="Common/Headers/LangYa/Common/ResourceFlag.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="21,5,208,48"/>
+<area shape="rect" id="Node000002" href="$_resource_8hpp.html" title=" " alt="" coords="28,96,201,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,64,117,96,112,96,112,64"/>
+<area shape="rect" id="Node000003" href="$_triple_buffer_8hpp.html" title=" " alt="" coords="28,187,201,229"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,154,117,186,112,186,112,154"/>
+<area shape="rect" id="Node000004" href="$_triple_buffer_8cpp.html" title=" " alt="" coords="5,277,224,304"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="117,245,117,277,112,277,112,245"/>
 </map>

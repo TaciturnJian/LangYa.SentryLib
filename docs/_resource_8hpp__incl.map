@@ -1,7 +1,7 @@
-<map id="Headers/LangYa/SentryLib/Common/Resource.hpp" name="Headers/LangYa/SentryLib/Common/Resource.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="19,5,196,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,104,66,131"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,50,57,93,53,90,89,47"/>
-<area shape="rect" id="Node000003" href="$_resource_flag_8hpp.html" title=" " alt="" coords="89,96,270,139"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="126,47,155,82,151,86,122,50"/>
+<map id="Common/Headers/LangYa/Common/Resource.hpp" name="Common/Headers/LangYa/Common/Resource.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="33,5,206,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,66,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,51,62,87,58,83,96,47"/>
+<area shape="rect" id="Node000003" href="$_resource_flag_8hpp.html" title=" " alt="" coords="90,96,320,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="143,47,182,83,179,87,140,51"/>
 </map>

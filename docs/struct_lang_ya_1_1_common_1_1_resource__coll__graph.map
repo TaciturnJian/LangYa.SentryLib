@@ -1,0 +1,9 @@
+<map id="LangYa::Common::Resource&lt; TContent &gt;" name="LangYa::Common::Resource&lt; TContent &gt;">
+<area shape="rect" id="Node000001" title="代表一个在多线程中流通的资源。 使用内部的 Flag 为资源上锁。" alt="" coords="6,277,195,320"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,187,196,213"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,229,103,277,98,277,98,229"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="42,96,159,123"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,138,103,186,98,186,98,138"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="81,5,120,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="103,48,103,95,98,95,98,48"/>
+</map>

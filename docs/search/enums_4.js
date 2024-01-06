@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['unitid_0',['UnitID',['../namespace_lang_ya_1_1_sentry_lib_a01fa38254edec1ace0c91eeeabbc84ea.html#a01fa38254edec1ace0c91eeeabbc84ea',1,'LangYa::SentryLib']]],
-  ['unitteam_1',['UnitTeam',['../namespace_lang_ya_1_1_sentry_lib_af7259725b9fc06bee926bd34a470aa18.html#af7259725b9fc06bee926bd34a470aa18',1,'LangYa::SentryLib']]],
-  ['unittype_2',['UnitType',['../namespace_lang_ya_1_1_sentry_lib_a0016e34c68ca1078acf541153a27177b.html#a0016e34c68ca1078acf541153a27177b',1,'LangYa::SentryLib']]]
+  ['unitid_0',['UnitID',['../namespace_lang_ya_1_1_common_a83e380b8700171425e79bc82718dcae3.html#a83e380b8700171425e79bc82718dcae3',1,'LangYa::Common']]],
+  ['unitteam_1',['UnitTeam',['../namespace_lang_ya_1_1_common_ae186f8ddf4d3e777d52902e1123ab148.html#ae186f8ddf4d3e777d52902e1123ab148',1,'LangYa::Common']]],
+  ['unittype_2',['UnitType',['../namespace_lang_ya_1_1_common_a3af1180b282e5e42d625bf33f158a9a9.html#a3af1180b282e5e42d625bf33f158a9a9',1,'LangYa::Common']]]
 ];

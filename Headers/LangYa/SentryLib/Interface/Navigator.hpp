@@ -1,7 +1,7 @@
 #pragma once
 
-#include <LangYa/SentryLib/Vector.hpp>
-#include <LangYa/SentryLib/Position.hpp>
+#include <LangYa/TinyMath/Vector.hpp>
+#include <LangYa/TinyMath/Position.hpp>
 
 namespace LangYa::SentryLib
 {
@@ -31,7 +31,7 @@ namespace LangYa::SentryLib
 		///	如果没有更新，则获取自身位置失败，返回 false 。
 		///	@param selfLocation 用于接收自身位置的变量。
 		///	@return 是否成功获取到自身位置。
-		virtual bool GetSelfLocation(Position3F& selfLocation);
+		virtual bool GetSelfLocation(TinyMath::Position3F& selfLocation);
 
 		/// @brief 给定目标地点，获取到达目标地点的速度。
 		///	@details 使用此函数将设置导航器的目的地为 destination 。
@@ -42,13 +42,13 @@ namespace LangYa::SentryLib
 		///	@param destination 传入目的地的 ID 。
 		///	@param velocity 用于接收速度的变量。
 		///	@return 如果解算出来了速度，则返回 true ，否则返回 false。
-		virtual bool GetVelocityToDestination(const DestinationIDType& destination, Vector2F& velocity);
+		virtual bool GetVelocityToDestination(const DestinationIDType& destination, TinyMath::Vector2F& velocity);
 
 		/// @brief 获取周围的障碍物位置。
 		///	@details 每次调用此函数都会将新的障碍物位置写入到 obstacles 变量中。
 		///	@warning 此函数不负责清空 vector，如果需要，请手动调用 clear 。
 		///	@param obstacles 用于接收障碍物位置的 vector 。
 		///	@return 是否成功获取到任何障碍物位置。
-		virtual bool GetObstaclePosition(std::vector<Position2F>& obstacles);
+		virtual bool GetObstaclePosition(std::vector<TinyMath::Position2F>& obstacles);
 	};
 }

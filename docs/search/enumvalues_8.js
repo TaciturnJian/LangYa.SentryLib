@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['magenta_0',['Magenta',['../class_lang_ya_1_1_sentry_lib_1_1_console_manipulator_ac7a137824050901043e8767147fbc9f1.html#ac7a137824050901043e8767147fbc9f1afd148e0e168200a6126b0996fa5fec44',1,'LangYa::SentryLib::ConsoleManipulator']]]
+  ['outpost_0',['outpost',['../namespace_lang_ya_1_1_common_a83e380b8700171425e79bc82718dcae3.html#a83e380b8700171425e79bc82718dcae3a0fc3009923e09f21be7dbb00cd257eb1',1,'LangYa::Common::Outpost'],['../namespace_lang_ya_1_1_common_a3af1180b282e5e42d625bf33f158a9a9.html#a3af1180b282e5e42d625bf33f158a9a9a0fc3009923e09f21be7dbb00cd257eb1',1,'LangYa::Common::Outpost']]]
 ];

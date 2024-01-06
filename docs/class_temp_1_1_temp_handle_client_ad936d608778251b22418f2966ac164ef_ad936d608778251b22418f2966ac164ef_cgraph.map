@@ -1,0 +1,6 @@
+<map id="Temp::TempHandleClient::HandleClient" name="Temp::TempHandleClient::HandleClient">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,172,72"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_common_1_1_memory_view_add5fd43af551a67b24be38770ef9fee3.html#add5fd43af551a67b24be38770ef9fee3" title="使用给定的内存头和内存长度构建一个内存视图。 如果提供的两个参数是非法的，那么此内存视图也是非法的，而且此类不会在构建时抛出异常。小心在之后的使用中出现段错误。" alt="" coords="220,29,428,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,48,204,48,204,53,172,53"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="279,29,277,19,285,10,300,5,324,3,349,5,364,11,362,16,348,10,324,8,302,10,288,15,283,21,284,28"/>
+</map>

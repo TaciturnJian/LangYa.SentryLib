@@ -1,26 +1,5 @@
 var searchData=
 [
-  ['iclientacceptor_0',['IClientAcceptor',['../class_lang_ya_1_1_sentry_lib_1_1_i_client_acceptor.html',1,'LangYa::SentryLib']]],
-  ['iclientacceptor_3c_20ipv4tcpsocket_20_3e_1',['IClientAcceptor&lt; IPv4TCPSocket &gt;',['../class_lang_ya_1_1_sentry_lib_1_1_i_client_acceptor.html',1,'LangYa::SentryLib']]],
-  ['iclienthandler_2',['IClientHandler',['../class_lang_ya_1_1_sentry_lib_1_1_i_client_handler.html',1,'LangYa::SentryLib']]],
-  ['iclienthandler_3c_20langya_3a_3asentrylib_3a_3aipv4tcpsocket_20_3e_3',['IClientHandler&lt; LangYa::SentryLib::IPv4TCPSocket &gt;',['../class_lang_ya_1_1_sentry_lib_1_1_i_client_handler.html',1,'LangYa::SentryLib']]],
-  ['icomparable_4',['IComparable',['../class_sango_1_1_i_comparable.html',1,'Sango']]],
-  ['icomparable_3c_20numberid_3c_20tnumber_20_3e_20_3e_5',['IComparable&lt; NumberID&lt; TNumber &gt; &gt;',['../class_sango_1_1_i_comparable.html',1,'Sango']]],
-  ['iformatbystream_6',['IFormatByStream',['../class_lang_ya_1_1_sentry_lib_1_1_i_format_by_stream.html',1,'LangYa::SentryLib']]],
-  ['ihasid_7',['IHasID',['../class_sango_1_1_i_has_i_d.html',1,'Sango']]],
-  ['ihasinfo_8',['IHasInfo',['../class_sango_1_1_i_has_info.html',1,'Sango']]],
-  ['ihasname_9',['IHasName',['../class_sango_1_1_i_has_name.html',1,'Sango']]],
-  ['infowithid_10',['InfoWithID',['../struct_sango_1_1_info_with_i_d.html',1,'Sango']]],
-  ['infowithname_11',['InfoWithName',['../struct_sango_1_1_info_with_name.html',1,'Sango']]],
-  ['ioconnection_12',['IOConnection',['../class_lang_ya_1_1_sentry_lib_1_1_i_o_connection.html',1,'LangYa::SentryLib']]],
-  ['iparse_13',['IParse',['../class_lang_ya_1_1_sentry_lib_1_1_i_parse.html',1,'LangYa::SentryLib']]],
-  ['iparsestream_14',['IParseStream',['../class_lang_ya_1_1_sentry_lib_1_1_i_parse_stream.html',1,'LangYa::SentryLib']]],
-  ['iparsestringview_15',['IParseStringView',['../class_lang_ya_1_1_sentry_lib_1_1_i_parse_string_view.html',1,'LangYa::SentryLib']]],
-  ['ipv4address_16',['IPv4Address',['../struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_address.html',1,'LangYa::SentryLib']]],
-  ['ipv4endpoint_17',['IPv4Endpoint',['../struct_lang_ya_1_1_sentry_lib_1_1_i_pv4_endpoint.html',1,'LangYa::SentryLib']]],
-  ['ipv4tcpacceptor_18',['IPv4TCPAcceptor',['../class_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_acceptor.html',1,'LangYa::SentryLib']]],
-  ['ipv4tcpserver_19',['IPv4TCPServer',['../class_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_server.html',1,'LangYa::SentryLib']]],
-  ['ipv4tcpsocket_20',['IPv4TCPSocket',['../class_lang_ya_1_1_sentry_lib_1_1_i_pv4_t_c_p_socket.html',1,'LangYa::SentryLib']]],
-  ['iteminfo_21',['ItemInfo',['../struct_lang_ya_1_1_sentry_lib_1_1_managed_stack_1_1_item_info.html',1,'LangYa::SentryLib::ManagedStack']]],
-  ['itemtype_22',['ItemType',['../struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type.html',1,'LangYa::SentryLib::MonitorPackage']]]
+  ['navigator_0',['Navigator',['../class_lang_ya_1_1_sentry_lib_1_1_navigator.html',1,'LangYa::SentryLib']]],
+  ['numberid_1',['NumberID',['../struct_sango_1_1_number_i_d.html',1,'Sango']]]
 ];

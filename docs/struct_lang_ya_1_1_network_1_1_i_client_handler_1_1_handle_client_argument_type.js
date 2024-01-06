@@ -1,0 +1,5 @@
+var struct_lang_ya_1_1_network_1_1_i_client_handler_1_1_handle_client_argument_type =
+[
+    [ "ClientPointer", "struct_lang_ya_1_1_network_1_1_i_client_handler_1_1_handle_client_argument_type_a0bf43e1bf86323f64f0132ff076836f6.html#a0bf43e1bf86323f64f0132ff076836f6", null ],
+    [ "InterruptSignalPointer", "struct_lang_ya_1_1_network_1_1_i_client_handler_1_1_handle_client_argument_type_a174a834106d26d0e6596366aaa9e8e69.html#a174a834106d26d0e6596366aaa9e8e69", null ]
+];

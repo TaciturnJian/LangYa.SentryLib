@@ -1,0 +1,9 @@
+<map id="LangYa::Network::SerialPortInfo" name="LangYa::Network::SerialPortInfo">
+<area shape="rect" id="Node000001" title="构建串口连接的必要内容。 包含了构建串口的必要信息，许多复杂设置都略去了。 请配合下面的类使用。" alt="" coords="50,204,255,231"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_common_1_1_i_format_by_stream.html" title="代表一种可以通过流格式化的对象。" alt="" coords="5,97,199,140"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,152,148,202,144,205,117,155"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="222,105,302,132"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="238,144,169,205,165,201,235,140"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="199,5,325,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="265,63,265,105,259,105,259,63"/>
+</map>

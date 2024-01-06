@@ -89,10 +89,9 @@ namespace LangYa::SentryLib
 
 	void
 	MonitorPackage
-	::WriteJsonToSharedConnection(const std::shared_ptr<Connection>& connectionPtr) const
+	::WriteJsonToSharedConnection(const std::shared_ptr<Common::IOConnection>& connectionPtr) const
 	{
 		auto& connection = *connectionPtr;
-		if (!connection.IsConnected()) return;
 
 		std::stringstream stream{};
 		FormatToJson(stream);
@@ -100,7 +99,7 @@ namespace LangYa::SentryLib
 
 		try
 		{
-			connection.Write(MemoryView{message.c_str(), message.size()});
+			connection.Write(Common::MemoryView{message.c_str(), message.size()});
 		}
 		catch (std::exception& ex)
 		{

@@ -1,0 +1,7 @@
+<map id="LangYa::Network::IPv4TCPAcceptor" name="LangYa::Network::IPv4TCPAcceptor">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,204,235,231"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_network_1_1_i_client_acceptor.html" title=" " alt="" coords="26,112,214,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,170,123,204,117,204,117,170"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_network_1_1_i_client_acceptor.html" title="代表可以接收客户端的类。" alt="" coords="38,5,202,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,64,123,111,117,111,117,64"/>
+</map>

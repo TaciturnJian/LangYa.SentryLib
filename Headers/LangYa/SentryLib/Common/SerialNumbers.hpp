@@ -4,7 +4,7 @@
 #include <sstream>
 #include <initializer_list>
 
-#include <LangYa/SentryLib/MemoryView.hpp>
+#include <LangYa/Common/MemoryView.hpp>
 
 namespace LangYa::SentryLib
 {
@@ -42,7 +42,7 @@ namespace LangYa::SentryLib
 		///	@param index 数字的下标。
 		///	@exception std::out_of_range 下标越界。
 		///	@return 对应下表数字的引用。
-		TBasicNumber& operator[](MemoryView::SizeType index)
+		TBasicNumber& operator[](Common::MemoryView::SizeType index)
 		{
 			if (Numbers.size() <= index)
 			{
@@ -56,7 +56,7 @@ namespace LangYa::SentryLib
 		///	@param index 数字的下标。
 		///	@exception std::out_of_range 下标越界。
 		///	@return 对应下表数字的常量引用。
-		const TBasicNumber& operator[](MemoryView::SizeType index) const
+		const TBasicNumber& operator[](Common::MemoryView::SizeType index) const
 		{
 			if (Numbers.size() <= index)
 			{
@@ -82,7 +82,7 @@ namespace LangYa::SentryLib
 		friend std::ostream& operator<<(std::ostream& stream, const SerialNumbers& numbers)
 		{
 			auto max_index = numbers.Numbers.size() - 1;
-			for (MemoryView::SizeType i = 0; i < max_index; i++)
+			for (Common::MemoryView::SizeType i = 0; i < max_index; i++)
 			{
 				stream << numbers.Numbers[i] << ".";
 			}

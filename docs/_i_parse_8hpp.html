@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LangYa.SentryLib: Headers/LangYa/SentryLib/IParse.hpp 文件参考</title>
+<title>LangYa.SentryLib: Common/Headers/LangYa/Common/IParse.hpp 文件参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -99,22 +99,35 @@ $(document).ready(function(){initNavTree('_i_parse_8hpp.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;istream&gt;</code><br />
-<code>#include &lt;string_view&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &lt;string_view&gt;</code><br />
+<code>#include &lt;<a class="el" href="">LangYa/Common/MemoryView.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> IParse.hpp 的引用(Include)关系图:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="_i_parse_8hpp__incl.png" border="0" usemap="#a_headers_2_lang_ya_2_sentry_lib_2_i_parse_8hpp" alt=""/></div>
-<map name="a_headers_2_lang_ya_2_sentry_lib_2_i_parse_8hpp" id="a_headers_2_lang_ya_2_sentry_lib_2_i_parse_8hpp">
-<area shape="rect" title=" " alt="" coords="48,5,224,48"/>
+<div class="center"><img src="_i_parse_8hpp__incl.png" border="0" usemap="#a_common_2_headers_2_lang_ya_2_common_2_i_parse_8hpp" alt=""/></div>
+<map name="a_common_2_headers_2_lang_ya_2_common_2_i_parse_8hpp" id="a_common_2_headers_2_lang_ya_2_common_2_i_parse_8hpp">
+<area shape="rect" title=" " alt="" coords="60,5,234,48"/>
 <area shape="rect" title=" " alt="" coords="5,96,70,123"/>
-<area shape="poly" title=" " alt="" coords="112,51,66,88,63,84,109,47"/>
-<area shape="rect" title=" " alt="" coords="94,96,178,123"/>
-<area shape="poly" title=" " alt="" coords="139,49,139,80,134,80,134,49"/>
-<area shape="rect" title=" " alt="" coords="203,96,256,123"/>
-<area shape="poly" title=" " alt="" coords="162,47,205,84,202,88,158,51"/>
+<area shape="poly" title=" " alt="" coords="120,51,68,89,65,85,117,46"/>
+<area shape="rect" title=" " alt="" coords="327,245,380,272"/>
+<area shape="poly" title=" " alt="" coords="140,49,128,81,119,119,119,160,125,179,134,196,145,205,162,214,209,230,312,249,311,255,207,235,160,219,142,210,130,199,120,181,114,161,114,119,123,79,135,47"/>
+<area shape="rect" title=" " alt="" coords="145,96,229,123"/>
+<area shape="poly" title=" " alt="" coords="160,47,176,81,171,83,155,50"/>
+<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="253,96,478,123"/>
+<area shape="poly" title=" " alt="" coords="204,46,318,88,316,93,202,51"/>
+<area shape="rect" title=" " alt="" coords="569,245,637,272"/>
+<area shape="poly" title=" " alt="" coords="479,116,535,124,589,135,634,149,662,169,669,187,664,205,651,223,635,238,631,234,647,219,659,203,664,187,658,172,631,154,587,140,534,129,478,122"/>
+<area shape="rect" title=" " alt="" coords="145,171,205,197"/>
+<area shape="poly" title=" " alt="" coords="333,126,220,168,218,163,331,121"/>
+<area shape="rect" title=" " alt="" coords="230,171,371,197"/>
+<area shape="poly" title=" " alt="" coords="356,125,323,161,319,157,352,121"/>
+<area shape="rect" href="_i_format_by_stream_8hpp.html" title=" " alt="" coords="395,171,648,197"/>
+<area shape="poly" title=" " alt="" coords="394,121,482,161,479,166,392,126"/>
+<area shape="poly" title=" " alt="" coords="493,200,396,242,394,237,491,195"/>
+<area shape="poly" title=" " alt="" coords="537,196,579,233,576,237,534,200"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -122,47 +135,13 @@ $(document).ready(function(){initNavTree('_i_parse_8hpp.html',''); initResizable
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="_i_parse_8hpp__dep__incl.png" border="0" usemap="#a_headers_2_lang_ya_2_sentry_lib_2_i_parse_8hppdep" alt=""/></div>
-<map name="a_headers_2_lang_ya_2_sentry_lib_2_i_parse_8hppdep" id="a_headers_2_lang_ya_2_sentry_lib_2_i_parse_8hppdep">
-<area shape="rect" title=" " alt="" coords="131,5,308,48"/>
-<area shape="rect" href="_i_pv4_address_8hpp.html" title=" " alt="" coords="131,96,308,139"/>
-<area shape="poly" title=" " alt="" coords="222,64,222,96,217,96,217,64"/>
-<area shape="rect" href="_network_8hpp.html" title=" " alt="" coords="385,459,561,501"/>
-<area shape="poly" title=" " alt="" coords="169,149,120,183,75,225,60,248,51,271,50,295,60,319,90,355,127,386,168,410,212,430,257,446,302,457,384,471,383,476,301,462,255,451,210,435,165,415,124,390,87,359,56,321,45,296,46,270,55,245,71,222,117,179,166,145"/>
-<area shape="rect" href="_i_pv4_endpoint_8hpp.html" title=" " alt="" coords="131,187,308,229"/>
-<area shape="poly" title=" " alt="" coords="222,154,222,186,217,186,217,154"/>
-<area shape="rect" href="_i_pv4_address_8cpp.html" title=" " alt="" coords="332,195,502,221"/>
-<area shape="poly" title=" " alt="" coords="281,143,389,192,387,196,278,148"/>
-<area shape="rect" href="_sentry_lib_8hpp.html" title=" " alt="" coords="153,549,355,576"/>
-<area shape="poly" title=" " alt="" coords="403,510,289,551,287,546,401,505"/>
-<area shape="rect" href="_t_c_p_client_tester_8cpp.html" title=" " alt="" coords="379,549,566,576"/>
-<area shape="poly" title=" " alt="" coords="475,517,475,549,470,549,470,517"/>
-<area shape="rect" href="_t_c_p_server_tester_8cpp.html" title=" " alt="" coords="591,549,781,576"/>
-<area shape="poly" title=" " alt="" coords="543,505,653,546,652,551,541,510"/>
-<area shape="rect" href="_sentry_lib_8cpp.html" title=" " alt="" coords="5,624,159,651"/>
-<area shape="poly" title=" " alt="" coords="211,585,113,626,111,621,209,580"/>
-<area shape="rect" href="_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和 json 配置文件的处理工具，使用操作见" alt="" coords="183,624,325,651"/>
-<area shape="poly" title=" " alt="" coords="257,592,257,624,251,624,251,592"/>
-<area shape="rect" href="_tiny_sentry_mind_8cpp.html" title=" " alt="" coords="349,624,532,651"/>
-<area shape="poly" title=" " alt="" coords="302,579,409,621,407,626,300,584"/>
-<area shape="poly" title=" " alt="" coords="241,242,258,276,271,316,276,348,285,378,308,409,345,437,387,456,384,461,342,441,304,413,281,380,271,349,265,317,253,278,236,244"/>
-<area shape="rect" href="_i_pv4_t_c_p_socket_8hpp.html" title=" " alt="" coords="449,277,640,320"/>
-<area shape="poly" title=" " alt="" coords="311,231,469,274,468,279,309,236"/>
-<area shape="rect" href="_i_pv4_endpoint_8cpp.html" title=" " alt="" coords="70,285,243,312"/>
-<area shape="poly" title=" " alt="" coords="198,244,168,286,163,283,194,241"/>
-<area shape="poly" title=" " alt="" coords="543,336,535,373,522,412,508,438,492,460,487,457,503,435,517,410,530,372,537,335"/>
-<area shape="rect" href="_i_pv4_t_c_p_acceptor_8hpp.html" title=" " alt="" coords="582,368,785,411"/>
-<area shape="poly" title=" " alt="" coords="591,326,652,365,650,370,588,331"/>
-<area shape="rect" href="_i_pv4_t_c_p_server_8hpp.html" title=" " alt="" coords="809,368,995,411"/>
-<area shape="poly" title=" " alt="" coords="644,322,819,365,817,370,643,327"/>
-<area shape="rect" href="_i_pv4_t_c_p_socket_8cpp.html" title=" " alt="" coords="319,376,507,403"/>
-<area shape="poly" title=" " alt="" coords="503,331,433,378,430,373,500,327"/>
-<area shape="poly" title=" " alt="" coords="621,420,523,460,521,456,619,415"/>
-<area shape="rect" href="_i_pv4_t_c_p_acceptor_8cpp.html" title=" " alt="" coords="585,467,784,493"/>
-<area shape="poly" title=" " alt="" coords="687,426,687,466,682,466,681,426"/>
-<area shape="poly" title=" " alt="" coords="794,416,562,463,561,458,793,410"/>
-<area shape="rect" href="_i_pv4_t_c_p_server_8cpp.html" title=" " alt="" coords="810,467,994,493"/>
-<area shape="poly" title=" " alt="" coords="905,426,905,466,899,466,899,426"/>
+<div class="center"><img src="_i_parse_8hpp__dep__incl.png" border="0" usemap="#a_common_2_headers_2_lang_ya_2_common_2_i_parse_8hppdep" alt=""/></div>
+<map name="a_common_2_headers_2_lang_ya_2_common_2_i_parse_8hppdep" id="a_common_2_headers_2_lang_ya_2_common_2_i_parse_8hppdep">
+<area shape="rect" title=" " alt="" coords="22,5,195,48"/>
+<area shape="rect" href="_common_8hpp.html" title=" " alt="" coords="22,96,195,139"/>
+<area shape="poly" title=" " alt="" coords="111,64,111,96,106,96,106,64"/>
+<area shape="rect" href="_common_8cpp.html" title=" " alt="" coords="5,187,212,213"/>
+<area shape="poly" title=" " alt="" coords="111,155,111,186,106,186,106,155"/>
 </map>
 </div>
 </div>
@@ -170,33 +149,35 @@ $(document).ready(function(){initNavTree('_i_parse_8hpp.html',''); initResizable
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 结构体</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_i_parse.html">LangYa::SentryLib::IParse&lt; TParseTarget &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表可以从目标中解析出数据并存储于自身的对象。  <a href="class_lang_ya_1_1_sentry_lib_1_1_i_parse.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_common_1_1_i_parse.html">LangYa::Common::IParse&lt; TParseTarget &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">代表可以从目标中解析出数据并存储于自身的对象。  <a href="class_lang_ya_1_1_common_1_1_i_parse.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_i_parse_string_view.html">LangYa::SentryLib::IParseStringView</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_common_1_1_i_parse_string_view.html">LangYa::Common::IParseStringView</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_i_parse_stream.html">LangYa::SentryLib::IParseStream</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_common_1_1_i_parse_stream.html">LangYa::Common::IParseStream</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 命名空间</h2></td></tr>
 <tr class="memitem:namespace_lang_ya" id="r_namespace_lang_ya"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya.html">LangYa</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespace_lang_ya_1_1_sentry_lib" id="r_namespace_lang_ya_1_1_sentry_lib"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">LangYa::SentryLib</a></td></tr>
+<tr class="memitem:namespace_lang_ya_1_1_common" id="r_namespace_lang_ya_1_1_common"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_common.html">LangYa::Common</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 类型定义</h2></td></tr>
-<tr class="memitem:a51b76774c320f27c358b151bb036c5b2" id="r_a51b76774c320f27c358b151bb036c5b2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib_a51b76774c320f27c358b151bb036c5b2.html#a51b76774c320f27c358b151bb036c5b2">LangYa::SentryLib::IParseString</a> = <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_i_parse.html">IParse</a>&lt; std::string &gt;</td></tr>
-<tr class="separator:a51b76774c320f27c358b151bb036c5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6635b0a8367306a41874271c7e3bc74" id="r_ad6635b0a8367306a41874271c7e3bc74"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_common_ad6635b0a8367306a41874271c7e3bc74.html#ad6635b0a8367306a41874271c7e3bc74">LangYa::Common::IParseString</a> = <a class="el" href="class_lang_ya_1_1_common_1_1_i_parse.html">IParse</a>&lt; std::string &gt;</td></tr>
+<tr class="separator:ad6635b0a8367306a41874271c7e3bc74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a690a51427ef28080c22e3a4639557e70" id="r_a690a51427ef28080c22e3a4639557e70"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_common_a690a51427ef28080c22e3a4639557e70.html#a690a51427ef28080c22e3a4639557e70">LangYa::Common::IParseMemoryView</a> = <a class="el" href="class_lang_ya_1_1_common_1_1_i_parse.html">IParse</a>&lt; <a class="el" href="struct_lang_ya_1_1_common_1_1_memory_view.html">MemoryView</a> &gt;</td></tr>
+<tr class="separator:a690a51427ef28080c22e3a4639557e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_692516b589a32b3bfce781ca9f6d1534.html">Headers</a></li><li class="navelem"><a class="el" href="dir_b117d0d76b03a6360b87a590e39f53f6.html">LangYa</a></li><li class="navelem"><a class="el" href="dir_0479bb77a485cc0baf99073ab05914e0.html">SentryLib</a></li><li class="navelem"><a class="el" href="_i_parse_8hpp.html">IParse.hpp</a></li>
-    <li class="footer">生成于 2024年 一月 5日 星期五 10:49:13 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a class="el" href="dir_4ab6b4cc6a7edbff49100e9123df213f.html">Common</a></li><li class="navelem"><a class="el" href="dir_6a4e02156103164a144569e783130259.html">Headers</a></li><li class="navelem"><a class="el" href="dir_42dffe1fa27bcd117c87d50b4669e385.html">LangYa</a></li><li class="navelem"><a class="el" href="dir_99bffb2c4a9719527036920e483e229a.html">Common</a></li><li class="navelem"><a class="el" href="_i_parse_8hpp.html">IParse.hpp</a></li>
+    <li class="footer">生成于 2024年 一月 7日 星期日 00:54:47 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,0 +1,12 @@
+<map id="LangYa::Network::IClientHandler&lt; TClient &gt;::HandleClientArgumentType" name="LangYa::Network::IClientHandler&lt; TClient &gt;::HandleClientArgumentType">
+<area shape="rect" id="Node000001" title=" " alt="" coords="76,293,286,352"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,195,178,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,232,160,291,156,295,109,235"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="111,96,251,123"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="161,136,105,196,101,193,157,132"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="202,187,341,229"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="209,131,223,145,257,184,253,188,219,149,205,135"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="162,5,200,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="184,48,184,95,178,95,178,48"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="248,243,206,295,202,291,243,240"/>
+</map>

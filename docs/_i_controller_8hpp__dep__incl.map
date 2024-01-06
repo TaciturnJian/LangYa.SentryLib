@@ -1,0 +1,10 @@
+<map id="Common/Headers/LangYa/Common/IController.hpp" name="Common/Headers/LangYa/Common/IController.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="22,5,195,48"/>
+<area shape="rect" id="Node000002" href="$_common_8hpp.html" title=" " alt="" coords="22,187,195,229"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,62,75,97,72,117,75,138,84,163,97,185,92,188,80,165,70,139,66,117,70,95,84,60"/>
+<area shape="rect" id="Node000004" href="$_controller_8hpp.html" title=" " alt="" coords="85,96,258,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="134,59,159,94,155,97,130,62"/>
+<area shape="rect" id="Node000003" href="$_common_8cpp.html" title=" " alt="" coords="5,277,212,304"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="111,245,111,277,106,277,106,245"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="150,153,125,188,121,185,146,150"/>
+</map>

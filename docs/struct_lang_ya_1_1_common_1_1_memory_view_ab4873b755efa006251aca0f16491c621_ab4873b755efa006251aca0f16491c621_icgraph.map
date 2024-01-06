@@ -1,0 +1,7 @@
+<map id="LangYa::Common::MemoryView::MemoryView" name="LangYa::Common::MemoryView::MemoryView">
+<area shape="rect" id="Node000001" title="构建一个完全无效的内存视图。 其内存的头部为 nullptr ，内存长度为 0。" alt="" coords="260,39,468,81"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_common_1_1_unique_buffer_a630a68f4e40a2444db792b2d48e53cb2.html#a630a68f4e40a2444db792b2d48e53cb2" title="Basic move assignment operator, delete the unused memory here and move the new one." alt="" coords="5,5,212,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,47,212,43,212,37,244,42"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_common_1_1_unique_buffer_a9a04e01d3758c68fbf3012ba2e6f4a9c.html#a9a04e01d3758c68fbf3012ba2e6f4a9c" title="Basic move constructor, delete the unused memory here and move the new one." alt="" coords="5,72,212,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="244,78,212,83,212,77,244,73"/>
+</map>

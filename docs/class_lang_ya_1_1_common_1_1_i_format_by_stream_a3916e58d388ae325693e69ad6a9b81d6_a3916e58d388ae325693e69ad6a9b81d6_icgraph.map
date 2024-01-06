@@ -1,0 +1,5 @@
+<map id="LangYa::Common::IFormatByStream::FormatByStream" name="LangYa::Common::IFormatByStream::FormatByStream">
+<area shape="rect" id="Node000001" title="将对象格式化到流中。" alt="" coords="242,5,435,48"/>
+<area shape="rect" id="Node000002" href="$namespace_lang_ya_1_1_common_a82cf42ec68ad3d29f3d9f12b848b2342.html#a82cf42ec68ad3d29f3d9f12b848b2342" title="利用 std::stringstream 将 IFormatByStream 对象输入到流中，并从流中读取字符串。" alt="" coords="5,5,194,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,29,194,29,194,24,226,24"/>
+</map>

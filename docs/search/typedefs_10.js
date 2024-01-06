@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['vector2_0',['Vector2',['../namespace_lang_ya_1_1_sentry_lib_ae23ea945c4af9f74c96cf80d38f9ee50.html#ae23ea945c4af9f74c96cf80d38f9ee50',1,'LangYa::SentryLib']]],
-  ['vector2c_1',['Vector2C',['../namespace_lang_ya_1_1_sentry_lib_a4460be3d8ab3dff72be0e2e015483727.html#a4460be3d8ab3dff72be0e2e015483727',1,'LangYa::SentryLib']]],
-  ['vector2d_2',['Vector2D',['../namespace_lang_ya_1_1_sentry_lib_ada67cdfcf97b98ab9b00d1d0a774fff8.html#ada67cdfcf97b98ab9b00d1d0a774fff8',1,'LangYa::SentryLib']]],
-  ['vector2f_3',['Vector2F',['../namespace_lang_ya_1_1_sentry_lib_a6fb5ad7b11cd4592f729d4568e0447f5.html#a6fb5ad7b11cd4592f729d4568e0447f5',1,'LangYa::SentryLib']]],
-  ['vector2i_4',['Vector2I',['../namespace_lang_ya_1_1_sentry_lib_a1f5062a805058dadf821a48f7fb135bb.html#a1f5062a805058dadf821a48f7fb135bb',1,'LangYa::SentryLib']]],
-  ['vector2s_5',['Vector2S',['../namespace_lang_ya_1_1_sentry_lib_ac29cd3ba3964118d24799fa6f602ccea.html#ac29cd3ba3964118d24799fa6f602ccea',1,'LangYa::SentryLib']]],
-  ['vector3_6',['Vector3',['../namespace_lang_ya_1_1_sentry_lib_ad5638d7fb2b4a93c885317e03f58d632.html#ad5638d7fb2b4a93c885317e03f58d632',1,'LangYa::SentryLib']]],
-  ['vector3c_7',['Vector3C',['../namespace_lang_ya_1_1_sentry_lib_a6891e4f89eed5c0e4023768bff94b2d3.html#a6891e4f89eed5c0e4023768bff94b2d3',1,'LangYa::SentryLib']]],
-  ['vector3d_8',['Vector3D',['../namespace_lang_ya_1_1_sentry_lib_a3477b823228de876ab50f248bcc47fbe.html#a3477b823228de876ab50f248bcc47fbe',1,'LangYa::SentryLib']]],
-  ['vector3f_9',['Vector3F',['../namespace_lang_ya_1_1_sentry_lib_afac38c55c9e5c258bc00c9d3afc95305.html#afac38c55c9e5c258bc00c9d3afc95305',1,'LangYa::SentryLib']]],
-  ['vector3i_10',['Vector3I',['../namespace_lang_ya_1_1_sentry_lib_abf2b0dd77e6afc426cafbd0ee31d31f5.html#abf2b0dd77e6afc426cafbd0ee31d31f5',1,'LangYa::SentryLib']]],
-  ['vector3s_11',['Vector3S',['../namespace_lang_ya_1_1_sentry_lib_a1fc54114cbf8fa09ea2c45ca19763f28.html#a1fc54114cbf8fa09ea2c45ca19763f28',1,'LangYa::SentryLib']]]
+  ['vector2_0',['Vector2',['../namespace_lang_ya_1_1_tiny_math_a3944d30465834da08c035477432f0152.html#a3944d30465834da08c035477432f0152',1,'LangYa::TinyMath']]],
+  ['vector2c_1',['Vector2C',['../namespace_lang_ya_1_1_tiny_math_a4c774f01e109e8b7f09bea469597c879.html#a4c774f01e109e8b7f09bea469597c879',1,'LangYa::TinyMath']]],
+  ['vector2d_2',['Vector2D',['../namespace_lang_ya_1_1_tiny_math_a9e5af270350092c4e8753d58470a91da.html#a9e5af270350092c4e8753d58470a91da',1,'LangYa::TinyMath']]],
+  ['vector2f_3',['Vector2F',['../namespace_lang_ya_1_1_tiny_math_a2e96d75d0ad81a53102f4d1d2a898b24.html#a2e96d75d0ad81a53102f4d1d2a898b24',1,'LangYa::TinyMath']]],
+  ['vector2i_4',['Vector2I',['../namespace_lang_ya_1_1_tiny_math_ae6ad7d9c887ca8efd5d46e14ef810469.html#ae6ad7d9c887ca8efd5d46e14ef810469',1,'LangYa::TinyMath']]],
+  ['vector2s_5',['Vector2S',['../namespace_lang_ya_1_1_tiny_math_ab63af8ef14b0c67a45078add1b0a96d4.html#ab63af8ef14b0c67a45078add1b0a96d4',1,'LangYa::TinyMath']]],
+  ['vector3_6',['Vector3',['../namespace_lang_ya_1_1_tiny_math_a2a3bc31f2581ee04a04e0156a6fddb57.html#a2a3bc31f2581ee04a04e0156a6fddb57',1,'LangYa::TinyMath']]],
+  ['vector3c_7',['Vector3C',['../namespace_lang_ya_1_1_tiny_math_ad0cc0056129d9d8d722c11fa06c63329.html#ad0cc0056129d9d8d722c11fa06c63329',1,'LangYa::TinyMath']]],
+  ['vector3d_8',['Vector3D',['../namespace_lang_ya_1_1_tiny_math_a0180c8c19feb281473fd519cdbff3f95.html#a0180c8c19feb281473fd519cdbff3f95',1,'LangYa::TinyMath']]],
+  ['vector3f_9',['Vector3F',['../namespace_lang_ya_1_1_tiny_math_aa93588fbfe68c03e82c11c22de20cccc.html#aa93588fbfe68c03e82c11c22de20cccc',1,'LangYa::TinyMath']]],
+  ['vector3i_10',['Vector3I',['../namespace_lang_ya_1_1_tiny_math_a53c683f7795ac920608f2bc10c4bb5f7.html#a53c683f7795ac920608f2bc10c4bb5f7',1,'LangYa::TinyMath']]],
+  ['vector3s_11',['Vector3S',['../namespace_lang_ya_1_1_tiny_math_a1f5de8068b6544c1244c10d563e8ff01.html#a1f5de8068b6544c1244c10d563e8ff01',1,'LangYa::TinyMath']]]
 ];

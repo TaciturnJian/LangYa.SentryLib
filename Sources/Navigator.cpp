@@ -5,19 +5,19 @@ namespace LangYa::SentryLib
 	Navigator::~Navigator() = default;
 
 	bool
-	Navigator::GetSelfLocation(Position3F& selfLocation)
+	Navigator::GetSelfLocation(TinyMath::Position3F& selfLocation)
 	{
 		return false;
 	}
 
 	bool
-	Navigator::GetVelocityToDestination(const DestinationIDType& destination, Vector2F& velocity)
+	Navigator::GetVelocityToDestination(const DestinationIDType& destination, TinyMath::Vector2F& velocity)
 	{
 		return false;
 	}
 
 	bool
-	Navigator::GetObstaclePosition(std::vector<Position2F>& obstacles)
+	Navigator::GetObstaclePosition(std::vector<TinyMath::Position2F>& obstacles)
 	{
 		return false;
 	}

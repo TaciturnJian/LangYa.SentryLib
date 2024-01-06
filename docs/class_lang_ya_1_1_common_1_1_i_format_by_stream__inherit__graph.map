@@ -1,0 +1,34 @@
+<map id="LangYa::Common::IFormatByStream" name="LangYa::Common::IFormatByStream">
+<area shape="rect" id="Node000001" title="代表一种可以通过流格式化的对象。" alt="" coords="5,338,199,381"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_tiny_math_1_1_rectangular_size.html" title=" " alt="" coords="604,29,808,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,322,120,261,146,188,164,150,187,115,214,83,247,56,292,31,341,15,393,6,445,3,545,10,629,26,628,31,544,15,445,8,393,12,343,20,294,36,249,60,218,86,191,118,169,153,151,190,125,263,111,323"/>
+<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_tiny_math_1_1_rectangular_size.html" title=" " alt="" coords="604,111,808,154"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="117,323,138,286,167,244,203,205,247,173,275,162,312,153,405,140,508,133,604,130,604,136,508,139,405,145,313,158,276,167,249,178,207,209,171,248,143,289,122,325"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_tiny_math_1_1_vector.html" title=" " alt="" coords="620,526,792,569"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="131,391,182,444,214,470,249,490,303,502,400,515,620,537,619,543,400,521,302,508,247,495,211,474,178,448,127,395"/>
+<area shape="rect" id="Node000005" href="$struct_lang_ya_1_1_common_1_1_memory_view.html" title="MemoryView 代表一个内存的视图，保存内存的头指针和长度，供其他读写。" alt="" coords="248,187,456,214"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="128,325,180,272,212,246,247,224,275,212,277,217,249,228,215,250,183,276,132,328"/>
+<area shape="rect" id="Node000006" href="$class_lang_ya_1_1_sentry_lib_1_1_armor_plate.html" title="ArmorPlate 装甲板信息，储存装甲板的位置、法向量、颜色、ID。" alt="" coords="284,238,420,281"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="160,329,247,290,283,277,284,282,249,295,162,334"/>
+<area shape="rect" id="Node000007" href="$struct_lang_ya_1_1_tiny_math_1_1_position1.html" title="使用一个元素 X 代表坐标。" alt="" coords="258,305,446,347"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="214,342,257,336,258,341,214,347"/>
+<area shape="rect" id="Node000010" href="$struct_lang_ya_1_1_tiny_math_1_1_positioned_vector2.html" title=" " alt="" coords="255,371,450,414"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="214,372,255,377,254,382,214,377"/>
+<area shape="rect" id="Node000011" href="$struct_lang_ya_1_1_tiny_math_1_1_positioned_vector3.html" title=" " alt="" coords="255,438,450,481"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="162,385,249,424,281,435,279,440,247,429,160,390"/>
+<area shape="rect" id="Node000012" href="$struct_lang_ya_1_1_tiny_math_1_1_rectangular_size.html" title="代表矩形的大小（无偏移点）。" alt="" coords="251,70,454,113"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="110,323,125,278,148,227,180,174,221,129,251,111,254,115,224,133,184,178,153,229,130,280,115,324"/>
+<area shape="rect" id="Node000013" href="$class_lang_ya_1_1_tiny_math_1_1_vector.html" title=" " alt="" coords="266,555,438,598"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="120,393,161,465,190,503,224,535,267,557,264,561,221,539,186,506,156,468,116,396"/>
+<area shape="rect" id="Node000014" href="$class_lang_ya_1_1_vi_map_1_1_vi_layer.html" title=" " alt="" coords="271,622,433,649"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="117,395,135,443,163,501,201,559,224,585,250,608,272,620,269,625,246,612,220,589,197,563,158,504,130,446,112,396"/>
+<area shape="rect" id="Node000015" href="$struct_lang_ya_1_1_vi_map_1_1_vi_layer_size.html" title=" " alt="" coords="258,673,446,699"/>
+<area shape="poly" id="edge17_Node000001_Node000015" title=" " alt="" coords="113,395,128,454,155,525,173,562,195,598,220,630,250,659,268,670,266,675,246,663,216,634,190,601,168,565,150,527,123,455,108,397"/>
+<area shape="rect" id="Node000008" href="$struct_lang_ya_1_1_tiny_math_1_1_position2.html" title="使用两个元素 X Y 代表二维坐标。" alt="" coords="612,305,800,347"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="462,323,612,323,612,329,462,329"/>
+<area shape="rect" id="Node000009" href="$struct_lang_ya_1_1_tiny_math_1_1_position3.html" title="使用两个元素 X Y 代表三维坐标。" alt="" coords="857,305,1045,347"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="816,323,856,323,856,329,816,329"/>
+<area shape="poly" id="edge12_Node000012_Node000002" title=" " alt="" coords="469,75,604,59,604,65,470,80"/>
+<area shape="poly" id="edge13_Node000012_Node000003" title=" " alt="" coords="470,102,604,118,604,124,469,108"/>
+<area shape="poly" id="edge15_Node000013_Node000004" title=" " alt="" coords="454,566,619,552,620,557,454,571"/>
+</map>

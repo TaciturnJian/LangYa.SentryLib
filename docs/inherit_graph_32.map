@@ -1,3 +1,5 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" href="$class_lang_ya_1_1_sentry_lib_1_1_monitor.html" title="一个用来格式化数据的显示器。 通过右移 &gt;&gt; 运算符，可以将数据包传出到流中。 通过左移 &lt;&lt; 运算符，可以将数据包直接传入显示器，显示器会自动解析数据包并显示。" alt="" coords="5,5,142,48"/>
+<area shape="rect" id="Node000000" href="$class_sango_1_1_i_comparable.html" title=" " alt="" coords="5,5,184,48"/>
+<area shape="rect" id="Node000001" href="$struct_sango_1_1_number_i_d.html" title=" " alt="" coords="232,13,431,40"/>
+<area shape="poly" id="edge17_Node000000_Node000001" title=" " alt="" coords="199,24,231,24,231,29,199,29"/>
 </map>

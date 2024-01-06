@@ -1,0 +1,9 @@
+<map id="LangYa::Network::IPv4Endpoint" name="LangYa::Network::IPv4Endpoint">
+<area shape="rect" id="Node000001" title="代表 IPv4 协议下的目的点。" alt="" coords="286,72,489,99"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_common_1_1_i_format_by_stream.html" title="代表一种可以通过流格式化的对象。" alt="" coords="25,5,218,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,49,324,69,323,74,233,54"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_common_1_1_i_parse_stream.html" title=" " alt="" coords="15,72,228,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="243,83,285,83,285,88,243,88"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_common_1_1_i_parse_string_view.html" title=" " alt="" coords="5,123,238,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="210,117,313,97,314,102,211,122"/>
+</map>

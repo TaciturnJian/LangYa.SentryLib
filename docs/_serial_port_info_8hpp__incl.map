@@ -1,9 +1,10 @@
-<map id="Headers/LangYa/SentryLib/Common/SerialPortInfo.hpp" name="Headers/LangYa/SentryLib/Common/SerialPortInfo.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="11,5,194,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,104,59,131"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,50,54,93,49,90,84,47"/>
-<area shape="rect" id="Node000003" href="$_string_format_by_stream_8hpp.html" title=" " alt="" coords="83,96,266,139"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,47,151,82,146,86,117,50"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="141,187,209,213"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="177,139,177,171,172,171,172,139"/>
+<map id="Network/Headers/LangYa/Network/SerialPortInfo.hpp" name="Network/Headers/LangYa/Network/SerialPortInfo.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,184,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="27,171,80,197"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,50,55,71,41,97,38,127,45,156,39,157,33,127,36,95,51,68,69,46"/>
+<area shape="rect" id="Node000003" href="$_i_format_by_stream_8hpp.html" title=" " alt="" coords="51,96,303,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="118,47,155,83,151,87,114,51"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="157,126,89,165,86,160,154,121"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="143,171,211,197"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="180,123,180,155,175,155,175,123"/>
 </map>

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['rawactionfunction_0',['RawActionFunction',['../_exception_handler_8cpp_ab86d4a5de9510d7271236631b3952fa6.html#ab86d4a5de9510d7271236631b3952fa6',1,'ExceptionHandler.cpp']]],
-  ['rawactionfunctionpointer_1',['RawActionFunctionPointer',['../_exception_handler_8cpp_a12d62933f36fa6322c4d24ffe055926d.html#a12d62933f36fa6322c4d24ffe055926d',1,'ExceptionHandler.cpp']]],
-  ['rawactionfunctionpointerlist_2',['RawActionFunctionPointerList',['../_exception_handler_8cpp_a0f171a26dbc8efec58e0752d6856248c.html#a0f171a26dbc8efec58e0752d6856248c',1,'ExceptionHandler.cpp']]]
+  ['tasktype_0',['TaskType',['../namespace_sango_affdb995061586c3189d102b1be50b54e.html#affdb995061586c3189d102b1be50b54e',1,'Sango']]],
+  ['timepointtype_1',['TimePointType',['../struct_lang_ya_1_1_common_1_1_time_stamp_a4da576a22211127f5015d087e5819dfc.html#a4da576a22211127f5015d087e5819dfc',1,'LangYa::Common::TimeStamp']]]
 ];

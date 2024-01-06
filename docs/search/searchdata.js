@@ -1,18 +1,17 @@
 var indexSectionsWithContent =
 {
-  0: "_abcdefghijklmnoprstuvwxyz~代内动常连",
-  1: "acdefhilmnprstuvw",
-  2: "lstu",
-  3: "acdefhijlmnprstuv",
-  4: "abcdefghilmnoprstuvw~",
-  5: "abcdefghijklmnopstvxyz",
-  6: "abcdefhijkmnprstv",
+  0: "abcdefghijklmnoprstuvwxyz~虚",
+  1: "acdeimnprstuvw",
+  2: "ls",
+  3: "acefghilmnprstuv",
+  4: "acdefghilmnoprstuvw~",
+  5: "acdefghilnpstvwxyz",
+  6: "abcdhijkmnprstv",
   7: "acmru",
-  8: "abceghilmnorswy",
+  8: "abeghilnors",
   9: "o",
-  10: "_acdhps",
-  11: "s代",
-  12: "lt"
+  10: "c",
+  11: "rv虚"
 };
 
 var indexSectionNames =
@@ -28,8 +27,7 @@ var indexSectionNames =
   8: "enumvalues",
   9: "related",
   10: "defines",
-  11: "pages",
-  12: "concepts"
+  11: "pages"
 };
 
 var indexSectionLabels =
@@ -45,7 +43,6 @@ var indexSectionLabels =
   8: "枚举值",
   9: "友元",
   10: "宏定义",
-  11: "页",
-  12: "概念"
+  11: "页"
 };
 

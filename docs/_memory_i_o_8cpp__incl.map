@@ -1,20 +1,18 @@
-<map id="Sources/MemoryIO.cpp" name="Sources/MemoryIO.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="90,5,248,32"/>
-<area shape="rect" id="Node000002" href="$_memory_i_o_8hpp.html" title=" " alt="" coords="79,80,259,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,33,172,65,166,65,166,33"/>
-<area shape="rect" id="Node000003" href="$_memory_view_8hpp.html" title=" " alt="" coords="55,171,283,197"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="172,123,172,155,166,155,166,123"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="5,253,66,280"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="149,200,71,247,68,243,147,196"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="212,336,280,363"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="159,199,145,217,132,240,126,264,127,276,131,287,144,303,161,316,199,334,196,339,158,320,140,307,127,289,121,277,120,264,127,238,141,214,155,196"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="141,253,197,280"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="172,198,172,238,166,238,166,198"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="221,253,362,280"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="189,196,262,243,259,247,187,200"/>
-<area shape="rect" id="Node000008" href="$_i_format_by_stream_8hpp.html" title=" " alt="" coords="387,245,559,288"/>
-<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="217,195,381,238,379,243,216,201"/>
-<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="415,291,295,333,294,328,414,286"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="446,336,500,363"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="476,289,476,320,470,320,470,289"/>
+<map id="Common/Sources/MemoryIO.cpp" name="Common/Sources/MemoryIO.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="11,5,225,32"/>
+<area shape="rect" id="Node000002" href="$_memory_i_o_8hpp.html" title=" " alt="" coords="13,80,223,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,33,121,64,115,64,115,33"/>
+<area shape="rect" id="Node000003" href="$_memory_view_8hpp.html" title=" " alt="" coords="5,155,231,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="121,107,121,139,115,139,115,107"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="119,304,187,331"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="81,184,51,197,26,214,11,234,10,244,15,255,33,274,55,289,104,306,102,311,52,293,29,278,10,257,5,244,6,232,22,210,49,193,79,179"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="25,229,86,256"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="109,184,78,219,74,216,105,180"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="110,229,251,256"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="131,180,162,216,158,219,127,184"/>
+<area shape="rect" id="Node000007" href="$_i_format_by_stream_8hpp.html" title=" " alt="" coords="276,229,528,256"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="168,179,338,222,337,228,167,184"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="359,259,203,304,201,299,358,254"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="375,304,429,331"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="405,257,405,288,399,288,399,257"/>
 </map>

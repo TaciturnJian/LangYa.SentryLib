@@ -1,3 +1,9 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" href="$struct_lang_ya_1_1_sentry_lib_1_1_vi_map_1_1_pixel_list_sample_option.html" title=" " alt="" coords="5,5,204,48"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,47,87,73"/>
+<area shape="rect" id="Node000001" href="$class_lang_ya_1_1_sentry_lib_1_1_connection.html" title="代表一个类似 IO 的连接，只提供基本的读写和开启/关闭连接的功能。" alt="" coords="135,39,271,81"/>
+<area shape="poly" id="edge37_Node000000_Node000001" title=" " alt="" coords="102,57,134,57,134,63,102,63"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_memory_access.html" title="代表对与内存的访问，本质是对于" alt="" coords="319,5,455,48"/>
+<area shape="poly" id="edge38_Node000001_Node000002" title=" " alt="" coords="286,42,318,36,319,42,287,48"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_t_c_p_connection.html" title=" " alt="" coords="319,72,455,115"/>
+<area shape="poly" id="edge39_Node000001_Node000003" title=" " alt="" coords="287,72,319,78,318,84,286,78"/>
 </map>

@@ -1,0 +1,15 @@
+<map id="LangYa::Common::PingPongBuffer::ExchangeWithExchangeBuffer" name="LangYa::Common::PingPongBuffer::ExchangeWithExchangeBuffer">
+<area shape="rect" id="Node000001" title="Assume the resource has been inputted after" alt="" coords="5,121,211,180"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_common_1_1_memory_view_add5fd43af551a67b24be38770ef9fee3.html#add5fd43af551a67b24be38770ef9fee3" title="使用给定的内存头和内存长度构建一个内存视图。 如果提供的两个参数是非法的，那么此内存视图也是非法的，而且此类不会在构建时抛出异常。小心在之后的使用中出现段错误。" alt="" coords="259,29,467,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,118,258,82,275,75,277,80,260,86,173,123"/>
+<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_common_1_1_memory_view_a18ea48c84333ed8d8c210aa329749187.html#a18ea48c84333ed8d8c210aa329749187" title="提供快速访问某字节的运算符。 注意，内存不一定有效，而且此运算符不会检查索引是否越界。" alt="" coords="259,96,467,139"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="211,135,243,130,243,136,212,140"/>
+<area shape="rect" id="Node000004" href="$struct_lang_ya_1_1_common_1_1_memory_view_a55ff1ae0413de407b5453ff78b7701df.html#a55ff1ae0413de407b5453ff78b7701df" title="从目标读取内存，直到当前内存被填满或目标内存不足。" alt="" coords="259,163,467,205"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="212,161,243,166,243,171,211,167"/>
+<area shape="rect" id="Node000006" href="$struct_lang_ya_1_1_common_1_1_memory_view_aacdc5c503ab34d583043737cbd613660.html#aacdc5c503ab34d583043737cbd613660" title="从目标复制内存直到填满当前视图。" alt="" coords="259,229,467,272"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="173,178,260,215,277,221,275,226,258,220,171,183"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="315,29,313,19,321,10,338,5,363,3,390,5,406,11,404,16,389,10,363,8,339,10,324,15,318,21,320,28"/>
+<area shape="rect" id="Node000005" href="$struct_lang_ya_1_1_common_1_1_memory_view_aa38ada3d9dd8f54cffd963892ba97943.html#aa38ada3d9dd8f54cffd963892ba97943" title="检查此视图是否有效，即不为空指针或长度大于 0 。" alt="" coords="515,196,723,239"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="468,195,500,199,499,204,467,200"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="467,234,499,230,500,236,468,240"/>
+</map>

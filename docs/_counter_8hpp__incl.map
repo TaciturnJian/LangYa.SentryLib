@@ -1,5 +1,5 @@
-<map id="Headers/LangYa/SentryLib/Counter.hpp" name="Headers/LangYa/SentryLib/Counter.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,182,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="63,96,124,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,49,96,80,91,80,91,49"/>
+<map id="Common/Headers/LangYa/Common/Counter.hpp" name="Common/Headers/LangYa/Common/Counter.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,179,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="62,96,122,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,49,95,80,89,80,89,49"/>
 </map>

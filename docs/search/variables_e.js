@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['outposthealth_0',['OutpostHealth',['../struct_lang_ya_1_1_sentry_lib_1_1_referee_data_a62f546e7e7da6ebde96a401d8455d7fc.html#a62f546e7e7da6ebde96a401d8455d7fc',1,'LangYa::SentryLib::RefereeData']]]
+  ['width_0',['Width',['../struct_lang_ya_1_1_tiny_math_1_1_rectangular_size_a4a12c11d9f5d82418ca4b4601213283d.html#a4a12c11d9f5d82418ca4b4601213283d',1,'LangYa::TinyMath::RectangularSize']]]
 ];

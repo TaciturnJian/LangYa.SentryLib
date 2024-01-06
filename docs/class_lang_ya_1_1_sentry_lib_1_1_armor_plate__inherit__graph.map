@@ -1,5 +1,5 @@
 <map id="LangYa::SentryLib::ArmorPlate" name="LangYa::SentryLib::ArmorPlate">
-<area shape="rect" id="Node000001" title="ArmorPlate 装甲板信息，储存装甲板的位置、法向量、颜色、ID。" alt="" coords="5,96,142,139"/>
-<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_i_format_by_stream.html" title="代表一种可以通过流格式化的对象。" alt="" coords="5,5,142,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,64,76,96,71,96,71,64"/>
+<area shape="rect" id="Node000001" title="ArmorPlate 装甲板信息，储存装甲板的位置、法向量、颜色、ID。" alt="" coords="34,96,170,139"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_common_1_1_i_format_by_stream.html" title="代表一种可以通过流格式化的对象。" alt="" coords="5,5,199,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,64,105,96,99,96,99,64"/>
 </map>

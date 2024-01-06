@@ -1,0 +1,7 @@
+<map id="LangYa::Common::DebugData" name="LangYa::Common::DebugData">
+<area shape="rect" id="Node000001" title="利用 spdlog 打印生存周期信息的类。" alt="" coords="5,188,203,215"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="64,97,144,124"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,140,107,187,101,187,101,140"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="41,5,167,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="107,64,107,97,101,97,101,64"/>
+</map>

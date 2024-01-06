@@ -1,0 +1,5 @@
+<map id="LangYa::Common::MemoryView" name="LangYa::Common::MemoryView">
+<area shape="rect" id="Node000001" title="MemoryView 代表一个内存的视图，保存内存的头指针和长度，供其他读写。" alt="" coords="5,96,214,123"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_common_1_1_i_format_by_stream.html" title="代表一种可以通过流格式化的对象。" alt="" coords="13,5,206,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,64,112,95,107,95,107,64"/>
+</map>

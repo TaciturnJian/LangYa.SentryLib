@@ -1,0 +1,5 @@
+<map id="LangYa::Network::IPv4Address::IPv4Address" name="LangYa::Network::IPv4Address::IPv4Address">
+<area shape="rect" id="Node000001" title="从字符串中解析 IPv4 地址。" alt="" coords="5,5,206,48"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_network_1_1_i_pv4_address_a862207d0f37151374440fea51c723416.html#a862207d0f37151374440fea51c723416" title="利用 std::istringstream 转化为 istream 后调用 Parse(std::istream) 。" alt="" coords="254,5,454,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,24,238,24,238,29,206,29"/>
+</map>

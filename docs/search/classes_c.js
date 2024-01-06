@@ -1,16 +1,8 @@
 var searchData=
 [
-  ['sentrydata_0',['SentryData',['../struct_lang_ya_1_1_sentry_lib_1_1_sentry_data.html',1,'LangYa::SentryLib']]],
-  ['serializablecontent_1',['SerializableContent',['../class_lang_ya_1_1_sentry_lib_1_1_serializable_content.html',1,'LangYa::SentryLib']]],
-  ['serializablecontentcontroller_2',['SerializableContentController',['../class_lang_ya_1_1_sentry_lib_1_1_serializable_content_controller.html',1,'LangYa::SentryLib']]],
-  ['serializationresult_3',['SerializationResult',['../struct_lang_ya_1_1_sentry_lib_1_1_sentry_data_1_1_serialization_result.html',1,'LangYa::SentryLib::SentryData']]],
-  ['serialnumbers_4',['SerialNumbers',['../struct_lang_ya_1_1_sentry_lib_1_1_serial_numbers.html',1,'LangYa::SentryLib']]],
-  ['serialnumbers_3c_20unsigned_20short_20_3e_5',['SerialNumbers&lt; unsigned short &gt;',['../struct_lang_ya_1_1_sentry_lib_1_1_serial_numbers.html',1,'LangYa::SentryLib']]],
-  ['serialport_6',['SerialPort',['../class_lang_ya_1_1_sentry_lib_1_1_serial_port.html',1,'LangYa::SentryLib']]],
-  ['serialportinfo_7',['SerialPortInfo',['../struct_lang_ya_1_1_sentry_lib_1_1_serial_port_info.html',1,'LangYa::SentryLib']]],
-  ['server_8',['Server',['../class_lang_ya_1_1_sentry_lib_1_1_server.html',1,'LangYa::SentryLib']]],
-  ['serverinfo_9',['ServerInfo',['../struct_lang_ya_1_1_sentry_lib_1_1_server_info.html',1,'LangYa::SentryLib']]],
-  ['sharedthreadwithsharedterminatesignal_10',['SharedThreadWithSharedTerminateSignal',['../struct_lang_ya_1_1_sentry_lib_1_1_tiny_t_c_p_server_1_1_shared_thread_with_shared_terminate_signal.html',1,'LangYa::SentryLib::TinyTCPServer']]],
-  ['singleaction_11',['SingleAction',['../class_single_action.html',1,'']]],
-  ['stringformatbystream_12',['StringFormatByStream',['../class_lang_ya_1_1_sentry_lib_1_1_string_format_by_stream.html',1,'LangYa::SentryLib']]]
+  ['vector_0',['Vector',['../class_lang_ya_1_1_tiny_math_1_1_vector.html',1,'LangYa::TinyMath']]],
+  ['vector_3c_20telement_20_3e_1',['Vector&lt; TElement &gt;',['../class_lang_ya_1_1_tiny_math_1_1_vector.html',1,'LangYa::TinyMath']]],
+  ['vilayer_2',['ViLayer',['../class_lang_ya_1_1_vi_map_1_1_vi_layer.html',1,'LangYa::ViMap']]],
+  ['vilayersize_3',['ViLayerSize',['../struct_lang_ya_1_1_vi_map_1_1_vi_layer_size.html',1,'LangYa::ViMap']]],
+  ['visionsensor_4',['VisionSensor',['../class_lang_ya_1_1_sentry_lib_1_1_vision_sensor.html',1,'LangYa::SentryLib']]]
 ];

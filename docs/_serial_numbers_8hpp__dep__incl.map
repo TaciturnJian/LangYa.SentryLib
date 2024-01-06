@@ -1,20 +1,12 @@
 <map id="Headers/LangYa/SentryLib/Common/SerialNumbers.hpp" name="Headers/LangYa/SentryLib/Common/SerialNumbers.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="368,5,559,48"/>
-<area shape="rect" id="Node000002" href="$_sentry_lib_8hpp.html" title=" " alt="" coords="153,187,355,213"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="412,58,352,98,302,146,266,188,262,185,298,142,348,94,409,54"/>
-<area shape="rect" id="Node000006" href="$_application_info_8hpp.html" title=" " alt="" coords="362,96,565,139"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="466,64,466,96,461,96,461,64"/>
-<area shape="rect" id="Node000009" href="$_serial_numbers_8cpp.html" title=" " alt="" coords="589,104,772,131"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="529,52,651,101,649,106,527,57"/>
-<area shape="rect" id="Node000003" href="$_sentry_lib_8cpp.html" title=" " alt="" coords="5,261,159,288"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="211,222,113,263,111,258,209,217"/>
-<area shape="rect" id="Node000004" href="$_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和 json 配置文件的处理工具，使用操作见" alt="" coords="183,261,325,288"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="257,229,257,261,251,261,251,229"/>
-<area shape="rect" id="Node000005" href="$_tiny_sentry_mind_8cpp.html" title=" " alt="" coords="349,261,532,288"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="302,217,409,258,407,263,300,222"/>
-<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="396,147,288,189,286,184,394,142"/>
-<area shape="rect" id="Node000007" href="$_sentry_mind_8cpp.html" title=" " alt="" coords="378,187,597,213"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="476,153,486,185,481,187,471,155"/>
-<area shape="rect" id="Node000008" href="$_application_info_8cpp.html" title=" " alt="" coords="620,187,803,213"/>
-<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="542,141,673,183,671,189,541,146"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="80,5,271,48"/>
+<area shape="rect" id="Node000002" href="$_sentry_lib_8hpp.html" title=" " alt="" coords="5,187,207,213"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,62,134,97,118,146,110,187,105,186,113,145,129,95,149,59"/>
+<area shape="rect" id="Node000004" href="$_application_info_8hpp.html" title=" " alt="" coords="144,96,346,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="203,59,231,94,227,97,199,62"/>
+<area shape="rect" id="Node000003" href="$_sentry_lib_8cpp.html" title=" " alt="" coords="29,261,183,288"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="109,229,109,261,103,261,103,229"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="197,149,129,188,126,184,194,145"/>
+<area shape="rect" id="Node000005" href="$_application_info_8cpp.html" title=" " alt="" coords="231,187,413,213"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="277,148,312,184,308,188,273,152"/>
 </map>

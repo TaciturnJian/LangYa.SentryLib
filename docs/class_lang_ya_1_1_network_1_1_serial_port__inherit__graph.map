@@ -1,0 +1,7 @@
+<map id="LangYa::Network::SerialPort" name="LangYa::Network::SerialPort">
+<area shape="rect" id="Node000001" title="代表系统中的一个串口，本质是" alt="" coords="18,155,204,181"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_common_1_1_i_o_connection.html" title=" " alt="" coords="5,80,217,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,122,114,154,108,154,108,122"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_common_1_1_memory_i_o.html" title="代表一个基本的读写类，提供基本的 IO 功能。" alt="" coords="14,5,208,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="114,48,114,80,108,80,108,48"/>
+</map>

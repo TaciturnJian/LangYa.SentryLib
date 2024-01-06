@@ -1,0 +1,5 @@
+<map id="LangYa::Common::MemoryView::ReadFrom" name="LangYa::Common::MemoryView::ReadFrom">
+<area shape="rect" id="Node000001" title="从目标复制内存直到填满当前视图。" alt="" coords="5,5,214,48"/>
+<area shape="rect" id="Node000002" href="$struct_lang_ya_1_1_common_1_1_memory_view_aa38ada3d9dd8f54cffd963892ba97943.html#aa38ada3d9dd8f54cffd963892ba97943" title="检查此视图是否有效，即不为空指针或长度大于 0 。" alt="" coords="262,5,470,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,24,246,24,246,29,214,29"/>
+</map>

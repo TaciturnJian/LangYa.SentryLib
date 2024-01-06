@@ -1,0 +1,9 @@
+<map id="LangYa::TinyMath::Position1&lt; TElement &gt;" name="LangYa::TinyMath::Position1&lt; TElement &gt;">
+<area shape="rect" id="Node000001" title="使用一个元素 X 代表坐标。" alt="" coords="8,96,196,139"/>
+<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_tiny_math_1_1_position2.html" title="使用两个元素 X Y 代表二维坐标。" alt="" coords="8,187,196,229"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="105,154,105,186,99,186,99,154"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_common_1_1_i_format_by_stream.html" title="代表一种可以通过流格式化的对象。" alt="" coords="5,5,199,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,64,105,96,99,96,99,64"/>
+<area shape="rect" id="Node000004" href="$struct_lang_ya_1_1_tiny_math_1_1_position3.html" title="使用两个元素 X Y 代表三维坐标。" alt="" coords="8,277,196,320"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="105,245,105,277,99,277,99,245"/>
+</map>

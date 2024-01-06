@@ -1,8 +1,8 @@
 <map id="Temp::TempHandleClient" name="Temp::TempHandleClient">
-<area shape="rect" id="Node000001" title=" " alt="" coords="19,236,186,263"/>
-<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_sentry_lib_1_1_i_client_handler.html" title=" " alt="" coords="5,128,200,187"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,202,99,235,93,236,91,202"/>
-<area shape="poly" id="edge3_Node000001_Node000002" title=" " alt="" coords="114,202,112,236,106,235,109,202"/>
-<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_sentry_lib_1_1_i_client_handler.html" title=" " alt="" coords="20,5,185,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,63,105,127,100,127,100,63"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="12,204,178,231"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_network_1_1_i_client_handler.html" title=" " alt="" coords="5,112,185,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,170,91,203,86,204,83,170"/>
+<area shape="poly" id="edge3_Node000001_Node000002" title=" " alt="" coords="107,170,104,204,99,203,101,170"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_network_1_1_i_client_handler.html" title=" " alt="" coords="13,5,177,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="98,64,98,111,92,111,92,64"/>
 </map>

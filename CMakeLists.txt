@@ -34,12 +34,65 @@ find_package(fmt REQUIRED) # apt-get install libfmt-dev
 find_package(OpenCV 4 REQUIRED) # apt-get install libopencv-dev
 find_package(Eigen3 REQUIRED) # apt-get install libeigen3-dev
 
+# 配置 LangYa.Common
+aux_source_directory("./Common/Sources" LangYaCommonSources)
+add_library(LangYaCommon ${LangYaCommonSources})
+target_include_directories(LangYaCommon BEFORE PUBLIC "./Common/Headers")
+set_target_properties(LangYaCommon PROPERTIES CXX_STANDARD 20)
+target_link_libraries(LangYaCommon
+	${SC_PUBLIC_PTHREAD}
+	PUBLIC fmt::fmt
+	PUBLIC spdlog::spdlog
+	PUBLIC Boost::system
+)
+
+# 配置 LangYa.TinyMath
+aux_source_directory("./TinyMath/Sources" TinyMathSources)
+add_library(TinyMath ${TinyMathSources})
+target_include_directories(TinyMath BEFORE PUBLIC "./TinyMath/Headers")
+set_target_properties(TinyMath PROPERTIES CXX_STANDARD 20)
+target_link_libraries(TinyMath
+	PUBLIC LangYaCommon
+)
+
+# 配置 LangYa.ConsoleHelper
+aux_source_directory("./ConsoleHelper/Sources" ConsoleHelperSources)
+add_library(ConsoleHelper ${ConsoleHelperSources})
+target_include_directories(ConsoleHelper BEFORE PUBLIC "./ConsoleHelper/Headers")
+set_target_properties(ConsoleHelper PROPERTIES CXX_STANDARD 20)
+target_link_libraries(ConsoleHelper
+	PUBLIC TinyMath
+)
+
+# 配置 LangYa.Network
+aux_source_directory("./Network/Sources" NetworkSources)
+add_library(Network ${NetworkSources})
+target_include_directories(Network BEFORE PUBLIC "./Network/Headers")
+set_target_properties(Network PROPERTIES CXX_STANDARD 20)
+target_link_libraries(Network
+	PUBLIC LangYaCommon
+)
+
+
+# 配置 LangYa.ViMap
+aux_source_directory("./ViMap/Sources" ViMapSources)
+add_library(ViMap ${ViMapSources})
+target_include_directories(ViMap BEFORE PUBLIC "./ViMap/Headers")
+set_target_properties(ViMap PROPERTIES CXX_STANDARD 20)
+target_link_libraries(ViMap
+	PUBLIC TinyMath
+)
+
 # 配置头文件、库、源文件
 aux_source_directory(Sources SentryLibSources)
 add_library(${PROJECT_NAME} ${SentryLibSources})
 target_include_directories(${PROJECT_NAME} BEFORE PUBLIC Headers)
 set_target_properties(${PROJECT_NAME} PROPERTIES CXX_STANDARD 20)
 target_link_libraries(${PROJECT_NAME}
+	PUBLIC LangYaCommon
+	PUBLIC TinyMath
+	PUBLIC ViMap
+	PUBLIC Network
 	${SC_PUBLIC_PTHREAD}
 	PUBLIC Boost::system
 	PUBLIC Boost::program_options

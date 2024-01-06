@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['latestarmorplate_0',['LatestArmorPlate',['../struct_lang_ya_1_1_sentry_lib_1_1_full_sensor_data_a0b310a98d9e24adee666f3f4e10cb73e.html#a0b310a98d9e24adee666f3f4e10cb73e',1,'LangYa::SentryLib::FullSensorData']]]
+  ['size_0',['Size',['../struct_lang_ya_1_1_common_1_1_memory_view_a183366747c8f0f0eba007b094eb69788.html#a183366747c8f0f0eba007b094eb69788',1,'LangYa::Common::MemoryView']]]
 ];

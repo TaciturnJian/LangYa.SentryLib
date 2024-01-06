@@ -1,0 +1,4 @@
+<map id="LangYa::Common::MemoryView::MemoryView" name="LangYa::Common::MemoryView::MemoryView">
+<area shape="rect" id="Node000001" title="使用给定的内存头和内存长度构建一个内存视图。 如果提供的两个参数是非法的，那么此内存视图也是非法的，而且此类不会在构建时抛出异常。小心在之后的使用中出现段错误。" alt="" coords="5,29,214,72"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="70,29,68,19,75,10,89,5,110,3,132,5,145,11,143,16,130,10,109,8,90,10,78,15,73,21,75,28"/>
+</map>

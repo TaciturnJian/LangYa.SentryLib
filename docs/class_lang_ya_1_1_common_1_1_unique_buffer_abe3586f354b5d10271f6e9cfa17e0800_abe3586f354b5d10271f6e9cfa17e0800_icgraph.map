@@ -1,0 +1,6 @@
+<map id="LangYa::Common::UniqueBuffer::UniqueBuffer" name="LangYa::Common::UniqueBuffer::UniqueBuffer">
+<area shape="rect" id="Node000001" title="Construct a new UniqueBuffer object with provided size." alt="" coords="251,29,457,72"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="394,16,379,10,354,8,330,10,316,15,310,21,312,28,307,29,305,19,313,10,329,5,354,3,380,5,396,11"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_common_1_1_triple_buffer_a80ef35f5ea554e6068157699d88ae532.html#a80ef35f5ea554e6068157699d88ae532" title="Construct a TripleBuffer with the given size." alt="" coords="5,29,203,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,53,203,53,203,48,235,48"/>
+</map>

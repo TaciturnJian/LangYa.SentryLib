@@ -1,0 +1,5 @@
+<map id="LangYa::Common::MemoryView::MemoryView" name="LangYa::Common::MemoryView::MemoryView">
+<area shape="rect" id="Node000001" title="基于一个内存视图加上偏移构建一个新的内存视图。" alt="" coords="243,5,451,48"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_common_1_1_ping_pong_buffer_a0a90547a41192b3424b7dc53dfbf8297.html#a0a90547a41192b3424b7dc53dfbf8297" title="Construct a new PingPongBuffer object with provided unique buffer. Its size must be sizeof(element) *..." alt="" coords="5,5,195,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,29,195,29,195,24,227,24"/>
+</map>

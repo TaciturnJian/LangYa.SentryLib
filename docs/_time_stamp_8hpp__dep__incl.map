@@ -1,13 +1,5 @@
-<map id="Headers/LangYa/SentryLib/Common/TimeStamp.hpp" name="Headers/LangYa/SentryLib/Common/TimeStamp.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="269,5,445,48"/>
-<area shape="rect" id="Node000002" href="$_sentry_lib_8hpp.html" title=" " alt="" coords="153,96,355,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="320,60,272,98,268,93,317,56"/>
-<area shape="rect" id="Node000006" href="$_time_stamp_8cpp.html" title=" " alt="" coords="379,96,543,123"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="397,56,446,93,443,98,394,60"/>
-<area shape="rect" id="Node000003" href="$_sentry_lib_8cpp.html" title=" " alt="" coords="5,171,159,197"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="211,131,113,172,111,168,209,127"/>
-<area shape="rect" id="Node000004" href="$_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和 json 配置文件的处理工具，使用操作见" alt="" coords="183,171,325,197"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="257,138,257,170,251,170,251,138"/>
-<area shape="rect" id="Node000005" href="$_tiny_sentry_mind_8cpp.html" title=" " alt="" coords="349,171,532,197"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="302,126,409,168,407,173,300,131"/>
+<map id="Common/Headers/LangYa/Common/TimeStamp.hpp" name="Common/Headers/LangYa/Common/TimeStamp.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="29,5,202,48"/>
+<area shape="rect" id="Node000002" href="$_time_stamp_8cpp.html" title=" " alt="" coords="5,96,226,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,64,118,95,113,95,113,64"/>
 </map>

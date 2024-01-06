@@ -1,18 +1,5 @@
-<map id="Headers/LangYa/SentryLib/Common/PingPongBuffer.hpp" name="Headers/LangYa/SentryLib/Common/PingPongBuffer.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="282,5,477,48"/>
-<area shape="rect" id="Node000002" href="$_sentry_lib_8hpp.html" title=" " alt="" coords="153,187,355,213"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="324,58,301,76,282,98,270,120,262,144,257,186,252,186,257,143,265,118,277,94,297,72,321,54"/>
-<area shape="rect" id="Node000006" href="$_lang_ya_connection_8hpp.html" title=" " alt="" coords="291,96,468,139"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="382,64,382,96,377,96,377,64"/>
-<area shape="rect" id="Node000008" href="$_ping_pong_buffer_8cpp.html" title=" " alt="" coords="491,104,678,131"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="443,52,556,101,554,106,440,57"/>
-<area shape="rect" id="Node000003" href="$_sentry_lib_8cpp.html" title=" " alt="" coords="5,261,159,288"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="211,222,113,263,111,258,209,217"/>
-<area shape="rect" id="Node000004" href="$_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和 json 配置文件的处理工具，使用操作见" alt="" coords="183,261,325,288"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="257,229,257,261,251,261,251,229"/>
-<area shape="rect" id="Node000005" href="$_tiny_sentry_mind_8cpp.html" title=" " alt="" coords="349,261,532,288"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="302,217,409,258,407,263,300,222"/>
-<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="336,150,275,188,272,184,333,145"/>
-<area shape="rect" id="Node000007" href="$_lang_ya_connection_8cpp.html" title=" " alt="" coords="378,187,586,213"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="419,146,468,184,464,188,416,151"/>
+<map id="Common/Headers/LangYa/Common/PingPongBuffer.hpp" name="Common/Headers/LangYa/Common/PingPongBuffer.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="29,5,225,48"/>
+<area shape="rect" id="Node000002" href="$_ping_pong_buffer_8cpp.html" title=" " alt="" coords="5,96,249,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,64,130,95,124,95,124,64"/>
 </map>

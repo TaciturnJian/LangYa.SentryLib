@@ -3,7 +3,7 @@
 #include <vector>
 #include <string>
 
-#include <LangYa/SentryLib/Common/Connection.hpp>
+#include <LangYa/Common/IOConnection.hpp>
 
 namespace LangYa::SentryLib
 {
@@ -78,6 +78,6 @@ namespace LangYa::SentryLib
 
 		/// @brief 将包格式化为 json 文本，然后将文本写入到连接中。
 		///	@param connectionPtr 连接的共享指针，调用方应该确定此连接有效，且当前仅被此函数占用。
-		void WriteJsonToSharedConnection(const std::shared_ptr<Connection>& connectionPtr) const;
+		void WriteJsonToSharedConnection(const std::shared_ptr<Common::IOConnection>& connectionPtr) const;
 	};
 }

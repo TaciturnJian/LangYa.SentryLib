@@ -1,20 +1,6 @@
 var searchData=
 [
-  ['main_2ec_0',['main.c',['../x64-_debug_2_c_make_files_2_show_includes_2main_8c.html',1,'(全局命名空间)'],['../x64-_release_2_c_make_files_2_show_includes_2main_8c.html',1,'(全局命名空间)']]],
-  ['managedstack_2ehpp_1',['ManagedStack.hpp',['../_managed_stack_8hpp.html',1,'']]],
-  ['manager_2ecpp_2',['Manager.cpp',['../_manager_8cpp.html',1,'']]],
-  ['manager_2ehpp_3',['Manager.hpp',['../_manager_8hpp.html',1,'']]],
-  ['matchstatusmanager_2ecpp_4',['MatchStatusManager.cpp',['../_match_status_manager_8cpp.html',1,'']]],
-  ['matchstatusmanager_2ehpp_5',['MatchStatusManager.hpp',['../_match_status_manager_8hpp.html',1,'']]],
-  ['memoryaccess_2ecpp_6',['MemoryAccess.cpp',['../_memory_access_8cpp.html',1,'']]],
-  ['memoryaccess_2ehpp_7',['MemoryAccess.hpp',['../_memory_access_8hpp.html',1,'']]],
-  ['memoryio_2ecpp_8',['MemoryIO.cpp',['../_memory_i_o_8cpp.html',1,'']]],
-  ['memoryio_2ehpp_9',['MemoryIO.hpp',['../_memory_i_o_8hpp.html',1,'']]],
-  ['memoryview_2ecpp_10',['MemoryView.cpp',['../_memory_view_8cpp.html',1,'']]],
-  ['memoryview_2ehpp_11',['MemoryView.hpp',['../_memory_view_8hpp.html',1,'']]],
-  ['memoryviewtester_2ecpp_12',['MemoryViewTester.cpp',['../_memory_view_tester_8cpp.html',1,'']]],
-  ['monitor_2ecpp_13',['Monitor.cpp',['../_monitor_8cpp.html',1,'']]],
-  ['monitor_2ehpp_14',['Monitor.hpp',['../_monitor_8hpp.html',1,'']]],
-  ['monitorpackage_2ecpp_15',['MonitorPackage.cpp',['../_monitor_package_8cpp.html',1,'']]],
-  ['monitorpackage_2ehpp_16',['MonitorPackage.hpp',['../_monitor_package_8hpp.html',1,'']]]
+  ['navigator_2ecpp_0',['Navigator.cpp',['../_navigator_8cpp.html',1,'']]],
+  ['navigator_2ehpp_1',['Navigator.hpp',['../_navigator_8hpp.html',1,'']]],
+  ['numberid_2ehpp_2',['NumberID.hpp',['../_number_i_d_8hpp.html',1,'']]]
 ];

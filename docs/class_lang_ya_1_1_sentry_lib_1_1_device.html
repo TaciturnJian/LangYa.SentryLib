@@ -97,33 +97,10 @@ $(document).ready(function(){initNavTree('class_lang_ya_1_1_sentry_lib_1_1_devic
 </div><!--header-->
 <div class="contents">
 
-<p>代表一种虚拟的设备，它需要有一个外部循环去调用。 大多数使用情况都是在一个线程中调用 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_device_aac035948b3e832729ec3ad053bbdbcdc.html#aac035948b3e832729ec3ad053bbdbcdc" title="调用此方法，设备会在短时间内阻塞线程完成工作。">Tick()</a> 方法。  
- <a href="class_lang_ya_1_1_sentry_lib_1_1_device.html#details">更多...</a></p>
-
-<p><code>#include &lt;<a class="el" href="">Device.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> 类 LangYa::SentryLib::Device 继承关系图:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="class_lang_ya_1_1_sentry_lib_1_1_device__inherit__graph.png" border="0" usemap="#a_lang_ya_1_1_sentry_lib_1_1_device_inherit__map" alt="Inheritance graph"/></div>
-<map name="a_lang_ya_1_1_sentry_lib_1_1_device_inherit__map" id="a_lang_ya_1_1_sentry_lib_1_1_device_inherit__map">
-<area shape="rect" title="代表一种虚拟的设备，它需要有一个外部循环去调用。 大多数使用情况都是在一个线程中调用 Tick() 方法。" alt="" coords="5,55,142,97"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_deserializable_content_sensor.html" title="代表一个机器人传感器。 TODO 注释与文档 Tick this device so it will update sensor data from connection,..." alt="" coords="190,5,378,64"/>
-<area shape="poly" title=" " alt="" coords="157,57,188,51,190,56,158,62"/>
-<area shape="rect" href="class_lang_ya_1_1_sentry_lib_1_1_serializable_content_controller.html" title="代表一个机器人控制器 修改此控制器的变量并在合适的时机调用" alt="" coords="190,88,378,147"/>
-<area shape="poly" title=" " alt="" coords="158,90,190,96,188,101,157,95"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<p><code>#include &lt;<a class="el" href="">RobotDevice.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:aa3714c682badfb66da79876a6d3002f1" id="r_aa3714c682badfb66da79876a6d3002f1"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_device_aa3714c682badfb66da79876a6d3002f1.html#aa3714c682badfb66da79876a6d3002f1">~Device</a> ()</td></tr>
-<tr class="memdesc:aa3714c682badfb66da79876a6d3002f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放设备的所有资源。  <br /></td></tr>
-<tr class="separator:aa3714c682badfb66da79876a6d3002f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac035948b3e832729ec3ad053bbdbcdc" id="r_aac035948b3e832729ec3ad053bbdbcdc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_device_aac035948b3e832729ec3ad053bbdbcdc.html#aac035948b3e832729ec3ad053bbdbcdc">Tick</a> ()=0</td></tr>
-<tr class="memdesc:aac035948b3e832729ec3ad053bbdbcdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">调用此方法，设备会在短时间内阻塞线程完成工作。  <br /></td></tr>
-<tr class="separator:aac035948b3e832729ec3ad053bbdbcdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19832720043ff7f65d2f07457e54ea35" id="r_a19832720043ff7f65d2f07457e54ea35"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_device_a19832720043ff7f65d2f07457e54ea35.html#a19832720043ff7f65d2f07457e54ea35">~Device</a> ()=default</td></tr>
 <tr class="memdesc:a19832720043ff7f65d2f07457e54ea35"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放此设备占用的空间（注意需要手动调用释放函数）。  <br /></td></tr>
 <tr class="separator:a19832720043ff7f65d2f07457e54ea35"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,11 +115,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a23b90775855c6eadb753b6de2514fa17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>代表一种虚拟的设备，它需要有一个外部循环去调用。 大多数使用情况都是在一个线程中调用 <a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_device_aac035948b3e832729ec3ad053bbdbcdc.html#aac035948b3e832729ec3ad053bbdbcdc" title="调用此方法，设备会在短时间内阻塞线程完成工作。">Tick()</a> 方法。 </p>
-</div><hr/>该类的文档由以下文件生成:<ul>
-<li>Headers/LangYa/SentryLib/<a class="el" href="">Device.hpp</a></li>
-<li>Headers/LangYa/SentryLib/<a class="el" href="">RobotDevice.hpp</a></li>
-<li>Sources/<a class="el" href="">Device.cpp</a></li>
+<div class="textblock"></div><hr/>该类的文档由以下文件生成:<ul>
+<li>Obsoleted/<a class="el" href="">RobotDevice.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -150,7 +124,7 @@ Public 成员函数</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_lang_ya.html">LangYa</a></li><li class="navelem"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">SentryLib</a></li><li class="navelem"><a class="el" href="class_lang_ya_1_1_sentry_lib_1_1_device.html">Device</a></li>
-    <li class="footer">生成于 2024年 一月 5日 星期五 10:49:14 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">生成于 2024年 一月 7日 星期日 00:48:22 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

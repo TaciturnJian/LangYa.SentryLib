@@ -4,7 +4,7 @@ namespace LangYa::SentryLib
 {
 	ArmorPlate::ArmorPlate() = default;
 
-	ArmorPlate::ArmorPlate(const char id, const ArmorColor color, PositionedVector3F particle):
+	ArmorPlate::ArmorPlate(const char id, const ArmorColor color, TinyMath::PositionedVector3F particle):
 		ID(id),
 		Color(color),
 		Particle(std::move(particle))

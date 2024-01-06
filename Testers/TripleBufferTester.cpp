@@ -4,9 +4,9 @@
 
 #include <spdlog/spdlog.h>
 
-#include <LangYa/SentryLib/Common/TripleBuffer.hpp>
+#include <LangYa/Common/TripleBuffer.hpp>
 
-using namespace LangYa::SentryLib;
+using namespace LangYa::Common;
 using namespace std::chrono_literals;
 
 int main()

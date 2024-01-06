@@ -1,0 +1,7 @@
+<map id="LangYa::Common::PingPongBuffer::PingPongBuffer" name="LangYa::Common::PingPongBuffer::PingPongBuffer">
+<area shape="rect" id="Node000001" title="Construct a new PingPongBuffer object with provided unique buffer. Its size must be sizeof(element) *..." alt="" coords="5,39,195,81"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_common_1_1_unique_buffer_a0abdd7ac5a06e22cc7ac1640784e0c91.html#a0abdd7ac5a06e22cc7ac1640784e0c91" title="Get the view of the unique memory in the buffer." alt="" coords="244,5,450,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,45,228,40,228,45,195,50"/>
+<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_common_1_1_memory_view_ac86f063b153f2cad3dad1e1fc5b25bc3.html#ac86f063b153f2cad3dad1e1fc5b25bc3" title="基于一个内存视图加上偏移构建一个新的内存视图。" alt="" coords="243,72,451,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,70,227,75,227,80,195,75"/>
+</map>

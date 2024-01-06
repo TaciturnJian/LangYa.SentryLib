@@ -1,9 +1,5 @@
 <map id="Headers/LangYa/SentryLib.hpp" name="Headers/LangYa/SentryLib.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="153,5,355,32"/>
-<area shape="rect" id="Node000002" href="$_sentry_lib_8cpp.html" title=" " alt="" coords="5,80,159,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,41,113,82,111,77,209,36"/>
-<area shape="rect" id="Node000003" href="$_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和 json 配置文件的处理工具，使用操作见" alt="" coords="183,80,325,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="257,48,257,80,251,80,251,48"/>
-<area shape="rect" id="Node000004" href="$_tiny_sentry_mind_8cpp.html" title=" " alt="" coords="349,80,532,107"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="302,35,409,77,407,82,300,40"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,207,32"/>
+<area shape="rect" id="Node000002" href="$_sentry_lib_8cpp.html" title=" " alt="" coords="29,80,183,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,48,109,80,103,80,103,48"/>
 </map>

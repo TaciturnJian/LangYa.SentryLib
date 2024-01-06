@@ -1,21 +1,7 @@
-<map id="Headers/LangYa/SentryLib/Common/Connection.hpp" name="Headers/LangYa/SentryLib/Common/Connection.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,182,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="75,352,128,379"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,49,70,96,53,160,46,232,49,268,57,303,67,322,80,339,75,342,62,325,52,305,44,269,41,232,48,159,65,94,82,47"/>
-<area shape="rect" id="Node000003" href="$_memory_i_o_8hpp.html" title=" " alt="" coords="134,96,314,139"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="125,46,183,85,180,89,122,51"/>
-<area shape="rect" id="Node000004" href="$_memory_view_8hpp.html" title=" " alt="" coords="238,187,466,213"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="259,137,321,176,318,180,256,142"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="559,269,620,296"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="396,211,541,259,546,261,545,266,539,264,394,217"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="171,352,240,379"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="426,211,466,229,484,243,498,260,507,283,505,294,498,306,482,319,457,330,393,347,320,358,255,364,255,358,320,352,392,342,456,325,479,314,494,302,500,292,502,283,494,263,480,247,463,234,424,216"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="263,269,319,296"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="345,215,311,259,307,256,340,212"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="343,269,484,296"/>
-<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="364,212,397,256,393,259,360,215"/>
-<area shape="rect" id="Node000009" href="$_i_format_by_stream_8hpp.html" title=" " alt="" coords="67,261,240,304"/>
-<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="322,216,220,258,218,253,320,211"/>
-<area shape="poly" id="edge10_Node000009_Node000002" title=" " alt="" coords="142,306,120,340,116,337,138,303"/>
-<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="169,303,191,337,187,340,165,306"/>
+<map id="Obsoleted/Connection.hpp" name="Obsoleted/Connection.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="24,5,198,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,59,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,35,59,71,55,67,95,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="83,80,296,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="126,31,166,67,163,71,123,35"/>
 </map>

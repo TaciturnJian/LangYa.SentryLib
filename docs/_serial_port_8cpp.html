@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LangYa.SentryLib: Sources/SerialPort.cpp 文件参考</title>
+<title>LangYa.SentryLib: Network/Sources/SerialPort.cpp 文件参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -97,50 +97,45 @@ $(document).ready(function(){initNavTree('_serial_port_8cpp.html',''); initResiz
   <div class="headertitle"><div class="title">SerialPort.cpp 文件参考</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="">LangYa/SentryLib/Common/SerialPort.hpp</a>&gt;</code><br />
-<code>#include &lt;spdlog/spdlog.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;spdlog/spdlog.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="">LangYa/Network/SerialPort.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> SerialPort.cpp 的引用(Include)关系图:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="_serial_port_8cpp__incl.png" border="0" usemap="#a_sources_2_serial_port_8cpp" alt=""/></div>
-<map name="a_sources_2_serial_port_8cpp" id="a_sources_2_serial_port_8cpp">
-<area shape="rect" title=" " alt="" coords="243,5,399,32"/>
-<area shape="rect" href="_serial_port_8hpp.html" title=" " alt="" coords="145,80,326,123"/>
-<area shape="poly" title=" " alt="" coords="309,34,270,71,267,67,306,31"/>
-<area shape="rect" title=" " alt="" coords="350,88,462,115"/>
-<area shape="poly" title=" " alt="" coords="336,31,384,76,380,80,332,34"/>
-<area shape="rect" title=" " alt="" coords="5,179,74,205"/>
-<area shape="poly" title=" " alt="" coords="191,126,82,174,80,169,188,121"/>
-<area shape="rect" title=" " alt="" coords="98,179,205,205"/>
-<area shape="poly" title=" " alt="" coords="218,125,176,169,172,165,214,121"/>
-<area shape="rect" href="_connection_8hpp.html" title=" " alt="" coords="229,171,410,213"/>
-<area shape="poly" title=" " alt="" coords="257,121,292,158,288,161,253,125"/>
-<area shape="rect" href="_serial_port_info_8hpp.html" title=" " alt="" coords="541,352,722,395"/>
-<area shape="poly" title=" " alt="" coords="315,121,370,141,424,168,479,209,531,255,608,338,604,342,527,259,476,213,421,173,368,146,313,126"/>
-<area shape="rect" title=" " alt="" coords="430,533,484,560"/>
-<area shape="poly" title=" " alt="" coords="271,216,177,263,125,294,77,329,39,366,26,385,16,405,11,425,12,444,19,464,32,483,58,502,98,516,148,527,205,535,321,542,415,543,415,549,320,548,204,540,148,532,97,522,56,507,28,487,14,466,7,445,6,424,11,403,21,383,35,363,74,325,122,290,174,258,269,211"/>
-<area shape="rect" href="_memory_i_o_8hpp.html" title=" " alt="" coords="229,261,410,304"/>
-<area shape="poly" title=" " alt="" coords="322,214,322,246,317,246,317,214"/>
-<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="205,360,434,387"/>
-<area shape="poly" title=" " alt="" coords="322,304,322,344,317,344,317,304"/>
-<area shape="rect" title=" " alt="" coords="208,451,268,477"/>
-<area shape="poly" title=" " alt="" coords="310,389,262,441,258,437,306,385"/>
-<area shape="rect" title=" " alt="" coords="547,533,615,560"/>
-<area shape="poly" title=" " alt="" coords="435,381,468,389,500,402,531,419,557,441,570,458,578,478,584,517,579,518,573,480,565,461,554,444,528,423,498,407,466,394,433,386"/>
-<area shape="rect" title=" " alt="" coords="292,451,347,477"/>
-<area shape="poly" title=" " alt="" coords="322,387,322,435,317,435,317,387"/>
-<area shape="rect" title=" " alt="" coords="42,451,184,477"/>
-<area shape="poly" title=" " alt="" coords="291,390,157,447,155,442,289,385"/>
-<area shape="rect" href="_i_format_by_stream_8hpp.html" title=" " alt="" coords="371,443,543,485"/>
-<area shape="poly" title=" " alt="" coords="341,385,414,432,411,436,338,390"/>
-<area shape="poly" title=" " alt="" coords="460,486,460,517,454,517,454,486"/>
-<area shape="poly" title=" " alt="" coords="490,484,550,522,547,527,487,488"/>
-<area shape="poly" title=" " alt="" coords="623,396,596,440,557,487,529,510,499,528,496,524,526,506,554,483,592,437,619,394"/>
-<area shape="rect" href="_string_format_by_stream_8hpp.html" title=" " alt="" coords="669,443,853,485"/>
-<area shape="poly" title=" " alt="" coords="663,393,720,431,717,436,660,397"/>
-<area shape="poly" title=" " alt="" coords="716,488,624,529,622,524,713,483"/>
+<div class="center"><img src="_serial_port_8cpp__incl.png" border="0" usemap="#a_network_2_sources_2_serial_port_8cpp" alt=""/></div>
+<map name="a_network_2_sources_2_serial_port_8cpp" id="a_network_2_sources_2_serial_port_8cpp">
+<area shape="rect" title=" " alt="" coords="54,5,260,32"/>
+<area shape="rect" title=" " alt="" coords="10,80,122,107"/>
+<area shape="poly" title=" " alt="" coords="143,35,95,72,92,68,139,30"/>
+<area shape="rect" href="_serial_port_8hpp.html" title=" " alt="" coords="146,80,349,107"/>
+<area shape="poly" title=" " alt="" coords="174,30,222,68,219,72,171,35"/>
+<area shape="rect" title=" " alt="" coords="5,155,74,181"/>
+<area shape="poly" title=" " alt="" coords="212,110,89,152,88,147,210,105"/>
+<area shape="rect" title=" " alt="" coords="98,155,205,181"/>
+<area shape="poly" title=" " alt="" coords="232,109,182,147,179,143,229,105"/>
+<area shape="rect" href="_i_o_connection_8hpp.html" title=" " alt="" coords="229,155,458,181"/>
+<area shape="poly" title=" " alt="" coords="266,105,316,143,313,147,263,109"/>
+<area shape="rect" href="_serial_port_info_8hpp.html" title=" " alt="" coords="435,304,612,347"/>
+<area shape="poly" title=" " alt="" coords="350,98,414,116,445,132,472,153,496,184,511,220,520,256,525,288,519,289,515,257,506,221,491,186,468,157,442,136,412,121,348,103"/>
+<area shape="rect" href="_memory_i_o_8hpp.html" title=" " alt="" coords="229,229,439,256"/>
+<area shape="poly" title=" " alt="" coords="345,182,340,214,335,214,339,182"/>
+<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="186,312,411,339"/>
+<area shape="poly" title=" " alt="" coords="331,258,312,299,307,297,326,255"/>
+<area shape="rect" title=" " alt="" coords="320,469,388,496"/>
+<area shape="poly" title=" " alt="" coords="231,342,187,355,149,372,136,383,129,394,128,406,135,420,145,429,161,437,205,452,305,472,304,478,204,458,159,442,142,433,131,423,123,407,124,392,132,379,146,368,185,350,230,337"/>
+<area shape="rect" title=" " alt="" coords="145,395,206,421"/>
+<area shape="poly" title=" " alt="" coords="280,341,208,388,205,384,278,337"/>
+<area shape="rect" title=" " alt="" coords="230,395,372,421"/>
+<area shape="poly" title=" " alt="" coords="301,339,303,379,297,380,296,339"/>
+<area shape="rect" href="_i_format_by_stream_8hpp.html" title=" " alt="" coords="396,395,648,421"/>
+<area shape="poly" title=" " alt="" coords="334,337,474,387,472,392,332,342"/>
+<area shape="poly" title=" " alt="" coords="494,424,399,465,396,460,492,419"/>
+<area shape="rect" title=" " alt="" coords="577,469,630,496"/>
+<area shape="poly" title=" " alt="" coords="538,420,580,457,577,461,535,424"/>
+<area shape="poly" title=" " alt="" coords="526,347,525,379,520,379,520,347"/>
+<area shape="poly" title=" " alt="" coords="602,345,636,364,663,393,668,412,663,430,651,447,636,461,632,458,646,444,658,428,663,412,659,396,633,369,599,350"/>
 </map>
 </div>
 </div>
@@ -150,21 +145,25 @@ $(document).ready(function(){initNavTree('_serial_port_8cpp.html',''); initResiz
 命名空间</h2></td></tr>
 <tr class="memitem:namespace_lang_ya" id="r_namespace_lang_ya"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya.html">LangYa</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespace_lang_ya_1_1_sentry_lib" id="r_namespace_lang_ya_1_1_sentry_lib"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">LangYa::SentryLib</a></td></tr>
+<tr class="memitem:namespace_lang_ya_1_1_network" id="r_namespace_lang_ya_1_1_network"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_network.html">LangYa::Network</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 类型定义</h2></td></tr>
-<tr class="memitem:a7e61d779998abd0590a799f1122b915e" id="r_a7e61d779998abd0590a799f1122b915e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib_a7e61d779998abd0590a799f1122b915e.html#a7e61d779998abd0590a799f1122b915e">LangYa::SentryLib::AsioSerialPort</a> = boost::asio::serial_port</td></tr>
-<tr class="separator:a7e61d779998abd0590a799f1122b915e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4939ec59da720f159ba000e11afc72f" id="r_af4939ec59da720f159ba000e11afc72f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_network_af4939ec59da720f159ba000e11afc72f.html#af4939ec59da720f159ba000e11afc72f">LangYa::Network::IOContextType</a> = boost::asio::io_context</td></tr>
+<tr class="separator:af4939ec59da720f159ba000e11afc72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ceea1c9edc94974c38a411fc15f2a6" id="r_ab8ceea1c9edc94974c38a411fc15f2a6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_network_ab8ceea1c9edc94974c38a411fc15f2a6.html#ab8ceea1c9edc94974c38a411fc15f2a6">LangYa::Network::AsioSerialPort</a> = boost::asio::serial_port</td></tr>
+<tr class="separator:ab8ceea1c9edc94974c38a411fc15f2a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0146daf33bddf77a2c45ef195d3ef052" id="r_a0146daf33bddf77a2c45ef195d3ef052"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_network_a0146daf33bddf77a2c45ef195d3ef052.html#a0146daf33bddf77a2c45ef195d3ef052">LangYa::Network::ErrorCodeType</a> = boost::system::error_code</td></tr>
+<tr class="separator:a0146daf33bddf77a2c45ef195d3ef052"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a class="el" href="_serial_port_8cpp.html">SerialPort.cpp</a></li>
-    <li class="footer">生成于 2024年 一月 5日 星期五 10:49:14 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a class="el" href="dir_356d85c7fe3a31f6238a1e4b453e8aed.html">Network</a></li><li class="navelem"><a class="el" href="dir_5e1a48cd484cfbfbfcdc0e3a737a30f7.html">Sources</a></li><li class="navelem"><a class="el" href="_serial_port_8cpp.html">SerialPort.cpp</a></li>
+    <li class="footer">生成于 2024年 一月 7日 星期日 00:48:21 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

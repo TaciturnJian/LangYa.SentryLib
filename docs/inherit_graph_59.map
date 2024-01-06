@@ -1,5 +1,5 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" href="$class_sango_1_1_i_comparable.html" title=" " alt="" coords="5,5,184,48"/>
-<area shape="rect" id="Node000001" href="$struct_sango_1_1_number_i_d.html" title=" " alt="" coords="232,13,431,40"/>
-<area shape="poly" id="edge45_Node000000_Node000001" title=" " alt="" coords="199,24,231,24,231,29,199,29"/>
+<area shape="rect" id="Node000000" href="$class_sango_1_1_i_has_info.html" title=" " alt="" coords="5,5,169,32"/>
+<area shape="rect" id="Node000001" href="$struct_sango_1_1_with_info.html" title=" " alt="" coords="217,5,381,32"/>
+<area shape="poly" id="edge43_Node000000_Node000001" title=" " alt="" coords="185,16,216,16,216,21,185,21"/>
 </map>

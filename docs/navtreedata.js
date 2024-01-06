@@ -25,11 +25,8 @@
 var NAVTREE =
 [
   [ "LangYa.SentryLib", "index.html", [
-    [ "SentryLib 代码文档", "md__r_e_a_d_m_e.html", [
-      [ "常用类型", "md__r_e_a_d_m_e.html#常用类型", [
-        [ "内存相关", "md__r_e_a_d_m_e.html#内存相关", null ]
-      ] ]
-    ] ],
+    [ "README", "readme.html", null ],
+    [ "ViMap 虚拟地图", "md__vi_map_2_r_e_a_d_m_e.html", null ],
     [ "命名空间", "namespaces.html", [
       [ "命名空间列表", "namespaces.html", "namespaces_dup" ],
       [ "命名空间成员", "namespacemembers.html", [
@@ -39,7 +36,6 @@ var NAVTREE =
         [ "枚举", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
-    [ "概念", "concepts.html", "concepts" ],
     [ "结构体", "annotated.html", [
       [ "结构体", "annotated.html", "annotated_dup" ],
       [ "结构体索引", "classes.html", null ],
@@ -58,9 +54,7 @@ var NAVTREE =
       [ "文件列表", "files.html", "files_dup" ],
       [ "全局定义", "globals.html", [
         [ "全部", "globals.html", null ],
-        [ "函数", "globals_func.html", null ],
         [ "变量", "globals_vars.html", null ],
-        [ "类型定义", "globals_type.html", null ],
         [ "枚举", "globals_enum.html", null ],
         [ "枚举值", "globals_eval.html", null ],
         [ "宏定义", "globals_defs.html", null ]
@@ -72,13 +66,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_info_8cpp.html",
-"_test_app_8cpp_a11fcbaa685391ebab8d7fa5459082ebf.html#a11fcbaa685391ebab8d7fa5459082ebf",
-"class_lang_ya_1_1_sentry_lib_1_1_deserializable_content_a413f34bb4ccac23bcaddd293e332e876.html#a413f34bb4ccac23bcaddd293e332e876",
-"class_lang_ya_1_1_sentry_lib_1_1_ping_pong_buffer_a43f06adb4a3dba2495c3d9165b0be8a6.html#a43f06adb4a3dba2495c3d9165b0be8a6",
-"class_sango_1_1_i_comparable_ada8971703590917215759f65f131ce62.html#ada8971703590917215759f65f131ce62",
-"namespace_temp.html",
-"struct_lang_ya_1_1_sentry_lib_1_1_position3_acfedfd8c6f05f011ccfd05350b27432b.html#acfedfd8c6f05f011ccfd05350b27432b",
-"struct_sango_1_1_with_info_a54991bb03d4d561e54142d9e652f715f.html#a54991bb03d4d561e54142d9e652f715f"
+"class_lang_ya_1_1_common_1_1_i_parse_abf747fab5142969500a6e529af920ddd.html#abf747fab5142969500a6e529af920ddd",
+"class_lang_ya_1_1_tiny_math_1_1_vector_af4069c746ad38b6db87fac09d38e458f.html#af4069c746ad38b6db87fac09d38e458f",
+"namespace_sango_a7220ba2f92b1f9ef133c127d38ca5f77.html#a7220ba2f92b1f9ef133c127d38ca5f77",
+"struct_lang_ya_1_1_vi_map_1_1_vi_layer_size_add26312596ebe9a8082c0ed17e14e8e3.html#add26312596ebe9a8082c0ed17e14e8e3"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

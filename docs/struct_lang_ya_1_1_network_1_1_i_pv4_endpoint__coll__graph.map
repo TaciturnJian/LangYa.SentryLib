@@ -1,0 +1,14 @@
+<map id="LangYa::Network::IPv4Endpoint" name="LangYa::Network::IPv4Endpoint">
+<area shape="rect" id="Node000001" title="代表 IPv4 协议下的目的点。" alt="" coords="587,69,791,96"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_common_1_1_i_format_by_stream.html" title="代表一种可以通过流格式化的对象。" alt="" coords="25,5,218,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,22,262,21,414,20,480,27,564,44,643,66,642,71,563,49,480,32,414,25,262,27,234,27"/>
+<area shape="rect" id="Node000005" href="$struct_lang_ya_1_1_network_1_1_i_pv4_address.html" title="代表 IPv4 地址，封装了 std::uint8_t[4]。" alt="" coords="287,43,487,69"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="234,36,287,42,286,48,233,42"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_common_1_1_i_parse_stream.html" title=" " alt="" coords="15,76,228,103"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="243,85,587,81,587,87,243,91"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="243,71,286,66,287,71,244,77"/>
+<area shape="rect" id="Node000004" href="$class_lang_ya_1_1_common_1_1_i_parse_string_view.html" title=" " alt="" coords="5,139,238,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="251,134,587,92,587,98,252,139"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="181,131,237,112,352,67,353,72,239,117,183,136"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="503,64,587,71,586,76,503,69"/>
+</map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LangYa.SentryLib: Sources/MemoryView.cpp 文件参考</title>
+<title>LangYa.SentryLib: Common/Sources/MemoryView.cpp 文件参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -98,32 +98,33 @@ $(document).ready(function(){initNavTree('_memory_view_8cpp.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cstring&gt;</code><br />
-<code>#include &lt;<a class="el" href="">LangYa/SentryLib/MemoryView.hpp</a>&gt;</code><br />
+<code>#include &lt;spdlog/spdlog.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="">LangYa/Common/MemoryView.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> MemoryView.cpp 的引用(Include)关系图:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="_memory_view_8cpp__incl.png" border="0" usemap="#a_sources_2_memory_view_8cpp" alt=""/></div>
-<map name="a_sources_2_memory_view_8cpp" id="a_sources_2_memory_view_8cpp">
-<area shape="rect" title=" " alt="" coords="33,5,206,32"/>
+<div class="center"><img src="_memory_view_8cpp__incl.png" border="0" usemap="#a_common_2_sources_2_memory_view_8cpp" alt=""/></div>
+<map name="a_common_2_sources_2_memory_view_8cpp" id="a_common_2_sources_2_memory_view_8cpp">
+<area shape="rect" title=" " alt="" coords="32,5,261,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,66,107"/>
-<area shape="poly" title=" " alt="" coords="107,35,63,72,60,68,103,31"/>
-<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="89,80,318,107"/>
-<area shape="poly" title=" " alt="" coords="136,31,179,68,176,72,132,35"/>
-<area shape="rect" title=" " alt="" coords="40,163,100,189"/>
-<area shape="poly" title=" " alt="" coords="184,109,105,157,103,152,181,105"/>
-<area shape="rect" title=" " alt="" coords="247,245,315,272"/>
-<area shape="poly" title=" " alt="" coords="194,108,180,126,167,149,160,173,161,185,166,196,179,212,195,225,233,243,231,248,193,230,175,216,161,199,156,186,155,173,162,147,175,123,190,105"/>
-<area shape="rect" title=" " alt="" coords="176,163,231,189"/>
-<area shape="poly" title=" " alt="" coords="206,107,206,147,201,147,201,107"/>
-<area shape="rect" title=" " alt="" coords="256,163,397,189"/>
-<area shape="poly" title=" " alt="" coords="224,105,296,152,293,156,221,109"/>
-<area shape="rect" href="_i_format_by_stream_8hpp.html" title=" " alt="" coords="421,155,594,197"/>
-<area shape="poly" title=" " alt="" coords="252,105,415,148,414,153,251,110"/>
-<area shape="poly" title=" " alt="" coords="450,200,330,243,328,238,448,195"/>
-<area shape="rect" title=" " alt="" coords="481,245,534,272"/>
-<area shape="poly" title=" " alt="" coords="510,198,510,229,505,229,505,198"/>
+<area shape="poly" title=" " alt="" coords="128,35,69,74,66,69,125,30"/>
+<area shape="rect" title=" " alt="" coords="90,80,202,107"/>
+<area shape="poly" title=" " alt="" coords="149,33,149,64,144,64,144,33"/>
+<area shape="rect" href="_memory_view_8hpp.html" title=" " alt="" coords="227,80,452,107"/>
+<area shape="poly" title=" " alt="" coords="181,30,292,72,291,77,179,35"/>
+<area shape="rect" title=" " alt="" coords="340,229,408,256"/>
+<area shape="poly" title=" " alt="" coords="302,110,273,123,247,139,233,159,232,169,236,180,254,199,276,214,326,232,324,237,274,219,251,203,232,183,227,170,228,157,243,136,270,118,300,105"/>
+<area shape="rect" title=" " alt="" coords="247,155,307,181"/>
+<area shape="poly" title=" " alt="" coords="331,109,300,145,296,141,327,105"/>
+<area shape="rect" title=" " alt="" coords="332,155,473,181"/>
+<area shape="poly" title=" " alt="" coords="352,105,383,141,379,145,348,109"/>
+<area shape="rect" href="_i_format_by_stream_8hpp.html" title=" " alt="" coords="497,155,750,181"/>
+<area shape="poly" title=" " alt="" coords="390,105,560,148,558,153,388,110"/>
+<area shape="poly" title=" " alt="" coords="581,184,424,230,423,225,579,179"/>
+<area shape="rect" title=" " alt="" coords="597,229,650,256"/>
+<area shape="poly" title=" " alt="" coords="626,182,626,214,621,214,621,182"/>
 </map>
 </div>
 </div>
@@ -133,21 +134,21 @@ $(document).ready(function(){initNavTree('_memory_view_8cpp.html',''); initResiz
 命名空间</h2></td></tr>
 <tr class="memitem:namespace_lang_ya" id="r_namespace_lang_ya"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya.html">LangYa</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespace_lang_ya_1_1_sentry_lib" id="r_namespace_lang_ya_1_1_sentry_lib"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib.html">LangYa::SentryLib</a></td></tr>
+<tr class="memitem:namespace_lang_ya_1_1_common" id="r_namespace_lang_ya_1_1_common"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_common.html">LangYa::Common</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 函数</h2></td></tr>
-<tr class="memitem:a0cd4b51d6b997b44c419052a9f1fa780" id="r_a0cd4b51d6b997b44c419052a9f1fa780"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_sentry_lib_a0cd4b51d6b997b44c419052a9f1fa780.html#a0cd4b51d6b997b44c419052a9f1fa780">LangYa::SentryLib::operator&lt;&lt;</a> (std::ostream &amp;stream, const <a class="el" href="struct_lang_ya_1_1_sentry_lib_1_1_memory_view.html">MemoryView</a> &amp;view)</td></tr>
-<tr class="separator:a0cd4b51d6b997b44c419052a9f1fa780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa324a3a0ba7334db19832fce50afefd1" id="r_aa324a3a0ba7334db19832fce50afefd1"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lang_ya_1_1_common_aa324a3a0ba7334db19832fce50afefd1.html#aa324a3a0ba7334db19832fce50afefd1">LangYa::Common::operator&lt;&lt;</a> (std::ostream &amp;stream, const <a class="el" href="struct_lang_ya_1_1_common_1_1_memory_view.html">MemoryView</a> &amp;view)</td></tr>
+<tr class="separator:aa324a3a0ba7334db19832fce50afefd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a class="el" href="_memory_view_8cpp.html">MemoryView.cpp</a></li>
-    <li class="footer">生成于 2024年 一月 5日 星期五 10:49:14 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a class="el" href="dir_4ab6b4cc6a7edbff49100e9123df213f.html">Common</a></li><li class="navelem"><a class="el" href="dir_9737b994fc5fc92735f5223dd3885320.html">Sources</a></li><li class="navelem"><a class="el" href="_memory_view_8cpp.html">MemoryView.cpp</a></li>
+    <li class="footer">生成于 2024年 一月 7日 星期日 00:54:47 , 为 LangYa.SentryLib使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,3 +1,5 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" href="$struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type.html" title="监视器的单个物品。 定义了监视器的基本物品格式，可以转换为Json格式和控制台格式。 因为实在找不到合适的名字所以放在了 Monitor 里面。 实际使用起来对此类型几乎无感。" alt="" coords="5,5,182,48"/>
+<area shape="rect" id="Node000000" href="$class_sango_1_1_i_has_i_d.html" title=" " alt="" coords="5,13,153,40"/>
+<area shape="rect" id="Node000001" href="$struct_sango_1_1_info_with_i_d.html" title=" " alt="" coords="201,5,334,48"/>
+<area shape="poly" id="edge18_Node000000_Node000001" title=" " alt="" coords="168,24,200,24,200,29,168,29"/>
 </map>

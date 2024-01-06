@@ -1,20 +1,14 @@
-<map id="Headers/LangYa/SentryLib/Network/ServerInfo.hpp" name="Headers/LangYa/SentryLib/Network/ServerInfo.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="385,5,561,48"/>
-<area shape="rect" id="Node000002" href="$_network_8hpp.html" title=" " alt="" coords="385,187,561,229"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="453,62,438,97,434,117,438,138,448,163,460,185,456,188,443,165,433,139,429,117,433,95,448,60"/>
-<area shape="rect" id="Node000009" href="$_server_8hpp.html" title=" " alt="" coords="447,96,624,139"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="498,59,523,94,519,97,494,62"/>
-<area shape="rect" id="Node000003" href="$_sentry_lib_8hpp.html" title=" " alt="" coords="153,277,355,304"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="403,238,289,279,287,274,401,233"/>
-<area shape="rect" id="Node000007" href="$_t_c_p_client_tester_8cpp.html" title=" " alt="" coords="379,277,566,304"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="475,245,475,277,470,277,470,245"/>
-<area shape="rect" id="Node000008" href="$_t_c_p_server_tester_8cpp.html" title=" " alt="" coords="591,277,781,304"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="543,233,653,274,652,279,541,238"/>
-<area shape="rect" id="Node000004" href="$_sentry_lib_8cpp.html" title=" " alt="" coords="5,352,159,379"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="211,313,113,354,111,349,209,308"/>
-<area shape="rect" id="Node000005" href="$_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和 json 配置文件的处理工具，使用操作见" alt="" coords="183,352,325,379"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="257,320,257,352,251,352,251,320"/>
-<area shape="rect" id="Node000006" href="$_tiny_sentry_mind_8cpp.html" title=" " alt="" coords="349,352,532,379"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="302,307,409,349,407,354,300,312"/>
-<area shape="poly" id="edge9_Node000009_Node000002" title=" " alt="" coords="514,153,489,188,485,185,510,150"/>
+<map id="Network/Headers/LangYa/Network/ServerInfo.hpp" name="Network/Headers/LangYa/Network/ServerInfo.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="235,5,404,48"/>
+<area shape="rect" id="Node000002" href="$_network_8hpp.html" title=" " alt="" coords="235,187,404,229"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="301,63,287,97,284,117,287,138,296,163,308,185,304,187,291,165,282,139,279,117,282,95,296,61"/>
+<area shape="rect" id="Node000006" href="$_server_8hpp.html" title=" " alt="" coords="297,96,465,139"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="345,59,369,94,364,97,340,62"/>
+<area shape="rect" id="Node000003" href="$_network_8cpp.html" title=" " alt="" coords="5,277,202,304"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="251,238,138,279,136,274,249,233"/>
+<area shape="rect" id="Node000004" href="$_t_c_p_client_tester_8cpp.html" title=" " alt="" coords="226,277,413,304"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="322,245,322,277,317,277,317,245"/>
+<area shape="rect" id="Node000005" href="$_t_c_p_server_tester_8cpp.html" title=" " alt="" coords="438,277,628,304"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="390,233,500,274,498,279,388,238"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="360,153,336,188,331,185,356,150"/>
 </map>

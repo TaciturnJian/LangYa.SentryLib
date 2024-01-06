@@ -1,23 +1,13 @@
 var searchData=
 [
-  ['iclientacceptor_2ehpp_0',['IClientAcceptor.hpp',['../_i_client_acceptor_8hpp.html',1,'']]],
-  ['iclienthandler_2ehpp_1',['IClientHandler.hpp',['../_i_client_handler_8hpp.html',1,'']]],
-  ['icomparable_2ehpp_2',['IComparable.hpp',['../_i_comparable_8hpp.html',1,'']]],
-  ['iformatbystream_2ecpp_3',['IFormatByStream.cpp',['../_i_format_by_stream_8cpp.html',1,'']]],
-  ['iformatbystream_2ehpp_4',['IFormatByStream.hpp',['../_i_format_by_stream_8hpp.html',1,'']]],
-  ['ihas_2ehpp_5',['IHas.hpp',['../_i_has_8hpp.html',1,'']]],
-  ['interfaces_2ecpp_6',['Interfaces.cpp',['../_interfaces_8cpp.html',1,'']]],
-  ['interfaces_2ehpp_7',['Interfaces.hpp',['../_interfaces_8hpp.html',1,'']]],
-  ['ioconnection_2ehpp_8',['IOConnection.hpp',['../_i_o_connection_8hpp.html',1,'']]],
-  ['iparse_2ehpp_9',['IParse.hpp',['../_i_parse_8hpp.html',1,'']]],
-  ['ipv4address_2ecpp_10',['IPv4Address.cpp',['../_i_pv4_address_8cpp.html',1,'']]],
-  ['ipv4address_2ehpp_11',['IPv4Address.hpp',['../_i_pv4_address_8hpp.html',1,'']]],
-  ['ipv4endpoint_2ecpp_12',['IPv4Endpoint.cpp',['../_i_pv4_endpoint_8cpp.html',1,'']]],
-  ['ipv4endpoint_2ehpp_13',['IPv4Endpoint.hpp',['../_i_pv4_endpoint_8hpp.html',1,'']]],
-  ['ipv4tcpacceptor_2ecpp_14',['IPv4TCPAcceptor.cpp',['../_i_pv4_t_c_p_acceptor_8cpp.html',1,'']]],
-  ['ipv4tcpacceptor_2ehpp_15',['IPv4TCPAcceptor.hpp',['../_i_pv4_t_c_p_acceptor_8hpp.html',1,'']]],
-  ['ipv4tcpserver_2ecpp_16',['IPv4TCPServer.cpp',['../_i_pv4_t_c_p_server_8cpp.html',1,'']]],
-  ['ipv4tcpserver_2ehpp_17',['IPv4TCPServer.hpp',['../_i_pv4_t_c_p_server_8hpp.html',1,'']]],
-  ['ipv4tcpsocket_2ecpp_18',['IPv4TCPSocket.cpp',['../_i_pv4_t_c_p_socket_8cpp.html',1,'']]],
-  ['ipv4tcpsocket_2ehpp_19',['IPv4TCPSocket.hpp',['../_i_pv4_t_c_p_socket_8hpp.html',1,'']]]
+  ['icomparable_2ehpp_0',['IComparable.hpp',['../_i_comparable_8hpp.html',1,'']]],
+  ['icontroller_2ehpp_1',['IController.hpp',['../_i_controller_8hpp.html',1,'']]],
+  ['iformatbystream_2ecpp_2',['IFormatByStream.cpp',['../_i_format_by_stream_8cpp.html',1,'']]],
+  ['iformatbystream_2ehpp_3',['IFormatByStream.hpp',['../_i_format_by_stream_8hpp.html',1,'']]],
+  ['ihas_2ehpp_4',['IHas.hpp',['../_i_has_8hpp.html',1,'']]],
+  ['interfaces_2ehpp_5',['Interfaces.hpp',['../_interfaces_8hpp.html',1,'']]],
+  ['ioconnection_2ehpp_6',['IOConnection.hpp',['../_i_o_connection_8hpp.html',1,'']]],
+  ['iparse_2ehpp_7',['IParse.hpp',['../_i_parse_8hpp.html',1,'']]],
+  ['iserializable_2ecpp_8',['ISerializable.cpp',['../_i_serializable_8cpp.html',1,'']]],
+  ['iserializable_2ehpp_9',['ISerializable.hpp',['../_i_serializable_8hpp.html',1,'']]]
 ];

@@ -1,0 +1,15 @@
+<map id="LangYa::ViMap::ViLayerSize" name="LangYa::ViMap::ViLayerSize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="936,31,1124,57"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_common_1_1_i_format_by_stream.html" title="代表一种可以通过流格式化的对象。" alt="" coords="5,35,199,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,34,248,31,525,6,647,3,803,8,883,16,958,27,957,33,882,21,802,13,647,8,525,12,248,36,214,40"/>
+<area shape="rect" id="Node000003" href="$struct_lang_ya_1_1_tiny_math_1_1_rectangular_size.html" title=" " alt="" coords="599,23,803,65"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="214,51,599,43,599,49,214,56"/>
+<area shape="rect" id="Node000004" href="$struct_lang_ya_1_1_tiny_math_1_1_rectangular_size.html" title="代表矩形的大小（无偏移点）。" alt="" coords="248,69,451,112"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="214,69,248,74,247,79,214,74"/>
+<area shape="rect" id="Node000005" href="$struct_lang_ya_1_1_tiny_math_1_1_rectangular_size.html" title=" " alt="" coords="599,93,803,136"/>
+<area shape="poly" id="edge7_Node000005_Node000002" title=" " alt="" coords="153,83,198,105,249,121,340,135,433,139,521,135,598,128,599,133,522,140,433,144,339,140,247,126,196,110,151,88"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="818,41,935,41,935,47,818,47"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="467,77,575,64,599,60,599,66,576,69,467,82"/>
+<area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="467,110,476,111,599,115,599,120,475,116,467,115"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="818,87,963,55,965,60,819,92"/>
+</map>

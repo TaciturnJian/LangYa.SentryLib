@@ -1,9 +1,12 @@
 #include <iostream>
-#include <LangYa/SentryLib/Network.hpp>
+#include <LangYa/Network.hpp>
+
+using namespace LangYa::Common;
+using namespace LangYa::Network;
 
 namespace Temp
 {
-	class TempHandleClient final : public LangYa::SentryLib::IClientHandler<LangYa::SentryLib::IPv4TCPSocket>
+	class TempHandleClient final : public IClientHandler<IPv4TCPSocket>
 	{
 	public:
 		void HandleClient(const HandleClientArgumentType& argument) override
@@ -12,7 +15,7 @@ namespace Temp
 			auto& client = *argument.ClientPointer;
 
 			char buffer[2];
-			const LangYa::SentryLib::MemoryView view{buffer, 1};
+			const MemoryView view{buffer, 1};
 			int counter{0};
 			while (!interrupt_signal)
 			{
@@ -39,12 +42,13 @@ namespace Temp
 
 int main(int argc, const char* argv[])
 {
-	using namespace LangYa::SentryLib;
-	Server<IPv4TCPSocket> server{ {
-		std::make_shared<IPv4TCPAcceptor>(IPv4Endpoint{argv[1]}),
-		std::make_shared<Temp::TempHandleClient>(),
-		std::make_shared<std::atomic_bool>(false),
-		0}
+	Server<IPv4TCPSocket> server{
+		{
+			std::make_shared<IPv4TCPAcceptor>(IPv4Endpoint{argv[1]}),
+			std::make_shared<Temp::TempHandleClient>(),
+			std::make_shared<std::atomic_bool>(false),
+			0
+		}
 	};
 	server.Run();
 

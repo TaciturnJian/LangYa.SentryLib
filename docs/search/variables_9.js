@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['jsonfilepath_0',['JsonFilePath',['../_test_app_8cpp_aa642375fd223e8d9fbd019a2794dd068.html#aa642375fd223e8d9fbd019a2794dd068',1,'TestApp.cpp']]]
+  ['name_0',['name',['../struct_lang_ya_1_1_common_1_1_debug_data_a8226bae83645ba90aec9b2da716dcc07.html#a8226bae83645ba90aec9b2da716dcc07',1,'LangYa::Common::DebugData::Name'],['../struct_lang_ya_1_1_sentry_lib_1_1_application_info_aec696c8717aef7cae37f2d4b1f2f42d6.html#aec696c8717aef7cae37f2d4b1f2f42d6',1,'LangYa::SentryLib::ApplicationInfo::Name'],['../struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_1_1_item_type_a9a4c622c4eb5e762bd5b52c65b94c8fb.html#a9a4c622c4eb5e762bd5b52c65b94c8fb',1,'LangYa::SentryLib::MonitorPackage::ItemType::Name'],['../struct_lang_ya_1_1_sentry_lib_1_1_monitor_package_a67f4610a2d9203e100be466b5074d75b.html#a67f4610a2d9203e100be466b5074d75b',1,'LangYa::SentryLib::MonitorPackage::Name'],['../struct_sango_1_1_info_with_name_a3fc1a82e85f2b99c1b43e1e6c837a150.html#a3fc1a82e85f2b99c1b43e1e6c837a150',1,'Sango::InfoWithName::Name']]],
+  ['normaldirection_1',['NormalDirection',['../class_lang_ya_1_1_sentry_lib_1_1_exchange_cube_a72e50b974f24605c312d752a4b4c8e67.html#a72e50b974f24605c312d752a4b4c8e67',1,'LangYa::SentryLib::ExchangeCube']]],
+  ['numbers_2',['Numbers',['../struct_lang_ya_1_1_sentry_lib_1_1_serial_numbers_affcd0481bac063323588579b389b52bc.html#affcd0481bac063323588579b389b52bc',1,'LangYa::SentryLib::SerialNumbers']]]
 ];

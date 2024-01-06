@@ -1,0 +1,7 @@
+<map id="LangYa::Common::UniqueBuffer::GetView" name="LangYa::Common::UniqueBuffer::GetView">
+<area shape="rect" id="Node000001" title="Get the view of the unique memory in the buffer." alt="" coords="251,39,457,81"/>
+<area shape="rect" id="Node000002" href="$class_lang_ya_1_1_common_1_1_ping_pong_buffer_a0a90547a41192b3424b7dc53dfbf8297.html#a0a90547a41192b3424b7dc53dfbf8297" title="Construct a new PingPongBuffer object with provided unique buffer. Its size must be sizeof(element) *..." alt="" coords="9,5,199,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,47,199,42,200,37,235,42"/>
+<area shape="rect" id="Node000003" href="$class_lang_ya_1_1_common_1_1_triple_buffer_aa6abe1a5b7af47263591a58fd3f46bf4.html#aa6abe1a5b7af47263591a58fd3f46bf4" title="Construct an UniqueBuffer with the given UniqueBuffer. The size for each element (3 in total) is the ..." alt="" coords="5,72,203,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="235,78,204,83,203,77,235,73"/>
+</map>

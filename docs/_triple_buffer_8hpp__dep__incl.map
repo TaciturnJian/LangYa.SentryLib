@@ -1,20 +1,5 @@
-<map id="Headers/LangYa/SentryLib/Common/TripleBuffer.hpp" name="Headers/LangYa/SentryLib/Common/TripleBuffer.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="387,5,564,48"/>
-<area shape="rect" id="Node000002" href="$_sentry_lib_8hpp.html" title=" " alt="" coords="153,187,355,213"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="373,46,324,66,301,80,281,98,268,119,260,143,256,186,251,186,255,142,263,117,277,94,298,76,321,61,371,41"/>
-<area shape="rect" id="Node000006" href="$_lang_ya_connection_8hpp.html" title=" " alt="" coords="291,96,468,139"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="444,61,403,98,400,94,440,57"/>
-<area shape="rect" id="Node000008" href="$_triple_buffer_8cpp.html" title=" " alt="" coords="492,104,654,131"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="511,57,561,102,557,106,507,61"/>
-<area shape="rect" id="Node000009" href="$_triple_buffer_tester_8cpp.html" title=" " alt="" coords="677,104,871,131"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="561,50,732,101,730,106,559,55"/>
-<area shape="rect" id="Node000003" href="$_sentry_lib_8cpp.html" title=" " alt="" coords="5,261,159,288"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="211,222,113,263,111,258,209,217"/>
-<area shape="rect" id="Node000004" href="$_test_app_8cpp.html" title="程序配置文件和配置参数处理器。 提供了对命令行参数和 json 配置文件的处理工具，使用操作见" alt="" coords="183,261,325,288"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="257,229,257,261,251,261,251,229"/>
-<area shape="rect" id="Node000005" href="$_tiny_sentry_mind_8cpp.html" title=" " alt="" coords="349,261,532,288"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="302,217,409,258,407,263,300,222"/>
-<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="336,150,275,188,272,184,333,145"/>
-<area shape="rect" id="Node000007" href="$_lang_ya_connection_8cpp.html" title=" " alt="" coords="378,187,586,213"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="419,146,468,184,464,188,416,151"/>
+<map id="Common/Headers/LangYa/Common/TripleBuffer.hpp" name="Common/Headers/LangYa/Common/TripleBuffer.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="28,5,201,48"/>
+<area shape="rect" id="Node000002" href="$_triple_buffer_8cpp.html" title=" " alt="" coords="5,96,224,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,64,117,95,112,95,112,64"/>
 </map>
