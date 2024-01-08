@@ -1,7 +1,8 @@
 #pragma once
 
 namespace LangYa::ConsoleHelper {
-	class ConsoleKeyboard {
+	class ConsoleKeyboard
+	{
 		ConsoleKeyboard() = default;
 
 	public:

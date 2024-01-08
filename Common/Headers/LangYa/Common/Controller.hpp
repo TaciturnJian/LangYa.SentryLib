@@ -2,6 +2,7 @@
 
 #include <spdlog/spdlog.h>
 
+#include <LangYa/Common/IOConnection.hpp>
 #include <LangYa/Common/IController.hpp>
 #include <LangYa/Common/UniqueBuffer.hpp>
 

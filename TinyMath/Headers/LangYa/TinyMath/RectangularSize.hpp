@@ -53,6 +53,8 @@ namespace LangYa::TinyMath {
 	};
 
 	using RectangularSizeI = RectangularSize<int>;
+	using RectangularSizeU8 = RectangularSize<std::uint8_t>;
+	using RectangularSizeU16 = RectangularSize<std::uint16_t>;
 	using RectangularSizeU32 = RectangularSize<std::uint32_t>;
 	using RectangularSizeU64 = RectangularSize<std::uint64_t>;
 	using RectangularSizeF = RectangularSize<float>;

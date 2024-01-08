@@ -93,6 +93,7 @@ target_link_libraries(${PROJECT_NAME}
 	PUBLIC TinyMath
 	PUBLIC ViMap
 	PUBLIC Network
+	PUBLIC ConsoleHelper
 	${SC_PUBLIC_PTHREAD}
 	PUBLIC Boost::system
 	PUBLIC Boost::program_options

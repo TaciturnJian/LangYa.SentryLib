@@ -90,11 +90,16 @@ namespace LangYa::Common
 		return Head != nullptr && Size > 0;
 	}
 
-	boost::asio::mutable_buffer
 	MemoryView
-	::ToBuffer() const
+	::operator boost::asio::mutable_buffer() const
 	{
-		return boost::asio::buffer(Head, Size);
+		return boost::asio::buffer(Head, Size); 
+	}
+
+	MemoryView
+	::operator std::string_view() const noexcept
+	{
+		return {reinterpret_cast<std::string_view::const_pointer>(Head), Size};
 	}
 
 	std::ostream&
@@ -134,16 +139,5 @@ namespace LangYa::Common
 		spdlog::warn("MemoryView> Unknown option for formatting this view, trying with default option");
 
 		return FormatByStream(stream);
-	}
-
-	std::ostream&
-	operator<<(std::ostream& stream, const MemoryView& view)
-	{
-		for (MemoryView::SizeType i = 0; i < view.Size - 1; i++)
-		{
-			stream << std::hex << static_cast<int>(view[i]) << ' ';
-		}
-
-		return stream << std::hex << static_cast<int>(view[view.Size - 1]);
 	}
 }

@@ -1,7 +1,5 @@
 #pragma once
 
-#include <LangYa/Common/IOConnection.hpp>
-
 namespace LangYa::Common {
 
 	/// @brief 代表控制器，即处理当前对控制器的所有操作，存储到数据中，在合适的时机发送数据给远端。

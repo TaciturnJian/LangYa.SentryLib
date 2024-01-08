@@ -1,5 +1,6 @@
 #pragma once
 
+#include <LangYa/Common/Action.hpp>
 #include <LangYa/Common/Controller.hpp>
 #include <LangYa/Common/Counter.hpp>
 #include <LangYa/Common/IController.hpp>
@@ -10,3 +11,9 @@
 #include <LangYa/Common/LifeTimeDebugData.hpp>
 #include <LangYa/Common/MemoryIO.hpp>
 #include <LangYa/Common/MemoryView.hpp>
+#include <LangYa/Common/PingPongBuffer.hpp>
+#include <LangYa/Common/Resource.hpp>
+#include <LangYa/Common/ResourceFlag.hpp>
+#include <LangYa/Common/RoboMaster.hpp>
+#include <LangYa/Common/TimeStamp.hpp>
+#include <LangYa/Common/TripleBuffer.hpp>

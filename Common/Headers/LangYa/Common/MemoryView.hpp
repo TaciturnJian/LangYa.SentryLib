@@ -3,6 +3,8 @@
 // ReSharper disable once CppUnusedIncludeDirective
 #include <ostream>
 #include <cstdint>
+// ReSharper disable once CppUnusedIncludeDirective
+#include <string_view>
 
 #include <boost/asio/buffer.hpp>
 
@@ -10,14 +12,16 @@
 
 namespace LangYa::Common
 {
-	/// @brief MemoryView 代表一个内存的视图，保存内存的头指针和长度，供其他读写。
+	/// @brief 一个内存视图，存储一块连续内存的头部指针和长度整数，封装内存读写函数。
 	/// @details 
-	/// # MemoryView
-	/// 提供关于内存的视图，
-	/// 它不能保证作为传入的参数时得到的内存视图是有效的，
-	/// 因此作为函数参数时，你需要信任调用方。
-	///	类中提供了有关内存的操作函数，CopyTo 和 ReadFrom ，
-	///	它们都是对 memcpy 的封装，但是会使用内存视图中的数据检查调用 memcpy 的参数。
+	/// # MemoryView 内存视图
+	///
+	/// ## 类功能
+	///
+	/// ### 存储内存的头指针和内存长度
+	///
+	///	### 封装内存读写函数
+	///
 	struct MemoryView final : IFormatByStream
 	{
 		/// @brief 代表 Size 的数据类型。
@@ -102,15 +106,9 @@ namespace LangYa::Common
 		///	@return “指针不指向一个空内容” 是否成立。
 		[[nodiscard]] bool IsValid() const noexcept;
 
-		/// @brief 将内存视图中的所有字节以十六进制整数的形式写进流中，相邻两整数输出使用空格 ' ' 隔开。
-		///	@param stream 支持字节输出的流。
-		///	@param view 字节资源。
-		///	@return 参数中 stream 的引用。
-		friend std::ostream& operator<<(std::ostream& stream, const MemoryView& view);
+		explicit operator boost::asio::mutable_buffer() const;
 
-		/// @brief 将此类型转化为 boost::asio::mutable_buffer 。
-		///	@return boost::asio::mutable_buffer 的一个实例。
-		[[nodiscard]] boost::asio::mutable_buffer ToBuffer() const;
+		explicit operator std::string_view() const noexcept;
 
 		/// @brief 使用流格式化此类型。
 		///	@details 使用流将视图中的字节转为十六进制整数后存放进 stream 。

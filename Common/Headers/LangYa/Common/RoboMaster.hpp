@@ -26,7 +26,7 @@ namespace LangYa::Common
 	};
 
 	/// @brief 比赛时的单位种类的编号，可以使用位运算快速操作此类型。
-	enum class UnitType : unsigned short
+	enum class UnitCodeType : unsigned short
 	{
 		Hero      = 0b00000001,
 		Engineer  = 0b00000010,

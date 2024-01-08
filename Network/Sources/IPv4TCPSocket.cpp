@@ -100,7 +100,7 @@ namespace LangYa::Network
 	::Read(const Common::MemoryView& view)
 	{
 		boost::system::error_code result{};
-		auto bytes = read(*SharedSocketPtr, view.ToBuffer(), result);
+		auto bytes = read(*SharedSocketPtr, static_cast<boost::asio::mutable_buffer>(view), result);
 
 		// 查看是否读取失败
 		if (result.failed() || bytes != view.Size)
@@ -126,7 +126,7 @@ namespace LangYa::Network
 	::Write(const Common::MemoryView& view)
 	{
 		boost::system::error_code result{};
-		auto bytes = write(*SharedSocketPtr, view.ToBuffer(), result);
+		auto bytes = write(*SharedSocketPtr, static_cast<boost::asio::mutable_buffer>(view), result);
 
 		// 查看是否发送失败
 		if (result.failed() || bytes != view.Size)

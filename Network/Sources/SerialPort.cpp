@@ -152,7 +152,7 @@ namespace LangYa::Network
 	::Read(const MemoryView& view)
 	{
 		boost::system::error_code result{};
-		auto bytes = read(*UniqueSerialPort, view.ToBuffer(), result);
+		auto bytes = read(*UniqueSerialPort, static_cast<boost::asio::mutable_buffer>(view), result);
 		spdlog::info(
 			"SerialPort({})> Read {}:{} bytes, failed({}), failure({})",
 			Info.DeviceName,
@@ -172,7 +172,7 @@ namespace LangYa::Network
 	::Write(const Common::MemoryView& view)
 	{
 		boost::system::error_code result{};
-		auto bytes = write(*UniqueSerialPort, view.ToBuffer(), result);
+		auto bytes = write(*UniqueSerialPort, static_cast<boost::asio::mutable_buffer>(view), result);
 		spdlog::info(
 			"SerialPort({})> Write {}:{} bytes, failed({}), failure({})",
 			Info.DeviceName,
