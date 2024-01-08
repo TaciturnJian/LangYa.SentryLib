@@ -6,7 +6,7 @@ sudo apt-get -y install zip wget curl git cmake build-essential
 
 mkdir ~/repos
 cd ~/repos
-wget https://boostorg.jfrog.io/artifactory/main/release/1.83.0/source/boost_1_83_0.zip
+wget https://github.com/boostorg/boost/releases/download/boost-1.83.0/boost-1.83.0.zip
 unzip boost_1_83_0.zip
 cd boost_1_83_0 
 bash ./bootstrap.sh
