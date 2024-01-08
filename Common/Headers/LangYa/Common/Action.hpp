@@ -5,11 +5,11 @@
 
 namespace LangYa::Common
 {
-	template <typename... TArguments>
+	template <typename TArgument>
 	class Action final
 	{
 	public:
-		using ActionFunctionType = std::function<void(TArguments...)>;
+		using ActionFunctionType = std::function<void(TArgument)>;
 		using FunctionListType = std::vector<ActionFunctionType>;
 
 	private:
@@ -34,7 +34,7 @@ namespace LangYa::Common
 			return *this;
 		}
 
-		void operator()(TArguments... args) const
+		void operator()(TArgument args) const
 		{
 			for (const auto& func : FunctionList)
 			{
@@ -49,7 +49,7 @@ namespace LangYa::Common
 
 		explicit operator ActionFunctionType() const
 		{
-			return [this](TArguments... args)
+			return [this](TArgument args)
 			{
 				(*this)(args);
 			};
@@ -58,7 +58,7 @@ namespace LangYa::Common
 
 
 	template <>
-	class Action<> final
+	class Action<void> final
 	{
 	public:
 		using ActionFunctionType = std::function<void()>;

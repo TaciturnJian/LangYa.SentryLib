@@ -2,31 +2,31 @@
 
 namespace LangYa::Common
 {
-	Action<>
+	Action<void>
 	::Action()
 	= default;
 
-	Action<>
+	Action<void>
 	::Action(const std::initializer_list<ActionFunctionType> functions):
 		FunctionList(functions)
 	{
 	}
 
-	Action<>
+	Action<void>
 	::Action(FunctionListType functions):
 		FunctionList(std::move(functions))
 	{
 	}
 
 	void
-	Action<>
+	Action<void>
 	::operator+=(const ActionFunctionType& right)
 	{
 		FunctionList.emplace_back(right);
 	}
 
 	void
-	Action<>
+	Action<void>
 	::operator()() const
 	{
 		for (const auto& func : FunctionList)
@@ -35,13 +35,13 @@ namespace LangYa::Common
 		}
 	}
 
-	Action<>
+	Action<void>
 	::operator std::vector<std::function<void()>>() const
 	{
 		return FunctionList;
 	}
 
-	Action<>
+	Action<void>
 	::operator std::function<void()>() const
 	{
 		return [this]()

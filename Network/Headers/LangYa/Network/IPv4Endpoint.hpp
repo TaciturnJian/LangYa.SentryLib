@@ -1,6 +1,7 @@
 #pragma once
 
 #include <boost/asio/ip/tcp.hpp>
+#include <boost/asio/ip/udp.hpp>
 
 #include <LangYa/Network/IPv4Address.hpp>
 
@@ -33,5 +34,7 @@ namespace LangYa::Network
 		std::ostream& FormatByStream(std::ostream& stream, int option = 0) const override;
 
 		explicit operator boost::asio::ip::tcp::endpoint() const;
+
+		explicit operator boost::asio::ip::udp::endpoint() const;
 	};
 }

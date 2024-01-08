@@ -79,8 +79,13 @@ namespace LangYa::Network
 	}
 
 	IPv4Endpoint
-	::operator
-	boost::asio::ip::tcp::endpoint() const
+	::operator boost::asio::ip::tcp::endpoint() const
+	{
+		return {static_cast<boost::asio::ip::address_v4>(Address), Port};
+	}
+
+	IPv4Endpoint
+	::operator boost::asio::ip::udp::endpoint() const
 	{
 		return {static_cast<boost::asio::ip::address_v4>(Address), Port};
 	}

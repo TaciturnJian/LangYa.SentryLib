@@ -61,6 +61,13 @@ namespace LangYa::Common
 		{
 		}
 
+		explicit MemoryView(std::string_view view) :
+			// ReSharper disable once CppCStyleCast
+			Head((ByteType*)view.data()), // NOLINT(clang-diagnostic-cast-qual)
+			Size(view.size())
+		{
+		}
+
 		/// @brief 销毁内存视图，使其无效化。
 		///	在销毁时此函数会将内存头部和内存长度都设置为无效值。
 		///	（但其实完全没必要对吧）
