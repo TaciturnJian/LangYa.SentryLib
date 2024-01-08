@@ -38,8 +38,7 @@ namespace RefereeSystem
 				{
 					while (!interrupt_signal)
 					{
-						const auto& atomic_server_data = *SharedAtomicServerData;
-						RefereeServerData data = atomic_server_data;
+						RefereeServerData data = *SharedAtomicServerData;
 						MemoryView view{&data};
 						client.Write(view);
 
@@ -90,7 +89,7 @@ namespace RefereeSystem
 
 		void SendCommand(const std::string_view command)
 		{
-			BufferView.SetValue(0);
+			BufferView.SetValue(' ');
 			MemoryView{command}.CopyTo(BufferView);
 			Socket.send_to(boost::asio::mutable_buffer{BufferView}, Target);
 		}
@@ -134,25 +133,37 @@ int main()
 	const auto interrupt_signal_pointer = std::make_shared<std::atomic_bool>(false);
 	auto& interrupt_signal = *interrupt_signal_pointer;
 
+	const auto client_handler_pointer = std::make_shared<RefereeSystem::ClientHandler>();
+	auto& client_handler = *client_handler_pointer;
+
 	RefereeSystem::CommandInterface commander{};
-	commander.OnCommandReceived += [&commander, &interrupt_signal](std::istream& stream)
+	commander.OnCommandReceived += [&interrupt_signal, &client_handler](std::istream& stream)
 	{
 		while (!stream.eof() && !interrupt_signal)
 		{
-			std::string command{};
-			stream >> command;
-			spdlog::info("CommandInterface> Received command: {}", command);
+			std::string ore_storage_status{};
+			stream >> ore_storage_status;
+			unsigned char ore_storage = 0;
+			if (ore_storage_status == "open")
+			{
+				ore_storage = static_cast<unsigned char>(LangYa::LangYaTeamOreStorageStatusID::Open);
+			}
+			
+			std::string team{};
+			stream >> team;
+
+			RefereeSystem::RefereeServerData data = *client_handler.SharedAtomicServerData;
+			(team == "red" ? data.Data.RedTeamOreStorageStatusID : data.Data.BlueTeamOreStorageStatusID) = ore_storage;
+			*client_handler.SharedAtomicServerData = data;
 		}
-		commander.SendCommand("hello world!");
-		//TODO 处理指令
 	};
 	commander.DetachLoopReceive(interrupt_signal_pointer);
 
-	const auto client_handler = std::make_shared<RefereeSystem::ClientHandler>();
-	client_handler->OnClientDataReceived += [](auto data)
+	client_handler_pointer->OnClientDataReceived += [&commander](const LANGYA_RefereeClientData data)
 	{
-		spdlog::info("ClientHandler> Received client data!");
-		//TODO 处理数据
+		std::stringstream stream{};
+		stream << data.TeamID << ' ' << data.LocationID << ' ' << data.TaskID << ' ' << data.OreRewardID;
+		commander.SendCommand(stream.str());
 	};
 
 	Server{
@@ -162,7 +173,7 @@ int main()
 					"127.0.0.1:8989"
 				}
 			),
-			client_handler,
+			client_handler_pointer,
 			interrupt_signal_pointer
 		}
 	}.Run();

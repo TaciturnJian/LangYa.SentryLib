@@ -1,6 +1,5 @@
 #pragma once
 
-
 #define LANGYA_PACKAGE_HEAD_TYPE unsigned char
 #define LANGYA_PACKAGE_HEAD '!'
 
@@ -59,7 +58,8 @@ namespace LangYa
 
 struct LANGYA_RefereeServerData
 {
-	unsigned char TeamOreStorageStatusID;
+	unsigned char RedTeamOreStorageStatusID;
+	unsigned char BlueTeamOreStorageStatusID;
 };
 
 struct LANGYA_RefereeClientData
