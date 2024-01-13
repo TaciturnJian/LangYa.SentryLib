@@ -46,6 +46,15 @@ target_link_libraries(LangYaCommon
 	PUBLIC Boost::system
 )
 
+# 配置 LangYa.CodeLogic
+aux_source_directory("./CodeLogic/Sources" LangYaCodeLogicSources)
+add_library(CodeLogic ${LangYaCodeLogicSources})
+target_include_directories(CodeLogic BEFORE PUBLIC "./CodeLogic/Headers")
+set_target_properties(CodeLogic PROPERTIES CXX_STANDARD 20)
+target_link_libraries(CodeLogic
+	PUBLIC LangYaCommon
+)
+
 # 配置 LangYa.TinyMath
 aux_source_directory("./TinyMath/Sources" TinyMathSources)
 add_library(TinyMath ${TinyMathSources})

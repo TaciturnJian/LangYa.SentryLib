@@ -2,6 +2,8 @@
 #include <iostream>
 #include <format>
 #include <LangYa/Common/Action.hpp>
+#include <Sango/CommonMember.hpp>
+#include <Sango/Combine.hpp>
 
 class TaskExecutor
 {
@@ -18,5 +20,21 @@ public:
 
 int main()
 {
+	using namespace Sango;
+
+	using combine_result = Combine<
+		CommonMember::HasName<std::string>,
+		CommonMember::HasID<int>,
+		CommonMember::HasInfo<float>
+	>;
+
+	combine_result comb{
+		{
+			""
+		},
+		1,
+		0.3f
+	};
+
 	using namespace LangYa::Common;
 }

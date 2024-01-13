@@ -11,11 +11,11 @@ namespace LangYa::Common
 	template <typename TSerializableData>
 	class Controller final : public IController<TSerializableData>
 	{
+
 		TSerializableData DynamicData{};
 		UniqueBuffer SerializationBuffer{};
 		MemoryView BufferView{};
 		std::shared_ptr<IOConnection> Connection{nullptr};
-
 	public:
 		explicit Controller(std::shared_ptr<IOConnection> connection) :
 			SerializationBuffer(DynamicData.GetSerializationResultSize()),

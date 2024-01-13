@@ -56,7 +56,6 @@ namespace LangYa::Common
 		}
 	};
 
-
 	template <>
 	class Action<void> final
 	{
